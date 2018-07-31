@@ -1,0 +1,1036 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-size-adjust\tproperty"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"h",
+				"height\tproperty"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"ba",
+				"background\t(bootstrap.css)"
+			],
+			[
+				"bag",
+				"background\tproperty"
+			],
+			[
+				"cons",
+				"console\t(mobile.js)"
+			],
+			[
+				"fl",
+				"float\tproperty"
+			],
+			[
+				"rel",
+				"relative\tposition"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"listy",
+				"list-style\tproperty"
+			],
+			[
+				"java",
+				"javascript:void"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"bol",
+				"bold"
+			],
+			[
+				"border-top-ra",
+				"border-top-right-radius"
+			],
+			[
+				"bo",
+				"border-top"
+			],
+			[
+				"bor",
+				"border-radius\tproperty"
+			],
+			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"text-a",
+				"text-align\tproperty"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"bold",
+				"bolder\tfont-weight"
+			],
+			[
+				"_",
+				"_GET"
+			],
+			[
+				"s",
+				"selected"
+			],
+			[
+				"resu",
+				"result_set"
+			],
+			[
+				"stat",
+				"status"
+			],
+			[
+				"fec",
+				"fechaemitida"
+			],
+			[
+				"html",
+				"htmlspecialchars_decode"
+			],
+			[
+				"booki",
+				"booking"
+			],
+			[
+				"las",
+				"lastnamepost"
+			],
+			[
+				"nam",
+				"namepost"
+			],
+			[
+				"cu",
+				"curl"
+			],
+			[
+				"date",
+				"dateroom"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"pad",
+				"padding-left\tproperty"
+			],
+			[
+				"rese",
+				"reserva"
+			],
+			[
+				"fin",
+				"find_many"
+			],
+			[
+				"fo",
+				"fotofind"
+			],
+			[
+				"en",
+				"endpoint"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"inter",
+				"intervalo"
+			],
+			[
+				"fecha",
+				"fecha1"
+			],
+			[
+				"uns",
+				"unset"
+			],
+			[
+				"hot",
+				"hotel"
+			],
+			[
+				"a",
+				"adultos"
+			],
+			[
+				"jso",
+				"json_decode"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"destina",
+				"destinations_array"
+			],
+			[
+				"js",
+				"json_decode"
+			],
+			[
+				"jsd",
+				"json_encode"
+			],
+			[
+				"La",
+				"Latitude"
+			],
+			[
+				"name",
+				"namehotel"
+			],
+			[
+				"or",
+				"order"
+			],
+			[
+				"su",
+				"subtotal"
+			],
+			[
+				"to",
+				"total"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"reser",
+				"reservacion"
+			],
+			[
+				"ame",
+				"americanexpres"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"con",
+				"contador"
+			],
+			[
+				"it",
+				"item"
+			],
+			[
+				"find",
+				"findOne"
+			],
+			[
+				"vo",
+				"voucher"
+			],
+			[
+				"prec",
+				"preciomenores"
+			],
+			[
+				"que",
+				"query"
+			],
+			[
+				"titu",
+				"titulosp"
+			],
+			[
+				"j",
+				"json_decode"
+			],
+			[
+				"home",
+				"homehotelbeds"
+			],
+			[
+				"no",
+				"noselect"
+			],
+			[
+				"Ac",
+				"action\tAttr"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"entr",
+				"entradas"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"whi",
+				"width"
+			],
+			[
+				"col",
+				"col-md-9"
+			],
+			[
+				"Pre",
+				"PrecioAdulto"
+			],
+			[
+				"Prec",
+				"PrecioMenor"
+			],
+			[
+				"Precio",
+				"PrecioAdulto"
+			],
+			[
+				"se",
+				"select"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"is_n",
+				"is_null"
+			],
+			[
+				"Des",
+				"Descripcion"
+			],
+			[
+				"horar",
+				"horarioss"
+			],
+			[
+				"hora",
+				"horarioss"
+			],
+			[
+				"hor",
+				"horarioss"
+			],
+			[
+				"tipo",
+				"tipoentrada"
+			],
+			[
+				"par",
+				"parque"
+			],
+			[
+				"print",
+				"print_r"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/kooning/js/application.js",
+			"settings":
+			{
+				"buffer_size": 899,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"sftp",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"sft",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"alin",
+				"Preferences: Alignment File Settings – Syntax Specific – User"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"aling",
+				"Preferences: Alignment File Settings – User"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Add Channel"
+			],
+			[
+				"}",
+				"Snippet: for (…) {…}"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 540.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+			"$ php composer.phar",
+			"composer init",
+			"composer require hotelbeds/hotel-api-sdk-php",
+			"composer require \"hotelbeds/hotel-api-sdk-php:dev-master@dev\"",
+			"composer ini",
+			"Install-Package hotel-api-sdk-net"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/kooning",
+		"/C/kooning/js"
+	],
+	"file_history":
+	[
+		"/C/wamp/www/m.kooningtravel/m-kooning/public/js/mobile.js",
+		"/C/wamp/www/m.kooningtravel/m-kooning/public/css/mobile.css",
+		"/C/wamp/www/m.kooningtravel/m-kooning/resources/views/home/search.blade.php",
+		"/C/kooning/config.json",
+		"/C/wamp/www/m.kooningtravel/m-kooning/public/css/jquery.fancybox.min.css",
+		"/C/wamp/www/m.kooningtravel/m-kooning/resources/views/home/home.blade.php",
+		"/C/wamp/www/m.kooningtravel/m-kooning/resources/views/structure/banks.blade.php",
+		"/C/wamp/www/m.kooningtravel/m-kooning/resources/views/structure/layout.blade.php",
+		"/C/wamp/www/m.kooningtravel/m-kooning/public/css/bootstrap.css",
+		"/C/wamp/www/m.kooningtravel/m-kooning/app/Http/Controllers/Home/HomeController.php",
+		"/C/wamp/www/m.kooningtravel/m-kooning/resources/views/structure/template.blade.php",
+		"/C/kooning/js/caja-reserva.js",
+		"/C/kooning/application/views/commons/box.php",
+		"/C/wamp/www/m.kooningtravel/m-kooning/public/js/select2.full.min.js",
+		"/C/kooning/application/views/hotels/promociones.php",
+		"/C/kooning/application/views/hotels/ofertas.php",
+		"/C/kooning/application/views/commons/template.php",
+		"/C/kooning/application/views/hotels/home.php",
+		"/C/kooning/application/views/home/blog.php",
+		"/C/kooning/js/caja-reserva3.js",
+		"/C/wamp/www/m.kooningtravel/m-kooning/routes/web.php",
+		"/C/kooning/js/caja-reserva2.js",
+		"/C/kooning/js/tour.js",
+		"/C/kooning/application/views/home/header.php",
+		"/C/kooning/css/estilo.css",
+		"/C/kooning/js/general.js",
+		"/C/wamp/www/m.kooningtravel/m-kooning/resources/views/activities/parques.blade.php",
+		"/C/kooning/application/views/home/box.php",
+		"/C/Users/FrontDesk/Downloads/credentials.json",
+		"/C/wamp/www/m.kooningtravel/m-kooning/m-kooning.sublime-project",
+		"/C/Users/Muppet/Documents/kooning/application/controllers/PriceTravel.php",
+		"/C/Users/Muppet/Documents/kooning/application/controllers/Hotels.php",
+		"/C/Users/Muppet/Documents/kooning/config/config.php",
+		"/C/Users/Muppet/Documents/kooning/application/controllers/Home.php",
+		"/C/Users/Muppet/Documents/kooning/js/caja-reserva2.js",
+		"/C/Users/Muppet/Documents/kooning/js/caja-reserva.js",
+		"/C/Users/Muppet/Documents/kooning/application/models/DestinosModel.php",
+		"/C/Users/Muppet/Documents/kooning/application/models/ListahotelesModel.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/hotels/search.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/hotels/details.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/hotels/home.php",
+		"/C/Users/Muppet/Documents/kooning/js/caja-reserva-search.js",
+		"/C/Users/Muppet/Documents/kooning/application/views/hotelbeds/details.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/hotels/excel.php",
+		"/C/Users/Muppet/Documents/kooning/js/destinos/Destinos.json",
+		"/C/Users/Muppet/Documents/kooning/js/destinos/DestinosHoteldo.json",
+		"/C/Users/Muppet/Documents/kooning/js/caja-hotelbeds.js",
+		"/C/Users/Muppet/Documents/kooning/js/hotels/catalogs.js",
+		"/C/Users/Muppet/Documents/kooning/application/controllers/ShoppingCart.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/shoppingcart/carrito.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/hotelbeds/home.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/hotelbeds/lista.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/home/header.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/hotelbeds/search.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/commons/footer.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/commons/template.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/hotels/metodopago.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/hotels/promociones.php",
+		"/C/Users/Muppet/Documents/kooning/core/libs/idiorm.php",
+		"/C/Users/Muppet/Documents/kooning/js/general.js",
+		"/C/Users/Muppet/Documents/kooning/application/models/KooningtipsModel.php",
+		"/C/Users/Muppet/Documents/kooning/core/CustomModel.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/home/sitemap.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/home/auto.php",
+		"/C/Users/Muppet/Documents/kooning/css/bootstrap.min.css",
+		"/C/Users/Muppet/Documents/kooning/css/estilo.css",
+		"/C/Users/Muppet/Documents/kooning/application/views/commons/box.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/commons/headerM.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/hotels/m.php",
+		"/C/Users/Muppet/Documents/kooning/application/models/AgendaModel.php",
+		"/C/Users/Muppet/Documents/kooning/js/caja/motor.js",
+		"/C/Users/Muppet/Documents/kooning/js/hotels/details.js",
+		"/C/Users/Muppet/Documents/kooning/sftp-config.JSON",
+		"/C/Users/Muppet/Documents/kooning/application/controllers/Hotelbeds.php",
+		"/C/Users/Muppet/AppData/Roaming/Sublime Text 3/Packages/User/PHP.sublime-settings",
+		"/C/Users/Muppet/AppData/Roaming/Sublime Text 3/Packages/User/Base File.sublime-settings",
+		"/C/Users/Muppet/AppData/Roaming/Sublime Text 3/Packages/User/Plain text.sublime-settings",
+		"/C/Users/Muppet/AppData/Roaming/Sublime Text 3/Packages/Terminal/Base File.sublime-settings",
+		"/C/Users/Muppet/Documents/kooning/application/views/home/post.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/commons/header.php",
+		"/C/Users/Muppet/Documents/kooning/application/controllers/helpers/send.php",
+		"/C/Users/Muppet/Documents/kooning/application/controllers/Offline.php",
+		"/C/Users/Muppet/Documents/kooning/js/tour.js",
+		"/C/Users/Muppet/Downloads/error.log",
+		"/C/Users/Muppet/Downloads/paquetes (2).sql",
+		"/C/Users/Muppet/Documents/kooning/application/views/shoppingcart/reservacion.php",
+		"/C/Users/Muppet/Documents/kooning/composer.json",
+		"/C/Users/Muppet/Documents/kooning/js/caja/jquery.min.js",
+		"/C/Users/Muppet/Documents/kooning/css/application.css",
+		"/C/Users/Muppet/Documents/kooning/js/destinos/HotelesTraslado.json",
+		"/C/Users/Muppet/Documents/kooning/servicescatalogscountriesZW.json",
+		"/C/Users/Muppet/Documents/kooning/application/views/home/mapa.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/commons/listcarro.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/home/traslado.php",
+		"/C/Users/Muppet/Documents/kooning/application/models/AutosModel.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/home/gracias.php",
+		"/C/Users/Muppet/Documents/kooning/js/caja-traslados.js",
+		"/C/Users/Muppet/Documents/kooning/application/models/TrasladosModel.php",
+		"/C/Users/Muppet/Documents/kooning/js/select2.full.min.js",
+		"/C/Users/Muppet/Documents/kooning/application/controllers/helpers/configuration.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/home/tour.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/commons/headertrasladosm.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/commons/headermovil.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/commons/headertourm.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/commons/headerMo.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/home/tarj.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/hotels/catalogs.php",
+		"/C/Users/Muppet/Documents/kooning/config/routes.php",
+		"/C/Users/Muppet/Documents/kooning/css/pasos.css",
+		"/C/Users/Muppet/Documents/kooning/application/views/hotels/voucher.php",
+		"/C/Users/Muppet/Documents/kooning/application/models/EntradatoursModel.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/shoppingcart/payworks.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/home/tours.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/home/explora.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/home/parques.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/home/parque.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/home/tourss.php",
+		"/C/Users/Muppet/Documents/kooning/application/views/prueba/x_pay_simple.html",
+		"/C/Users/Muppet/Documents/Documentos kooning/campañas/paquetes (1).sql",
+		"/C/Users/Muppet/Documents/tours.sql",
+		"/C/Users/Muppet/Documents/kooning/application/views/home/homehotelbeds.php",
+		"/C/Users/Muppet/Documents/kooning/application/controllers/helpers/connection.php",
+		"/C/Users/Muppet/Documents/kooning/application/models/EntradatourshorarioModel.php",
+		"/C/Users/Muppet/Documents/kooning/application/models/EntradahorarioModel.php",
+		"/C/Users/Muppet/Downloads/information",
+		"/C/Users/Muppet/Documents/kooning/application/models/ToursModel.php",
+		"/C/Users/Muppet/Documents/kooning/js/destinos/Hoteles1-70.json",
+		"/C/Users/Muppet/Documents/kooning/js/destinos/Hoteles.json"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"#febb02",
+			".fancybox-bg",
+			"body .main .content .searchview .wall .card",
+			"monthsNumber",
+			"bloque",
+			"linear-gradient(to bottom,#ffd257 25%,#febb02 100%)",
+			"label",
+			"svg:not(:root)",
+			"root",
+			"search",
+			"so",
+			"sog",
+			"screen",
+			"focus",
+			"body .select2-container",
+			"select2-container--open",
+			"select2-container--default select2-container--open",
+			"select2-container",
+			"body .main .content .area",
+			"body .main .content .area #form .bloque .select2-search__field",
+			"limpiar",
+			"form",
+			"fd()",
+			",\n",
+			"search",
+			"contactform",
+			"hotel",
+			"body .main .content .area #form .bloque .item div span .ui-spinner-down span span, body .main .content .area #form .bloque .roms .down",
+			"body .main .content .area #form .bloque .item div span .ui-spinner-up span span, body .main .content .area #form .bloque .roms .up",
+			"/img/home/bancos/",
+			"cboxLoadedContent",
+			"body .main .menu1 ul",
+			"body .main .footer .ver",
+			"body .main .menu1",
+			"item room-1 clear",
+			"item room-1 clear visible",
+			"&#9650",
+			"&#9650;",
+			"&#9660;",
+			"ui-icon",
+			"ui-icon-triangle-1-s",
+			"ui-icon ui-icon-triangle-1-s",
+			"roms",
+			"ui-icon ",
+			"ui-icon",
+			"ui-icon ui-icon-triangle-1-n",
+			"ui-icon-triangle-1-n",
+			"ui-icon ui-icon-triangle-1-n",
+			"span",
+			"ui-icon-triangle-1-s",
+			" ui-icon-triangle-1-s",
+			"ui-icon",
+			"childs-spin",
+			"spinner",
+			"spinner childs-spin ui-spinner-input",
+			"r1k",
+			"Nino1",
+			"room-childs inline center",
+			"html .ui-datepicker",
+			"sumSnow()",
+			"numRooms",
+			"sumRoomer();",
+			"del-room",
+			"body .main .menu1",
+			"parent",
+			"rooms-list",
+			"panel-content",
+			"content",
+			"sumRoomer()",
+			"add-room",
+			"child-ages",
+			"html .ui-datepicker .ui-datepicker-header",
+			"html .ui-datepicker",
+			"html .ui-datepicker table",
+			"html .ui-datepicker .ui-datepicker-header",
+			"simple",
+			"noselect",
+			"noselect simple",
+			"passengers-panel",
+			"panel-content",
+			"console",
+			"test",
+			"from_datepicker-wrapper",
+			"searcher-form-snow",
+			"visible",
+			"#searcher-form",
+			"sumRoomer()",
+			"numRooms",
+			"show-passengers-panela",
+			"show-passengers-panel",
+			"from_hotel_search",
+			"panel",
+			"container",
+			"#contactform",
+			"#contactform ",
+			"add-room",
+			"ui-button-text",
+			"▼",
+			"ui-icon",
+			"ui-icon-triangle-1-s",
+			"ui-icon",
+			"ui-icon ui-icon-triangle-1-s",
+			"rooms-list",
+			"room-name inline",
+			"monse",
+			"submenu"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"#FDF2E7",
+			"linear-gradient(to bottom,#ffd257 6%,#febb02 43%)",
+			"form",
+			"/img/icons/",
+			"test",
+			"#form",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/kooning/js/application.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 899,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": 20,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 90.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 102.0
+	},
+	"pinned_build_system": "",
+	"project": "m-kooning.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"js\\hotels\\catalogs.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
