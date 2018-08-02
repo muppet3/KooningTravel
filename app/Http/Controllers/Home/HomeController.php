@@ -188,7 +188,7 @@ class HomeController extends Controller
         }
         $data['fechas']=$fechas;
         $data['huespedes']=$huespedes;
-        
+        dd($data);
         return view('home/search',$data);
     }
     public function details($id, $hotel){
@@ -334,6 +334,7 @@ class HomeController extends Controller
         }
         $data['fechas']=$fechas;
         $data['huespedes']=$huespedes;
+        dd($data);
         return view('home/details',$data);
     }
     public function booking($room_id,$id){
@@ -510,10 +511,7 @@ class HomeController extends Controller
             echo "Email enviado";
         }else{
             echo"Mensaje enviado con anterioridad";
-        }
-        
-
-            
+        }      
     }
     public function stylefecha($fecha , $completo = 0){
         $dias = array('','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado','Domingo');
