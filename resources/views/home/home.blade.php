@@ -1,4 +1,6 @@
+@extends('layouts/structure')
 
+@section('content')
 
   
 
@@ -317,3 +319,4 @@
 </div>
 
 
+@stop

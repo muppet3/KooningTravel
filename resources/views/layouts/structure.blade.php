@@ -119,7 +119,7 @@
 
     <!--Aqui sera el contenedor -->
     <div class="main-desk" >
-      
+      @yield('content')
 
     </div>
 
