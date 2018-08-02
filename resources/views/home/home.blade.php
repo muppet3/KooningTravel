@@ -1,5 +1,5 @@
 
-<?php include('https://www.kooningtravel.com/intranet/lib/conexion.php');  //include(ROOT.'/intranet/lib/conexion.php'); ?>
+
 
 
 <!DOCTYPE html>
@@ -129,7 +129,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <div class="head home" > 
   <!--Comienza Header -->
-  <?php include ( ROOT."/application/views/home/header.php"); ?>
+  <?php //include ( ROOT."/application/views/home/header.php"); ?>
   <!--Termina Header-->
   
   <div class="bgv">
@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <span class="h2">Descansa en tu hotel ideal</span>
   <div class="box" >
       <!--Caja Home-Begin-->
-      <?php include( ROOT."/application/views/home/box.php"); ?>
+      <?php //include( ROOT."/application/views/home/box.php"); ?>
       <!--Caja Home End-->
     <a class="headf" href="/Contacto"></a> 
   </div>
@@ -180,7 +180,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>   
     </div>
    <!-- Slider -->
-<a class="azull" href="hotels/381/azul-beach-resort-riviera-maya-hotel-by-karisma?d=381&sd=<?php echo $entrada; ?>&ed=<?php echo $salida ?>&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0&r4a=0&r4k=0&r4k1a=0&r4k2a=0&r4k3a=0&r5a=0&r5k=0&r5k1a=0&r5k2a=0&r5k3a=0"><img src="/img/Home/azul.png" alt="Hotel Azul" ></a>
+<a class="azull" href="hotels/381/azul-beach-resort-riviera-maya-hotel-by-karisma?d=381&sd=<?php //// echo $entrada; ?>&ed=<?php // echo $salida ?>&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0&r4a=0&r4k=0&r4k1a=0&r4k2a=0&r4k3a=0&r5a=0&r5k=0&r5k1a=0&r5k2a=0&r5k3a=0"><img src="/img/Home/azul.png" alt="Hotel Azul" ></a>
   </div>
 
 </div>
@@ -199,16 +199,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="bloqueh"> 
 
         <div class="banerh" >
-            <a href="<?php echo $cancun;?>">
+            <a href="<?php // echo $cancun;?>">
               <img class="imgs sombraPromociones2" src="https://www.kooningtravel.com/img/playas/cancun.png" />
             </a> 
         </div>
 
         <div  class="banerh2">
-              <a href="<?php echo $Acapulco ?>"> 
+              <a href="<?php // echo $Acapulco ?>"> 
                 <img class="imgs sombraPromociones2" src="https://kooningtravel.com/img/playas/Acapulco.jpg" >
               </a>
-               <a class="mar" href="<?php echo $PuertoVallarta;?>">
+               <a class="mar" href="<?php // echo $PuertoVallarta;?>">
                 <img class="imgs sombraPromociones2"  src="https://kooningtravel.com/img/playas/PuertoVallarta.jpg" />
               </a>              
          </div>
@@ -220,16 +220,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="bloqueh"> 
 
           <div style="float:left;" class="banerh2">
-            <a href="<?php echo $Rivieranaya ?>"> 
+            <a href="<?php // echo $Rivieranaya ?>"> 
               <img class="imgs sombraPromociones2" src="https://kooningtravel.com/img/playas/RivieraNayarit.jpg" >
             </a>
-            <a class="mar" href="<?php echo $Mazatlan ?>"> 
+            <a class="mar" href="<?php // echo $Mazatlan ?>"> 
               <img class="imgs sombraPromociones2" src="https://kooningtravel.com/img/playas/Mazatlan.jpg" >
             </a>            
           </div>
 
           <div style="float:right;" class="banerh">
-            <a href="<?php echo $PlayadelCarmen ?>"> 
+            <a href="<?php // echo $PlayadelCarmen ?>"> 
               <img class="imgs sombraPromociones2" src="https://kooningtravel.com/img/playas/playadc.png" />
             </a>
           </div>
@@ -242,17 +242,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
           <div class="banerh">
-                 <a href="<?php echo $RivieraMaya;?>">
+                 <a href="<?php // echo $RivieraMaya;?>">
                     <img class="imgs sombraPromociones2" src="https://kooningtravel.com/img/playas/rivieramaya.png"  />
                   </a>
            </div> 
 
           <div class="banerh2">
-               <a href="<?php echo $ixtapa ?>">
+               <a href="<?php // echo $ixtapa ?>">
                 <img class="imgs sombraPromociones2" src="https://kooningtravel.com/img/playas/ixtapa.png" >
               </a> 
 
-               <a class="mar" href="<?php echo $Veracruz; ?>">
+               <a class="mar" href="<?php // echo $Veracruz; ?>">
                 <img class="imgs sombraPromociones2" src="https://kooningtravel.com/img/playas/Veracruz.jpg" >
               </a> 
           </div>
@@ -276,8 +276,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div id="anuncio4" class="posh slide"  data-ride="carousel"> 
         <!-- Carousel items -->
         <div class="carousel-inner" >
-          <div class="active item"><a href="<?php echo $Isla ?>"><img src="https://kooningtravel.com/img/Home/IslaMujeres1.png" alt="IslaMujeres1" /></a></div>
-          <div class="item"><a href="<?php echo $Isla ?>"><img src="https://kooningtravel.com/img/Home/IslaMujeres2.png" alt="IslaMujeres2" /></a></div>
+          <div class="active item"><a href="<?php // echo $Isla ?>"><img src="https://kooningtravel.com/img/Home/IslaMujeres1.png" alt="IslaMujeres1" /></a></div>
+          <div class="item"><a href="<?php // echo $Isla ?>"><img src="https://kooningtravel.com/img/Home/IslaMujeres2.png" alt="IslaMujeres2" /></a></div>
         </div>
         <!-- Carousel nav --> 
       </div>
@@ -298,17 +298,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
        <div class="banerh">
 
-            <a href="<?php echo $CiudaddeMexico ?>"> 
+            <a href="<?php // echo $CiudaddeMexico ?>"> 
               <img src="https://kooningtravel.com/img/ciudades/cdmx.png" class="sombraPromociones2 imgs" >
             </a> 
         </div>
 
 
  <div class="banerh2">
-             <a  href="<?php echo $Puebla ?>">
+             <a  href="<?php // echo $Puebla ?>">
                <img src="https://kooningtravel.com/img/ciudades/Puebla.jpg" class="sombraPromociones2 imgs" >
              </a>
-             <a class="mar" href="<?php echo $Queretaro ?>">
+             <a class="mar" href="<?php // echo $Queretaro ?>">
               <img src="https://kooningtravel.com/img/ciudades/Queretaro.jpg" class="sombraPromociones2 imgs" >
             </a> 
  </div>
@@ -323,10 +323,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
          <div style="float:left;" class="banerh2">
 
-              <a href="<?php echo $Merida ?>"> 
+              <a href="<?php // echo $Merida ?>"> 
                 <img src="https://kooningtravel.com/img/ciudades/Merida.jpg" class="sombraPromociones2 imgs" >
               </a>            
-              <a class="mar" href="<?php echo $Guanajuato ?>"> 
+              <a class="mar" href="<?php // echo $Guanajuato ?>"> 
                 <img src="https://kooningtravel.com/img/ciudades/Guanajuato.jpg" class="sombraPromociones2 imgs" >
               </a> 
 
@@ -335,7 +335,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           <div style="float:right;" class="banerh">
 
-            <a href="<?php echo $Guadalajara ?>"> 
+            <a href="<?php // echo $Guadalajara ?>"> 
               <img src="https://kooningtravel.com/img/ciudades/guadalajara.png" class="sombraPromociones2 imgs" >
             </a> 
 
@@ -348,16 +348,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="bloqueh"> 
 
           <div class="banerh">
-                <a href="<?php echo $Monterrey ?>">
+                <a href="<?php // echo $Monterrey ?>">
                  <img src="https://kooningtravel.com/img/ciudades/monterrey.png" class="sombraPromociones2 imgs" >
                </a>
            </div> 
 
           <div class="banerh2">
-              <a href="<?php echo $Oaxaca ?>">
+              <a href="<?php // echo $Oaxaca ?>">
                <img src="https://kooningtravel.com/img/ciudades/Oaxaca.jpg" class="sombraPromociones2 imgs" >
              </a>
-             <a class="mar" href="<?php echo $Morelia ?>">
+             <a class="mar" href="<?php // echo $Morelia ?>">
               <img src="https://kooningtravel.com/img/ciudades/Morelia.jpg" class="sombraPromociones2 imgs" >
             </a> 
 
@@ -385,8 +385,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div id="anuncio5" class="posh slide" data-ride="carousel"> 
         <!-- Carousel items -->
         <div class="carousel-inner" >
-          <div class="active item"><a href="<?php echo $SanCristobal ?>"><img src="https://kooningtravel.com/img/Home/SanCristobaldelasCasas1.png" alt="IslaMujeres1" /></a></div>
-          <div class="item"><a href="<?php echo $SanCristobal ?>"><img src="https://kooningtravel.com/img/Home/SanCristobaldelasCasas2.png" alt="IslaMujeres2" /></a></div>
+          <div class="active item"><a href="<?php // echo $SanCristobal ?>"><img src="https://kooningtravel.com/img/Home/SanCristobaldelasCasas1.png" alt="IslaMujeres1" /></a></div>
+          <div class="item"><a href="<?php // echo $SanCristobal ?>"><img src="https://kooningtravel.com/img/Home/SanCristobaldelasCasas2.png" alt="IslaMujeres2" /></a></div>
         </div>
         <!-- Carousel nav --> 
       </div>
@@ -457,7 +457,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<?php include(ROOT.'/application/views/commons/footer.php'); ?>
+<?php //include(ROOT.'/application/views/commons/footer.php'); ?>
 
 
 <script type="text/javascript">
