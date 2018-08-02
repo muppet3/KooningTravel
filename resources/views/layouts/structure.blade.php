@@ -15,7 +15,7 @@
       
        <!--Recursos JS -->
       <script language="javascript" type="text/javascript" src="/js/jquery.min.js"></script> 
-      
+
 
       <?php $path = $_SERVER['REQUEST_URI']; ?>
 
@@ -117,7 +117,7 @@
 
   <body>
 
-
+    <!--Aqui sera el contenedor -->
     <div class="main-desk" >
       
 
