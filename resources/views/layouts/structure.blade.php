@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
 
   <head>
 
         <!--Meta tags-->
       <meta charset="utf-8">
+      <meta name="csrf-token" content="{{ csrf_token() }}">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1" /> 
       <meta name="google-site-verification" content="JsJB8p487oyOxvtEpsDjpuQZJ7GeOMe22sQr39OBTQ0" >
@@ -14,7 +15,10 @@
       <title>Hoteles, traslados y tours - Kooning Travel - 01 800 890 8974</title>
       
        <!--Recursos JS -->
-      <script language="javascript" type="text/javascript" src="/js/jquery.min.js"></script> 
+      <script language="javascript" type="text/javascript" src="/js/jquery-3.3.1.js"></script> 
+      <script language="javascript" type="text/javascript" src="/js/select2.full.min.js"></script>
+      <script language="javascript" type="text/javascript" src="/js/jquery.min.js" ></script>
+      <script language="javascript" type="text/javascript" src="/js/bootstrap.min.js" ></script>
 
 
       <?php $path = $_SERVER['REQUEST_URI']; ?>
@@ -117,11 +121,9 @@
 
   <body>
 
-    <!--Aqui sera el contenedor -->
-    <div class="main-desk" >
+
       @yield('content')
 
-    </div>
 
 
 
@@ -140,21 +142,110 @@
 
   <?php //include(ROOT.'/application/views/commons/footer.php'); ?>
 
-     <!--Recursos JS -->
-  <script language="javascript" type="text/javascript" src="/js/bootstrap.min.js"></script>
-  <script language="javascript" type="text/javascript" src="/js/select2.full.min.js"></script>
-  <script language="javascript" type="text/javascript" src="/js/caja-reserva2.js" ></script> 
-  <script language="javascript" type="text/javascript" src="/js/caja/main.js" ></script> 
-  <script language="javascript" type="text/javascript" src="/js/general.js" ></script> 
+<div class="generic-fotter">
 
+          <div class="menus-fotter" >
+              <ul class="sub-fotter">
+
+            <div class="logo-fott">
+               <img src="/img/logo.png" class="logo-kooning" />
+            </div>
+
+
+               
+                <li><a href="/" >Página de Inicio</a></li>
+                <li><a href="/Nosotros" >Nosotros</a></li>
+                <li><a href="/Blog" >Blog</a></li>
+                <li><a href="/Seguridad" >Seguridad</a></li>
+                <li><a href="/Terminos" >Términos y condiciones</a></li>
+                <li><a href="/Privacidad" >Aviso de Privacidad</a></li>
+                <li><a href="/Site-Map" >Mapa del Sitio</a></li>
+                <div class="img-trip">
+                   <img src="https://kooningtravel.com/img/home/TripAdvisor.png" class="tripadvisor" alt="trip advisor">
+                </div>                
+              </ul>
+
+          
+              <ul class="sub-fotter" >            
+                 <h3>NUESTRAS REDES</h3>
+                  <li>
+                      <a href="https://www.facebook.com/kooningtraveloficial/" target="_blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>Facebook
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://twitter.com/kooningtravel"  target="_blank">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>Twitter
+                    </a>
+                  </li>
+                  <li>
+                      <a href="https://www.instagram.com/kooningtraveloficial/" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>Instagram
+                      </a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/channel/UClqrsSutkuFFdWIJTSDG1pw" target="_blank">
+                      <i class="fa fa-youtube" aria-hidden="true"></i>Youtube
+                    </a>
+                  </li>
+                  <div class="img-trip">
+                     <img src="https://kooningtravel.com/img/home/HechoEnMexico.png" class="made-in" alt="Echo en M&eacute;xico" />
+                  </div> 
+              </ul>
+
+              <ul class="sub-fotter" >
+                <h3>FORMAS DE PAGO</h3>
+                <li><i class="fa fa-cc-visa" aria-hidden="true" ></i>Visa</li>
+                <li><i class="fa fa-cc-mastercard" aria-hidden="true" ></i>Mastercard</li>
+                <li><i class="fa fa-paypal" aria-hidden="true" ></i>Paypal</li>
+              </ul>
+
+              <ul class="sub-fotter" >
+                <h3>CONTÁCTANOS</h3>
+                <a class="kooning-contact" href="/Contacto">
+                     <img src="https://kooningtravel.com/img/Home/Audifonos.png" alt="Llamanos">
+                </a>
+                <li><a href="/Contacto">¿Necesitas que te llamemos?</a></li>
+                <li><a href="skype:018008908974?call" ><i class="fa fa-phone" aria-hidden="true"></i>01 800 890 8974</a></li>
+                <li><a href="mailto:reservaciones@kooningtravel.com" >reservaciones@kooningtravel.com</a></li>
+              </ul>
+
+             <di class="info-fotter" ><p>© 2018. Todos los Derechos Reservados <strong>Kooning Travel.</strong></p></di>      
+         
+    </div>
+
+</div>        
+
+
+
+     <!--Recursos JS -->
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.min.css" />    
+
+    <!--JS-->
+   
+    
+  
+<!--
+  <script language="javascript" type="text/javascript" src="/js/caja-reserva2.js" ></script> 
+  <script language="javascript" type="text/javascript" src="/js/main.js" ></script> 
+  <script language="javascript" type="text/javascript" src="/js/general.js" ></script> 
+-->
   <!--Recursos CSS -->
-  <link type="text/css" rel="stylesheet" media="screen" href="/css/font-awesome.min.css">
-  <link type="text/css" rel="stylesheet" media="screen" href="/bower_components/ihover/src/ihover.css">
+  <link type="text/css" rel="stylesheet" media="screen" href="/css/kooningtravel.css">
   <link type="text/css" rel="stylesheet" media="screen" href="/css/select2.min.css" />
-  <link type="text/css" rel="stylesheet" media="screen" href="/css/estilo.css">
+  <link type="text/css" rel="stylesheet" media="screen" href="/css/font-awesome.min.css" />
+  <link type="text/css" rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Oswald:300,700">
+
+<!--
+  <link type="text/css" rel="stylesheet" media="screen" href="/css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" media="screen" href="/css/ihover.css">  
   <link type="text/css" rel="stylesheet" media="screen" href="/css/bootstrap.min.css" >
-  <link type="text/css" rel="stylesheet" media="screen" href="/css/caja/box.css" />
+  <link type="text/css" rel="stylesheet" media="screen" href="/css/box.css" />
   <link type="text/css" rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Oswald:300,700" >      
+-->
+
 
   </body>
 </html>
