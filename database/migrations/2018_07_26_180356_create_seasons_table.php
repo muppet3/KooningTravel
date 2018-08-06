@@ -17,8 +17,8 @@ class CreateSeasonsTable extends Migration
             $table->increments('id');
             $table->string('image');
             $table->mediumText('path');
-            $table->date('check_in');
-            $table->date('check_out');
+            $table->date('check_in')->nullable();
+            $table->date('check_out')->nullable();
             /*$table->timestamps('on');
             $table->timestamps('off');*/
             $table->timestamps();

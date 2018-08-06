@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTransfersTable extends Migration
+class CreateBlogsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,16 @@ class CreateTransfersTable extends Migration
      */
     public function up()
     {
-        Schema::create('transfers', function (Blueprint $table) {
+        Schema::create('blogs', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name',100);
-            $table->float('van');
-            $table->float('escalade');
-            $table->float('suburban');
-            $table->float('sprinter');
+            $table->string('title',45);
+            $table->string('location',45);
+            $table->string('image',45);
+            $table->string('description',45);
+            $table->integer('views');
             $table->timestamps();
-            $table->integer('cities_id')->unsigned();
+
+            $table->unsignedInteger('cities_id');
             $table->foreign('cities_id')->references('id')->on('cities');
         });
     }
@@ -33,7 +34,7 @@ class CreateTransfersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('buy_transfers');
-        Schema::dropIfExists('transfers');
+        Schema::dropIfExists('segments');
+        Schema::dropIfExists('blogs');
     }
 }

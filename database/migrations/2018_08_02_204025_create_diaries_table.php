@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTimesTable extends Migration
+class CreateDiariesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,17 @@ class CreateTimesTable extends Migration
      */
     public function up()
     {
-        Schema::create('times', function (Blueprint $table) {
+        Schema::create('diaries', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('schedule',45);
+            $table->string('ip',45);
+            $table->string('city',100);
+            $table->string('state',100);
+            $table->longText('url');
+            $table->string('length',45);
+            $table->string('latitude',45);
+            $table->timestamp('date')->nullable();
             $table->timestamps();
+
         });
     }
 
@@ -27,7 +34,6 @@ class CreateTimesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tickets');
-        Schema::dropIfExists('times');
+        Schema::dropIfExists('diaries');
     }
 }

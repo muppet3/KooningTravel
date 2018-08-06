@@ -36,6 +36,9 @@ class CreatePurchasesTable extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('buy_transfers');
+        Schema::dropIfExists('buy_activities');
+        Schema::dropIfExists('hotels');
         Schema::dropIfExists('purchases');
     }
 }

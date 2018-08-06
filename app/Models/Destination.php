@@ -13,7 +13,7 @@ class Destination extends Model
     	'name',
     	'type',
     ];
-    public function campaign(){
+    public function campaigns(){
     	return $this->belongsToMany(Campaign::class);
     }
 }

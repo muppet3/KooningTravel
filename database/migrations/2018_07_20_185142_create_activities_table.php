@@ -15,7 +15,18 @@ class CreateActivitiesTable extends Migration
     {
         Schema::create('activities', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name',100)->unique();
+            $table->longText('description');
+            $table->string('map',100);
+            $table->string('slogan',100);
+            $table->string('image',100);
+            $table->string('location',100);
+            $table->string('coordinates',300);
+            $table->string('background',10);
+            $table->string('terms',100);
             $table->timestamps();
+            $table->integer('category_id')->unsigned();
+            $table->foreign('category_id')->references('id')->on('categories');
         });
     }
 
@@ -26,6 +37,7 @@ class CreateActivitiesTable extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('tickets');
         Schema::dropIfExists('activities');
     }
 }

@@ -122,11 +122,286 @@
   <body>
 
 
+
+
+
+      <div class="head other" style="">
+        <div class="header" >
+  <div class="logo" > <a href="/" ></a> </div>
+  <div class="menu2" >
+    <ul class="product">
+
+      
+      <div class="bg-home" >
+          <li><a class="hotel <?php //// echo  $Mhoteles; ?>" href="/">HOTELES</a></li>
+          <li><a class="park <?php //// echo  $park; ?>" href="/Parques">PARQUES</a></li>
+          <li><a class="tour tour2 <?php // echo  $Mtours; ?>" href="/Tours">TOURS</a></li>
+          <li><a class="trasl <?php // echo  $Mtraslados; ?>" href="/Traslado">TRASLADOS</a></li>
+          <li class="fancyb" ><a class="auto <?php // echo  $Mautos; ?>" href="/Autos">AUTOS</a></li>
+          <li><a class="ofer <?php // echo  $Mofertas; ?>" href="/Promociones">OFERTAS</a></li>
+          <li><a class="blogh noselect" href="/Blog">BLOG</a></li>
+       </div>
+
+
+      <li class="month" ><a class="meses" data-fancybox data-src="#cboxLoadedContent" href="javascript:void(0);" ></a></li>
+    </ul>
+
+    <!--Parques-->
+    <ul style="display: none;" class="sub-nav nav1">
+      <li class="item2 xperiencia"> <a href="/Parques">Experiencias</a>
+        <ol style="display: none;" class="sublist" >
+            <li><a href="/Parques/Xcaret">Xcaret</a></li>
+            <li><a href="/Parques/Xel-ha">Xel-ha</a></li>
+            <li><a href="/Parques/Xplor">Xplor</a></li>
+            <li><a href="/Parques/Xplor-Fuego">Xplor Fuego</a></li>
+            <li><a href="/Parques/Xichen">Xichen</a></li>
+            <li><a href="/Parques/Xenotes">Xenotes</a></li>
+            <li><a href="/Parques/Xoximilco">Xoximilco</a></li>
+            <li><a href="/Parques/Xenses">Xenses</a></li>
+        </ol>
+       </li>
+      <li class="item2 dophin"><a href="/Parques">Dolphin Discovery</a> 
+        <ol style="display: none;" class="sublist">
+            <li><a href="/Parques/Royal-Garrafon">Royal Garraf&oacute;n</a></li>
+            <li><a href="/Parques/Royal-Swim">Dolphin Swim Adventure</a></li>
+            <li><a href="/Parques/Dolphin-Encounter">Dolphin Encounter</a></li>
+            <li><a href="/Parques/Columbus">Columbus</a></li>
+        </ol>
+      </li>
+      <li class="item2 riosecreto"> <a href="/Parques">Rio Secreto</a> 
+        <ol style="display: none;" class="sublist">
+            <li><a href="/Parques/Rio-Secreto">Solo entrada, Riviera Maya</a></li>
+            <li><a href="/Parques/Rio-Secreto-">Entrada + Transportaci&oacute;n, Riviera Maya</a></li>
+        </ol>
+      </li>
+      <li class="item2 cirque"> <a href="/Parques">Cirque Du Soleil</a> 
+        <ol style="display: none;" class="sublist">
+            <li><a href="/Parques/Cirque-Soleil">Solo entrada, Riviera Maya</a></li>
+            <li><a href="/Parques/Cirque-Soleil-">Entrada + Transportaci&oacute;n, Canc&uacute;n</a></li>
+            <li><a href="/Parques/Cirque-Du-Soleil">Entrada + Transportaci&oacute;n, Playa del Carmen</a></li>
+        </ol>
+      </li>
+    </ul>
+
+    <!--Tours-->
+    <ul style="display: none;" class="sub-nav nav2">
+      <li class="item2 mayalandt"><a href="/Tours/Chichen-Itza">Mayaland</a>
+        <ol style="display: none;" class="sublist">
+            <li><a href="/Tours/Chichen-Itza">Chichén Itz&aacute; Yucat&aacute;n, M&eacute;xico.</a></li>
+            <li><a href="/Tours/Uxmal">¡Uxmal, Yucat&aacute;n, M&eacute;xico.</a></li>
+            <li><a href="/Tours/Celestun">Celestun, Yucat&aacute;n, M&eacute;xico.</a></li>
+            <li><a href="/Tours/Parque-Ecologico">Sitios Arqueológicos Tulum y Parque Ecológico Tankah.</a></li>
+        </ol>
+      </li>
+      <li class="item2"><a href="/Tours/Catamaran">Catamaran</a> </li>
+      <li class="item2"><a href="/Tours/Holbox">Tours Holbox</a></li>      
+    </ul>
+
+    <div class="tel">
+      <div class="contact" >
+        <a href="skype:018008908974?call" class="mx"><span class="flag" ></span> México - 01 800 890 8974
+      </a>
+        <a href="mailto:reservaciones@kooningtravel.com" class="email"><i class="fa fa-envelope" aria-hidden="true"></i>reservaciones@kooningtravel.com</a></span>
+      </div>
+
+      <div class="zone">
+        <span class="top" ></span>
+        
+          <ul id="country">
+            <span class="title">N&uacute;meros desde M&eacute;xico</span>
+            <li><a href="skype:018008908974?call"><span class="st-NHTxt"><p class="sprite"></p>01 (800) 890-8974</span></a></li>
+            <li><a href="skype:5219988989954?call"><span class="st-NHTxt"><p class="sprite"></p>+521 (998) 898 9954</span></a></li>
+            <li><a href="skype:5219989148398?call"><span class="st-NHTxt"><p class="sprite"></p>+521 (998) 914 8398</span></a></li>
+          </ul>
+
+      </div>
+    </div>
+    <div id="shopcart" >
+      <a href="/Carrito"> <span id="cost" ><srong>0</srong></span></a>
+<aside style="display: none;"  class="contt" >
+  <label class="arr" ></label>
+  <div class="listcart" > 
+    <div class="headt" >
+      <span>Nombre</span>
+      <span>Precio</span>   
+    </div>
+    <hr>
+
+    <!--  -->
+   
+    <!--  --> 
+    <div class="tott" >
+      <span class="totat" >
+        <strong>Total </strong>
+      </span>
+      <span class="cantt" >
+        <strong>MXN $<?php //echo number_format($total,2); ?> </strong>
+      </span>
+    </div>
+
+    <div class="subt" >
+        <a class="btnt" href="/Carrito"></a>
+    </div>
+
+      <a class="teltt fa fa-phone" href="tel:018008908974">(01) 800 890 8974</a>
+  </div>
+
+</aside>
+        
+    </div>
+  </div>
+</div>
+      </div>
+      @yield('head')
       @yield('content')
 
 
 
-
+<!-- genericos y modales -->
+  <div id="cboxLoadedContent">
+    <h3>Pago con tarjeta de crédito</h3>
+    <div id="methodOptions">
+      <table id="ccDetail" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr class="title">
+            <th>Emisor</th>
+            <th>Planes de pago disponibles</th>
+          </tr>
+          <tr>
+            <td class="issuer">
+              <img src="/img/banco/paypal.png" alt="" class="bank2 spriteBank" title="Paypal" align="left">
+              <div>Paypal</div>
+            </td>            
+            <td class="plans"><ul class="fl">
+                <li class="msi"><span>3, 6, 9 y 12 </span><br> meses sin intereses*</li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td class="issuer"><img src="/img/home/bancos/Banorte.png" alt="" class="bank2 spriteBank" title="Banorte" align="left">
+              <div>Banorte</div></td>            
+            <td class="plans"><ul class="fl">
+                <li class="msi"><span>3, 6 y 9</span><br>
+                  meses sin intereses*</li>
+              </ul></td>
+          </tr>
+          <tr>
+            <td class="issuer"><img src="/img/home/bancos/Hsbc.png" alt="" class="bank3 spriteBank" title="HSBC" align="left">
+              <div>HSBC</div></td>
+            <td class="plans"><ul class="fl">
+                <li class="msi"><span>3, 6 y 9</span><br>
+                  meses sin intereses*</li>
+              </ul></td>
+          </tr>
+          <tr class="odd">
+            <td class="issuer"><img src="/img/home/bancos/Afirme.png" alt="" class="bank8 spriteBank" title="Afirme" align="left">
+              <div>Afirme</div></td>
+            <td class="plans"><ul class="fl">
+                <li class="msi"><span>3, 6 y 9</span><br>
+                  meses sin intereses*</li>
+              </ul></td>
+          </tr>
+          <tr>
+            <td class="issuer"><img src="/img/home/bancos/BanBajio.png" alt="" class="bank6 spriteBank" title="BanBajio" align="left">
+              <div>BanBajio</div></td>
+            <td class="plans"><ul class="fl">
+                <li class="msi"><span>3, 6 y 9</span><br>
+                  meses sin intereses*</li>
+              </ul></td>
+          </tr>
+          <tr class="odd">
+            <td class="issuer"><img src="/img/home/bancos/Banjercito.png" alt="" class="bank42 spriteBank" title="Banjercito" align="left">
+              <div>Banjercito</div></td>
+            <td class="plans"><ul class="fl">
+                <li class="msi"><span>3, 6 y 9</span><br>
+                  meses sin intereses*</li>
+              </ul></td>
+          </tr>
+          <tr>
+            <td class="issuer"><img src="/img/home/bancos/Banrejio.png" alt="" class="bank5 spriteBank" title="BanRegio" align="left">
+              <div>BanRegio</div></td>
+            <td class="plans"><ul class="fl">
+                <li class="msi"><span>3, 6 y 9</span><br>
+                  meses sin intereses*</li>
+              </ul></td>
+          </tr>
+          <tr class="odd">
+            <td class="issuer"><img src="/img/home/bancos/Santander.png" alt="" class="bank9 spriteBank" title="Santander" align="left">
+              <div>Santander</div></td>
+            <td class="plans"><ul class="fl">
+                <li class="msi"><span>3, 6 y 9</span><br>
+                  meses sin intereses*</li>
+              </ul></td>
+          </tr>
+          <tr>
+            <td class="issuer"><img src="/img/home/bancos/Famsa.png" alt="" class="bank4 spriteBank" title="Famsa" align="left">
+              <div>Famsa</div></td>
+            <td class="plans"><ul class="fl">
+                <li class="msi"><span>3, 6 y 9</span><br>
+                  meses sin intereses*</li>
+              </ul></td>
+          </tr>
+          <tr class="odd">
+            <td class="issuer"><img src="/img/home/bancos/Inbursa.png" alt="" class="bank7 spriteBank" title="Inbursa" align="left">
+              <div>Inbursa</div></td>
+            <td class="plans"><ul class="fl">
+                <li class="msi"><span>3, 6 y 9</span><br>
+                  meses sin intereses*</li>
+              </ul></td>
+          </tr>
+          <tr>
+            <td class="issuer"><img src="/img/home/bancos/Invex.png" alt="" class="bank14 spriteBank" title="InvexBanco" align="left">
+              <div>InvexBanco</div></td>
+            <td class="plans"><ul class="fl">
+                <li class="pagosFijos"><span>3, 6 y 9</span><br>
+                  pagos fijos mensuales</li>
+              </ul></td>
+          </tr>
+          <tr class="odd">
+            <td class="issuer"><img src="/img/home/bancos/Itau.png" alt="" class="bank24 spriteBank" title="Itaucard" align="left">
+              <div>Itaucard</div></td>
+            <td class="plans"><ul class="fl">
+                <li class="pagosFijos"><span>3, 6 y 9</span><br>
+                  pagos fijos mensuales</li>
+              </ul></td>
+          </tr>
+          <tr>
+            <td class="issuer"><img src="/img/home/bancos/Ixe.png" alt="" class="bank22 spriteBank" title="Ixe" align="left">
+              <div>Ixe</div></td>
+            <td class="plans"><ul class="fl">
+                <li class="pagosFijos"><span>3, 6 y 9</span><br>
+                  pagos fijos mensuales</li>
+              </ul></td>
+          </tr>
+          <tr class="odd">
+            <td class="issuer"><img src="/img/home/bancos/Liverpool.png" alt="" class="bank11 spriteBank" title="Premium Card Liverpool" align="left">
+              <div>Premium Card Liverpool</div>
+            </td>
+            <td class="plans"><ul class="fl">
+                <li class="pagosFijos"><span>3, 6 y 9</span><br>
+                  pagos fijos mensuales</li>
+              </ul></td>
+          </tr>
+          <tr>
+            <td class="issuer"><img src="/img/home/bancos/Mifel.png" alt="" class="bank25 spriteBank" title="Banca Mifel" align="left">
+              <div>Banca Mifel</div></td>
+            <td class="plans"><ul class="fl">
+                <li class="pagosFijos"><span>3, 6 y 9</span><br>
+                  pagos fijos mensuales</li>
+              </ul></td>
+          </tr>
+          <tr class="odd">
+            <td class="issuer"><img src="/img/home/bancos/Scotia.png" alt="" class="bank21 spriteBank" title="ScotiaBank" align="left">
+              <div>ScotiaBank</div></td>
+            <td class="plans"><ul class="fl">
+                <li class="pagosFijos"><span>3, 6 y 9</span><br>
+                  pagos fijos mensuales</li>
+              </ul></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
   <div style="display: none;" class='wait'>
     <div class='loader'>
@@ -189,7 +464,7 @@
                     </a>
                   </li>
                   <div class="img-trip">
-                     <img src="https://kooningtravel.com/img/home/HechoEnMexico.png" class="made-in" alt="Echo en M&eacute;xico" />
+                     <img src="https://kooningtravel.com/img/home/Hecho EnMexico.png" class="made-in" alt="// echo  en M&eacute;xico" />
                   </div> 
               </ul>
 
@@ -210,7 +485,7 @@
                 <li><a href="mailto:reservaciones@kooningtravel.com" >reservaciones@kooningtravel.com</a></li>
               </ul>
 
-             <di class="info-fotter" ><p>© 2018. Todos los Derechos Reservados <strong>Kooning Travel.</strong></p></di>      
+             <di class="info-fotter" ><p>© 2018. Todos los Der// echo s Reservados <strong>Kooning Travel.</strong></p></di>      
          
     </div>
 

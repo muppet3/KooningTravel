@@ -66,7 +66,7 @@ class PromotionsController extends Controller
         $data['tours']="";
         $data['traslados']="";
         $data['ofertas']="class=active";
-        dd($data);
+        //dd($data);
         return view('promotions/promociones',$data);
     }
 }

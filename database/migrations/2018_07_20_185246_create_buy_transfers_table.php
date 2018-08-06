@@ -15,7 +15,19 @@ class CreateBuyTransfersTable extends Migration
     {
         Schema::create('buy_transfers', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('airline',45);
+            $table->string('flight',45);
+            $table->string('type',20);
+            $table->string('transport',20);
+            $table->string('hotel',100);
+            $table->timestamp('check_in')->nullable();
+            $table->timestamp('check_out')->nullable();
             $table->timestamps();
+            $table->integer('transfers_id')->unsigned();
+            $table->integer('purchases_id')->unsigned();
+
+            $table->foreign('transfers_id')->references('id')->on('transfers');
+            $table->foreign('purchases_id')->references('id')->on('purchases');
         });
     }
 
