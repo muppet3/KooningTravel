@@ -1,10 +1,13 @@
+/*														^^^	   	  ___	   ---
+	***** Autores ******							   {"_"}  	 {º_º}    {^_^}
+	-> Ing. Jonas Santiz L. 			| UTC		    --    	  -- 	   --
+	-> Lic. Alan E. Gonzalez.			| UVM		   <(Ø)>;	 <(^)>;	  <(/)>;
+	-> Ing. Fernando Morales Robles.	| UPQROO	   _| |_ 	  | |     _| |_
+													    .js		 Adobe     .php
+					
+							<---https://www.kooningtravel.com 2018--->
 
-/*
-	-> Ing. Jonas Santiz L.
-	-> Lic. Alan E. Gonzalez
-	-> Ing. Fernando Morales R. 
-
-	<---Kooning Travel 2018--->
+					******************* Reestructuración - 01/08/2018 - **************************
 */
 
 

@@ -16,9 +16,18 @@
       
        <!--Recursos JS -->
       <script language="javascript" type="text/javascript" src="/js/jquery-3.3.1.js"></script> 
-      <script language="javascript" type="text/javascript" src="/js/select2.full.min.js"></script>
-      <script language="javascript" type="text/javascript" src="/js/jquery.min.js" ></script>
-      <script language="javascript" type="text/javascript" src="/js/bootstrap.min.js" ></script>
+      <script language="javascript" type="text/javascript" src="/js/bootstrap.min.js" ></script>      
+      <script language="javascript" type="text/javascript" src="/js/config-box.js" ></script> 
+      <script language="javascript" type="text/javascript" src="/js/general.js" ></script> 
+      <script language="javascript" type="text/javascript" src="/js/jquery.fancybox.min.js" ></script> 
+
+      <!--Recursos CSS -->
+      <link type="text/css" rel="stylesheet" media="screen" href="/css/kooningtravel.css">
+      <link type="text/css" rel="stylesheet" media="screen" href="/css/select2.min.css" />
+      <link type="text/css" rel="stylesheet" media="screen" href="/css/font-awesome.min.css" />
+      <link type="text/css" rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Oswald:300,700">
+      <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.min.css" /> 
+      <link rel="stylesheet" type="text/css" media="screen" href="/css/jquery.fancybox.min.css" /> 
 
 
       <?php $path = $_SERVER['REQUEST_URI']; ?>
@@ -269,7 +278,7 @@
           </tr>
           <tr>
             <td class="issuer">
-              <img src="/img/banco/paypal.png" alt="" class="bank2 spriteBank" title="Paypal" align="left">
+              <img src="/img/bancos/paypal.png" alt="" class="bank2 spriteBank" title="Paypal" align="left">
               <div>Paypal</div>
             </td>            
             <td class="plans"><ul class="fl">
@@ -278,7 +287,7 @@
             </td>
           </tr>
           <tr class="odd">
-            <td class="issuer"><img src="/img/home/bancos/Banorte.png" alt="" class="bank2 spriteBank" title="Banorte" align="left">
+            <td class="issuer"><img src="/img/bancos/Banorte.png" alt="" class="bank2 spriteBank" title="Banorte" align="left">
               <div>Banorte</div></td>            
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -286,7 +295,7 @@
               </ul></td>
           </tr>
           <tr>
-            <td class="issuer"><img src="/img/home/bancos/Hsbc.png" alt="" class="bank3 spriteBank" title="HSBC" align="left">
+            <td class="issuer"><img src="/img/bancos/Hsbc.png" alt="" class="bank3 spriteBank" title="HSBC" align="left">
               <div>HSBC</div></td>
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -294,7 +303,7 @@
               </ul></td>
           </tr>
           <tr class="odd">
-            <td class="issuer"><img src="/img/home/bancos/Afirme.png" alt="" class="bank8 spriteBank" title="Afirme" align="left">
+            <td class="issuer"><img src="/img/bancos/Afirme.png" alt="" class="bank8 spriteBank" title="Afirme" align="left">
               <div>Afirme</div></td>
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -302,7 +311,7 @@
               </ul></td>
           </tr>
           <tr>
-            <td class="issuer"><img src="/img/home/bancos/BanBajio.png" alt="" class="bank6 spriteBank" title="BanBajio" align="left">
+            <td class="issuer"><img src="/img/bancos/BanBajio.png" alt="" class="bank6 spriteBank" title="BanBajio" align="left">
               <div>BanBajio</div></td>
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -310,7 +319,7 @@
               </ul></td>
           </tr>
           <tr class="odd">
-            <td class="issuer"><img src="/img/home/bancos/Banjercito.png" alt="" class="bank42 spriteBank" title="Banjercito" align="left">
+            <td class="issuer"><img src="/img/bancos/Banjercito.png" alt="" class="bank42 spriteBank" title="Banjercito" align="left">
               <div>Banjercito</div></td>
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -318,7 +327,7 @@
               </ul></td>
           </tr>
           <tr>
-            <td class="issuer"><img src="/img/home/bancos/Banrejio.png" alt="" class="bank5 spriteBank" title="BanRegio" align="left">
+            <td class="issuer"><img src="/img/bancos/Banrejio.png" alt="" class="bank5 spriteBank" title="BanRegio" align="left">
               <div>BanRegio</div></td>
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -326,7 +335,7 @@
               </ul></td>
           </tr>
           <tr class="odd">
-            <td class="issuer"><img src="/img/home/bancos/Santander.png" alt="" class="bank9 spriteBank" title="Santander" align="left">
+            <td class="issuer"><img src="/img/bancos/Santander.png" alt="" class="bank9 spriteBank" title="Santander" align="left">
               <div>Santander</div></td>
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -334,7 +343,7 @@
               </ul></td>
           </tr>
           <tr>
-            <td class="issuer"><img src="/img/home/bancos/Famsa.png" alt="" class="bank4 spriteBank" title="Famsa" align="left">
+            <td class="issuer"><img src="/img/bancos/Famsa.png" alt="" class="bank4 spriteBank" title="Famsa" align="left">
               <div>Famsa</div></td>
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -342,7 +351,7 @@
               </ul></td>
           </tr>
           <tr class="odd">
-            <td class="issuer"><img src="/img/home/bancos/Inbursa.png" alt="" class="bank7 spriteBank" title="Inbursa" align="left">
+            <td class="issuer"><img src="/img/bancos/Inbursa.png" alt="" class="bank7 spriteBank" title="Inbursa" align="left">
               <div>Inbursa</div></td>
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -350,7 +359,7 @@
               </ul></td>
           </tr>
           <tr>
-            <td class="issuer"><img src="/img/home/bancos/Invex.png" alt="" class="bank14 spriteBank" title="InvexBanco" align="left">
+            <td class="issuer"><img src="/img/bancos/Invex.png" alt="" class="bank14 spriteBank" title="InvexBanco" align="left">
               <div>InvexBanco</div></td>
             <td class="plans"><ul class="fl">
                 <li class="pagosFijos"><span>3, 6 y 9</span><br>
@@ -358,7 +367,7 @@
               </ul></td>
           </tr>
           <tr class="odd">
-            <td class="issuer"><img src="/img/home/bancos/Itau.png" alt="" class="bank24 spriteBank" title="Itaucard" align="left">
+            <td class="issuer"><img src="/img/bancos/Itau.png" alt="" class="bank24 spriteBank" title="Itaucard" align="left">
               <div>Itaucard</div></td>
             <td class="plans"><ul class="fl">
                 <li class="pagosFijos"><span>3, 6 y 9</span><br>
@@ -366,7 +375,7 @@
               </ul></td>
           </tr>
           <tr>
-            <td class="issuer"><img src="/img/home/bancos/Ixe.png" alt="" class="bank22 spriteBank" title="Ixe" align="left">
+            <td class="issuer"><img src="/img/bancos/Ixe.png" alt="" class="bank22 spriteBank" title="Ixe" align="left">
               <div>Ixe</div></td>
             <td class="plans"><ul class="fl">
                 <li class="pagosFijos"><span>3, 6 y 9</span><br>
@@ -374,7 +383,7 @@
               </ul></td>
           </tr>
           <tr class="odd">
-            <td class="issuer"><img src="/img/home/bancos/Liverpool.png" alt="" class="bank11 spriteBank" title="Premium Card Liverpool" align="left">
+            <td class="issuer"><img src="/img/bancos/Liverpool.png" alt="" class="bank11 spriteBank" title="Premium Card Liverpool" align="left">
               <div>Premium Card Liverpool</div>
             </td>
             <td class="plans"><ul class="fl">
@@ -383,7 +392,7 @@
               </ul></td>
           </tr>
           <tr>
-            <td class="issuer"><img src="/img/home/bancos/Mifel.png" alt="" class="bank25 spriteBank" title="Banca Mifel" align="left">
+            <td class="issuer"><img src="/img/bancos/Mifel.png" alt="" class="bank25 spriteBank" title="Banca Mifel" align="left">
               <div>Banca Mifel</div></td>
             <td class="plans"><ul class="fl">
                 <li class="pagosFijos"><span>3, 6 y 9</span><br>
@@ -391,7 +400,7 @@
               </ul></td>
           </tr>
           <tr class="odd">
-            <td class="issuer"><img src="/img/home/bancos/Scotia.png" alt="" class="bank21 spriteBank" title="ScotiaBank" align="left">
+            <td class="issuer"><img src="/img/bancos/Scotia.png" alt="" class="bank21 spriteBank" title="ScotiaBank" align="left">
               <div>ScotiaBank</div></td>
             <td class="plans"><ul class="fl">
                 <li class="pagosFijos"><span>3, 6 y 9</span><br>
@@ -464,7 +473,7 @@
                     </a>
                   </li>
                   <div class="img-trip">
-                     <img src="https://kooningtravel.com/img/home/Hecho EnMexico.png" class="made-in" alt="// echo  en M&eacute;xico" />
+                     <img src="https://kooningtravel.com/img/home/HechoEnMexico.png" class="made-in" alt="echo  en M&eacute;xico" />
                   </div> 
               </ul>
 
@@ -491,35 +500,10 @@
 
 </div>        
 
+ 
 
 
-     <!--Recursos JS -->
 
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.min.css" />    
-
-    <!--JS-->
-   
-    
-  
-<!--
-  <script language="javascript" type="text/javascript" src="/js/caja-reserva2.js" ></script> 
-  <script language="javascript" type="text/javascript" src="/js/main.js" ></script> 
-  <script language="javascript" type="text/javascript" src="/js/general.js" ></script> 
--->
-  <!--Recursos CSS -->
-  <link type="text/css" rel="stylesheet" media="screen" href="/css/kooningtravel.css">
-  <link type="text/css" rel="stylesheet" media="screen" href="/css/select2.min.css" />
-  <link type="text/css" rel="stylesheet" media="screen" href="/css/font-awesome.min.css" />
-  <link type="text/css" rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Oswald:300,700">
-
-<!--
-  <link type="text/css" rel="stylesheet" media="screen" href="/css/font-awesome.min.css">
-  <link type="text/css" rel="stylesheet" media="screen" href="/css/ihover.css">  
-  <link type="text/css" rel="stylesheet" media="screen" href="/css/bootstrap.min.css" >
-  <link type="text/css" rel="stylesheet" media="screen" href="/css/box.css" />
-  <link type="text/css" rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Oswald:300,700" >      
--->
 
 
   </body>
