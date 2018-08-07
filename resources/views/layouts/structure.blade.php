@@ -134,7 +134,7 @@
 
 
 
-      <div class="head other" style="">
+      <div class="head other" style="{!! $background !!}">
         <div class="header" >
   <div class="logo" > <a href="/" ></a> </div>
   <div class="menu2" >
@@ -260,8 +260,9 @@
     </div>
   </div>
 </div>
-      </div>
       @yield('head')
+      </div>
+      @yield('video')
       @yield('content')
 
 

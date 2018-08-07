@@ -25,11 +25,13 @@ class HomeController extends Controller
         $data['tours']="";
         $data['traslados']="";
         $data['ofertas']=""; 
+        $data['background']="";
         
        return view('home/home',$data);
     }
     public function search($destino){
-        // validacion de fechas
+        // validacion de fechas   background-image: url(https://kooningtravel.com/img/Home/fondos/FondoHoteles.png
+        $data['background']="height: 270px; background-image: url(https://kooningtravel.com/img/Home/fondos/FondoHoteles.png";
         $errores= $this->validationrooms();
         $defaultquery=false;
         if(count($errores)>0){
@@ -188,7 +190,7 @@ class HomeController extends Controller
         }
         $data['fechas']=$fechas;
         $data['huespedes']=$huespedes;
-        dd($data);
+        //dd($data);
         return view('home/search',$data);
     }
     public function details($id, $hotel){

@@ -413,13 +413,13 @@ $(document).ready(function () {
 	
 /*Begin Config Search caja de Reservas*/
 $(document).ready(function(){
-
   $("#d").select2({
     //placeholder: "Buscarr...",
+    
     allowClear: true,
     minimumInputLength: 3,
     ajax: {
-      url: "/hotels/searchbyname",
+      url: "/list/destino",
       dataType: 'json',
       //delay: 1,
       data: function (params) {
@@ -464,14 +464,14 @@ $(document).ready(function(){
 
     switch (url) { 
     case '/fiestas': 
-      var $txt = "/hotels/search/"+destino+"?"+$( this ).serialize();
+      var $txt = "/search/"+destino+"?"+$( this ).serialize();
       $("#liga").text($txt);
       $("#ver").attr("href",$txt);
       event.preventDefault();
       break;
     default:
       $(".wait").show();
-      window.location = "/hotels/search/"+destino+"?"+$( this ).serialize();
+      window.location = "/search/"+destino+"?"+$( this ).serialize();
     }; 
 
 

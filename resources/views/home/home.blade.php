@@ -1,5 +1,5 @@
 @extends('layouts/structure')
-@section('head')
+@section('video')
 <style type="text/css">
 
    body {background-color: #FFF;}
