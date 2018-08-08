@@ -1,275 +1,275 @@
 @extends('layouts/structure')
 @section('video')
-<style type="text/css">
+  <style type="text/css">
 
-   body {background-color: #FFF;}
-  .header .menu2 .tel{ border-radius: 6px; height: 62px; background:#00000030; margin-top: 1px; }
-  .header .menu2 .product .bg-home{border-radius: 6px;  background:#00000030;width: 82%;height:97%;}
-  body .home { height:360px; }
-</style>
-<div class="head home" > 
-  
-  <div class="bgv">
-    <video preload="auto" poster="" autoplay loop muted playsinline >
-      <source src="https://www.kooningtravel.com/img/Home/fondos/video1.webm" type="video/webm" />
-    </video>
-  </div>
-  <span class="h2">Descansa en tu hotel ideal</span>
-  <div class="box" >
-      <!--Caja Home-Begin-->
-      <form id="contactform" action="https://kooningtravel.com/hotels/search" class="box-home" method="GET" >
-        <div class="hidden">
-          <input type="hidden" name="type" id="type" value="1" />
-          <input type="hidden" value="<?php // echo o $urls; ?>"  id="destino" />
-          <input type="hidden" data-placeholder="<?php // echo o $desti; ?>"   value="2" id="ds" name="ds" />
-        </div>
-
-          <div class="inline-block">
-            <select style="display:none;" autofocus="autofocus" required="true" data-placeholder="Destino..." class="destination form-control" id="d" name="d" multiple="multiple" >
-            </select>
+     body {background-color: #FFF;}
+    .header .menu2 .tel{ border-radius: 6px; height: 62px; background:#00000030; margin-top: 1px; }
+    .header .menu2 .product .bg-home{border-radius: 6px;  background:#00000030;width: 82%;height:97%;}
+    body .home { height:360px; }
+  </style>
+  <div class="head home" > 
+    
+    <div class="bgv">
+      <video preload="auto" poster="" autoplay loop muted playsinline >
+        <source src="https://www.kooningtravel.com/img/Home/fondos/video1.webm" type="video/webm" />
+      </video>
+    </div>
+    <span class="h2">Descansa en tu hotel ideal</span>
+    <div class="box" >
+        <!--Caja Home-Begin-->
+        <form id="contactform" action="https://kooningtravel.com/hotels/search" class="box-home" method="GET" >
+          <div class="hidden">
+            <input type="hidden" name="type" id="type" value="1" />
+            <input type="hidden" value="<?php // echo o $urls; ?>"  id="destino" />
+            <input type="hidden" data-placeholder="<?php // echo o $desti; ?>"   value="2" id="ds" name="ds" />
           </div>
-          <div class="inline-search">
-            <div class="input-style date-from noselect">
-              <div class="date-wrapper from_datepicker-wrapper"> 
-                <span class="aa"><?php // echo o $dia1; ?></span> 
-                  <span class="ee">
-                    <span class="ii"><?php // echo o $mes; ?></span> 
-                     <span class="uu"><?php // echo o $semana; ?></span> 
-                  </span>
+
+            <div class="inline-block">
+              <select style="display:none;" autofocus="autofocus" required="true" data-placeholder="Destino..." class="destination form-control" id="d" name="d" multiple="multiple" >
+              </select>
+            </div>
+            <div class="inline-search">
+              <div class="input-style date-from noselect">
+                <div class="date-wrapper from_datepicker-wrapper"> 
+                  <span class="aa">{{$checkin->day}}</span> 
+                    <span class="ee">
+                      <span class="ii">{{$checkin->NameMoth($checkin->month)}}</span> 
+                       <span class="uu">{{$checkin->DayWeek($checkin->dayOfWeek)}}</span> 
+                    </span>
+                  </div>
+                <input type="text" name="sd" id="from_hotel_search" class="datepicker from_datepicker" value="{{$checkin->toDateString()}}" placeholder="Del día ..." readonly  autocomplete="off" />
+              </div>
+              <div class="text date-nights noselect">
+               <span class="number-nights">4</span>
+              </div>
+              <div class="input-style date-to noselect">
+               
+                <div class="date-wrapper to_datepicker-wrapper" id="to_datepicker-wrapper">
+                  <span class="aa">{{$checkout->day}}</span> 
+                   <span class="ee"> 
+                      <span class="ii">{{$checkout->NameMoth($checkout->month)}}</span> 
+                      <span class="uu">{{$checkout->DayWeek($checkout->dayOfWeek)}}</span> 
+                   </span> 
+               </div>
+
+                <input type="text" name="ed" id="to_hotel_search" class="datepicker to_datepicker" value="{{$checkout}}" placeholder="al día ..." readonly autocomplete="off" />
+              </div>
+            </div>
+            <div class="inline-block">
+              <div class="inline-search passengers noselect">
+                <div class="input-style" id="show-passengers-panel"> <span class="rooms-icon" data-title="Habitaciones">1</span><span class="sep"></span><span class="r1a-icon" data-title="Adultos">2</span> <span class="childs-icon none" data-title="Niños">0</span>
+                  <input class="pax rooms" name="r" id="habita" value="1" type="hidden" />
                 </div>
-              <input type="text" name="sd" id="from_hotel_search" class="datepicker from_datepicker" value="<?php // echo o $entrada; ?>" placeholder="Del día ..." readonly  autocomplete="off" />
-            </div>
-            <div class="text date-nights noselect">
-             <span class="number-nights">4</span>
-            </div>
-            <div class="input-style date-to noselect">
+                <div id="passengers-panel" class="noselect simple" style="display: none;"> <span class="panel-arrow"></span>
+                  <div class="panel-content">
+                    <ul class="rooms-list">
+                      <li class="item room-1 clear visible" data-room="1">
+                        <div class="room-name inline">Hab 1</div>
+                        <div class="room-r1a inline center">
+                          <label class="sup-label">Adultos</label>
+                          <input class="spinner r1a-spin" name="r1a" id="adulto1"  value="2" readonly />
+                        </div>
+                        <div class="room-childs inline center">
+                          <label class="sup-label">Niños</label>
+                          <input class="spinner childs-spin" name="r1k" id="Nino1" value="0" readonly />
+                        </div>
+                        <div class="child-ages" style="display: none;">
+                          <label class="sup-label">Edades de los niños en fecha de viaje</label>
+                          <select class="small child-age-1" name="r1k1a" style="display: none;">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                          </select>
+                          <select class="small child-age-2" name="r1k2a" style="display: none;">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                          </select>
+                          <select class="small child-age-3" name="r1k3a" style="display: none;">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                          </select>
+                        </div>
+                      </li>
+                      <li class="item room-2 clear hidden" data-room="2"> <a class="del-room" href="#"> <span class="del-icon"/> </a>
+                        <div class="room-name inline">Hab 2</div>
+                        <div class="room-r1a inline center">
+                          <label class="sup-label">Adultos</label>
+                          <input class="spinner r1a-spin" name="r2a" id="adulto2" value="0" readonly />
+                        </div>
+                        <div class="room-childs inline center">
+                          <label class="sup-label">Niños</label>
+                          <input class="spinner childs-spin" name="r2k" id="Nino2" value="0" readonly />
+                        </div>
+                        <div class="child-ages" style="display: none;">
+                          <label class="sup-label">Edades de los niños en fecha de viaje</label>
+                          <select class="small child-age-1" name="r2k1a" style="display: none;">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                          </select>
+                          <select class="small child-age-2" name="r2k2a" style="display: none;">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                          </select>
+                          <select class="small child-age-3" name="r2k3a" style="display: none;">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                          </select>
+                        </div>
+                      </li>
+                      <li class="item room-3 clear hidden" data-room="3"> <a class="del-room" href="#"> <span class="del-icon"/> </a>
+                        <div class="room-name inline">Hab 3</div>
+                        <div class="room-r1a inline center">
+                          <label class="sup-label">Adultos</label>
+                          <input class="spinner r1a-spin" name="r3a" id="adulto3" value="0" readonly />
+                        </div>
+                        <div class="room-childs inline center">
+                          <label class="sup-label">Niños</label>
+                          <input class="spinner childs-spin" name="r3k" id="Nino3" value="0" readonly />
+                        </div>
+                        <div class="child-ages" style="display: none;">
+                          <label class="sup-label">Edades de los niños en fecha de viaje</label>
+                          <select class="small child-age-1" name="r3k1a" style="display: none;">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                          </select>
+                          <select class="small child-age-2" name="r3k2a" style="display: none;">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                          </select>
+                          <select class="small child-age-3" name="r3k3a" style="display: none;">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                          </select>
+                        </div>
+                      </li>
+                    </ul>
+                    <a class="add-room" href="#"><span class="add-icon"></span> Añadir Habitación</a> </div>
+                </div>
+              </div>
              
-              <div class="date-wrapper to_datepicker-wrapper" id="to_datepicker-wrapper">
-                <span class="aa"><?php // echo o $dia2; ?></span> 
-                 <span class="ee"> 
-                    <span class="ii"><?php // echo o $mes2; ?></span> 
-                    <span class="uu"><?php // echo o $semana2; ?></span> 
-                 </span> 
-             </div>
-
-              <input type="text" name="ed" id="to_hotel_search" class="datepicker to_datepicker" value="<?php // echo o $salida; ?>" placeholder="al día ..." readonly autocomplete="off" />
             </div>
-          </div>
-          <div class="inline-block">
-            <div class="inline-search passengers noselect">
-              <div class="input-style" id="show-passengers-panel"> <span class="rooms-icon" data-title="Habitaciones">1</span><span class="sep"></span><span class="r1a-icon" data-title="Adultos">2</span> <span class="childs-icon none" data-title="Niños">0</span>
-                <input class="pax rooms" name="r" id="habita" value="1" type="hidden" />
-              </div>
-              <div id="passengers-panel" class="noselect simple" style="display: none;"> <span class="panel-arrow"></span>
-                <div class="panel-content">
-                  <ul class="rooms-list">
-                    <li class="item room-1 clear visible" data-room="1">
-                      <div class="room-name inline">Hab 1</div>
-                      <div class="room-r1a inline center">
-                        <label class="sup-label">Adultos</label>
-                        <input class="spinner r1a-spin" name="r1a" id="adulto1"  value="2" readonly />
-                      </div>
-                      <div class="room-childs inline center">
-                        <label class="sup-label">Niños</label>
-                        <input class="spinner childs-spin" name="r1k" id="Nino1" value="0" readonly />
-                      </div>
-                      <div class="child-ages" style="display: none;">
-                        <label class="sup-label">Edades de los niños en fecha de viaje</label>
-                        <select class="small child-age-1" name="r1k1a" style="display: none;">
-                          <option value="0">0</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">10</option>
-                          <option value="11">11</option>
-                          <option value="12">12</option>
-                        </select>
-                        <select class="small child-age-2" name="r1k2a" style="display: none;">
-                          <option value="0">0</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">10</option>
-                          <option value="11">11</option>
-                          <option value="12">12</option>
-                        </select>
-                        <select class="small child-age-3" name="r1k3a" style="display: none;">
-                          <option value="0">0</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">10</option>
-                          <option value="11">11</option>
-                          <option value="12">12</option>
-                        </select>
-                      </div>
-                    </li>
-                    <li class="item room-2 clear hidden" data-room="2"> <a class="del-room" href="#"> <span class="del-icon"/> </a>
-                      <div class="room-name inline">Hab 2</div>
-                      <div class="room-r1a inline center">
-                        <label class="sup-label">Adultos</label>
-                        <input class="spinner r1a-spin" name="r2a" id="adulto2" value="0" readonly />
-                      </div>
-                      <div class="room-childs inline center">
-                        <label class="sup-label">Niños</label>
-                        <input class="spinner childs-spin" name="r2k" id="Nino2" value="0" readonly />
-                      </div>
-                      <div class="child-ages" style="display: none;">
-                        <label class="sup-label">Edades de los niños en fecha de viaje</label>
-                        <select class="small child-age-1" name="r2k1a" style="display: none;">
-                          <option value="0">0</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">10</option>
-                          <option value="11">11</option>
-                          <option value="12">12</option>
-                        </select>
-                        <select class="small child-age-2" name="r2k2a" style="display: none;">
-                          <option value="0">0</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">10</option>
-                          <option value="11">11</option>
-                          <option value="12">12</option>
-                        </select>
-                        <select class="small child-age-3" name="r2k3a" style="display: none;">
-                          <option value="0">0</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">10</option>
-                          <option value="11">11</option>
-                          <option value="12">12</option>
-                        </select>
-                      </div>
-                    </li>
-                    <li class="item room-3 clear hidden" data-room="3"> <a class="del-room" href="#"> <span class="del-icon"/> </a>
-                      <div class="room-name inline">Hab 3</div>
-                      <div class="room-r1a inline center">
-                        <label class="sup-label">Adultos</label>
-                        <input class="spinner r1a-spin" name="r3a" id="adulto3" value="0" readonly />
-                      </div>
-                      <div class="room-childs inline center">
-                        <label class="sup-label">Niños</label>
-                        <input class="spinner childs-spin" name="r3k" id="Nino3" value="0" readonly />
-                      </div>
-                      <div class="child-ages" style="display: none;">
-                        <label class="sup-label">Edades de los niños en fecha de viaje</label>
-                        <select class="small child-age-1" name="r3k1a" style="display: none;">
-                          <option value="0">0</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">10</option>
-                          <option value="11">11</option>
-                          <option value="12">12</option>
-                        </select>
-                        <select class="small child-age-2" name="r3k2a" style="display: none;">
-                          <option value="0">0</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">10</option>
-                          <option value="11">11</option>
-                          <option value="12">12</option>
-                        </select>
-                        <select class="small child-age-3" name="r3k3a" style="display: none;">
-                          <option value="0">0</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">10</option>
-                          <option value="11">11</option>
-                          <option value="12">12</option>
-                        </select>
-                      </div>
-                    </li>
-                  </ul>
-                  <a class="add-room" href="#"><span class="add-icon"></span> Añadir Habitación</a> </div>
-              </div>
-            </div>
-           
-          </div>
 
-          <div class="inline-block">
-            <button class="inline-button" id="enviar1" ></button>
-         </div>
+            <div class="inline-block">
+              <button class="inline-button" id="enviar1" ></button>
+           </div>
 
-          <div class="hidden" > 
-            <input type="hidden" value="0" name="r4a" />
-            <input type="hidden" value="0" name="r4k" />
-            <input type="hidden" value="0" name="r4k1a" />
-            <input type="hidden" value="0" name="r4k2a" />
-            <input type="hidden" value="0" name="r4k3a" />
-            <input type="hidden" value="0" name="r5a" />
-            <input type="hidden" value="0" name="r5k" />
-            <input type="hidden" value="0" name="r5k1a" />
-            <input type="hidden" value="0" name="r5k2a" />
-            <input type="hidden" value="0" name="r5k3a" />
-          </div>  
-</form>
+            <div class="hidden" > 
+              <input type="hidden" value="0" name="r4a" />
+              <input type="hidden" value="0" name="r4k" />
+              <input type="hidden" value="0" name="r4k1a" />
+              <input type="hidden" value="0" name="r4k2a" />
+              <input type="hidden" value="0" name="r4k3a" />
+              <input type="hidden" value="0" name="r5a" />
+              <input type="hidden" value="0" name="r5k" />
+              <input type="hidden" value="0" name="r5k1a" />
+              <input type="hidden" value="0" name="r5k2a" />
+              <input type="hidden" value="0" name="r5k3a" />
+            </div>  
+    </form>
 
-      <!--Caja Home End-->
-    <a class="headf" href="/Contacto"></a> 
+        <!--Caja Home End-->
+      <a class="headf" href="/Contacto"></a> 
+    </div>
+    <a class="explor" href="https://www.kooningtravel.com/Explora" >Explora tu próximo viaje</a> 
   </div>
-  <a class="explor" href="https://www.kooningtravel.com/Explora" >Explora tu próximo viaje</a> 
-</div>
 @stop
 
 @section('content')
