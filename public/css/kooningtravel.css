@@ -40,7 +40,14 @@ body { margin:0px; padding: 0px; text-align:center; }
 .listcart .tott span { width: 50%; color: #FFF; margin-top : 5px; }
 .listcart .teltt { background: url(https://www.kooningtravel.com/img/Home/flags/flags.png) no-repeat right center transparent; width: 53%; color: #FFF; margin: 10px 0px; text-align: left; font-weight: 600; font-size: 13px; }
 .del-room{ cursor: pointer; }
-.container{ margin: 0px auto;float: none; }
+
+/*Search*/
+body .serach-body{ width: 100%; display: inline-block; background:#F0F0F0;  }
+body .serach-body .container .bread-crub{ padding:15px; color:#000; }
+body .serach-body .container .bread-crub .icon-home{ color:#000; }
+
+
+
 #header{width: 100%; }
 #search-tabs-2{ display: inline-block; }
 .reset .col-md-3{ width: 24%; height: 100%;  padding:0px; display: inline-block; float: left; }
@@ -643,7 +650,19 @@ body .centerh .fott .mar { margin: 0px 55px; }
 /*Begin new Kooningtravel css*/
 body .generic-fotter, body .generic-fotter a, body .generic-fotter p, body .generic-fotter ul,body .generic-fotter li,body .generic-fotter span, body .generic-fotter div, body .generic-fotter input, body .generic-fotter b, body .generic-fotter textarea, body .generic-fotter form, body .generic-fotter label, body .generic-fotter img, body .generic-fotter select, body .generic-fotter h1, body .generic-fotter h2, body .generic-fotter h3, body .generic-fotter h4, body .generic-fotter h5, body .generic-fotter h6 { color:#FFF; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: normal; display: inline-block; float: left; margin: 0px; border: 0px; padding: 0px; text-decoration: none; outline: none; }
 body .generic-fotter{ background: #1B242A;width: 100%;text-align:center; }
-body .generic-fotter .menus-fotter {width: 78%;float:none;text-align: center;margin-top: 30px;}
+body .info-kooning{ width: 100%;
+    display: inline-block;
+    float: left;
+    margin: 10px 0px 15px 0px; }
+body .info-kooning img{ display: inline-block;
+    padding: 0px;
+    border: 0px;
+    width: 170px;
+    height: 66px; }
+
+body .info-kooning .mar{     margin: 0px 55px; }    
+
+body .generic-fotter .menus-fotter {width: 78%;float:none;text-align: center;}
 body .generic-fotter .menus-fotter .sub-fotter{height: 337px;border-right: 1px solid #222f37;border-bottom: 1px solid #222f37;width: 261px;text-align: center;}
 body .generic-fotter .menus-fotter ul:nth-child(4) { border-right: 0px; }
 body .generic-fotter .menus-fotter ul:nth-child(2) li, body .generic-fotter .menus-fotter ul:nth-child(3) li { margin:0px 0px 15px 0px; }

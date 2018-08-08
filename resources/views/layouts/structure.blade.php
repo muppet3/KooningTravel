@@ -425,16 +425,15 @@
     </div>
   </div>
 
-  <div class="centerh">
-    <div class="bloque fott" > <img src="https://www.kooningtravel.com/images/logo-vive-mexico.png" > <img class="mar" src="https://www.kooningtravel.com/images/logo-sectur.png" > <img src="https://www.kooningtravel.com/images/logo-banorte.png" > <img class="mar" src="https://www.kooningtravel.com/images/logo-paypal.png" > <img src="https://www.kooningtravel.com/images/logo-sitio-seguro.png" > 
-
-    </div>
- </div>
-
-
-
+<div class="info-kooning" > 
+  <img src="https://www.kooningtravel.com/images/logo-vive-mexico.png" > 
+  <img class="mar" src="https://www.kooningtravel.com/images/logo-sectur.png" > 
+  <img src="https://www.kooningtravel.com/images/logo-banorte.png" > 
+  <img class="mar" src="https://www.kooningtravel.com/images/logo-paypal.png" > 
+  <img src="https://www.kooningtravel.com/images/logo-sitio-seguro.png" > 
+</div>
+      
 <div class="generic-fotter">
-
           <div class="menus-fotter" >
               <ul class="sub-fotter">
 
