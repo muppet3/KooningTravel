@@ -236,6 +236,23 @@ td.issuer img { margin: 0 .5em 0 0; float: left; }
 #promo .contp #contactform .inline-date .caln .number-nights {  height: 100%; width: 69%; color: #FFF; float: none; line-height: 30px; font-size: 15px; font-weight: bold; }
 #promo .contp #contactform .param { display: none; }
 
+
+
+/*Autocomplete*/
+body .select2-container{  }
+body .select2-container, body .select2-container span, body .select2-container ul, body .select2-container ul li, body .select2-container strong { width:100%; text-align:left; color:#666;  font-family:Roboto,sans-serif; font-size: 13px; display: inline-block; float: left; margin: 0px; border: 0px; padding: 0px; text-decoration: none; outline: none; list-style: none; height:auto; }
+body .select2-container strong { background: #FFF; }
+body .select2-results__options ul li strong { margin:5px 0px;  }
+body .select2-results__options  ul { background:#ffc107; }
+body .select2-results__options  ul li { font-family:'Roboto', sans-serif; border-bottom:1px dotted #FFF; color:#2b3643;margin: 3px 0px 0px;font-weight: normal;height:auto;font-size: 15px;}
+body .selection .select2-selection .select2-selection__rendered{ position: relative; overflow: hidden; text-align:center; }
+body .selection .select2-selection .select2-selection__rendered .select2-selection__clear{ text-align: right; position: absolute; left: 0px; top: 0px; z-index: 200;  }
+body .selection .select2-selection .select2-selection__rendered .select2-selection__choice{ position: absolute; top: 0px; left: 0px; z-index: 100; line-height: 44px; text-indent: 27px;  }
+body .select2-selection__choice__remove{ position: absolute; top: 0px; left: 0px; }
+
+
+
+
 /*Calendario CSS*/
 html .ui-datepicker.ui-datepicker-multi { width: auto; float: none; margin-left: -190px; }
 html .ui-datepicker-trigger.ui-button-icon-only .ui-button-text { padding: 0 }
@@ -299,58 +316,13 @@ td.date-to-select a { background: #E61B76!important; text-decoration: none !impo
 .ui-datepicker-div-from td.date-to-select a { background: #bababa; background: #eee url(https://www.kooningtravel.com/img/cal-to-greyarrow.png) -1px -4px no-repeat !important; border-radius: 0 6px 6px 0 }
 td.ui-datepicker-other-month.ui-datepicker-unselectable span { background: none !important; border: 1px solid transparent !important }
 
-/*Autocomplete CSS*/
-.ui-autocomplete-category { border-bottom: 1px solid #ccc !important; background: #f6f6f6; background: -moz-linear-gradient(top, #FFF 0, #ededed 100%); background: -webkit-linear-gradient(top, #FFF 0, #ededed 100%); background: -ms-linear-gradient(top, #FFF 0, #ededed 100%); background: linear-gradient(top, #FFF 0, #ededed 100%); box-shadow: 0 1px 1px #e6e6e6; padding: 3px 15px 0 15px; font-family: Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 12px; color: #444; cursor: default }
-html .ui-autocomplete.ui-menu { background: #fff; -o-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -ms-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); max-width: 500px; float: left; border-radius: 5px; padding: 0; overflow: hidden; z-index: 9999; position: relative }
-html.hsla .ui-autocomplete.ui-menu, html.hsla .ui-autocomplete-panel { overflow: hidden; padding-top: 0; padding-bottom: 0; border-radius: 5px; background: #fff; -o-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -ms-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); width: auto !important }
-html.no-boxshadow .ui-autocomplete.ui-menu, html.no-boxshadow .ui-autocomplete-panel { border-radius: 5px; float: none; overflow: hidden; padding-top: 3px; padding-bottom: 3px; background: #fff; background-color: #fff; filter: progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=180, Strength=5) progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=90, Strength=3) progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=270, Strength=3) }
-html .ui-autocomplete.ui-menu li { float: none; margin: 0; width: auto; position: relative }
-html .ui-autocomplete.ui-menu li a { display: block; color: #444; font-size: 14px; font-family: Helvetica, Arial, sans-serif; margin: 0; width: 100%; clear: both; box-sizing: border-box; cursor: pointer; min-width: 350px }
-html .ui-autocomplete.ui-menu li .sub-info { display: block; font-size: 11px; color: #888; padding-top: 2px }
-html .ui-autocomplete.ui-menu li .flag { display: block; padding-left: 20px; color: #888; float: right; width: 105px; overflow: hidden; position: absolute; right: 0; top: 8px; font-size: 13px; line-height: 15px; background-position: 0 2px; font-weight: normal }
-html .ui-autocomplete.ui-menu .ui-menu-item .ui-menu-hotels .flag { top: 20%; padding-right: 30px }
-html .ui-autocomplete.ui-menu .ui-menu-item .ui-menu-hotels { padding: 6px 170px 6px 15px }
-html .ui-autocomplete.ui-menu .ui-menu-item .ui-menu-hotels.veroski-zone { padding: 18px 170px 18px 15px }
-html .ui-autocomplete.ui-menu .ui-menu-item .ui-menu-hotels.veroski-zone .sub-info { color: #444 }
-html .ui-autocomplete.ui-menu li .air-codint { color: #fff; border-radius: 5px; float: right; width: 35px; text-align: center; font-size: 13px; margin-left: 25px; padding-top: 1px; font-weight: bold; background: #ccc }
-html .ui-autocomplete.ui-menu .ui-state-focus .air-codint { background: #444 !important }
-html .ui-autocomplete.ui-menu .ui-state-focus .flag { color: #444 }
-html .ui-autocomplete.ui-menu .ui-menu-item a { padding: 7px 140px 6px 15px; position: relative; border-radius: 0; text-decoration: none }
-html .ui-autocomplete .ui-menu-headitem.no-results { padding: 20px 15px 25px 15px; background: #fff; color: #95a2ad; text-align: center }
-html .ui-autocomplete .ui-menu-headitem.no-results b { color: #4d6a8e }
-html .ui-autocomplete .ui-menu-headitem.no-results span { width: 278px; display: block; margin-top: 5px; margin-bottom: 20px }
-.ui-autocomplete.ui-menu .no-results .all-destinations { width: auto; min-width: 0; margin-top: 11px; border: 1px solid #abbbce; border-radius: 6px; padding: 4px 10px; color: #4d6a8e; box-shadow: none !important; display: inline; background: 0 }
-.ui-autocomplete.ui-menu .no-results .all-destinations:hover { background: #ccd5e0 !important; border: 1px solid #5d7ba0 !important }
-.ui-autocomplete.ui-menu .no-results .all-destinations:active { background: #4d6a8e !important; border: 1px solid #4d6a8e !important; color: #fff !important }
-html .ui-autocomplete.ui-menu .ui-menu-item .ui-menu-info { width: 30px; position: absolute; top: 0; right: 0; border-left: 1px solid #cdcdcd; min-width: 0; padding: 0; background: url(https://www.kooningtravel.com/img/info-icon.png) center center no-repeat; display: block; border-radius: 0; opacity: .35; height: 100% }
-html .ui-autocomplete.ui-menu .ui-menu-item .ui-menu-info:hover { opacity: 1; background-color: #fff; border-left: 1px solid #f7efc5 }
-html .ui-autocomplete.ui-menu .ui-menu-item .ui-menu-info:active { background-color: #f7efc5 }
-html .ui-autocomplete.ui-menu .ui-menu-item a.sup { padding: 16px 140px 15px 15px }
-html .ui-autocomplete.ui-menu .ui-menu-item .sup .air-codint { background: #444 }
-html .ui-autocomplete.ui-menu .ui-menu-item .sup .flag { top: 17px }
-html .ui-autocomplete .ui-menu-headitem { padding: 5px 15px 3px 15px; background: #f6f6f6; color: #aaa; font-size: 14px }
-html .ui-autocomplete-loading { background: #fff url(https://www.kooningtravel.com/img/spin-24-bbb-pad.gif) right center no-repeat }
-html .ui-autocomplete-panel .ui-autocomplete-list-item .ui-autocomplete-query { color: #444 }
-.lt-ie8 .ui-autocomplete.ui-menu li a { font-weight: normal }
-html .ui-autocomplete.ui-menu .ui-state-focus a { background: #fff8d2; box-shadow: 0 -1px 0 #f7efc5, 0 1px 0 #f7efc5; z-index: 1 }
-html .ui-autocomplete { width: auto; zoom: 1; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; position: static }
-html .ui-autocomplete-panel .ui-autocomplete-list { padding: 0; border: 0 none }
-html .ui-autocomplete-panel .ui-autocomplete-list-item { border: 0 none; cursor: pointer; font-weight: normal; margin: 0; padding: 3px 5px; text-align: left }
-html .ui-autocomplete-panel .ui-autocomplete-table { border-collapse: collapse; width: 100% }
-html .ui-autocomplete-panel .ui-autocomplete-table td { border: 0 none; padding: 4px 10px 4px 10px }
-html .ui-autocomplete .ui-button-icon-only .ui-button-text { padding: .29em }
-html .ui-autocomplete-multiple-container { clear: left; cursor: text; list-style-type: none; margin: 0; min-height: 1px; overflow: hidden; width: 400px }
-html .ui-autocomplete-multiple-container.ui-inputfield { padding: 0 }
-html .ui-autocomplete-token { cursor: default; float: left; overflow: hidden; padding: 1px 3px; white-space: nowrap; position: relative; margin: 2px }
-html .ui-autocomplete-token-label { display: block; padding: 0 2.1em 0 .5em }
-html .ui-autocomplete-token-icon { margin-top: -9px; position: absolute; right: .2em; top: 50%; cursor: pointer }
-html .ui-autocomplete-input-token { float: left; list-style-type: none; margin: 1px; padding: 0 }
-html .ui-autocomplete-input-token input { border: 0 none; width: 140px; outline: medium none; background-color: transparent; margin: 2px }
+
+
+
 .ui-spinner { width: 95px!important; height: 29px!important; position: relative; display: block!important; float: left!important; -webkit-user-select: none; -moz-user-select: -moz-none; -o-user-select: -moz-none; -khtml-user-select: none; -ms-user-select: none; user-select: none; overflow: visible }
+
+
 .h2 { text-align: center!important; font-family: HelveticaThin, Helvetica, Arial, sans-serif!important; color: #4d6a8e; font-size: 32px!important; margin: 30px 0px!important; width: 100%!important; height: 38px!important; }
-.carousel { position: relative; margin: 0 auto; }
-.carousel li { float: left }
-.search { text-align: center!important; margin-bottom: 4px!important; float: none!important; }
 
 .box-home .inline-search { 
     border-radius: 6px;

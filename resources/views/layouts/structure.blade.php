@@ -23,7 +23,6 @@
 
       <!--Recursos CSS -->
       <link type="text/css" rel="stylesheet" media="screen" href="/css/kooningtravel.css">
-      <link type="text/css" rel="stylesheet" media="screen" href="/css/select2.min.css" />
       <link type="text/css" rel="stylesheet" media="screen" href="/css/font-awesome.min.css" />
       <link type="text/css" rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Oswald:300,700">
       <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.min.css" /> 
