@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers\Home;
 
-use Illuminate\Http\Request;
-
-use App\Models\Purchase;
-use App\Models\Campaign;
-use App\Models\Destination;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Helpers\Hoteldo;
+use App\Models\Campaign;
+use App\Models\Destination;
+use App\Models\Purchase;
+use Carbon\Carbon;
+
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -20,6 +21,8 @@ class HomeController extends Controller
      */
     
     public function home(){
+        $data['checkin']=Carbon::now()->addDay(4);
+        $data['checkout']=Carbon::now()->addDay(8);
         $data['home']="class=active";
         $data['parques']="";
         $data['tours']="";
