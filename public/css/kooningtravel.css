@@ -184,10 +184,16 @@ a:link, a:visited{ text-decoration: none;  }
 
 
 /*Fancy box*/
-#cboxLoadedContent{ border-radius:6px; text-align: center; width: 553px; display:none; background:#FFF; z-index: 100; }
-#cboxLoadedContent h3{ text-indent:10px; display:inline-block; text-align:left; font-size:1.33em; width:100%; }
+#cboxLoadedContent{ display: none;
+	border-radius:6px; text-align:center; }
+#cboxLoadedContent h3{ display: inline-block;
+    text-align: left;
+    font-size: 1.33em;
+    width:100%;
+    margin: 0px 0px 10px 0px;
+    float:left; }
 #methodOptions{ margin: 0px auto; float: none; width: 100%; font-size: 13px; line-height: 1.5; font-family:Arial,sans-serif; font-size:13px; }
-#ccDetail{ margin: 0px auto; float: none; width: 95%; }
+#ccDetail{  }
 tr.title th { border-color: #DDD; border-style: solid; border-width: 1px; padding: .5em; background: #f5f5f5; font-weight: 700; color: #565656; }
 #ccDetail td { vertical-align: middle; }
 td.issuer { padding: .25em 1em .5em .25em; width: 185px; }
@@ -240,18 +246,17 @@ td.issuer img { margin: 0 .5em 0 0; float: left; }
 
 /*Autocomplete*/
 body .select2-container{  }
-body .select2-container, body .select2-container span, body .select2-container ul, body .select2-container ul li, body .select2-container strong { width:100%; text-align:left; color:#666;  font-family:Roboto,sans-serif; font-size: 13px; display: inline-block; float: left; margin: 0px; border: 0px; padding: 0px; text-decoration: none; outline: none; list-style: none; height:auto; }
+body .select2-container, body .select2-container span, body .select2-container ul, body .select2-container ul li, body .select2-container strong { text-align:left; color:#666;  font-family:Roboto,sans-serif; display: inline-block; float: left; margin: 0px; text-decoration: none; outline: none; list-style: none; height:auto; }
 body .select2-container strong { background: #FFF; }
 body .select2-results__options ul li strong { margin:5px 0px;  }
-body .select2-results__options  ul { background:#ffc107; }
-body .select2-results__options  ul li { font-family:'Roboto', sans-serif; border-bottom:1px dotted #FFF; color:#2b3643;margin: 3px 0px 0px;font-weight: normal;height:auto;font-size: 15px;}
+body .select2-results__options  ul { background:#a7c0e7; }
+body .select2-results__options  ul li { font-family:'Roboto', sans-serif; border-bottom:1px dotted #FFF; color:#1d1b19;font-weight: normal;height:auto;font-size: 15px;}
 body .selection .select2-selection .select2-selection__rendered{ position: relative; overflow: hidden; text-align:center; }
 body .selection .select2-selection .select2-selection__rendered .select2-selection__clear{ text-align: right; position: absolute; left: 0px; top: 0px; z-index: 200;  }
 body .selection .select2-selection .select2-selection__rendered .select2-selection__choice{ position: absolute; top: 0px; left: 0px; z-index: 100; line-height: 44px; text-indent: 27px;  }
 body .select2-selection__choice__remove{ position: absolute; top: 0px; left: 0px; }
-
-
-
+.select2-results__options, .select2-results__options li, .select2-results__options strong, .select2-results__options ul, .select2-results__options li  { width: 100%; }
+ 
 
 /*Calendario CSS*/
 html .ui-datepicker.ui-datepicker-multi { width: auto; float: none; margin-left: -190px; }
@@ -319,37 +324,22 @@ td.ui-datepicker-other-month.ui-datepicker-unselectable span { background: none 
 
 
 
-.ui-spinner { width: 95px!important; height: 29px!important; position: relative; display: block!important; float: left!important; -webkit-user-select: none; -moz-user-select: -moz-none; -o-user-select: -moz-none; -khtml-user-select: none; -ms-user-select: none; user-select: none; overflow: visible }
+body .home .h2, body .other .h2 { text-align: center; font-family: HelveticaThin, Helvetica, Arial, sans-serif; color:#FFF; font-size: 32px; margin: 30px 0px; width: 100%; height: 38px; }
+body .other .h2 { color:#4d6a8e; }
 
+body .other .fechas-info{     margin: 0px auto;
+    float: left;
+    margin-top: 0px;
+    font-size: 20px;
+    color: #fff;
+    width: 100%;
+    text-align: center; }
 
-.h2 { text-align: center!important; font-family: HelveticaThin, Helvetica, Arial, sans-serif!important; color: #4d6a8e; font-size: 32px!important; margin: 30px 0px!important; width: 100%!important; height: 38px!important; }
+.box-home .inline-search { border-radius: 6px; background: #FFF; text-align: left; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); margin: 0px 7px; }
 
-.box-home .inline-search { 
-    border-radius: 6px;
-    background:#FFF;
-    text-align: left;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-    margin:0px 7px;
-}
+.box-home .inline-block .inline-button { padding: 0px; margin: 0px; border: 0px; display: -moz-inline-stack; display: inline-block; *display: inline;
+zoom: 1; border-radius: 6px; width: 70px; height: 45px; margin-left: 7px; margin-right: 2px; line-height: 150%; vertical-align: top; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), inset 0 -1px rgba(0, 0, 0, 0.15), inset 0 1px rgba(255, 255, 255, 0.35); background: url(https://kooningtravel.com/img/search.png) no-repeat center center #E61B76; }
 
-.box-home .inline-block .inline-button { 
-padding: 0px;
-margin: 0px;
-border: 0px;
-display: -moz-inline-stack; 
-display: inline-block; 
-*display: inline; 
-zoom: 1;
-border-radius: 6px; 
-width: 70px; 
-height: 45px; 
-margin-left:7px;
-margin-right: 2px;
-line-height: 150%;
-vertical-align: top; 
-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), inset 0 -1px rgba(0, 0, 0, 0.15), inset 0 1px rgba(255, 255, 255, 0.35); 
-background: url(https://kooningtravel.com/img/search.png) no-repeat center center #E61B76;
-}
 
 
 
@@ -436,7 +426,6 @@ select.small:focus { outline: 0; border: 1px solid #E61B76; box-shadow: 0 0 0 1p
 .head .select2-selection__rendered { width:100%; font-size: 20px !important; color: #E61B76 !important; float: left !important; height: 46px; padding: 0px !important; position: relative; }
 .head .select2-selection__choice__remove { float: right!important; }
 .box-home .select2-search input { width:226px !important; font-size: 20px; border: 0 none; border-radius: 6px; height: 45px; margin: 0px; color: #444; text-indent: 6px; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; vertical-align: top; }
-.select2-dropdown { top: -3px; }
 .head .select2-container--default .select2-selection--single { position: absolute; top: -44px; left: -1px; display: inline-block; float: left; height: 46px; width: 225px; }
 .head .text date-nights noselect {float: :left; padding: 0px; display: inline-block; }
 .head .inline-search .number-nights { width:50px; background: #fff url(https://www.kooningtravel.com/img/nights.gif) center top repeat-y; border-radius: 0; text-align: center; color: #fff; font-size: 17px; padding: 0px; font-weight: bold; display: -moz-inline-stack; display: inline-block; zoom: 1; line-height: 46px; position: relative; text-indent: -10px; z-index: 1; }
@@ -452,10 +441,9 @@ select.small:focus { outline: 0; border: 1px solid #E61B76; box-shadow: 0 0 0 1p
 
 body .head .bgv { width: 100%; height:360px; overflow: hidden; position: absolute; left: 0px; z-index: -4; }
 body .head .bgv video { position: absolute; top:-260px; left: 0px; width:100%; }
-body .head .h2 { color: #FFF; }
 body .head .box { position: relative; width: 100%; text-align: center; }
 body .head .box .headf { background: url("https://www.kooningtravel.com/img/Home/Audifonos.png") no-repeat center center transparent; display: inline-block; width: 62px; height: 51px; border-radius: 4px; position: absolute; right: 8%; }
-body .head .explor { display: inline-block; width:auto; text-align: center; color: #FFF; font-weight: 300; font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-size: 20px; text-decoration: none; position: relative; top:45px; }
+body .home .explor { display: inline-block; width:auto; text-align: center; color: #FFF; font-weight: 300; font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-size: 20px; text-decoration: none; position: relative; top:45px; }
 body .head .box #contactform { margin: 0px auto; float: none; }
 body .head .box #contactform .position { left: -17px; }
 body .pannel { text-align: center; margin-top: 20px; display: inline-block; width: 100%; float: left; }

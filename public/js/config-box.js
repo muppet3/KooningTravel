@@ -486,7 +486,7 @@ $(document).ready(function(){
   if(destino == ""){   
 
        	alert('Favor de seleccionar un destino');
-       	$(".select2-search__field").focus();
+       	$(".select2-search__field").addClass("ui-state-error").focus();
     	 return false;
 
      } else if ( sd == ""){   

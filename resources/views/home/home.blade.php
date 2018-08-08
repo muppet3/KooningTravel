@@ -606,8 +606,12 @@
       </div> 
     </div>
   </div>
-  <div class="bloque fott" > <img src="https://www.kooningtravel.com/images/logo-vive-mexico.png" > <img class="mar" src="https://www.kooningtravel.com/images/logo-sectur.png" > <img src="https://www.kooningtravel.com/images/logo-banorte.png" > <img class="mar" src="https://www.kooningtravel.com/images/logo-paypal.png" > <img src="https://www.kooningtravel.com/images/logo-sitio-seguro.png" > </div>
-</div>
+
+
+
+
+  
+
 
 
 @stop
