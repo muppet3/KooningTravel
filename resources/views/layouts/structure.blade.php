@@ -20,10 +20,25 @@
       
        <!--Recursos JS -->
       <script language="javascript" type="text/javascript" src="/js/jquery-3.3.1.js"></script> 
-      <script language="javascript" type="text/javascript" src="/js/bootstrap.min.js" ></script>      
-      <script language="javascript" type="text/javascript" src="/js/config-box.js" ></script> 
-      <script language="javascript" type="text/javascript" src="/js/general.js" ></script> 
+      <script language="javascript" type="text/javascript" src="/js/bootstrap.min.js" ></script>   
+      <script language="javascript" type="text/javascript" src="https://kooningtravel.com/js/jquery-ui.js" ></script>    
       <script language="javascript" type="text/javascript" src="/js/jquery.fancybox.min.js" ></script> 
+      <script language="javascript" type="text/javascript" src="/js/config-box.js" ></script>
+      <script language="javascript" type="text/javascript" src="/js/general.js" ></script>
+
+
+ <!--
+  <script language="javascript" type="text/javascript" src="https://kooningtravel.com/js/caja/motor.js" ></script> 
+  <script language="javascript" type="text/javascript" src="https://www.kooningtravel.com/js/caja-reserva-search.js" ></script> 
+  -->
+
+
+
+
+
+
+
+
 
       <!--Recursos CSS -->
       <link type="text/css" rel="stylesheet" media="screen" href="/css/kooningtravel.css">

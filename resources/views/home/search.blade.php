@@ -7,6 +7,14 @@
 
 @section('content')
 
+  
+
+
+  
+
+  
+
+  
 
   <div class="serach-body" >
 
@@ -31,45 +39,45 @@
               <span class="label1">Destino / Hotel:</span>
               <hr>
               <div class="inline-search">           
-              <select id="d" data-placeholder="<?php //echo $desti; ?>"  class="destination" name="d" <?php //echo $disable ?> style="width:100%;"  multiple="multiple" ></select>
+              <select id="d" data-placeholder="test<?php //echo $desti; ?>"  class="destination" name="d" <?php //echo $disable ?> style="width:100%;"  multiple="multiple" ></select>
               </div>
               <?php //if (!empty($disable) or is_null($disable)) {?>
               <input value=<?php //echo $_GET['d']; ?> name="d" id="d" type='hidden'/>
               <?php// } ?>
-              <div class="inline-search date fech">
+              <div class="inline-search">
                 <div class="input-style date-from noselect">
                   <div class="date-wrapper from_datepicker-wrapper">
-                    <span class="aa a1"><?php //echo $diaa ; ?></span>
+                    <span class="aa a1">11 <?php //echo $diaa ; ?></span>
                     <span class="ee">
-                      <span class="ii"><?php //echo $mes; ?></span>
-                      <span class="uu"><?php //echo $semana; ?></span>
+                      <span class="ii">Septiembre <?php //echo $mes; ?></span>
+                      <span class="uu">Viernes <?php //echo $semana; ?></span>
                     </span>
                   </div>
                        <input type="text" name="sd" id="from_hotel_search" class="datepicker from_datepicker" value="<?php //echo $_GET['sd']; ?>" placeholder="Del día ..." readonly  autocomplete="off" />                 
                 </div>
                 <div class="text date-nights noselect">
-                  <span class="number-nights"></span>                 
+                  <span class="number-nights">5</span>                 
                 </div>
                 <div class="input-style date-to noselect">
                   <div class="date-wrapper to_datepicker-wrapper" id="to_datepicker-wrapper">
-                    <span class="aa a2"><?php //echo $diaa2; ?></span>
+                    <span class="aa a2">17 <?php //echo $diaa2; ?></span>
                     <span class="ee">
-                      <span class="ii"><?php //echo $mes2; ?></span>
-                      <span class="uu"><?php //echo $semana2; ?></span>
+                      <span class="ii">Septiembre <?php //echo $mes2; ?></span>
+                      <span class="uu">Viernes <?php //echo $semana2; ?></span>
                     </span>
                   </div>
                   <input type="text" name="ed" id="to_hotel_search" class="datepicker to_datepicker" value="<?php //echo $_GET['ed']; ?>" placeholder="al día ..." readonly autocomplete="off" />
                 </div>
               </div>
-              <div class="inline-search inline-block fech">
+              <div class="inline-block">
                 <div id="shn" class="inline-search passengers noselect" >
                  
                  <!-- imprime variables -->
-                  <div class="input-style jonas2" id="show-passengers-panel">
-                    <span class="rooms-icon" data-title="Habitaciones"><?php //echo $r; ?></span>
+                  <div class="input-style" id="show-passengers-panel">
+                    <span class="rooms-icon" data-title="Habitaciones">1<?php //echo $r; ?></span>
                     <span class="sep"></span>
-                    <span class="r1a-icon" data-title="Adultos"><?php //echo $ta; ?></span>
-                    <span class="childs-icon none" data-title="Niños"><?php //echo $tn; ?></span>
+                    <span class="r1a-icon" data-title="Adultos">2<?php //echo $ta; ?></span>
+                    <span class="childs-icon none" data-title="Niños">1<?php //echo $tn; ?></span>
                     <input class="pax rooms form-control" name="r" id="habita" value="<?php //echo $r; ?>" type="hidden" />
                   </div>
 
