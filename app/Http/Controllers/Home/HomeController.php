@@ -19,18 +19,17 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    
     public function home(){
         $data['checkin']=Carbon::now()->addDay(4);
         $data['checkout']=Carbon::now()->addDay(8);
+        $data['pathSearch']='';
         $data['home']="class=active";
         $data['parques']="";
         $data['tours']="";
         $data['traslados']="";
         $data['ofertas']=""; 
         $data['background']="";
-        
-       return view('home/home',$data);
+        return view('home/home',$data);
     }
     public function search($destino){
         // validacion de fechas   background-image: url(https://kooningtravel.com/img/Home/fondos/FondoHoteles.png
@@ -536,11 +535,10 @@ class HomeController extends Controller
     }
     public function list(){
         if (isset($_GET['term'])) {
-            $destinations=new Hoteldo('GetDestinations',['l'=>'esp']);
-            $destinations->exec();
+            $hoteles = json_decode(file_get_contents("js/Destinos/DestinosHoteldo.json"));
             $destinations_array=[];
             $c=0;
-            foreach ($destinations->getXml()->Destination as $destination) {
+            foreach ($hoteles->Destination as $destination) {
                 if (preg_match('/^'.$_GET['term'].'/i',(string) $destination->Name)) {
                     $destinations_array[]=['id'=>(string)$destination->Id,'text'=>(string) $destination->Name,'metadata'=>'1'];
                     $c++;
@@ -550,10 +548,9 @@ class HomeController extends Controller
                 }
             }
             $c=0;
-            $hotels=new Hoteldo('GetHotels',['l'=>'esp']);
-            $hotels->exec();
+            $hotels = json_decode(file_get_contents("js/Hoteles/HotelDo.json"));
             $hotels_array=[];
-            foreach ($hotels->getXml() as $hotel) {
+            foreach ($hotels as $hotel) {
                 if (preg_match('/^'.$_GET['term'].'/i',(string) $hotel->Name)) {
                     $hotels_array[]=['id'=>(string)$hotel->Id,'text'=>(string) $hotel->Name,'metadata'=>'0'];
                     $c++;
@@ -668,6 +665,19 @@ class HomeController extends Controller
            array_push($errores, "Habitacion 3: La edad del menor debe ser entre 0 y 12 años de edad.");
         }
         return $errores;
+    }
+    public function llenadoinfo(){
+        /* hoteles */
+        $hotels=new Hoteldo('GetHotels',['l'=>'esp']);
+        $hotels->exec();
+        $hoteles=array();
+        foreach ($hotels->getXml() as $hotel) {
+            $hotel=['Id'=>(string)$hotel->Id,'Name'=>(string) $hotel->Name];
+            array_push($hoteles,$hotel);
+        }
+        $file = 'js/Hoteles/HotelDo.json';
+        file_put_contents($file, json_encode($hoteles));
+        dd(file_get_contents("js/Hoteles/HotelDo.json"));
     }
     private static function query() {
         $query= new Hoteldo('GetQuoteHotels');

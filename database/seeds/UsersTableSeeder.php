@@ -16,7 +16,7 @@ class UsersTableSeeder extends Seeder
             'name'      => 'Administrator',
             'email'     => 'admin@admin.com',
             'password'  => bcrypt('secret'),
-            'type_user' => 'Admin'
+            //'type_user' => 'Admin'
         ]);
 
 
@@ -42,6 +42,18 @@ class UsersTableSeeder extends Seeder
 
         DB::table('activities')->insert([
             'name'          =>  'Xcaret',
+            'description'   =>  'Diviertete con tu familia y amigos, pásala en grande',
+            'map'           =>  'Map Xcaret.jpg',
+            'slogan'        =>  '!Orgullo México¡',
+            'image'         =>  'Xcaret.jpg',
+            'location'      =>  'Muy lejos ',
+            'coordinates'   =>  'x=5 , y = S x/dx +c',
+            'background'    =>  '#EFFBFB',
+            'terms'         =>  'Terminos y condiciones.pdf',
+            'category_id'   =>  1
+        ]);
+        DB::table('activities')->insert([
+            'name'          =>  'Xplor Fuego',
             'description'   =>  'Diviertete con tu familia y amigos, pásala en grande',
             'map'           =>  'Map Xcaret.jpg',
             'slogan'        =>  '!Orgullo México¡',

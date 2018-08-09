@@ -12,7 +12,11 @@
       <meta name="description" content="Hoteles, traslados y tours en Cancún, y la Riviera Maya. Elige tus vacaciones entre miles de hoteles y destinos.">
       <meta name="author" content="Ing. Jonas Santiz L., Lic. Alan E. Gonzalez, Ing. Fernando Morales R. || Kooning Travel 2018 ">
       <link rel="shortcut icon" href="https://kooningtravel.com/images/favicon.png" type="image/png">
-      <title>Hoteles, traslados y tours - Kooning Travel - 01 800 890 8974</title>
+      @isset($titulo)
+        <title>{{$titulo}}</title>
+      @else
+        <title>Hoteles, traslados y tours - Kooning Travel - 01 800 890 8974</title>
+      @endisset
       
        <!--Recursos JS -->
       <script language="javascript" type="text/javascript" src="/js/jquery-3.3.1.js"></script> 

@@ -19,6 +19,7 @@ class Activity extends Model
     	'background',
     	'terms',
     ];
+    
     public function category(){
     	return $this->belongsTo(Category::class);
     }

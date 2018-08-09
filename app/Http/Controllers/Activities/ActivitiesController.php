@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Activities;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Activity;
+use App\Models\Category;
+use Illuminate\Http\Request;
 
 class ActivitiesController extends Controller
 {
@@ -14,6 +16,14 @@ class ActivitiesController extends Controller
         $data['tours']="";
         $data['traslados']="";
         $data['ofertas']="";
+        $actividades=Category::where('type','Parque')->get();
+        //dd($actividades);
+        foreach ($actividades as $key) {
+            echo $key->name."<br>";
+            dd($key->activities);
+            echo "<br>";
+        }
+        dd();
         return view('activities/parques',$data);
     }
 
