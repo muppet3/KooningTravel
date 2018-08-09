@@ -11,31 +11,31 @@ class ActivitiesController extends Controller
 {
     //
     public function parques(){
-    	$data['home']="";
-        $data['parques']="class=active";
-        $data['tours']="";
-        $data['traslados']="";
-        $data['ofertas']="";
-        $actividades=Category::where('type','Parque')->get();
-        //dd($actividades);
-        foreach ($actividades as $key) {
-            echo $key->name."<br>";
-            dd($key->activities);
-            echo "<br>";
-        }
-        dd();
+        $data['categorias']=Category::where('type','Parque')->get();
+        $data['background']=" height: 100px; background-image: url(https://kooningtravel.com/img/Home/fondos/fondoParque.png); ";
         return view('activities/parques',$data);
     }
 
     public function tours(){
-    	$data['home']="";
-        $data['parques']="";
-        $data['tours']="class=active";
-        $data['traslados']="";
-        $data['ofertas']="";
+    	
+        $data['categorias']=Category::where('type','Tour')->get();
+        $data['background']=" height: 100px; background-image: url(https://kooningtravel.com/img/Home/fondos/FondoTours.jpg); ";
+
         return view('activities/tours',$data);
     }
     public function details($actividad){
+        $activity = Activity::where('name',$actividad)->first();
+        if(strcmp($activity->category->type,'Parque')){
+            $data['parques']="class=active";
+            $data['tours']="";
+        }else{
+             $data['parques']="";
+            $data['tours']="class=active";
+        }
+        $data['activity']=$activity;
+        $data['background']='height: 556px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
+        //dd($activity->category->name);
         
+        return view('activities/details',$data);
     }
 }
