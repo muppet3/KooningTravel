@@ -22,9 +22,9 @@ class CreateTicketsTable extends Migration
             $table->float('adult');
             $table->float('child');
             $table->timestamps();
-            $table->integer('activities_id')->unsigned();
+            $table->integer('activity_id')->unsigned();
             
-            $table->foreign('activities_id')->references('id')->on('activities');
+            $table->foreign('activity_id')->references('id')->on('activities');
         });
     }
 
