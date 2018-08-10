@@ -338,7 +338,7 @@ class HomeController extends Controller
         }
         $data['fechas']=$fechas;
         $data['huespedes']=$huespedes;
-        dd($data);
+        
         return view('home/details',$data);
     }
     public function booking($room_id,$id){
