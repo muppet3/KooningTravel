@@ -4,6 +4,7 @@
 <p class='fechas-info'>El día Sábado 11 de Agosto al Miércoles 15 de Agosto</p>
 @stop
 @section('content')
+
 <div class="serach-body" >
   <div class="container" >
     <div class="bread-crub">
@@ -12,56 +13,55 @@
       <b>Hoteles</b>
     </div>
     <div class="col-md-3 main-box" >
+
       <div class="caja-search" >
-        <form id="contactform" class="head" action="<?php //echo PATH.'/hotels/search'; ?>" method="GET" >
+        <form id="contactform" class="head" action="javascript:(void);" method="GET" >
           <div class="hidden">
             <input type="hidden" name="type" id="type" value="1">
-            <input type="hidden" value="<?php //echo $urls; ?>"  id="destino">
-            <input type='hidden' value="<?php //echo $_GET['d']; ?>" name="d" >
+            <input type="hidden" value="2"  id="destino">
+            <input type='hidden' value="2" name="d" >
           </div>
-          <span class="label1">Destino / Hotel:</span>
+          <span class="label1">Destino / Hotel</span>
           <hr>
           <div class="inline-search">
-          <select id="d" data-placeholder="test<?php //echo $desti; ?>"  class="destination" name="d" <?php //echo $disable ?> style="width:100%;"  multiple="multiple" ></select>
+          <select id="d" data-placeholder="test"  class="destination" name="d"  style="width:100%;"  multiple="multiple" ></select>
         </div>
-        <?php //if (!empty($disable) or is_null($disable)) {?>
-        <input value=<?php //echo $_GET['d']; ?> name="d" id="d" type='hidden'/>
-        <?php// } ?>
+        
+      
         <div class="inline-search">
           <div class="input-style date-from noselect">
             <div class="date-wrapper from_datepicker-wrapper">
-              <span class="aa a1">11 <?php //echo $diaa ; ?></span>
+              <span class="aa a1">2</span>
               <span class="ee">
-                <span class="ii">Septiembre <?php //echo $mes; ?></span>
-                <span class="uu">Viernes <?php //echo $semana; ?></span>
+                <span class="ii">2</span>
+                <span class="uu">2</span>
               </span>
             </div>
-            <input type="text" name="sd" id="from_hotel_search" class="datepicker from_datepicker" value="<?php //echo $_GET['sd']; ?>" placeholder="Del día ..." readonly  autocomplete="off" />
+            <input type="text" name="sd" id="from_hotel_search" class="datepicker from_datepicker" value="2" placeholder="Del día ..." readonly  autocomplete="off" />
           </div>
           <div class="text date-nights noselect">
             <span class="number-nights">5</span>
           </div>
           <div class="input-style date-to noselect">
             <div class="date-wrapper to_datepicker-wrapper" id="to_datepicker-wrapper">
-              <span class="aa a2">17 <?php //echo $diaa2; ?></span>
+              <span class="aa a2">2</span>
               <span class="ee">
-                <span class="ii">Septiembre <?php //echo $mes2; ?></span>
-                <span class="uu">Viernes <?php //echo $semana2; ?></span>
+                <span class="ii">2</span>
+                <span class="uu">2</span>
               </span>
             </div>
-            <input type="text" name="ed" id="to_hotel_search" class="datepicker to_datepicker" value="<?php //echo $_GET['ed']; ?>" placeholder="al día ..." readonly autocomplete="off" />
+            <input type="text" name="ed" id="to_hotel_search" class="datepicker to_datepicker" value="2" placeholder="al día ..." readonly autocomplete="off" />
           </div>
         </div>
-        <div class="inline-block">
-          <div id="shn" class="inline-search passengers noselect" >
-            
+        <div class="inline-block">          
+          <div class="inline-search passengers noselect" >            
             <!-- imprime variables -->
             <div class="input-style" id="show-passengers-panel">
-              <span class="rooms-icon" data-title="Habitaciones">1<?php //echo $r; ?></span>
+              <span class="rooms-icon" data-title="Habitaciones">1</span>
               <span class="sep"></span>
-              <span class="r1a-icon" data-title="Adultos">2<?php //echo $ta; ?></span>
-              <span class="childs-icon none" data-title="Niños">1<?php //echo $tn; ?></span>
-              <input class="pax rooms form-control" name="r" id="habita" value="<?php //echo $r; ?>" type="hidden" />
+              <span class="r1a-icon" data-title="Adultos">2</span>
+              <span class="childs-icon none" data-title="Niños">0</span>
+              <input class="pax rooms form-control" name="r" id="habita" value="1" type="hidden" />
             </div>
             <div id="passengers-panel" class="noselect simple" style="display: none;">
               <span class="panel-arrow"></span>
@@ -71,10 +71,10 @@
                     <div class="room-name inline">Hab 1</div>
                     <div class="room-r1a inline center">
                       <label class="sup-label">Adultos</label>
-                      <input class="spinner r1a-spin" name="r1a" id="adulto1"  value="<?php //echo $r1a; ?>" readonly />
+                      <input class="spinner r1a-spin" name="r1a" id="adulto1" value="0" readonly />
                     </div>
                     <div class="room-childs inline center"><label class="sup-label">Niños</label>
-                    <input class="spinner childs-spin" name="r1k" id="Nino1" value="<?php //echo $r1k; ?>" readonly />
+                    <input class="spinner childs-spin" name="r1k" id="Nino1" value="0" readonly />
                   </div>
                   <div class="child-ages" style="display: none;">
                     <label class="sup-label">Edades de los niños en fecha de viaje</label>
@@ -132,11 +132,11 @@
                     <div class="room-name inline">Hab 2</div>
                     <div class="room-r1a inline center">
                       <label class="sup-label">Adultos</label>
-                      <input class="spinner r1a-spin" name="r2a" id="adulto2" value="<?php //echo $r2a; ?>" readonly />
+                      <input class="spinner r1a-spin" name="r2a" id="adulto2" value="0" readonly />
                     </div>
                     <div class="room-childs inline center">
                       <label class="sup-label">Niños</label>
-                      <input class="spinner childs-spin" name="r2k" id="Nino2" value="<?php //echo $r2k; ?>" readonly />
+                      <input class="spinner childs-spin" name="r2k" id="Nino2" value="0" readonly />
                     </div>
                     <div class="child-ages" style="display: none;">
                       <label class="sup-label">Edades de los niños en fecha de viaje</label>
@@ -194,11 +194,11 @@
                       <div class="room-name inline">Hab 3</div>
                       <div class="room-r1a inline center">
                         <label class="sup-label">Adultos</label>
-                        <input class="spinner r1a-spin" name="r3a" id="adulto3" value="<?php //echo $r3a; ?>" readonly />
+                        <input class="spinner r1a-spin" name="r3a" id="adulto3" value="0" readonly />
                       </div>
                       <div class="room-childs inline center">
                         <label class="sup-label">Niños</label>
-                        <input class="spinner childs-spin" name="r3k" id="Nino3" value="<?php //echo $r3k; ?>" readonly />
+                        <input class="spinner childs-spin" name="r3k" id="Nino3" value="0" readonly />
                       </div>
                       <div class="child-ages" style="display: none;">
                         <label class="sup-label">Edades de los niños en fecha de viaje</label>
@@ -270,17 +270,100 @@
             <input type="hidden" value="0" name="r5k2a" />
             <input type="hidden" value="0" name="r5k3a" />
           </div>
-        </form>
-        
+        </form>        
       </div>
+
+      <div class="marco" >   
+        <div class="refill" >
+           <span class="filtro" >Filtrar Resultados:</span>
+            <select  id="search_hotel" multiple="multiple" data-placeholder="Buscar por Hotel" name="search_hotel" >        
+              <?php foreach ($rooms as $key => $room) {
+                echo "<option value='{$key}'>{$room['name']}</option> ";
+              } ?>
+            </select> 
+             <button id="verTodos" class="btn" type="button">Ver todo los hoteles</button>
+        </div>
+
+        <div class="refill starts">
+          <span class="filtro" >Categor&iacute;a del hotel</span>
+            <div class="categoria" >  
+                <!--<label id="all_hotel" ></label>-->
+                <label id="ch_start5" ></label>
+                <label id="ch_start4" ></label>
+                <label id="ch_start3" ></label>
+                <label id="ch_start2" ></label>
+                <label id="ch_start1" ></label>
+           </div>
+        </div>
+        
+        <div class="refill  precio"  >
+           <span class="filtro" >Precio</span>
+           <div class="mont" >
+                <span class="amount" ><label>Máx. $</label><label id="amount" ></label></span> 
+                <div id="slider-range-min"></div>
+           </div> 
+        </div>  
+
+      </div>
+
+
     </div>
-    <div class="col-md-9 main-search">
+
+
+
+    <div class="col-md-9 search-content">
+
+
+      <h1 class="titulo-listado-hoteles"><?php echo count($rooms) ?> Hoteles que concuerdan con tu búsqueda</h1>
       
       
       @foreach($rooms as $room)
-      <a class="star_{{$room['stars']}} {{$room['pricerange']}}" href="{{Request::root()}}/details/{{$room['id']}}/{{$room['url']}}?d={{$room['id']}}{{$url}}" >
+
+
+  <a class="result star_{{$room['stars']}} {{$room['pricerange']}}" id="hotel-{{$room['id']}}" href="{{Request::root()}}/details/{{$room['id']}}/{{$room['url']}}?d={{$room['id']}}{{$url}}" >
+
+         <div class="img" >     
+            <label><img src="{{$room['image']}}" alt="{{$room['name']}}" title="{{$room['name']}}" /></label> 
+          </div>
+
+            <div class="details">
+
+                <div class="bloques" >
+                    <label class="blh"><h2 class="title" >{{$room['name']}}</h2></label>
+                    <img class="star" src="https://www.kooningtravel.com/intranet/images/star4.5.png" alt="{{$room['name']}}" title="{{$room['name']}}" />
+                     <label class="city" >{{$room['city_name']}}<i class="fa fa-map-marker" aria-hidden="true" ></i></label>
+                   <span class="include" >Tipo: {{$room['room_name']}}, Plan: {{$room['meal_plan']}}</span>
+                </div>
+
+                <div class="line" ></div>
+
+                <div class="bloques bloques2" >            
+                  <label class="info">Total de noches: {{$room['total_noches']}}<br>Personas: {{$room['adultos']}}<br> Impuestos incluidos </label>
+                  <label class="descuento"></label>
+                </div>
+
+              <div class="line" ></div>
+
+              <div class="bloques bloque3" >
+                  <span class="logosn" >
+                      
+                  </span>
+                  <label class="precio">${{$room['price']}}</label>
+                  <label class="search" >Reservar</label>
+              </div>
+
+            </div>
+        </a>
+
+      @endforeach
+    </div>
+  </div>
+</div>
+
+
+  <!-- 
         adultos: {{$room['adultos']}}<br>
-        stars {{$room['stars']}}<br>
+        stars {{$room['stars']}} <br>
         pricerange: {{$room['pricerange']}}<br>
         @isset($room['preciodescuento'])
         descuento: {{$room['descuento']}}<br>
@@ -297,9 +380,51 @@
         agency_public: {{$room['agency_public']}}<br>
         total_noches: {{$room['total_noches']}}<br>
         price: {{$room['price']}}<br>
-      </a>
-      @endforeach
-    </div>
-  </div>
+   
+-->
+
+
+<!--Begin MENSAJES-->
+<div class="alert alert-primary messaje" role="alert">
+ <span class="glyphicon glyphicon-time" aria-hidden="true" ></span>Hay <?php echo rand(12,30); ?> personas más viendo este destino en este momento.
 </div>
+<!--End MENSAJES-->
+
+
+
+
+<script type="text/javascript"> 
+
+$( function() {
+    $( "#slider-range-min" ).slider({
+      range: "min",
+      value: 200,
+      min: 0,
+      max: 1000,
+      slide: function( event, ui ) {
+        $( "#amount" ).text( ui.value );
+
+       if (  ui.value <= 2000){
+            $('.btw2k-4k, .btw4k-6k, .more6k').hide();
+            $('.btw0k-2k').show(); 
+         } 
+          else if (ui.value <= 4000 ){
+            $('.btw0k-2k, .btw4k-6k, .more6k').hide();
+            $('.btw2k-4k').show();  
+          } 
+          else if ( ui.value <= 6000 ){
+            $('.btw0k-2k, .btw2k-4k, .more6k').hide();
+            $('.btw4k-6k').show();   
+          }
+           else if ( ui.value >= 6000  ){
+             $('.btw0k-2k, .btw2k-4k, .btw4k-6k').hide();
+            $('.more6k').show();  
+       }
+      }
+    });
+      $( "#amount" ).text($( "#slider-range-min" ).slider( "value" ) );
+  } ); 
+
+</script>
+
 @stop

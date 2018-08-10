@@ -49,7 +49,7 @@ body .home { height:360px; }
 							<span class="uu">{{$checkout->DayWeek($checkout->dayOfWeek)}}</span>
 						</span>
 					</div>
-					<input type="text" name="ed" id="to_hotel_search" class="datepicker to_datepicker" value="{{$checkout}}" placeholder="al día ..." readonly autocomplete="off" />
+					<input type="text" name="ed" id="to_hotel_search" class="datepicker to_datepicker" value="{{$checkout->toDateString()}}" placeholder="al día ..." readonly autocomplete="off" />
 				</div>
 			</div>
 			<div class="inline-block">
