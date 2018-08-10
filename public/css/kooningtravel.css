@@ -655,9 +655,5 @@ body .generic-fotter .menus-fotter .sub-fotter li a i:before, body .generic-fott
 body .generic-fotter .menus-fotter .info-fotter { text-align: center; width: 100%; text-align: center; display: inline-block; }
 body .generic-fotter .menus-fotter .info-fotter p { width: 90%; float: none; color: #fff; text-align: center; padding-top: 15px; margin-top: 15px; margin: 0 0 10px; }
 body .generic-fotter .menus-fotter .info-fotter p strong { font-family: Oswald, sans-serif; font-weight: 900; }
-
 .messaje { z-index: 100; left: 3%; color: #004085; background-color: #cce5ff; position: fixed; bottom: 0; }
 .messaje span{ margin-right: 3px; }
-.st0{fill:#F47421;}
-.st1{fill:#E13F90;}
-.st2{fill:#55595B;}

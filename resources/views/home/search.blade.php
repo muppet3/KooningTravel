@@ -4,7 +4,6 @@
 <p class='fechas-info'>El día Sábado 11 de Agosto al Miércoles 15 de Agosto</p>
 @stop
 @section('content')
-
 <div class="serach-body" >
   <div class="container" >
     <div class="bread-crub">
@@ -13,7 +12,6 @@
       <b>Hoteles</b>
     </div>
     <div class="col-md-3 main-box" >
-
       <div class="caja-search" >
         <form id="contactform" class="head" action="javascript:(void);" method="GET" >
           <div class="hidden">
@@ -27,7 +25,7 @@
           <select id="d" data-placeholder="test"  class="destination" name="d"  style="width:100%;"  multiple="multiple" ></select>
         </div>
         
-      
+        
         <div class="inline-search">
           <div class="input-style date-from noselect">
             <div class="date-wrapper from_datepicker-wrapper">
@@ -53,8 +51,8 @@
             <input type="text" name="ed" id="to_hotel_search" class="datepicker to_datepicker" value="2" placeholder="al día ..." readonly autocomplete="off" />
           </div>
         </div>
-        <div class="inline-block">          
-          <div class="inline-search passengers noselect" >            
+        <div class="inline-block">
+          <div class="inline-search passengers noselect" >
             <!-- imprime variables -->
             <div class="input-style" id="show-passengers-panel">
               <span class="rooms-icon" data-title="Habitaciones">1</span>
@@ -270,98 +268,81 @@
             <input type="hidden" value="0" name="r5k2a" />
             <input type="hidden" value="0" name="r5k3a" />
           </div>
-        </form>        
+        </form>
       </div>
-
-      <div class="marco" >   
+      <div class="marco" >
         <div class="refill" >
-           <span class="filtro" >Filtrar Resultados:</span>
-            <select  id="search_hotel" multiple="multiple" data-placeholder="Buscar por Hotel" name="search_hotel" >        
-              <?php foreach ($rooms as $key => $room) {
-                echo "<option value='{$key}'>{$room['name']}</option> ";
-              } ?>
-            </select> 
-             <button id="verTodos" class="btn" type="button">Ver todo los hoteles</button>
+          <span class="filtro" >Filtrar Resultados:</span>
+          <select  id="search_hotel" multiple="multiple" data-placeholder="Buscar por Hotel" name="search_hotel" >
+            <?php foreach ($rooms as $key => $room) {
+            echo "<option value='{$key}'>{$room['name']}</option> ";
+            } ?>
+          </select>
+          <button id="verTodos" class="btn" type="button">Ver todo los hoteles</button>
         </div>
-
         <div class="refill starts">
           <span class="filtro" >Categor&iacute;a del hotel</span>
-            <div class="categoria" >  
-                <!--<label id="all_hotel" ></label>-->
-                <label id="ch_start5" ></label>
-                <label id="ch_start4" ></label>
-                <label id="ch_start3" ></label>
-                <label id="ch_start2" ></label>
-                <label id="ch_start1" ></label>
-           </div>
+          <div class="categoria" >
+            <!--<label id="all_hotel" ></label>-->
+            <label id="ch_start5" ></label>
+            <label id="ch_start4" ></label>
+            <label id="ch_start3" ></label>
+            <label id="ch_start2" ></label>
+            <label id="ch_start1" ></label>
+          </div>
         </div>
         
         <div class="refill  precio"  >
-           <span class="filtro" >Precio</span>
-           <div class="mont" >
-                <span class="amount" ><label>Máx. $</label><label id="amount" ></label></span> 
-                <div id="slider-range-min"></div>
-           </div> 
-        </div>  
-
+          <span class="filtro" >Precio</span>
+          <div class="mont" >
+            <span class="amount" ><label>Máx. $</label><label id="amount" ></label></span>
+            <div id="slider-range-min"></div>
+          </div>
+        </div>
       </div>
-
-
     </div>
-
-
-
     <div class="col-md-9 search-content">
-
-
       <h1 class="titulo-listado-hoteles"><?php echo count($rooms) ?> Hoteles que concuerdan con tu búsqueda</h1>
       
       
       @foreach($rooms as $room)
-
-
-  <a class="result star_{{$room['stars']}} {{$room['pricerange']}}" id="hotel-{{$room['id']}}" href="{{Request::root()}}/details/{{$room['id']}}/{{$room['url']}}?d={{$room['id']}}{{$url}}" >
-
-         <div class="img" >     
-            <label><img src="{{$room['image']}}" alt="{{$room['name']}}" title="{{$room['name']}}" /></label> 
+      <a class="result star_{{$room['stars']}} {{$room['pricerange']}}" id="hotel-{{$room['id']}}" href="{{Request::root()}}/details/{{$room['id']}}/{{$room['url']}}?d={{$room['id']}}{{$url}}" >
+        <div class="img" >
+          <label><img src="{{$room['image']}}" alt="{{$room['name']}}" title="{{$room['name']}}" /></label>
+        </div>
+        <div class="details">
+          <div class="bloques" >
+            <label class="blh"><h2 class="title" >{{$room['name']}}</h2></label>
+            <img class="star" src="https://www.kooningtravel.com/intranet/images/star4.5.png" alt="{{$room['name']}}" title="{{$room['name']}}" />
+            <label class="city" >{{$room['city_name']}}<i class="fa fa-map-marker" aria-hidden="true" ></i></label>
+            <span class="include" >Tipo: {{$room['room_name']}}, Plan: {{$room['meal_plan']}}</span>
           </div>
-
-            <div class="details">
-
-                <div class="bloques" >
-                    <label class="blh"><h2 class="title" >{{$room['name']}}</h2></label>
-                    <img class="star" src="https://www.kooningtravel.com/intranet/images/star4.5.png" alt="{{$room['name']}}" title="{{$room['name']}}" />
-                     <label class="city" >{{$room['city_name']}}<i class="fa fa-map-marker" aria-hidden="true" ></i></label>
-                   <span class="include" >Tipo: {{$room['room_name']}}, Plan: {{$room['meal_plan']}}</span>
-                </div>
-
-                <div class="line" ></div>
-
-                <div class="bloques bloques2" >            
-                  <label class="info">Total de noches: {{$room['total_noches']}}<br>Personas: {{$room['adultos']}}<br> Impuestos incluidos </label>
-                  <label class="descuento"></label>
-                </div>
-
-              <div class="line" ></div>
-
-              <div class="bloques bloque3" >
-                  <span class="logosn" >
-                      
-                  </span>
-                  <label class="precio">${{$room['price']}}</label>
-                  <label class="search" >Reservar</label>
-              </div>
-
-            </div>
-        </a>
-
+          <div class="line" ></div>
+          <div class="bloques bloques2" >
+            <label class="info">Total de noches: {{$room['total_noches']}}<br>Personas: {{$room['adultos']}}<br> Impuestos incluidos </label>
+            <label class="descuento"></label>
+          </div>
+          <div class="line" ></div>
+          <div class="bloques bloque3" >
+            <span class="logosn" >
+              
+            </span>
+            <label class="precio">${{$room['price']}}</label>
+            <label class="search" >Reservar</label>
+          </div>
+        </div>
+      </a>
       @endforeach
     </div>
   </div>
 </div>
+<!--Begin MENSAJES-->
+<div class="alert alert-primary messaje" role="alert">
+  <span class="glyphicon glyphicon-time" aria-hidden="true" ></span>Hay <?php echo rand(12,30); ?> personas más viendo este destino en este momento.
+</div>
+<!--End MENSAJES-->
 
-
-  <!-- 
+ <!-- Variables pendientes
         adultos: {{$room['adultos']}}<br>
         stars {{$room['stars']}} <br>
         pricerange: {{$room['pricerange']}}<br>
@@ -384,16 +365,9 @@
 -->
 
 
-<!--Begin MENSAJES-->
-<div class="alert alert-primary messaje" role="alert">
- <span class="glyphicon glyphicon-time" aria-hidden="true" ></span>Hay <?php echo rand(12,30); ?> personas más viendo este destino en este momento.
-</div>
-<!--End MENSAJES-->
-
-
-
-
 <script type="text/javascript"> 
+  
+  /*Slider rango de precios*/
 
 $( function() {
     $( "#slider-range-min" ).slider({
@@ -426,5 +400,6 @@ $( function() {
   } ); 
 
 </script>
+
 
 @stop
