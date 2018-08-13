@@ -1,5 +1,8 @@
 @extends('layouts/structure')
 @section('head')
+<style type="text/css">
+.container{ background: #FFF; margin:20px auto; }	
+</style>
 
 <h2 class="h2" >The Westin Lagunamar Ocean Resort Villas Cancún<img src='https://kooningtravel.com/intranet/images/star4.5.png' class='imagen-estrellas' />
 
@@ -278,6 +281,21 @@
 			<a class="icon-home" href="/" >&nbsp;Inicio</a> >
 			<b>Hoteles</b>
 		</div>
+
+		<ul class="nav nav-tabs ">
+		  <li ><a data-toggle="tab" href="#Informacion" id="infoGeneral" onclick="initMap()">Informacion General</a></li>
+		  <li class="active"><a data-toggle="tab" id="DetalleH" href="#DetalleHabitacion">Detalle Habitacion</a></li>
+		</ul>
+
+
+      <h3 class="detalles-hotel">Detalle Habitación</h3>
+   
+
+
+		
+
+
+
 	</div>
 
 

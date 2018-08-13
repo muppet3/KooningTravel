@@ -61,6 +61,24 @@ body .serach-body .container .main-box .caja-search #contactform .inline-block .
 #search-tabs-2 { display: inline-block; }
 .reset .col-md-3 { width: 24%; height: 100%; padding: 0px; display: inline-block; float: left; }
 .img-hotel-disney .img-w { width: 100%; display: inline-block; float: left; }
+
+/*Details*/
+body .serach-body .container .detalles-hotel {     
+border: 1px solid #f2f8fc;
+    border-radius: 6px;
+    margin: 15px 0px;
+    color: #2c678d;
+    font-family: Oswald;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    padding: 10px; }
+body .serach-body .container .nav { margin:10px 0px; }    
+
+
+
 /*Reset genearal css*/
 .head * { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box }
 .head div, .head span, .head p, .head .tour li a, .head input, .head form, .head img, .head label, .head ul, .head li { display: inline-block; float: left; margin: 0px; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; }
