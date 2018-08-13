@@ -153,7 +153,7 @@ class HomeController extends Controller
                     $item['total_noches'] = $interval->d;
                     $item['price']=number_format($precio);
                     $item['precio']=$precio;
-                    
+
                     if (!isset($menor)) {
                         $menor = $item;
                     }
@@ -336,7 +336,7 @@ class HomeController extends Controller
                $data['url']=$url;
             }
         }else{
-            $data['destino']=$destino;
+            
             $data['erroresquery']=$errorquery;
         }
         if(!empty($errores)){
