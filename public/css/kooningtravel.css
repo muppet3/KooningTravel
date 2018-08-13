@@ -89,6 +89,7 @@ padding: 10px;
 text-transform: uppercase;
 text-align: left;
 margin: 10px 0px;
+width: 100%;
 }
 
 .estructura-habitacion {
@@ -99,32 +100,37 @@ margin: 10px 0px;
 }
 
 .bloque-hotel-item{ display: inline-block; width: 100%; float: left; }
-.bloque-hotel-item .items-hotel{ display: inline-block; float: left; }
-.bloque-hotel-item .items-hotel .img-hotel-details{ display: inline-block; float: left;width: 100%; }
+.bloque-hotel-item .items-hotel{ }
+.bloque-hotel-item .items-hotel .img-hotel-details{ width: 100%; }
 
 .bloque-hotel-item .items-hotel h3{ color: #000;
     font-weight: bold;
     font-size: 14px;
     text-align: left;
     width: 100%;
-    float: left;
-    margin: 10px 0px;
-    display: inline-block;}
+    margin: 10px 0px;}
 
 .bloque-hotel-item .items-hotel .info-promo{    color: #55a797;
     font-size: 14px;
     width: 100%;
-    text-align: justify;
-    display: inline-block;
-    float: left;}
+    text-align: justify; }
 
 
 
-.tab-content #info div, .tab-content #info p , .tab-content #details div, .tab-content #details p { display: inline-block; float: left; width: 100%;  }
+.tab-content #info div, .tab-content #info p , .tab-content #details p {  float: left;  }
+
+.bloque-hotel-item .items-hotel .destino-hotel{width: 100%; display: inline-block; }
 
 
-
-
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default{ display: inline-block;  width: 100%; }
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default div{ width: 100%;  }
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading{ width: 100%; display: inline-block; }
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading .panel-title{ width: 100%; display: inline-block; }
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading .panel-title{ width: 100%; display: inline-block; }
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading .panel-title .pa_italic { width: 100%; display: inline-block; color: #727176; font-size:12px; text-transform: capitalize; font-family: 'Play', sans-serif;  }
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse{  }
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse .panel-body{  }
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse .panel-body .info-message{ font-size: 12px; color: #888; display: inline-block; width: 100%; text-align: justify;  }
 
 
 /*Reset genearal css*/

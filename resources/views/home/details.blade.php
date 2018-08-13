@@ -298,18 +298,20 @@
 								<div class="destino-hotel" >
 									<div class="panel panel-default">
 										<div class="panel-heading" role="tab" id="heading0">
-											<h4 class="panel-title asd">
+											<h4 class="panel-title">
 											<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="false" aria-controls="collapse0">
 												<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><i class="glyphicon glyphicon-chevron-down9" aria-hidden="false"></i>Ver políticas de cancelación
 											</a>
 											</h4>
-										</div><div id="collapse0" class="panel-collapse collapse in active" role="tabpanel" aria-labelledby="heading0"><div class="panel-body panel_text">
+										</div>
+
+										<div id="collapse0" class="panel-collapse active collapse" role="tabpanel" aria-labelledby="heading0"><div class="panel-body panel_text">
 										<div class="table-responsive">
 											<table class="table table-responsive">
 												<tbody><tr style="background=#E9540D"> <th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Sábado</th><th class="info"> 13</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Domingo</th><th class="info"> 14</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Lunes</th><th class="info"> 15</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Martes</th><th class="info"> 16</th></tr>
 												<tr><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td></tr>
 											</tbody></table></div>
-											<p><br>Permite cancelar sin cargo hasta 4 días antes de la fecha de llegada, de 3 dias a 24 horas antes de su llegada, aplica 2 noches de estancia. En caso de No Show, o salida anticipada queda sujeto al cobro por el total reservado.</p>
+											<p class="info-message" >Permite cancelar sin cargo hasta 4 días antes de la fecha de llegada, de 3 dias a 24 horas antes de su llegada, aplica 2 noches de estancia. En caso de No Show, o salida anticipada queda sujeto al cobro por el total reservado.</p>
 										</div>
 									</div>
 								</div>
