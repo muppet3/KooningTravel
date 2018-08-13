@@ -3,7 +3,9 @@
 <span class='h2'>Hoteles en Holbox, México</span>
 <p class='fechas-info'>El día Sábado 11 de Agosto al Miércoles 15 de Agosto</p>
 @stop
+
 @section('content')
+
 <div class="serach-body" >
   <div class="container" >
     <div class="bread-crub">
@@ -274,9 +276,9 @@
         <div class="refill" >
           <span class="filtro" >Filtrar Resultados:</span>
           <select  id="search_hotel" multiple="multiple" data-placeholder="Buscar por Hotel" name="search_hotel" >
-            <?php foreach ($rooms as $key => $room) {
-            echo "<option value='{$key}'>{$room['name']}</option> ";
-            } ?>
+            @foreach($rooms as $room)
+              <option value="{{$room['id']}}">{{$room['name']}}</option>
+            @endforeach
           </select>
           <button id="verTodos" class="btn" type="button">Ver todo los hoteles</button>
         </div>

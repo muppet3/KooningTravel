@@ -505,107 +505,29 @@ $(".starts .categoria label").click(function () {
 
 $('.starts .categoria #ch_start5').click(function () {
   $('.result').hide();   
-  $('.star-5').toggle();
+  $('.star_5').toggle();
 });
 $('.starts .categoria #ch_start4').click(function () { 
   $('.result').hide();
-  $('.star-4').toggle();
+  $('.star_4').toggle();
 });
 $('.starts .categoria #ch_start3').click(function () { 
   $('.result').hide();
-  $('.star-3').toggle();
+  $('.star_3').toggle();
 });
 $('.starts .categoria #ch_start2').click(function () {  
   $('.result').hide();
-  $('.star-2').toggle();
+  $('.star_2').toggle();
 });
 $('.starts .categoria #ch_start1').click(function () {
   $('.result').hide();
-  $('.star-1').toggle();
+  $('.star_1').toggle();
 });
 
-
-
-$('#ch_price_1k').click(function () {
-  $('.result').hide();
-  $('.less1k').toggle();
-});
-
-
-$('#ch_price_1k2k').click(function () {
-  $('.result').hide();
-  $('.btw1k-2k').toggle();
-});
-
-
-
-$('#ch_price_2k4k').click(function () {
-  $('.result').hide();
-  $('.btw2k-4k').toggle();
-});
-
-
-
-
-$('#ch_price_4k5k').click(function () {
-  $('.result').hide();
-  $('.btw4k-5k').toggle();
-});
-
-
-
-$('#ch_price_5k').click(function () {
-  $('.result').hide();
-  $('.more5k').toggle();
-});
-
-
-//zonas por ciudad
-
-$('#zonas1').change(function () {
-  $('.all').hide();
-  $('.zona1').toggle(this.checked);
-});
-$('#zonas2').change(function () {
-  $('.all').hide();
-  $('.zona2').toggle(this.checked);
-});
-$('#zonas3').change(function () {
-  $('.all').hide();
-  $('.zona3').toggle(this.checked);
-});
-$('#zonas4').change(function () {
-  $('.all').hide();
-  $('.zona4').toggle(this.checked);
-});
-$('#zonas5').change(function () {
-  $('.all').hide();
-  $('.zona5').toggle(this.checked);
-});
-$('#zonas6').change(function () {
-  $('.all').hide();
-  $('.zona6').toggle(this.checked);
-});
-$('#zonas7').change(function () {
-  $('.all').hide();
-  $('.zona7').toggle(this.checked);
-});
-$('#zonas8').change(function () {
-  $('.all').hide();
-  $('.zona8').toggle(this.checked);
-});
-$('#zonas9').change(function () {
-  $('.all').hide();
-  $('.zona9').toggle(this.checked);
-});
-$('#zonas10').change(function () {
-  $('.all').hide();
-  $('.zona10').toggle(this.checked);
-});
 
 
 $('#verTodos').click(function () {
-  $('div[id ^=hotel ]').fadeIn("slow");
+  $('a[class ^=result ]').fadeIn("slow");
   $('body, html').animate({
       scrollTop: '0px'
     });
@@ -620,12 +542,13 @@ $("#search_hotel").on("select2:select", function (e) {
 
 var link =  "hotel-"+$("#search_hotel").val();
   
-  $('div[id ^=hotel ]').hide();
+  $('a[class ^=result ]').hide();
 
 
-  $('div[id ='+link+' ]').fadeIn( "slow" );
+  $('a[id ='+link+' ]').fadeIn( "slow" );
 
-  
+  	console.log(link);
+
   $('body, html').animate({
       scrollTop: '0px'
     });
