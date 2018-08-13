@@ -297,10 +297,11 @@
         <div class="refill  precio"  >
           <span class="filtro" >Precio</span>
           <div class="mont" >
-            <span class="amount" ><label>Máx. $</label><label id="amount" ></label></span>
-            <div id="slider-range-min"></div>
-          </div>
+              <span class="amount" ><label id="amount">Todos</label></span> 
+              <div id="slider-range-min"></div>
+          </div> 
         </div>
+
       </div>
     </div>
     <div class="col-md-9 search-content">
@@ -374,31 +375,39 @@
 $( function() {
     $( "#slider-range-min" ).slider({
       range: "min",
-      value: 200,
-      min: 0,
-      max: 1000,
+      value: {{$max}},
+      min:  {{$min}},
+      max: {{$max}},
       slide: function( event, ui ) {
-        $( "#amount" ).text( ui.value );
+        
 
-       if (  ui.value <= 2000){
-            $('.btw2k-4k, .btw4k-6k, .more6k').hide();
-            $('.btw0k-2k').show(); 
+       if (  ui.value <= 1000){
+            $('.btw0k-1k, .btw1k-3k, .btw3k-5k, .btw5k-8k, .more8k').hide();
+            $('.btw0k-1k').show(); 
+            $( "#amount" ).text("Menor a 1,000");
          } 
-          else if (ui.value <= 4000 ){
-            $('.btw0k-2k, .btw4k-6k, .more6k').hide();
-            $('.btw2k-4k').show();  
+          else if (ui.value <= 3000 ){
+            $('.btw0k-1k, .btw1k-3k, .btw3k-5k, .btw5k-8k, .more8k').hide();
+            $('.btw1k-3k ').show();  
+            $( "#amount" ).text("Entre $1,001 a $3,000");
           } 
-          else if ( ui.value <= 6000 ){
-            $('.btw0k-2k, .btw2k-4k, .more6k').hide();
-            $('.btw4k-6k').show();   
+          else if (ui.value <= 5000 ){
+            $('.btw0k-1k, .btw1k-3k, .btw3k-5k, .btw5k-8k, .more8k').hide();
+            $('.btw3k-5k ').show();  
+            $( "#amount" ).text("Entre $3,001 a $5,000");
+          } 
+          else if ( ui.value <= 8000 ){
+            $('.btw0k-1k, .btw1k-3k, .btw3k-5k, .btw5k-8k, .more8k').hide();
+            $('.btw5k-8k').show();   
+            $( "#amount" ).text("Entre $5,001 a $8,000");
           }
-           else if ( ui.value >= 6000  ){
-             $('.btw0k-2k, .btw2k-4k, .btw4k-6k').hide();
-            $('.more6k').show();  
+           else if ( ui.value >= 8000  ){
+             $('.btw0k-1k, .btw1k-3k, .btw3k-5k, .btw5k-8k, .more8k').hide();
+            $('.more8k').show();  
+            $( "#amount" ).text("Mayor a  $8,000");
        }
       }
     });
-      $( "#amount" ).text($( "#slider-range-min" ).slider( "value" ) );
   } ); 
 
 </script>
