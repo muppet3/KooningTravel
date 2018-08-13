@@ -77,6 +77,54 @@ border: 1px solid #f2f8fc;
     padding: 10px; }
 body .serach-body .container .nav { margin:10px 0px; }    
 
+.barra-mini-hotel-detalle {
+background: #fff;
+border: 1px solid #f2f2f2;
+border-radius: 6px;
+color: #e9540d;
+font-family: Oswald;
+font-size: 16px;
+font-weight: 900;
+padding: 10px;
+text-transform: uppercase;
+text-align: left;
+margin: 10px 0px;
+}
+
+.estructura-habitacion {
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+    margin-left: 20px;
+    margin-right: -25px;
+}
+
+.bloque-hotel-item{ display: inline-block; width: 100%; float: left; }
+.bloque-hotel-item .items-hotel{ display: inline-block; float: left; }
+.bloque-hotel-item .items-hotel .img-hotel-details{ display: inline-block; float: left;width: 100%; }
+
+.bloque-hotel-item .items-hotel h3{ color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+    float: left;
+    margin: 10px 0px;
+    display: inline-block;}
+
+.bloque-hotel-item .items-hotel .info-promo{    color: #55a797;
+    font-size: 14px;
+    width: 100%;
+    text-align: justify;
+    display: inline-block;
+    float: left;}
+
+
+
+.tab-content #info div, .tab-content #info p , .tab-content #details div, .tab-content #details p { display: inline-block; float: left; width: 100%;  }
+
+
+
+
 
 
 /*Reset genearal css*/

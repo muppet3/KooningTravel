@@ -1,17 +1,11 @@
 @extends('layouts/structure')
 @section('head')
 <style type="text/css">
-.container{ background: #FFF; margin:20px auto; }	
+	.container{ background: #FFF; margin:20px auto; }
 </style>
-
 <h2 class="h2" >The Westin Lagunamar Ocean Resort Villas Cancún<img src='https://kooningtravel.com/intranet/images/star4.5.png' class='imagen-estrellas' />
-
 </h2>
 <p class='info-details'>Cancún-Zona Hotelera Mar Caribe, Quintana Roo. México</p>
-
-
-
-
 <div class="box" >
 	<form id="contactform" class="box-home" action="javascript:(void);" method="GET" >
 		
@@ -265,41 +259,71 @@
 			</div>
 		</form>
 	</div>
-
-
-
-
 	@stop
+	@section('content')
+	<div class="serach-body" >
+		<div class="container" >
+			<div class="bread-crub">
+				<i class="fa fa-home" aria-hidden="true"></i>
+				<a class="icon-home" href="/" >&nbsp;Inicio</a> >
+				<b>Hoteles</b>
+			</div>
+			<ul class="nav nav-tabs ">
+				<li ><a data-toggle="tab" href="#info" >Informacion General</a></li>
+				<li class="active"><a data-toggle="tab" href="#details">Detalle Habitacion</a></li>
+			</ul>
+			
+			
+			<!--Bloques info hotel begin-->
+			<div class="tab-content">
+				<div id="info" class="tab-pane fade">
+					
+					<div class="item-hotel" >
+						
+						
+					</div>
+				</div>
+				<div id="details" class="tab-pane fade in active">
+					<div class="item-hotel" >
+						<div class="barra-mini-hotel-detalle">Habitación tipo Estudio Villa</div>
+						
+						<div class="bloque-hotel-item" >
+							<div class="items-hotel col-md-4">
+								<img class="img-hotel-details" src="https://images.e-tsw.com/_lib/vimages/Cancun/Hotels/Cancun-The-Westin-Lagunamar/Gallery/Cancun-The-Westin-Lagunamar-Estudio-Villa.jpg" alt="Habitación tipo Estudio Villa" >
+							</div>
+
+							<div class="items-hotel estructura-habitacion col-md-6">
+								<h3>Plan Sólo Habitación </h3>
+								<h4 class="info-promo" >Descuento Especial! Aplica para estadías entre 27/Ago/2018 y 20/Nov/2018. Valido para reservaciones antes del 18/Nov/2018</h4>
+								<div class="destino-hotel" >
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="heading0">
+											<h4 class="panel-title asd">
+											<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="false" aria-controls="collapse0">
+												<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><i class="glyphicon glyphicon-chevron-down9" aria-hidden="false"></i>Ver políticas de cancelación
+											</a>
+											</h4>
+										</div><div id="collapse0" class="panel-collapse collapse in active" role="tabpanel" aria-labelledby="heading0"><div class="panel-body panel_text">
+										<div class="table-responsive">
+											<table class="table table-responsive">
+												<tbody><tr style="background=#E9540D"> <th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Sábado</th><th class="info"> 13</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Domingo</th><th class="info"> 14</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Lunes</th><th class="info"> 15</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Martes</th><th class="info"> 16</th></tr>
+												<tr><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td></tr>
+											</tbody></table></div>
+											<p><br>Permite cancelar sin cargo hasta 4 días antes de la fecha de llegada, de 3 dias a 24 horas antes de su llegada, aplica 2 noches de estancia. En caso de No Show, o salida anticipada queda sujeto al cobro por el total reservado.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
 
-@section('content')
-
-<div class="serach-body" >
-	<div class="container" >
-		<div class="bread-crub">
-			<i class="fa fa-home" aria-hidden="true"></i>
-			<a class="icon-home" href="/" >&nbsp;Inicio</a> >
-			<b>Hoteles</b>
+						<div class="items-hotel col-md-4"></div>
+					</div>
+				</div>
+				
+			</div>
 		</div>
-
-		<ul class="nav nav-tabs ">
-		  <li ><a data-toggle="tab" href="#Informacion" id="infoGeneral" onclick="initMap()">Informacion General</a></li>
-		  <li class="active"><a data-toggle="tab" id="DetalleH" href="#DetalleHabitacion">Detalle Habitacion</a></li>
-		</ul>
-
-
-      <h3 class="detalles-hotel">Detalle Habitación</h3>
-   
-
-
-		
-
-
-
+		<!--Bloques info hotel end-->
 	</div>
-
-
-
 </div>
-
 @stop
