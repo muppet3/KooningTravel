@@ -96,6 +96,8 @@ class HomeController extends Controller
         $interval = $ed->diff($sd);
         if($errorquery=="0"){
             $room_list=[];
+            $min=100000;
+            $max=0;
             foreach ($query->getXml()->Hotels->Hotel as $hotel) {
                 $destinocorrecto=$hotel->Destination->Name;
                 foreach ($hotel->Rooms->Room as $room) {
@@ -115,14 +117,16 @@ class HomeController extends Controller
                     }else{
                         $item['stars']= (float) $hotel->Reviews->Review->Rating;
                     }
-                    if ($precio> 0 and $precio<= 2000) {
-                        $item['pricerange'] = "btw0k-2k";
-                    }elseif ($precio> 2000 and $precio<= 4000) {
-                        $item['pricerange'] = "btw2k-4k";
-                    }elseif ($precio> 4000 and $precio<= 6000) {
-                        $item['pricerange'] = "btw4k-6k";
-                    }elseif ($precio> 6000 ) {
-                        $item['pricerange'] = "more6k";
+                    if ($precio> 0 and $precio<= 1000) {
+                        $item['pricerange'] = "btw0k-1k";
+                    }elseif ($precio> 1000 and $precio<= 3000) {
+                        $item['pricerange'] = "btw1k-3k";
+                    }elseif ($precio> 3000 and $precio<= 5000) {
+                        $item['pricerange'] = "btw3k-5k";
+                    }elseif ($precio> 6000 and $precio<= 8000) {
+                        $item['pricerange'] = "btw5k-8k";
+                    }elseif ($precio> 8000 ) {
+                        $item['pricerange'] = "more8k";
                     }
                     if (isset($room->MealPlans->MealPlan->Promotions)) {
                         $promotionhoteldo=(string) $room->MealPlans->MealPlan->Promotions->Promotion->Description;
@@ -148,6 +152,8 @@ class HomeController extends Controller
                     $totaldo=((float) $room->MealPlans->MealPlan->Total/$interval->d);
                     $item['total_noches'] = $interval->d;
                     $item['price']=number_format($precio);
+                    $item['precio']=$precio;
+                    
                     if (!isset($menor)) {
                         $menor = $item;
                     }
@@ -155,9 +161,20 @@ class HomeController extends Controller
                         $menor = $item;
                     }
                 }
+                if($min > $menor['precio']){
+                    $min=$menor['precio'];
+                }
+                if($menor['precio']> $max){
+                    $max=$menor['precio'];
+                }
                 $room_list[]=$menor;
                 unset($menor);
             }
+            $data['min']=$min;
+            if($max>8000){
+                $max=8001;
+            }
+            $data['max']=$max;
             $data['destino']=$destinocorrecto;
             $data['rooms']=$room_list;
             if($defaultquery){
