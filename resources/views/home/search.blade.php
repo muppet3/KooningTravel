@@ -31,26 +31,26 @@
         <div class="inline-search">
           <div class="input-style date-from noselect">
             <div class="date-wrapper from_datepicker-wrapper">
-              <span class="aa a1">2</span>
+              <span class="aa a1">{{$checkin->day}}</span>
               <span class="ee">
-                <span class="ii">2</span>
-                <span class="uu">2</span>
+                <span class="ii">{{$checkin->NameMoth($checkin->month)}}</span>
+                <span class="uu">{{$checkin->DayWeek($checkin->dayOfWeek)}}</span>
               </span>
             </div>
-            <input type="text" name="sd" id="from_hotel_search" class="datepicker from_datepicker" value="2" placeholder="Del día ..." readonly  autocomplete="off" />
+            <input type="text" name="sd" id="from_hotel_search" class="datepicker from_datepicker" value="{{$checkin->toDateString()}}" placeholder="Del día ..." readonly  autocomplete="off" />
           </div>
           <div class="text date-nights noselect">
-            <span class="number-nights">5</span>
+            <span class="number-nights">4</span>
           </div>
           <div class="input-style date-to noselect">
             <div class="date-wrapper to_datepicker-wrapper" id="to_datepicker-wrapper">
-              <span class="aa a2">2</span>
+              <span class="aa a2">{{$checkout->day}}</span>
               <span class="ee">
-                <span class="ii">2</span>
-                <span class="uu">2</span>
+                <span class="ii">{{$checkout->NameMoth($checkout->month)}}</span>
+                <span class="uu">{{$checkout->DayWeek($checkout->dayOfWeek)}}</span>
               </span>
             </div>
-            <input type="text" name="ed" id="to_hotel_search" class="datepicker to_datepicker" value="2" placeholder="al día ..." readonly autocomplete="off" />
+            <input type="text" name="ed" id="to_hotel_search" class="datepicker to_datepicker" value="{{$checkout->toDateString()}}" placeholder="al día ..." readonly autocomplete="off" />
           </div>
         </div>
         <div class="inline-block">

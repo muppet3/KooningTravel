@@ -32,6 +32,8 @@ class HomeController extends Controller
         return view('home/home',$data);
     }
     public function search($destino){
+        $data['checkin']=Carbon::now()->addDay(4);
+        $data['checkout']=Carbon::now()->addDay(8);
         // validacion de fechas   background-image: url(https://kooningtravel.com/img/Home/fondos/FondoHoteles.png
         $data['background']="height: 270px; background-image: url(https://kooningtravel.com/img/Home/fondos/FondoHoteles.png";
         $errores= $this->validationrooms();
