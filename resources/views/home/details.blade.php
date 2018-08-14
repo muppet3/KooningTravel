@@ -1,7 +1,7 @@
 @extends('layouts/structure')
 @section('head')
 <style type="text/css">
-	.container{ background: #FFF; margin:20px auto; }
+	.container{ background: #FFF; margin:20px auto; border-radius: 4px; padding: 0px; }
 </style>
 <h2 class="h2" >The Westin Lagunamar Ocean Resort Villas Cancún<img src='https://kooningtravel.com/intranet/images/star4.5.png' class='imagen-estrellas' />
 </h2>
@@ -305,7 +305,7 @@
 											</h4>
 										</div>
 
-										<div id="collapse0" class="panel-collapse active collapse" role="tabpanel" aria-labelledby="heading0"><div class="panel-body panel_text">
+										<div id="collapse0" class="panel-collapse active in collapse" role="tabpanel" aria-labelledby="heading0"><div class="panel-body panel_text">
 										<div class="table-responsive">
 											<table class="table table-responsive">
 												<tbody><tr style="background=#E9540D"> <th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Sábado</th><th class="info"> 13</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Domingo</th><th class="info"> 14</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Lunes</th><th class="info"> 15</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Martes</th><th class="info"> 16</th></tr>
@@ -319,13 +319,25 @@
 						</div>
 
 
-						<div class="items-hotel col-md-4"></div>
+						<div class="items-hotel col-md-2 background">							
+							<p class="total-night">Total 4 Noches</p>
+							<p class="precio-real" >$16,370.73</p>
+							<p class="precio-promedio">Precio Promedio por noche:</p>
+							<p class="precio-final">$ 4,093</p>
+							<p class="inpuestos" >Impuestos incluidos</p>
+							<a href="/hotels/1123/booking/STU" class="btn btn-danger">RESERVAR</a>	
+						</div>
 					</div>
 				</div>
 				
 			</div>
 		</div>
 		<!--Bloques info hotel end-->
+
+		<div class="line-details" ></div>
+
+
+
 	</div>
 </div>
 @stop

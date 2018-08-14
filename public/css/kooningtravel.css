@@ -77,30 +77,34 @@ border: 1px solid #f2f8fc;
     padding: 10px; }
 body .serach-body .container .nav { margin:10px 0px; }    
 
-.barra-mini-hotel-detalle {
-background: #fff;
-border: 1px solid #f2f2f2;
-border-radius: 6px;
-color: #e9540d;
-font-family: Oswald;
-font-size: 16px;
-font-weight: 900;
-padding: 10px;
-text-transform: uppercase;
-text-align: left;
-margin: 10px 0px;
-width: 100%;
-}
+.barra-mini-hotel-detalle {background: #fff;border: 1px solid #f2f2f2;border-radius: 6px;color: #e9540d;font-family: Oswald;font-size: 16px;font-weight: 900;padding: 10px;text-transform: uppercase;text-align: left;margin: 10px 0px;width: 98%;float: none;display: inline-block;}
 
 .estructura-habitacion {
     border-left: 1px solid #f2f2f2;
     border-right: 1px solid #f2f2f2;
-    margin-left: 20px;
-    margin-right: -25px;
 }
 
 .bloque-hotel-item{ display: inline-block; width: 100%; float: left; }
-.bloque-hotel-item .items-hotel{ }
+.bloque-hotel-item .items-hotel{ display: inline-block; float: left;  }
+
+
+
+.bloque-hotel-item .items-hotel p{
+	font-size: 13px;
+	color: #999;
+	display: inline-block;
+    width: 100%;
+    padding: 0px;
+    margin: 6px 0px;
+    text-align:center; }
+
+
+
+    .bloque-hotel-item .items-hotel .precio-real{ color: #000; font-size: 16px; font-weight: bold; }
+    .bloque-hotel-item .items-hotel  .precio-final{ font-size: 14px; font-weight: bold; }
+
+   .bloque-hotel-item .items-hotel .btn { margin:10px 0px;  }
+
 .bloque-hotel-item .items-hotel .img-hotel-details{ width: 100%; }
 
 .bloque-hotel-item .items-hotel h3{ color: #000;
@@ -108,16 +112,31 @@ width: 100%;
     font-size: 14px;
     text-align: left;
     width: 100%;
-    margin: 10px 0px;}
+    margin:15px 0px;}
 
 .bloque-hotel-item .items-hotel .info-promo{    color: #55a797;
     font-size: 14px;
     width: 100%;
     text-align: justify; }
 
+  .bloque-hotel-item .background{ background: url("https://www.kooningtravel.com/img/extras/line.png") repeat; }
 
+.container .tab-content{ display: inline-block;
+    float: left;
+    width: 100%; }
+.container .tab-content .tab-pane{display: inline-block;float: left;width: 100%;}
+.container .tab-content .tab-pane .item-hotel{  }
+.container .tab-content .tab-pane .item-hotel{text-align: center;}
 
 .tab-content #info div, .tab-content #info p , .tab-content #details p {  float: left;  }
+
+.line-details{
+height: 9px;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    background: #f0f0f0;
+    border: none;}
 
 .bloque-hotel-item .items-hotel .destino-hotel{width: 100%; display: inline-block; }
 
@@ -131,7 +150,6 @@ width: 100%;
 .bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse{  }
 .bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse .panel-body{  }
 .bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse .panel-body .info-message{ font-size: 12px; color: #888; display: inline-block; width: 100%; text-align: justify;  }
-
 
 /*Reset genearal css*/
 .head * { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box }
