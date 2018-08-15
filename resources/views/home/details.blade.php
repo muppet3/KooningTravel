@@ -279,7 +279,7 @@
 			<!--Bloques info hotel begin-->
 			<div class="tab-content">
 
-				<div id="info" class="tab-pane fade  active in">
+				<div id="info" class="tab-pane fade">
 					<div class="item-hotel" >
 						<div class="info-title">A cerca del Hotel</div>
 
@@ -338,8 +338,8 @@
 
 
 						<div class="col-md-12 ">
-
-							{!!$descripcion!!}
+				
+						<p class="info-details-hotel">	{!!$descripcion!!}</p>
 
 							<div class="info-title">Instalaciones</div>
 
@@ -360,27 +360,15 @@
 								<li><i class="fa fa-check" aria-hidden="true"></i>Estacionamiento sin costo extra.</li>
 							</ul>
 
-
-
-
 							
 
-						</div>
-
-						
-						
-						
-						
-						
-						
+						</div>						
 					</div>
-
-
 				</div>
 
 
 
-				<div id="details" class="tab-pane fade ">
+				<div id="details" class="tab-pane fade active in">
 					<div class="item-hotel" >
 						<div class="info-title">Habitación tipo Estudio Villa</div>
 						

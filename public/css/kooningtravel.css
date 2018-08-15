@@ -63,7 +63,7 @@ body .search-body .container .main-box .caja-search #contactform .inline-block .
 .img-hotel-disney .img-w { width: 100%; display: inline-block; float: left; }
 /*Details*/
 body .search-body .container .detalles-hotel { border: 1px solid #f2f8fc; border-radius: 6px; margin: 15px 0px; color: #2c678d; font-family: Oswald; font-size: 18px; font-weight: 900; text-align: left; width: 100%; display: inline-block; padding: 10px; }
-body .search-body .container .nav { margin: 10px 0px; }
+body .search-body .container .nav { margin: 10px 0px; width: 98%;  float: none; display: inline-block;}
 .info-title { background: #fff; border: 1px solid #f2f2f2; border-radius: 6px; color: #e9540d; font-family: Oswald; font-size: 16px; font-weight: 900; padding: 10px; text-transform: uppercase; text-align: left; margin: 10px 0px; width: 98%; float: none!important; display: inline-block; }
 .estructura-habitacion { border-left: 1px solid #f2f2f2; border-right: 1px solid #f2f2f2; }
 .bloque-hotel-item { display: inline-block; width: 100%; float: left; }
@@ -77,16 +77,14 @@ body .search-body .container .nav { margin: 10px 0px; }
 .bloque-hotel-item .items-hotel .info-promo { color: #55a797; font-size: 14px; width: 100%; text-align: justify; }
 .bloque-hotel-item .background { background: url("https://www.kooningtravel.com/img/extras/line.png") repeat; }
 .container .tab-content { display: inline-block; float: left; width: 100%; }
-.container .tab-content .tab-pane { display: inline-block; float: left; width: 100%; }
+.container .tab-content .tab-pane { float: left; width: 100%; }
 .container .tab-content .tab-pane .item-hotel { text-align: center; width: 100%; display: inline-block; }
-
 .container .tab-content .tab-pane .item-hotel .col-md-12{ display: inline-block; float: left; width: 100%; }
 .container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8, .container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-4 { display: inline-block; }
 .container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel {width: 100%;display: inline-block;}
 .container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel .carousel-inner{width: 100%;display: inline-block;}
 .container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel .carousel-inner .item{width: 100%;}
 .container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel .carousel-inner .item img{height: 468px;width: 100%;display: inline-block;}
-
 .container .tab-content .tab-pane .item-hotel .col-md-12 .best-price { text-align: center; background: #dfeefa none repeat scroll 0px 0px; border-radius: 0px 4px 6px 0px; font-weight: bold; color: #014999; font-size: 17px; width: 100%; }
 .container .tab-content .tab-pane .item-hotel .col-md-12 .best-price .search-price { width: 100%; color: #014999; font-family: Oswald; font-weight: 300; font-size: 28px; display: inline-block; float: left; }
 .container .tab-content .tab-pane .item-hotel .col-md-12 .best-price .btn { display: inline-block; float: none; width: 50%; margin: 10px 0px; }
@@ -99,7 +97,6 @@ body .search-body .container .nav { margin: 10px 0px; }
 .container .tab-content .tab-pane .item-hotel .col-md-12 .list-items { list-style: none; display: inline-block; float: left; }
 .container .tab-content .tab-pane .item-hotel .col-md-12 .list-items li { width: 100%; text-align: left; color: #333; font-size: 13px; font-family: Roboto, sans-serif; }
 .container .tab-content .tab-pane .item-hotel .col-md-12 .list-items li i { margin-right: 3px; color: #E9540D; }
-
 .tab-content #info div, .tab-content #info p, .tab-content #details p { float: left; }
 .line-details { height: 9px; display: inline-block; float: left; width: 100%; background: #f0f0f0; border: none; }
 .bloque-hotel-item .items-hotel .destino-hotel { width: 100%; display: inline-block; }
