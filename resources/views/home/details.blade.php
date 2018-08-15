@@ -261,7 +261,7 @@
 	</div>
 	@stop
 	@section('content')
-	<div class="serach-body" >
+	<div class="search-body" >
 		<div class="container" >
 			<div class="bread-crub">
 				<i class="fa fa-home" aria-hidden="true"></i>
@@ -276,22 +276,135 @@
 			
 			<!--Bloques info hotel begin-->
 			<div class="tab-content">
-				<div id="info" class="tab-pane fade">
-					
+
+				<div id="info" class="tab-pane fade  active in">
 					<div class="item-hotel" >
+						<div class="info-title">A cerca del Hotel</div>
+
+						<div class="col-md-12" >
+
+							<div class="col-md-8" >
+							  <div id="myCarousel" class="carousel slide" data-ride="carousel">				    
+								    <div class="carousel-inner">
+								    	<div class="item active">
+								        	<img src="https://images.e-tsw.com/_lib/vimages/Cancun/Hotels/Dreams-Sands-Cancun-Resort-Spa/Gallery/Cancun-Dreams-Sands-Deluxe-Vista-PMK.jpg" alt="" >
+								     	</div>
+								    	<div class="item">
+								        	<img src="https://images.e-tsw.com/_lib/vimages/Cancun/Hotels/Dreams-Sands-Cancun-Resort-Spa/Gallery/Cancun-Dreams-Sands-El-Patio-Restaurant.jpg" alt="" >
+								     	</div>
+								    	<div class="item">
+								        	<img src="https://images.e-tsw.com/_lib/vimages/Cancun/Hotels/Dreams-Sands-Cancun-Resort-Spa/Gallery/Cancun-Dreams-Sands-Facilidades-nupciales.jpg" alt="" >
+								     	</div>				      	
+								    </div>
+								    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+								      <span class="glyphicon glyphicon-chevron-left"></span>
+								      <span class="sr-only">Previous</span>
+								    </a>
+								    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+								      <span class="glyphicon glyphicon-chevron-right"></span>
+								      <span class="sr-only">Next</span>
+								    </a>
+								  </div>
+
+								</div>
+
+								<div class="col-md-4">									
+									<div class="col-md-12">
+
+										<div class="col-md-12 best-price" >
+											<span class="search-price" >¡Encuentra el mejor precio para este hotel!</span>										
+											<a class="btn btn-primary" data-toggle="tab"  href="#details">Mostrar Precios</a>
+										</div>
+
+										<div class="col-md-12 chek-in">
+											<h3 class="details" >DETALLE HOTEL</h3>
+											<h3 class="check-in" >
+												<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>Llegada
+												<p class="text-details" >3:00 p.m.</p>
+											</h3>
+											<h3 class="check-out" >
+												<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>Salida
+												<p class="text-details" >12:00 p.m.</p>
+											</h3>
+											<h3 class="world">
+												<span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Total Habitaciones
+												<p class="text-details" >438 Habitaciones</p>
+											</h3>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+
+
+
+						<div class="col-md-12 ">
+
+							<p class="info-details-hotel" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+							<p class="info-details-hotel" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+							<div class="info-title">Instalaciones</div>
+
+							<ul class="list-items col-md-4" >
+								<li><i class="fa fa-check" aria-hidden="true"></i>Piscina (s) sin costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Estacionamiento sin costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Centro de Negocios costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Bar (es) sin costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Elevador (es) sin costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Vapor costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Playa sin costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Spa costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Jacuzzi sin costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Tienda/Minisuper costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Salón de Belleza costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Facilidades Nupciales costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Club de Playa sin costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Gimnasio sin costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Restaurante (s) sin costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Área de juegos infantiles sin costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Sauna costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Boutique (s) sin costo extra.</li>
+							</ul>
+
+
+
+							
+
+						</div>
+
+						
+						
+						
+						
 						
 						
 					</div>
+
+
 				</div>
-				<div id="details" class="tab-pane fade in active">
+
+
+
+				<div id="details" class="tab-pane fade ">
 					<div class="item-hotel" >
-						<div class="barra-mini-hotel-detalle">Habitación tipo Estudio Villa</div>
+						<div class="info-title">Habitación tipo Estudio Villa</div>
 						
 						<div class="bloque-hotel-item" >
 							<div class="items-hotel col-md-4">
 								<img class="img-hotel-details" src="https://images.e-tsw.com/_lib/vimages/Cancun/Hotels/Cancun-The-Westin-Lagunamar/Gallery/Cancun-The-Westin-Lagunamar-Estudio-Villa.jpg" alt="Habitación tipo Estudio Villa" >
 							</div>
-
 							<div class="items-hotel estructura-habitacion col-md-6">
 								<h3>Plan Sólo Habitación </h3>
 								<h4 class="info-promo" >Descuento Especial! Aplica para estadías entre 27/Ago/2018 y 20/Nov/2018. Valido para reservaciones antes del 18/Nov/2018</h4>
@@ -304,40 +417,56 @@
 											</a>
 											</h4>
 										</div>
-
 										<div id="collapse0" class="panel-collapse active in collapse" role="tabpanel" aria-labelledby="heading0"><div class="panel-body panel_text">
-										<div class="table-responsive">
-											<table class="table table-responsive">
-												<tbody><tr style="background=#E9540D"> <th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Sábado</th><th class="info"> 13</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Domingo</th><th class="info"> 14</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Lunes</th><th class="info"> 15</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Martes</th><th class="info"> 16</th></tr>
-												<tr><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td></tr>
-											</tbody></table></div>
-											<p class="info-message" >Permite cancelar sin cargo hasta 4 días antes de la fecha de llegada, de 3 dias a 24 horas antes de su llegada, aplica 2 noches de estancia. En caso de No Show, o salida anticipada queda sujeto al cobro por el total reservado.</p>
+											<div class="table-responsive">
+												<table class="table table-responsive">
+													<tbody><tr style="background=#E9540D"> <th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Sábado</th><th class="info"> 13</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Domingo</th><th class="info"> 14</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Lunes</th><th class="info"> 15</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Martes</th><th class="info"> 16</th></tr>
+													<tr><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td></tr>
+												</tbody></table></div>
+												<p class="info-message" >Permite cancelar sin cargo hasta 4 días antes de la fecha de llegada, de 3 dias a 24 horas antes de su llegada, aplica 2 noches de estancia. En caso de No Show, o salida anticipada queda sujeto al cobro por el total reservado.</p>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-
-
-						<div class="items-hotel col-md-2 background">							
-							<p class="total-night">Total 4 Noches</p>
-							<p class="precio-real" >$16,370.73</p>
-							<p class="precio-promedio">Precio Promedio por noche:</p>
-							<p class="precio-final">$ 4,093</p>
-							<p class="inpuestos" >Impuestos incluidos</p>
-							<a href="/hotels/1123/booking/STU" class="btn btn-danger">RESERVAR</a>	
+							<div class="items-hotel col-md-2 background">
+								<p class="total-night">Total 4 Noches</p>
+								<p class="precio-real" >$16,370.73</p>
+								<p class="precio-promedio">Precio Promedio por noche:</p>
+								<p class="precio-final">$ 4,093</p>
+								<p class="inpuestos" >Impuestos incluidos</p>
+								<a href="/hotels/1123/booking/STU" class="btn btn-danger">RESERVAR</a>
+							</div>
 						</div>
 					</div>
+					
 				</div>
+			</div>
+			<!--Bloques info hotel end-->
+			<div class="line-details" ></div>
+			<!--Mapa details-->
+			<div  id="verMapa">
+				
+				<h3 class="info-title">Ubicación</h3>
+				
+				<div id="mapa"> </div>
+				
+				<input type="hidden" value="" id="lat" >	
+				<input type="hidden" value="" id="long" >
+
 				
 			</div>
+			<!--Mapa details-->
 		</div>
-		<!--Bloques info hotel end-->
-
-		<div class="line-details" ></div>
-
-
-
 	</div>
-</div>
-@stop
+	<!--Begin MENSAJES-->
+	<div class="alert alert-primary messaje" role="alert">
+		<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" ></span> Quedan pocas habitaciones disponibles.
+	</div>
+	<!--End MENSAJES-->
+	<script language="javascript" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz2r9rdcvkdJ_6Cy06hX6wmYr7fvyRnaA&callback=initMap" defer></script>
+
+
+
+
+	@stop

@@ -570,3 +570,32 @@ $(".messaje").delay(3000).fadeOut("slow");
 
  });
  
+
+	var lati=21.0403825;
+	var long = -86.8730981;
+
+
+function initMap() {
+ // Creamos un objeto mapa y especificamos el elemento DOM donde se va a mostrar.
+  var map = new google.maps.Map(document.getElementById('mapa'), {
+   center: {lat: lati, lng: long},
+   scrollwheel: false,
+   zoom: 18,
+   zoomControl: true,
+   rotateControl : false,
+   mapTypeControl: true,
+   streetViewControl: false,
+ });
+
+
+  var marker = new google.maps.Marker({
+		 position: {lat: lati, lng: long }, 
+		 title:"Hotel",
+		 animation: google.maps.Animation.DROP,
+		 draggable: false,
+		 icon: "https://www.kooningtravel.com/images/mark.png"
+ 	});
+
+  	marker.setMap(map);
+ //marker2.setMap(map);
+}

@@ -6,7 +6,7 @@
 
 @section('content')
 
-<div class="serach-body" >
+<div class="search-body" >
   <div class="container" >
     <div class="bread-crub">
       <i class="fa fa-home" aria-hidden="true"></i>
@@ -339,6 +339,10 @@
     </div>
   </div>
 </div>
+
+
+
+
 <!--Begin MENSAJES-->
 <div class="alert alert-primary messaje" role="alert">
   <span class="glyphicon glyphicon-time" aria-hidden="true" ></span>Hay <?php echo rand(12,30); ?> personas más viendo este destino en este momento.

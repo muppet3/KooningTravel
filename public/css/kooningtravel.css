@@ -31,126 +31,147 @@ body { margin: 0px; padding: 0px; text-align: center; }
 .listcart .tott span { width: 50%; color: #FFF; margin-top : 5px; }
 .listcart .teltt { background: url(https://www.kooningtravel.com/img/Home/flags/flags.png) no-repeat right center transparent; width: 53%; color: #FFF; margin: 10px 0px; text-align: left; font-weight: 600; font-size: 13px; }
 .del-room { cursor: pointer; }
-/*Search*/
-body .serach-body { width: 100%; display: inline-block; background: #F0F0F0; }
-body .serach-body .container .bread-crub { padding: 15px; color: #000; width: 100%; text-align: left; font-family: Roboto, sans-serif; }
-body .serach-body .container .bread-crub .icon-home { color: #000; }
-body .serach-body .container .bread-crub b { font-weight: 700; font-size: 13px; }
-body .serach-body .container .main-box { padding: 0px; }
-body .serach-body .container .main-box .caja-search { box-shadow: 0 1px 4px rgba(41,51,57,.5); background: #37454d; margin-bottom: 17px; display: inline-block; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; width: 100%; height: auto; position: relative; float: none; text-align: center; }
-body .serach-body .container .main-box .caja-search #contactform { margin-top: 15px; width: 94%; height: auto; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; text-align: center; display: inline-block; float: none; }
-body .serach-body .container .main-box .caja-search #contactform .label1 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; color: #FFF; }
-body .serach-body .container .main-box .caja-search #contactform hr { margin-bottom: 10px; float: left; display: inline-block; height: 1px; width: 100%; background: #bdbdbd; opacity: .4; }
-body .serach-body .container .main-box .caja-search #contactform .inline-search { background: #FFF; display: inline-block; border-radius: 6px; margin: 10px 0px; text-align: center; box-shadow: none; width: 100%; }
-body .serach-body .container .main-box .caja-search #contactform .inline-search .select2 { height: 33px; }
-body .serach-body .container .main-box .caja-search #contactform .inline-search .select2 .selection { height: 32px; width: 100%; }
-body .serach-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection { overflow: hidden; width: 100%; }
-body .serach-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered { height: 32px; width: 100%; list-style: none; margin: 0; }
-body .serach-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-search { z-index: 10; height: 32px; width: 100%; overflow: hidden; list-style: none; float: left; margin: 0px; padding: 0px; background-color: transparent; border: 0px; }
-body .serach-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-search .select2-search__field { font-size: 15px; width: 100%!important; height: 32px; margin: 0px; color: #444; position: absolute; z-index: 35; text-indent: 6px; background: transparent; border: none; outline: 0; box-shadow: none; -webkit-appearance: textfield; }
-.select2-container--default .select2-selection--multiple { background-color: white; border: 1px solid #aaa; border-radius: 4px; cursor: text; }
-body .serach-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-selection__clear { height: 32px; width: 97%; position: absolute; top: 0px; left: 0px; line-height: 33px; text-indent: 0px; text-align: right; margin: 0px; z-index: 40; }
-body .serach-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-selection__choice { height: 32px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; line-height: 33px; font-weight: bold; width: 90%; background-color: transparent; text-indent: 4px; color: #444; font-size: 12px; border: 0px; }
-body .serach-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove { color: #999; cursor: pointer; display: inline-block; font-weight: bold; margin-right: 2px; }
-body .serach-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-search { z-index: 10; height: 32px; width: 100%; margin: 0px; padding: 0px; background-color: transparent; border: 0px; overflow: hidden; }
-body .serach-body .container .main-box .caja-search form .inline-block { text-align: center; width: 100%; }
-body .serach-body .container .main-box .caja-search #contactform .inline-search .inline-block .inline-search { }
-body .serach-body .container .main-box .caja-search #contactform .inline-block .inline-search .input-style { width: 60%; float: none; }
 
+/*Search*/
+body .search-body { width: 100%; display: inline-block; background: #F0F0F0; }
+body .search-body .container .bread-crub { padding: 15px; color: #000; width: 100%; text-align: left; font-family: Roboto, sans-serif; }
+body .search-body .container .bread-crub .icon-home { color: #000; }
+body .search-body .container .bread-crub b { font-weight: 700; font-size: 13px; }
+body .search-body .container .main-box { padding: 0px; }
+body .search-body .container .main-box .caja-search { box-shadow: 0 1px 4px rgba(41,51,57,.5); background: #37454d; margin-bottom: 17px; display: inline-block; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; width: 100%; height: auto; position: relative; float: none; text-align: center; }
+body .search-body .container .main-box .caja-search #contactform { margin-top: 15px; width: 94%; height: auto; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; text-align: center; display: inline-block; float: none; }
+body .search-body .container .main-box .caja-search #contactform .label1 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; color: #FFF; }
+body .search-body .container .main-box .caja-search #contactform hr { margin-bottom: 10px; float: left; display: inline-block; height: 1px; width: 100%; background: #bdbdbd; opacity: .4; }
+body .search-body .container .main-box .caja-search #contactform .inline-search { background: #FFF; display: inline-block; border-radius: 6px; margin: 10px 0px; text-align: center; box-shadow: none; width: 100%; }
+body .search-body .container .main-box .caja-search #contactform .inline-search .select2 { height: 33px; }
+body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection { height: 32px; width: 100%; }
+body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection { overflow: hidden; width: 100%; }
+body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered { height: 32px; width: 100%; list-style: none; margin: 0; }
+body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-search { z-index: 10; height: 32px; width: 100%; overflow: hidden; list-style: none; float: left; margin: 0px; padding: 0px; background-color: transparent; border: 0px; }
+body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-search .select2-search__field { font-size: 15px; width: 100%!important; height: 32px; margin: 0px; color: #444; position: absolute; z-index: 35; text-indent: 6px; background: transparent; border: none; outline: 0; box-shadow: none; -webkit-appearance: textfield; }
+.select2-container--default .select2-selection--multiple { background-color: white; border: 1px solid #aaa; border-radius: 4px; cursor: text; }
+body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-selection__clear { height: 32px; width: 97%; position: absolute; top: 0px; left: 0px; line-height: 33px; text-indent: 0px; text-align: right; margin: 0px; z-index: 40; }
+body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-selection__choice { height: 32px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; line-height: 33px; font-weight: bold; width: 90%; background-color: transparent; text-indent: 4px; color: #444; font-size: 12px; border: 0px; }
+body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove { color: #999; cursor: pointer; display: inline-block; font-weight: bold; margin-right: 2px; }
+body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-search { z-index: 10; height: 32px; width: 100%; margin: 0px; padding: 0px; background-color: transparent; border: 0px; overflow: hidden; }
+body .search-body .container .main-box .caja-search form .inline-block { text-align: center; width: 100%; }
+body .search-body .container .main-box .caja-search #contactform .inline-search .inline-block .inline-search { }
+body .search-body .container .main-box .caja-search #contactform .inline-block .inline-search .input-style { width: 60%; float: none; }
 #header { width: 100%; }
 #search-tabs-2 { display: inline-block; }
 .reset .col-md-3 { width: 24%; height: 100%; padding: 0px; display: inline-block; float: left; }
 .img-hotel-disney .img-w { width: 100%; display: inline-block; float: left; }
-
 /*Details*/
-body .serach-body .container .detalles-hotel {     
-border: 1px solid #f2f8fc;
-    border-radius: 6px;
-    margin: 15px 0px;
-    color: #2c678d;
-    font-family: Oswald;
-    font-size: 18px;
-    font-weight: 900;
-    text-align: left;
+body .search-body .container .detalles-hotel { border: 1px solid #f2f8fc; border-radius: 6px; margin: 15px 0px; color: #2c678d; font-family: Oswald; font-size: 18px; font-weight: 900; text-align: left; width: 100%; display: inline-block; padding: 10px; }
+body .search-body .container .nav { margin: 10px 0px; }
+.info-title { background: #fff; border: 1px solid #f2f2f2; border-radius: 6px; color: #e9540d; font-family: Oswald; font-size: 16px; font-weight: 900; padding: 10px; text-transform: uppercase; text-align: left; margin: 10px 0px; width: 98%; float: none!important; display: inline-block; }
+.estructura-habitacion { border-left: 1px solid #f2f2f2; border-right: 1px solid #f2f2f2; }
+.bloque-hotel-item { display: inline-block; width: 100%; float: left; }
+.bloque-hotel-item .items-hotel { display: inline-block; float: left; }
+.bloque-hotel-item .items-hotel p { font-size: 13px; color: #999; display: inline-block; width: 100%; padding: 0px; margin: 6px 0px; text-align: center; }
+.bloque-hotel-item .items-hotel .precio-real { color: #000; font-size: 16px; font-weight: bold; }
+.bloque-hotel-item .items-hotel .precio-final { font-size: 14px; font-weight: bold; }
+.bloque-hotel-item .items-hotel .btn { margin: 10px 0px; }
+.bloque-hotel-item .items-hotel .img-hotel-details { width: 100%; }
+.bloque-hotel-item .items-hotel h3 { color: #000; font-weight: bold; font-size: 14px; text-align: left; width: 100%; margin: 15px 0px; }
+.bloque-hotel-item .items-hotel .info-promo { color: #55a797; font-size: 14px; width: 100%; text-align: justify; }
+.bloque-hotel-item .background { background: url("https://www.kooningtravel.com/img/extras/line.png") repeat; }
+.container .tab-content { display: inline-block; float: left; width: 100%; }
+.container .tab-content .tab-pane { display: inline-block; float: left; width: 100%; }
+.container .tab-content .tab-pane .item-hotel { text-align: center; width: 100%; display: inline-block; }
+
+.container .tab-content .tab-pane .item-hotel .col-md-12{ display: inline-block; float: left; width: 100%; }
+.container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8, .container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-4 { display: inline-block; }
+.container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel {width: 100%;display: inline-block;}
+.container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel .carousel-inner{width: 100%;display: inline-block;}
+.container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel .carousel-inner .item{width: 100%;}
+.container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel .carousel-inner .item img{height: 468px;width: 100%;display: inline-block;}
+
+.container .tab-content .tab-pane .item-hotel .col-md-12 .best-price{
+    text-align: center;
+    background: #dfeefa none repeat scroll 0px 0px;
+    border-radius: 0px 4px 6px 0px;
+    font-weight: bold;
+    color: #014999;
+    font-size: 17px;
     width: 100%;
+    }
+
+.container .tab-content .tab-pane .item-hotel .col-md-12 .best-price .search-price {
+    width: 100%;
+    color: #014999;
+    font-family: Oswald;
+    font-weight: 300;
+    font-size: 28px;
     display: inline-block;
-    padding: 10px; }
-body .serach-body .container .nav { margin:10px 0px; }    
+    float: left;
+    }
 
-.barra-mini-hotel-detalle {background: #fff;border: 1px solid #f2f2f2;border-radius: 6px;color: #e9540d;font-family: Oswald;font-size: 16px;font-weight: 900;padding: 10px;text-transform: uppercase;text-align: left;margin: 10px 0px;width: 98%;float: none;display: inline-block;}
+    .container .tab-content .tab-pane .item-hotel .col-md-12 .best-price  .btn{display: inline-block;float: none;width: 50%;margin: 10px 0px;}
 
-.estructura-habitacion {
-    border-left: 1px solid #f2f2f2;
-    border-right: 1px solid #f2f2f2;
+.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in{ background: #F8F8F8; }
+
+.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in h3{ 	
+color: #000;
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    float: left;
+    padding: 0px;
+    width: 100%;
+    text-align: left;
+    font-family: Roboto,sans-serif;
+	 }
+
+	.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in h3 .text-details{
+		font-size: 12px;
+    font-family: Roboto,sans-serif;
+    color: #333;
+    display: inline-block;
+    font-weight: normal;
+    width: 100%;
+    margin: 10px 0px 0px 0px;}
+.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in h3 span {  }
+.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in .details{ 
+	text-align: center;
+    color: #014999;
+    font-weight: bold;
+    padding:15px 0px;
+    border-bottom: 1px dotted #cccccc;
+    font-size: 16px;
+    margin:0px;
 }
 
-.bloque-hotel-item{ display: inline-block; width: 100%; float: left; }
-.bloque-hotel-item .items-hotel{ display: inline-block; float: left;  }
+
+.container .tab-content .tab-pane .item-hotel .col-md-12 .info-details-hotel{color: #888;font-family: Roboto,sans-serif;font-size: 12px;width: 97%;text-align: justify;float: none!important;margin: 10px 0px;display: inline-block;}
 
 
-
-.bloque-hotel-item .items-hotel p{
-	font-size: 13px;
-	color: #999;
-	display: inline-block;
-    width: 100%;
-    padding: 0px;
-    margin: 6px 0px;
-    text-align:center; }
-
-
-
-    .bloque-hotel-item .items-hotel .precio-real{ color: #000; font-size: 16px; font-weight: bold; }
-    .bloque-hotel-item .items-hotel  .precio-final{ font-size: 14px; font-weight: bold; }
-
-   .bloque-hotel-item .items-hotel .btn { margin:10px 0px;  }
-
-.bloque-hotel-item .items-hotel .img-hotel-details{ width: 100%; }
-
-.bloque-hotel-item .items-hotel h3{ color: #000;
-    font-weight: bold;
-    font-size: 14px;
+.container .tab-content .tab-pane .item-hotel .col-md-12 .list-items{ list-style: none; display: inline-block; float: left; }
+.container .tab-content .tab-pane .item-hotel .col-md-12 .list-items li{     width: 100%;
     text-align: left;
-    width: 100%;
-    margin:15px 0px;}
+    color: #333;
+    font-size: 13px;
+    font-family: Roboto,sans-serif;}
 
-.bloque-hotel-item .items-hotel .info-promo{    color: #55a797;
-    font-size: 14px;
-    width: 100%;
-    text-align: justify; }
-
-  .bloque-hotel-item .background{ background: url("https://www.kooningtravel.com/img/extras/line.png") repeat; }
-
-.container .tab-content{ display: inline-block;
-    float: left;
-    width: 100%; }
-.container .tab-content .tab-pane{display: inline-block;float: left;width: 100%;}
-.container .tab-content .tab-pane .item-hotel{  }
-.container .tab-content .tab-pane .item-hotel{text-align: center;}
-
-.tab-content #info div, .tab-content #info p , .tab-content #details p {  float: left;  }
-
-.line-details{
-height: 9px;
-    display: inline-block;
-    float: left;
-    width: 100%;
-    background: #f0f0f0;
-    border: none;}
-
-.bloque-hotel-item .items-hotel .destino-hotel{width: 100%; display: inline-block; }
+.container .tab-content .tab-pane .item-hotel .col-md-12 .list-items li i{ margin-right: 3px; color: #E9540D; }
 
 
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default{ display: inline-block;  width: 100%; }
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default div{ width: 100%;  }
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading{ width: 100%; display: inline-block; }
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading .panel-title{ width: 100%; display: inline-block; }
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading .panel-title{ width: 100%; display: inline-block; }
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading .panel-title .pa_italic { width: 100%; display: inline-block; color: #727176; font-size:12px; text-transform: capitalize; font-family: 'Play', sans-serif;  }
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse{  }
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse .panel-body{  }
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse .panel-body .info-message{ font-size: 12px; color: #888; display: inline-block; width: 100%; text-align: justify;  }
-
+.tab-content #info div, .tab-content #info p, .tab-content #details p { float: left; }
+.line-details { height: 9px; display: inline-block; float: left; width: 100%; background: #f0f0f0; border: none; }
+.bloque-hotel-item .items-hotel .destino-hotel { width: 100%; display: inline-block; }
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default { display: inline-block; width: 100%; }
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default div { width: 100%; }
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading { width: 100%; display: inline-block; }
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading .panel-title { width: 100%; display: inline-block; }
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading .panel-title { width: 100%; display: inline-block; }
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading .panel-title .pa_italic { width: 100%; display: inline-block; color: #727176; font-size: 12px; text-transform: capitalize; font-family: 'Play', sans-serif; }
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse { }
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse .panel-body { }
+.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse .panel-body .info-message { font-size: 12px; color: #888; display: inline-block; width: 100%; text-align: justify; }
+.container #verMapa { background: #fff; text-align: center; width: 100%; display: inline-block; }
+.container #verMapa #mapa { width: 98%; float: none; height: 350px; display: inline-block; }
 /*Reset genearal css*/
 .head * { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box }
 .head div, .head span, .head p, .head .tour li a, .head input, .head form, .head img, .head label, .head ul, .head li { display: inline-block; float: left; margin: 0px; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; }
@@ -184,17 +205,17 @@ height: 9px;
 .main-nav .nav1 { left: 13%; }
 .main-nav .nav2 { left: 21%; }
 @media(max-width:767px) {
-.fb_iframe_widget_fluid { display: inline-block; float: left; width: 100%; }
-.great .right img { position: relative; top: 11px; }
-.great .left .tig { float: left; text-align: left; font-size: 25px; width: 70%; display: inline-block; }
-.great .redes ul li { width: 70px; margin-left: 0px; }
-.ti { width: 100%!important; display: inline-block; float: left; text-align: center; position: relative; left: 0px; margin-top: 7px; }
-.great .redes ul { width: 100%!important; margin-top: -6px!important; }
-.great .left, .great .right { width: 100%!important; top: 9%!important; }
-.great { overflow: hidden; width: 100%!important; }
-.mas { margin: 0px!important; }
-.great .left .tig a strong { font-size: 18px; }
-.ti a { float: left; margin-left: 3%; }
+	.fb_iframe_widget_fluid { display: inline-block; float: left; width: 100%; }
+	.great .right img { position: relative; top: 11px; }
+	.great .left .tig { float: left; text-align: left; font-size: 25px; width: 70%; display: inline-block; }
+	.great .redes ul li { width: 70px; margin-left: 0px; }
+	.ti { width: 100%!important; display: inline-block; float: left; text-align: center; position: relative; left: 0px; margin-top: 7px; }
+	.great .redes ul { width: 100%!important; margin-top: -6px!important; }
+	.great .left, .great .right { width: 100%!important; top: 9%!important; }
+	.great { overflow: hidden; width: 100%!important; }
+	.mas { margin: 0px!important; }
+	.great .left .tig a strong { font-size: 18px; }
+	.ti a { float: left; margin-left: 3%; }
 }
 /*Comienza Estilos para el Header generico*/
 .header { width: 100%; height: auto; margin-top: 15px!important; }
@@ -255,46 +276,29 @@ a:link, a:visited { text-decoration: none; }
 .loader--dot:nth-child(6) { background-color: #fbef5a; animation-delay: 0s; }
 .loader--text { position: absolute; top: 200%; left: 0; right: 0; width: 4rem; margin: auto; color: #FFF; }
 .loader--text:after { content: "Buscando"; font-weight: bold; animation-name: loading-text; animation-duration: 3s; animation-iteration-count: infinite; }
- @keyframes loader {  15% {
-transform: translateX(0);
+
+ @keyframes loader {
+ 15% { transform: translateX(0); }
+ 45% { transform: translateX(230px); }
+ 65% { transform: translateX(230px); }
+ 95% { transform: translateX(0); }
 }
- 45% {
-transform: translateX(230px);
+
+@keyframes loading-text { 
+	 0% {content: "Buscando";}
+	25% {content: "Buscando.";}
+	50% {content: "Buscando..";}
+	75% {content: "Buscando...";}
 }
- 65% {
-transform: translateX(230px);
-}
- 95% {
-transform: translateX(0);
-}
-}
- @keyframes loading-text {  0% {
-content: "Buscando";
-}
- 25% {
-content: "Buscando.";
-}
- 50% {
-content: "Buscando..";
-}
- 75% {
-content: "Buscando...";
-}
-}
+
 .load--text { position: absolute; top: 200%; left: 0; right: 0; width: 4rem; margin: auto; color: #FFF; }
 .espere .load--text:after { content: "Cargando"; font-weight: bold; animation-name: load-text; animation-duration: 3s; animation-iteration-count: infinite; }
- @keyframes load-text {  0% {
-content: "Cargando";
-}
- 25% {
-content: "Cargando.";
-}
- 50% {
-content: "Cargando..";
-}
- 75% {
-content: "Cargando...";
-}
+
+@keyframes load-text { 
+	 0% { content: "Cargando"; }
+	25% { content: "Cargando.";}
+	50% { content: "Cargando..";}
+	75% { content: "Cargando...";}
 }
 /*Fancy box*/
 #cboxLoadedContent { display: none; border-radius: 6px; text-align: center; }
@@ -360,7 +364,7 @@ body .selection .select2-selection .select2-selection__rendered .select2-selecti
 body .select2-selection__choice__remove { position: absolute; top: 0px; left: 0px; }
 .select2-results__options, .select2-results__options li, .select2-results__options strong, .select2-results__options ul, .select2-results__options li { width: 100%; }
 /*Calendario CSS*/
-html .ui-datepicker.ui-datepicker-multi { width: auto; left:3px!important; }
+html .ui-datepicker.ui-datepicker-multi { width: auto; left: 3px!important; }
 html .ui-datepicker-trigger.ui-button-icon-only .ui-button-text { padding: 0 }
 html .ui-datepicker { display: none; margin-top: 13px; padding: 7px 36px 4px 36px; width: auto !important; border-radius: 8px; background: #fff; z-index: 9999 !important; -o-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -ms-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); user-select: none; -webkit-user-select: none; -moz-user-select: -moz-none; -o-user-select: -moz-none; -khtml-user-select: none; -ms-user-select: none }
 html.no-boxshadow .ui-datepicker { border: 1px solid #d3d3d3; filter: progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=180, Strength=5) progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=90, Strength=3) progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=270, Strength=3);
@@ -398,7 +402,7 @@ html .ui-datepicker-calendar thead { width: 215px; height: 22px }
 html .ui-datepicker-calendar thead span { color: #e61b76; font-weight: bold; font-size: 10px; font-family: Helvetica, Arial, sans-serif }
 html .ui-datepicker-arrow { position: absolute; top: -11px; left: 8%; z-index: 61; margin-left: -17px; width: 34px; height: 11px; background: url(https://www.kooningtravel.com/img/all-icons.png) no-repeat 0 -224px }
 .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: none; float: none; }
-html .ui-datepicker-row-break { position: absolute; width: 43px; height: 13px; background: url(https://www.kooningtravel.com/img/basic-arrows.png) -85px -8px no-repeat; top: -13px; left:43%; }
+html .ui-datepicker-row-break { position: absolute; width: 43px; height: 13px; background: url(https://www.kooningtravel.com/img/basic-arrows.png) -85px -8px no-repeat; top: -13px; left: 43%; }
 html .ui-datepicker-rtl { direction: rtl }
 html .ui-datepicker-rtl .ui-datepicker-prev { right: 2px; left: auto }
 html .ui-datepicker-rtl .ui-datepicker-next { right: auto; left: 2px }
@@ -424,15 +428,12 @@ td.date-to-select a { background: #E61B76!important; text-decoration: none !impo
 td.ui-datepicker-other-month.ui-datepicker-unselectable span { background: none !important; border: 1px solid transparent !important }
 body .home .h2, body .other .h2 { text-align: center; font-family: HelveticaThin, Helvetica, Arial, sans-serif; color: #FFF; font-size: 32px; margin: 30px 0px; width: 100%; height: 38px; display: inline-block; float: left; }
 body .other .h2 { color: #4d6a8e; margin-bottom: 0px; }
-
-body .other .info-details{ margin:10px 0px; font-size: 20px; color: #fff; width: 100%; text-align: center; }
-
-
-
-body .other .h2 .imagen-estrellas{ float: none; margin-left: 5px; }
+body .other .info-details { margin: 10px 0px; font-size: 20px; color: #fff; width: 100%; text-align: center; }
+body .other .h2 .imagen-estrellas { float: none; margin-left: 5px; }
 body .other .fechas-info { margin: 0px auto; float: left; margin-top: 0px; font-size: 20px; color: #fff; width: 100%; text-align: center; }
 .box-home .inline-search { border-radius: 6px; background: #FFF; text-align: left; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); margin: 0px 7px; }
-body div .box .box-home .inline-block .inline-button, body .serach-body .container .main-box .caja-search form .inline-block .inline-button { padding: 0px; margin: 0px; border: 0px; display: -moz-inline-stack; display: inline-block; *display: inline; float: none; zoom: 1; border-radius: 6px; width: 70px; height: 45px; margin-left: 7px; margin-right: 2px; line-height: 150%; vertical-align: top; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), inset 0 -1px rgba(0, 0, 0, 0.15), inset 0 1px rgba(255, 255, 255, 0.35); background: url(https://kooningtravel.com/img/search.png) no-repeat center center #E61B76; }
+body div .box .box-home .inline-block .inline-button, body .search-body .container .main-box .caja-search form .inline-block .inline-button { padding: 0px; margin: 0px; border: 0px; display: -moz-inline-stack; display: inline-block; *display: inline;
+float: none; zoom: 1; border-radius: 6px; width: 70px; height: 45px; margin-left: 7px; margin-right: 2px; line-height: 150%; vertical-align: top; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), inset 0 -1px rgba(0, 0, 0, 0.15), inset 0 1px rgba(255, 255, 255, 0.35); background: url(https://kooningtravel.com/img/search.png) no-repeat center center #E61B76; }
 .inline-search .input-style { cursor: pointer; position: relative; padding: 0px; border-top-left-radius: 0px; height: 46px; border-bottom-left-radius: 0px; width: 105px; }
 .inline-search .input-style .aa { font-size: 32px; display: -moz-inline-stack; display: inline-block; *display: inline;
 zoom: 1; line-height: 45px; padding-right: 2px; }
@@ -461,7 +462,7 @@ zoom: 1; margin: 0 3px; width: 11px; height: 45px; background: url(https://www.k
 #contactform .destination { width: 200px; font-size: 20px }
 .origin-select-input:focus, .days-select-input:focus { outline: 0; box-shadow: 0 0 0 2px #E61B76 }
 #passengers-panel { float: none; position: absolute; top: 45px; left: 50%; margin-left: -170px; display: block; width: 340px; margin-top: 13px; border-radius: 8px; background: #FFF; z-index: 9999 !important; -o-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -ms-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1) }
-.panel-arrow { position: absolute; width: 43px; height: 13px; background: url(https://www.kooningtravel.com/img/basic-arrows.png) -164px -8px no-repeat; top: -13px; left:43%;}
+.panel-arrow { position: absolute; width: 43px; height: 13px; background: url(https://www.kooningtravel.com/img/basic-arrows.png) -164px -8px no-repeat; top: -13px; left: 43%; }
 .panel-header { width: 100%; height: 65px; border-radius: 9px 9px 0 0; background: #f6f6f6; background: -webkit-linear-gradient(#f6f6f6 0, #eaeaea 100%); background: -webkit-linear-gradient(#f6f6f6 0, #e6e6e6 100%); border-bottom: 1px solid #d2d2d2; position: relative; text-align: center }
 .panel-header-arrow { position: absolute; width: 43px; height: 13px; background: url(https://www.kooningtravel.com/img/basic-arrows.png) -85px -4px no-repeat; bottom: -1px; margin-left: -22px }
 .panel-header-list .item { display: -moz-inline-stack; display: inline-block; *display: inline;
@@ -604,11 +605,9 @@ body .centerh .fott .mar { margin: 0px 55px; }
 .detallest { width: 100%; text-align: center; }
 .detallest .starts { font-family: HelveticaThin, Helvetica, Arial, sans-serif!important; font-weight: 500!important; font-size: 32px!important; color: #4d6a8e; line-height: 1.1; margin: 10px 0px 0px!important; float: none!important; }
 .detallest .imagen-estrellas { width: 80px; float: none!important; top: -6px; position: relative; left: 11px; }
-
-
 /*Estilos para bloque Busqueda*/
-.search-content { font-family:Roboto,sans-serif;  float: right; padding: 0px; width: 795px; display: inline-block; margin: 0px; }
-.titulo-listado-hoteles {font-family:Roboto,sans-serif; text-align: left; background: #37454d; display: inline-block; width: 100%; color: #fff; font-size: 19px; line-height: 40px; font-weight: 300; margin: 0px; padding: 0px; height: 40px; float: left; text-indent: 10px; }
+.search-content { font-family: Roboto, sans-serif; float: right; padding: 0px; width: 795px; display: inline-block; margin: 0px; }
+.titulo-listado-hoteles { font-family: Roboto, sans-serif; text-align: left; background: #37454d; display: inline-block; width: 100%; color: #fff; font-size: 19px; line-height: 40px; font-weight: 300; margin: 0px; padding: 0px; height: 40px; float: left; text-indent: 10px; }
 .search-content .result { width: 100%; height: auto; box-shadow: 0 1px 4px rgba(41,51,57,.5); margin-bottom: 8px; background: #fff; color: #37454d; display: inline-block; }
 .result div, .result h2, .result a, .result img, .result span, .result label, .result p { font-family: Arial, Helvetica, Sans, Sans-Serif, Sans Serif; display: inline-block; float: left; margin: 0px; padding: 0px; }
 .search-content .result .img { position: relative; height: 80%; margin: 10px 0px 0px 10px; width: 20%; }
@@ -626,8 +625,8 @@ body .centerh .fott .mar { margin: 0px 55px; }
 .search-content .result .details .bloques .title { text-align: left; width: 100%; font-size: 20px; line-height: 1.25; color: #37454d; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 .search-content .result .details .bloques .star { clear: both; }
 .search-content .result .details .bloques .city { text-align: left; width: 100%; font-weight: normal; font-family: Arial, Helvetica, Sans, Sans-Serif, Sans Serif; font-size: 14px; color: #37454d; line-height: 1.25; margin: 10px 0px; }
-.search-content .result .details .bloques .city i{ margin-left: 3px; }
-.search-content .result .details .bloques .include { width: 100%; text-align: left;}
+.search-content .result .details .bloques .city i { margin-left: 3px; }
+.search-content .result .details .bloques .include { width: 100%; text-align: left; }
 .search-content .result .details .bloques2 { text-align: center; width: 30%; margin-top: 24px; }
 .search-content .result .details .bloques .precio { display: inline-block; color: #428500; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 20px; margin-bottom: 15px; font-weight: bold; text-align: center; width: 100%; }
 .search-content .result .details .bloques2 .info { width: 85%; text-align: left; font-size: 13px; color: #37454d; font-weight: lighter; float: none; }
@@ -699,26 +698,27 @@ body .centerh .fott .mar { margin: 0px 55px; }
 /*Media Query movil*/
 
 @media only screen and (max-width: 700px) {
-.contp { position: initial!important; }
-#promo .imgpro { display: none!important; }
-.mesin { height: 70px!important; }
-.mesin .meses { width: 100%!important; font-size: 100%!important; }
-.pag { height: auto!important; }
-.pag .titl { position: initial!important; font-size: 29px!important; width: 100%; text-align: center; margin: 0px; height: 100px!important; }
-.pag .timerc { width: 100%!important; float: left!important; margin: 50px 0px!important; }
-.cuadro { width: 100%!important; float: left!important; }
-.wrop { width: 100%!important; margin: 0px!important; }
-.wrop .ih-item { display: inline-block; float: left; }
-.wrop .ih-item a, .wrop .ih-item a .img, .wrop .ih-item a .img p, .wrop .ih-item a .img img, .wrop .ih-item a .img h4 { text-align: center; display: inline-block; float: left; width: 100%; }
-.pp { width: 100%!important; float: left; }
-.cuadro .cycle-slideshow { width: 100%!important; }
-.ofert { display: none!important; }
-#promo { position: initial!important; }
-.middle { margin: 0px!important; }
-.flip { width: 28px!important; }
-.flip-clock-wrapper ul li a div { left: -1px; }
-.sombra { padding: 0px!important; }
+	.contp { position: initial!important; }
+	#promo .imgpro { display: none!important; }
+	.mesin { height: 70px!important; }
+	.mesin .meses { width: 100%!important; font-size: 100%!important; }
+	.pag { height: auto!important; }
+	.pag .titl { position: initial!important; font-size: 29px!important; width: 100%; text-align: center; margin: 0px; height: 100px!important; }
+	.pag .timerc { width: 100%!important; float: left!important; margin: 50px 0px!important; }
+	.cuadro { width: 100%!important; float: left!important; }
+	.wrop { width: 100%!important; margin: 0px!important; }
+	.wrop .ih-item { display: inline-block; float: left; }
+	.wrop .ih-item a, .wrop .ih-item a .img, .wrop .ih-item a .img p, .wrop .ih-item a .img img, .wrop .ih-item a .img h4 { text-align: center; display: inline-block; float: left; width: 100%; }
+	.pp { width: 100%!important; float: left; }
+	.cuadro .cycle-slideshow { width: 100%!important; }
+	.ofert { display: none!important; }
+	#promo { position: initial!important; }
+	.middle { margin: 0px!important; }
+	.flip { width: 28px!important; }
+	.flip-clock-wrapper ul li a div { left: -1px; }
+	.sombra { padding: 0px!important; }
 }
+
 .wrop .ih-item a .img h4 { font-weight: bold; }
 .descp { font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-size: 24px; text-align: center; width: 100%; float: left; display: inline-block; height: 38px; color: #e61b76; font-weight: bolder; }
 #DetalleHabitacion .research-b { display: none; }
@@ -750,4 +750,4 @@ body .generic-fotter .menus-fotter .info-fotter { text-align: center; width: 100
 body .generic-fotter .menus-fotter .info-fotter p { width: 90%; float: none; color: #fff; text-align: center; padding-top: 15px; margin-top: 15px; margin: 0 0 10px; }
 body .generic-fotter .menus-fotter .info-fotter p strong { font-family: Oswald, sans-serif; font-weight: 900; }
 .messaje { z-index: 100; left: 3%; color: #004085; background-color: #cce5ff; position: fixed; bottom: 0; }
-.messaje span{ margin-right: 3px; }
+.messaje span { margin-right: 3px; }
