@@ -87,76 +87,18 @@ body .search-body .container .nav { margin: 10px 0px; }
 .container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel .carousel-inner .item{width: 100%;}
 .container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel .carousel-inner .item img{height: 468px;width: 100%;display: inline-block;}
 
-.container .tab-content .tab-pane .item-hotel .col-md-12 .best-price{
-    text-align: center;
-    background: #dfeefa none repeat scroll 0px 0px;
-    border-radius: 0px 4px 6px 0px;
-    font-weight: bold;
-    color: #014999;
-    font-size: 17px;
-    width: 100%;
-    }
-
-.container .tab-content .tab-pane .item-hotel .col-md-12 .best-price .search-price {
-    width: 100%;
-    color: #014999;
-    font-family: Oswald;
-    font-weight: 300;
-    font-size: 28px;
-    display: inline-block;
-    float: left;
-    }
-
-    .container .tab-content .tab-pane .item-hotel .col-md-12 .best-price  .btn{display: inline-block;float: none;width: 50%;margin: 10px 0px;}
-
-.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in{ background: #F8F8F8; }
-
-.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in h3{ 	
-color: #000;
-    font-size: 16px;
-    font-weight: 900;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    display: inline-block;
-    float: left;
-    padding: 0px;
-    width: 100%;
-    text-align: left;
-    font-family: Roboto,sans-serif;
-	 }
-
-	.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in h3 .text-details{
-		font-size: 12px;
-    font-family: Roboto,sans-serif;
-    color: #333;
-    display: inline-block;
-    font-weight: normal;
-    width: 100%;
-    margin: 10px 0px 0px 0px;}
-.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in h3 span {  }
-.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in .details{ 
-	text-align: center;
-    color: #014999;
-    font-weight: bold;
-    padding:15px 0px;
-    border-bottom: 1px dotted #cccccc;
-    font-size: 16px;
-    margin:0px;
-}
-
-
-.container .tab-content .tab-pane .item-hotel .col-md-12 .info-details-hotel{color: #888;font-family: Roboto,sans-serif;font-size: 12px;width: 97%;text-align: justify;float: none!important;margin: 10px 0px;display: inline-block;}
-
-
-.container .tab-content .tab-pane .item-hotel .col-md-12 .list-items{ list-style: none; display: inline-block; float: left; }
-.container .tab-content .tab-pane .item-hotel .col-md-12 .list-items li{     width: 100%;
-    text-align: left;
-    color: #333;
-    font-size: 13px;
-    font-family: Roboto,sans-serif;}
-
-.container .tab-content .tab-pane .item-hotel .col-md-12 .list-items li i{ margin-right: 3px; color: #E9540D; }
-
+.container .tab-content .tab-pane .item-hotel .col-md-12 .best-price { text-align: center; background: #dfeefa none repeat scroll 0px 0px; border-radius: 0px 4px 6px 0px; font-weight: bold; color: #014999; font-size: 17px; width: 100%; }
+.container .tab-content .tab-pane .item-hotel .col-md-12 .best-price .search-price { width: 100%; color: #014999; font-family: Oswald; font-weight: 300; font-size: 28px; display: inline-block; float: left; }
+.container .tab-content .tab-pane .item-hotel .col-md-12 .best-price .btn { display: inline-block; float: none; width: 50%; margin: 10px 0px; }
+.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in { background: #F8F8F8; }
+.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in h3 { color: #000; font-size: 16px; font-weight: 900; margin-bottom: 10px; margin-top: 10px; display: inline-block; float: left; padding: 0px; width: 100%; text-align: left; font-family: Roboto, sans-serif; }
+.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in h3 .text-details { font-size: 12px; font-family: Roboto, sans-serif; color: #333; display: inline-block; font-weight: normal; width: 100%; margin: 10px 0px 0px 0px; }
+.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in h3 span { }
+.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in .details { text-align: center; color: #014999; font-weight: bold; padding: 15px 0px; border-bottom: 1px dotted #cccccc; font-size: 16px; margin: 0px; }
+.container .tab-content .tab-pane .item-hotel .col-md-12 .info-details-hotel { color: #888; font-family: Roboto, sans-serif; font-size: 12px; width: 97%; text-align: justify; float: none!important; margin: 10px 0px; display: inline-block; }
+.container .tab-content .tab-pane .item-hotel .col-md-12 .list-items { list-style: none; display: inline-block; float: left; }
+.container .tab-content .tab-pane .item-hotel .col-md-12 .list-items li { width: 100%; text-align: left; color: #333; font-size: 13px; font-family: Roboto, sans-serif; }
+.container .tab-content .tab-pane .item-hotel .col-md-12 .list-items li i { margin-right: 3px; color: #E9540D; }
 
 .tab-content #info div, .tab-content #info p, .tab-content #details p { float: left; }
 .line-details { height: 9px; display: inline-block; float: left; width: 100%; background: #f0f0f0; border: none; }
