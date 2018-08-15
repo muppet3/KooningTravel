@@ -3,9 +3,9 @@
 <style type="text/css">
 	.container{ background: #FFF; margin:20px auto; border-radius: 4px; padding: 0px; }
 </style>
-<h2 class="h2" >The Westin Lagunamar Ocean Resort Villas Cancún<img src='https://kooningtravel.com/intranet/images/star4.5.png' class='imagen-estrellas' />
+<h2 class="h2" >{{$nombre}}<img src='https://kooningtravel.com/intranet/images/star{{$estrellas}}.png' class='imagen-estrellas' />
 </h2>
-<p class='info-details'>Cancún-Zona Hotelera Mar Caribe, Quintana Roo. México</p>
+<p class='info-details'>{{$ubicacion}}</p>
 <div class="box" >
 	<form id="contactform" class="box-home" action="javascript:(void);" method="GET" >
 		
@@ -260,6 +260,8 @@
 		</form>
 	</div>
 	@stop
+
+
 	@section('content')
 	<div class="search-body" >
 		<div class="container" >
@@ -286,15 +288,11 @@
 							<div class="col-md-8" >
 							  <div id="myCarousel" class="carousel slide" data-ride="carousel">				    
 								    <div class="carousel-inner">
-								    	<div class="item active">
-								        	<img src="https://images.e-tsw.com/_lib/vimages/Cancun/Hotels/Dreams-Sands-Cancun-Resort-Spa/Gallery/Cancun-Dreams-Sands-Deluxe-Vista-PMK.jpg" alt="" >
-								     	</div>
-								    	<div class="item">
-								        	<img src="https://images.e-tsw.com/_lib/vimages/Cancun/Hotels/Dreams-Sands-Cancun-Resort-Spa/Gallery/Cancun-Dreams-Sands-El-Patio-Restaurant.jpg" alt="" >
-								     	</div>
-								    	<div class="item">
-								        	<img src="https://images.e-tsw.com/_lib/vimages/Cancun/Hotels/Dreams-Sands-Cancun-Resort-Spa/Gallery/Cancun-Dreams-Sands-Facilidades-nupciales.jpg" alt="" >
-								     	</div>				      	
+								    	@foreach($images as $img) 
+									    	<div class="item{{$img->Active}}">
+									        	<img src="{{ $img->URL}}" alt="{{$img->Title}}" >
+									     	</div>
+								      	@endforeach			      	
 								    </div>
 								    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
 								      <span class="glyphicon glyphicon-chevron-left"></span>
@@ -320,15 +318,15 @@
 											<h3 class="details" >DETALLE HOTEL</h3>
 											<h3 class="check-in" >
 												<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>Llegada
-												<p class="text-details" >3:00 p.m.</p>
+												<p class="text-details" >{{$checkin}}</p>
 											</h3>
 											<h3 class="check-out" >
 												<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>Salida
-												<p class="text-details" >12:00 p.m.</p>
+												<p class="text-details" >{{$checkout}}</p>
 											</h3>
 											<h3 class="world">
 												<span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Total Habitaciones
-												<p class="text-details" >438 Habitaciones</p>
+												<p class="text-details" >{{$habitaciones}} Habitaciones</p>
 											</h3>
 										</div>
 
@@ -341,42 +339,27 @@
 
 						<div class="col-md-12 ">
 
-							<p class="info-details-hotel" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-							<p class="info-details-hotel" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							{!!$descripcion!!}
 
 							<div class="info-title">Instalaciones</div>
 
 							<ul class="list-items col-md-4" >
 								<li><i class="fa fa-check" aria-hidden="true"></i>Piscina (s) sin costo extra.</li>
 								<li><i class="fa fa-check" aria-hidden="true"></i>Estacionamiento sin costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Centro de Negocios costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Bar (es) sin costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Elevador (es) sin costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Vapor costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Playa sin costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Spa costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Jacuzzi sin costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Tienda/Minisuper costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Salón de Belleza costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Facilidades Nupciales costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Club de Playa sin costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Gimnasio sin costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Restaurante (s) sin costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Área de juegos infantiles sin costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Sauna costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Boutique (s) sin costo extra.</li>
 							</ul>
+							<ul class="list-items col-md-4" >
+								<li><i class="fa fa-check" aria-hidden="true"></i>Piscina (s) sin costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Estacionamiento sin costo extra.</li>
+							</ul>
+							<ul class="list-items col-md-4" >
+								<li><i class="fa fa-check" aria-hidden="true"></i>Piscina (s) sin costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Estacionamiento sin costo extra.</li>
+							</ul>
+							<ul class="list-items col-md-4" >
+								<li><i class="fa fa-check" aria-hidden="true"></i>Piscina (s) sin costo extra.</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Estacionamiento sin costo extra.</li>
+							</ul>
+
 
 
 
@@ -451,8 +434,8 @@
 				
 				<div id="mapa"> </div>
 				
-				<input type="hidden" value="" id="lat" >	
-				<input type="hidden" value="" id="long" >
+				<input type="hidden" value="{{$latitud}}" id="lat" >	
+				<input type="hidden" value="{{$latitud}}" id="long" >
 
 				
 			</div>

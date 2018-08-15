@@ -237,12 +237,19 @@ class HomeController extends Controller
             $gethoteles=$hotel->getXml();
 
             $data['servicios']=$gethoteles->Hotel->Services->Service;
+            $data['facilities']=$gethoteles->Hotel->Facilities->Comfort;
+            $data['habitaciones']=$gethoteles->Hotel->TotalRooms;
             $data['instalaciones']=$gethoteles->Hotel->Facilities->Comfort;
-            $gethoteles->Hotel->Galleries->Image[0]->Active=" active";
+            if(count($gethoteles->Hotel->Galleries->Image)>1){
+                $gethoteles->Hotel->Galleries->Image[1]->Active=" active";
+            }else{
+                $gethoteles->Hotel->Galleries->Image[0]->Active=" active";
+            }
             $data['images']=$gethoteles->Hotel->Galleries->Image;
             $data['nombre']=$gethoteles->Hotel->Name;
             $data['checkin']=$gethoteles->Hotel->CheckIn;
             $data['checkout']=$gethoteles->Hotel->CheckOut;
+            $data['descripcion']=$gethoteles->Hotel->Description;
             //dd($gethoteles);
         }
         if($defaultquery){
@@ -328,6 +335,7 @@ class HomeController extends Controller
             $data['defaultimage']=$getquery->Hotels->Hotel->Image;
             $data['latitud']=$getquery->Hotels->Hotel->Latitude;
             $data['longitud']=$getquery->Hotels->Hotel->Longitude;
+            //dd($getquery);
             if($defaultquery){
                 $data['url']='d='.$_GET["d"].'&sd='.$_GET["sd"].'&ed='.$_GET["ed"].'&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0';
             }else{
@@ -361,7 +369,7 @@ class HomeController extends Controller
         }
         $data['fechas']=$fechas;
         $data['huespedes']=$huespedes;
-        dd($data);
+        //dd($data);
         return view('home/details',$data);
     }
     public function booking($room_id,$id){
