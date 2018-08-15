@@ -1,7 +1,7 @@
 /*														^^^	   	  ___	   ---
-	***** Autores ******							   {"_"}  	 {º_º}    {^_^}
+	***** Autores ******							   {"_"}  	 {Âº_Âº}    {^_^}
 	-> Ing. Jonas Santiz L. 			| UTC		    --    	  -- 	   --
-	-> Lic. Alan E. Gonzalez.			| UVM		   <(Ø)>;	 <(^)>;	  <(/)>;
+	-> Lic. Alan E. Gonzalez.			| UVM		   <(Ã˜)>;	 <(^)>;	  <(/)>;
 	-> Ing. Fernando Morales Robles.	| UPQROO	   _| |_ 	  | |     _| |_
 													    .js		 Adobe     .php
 					
@@ -94,8 +94,8 @@ body .search-body .container .nav { margin: 10px 0px; width: 98%;  float: none; 
 .container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in h3 span { }
 .container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in .details { text-align: center; color: #014999; font-weight: bold; padding: 15px 0px; border-bottom: 1px dotted #cccccc; font-size: 16px; margin: 0px; }
 .container .tab-content .tab-pane .item-hotel .col-md-12 .info-details-hotel { color: #888; font-family: Roboto, sans-serif; font-size: 12px; width: 97%; text-align: justify; float: none!important; margin: 10px 0px; display: inline-block; }
-.container .tab-content .tab-pane .item-hotel .col-md-12 .list-items { list-style: none; display: inline-block; float: left; }
-.container .tab-content .tab-pane .item-hotel .col-md-12 .list-items li { width: 100%; text-align: left; color: #333; font-size: 13px; font-family: Roboto, sans-serif; }
+.container .tab-content .tab-pane .item-hotel .col-md-12 .list-items {list-style: none;display: inline-block;float: left;width: 100%;}
+.container .tab-content .tab-pane .item-hotel .col-md-12 .list-items li {width: 32%;text-align: left;color: #333;font-size: 13px;font-family: Roboto, sans-serif;float: left;display: inline-block;}
 .container .tab-content .tab-pane .item-hotel .col-md-12 .list-items li i { margin-right: 3px; color: #E9540D; }
 .tab-content #info div, .tab-content #info p, .tab-content #details p { float: left; }
 .line-details { height: 9px; display: inline-block; float: left; width: 100%; background: #f0f0f0; border: none; }
