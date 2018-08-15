@@ -329,6 +329,7 @@ class HomeController extends Controller
                     }
                 }
                 $room->MealPlans->MealPlan->AgencyPublic->Precio=number_format((float)$precio);
+                $room->MealPlans->MealPlan->AgencyPublic->PrecioPromedio=number_format((float)($precio/4));
             }
             
             $data['rooms']=$getquery->Hotels->Hotel->Rooms->Room;
@@ -373,6 +374,7 @@ class HomeController extends Controller
         return view('home/details',$data);
     }
     public function booking($room_id,$id){
+        $data['background']=" height: 100px; background-image: url(https://kooningtravel.com/img/Home/fondos/fondoParque.png); ";
         $valores=\Session::get('query');
         $valores['h']=$id;
         $query= new Hoteldo('GetQuoteHotels',$valores);
@@ -456,6 +458,7 @@ class HomeController extends Controller
         $data['seis']=number_format($total/6);
         $data['nueve']=number_format($total/9);
         $data['total']=number_format($total);
+        //dd($data);
         return view('purchase/checkout',$data);   
     }
     public function alertemail(Request $request, $room_id,$id){

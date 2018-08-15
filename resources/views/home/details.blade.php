@@ -271,8 +271,8 @@
 				<b>Hoteles</b>
 			</div>
 			<ul class="nav nav-tabs ">
-				<li ><a data-toggle="tab" href="#info" >Informacion General</a></li>
 				<li class="active"><a data-toggle="tab" href="#details">Detalle Habitacion</a></li>
+				<li ><a data-toggle="tab" href="#info" >Informacion General</a></li>
 			</ul>
 			
 			
@@ -338,47 +338,49 @@
 
 
 						<div class="col-md-12 ">
-				
-						<p class="info-details-hotel">	{!!$descripcion!!}</p>
+
+							<p class="info-details-hotel">{!!$descripcion!!}</p>
 
 							<div class="info-title">Instalaciones</div>
 
-							<ul class="list-items col-md-4" >
-								<li><i class="fa fa-check" aria-hidden="true"></i>Piscina (s) sin costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Estacionamiento sin costo extra.</li>
+							<ul class="list-items" >
+								@foreach ($facilities as $facility)
+									<li>
+										<i class="fa fa-check" aria-hidden="true"></i>
+										{{$facility->Name}}
+										@if ($facility->ExtraCharge=='true')
+											(Costo Extra)
+										@endif
+									</li>
+								@endforeach
 							</ul>
-							<ul class="list-items col-md-4" >
-								<li><i class="fa fa-check" aria-hidden="true"></i>Piscina (s) sin costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Estacionamiento sin costo extra.</li>
-							</ul>
-							<ul class="list-items col-md-4" >
-								<li><i class="fa fa-check" aria-hidden="true"></i>Piscina (s) sin costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Estacionamiento sin costo extra.</li>
-							</ul>
-							<ul class="list-items col-md-4" >
-								<li><i class="fa fa-check" aria-hidden="true"></i>Piscina (s) sin costo extra.</li>
-								<li><i class="fa fa-check" aria-hidden="true"></i>Estacionamiento sin costo extra.</li>
-							</ul>
-
-							
-
-						</div>						
+						</div>
 					</div>
 				</div>
 
 
 
-				<div id="details" class="tab-pane fade active in">
+				<div id="details" class="tab-pane fade  active in">
+					@foreach ($rooms as $room)
+						
+					
 					<div class="item-hotel" >
-						<div class="info-title">Habitación tipo Estudio Villa</div>
+						<div class="info-title">Habitación tipo {{$room->Name}}</div>
 						
 						<div class="bloque-hotel-item" >
 							<div class="items-hotel col-md-4">
-								<img class="img-hotel-details" src="https://images.e-tsw.com/_lib/vimages/Cancun/Hotels/Cancun-The-Westin-Lagunamar/Gallery/Cancun-The-Westin-Lagunamar-Estudio-Villa.jpg" alt="Habitación tipo Estudio Villa" >
+								@empty($room->ImageURL)
+								
+						    		<img class="img-hotel-details"  src="{{$defaultimage}}">
+						    	@else
+						    		<img class="img-hotel-details"  src="{{$room->ImageURL}}">
+						    	@endempty
 							</div>
 							<div class="items-hotel estructura-habitacion col-md-6">
-								<h3>Plan Sólo Habitación </h3>
-								<h4 class="info-promo" >Descuento Especial! Aplica para estadías entre 27/Ago/2018 y 20/Nov/2018. Valido para reservaciones antes del 18/Nov/2018</h4>
+								<h3>Plan {{$room->MealPlans->MealPlan->Name}} </h3>
+								@isset($room->MealPlans->MealPlan->Promotions)
+									<h4 class="info-promo" >{{$room->MealPlans->MealPlan->Promotions->Promotion->Description}} </h4>
+								@endisset
 								<div class="destino-hotel" >
 									<div class="panel panel-default">
 										<div class="panel-heading" role="tab" id="heading0">
@@ -394,23 +396,26 @@
 													<tbody><tr style="background=#E9540D"> <th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Sábado</th><th class="info"> 13</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Domingo</th><th class="info"> 14</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Lunes</th><th class="info"> 15</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Martes</th><th class="info"> 16</th></tr>
 													<tr><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td></tr>
 												</tbody></table></div>
-												<p class="info-message" >Permite cancelar sin cargo hasta 4 días antes de la fecha de llegada, de 3 dias a 24 horas antes de su llegada, aplica 2 noches de estancia. En caso de No Show, o salida anticipada queda sujeto al cobro por el total reservado.</p>
+												<p class="info-message" >{{$room->MealPlans->MealPlan->RateDetails->RateDetail->CancellationPolicy->Description }}</p>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="items-hotel col-md-2 background">
+								@isset($room->MealPlans->MealPlan->Promotions->Promotion->Monto)
+									<label class="old-price">MXN ${{$room->MealPlans->MealPlan->Promotions->Promotion->Monto}}</label>
+								@endisset
 								<p class="total-night">Total 4 Noches</p>
-								<p class="precio-real" >$16,370.73</p>
+								<p class="precio-real" >${{$room->MealPlans->MealPlan->AgencyPublic->Precio}}</p>
 								<p class="precio-promedio">Precio Promedio por noche:</p>
-								<p class="precio-final">$ 4,093</p>
+								<p class="precio-final">$ {{$room->MealPlans->MealPlan->AgencyPublic->PrecioPromedio}}</p>
 								<p class="inpuestos" >Impuestos incluidos</p>
-								<a href="/hotels/1123/booking/STU" class="btn btn-danger">RESERVAR</a>
+								<a href="{{Request::root()}}/checkout/{{$room->Id}}/{{$id}}" class="btn btn-danger">RESERVAR</a>
 							</div>
 						</div>
 					</div>
-					
+					@endforeach
 				</div>
 			</div>
 			<!--Bloques info hotel end-->
@@ -423,7 +428,7 @@
 				<div id="mapa"> </div>
 				
 				<input type="hidden" value="{{$latitud}}" id="lat" >	
-				<input type="hidden" value="{{$latitud}}" id="long" >
+				<input type="hidden" value="{{$longitud}}" id="long" >
 
 				
 			</div>
