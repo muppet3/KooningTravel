@@ -24,6 +24,7 @@ class CreateActivitiesTable extends Migration
             $table->string('coordinates',300);
             $table->string('background',10);
             $table->string('terms',100);
+            $table->string('video',150)->nullable();
             $table->timestamps();
             $table->integer('category_id')->unsigned();
             $table->foreign('category_id')->references('id')->on('categories');

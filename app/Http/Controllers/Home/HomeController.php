@@ -243,6 +243,7 @@ class HomeController extends Controller
             $data['nombre']=$gethoteles->Hotel->Name;
             $data['checkin']=$gethoteles->Hotel->CheckIn;
             $data['checkout']=$gethoteles->Hotel->CheckOut;
+            //dd($gethoteles);
         }
         if($defaultquery){
             $query = $this->defaultquery();
@@ -325,6 +326,8 @@ class HomeController extends Controller
             
             $data['rooms']=$getquery->Hotels->Hotel->Rooms->Room;
             $data['defaultimage']=$getquery->Hotels->Hotel->Image;
+            $data['latitud']=$getquery->Hotels->Hotel->Latitude;
+            $data['longitud']=$getquery->Hotels->Hotel->Longitude;
             if($defaultquery){
                 $data['url']='d='.$_GET["d"].'&sd='.$_GET["sd"].'&ed='.$_GET["ed"].'&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0';
             }else{
@@ -337,8 +340,8 @@ class HomeController extends Controller
                 }
                $data['url']=$url;
             }
-        }else{
             
+        }else{
             $data['erroresquery']=$errorquery;
         }
         if(!empty($errores)){
@@ -346,7 +349,7 @@ class HomeController extends Controller
         }
         
         $fechas='
-        <span class="date"> 
+            <span class="date"> 
             <label class="day">'.$this->stylefecha($_GET['sd']).' </label> 
             <label class="day">&nbsp;- '.$this->stylefecha($_GET['ed']).' </label>
             <p class="details">( ';
@@ -358,7 +361,7 @@ class HomeController extends Controller
         }
         $data['fechas']=$fechas;
         $data['huespedes']=$huespedes;
-        
+        dd($data);
         return view('home/details',$data);
     }
     public function booking($room_id,$id){
