@@ -106,6 +106,7 @@ class HomeController extends Controller
                     $item=[];
                     $item['adultos'] = ($_GET['r1a']+$_GET['r2a']+$_GET['r3a']);
                     $precio=$room->MealPlans->MealPlan->AgencyPublic->AgencyPublic/$interval->d;
+                    
                     if (empty($hotel->Reviews->Review->Rating)) {
                         if($precio < 1000){
                             $item['stars']=1;
@@ -123,13 +124,14 @@ class HomeController extends Controller
                         $item['pricerange'] = "btw0k-1k";
                     }elseif ($precio> 1000 and $precio<= 3000) {
                         $item['pricerange'] = "btw1k-3k";
-                    }elseif ($precio> 3000 and $precio<= 5000) {
+                    }elseif ($precio> 3000 and $precio<= 6000) {
                         $item['pricerange'] = "btw3k-5k";
                     }elseif ($precio> 6000 and $precio<= 8000) {
                         $item['pricerange'] = "btw5k-8k";
                     }elseif ($precio> 8000 ) {
                         $item['pricerange'] = "more8k";
                     }
+                    
                     if (isset($room->MealPlans->MealPlan->Promotions)) {
                         $promotionhoteldo=(string) $room->MealPlans->MealPlan->Promotions->Promotion->Description;
                         $desc = substr($promotionhoteldo, 0,2);
@@ -211,7 +213,7 @@ class HomeController extends Controller
         }
         $data['fechas']=$fechas;
         $data['huespedes']=$huespedes;
-        //dd($data);
+        dd($data);
         return view('home/search',$data);
     }
     public function details($id, $hotel){
