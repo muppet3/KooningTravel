@@ -213,7 +213,7 @@ class HomeController extends Controller
         }
         $data['fechas']=$fechas;
         $data['huespedes']=$huespedes;
-        dd($data);
+        
         return view('home/search',$data);
     }
     public function details($id, $hotel){
