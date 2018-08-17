@@ -2,7 +2,8 @@
 @section('head')
 <style type="text/css">
 	.container{ background: #FFF; margin:20px auto; border-radius: 4px; padding: 0px; }
-</style>
+</style>	 
+
 <h2 class="h2" >{{$nombre}}<img src='https://kooningtravel.com/intranet/images/star{{$estrellas}}.png' class='imagen-estrellas' />
 </h2>
 <p class='info-details'>{{$ubicacion}}</p>
@@ -271,15 +272,14 @@
 				<b>Hoteles</b>
 			</div>
 			<ul class="nav nav-tabs ">
-				<li class="active"><a data-toggle="tab" href="#details">Detalle Habitacion</a></li>
-				<li ><a data-toggle="tab" href="#info" >Informacion General</a></li>
-			</ul>
-			
+				<li class="active"><a data-toggle="tab" href="#info">Detalle Habitacion</a></li>
+				<li ><a data-toggle="tab" href="#details"  >Informacion General</a></li>
+			</ul>		
 			
 			<!--Bloques info hotel begin-->
 			<div class="tab-content">
 
-				<div id="info" class="tab-pane fade">
+				<div id="info" class="tab-pane fade active in">
 					<div class="item-hotel" >
 						<div class="info-title">A cerca del Hotel</div>
 
@@ -360,7 +360,7 @@
 
 
 
-				<div id="details" class="tab-pane fade  active in">
+				<div id="details" class="tab-pane fade">
 					@foreach ($rooms as $room)
 						
 					
@@ -421,16 +421,11 @@
 			<!--Bloques info hotel end-->
 			<div class="line-details" ></div>
 			<!--Mapa details-->
-			<div  id="verMapa">
-				
-				<h3 class="info-title">Ubicación</h3>
-				
-				<div id="mapa"> </div>
-				
+			<div  id="verMapa">				
+				<h3 class="info-title">Ubicación</h3>				
+				<div id="mapa"> </div>				
 				<input type="hidden" value="{{$latitud}}" id="lat" >	
-				<input type="hidden" value="{{$longitud}}" id="long" >
-
-				
+				<input type="hidden" value="{{$longitud}}" id="long" >				
 			</div>
 			<!--Mapa details-->
 		</div>
@@ -440,9 +435,5 @@
 		<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" ></span> Quedan pocas habitaciones disponibles.
 	</div>
 	<!--End MENSAJES-->
-	<script language="javascript" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz2r9rdcvkdJ_6Cy06hX6wmYr7fvyRnaA&callback=initMap" defer></script>
-
-
-
 
 	@stop

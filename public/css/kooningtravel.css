@@ -498,7 +498,8 @@ body .pannel .contr #visitc { background: url("https://www.kooningtravel.com/img
 body .pannel .contr .visith { display: inline-block; float: right; margin-top: 10px; }
 body .centerh { display: inline-block; float: left; margin-top: 30px; width: 100%; }
 body .centerh .playash { font-family: HelveticaThin, Helvetica, Arial, sans-serif; display: inline-block; float: left; padding-bottom: 9px; margin: 25px 0 20px; border-bottom: 1px solid #eee; text-align: center; font-size: 30px; color: #c3c0cc; background: #f6f6f6; width: 100%; }
-body .centerh .bloque { position: relative; text-align: center; margin-bottom: 10px; display: inline-block; float: left; width: 100%; }
+body .centerh .bloque {  margin-bottom: 10px;  position: relative; text-align: center; display: inline-block; float: left; width: 100%; }
+body .centerh .bloque:nth-child(2) { margin:0px;  }
 body .centerh .bloque #anuncio, body .centerh .bloque #comodin { margin-left: 1%; margin-top: 4%; left: 3%; width: 12%; display: inline-block; float: left; }
 body .centerh .hint { overflow: hidden; display: inline-block; float: left; margin-left: 2%; text-align: center; width: 67%; }
 body .centerh .bloqueh { display: inline-block; float: none; width: 860px; margin-bottom: 40px; margin: 0px auto; }

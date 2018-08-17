@@ -48,10 +48,39 @@ break;case"m":g=x("m");break;case"M":g=w("M",p,f);break;case"y":m=x("y");break;c
 	}
 }());
 
+	var lati = 0;
+	var long = 0;
+ 
+	function initMap() {
+		// Creamos un objeto mapa y especificamos el elemento DOM donde se va a mostrar.
+		var map = new google.maps.Map(document.getElementById('mapa'), {
+		center: {lat: lati, lng: long},
+		scrollwheel: false,
+		zoom: 17,
+		zoomControl: true,
+		rotateControl : false,
+		mapTypeControl: true,
+		streetViewControl: false,
+ });
 
+	var marker = new google.maps.Marker({
+		 position: {lat: lati, lng: long }, 
+		 title:"Hotel",
+		 animation: google.maps.Animation.DROP,
+		 draggable: false,
+		 icon: "https://www.kooningtravel.com/images/mark.png"
+	});
+
+	marker.setMap(map);
+}	
 
 
 $(document).ready(function () {	
+
+	lati = parseFloat($("#lat").val());
+	long = parseFloat($("#long").val());
+
+	initMap();
 
 	// PARA QUE NO ENVIE FORMULARIO AL PULSAR INTRO
 	$('#contactform').on("keyup keypress", function(e) {
@@ -574,41 +603,6 @@ $(".messaje").delay(3000).fadeOut("slow");
 
 
  });
- 
- /*
-
-	var latitud = $("#").val();
-	var longitud = $("#").val();
-
-*/
 
 
-	var lati= document.getElementById("lat");
-	var long = document.getElementById("long");
-
-	console.log( lati + " < " + long );
-
-	function initMap() {
-	 // Creamos un objeto mapa y especificamos el elemento DOM donde se va a mostrar.
-	  var map = new google.maps.Map(document.getElementById('mapa'), {
-	   center: {lat: lati, lng: long},
-	   scrollwheel: false,
-	   zoom: 18,
-	   zoomControl: true,
-	   rotateControl : false,
-	   mapTypeControl: true,
-	   streetViewControl: false,
-	 });
-
-
-  var marker = new google.maps.Marker({
-		 position: {lat: lati, lng: long }, 
-		 title:"Hotel",
-		 animation: google.maps.Animation.DROP,
-		 draggable: false,
-		 icon: "https://www.kooningtravel.com/images/mark.png"
- 	});
-
-  	marker.setMap(map);
- //marker2.setMap(map);
-}
+	

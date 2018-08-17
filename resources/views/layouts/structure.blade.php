@@ -8,6 +8,7 @@
       <meta name="csrf-token" content="{{ csrf_token() }}">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+      <meta name="keywords" content="hoteles, hotel, vacaciones, viajes, viajes baratos, playa, playas, maletas, viajar, descuentos, parques,tour,tours,xcaret, circus do soleil, dolphin, promocion, ">
       <meta name="google-site-verification" content="JsJB8p487oyOxvtEpsDjpuQZJ7GeOMe22sQr39OBTQ0" >
       <meta name="description" content="Hoteles, traslados y tours en Cancún, y la Riviera Maya. Elige tus vacaciones entre miles de hoteles y destinos.">
       <meta name="author" content="Ing. Jonas Santiz L., Lic. Alan E. Gonzalez, Ing. Fernando Morales R. || Kooning Travel 2018 ">
@@ -21,10 +22,12 @@
        <!--Recursos JS -->
       <script language="javascript" type="text/javascript" src="/js/jquery-3.3.1.js"></script> 
       <script language="javascript" type="text/javascript" src="/js/bootstrap.min.js" ></script>   
-      <script language="javascript" type="text/javascript" src="/js/jquery-ui.js" ></script>    
+      <script language="javascript" type="text/javascript" src="/js/jquery-ui.js" ></script>   
+      <script language="javascript" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz2r9rdcvkdJ_6Cy06hX6wmYr7fvyRnaA&callback=initMap" defer></script> 
       <script language="javascript" type="text/javascript" src="/js/jquery.fancybox.min.js" ></script> 
       <script language="javascript" type="text/javascript" src="/js/config-box.js" ></script>
       <script language="javascript" type="text/javascript" src="/js/general.js" ></script>
+      
 
       <!--Recursos CSS -->
       <link type="text/css" rel="stylesheet" media="screen" href="/css/kooningtravel.css">
@@ -513,9 +516,9 @@
 </div>        
 
  
-
-
-
+  
+  
+        <input type="hidden" id="mapa" >      
 
 
   </body>
