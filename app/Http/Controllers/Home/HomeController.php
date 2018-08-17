@@ -182,14 +182,17 @@ class HomeController extends Controller
             $data['destino']=$destinocorrecto;
             $data['rooms']=$room_list;
             if($defaultquery){
-                $data['url']='d='.$_GET["d"].'&sd='.$_GET["sd"].'&ed='.$_GET["ed"].'&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0';
+                $data['url']='&sd='.$_GET["sd"].'&ed='.$_GET["ed"].'&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0';
             }else{
                 $get_numero = count($_GET);
                 $get_etiquetas = array_keys($_GET);
                 $get_valores = array_values($_GET);
                 $url="";
                 for ($i=2; $i <=($get_numero-1) ; $i++) { 
-                    $url.="&".$get_etiquetas[$i]."=".$get_valores[$i];
+                    if(strcmp($get_etiquetas[$i],"d")!== 0){
+                        $url.="&".$get_etiquetas[$i]."=".$get_valores[$i];
+                    }
+                    
                 }
                $data['url']=$url;
             }
@@ -347,12 +350,7 @@ class HomeController extends Controller
                 $get_valores = array_values($_GET);
                 $url="";
                 for ($i=2; $i <=($get_numero-1) ; $i++) { 
-                    if($get_etiquetas[$i]=="d"){
-
-                    }else{
-                        $url.="&".$get_etiquetas[$i]."=".$get_valores[$i];
-                    }
-                    
+                    $url.="&".$get_etiquetas[$i]."=".$get_valores[$i];
                 }
                $data['url']=$url;
             }
