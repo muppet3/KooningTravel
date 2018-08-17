@@ -562,7 +562,12 @@ var link =  "hotel-"+$("#search_hotel").val();
 $(".messaje").delay(3000).fadeOut("slow");
 
 
+
+
+
  
+
+
 
 
 
@@ -570,22 +575,30 @@ $(".messaje").delay(3000).fadeOut("slow");
 
  });
  
+ /*
 
-	var lati=21.0403825;
-	var long = -86.8730981;
+	var latitud = $("#").val();
+	var longitud = $("#").val();
+
+*/
 
 
-function initMap() {
- // Creamos un objeto mapa y especificamos el elemento DOM donde se va a mostrar.
-  var map = new google.maps.Map(document.getElementById('mapa'), {
-   center: {lat: lati, lng: long},
-   scrollwheel: false,
-   zoom: 18,
-   zoomControl: true,
-   rotateControl : false,
-   mapTypeControl: true,
-   streetViewControl: false,
- });
+	var lati= document.getElementById("lat");
+	var long = document.getElementById("long");
+
+	console.log( lati + " < " + long );
+
+	function initMap() {
+	 // Creamos un objeto mapa y especificamos el elemento DOM donde se va a mostrar.
+	  var map = new google.maps.Map(document.getElementById('mapa'), {
+	   center: {lat: lati, lng: long},
+	   scrollwheel: false,
+	   zoom: 18,
+	   zoomControl: true,
+	   rotateControl : false,
+	   mapTypeControl: true,
+	   streetViewControl: false,
+	 });
 
 
   var marker = new google.maps.Marker({
