@@ -24,7 +24,7 @@
 								</div>
 								<div class="vacancy" >
 									<i class="fa fa-child" aria-hidden="true"></i>
-									<span> 0 Menores  Menores</span>
+									<span> 0 Menores</span>
 								</div>
 								
 							</div>
@@ -132,137 +132,136 @@
             
                       
                       <div class="form-row">
-                      	<p class="main-title" >Datos del traslado</p>
-                        <div class="marquito">                          
+                      	
+                        <div class="marquito"> 
+                           <p class="main-title" >Datos del traslado</p>                         
                           <input type="text" class="form-control" autocomplete="on" name="Aerolinea" id="validationCustom01" placeholder="Aerolinea" required>
                         </div>
 
                         <div class="marquito">
-                          <p clas> Si tiene escalas proporciona el último vuelo</p>
+                          <p class="main-title" > Si tiene escalas proporciona el último vuelo</p>
                           <input type="text" class="form-control" autocomplete="on" name="NumVuelo" id="validationCustom02" placeholder="Numero de vuelo" required>
                         </div>
-                      </div>
-
-
-                      
+                      </div>                      
     
-                    <div class="form-row">
-                    	<p class="main-title">Datos de Reserva</p>
-						<div class="marquito">
-							<input type="text" class="form-control" autocomplete="on" name="nombre" id="validationCustom01" placeholder="Nombre" required>
-							<input type="text" class="form-control" autocomplete="on" name="apellidos" id="validationCustom02" placeholder="Apellidos" required>
-							<input type="text" class="form-control" name="correo" id="validationCustomUsername" placeholder="Correo" aria-describedby="inputGroupPrepend" >
-							 <input type="text" class="form-control" autocomplete="on" name="ciudad" id="validationCustom04" placeholder="Ciudad" required>
-							 <input type="text" class="form-control" autocomplete="on" name="estado" id="validationCustom05" placeholder="Estado" required>
+                      <div class="form-row">                      	
+              						<div class="marquito">
+                            <p class="main-title">Datos de Reserva</p>
+              							<input type="text" class="form-control" autocomplete="on" name="nombre" id="validationCustom01" placeholder="Nombre" required>
+              							<input type="text" class="form-control" autocomplete="on" name="apellidos" id="validationCustom02" placeholder="Apellidos" required>
+              							<input type="text" class="form-control" name="correo" id="validationCustomUsername" placeholder="Correo" aria-describedby="inputGroupPrepend" >
+              							 <input type="text" class="form-control" autocomplete="on" name="ciudad" id="validationCustom04" placeholder="Ciudad" required>
+              							 <input type="text" class="form-control" autocomplete="on" name="estado" id="validationCustom05" placeholder="Estado" required>
 
-							 <select name="pais" id="pais" class="form-control">
-                            <option value="Argentina">Argentina</option>
-                            <option value="Australia">Australia</option>
-                            <option value="Austria">Austria</option>
-                            <option value="Belgium">Belgium</option>
-                            <option value="Brazil">Brazil</option>
-                            <option value="Bulgaria">Bulgaria</option>
-                            <option value="Canada">Canada</option>
-                            <option value="Caribbean">Caribbean</option>
-                            <option value="Chile">Chile</option>
-                            <option value="China">China</option>
-                            <option value="Colombia">Colombia</option>
-                            <option value="Costa Rica">Costa Rica</option>
-                            <option value="Croatia">Croatia</option>
-                            <option value="Czech Republic">Czech Republic</option>
-                            <option value="Denmark">Denmark</option>
-                            <option value="Dominican Republic">Dominican Republic</option>
-                            <option value="Estonia">Estonia</option>
-                            <option value="Finland">Finland</option>
-                            <option value="France">France</option>
-                            <option value="Germany">Germany</option>
-                            <option value="Greece">Greece</option>
-                            <option value="Guatemala">Guatemala</option>
-                            <option value="Hong Kong">Hong Kong</option>
-                            <option value="Hungary">Hungary</option>
-                            <option value="India">India</option>
-                            <option value="Indonesia">Indonesia</option>
-                            <option value="Ireland">Ireland</option>
-                            <option value="Israel">Israel</option>
-                            <option value="Italy">Italy</option>
-                            <option value="Japan">Japan</option>
-                            <option value="Korea">Korea</option>
-                            <option value="Latvia">Latvia</option>
-                            <option value="Lithuania">Lithuania</option>
-                            <option value="Malaysia">Malaysia</option>
-                            <option value="Mexico" selected>Mexico</option>
-                            <option value="Morocco">Morocco</option>
-                            <option value="Netherlands">Netherlands</option>
-                            <option value="New Zealand">New Zealand</option>
-                            <option value="Norway">Norway</option>
-                            <option value="Panama">Panama</option>
-                            <option value="Peru">Peru</option>
-                            <option value="Philippines">Philippines</option>
-                            <option value="Poland">Poland</option>
-                            <option value="Portugal">Portugal</option>
-                            <option value="Puerto Rico">Puerto Rico</option>
-                            <option value="Romania">Romania</option>
-                            <option value="Russian Federation">Russian Federation</option>
-                            <option value="Singapore">Singapore</option>
-                            <option value="Slovakia">Slovakia</option>
-                            <option value="Slovenia">Slovenia</option>
-                            <option value="South Africa">South Africa</option>
-                            <option value="Spain">Spain</option>
-                            <option value="Sweden">Sweden</option>
-                            <option value="Switzerland">Switzerland</option>
-                            <option value="Taiwan">Taiwan</option>
-                            <option value="Thailand">Thailand</option>
-                            <option value="Turkey">Turkey</option>
-                            <option value="Ukraine">Ukraine</option>
-                            <option value="United Kingdom">United Kingdom</option>
-                            <option value="United States">United States</option>
-                            <option value="Venezuela">Venezuela</option>
-                            <option value="Vietnam">Vietnam</option>
-                        </select>
+              							 <select name="pais" id="pais" class="form-control">
+                                          <option value="Argentina">Argentina</option>
+                                          <option value="Australia">Australia</option>
+                                          <option value="Austria">Austria</option>
+                                          <option value="Belgium">Belgium</option>
+                                          <option value="Brazil">Brazil</option>
+                                          <option value="Bulgaria">Bulgaria</option>
+                                          <option value="Canada">Canada</option>
+                                          <option value="Caribbean">Caribbean</option>
+                                          <option value="Chile">Chile</option>
+                                          <option value="China">China</option>
+                                          <option value="Colombia">Colombia</option>
+                                          <option value="Costa Rica">Costa Rica</option>
+                                          <option value="Croatia">Croatia</option>
+                                          <option value="Czech Republic">Czech Republic</option>
+                                          <option value="Denmark">Denmark</option>
+                                          <option value="Dominican Republic">Dominican Republic</option>
+                                          <option value="Estonia">Estonia</option>
+                                          <option value="Finland">Finland</option>
+                                          <option value="France">France</option>
+                                          <option value="Germany">Germany</option>
+                                          <option value="Greece">Greece</option>
+                                          <option value="Guatemala">Guatemala</option>
+                                          <option value="Hong Kong">Hong Kong</option>
+                                          <option value="Hungary">Hungary</option>
+                                          <option value="India">India</option>
+                                          <option value="Indonesia">Indonesia</option>
+                                          <option value="Ireland">Ireland</option>
+                                          <option value="Israel">Israel</option>
+                                          <option value="Italy">Italy</option>
+                                          <option value="Japan">Japan</option>
+                                          <option value="Korea">Korea</option>
+                                          <option value="Latvia">Latvia</option>
+                                          <option value="Lithuania">Lithuania</option>
+                                          <option value="Malaysia">Malaysia</option>
+                                          <option value="Mexico" selected>Mexico</option>
+                                          <option value="Morocco">Morocco</option>
+                                          <option value="Netherlands">Netherlands</option>
+                                          <option value="New Zealand">New Zealand</option>
+                                          <option value="Norway">Norway</option>
+                                          <option value="Panama">Panama</option>
+                                          <option value="Peru">Peru</option>
+                                          <option value="Philippines">Philippines</option>
+                                          <option value="Poland">Poland</option>
+                                          <option value="Portugal">Portugal</option>
+                                          <option value="Puerto Rico">Puerto Rico</option>
+                                          <option value="Romania">Romania</option>
+                                          <option value="Russian Federation">Russian Federation</option>
+                                          <option value="Singapore">Singapore</option>
+                                          <option value="Slovakia">Slovakia</option>
+                                          <option value="Slovenia">Slovenia</option>
+                                          <option value="South Africa">South Africa</option>
+                                          <option value="Spain">Spain</option>
+                                          <option value="Sweden">Sweden</option>
+                                          <option value="Switzerland">Switzerland</option>
+                                          <option value="Taiwan">Taiwan</option>
+                                          <option value="Thailand">Thailand</option>
+                                          <option value="Turkey">Turkey</option>
+                                          <option value="Ukraine">Ukraine</option>
+                                          <option value="United Kingdom">United Kingdom</option>
+                                          <option value="United States">United States</option>
+                                          <option value="Venezuela">Venezuela</option>
+                                          <option value="Vietnam">Vietnam</option>
+                                      </select>
 
-						</div>                   
-                    </div>
-
-                    <div class="form-row">
-                     
-                      <div class="marquito">
-                        <input type="text" class="form-control" autocomplete="on"  name="zip" id="validationCustom03" placeholder="Codigo postal" required />                     
-                        <input type="text" class="form-control" autocomplete="on" name="telefono" id="validationCustom03" placeholder="Numero Telefonico" required />                     
-                        <textarea name="address" id="Direccion" type="text" rows="4" placeholder="Direccion..." class="form-control" required=""></textarea>
+              						</div>                   
                       </div>
 
-                    </div>
+                      <div class="form-row">
+                       
+                        <div class="marquito">
+                          <input type="text" class="form-control" autocomplete="on"  name="zip" id="validationCustom03" placeholder="Codigo postal" required />                     
+                          <input type="text" class="form-control" autocomplete="on" name="telefono" id="validationCustom03" placeholder="Numero Telefonico" required />                     
+                          <textarea name="address" id="Direccion" type="text" rows="4" placeholder="Direccion..." class="form-control" required=""></textarea>
+                        </div>
+
+                      </div>
 
 	
-                    <div class="form-row">
-                      	<p class="main-title" >Datos del traslado</p>
-							<div class="marquito">
-								<input type="text" name="name" class="form-control" id="validationCustom01" placeholder="Nombre" required />
-								<input type="text" name="lname" class="form-control" id="validationCustom02" placeholder="Apellido" required />
-								<input type="text" name="name" class="form-control" id="validationCustom01" placeholder="Nombre Menor" required />                     
-								<input type="text" name="lname" class="form-control" id="validationCustom02" placeholder="Apellido Menor" required />
-							</div>
-                         </div>         
+                    <div class="form-row">                      	
+          							<div class="marquito">
+                            <p class="main-title" >Datos del traslado</p>
+            								<input type="text" name="name" class="form-control" id="validationCustom01" placeholder="Nombre" required />
+            								<input type="text" name="lname" class="form-control" id="validationCustom02" placeholder="Apellido" required />
+            								<input type="text" name="name" class="form-control" id="validationCustom01" placeholder="Nombre Menor" required />                     
+            								<input type="text" name="lname" class="form-control" id="validationCustom02" placeholder="Apellido Menor" required />
+          							</div>
+                     </div>         
                         
                            
                         <div class="form-row">
-                        	 <p class="main-title" >Datos del huesped del cuarto</p>
+                        	 
                            <div class="marquito">
+                              <p class="main-title" >Datos del huesped del cuarto</p>
                               <input type="text" name="name" class="form-control" id="validationCustom01" placeholder="Nombre" required>
                               <input type="text" name="lname" class="form-control" id="validationCustom02" placeholder="Apellido" required>
                            </div>
                         </div>                      
                      
-                    <div class="form-row">
-                    	<p class="main-title" >Datos del huesped del cuarto</p>
+                    <div class="form-row">                    	
 	                  	 <div class="marquito">
+                          <p class="main-title" >Datos del huesped del cuarto</p>
 	                        <input class="form-check-input" name="acept" type="checkbox" id="ok" required>
 	                        <label class="form-check-label" for="invalidCheck" ></label>
 	                        <label>He leí­do y acepto el  <a href="https://kooningtravel.com/terminos" target="_blank">Aviso de privacidad</a></label>
 	                    </div>
                     </div>
 
-					 <div class="form-row">                 
+					          <div class="form-row">                 
                       <input id="btn_pagar" type="submit" class="btn btn-sm btn-caja-reserva" value="Pagar" >
                     </div>
 
@@ -272,8 +271,8 @@
 
 
 
-			  <div class="form-group">  
-                <p><strong>MXN $ </strong></p>
+			        <div class="form-group">  
+                <p><strong>MXN $ 6,524</strong></p>
               </div>
             
           </div>

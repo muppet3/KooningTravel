@@ -1,19 +1,21 @@
 /*														^^^	   	  ___	   ---
-	***** Autores ******							   {"_"}  	 {º_º}    {^_^}
+	***** Autores ******							   {"_"}  	 {^_^}    {º_º}
 	-> Ing. Jonas Santiz L. 			| UTC		    --    	  -- 	   --
-	-> Lic. Alan E. Gonzalez.			| UVM		   <(Ø)>;	 <(^)>;	  <(/)>;
-	-> Ing. Fernando Morales Robles.	| UPQROO	   _| |_ 	  | |     _| |_
-													    .js		 Adobe     .php
+	-> Ing. Fernando Morales Robles.	| UPQROO	   <(Ø)>;	 <(^)>;	  <(/)>;
+	-> Lic. Alan E. Gonzalez.			| UVM		   _| |_ 	  | |     _| |_
+													   .js		  .php     Adobe
 					
-							<---https://www.kooningtravel.com 2018--->
+												<---https://www.kooningtravel.com 2018--->
+																¯\_(ツ)_/¯
 
-										¯\_(ツ)_/¯
-
-					******************* Reestructuración - 01/08/2018 - **************************
+										************ Reestructuración - 01/08/2018 - *************
 */
+
+
 ::selection { background: #eb1c744f; }
 body { margin: 0px; padding: 0px; text-align: center; }
 @font-face { font-family: HelveticaThin; src: url("fonts/HelveticaNeueEroski-Thin.otf") format('opentype'), url("fonts/HelveticaNeueEroski-Thin.woff") format('woff'), url("fonts/HelveticaNeueEroski-Thin.ttf") format('truetype'); font-weight: 400; font-style: normal }
+
 /*Carrito de compras css*/
 #imgtold .mt .item { margin-bottom: 15px; }
 #shopcart { width: 10%; height: 100%; background: url("https://www.kooningtravel.com/img/circle.png") no-repeat center 10px transparent; cursor: pointer; }
@@ -65,8 +67,26 @@ html body .body-cart .col-md-3 .medium { text-align: center; float: left; displa
 html body .body-cart .col-md-3 .top-car { text-align: center; padding: 5px 0 5px 0!important; background: #c0392b; border-bottom: 10px solid #a12f23; width: 100%; }
 html body .body-cart .col-md-3 .medium #contactform { float: none; border-bottom: 1px dashed #888; text-align: left; width: 90%; margin-top: 10px; font-size: 14px; color: #888; }
 html body .body-cart .col-md-3 .medium #contactform .title-cart { color: #888; margin: 0 0 10px; font-size: 14px; width: 100%; text-align: left; font-weight: 300; }
-html body .body-cart .col-md-3 .medium #contactform .form-row { }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito { margin-bottom: 13px; padding: 4px 6px; }
+html body .body-cart .col-md-3 .medium #contactform .form-row { width: 100%; padding: 0px; margin: 0px 0px 10px 0px; }
+
+html body .body-cart .col-md-3 .medium #contactform .form-row .marquito { margin-bottom: 10px; width: 100%; }
+html body .body-cart .col-md-3 .medium #contactform .form-row .marquito .main-title{ color: #888; margin: 0 0 2px;font-size: 14px; text-align: left; font-weight: 300; width: 100%; }
+html body .body-cart .col-md-3 .medium #contactform .form-row .marquito .form-control{ color: #555; font-size: 14px; width: 100%; height: 34px; padding:0px 4px; background-color: #fff; border: 1px solid #ccc; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 1px rgba(0,0,0,.075); -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s; -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s }
+html body .body-cart .col-md-3 .medium #contactform .form-row .marquito .form-control:focus { border-color: #66afe9; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6); box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6) }
+html body .body-cart .col-md-3 .medium #contactform .form-row .marquito .form-control::-moz-placeholder { color:#999; opacity:1; }
+html body .body-cart .col-md-3 .medium #contactform .form-row .marquito .form-control:-ms-input-placeholder { color:#999; }
+html body .body-cart .col-md-3 .medium #contactform .form-row .marquito .form-control::-webkit-input-placeholder { color:#999; }
+
+html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #validationCustom01, html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #validationCustom02{ widows: 45%; }
+
+
+
+
+
+
+
+
+
 html body .body-cart .col-md-3 .top-car h2, html body .body-cart .col-md-3 .top-car h3 { font-weight: 700; color: #FFF; font-size: 31px; margin: 10px 0; }
 html body .body-cart .col-md-3 h3 { font-size: 20px; }
 html body .body-cart .col-md-3 .medium div, html body .body-cart .col-md-3 .medium span, html body .body-cart .col-md-3 .medium form, html body .body-cart .col-md-3 .medium p, html body .body-cart .col-md-3 .medium input, html body .body-cart .col-md-3 .medium select, html body .body-cart .col-md-3 .medium a, html body .body-cart .col-md-3 .medium strong, html body .body-cart .col-md-3 .medium ul{ display: inline-block; float: left; margin:0px; padding: 0px; list-style: none; font-family: Roboto,sans-serif; font-size: 12px;  }      
@@ -76,22 +96,20 @@ html body .body-cart .col-md-9 .extras .row .producto { line-height: 40px; font-
 html body .body-cart .col-md-9 .extras .row .conte {display: inline-block; width: 28%; float: none; margin-left: 6px; margin-bottom: 20px; }
 html body .body-cart .col-md-9 .extras .row .conte a{ display: inline-block; }
 html body .body-cart .col-md-9 .extras .row .conte .center-block { margin: 0px auto; width: 139px; height: 45px; box-shadow: none; }
-html body .body-cart .col-md-9 .extras .row .cont .card-hotel .card-txt-clase, html body .body-cart .col-md-9 .extras .row .conte  a .card-txt-hotel { color: #337ab7; font-family:Roboto, sans-serif;  font-size: 12px; display: inline-block; text-align: left; margin: 8px 2px; float: left; width: 90%; margin-bottom: 0px; }
-html body .body-cart .col-md-9 .extras .row .cont .card-hotel .card-txt-hotel { font-size: 16px; color: #1A51A1; }
-html body .body-cart .col-md-9 .extras .row .cont .card-hotel .img-hotel-disney { display: inline-block; margin: 0px auto; float: left; width: 100%; text-align: center; }
+
+
+html body .body-cart .col-md-9 .extras .row .conte .card-hotel a .card-txt-clase, html body .body-cart .col-md-9 .extras .row .conte  a .card-txt-hotel { color: #337ab7; font-family:Roboto, sans-serif;  font-size: 12px; display: inline-block; text-align: left; margin: 8px 2px; float: left; width: 90%; margin-bottom: 0px; }
+
+html body .body-cart .col-md-9 .extras .row .conte .card-hotel .card-txt-hotel { font-size: 16px; color: #1A51A1; }
+html body .body-cart .col-md-9 .extras .row .conte .card-hotel .img-hotel-disney { display: inline-block; margin: 0px auto; float: left; width: 100%; text-align: center; }
 html body .body-cart .col-md-9 .extras .row .conte .card-hotel a { display: inline-block; float: none; width: 95%; margin: 0px auto; }
 html body .body-cart .col-md-9 .extras .row .conte .card-hotel a .card-precios { margin-top: 7px!important; background-color: bisque; padding: 4px!important; background: rgba(216, 215, 213, 0.2); border-radius: 2px; -webkit-transition: .3s; -o-transition: .3s;  width: 100%; transition: .3s; }
-html body .body-cart .col-md-9 .extras .row .cont .card-hotel .card-precios .txt-paquete { font-size: 14px; float: left; display: inline-block; width: 100%; text-align: left; color: #666; font-family: Roboto,sans-serif;  }
-html body .body-cart .col-md-9 .extras .row .cont .card-hotel .card-precios .txt-precio { margin:0 0 10px; color: #888; font-size: 14px; display: inline-block; float: left; font-family: Roboto,sans-serif }
-html body .body-cart .col-md-9 .extras .row .cont .card-hotel .card-precios .txt-precio .precio { font-size: 18px; color: #2196F3; font-family:  Roboto, sans-serif; }
-html body .body-cart .col-md-9 .extras .row .cont .card-hotel .mensualidades { font-family: Roboto,sans-serif; margin:0 0 10px!important; font-size: 12px; padding-top: 7px!important; color: #666; text-align: left; width: 100%; text-indent: 8px; }
+html body .body-cart .col-md-9 .extras .row .conte .card-hotel .card-precios .txt-paquete { font-size: 14px; float: left; display: inline-block; width: 100%; text-align: left; color: #666; font-family: Roboto,sans-serif;  }
+html body .body-cart .col-md-9 .extras .row .conte .card-hotel .card-precios .txt-precio { margin:0 0 10px; color: #888; font-size: 14px; display: inline-block; float: left; font-family: Roboto,sans-serif }
+html body .body-cart .col-md-9 .extras .row .conte .card-hotel .card-precios .txt-precio .precio { font-size: 18px; color: #2196F3; font-family:  Roboto, sans-serif; }
+html body .body-cart .col-md-9 .extras .row .conte .card-hotel .mensualidades { font-family: Roboto,sans-serif; margin:0 0 10px!important; font-size: 12px; padding-top: 7px!important; color: #666; text-align: left; width: 100%; text-indent: 8px; }
 html body .body-cart .col-md-9 .extras .row .conte .card-hotel { position: relative; display: inline-block; background: #fff; margin-top: 15px; -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.09); box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.09); -webkit-transition: .3s; -o-transition: .3s; transition: .3s; }
-html body .body-cart .col-md-9 .extras .row .cont .card-hotel:hover { -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.7)!important; box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.7)!important; -webkit-transform: translateY(-8px); -ms-transform: translateY(-8px); transform: translateY(-8px); }
-
-
-
-
-
+html body .body-cart .col-md-9 .extras .row .conte .card-hotel:hover { -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.7)!important; box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.7)!important; -webkit-transform: translateY(-8px); -ms-transform: translateY(-8px); transform: translateY(-8px); }
 
 /*Search*/
 body .search-body { width: 100%; display: inline-block; background: #F0F0F0; float: left; }
@@ -177,8 +195,9 @@ body .search-body .container .nav { margin: 10px 0px; width: 98%;  float: none; 
 .head div, .head span, .head p, .head .tour li a, .head input, .head form, .head img, .head label, .head ul, .head li { display: inline-block; float: left; margin: 0px; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; }
 .head { height: auto; width: 100%; margin: 0px auto; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; text-align: center; }
 a:link, a:visited { text-decoration: none; }
-/*https://www.kooningtravel.com/Gracias*/
 
+
+/*https://www.kooningtravel.com/Gracias*/
 .great { background: url("https://www.kooningtravel.com/img/gracias.png") no-repeat 15% 7% #F2F2F2 /70%; width: 80%; height: 500px; margin: 0px auto; margin-top: 20px; position: relative; }
 .great .left { left: 4%; }
 .great .left .tig { margin: 15px 0px; font-family: HelveticaThin; color: #4d6a8e; font-size: 32px; }
@@ -205,19 +224,7 @@ a:link, a:visited { text-decoration: none; }
 .hovering { display: none }
 .main-nav .nav1 { left: 13%; }
 .main-nav .nav2 { left: 21%; }
-@media(max-width:767px) {
-	.fb_iframe_widget_fluid { display: inline-block; float: left; width: 100%; }
-	.great .right img { position: relative; top: 11px; }
-	.great .left .tig { float: left; text-align: left; font-size: 25px; width: 70%; display: inline-block; }
-	.great .redes ul li { width: 70px; margin-left: 0px; }
-	.ti { width: 100%!important; display: inline-block; float: left; text-align: center; position: relative; left: 0px; margin-top: 7px; }
-	.great .redes ul { width: 100%!important; margin-top: -6px!important; }
-	.great .left, .great .right { width: 100%!important; top: 9%!important; }
-	.great { overflow: hidden; width: 100%!important; }
-	.mas { margin: 0px!important; }
-	.great .left .tig a strong { font-size: 18px; }
-	.ti a { float: left; margin-left: 3%; }
-}
+
 /*Comienza Estilos para el Header generico*/
 .header { width: 100%; height: auto; margin-top: 15px!important; }
 .header .logo { height: 100%; width: 20%; }
@@ -695,10 +702,6 @@ body .centerh .fott .mar { margin: 0px 55px; }
 .bagro .popup .centt form #correo{ background: url("https://www.kooningtravel.com/img/mail.png") no-repeat right center #FFF; }
 .bagro .popup .centt form textarea{resize: none;margin: 10px 0px;height: 70px;display: inline-block;width:200px;float: left;}
 .bagro .popup .centt form .send{ background: #197B30; color: #FFF; border: 0px;cursor: pointer; width:110px; height: 30px; text-align:center; font-size:16px;  }
-
-*/
-/*Media Query movil*/
-
 @media only screen and (max-width: 700px) {
 	.contp { position: initial!important; }
 	#promo .imgpro { display: none!important; }
@@ -721,10 +724,29 @@ body .centerh .fott .mar { margin: 0px 55px; }
 	.sombra { padding: 0px!important; }
 }
 
+
+@media(max-width:767px) {
+	.fb_iframe_widget_fluid { display: inline-block; float: left; width: 100%; }
+	.great .right img { position: relative; top: 11px; }
+	.great .left .tig { float: left; text-align: left; font-size: 25px; width: 70%; display: inline-block; }
+	.great .redes ul li { width: 70px; margin-left: 0px; }
+	.ti { width: 100%!important; display: inline-block; float: left; text-align: center; position: relative; left: 0px; margin-top: 7px; }
+	.great .redes ul { width: 100%!important; margin-top: -6px!important; }
+	.great .left, .great .right { width: 100%!important; top: 9%!important; }
+	.great { overflow: hidden; width: 100%!important; }
+	.mas { margin: 0px!important; }
+	.great .left .tig a strong { font-size: 18px; }
+	.ti a { float: left; margin-left: 3%; }
+}
+*/
+
+
 .wrop .ih-item a .img h4 { font-weight: bold; }
 .descp { font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-size: 24px; text-align: center; width: 100%; float: left; display: inline-block; height: 38px; color: #e61b76; font-weight: bolder; }
 #DetalleHabitacion .research-b { display: none; }
 #DetalleHabitacion .research-b #contactform { text-align: center; }
+
+
 /*Begin new Kooningtravel css*/
 body .generic-fotter, body .generic-fotter a, body .generic-fotter p, body .generic-fotter ul, body .generic-fotter li, body .generic-fotter span, body .generic-fotter div, body .generic-fotter input, body .generic-fotter b, body .generic-fotter textarea, body .generic-fotter form, body .generic-fotter label, body .generic-fotter img, body .generic-fotter select, body .generic-fotter h1, body .generic-fotter h2, body .generic-fotter h3, body .generic-fotter h4, body .generic-fotter h5, body .generic-fotter h6 { color: #FFF; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: normal; display: inline-block; float: left; margin: 0px; border: 0px; padding: 0px; text-decoration: none; outline: none; }
 body .generic-fotter { background: #1B242A; width: 100%; text-align: center; }
