@@ -1,295 +1,474 @@
+
 @extends('layouts/structure')
-
 @section('content')
-
-	<div class="body-cart" >
-		<div class="col-md-9" >
-
-			<div class="row-fluid" >	
-	            <div class="small">
-	          		<div class="bloque">
-	          			<img class="img-cart" alt="parques,parque,tour,kooning travel" src="/img/parques/Experiencias-Xcaret/Xcaret/xcaret.png">
-		                <h2>Hotel</h2>
-		                <h3>Grand Hotel Acapulco and Convention Center</h3>
-	              	</div>
-		              <div class="bloque center">
-							<p><i class="fa fa-building" aria-hidden="true"></i><span>Grand Hotel Acapulco and Convention Center</span></p>
-							<p><i class="fa fa-map-marker" aria-hidden="true"></i><span> Acapulco, México</span></p>
-							<p><i class="fa fa-clock-o" aria-hidden="true"></i><span>Llegada Tuesday, 21/Aug/2018</span></p>
-							<p><i class="fa fa-clock-o" aria-hidden="true"></i><span>Salida Saturday, 25/Aug/2018</span></p>
-							<div class="roms" >
-								<div class="vacancy" >
-									<i class="fa fa-male" aria-hidden="true"></i>
-									<span>2 Adultos</span>
-								</div>
-								<div class="vacancy" >
-									<i class="fa fa-child" aria-hidden="true"></i>
-									<span> 0 Menores</span>
-								</div>
-								
-							</div>
-		              </div>
-		              <div class="bloque">
-		                 <p class="price-r" >
-		                 	<strong class="price-roms" >MXN $7,495.60</strong>
-		                    <a class="del-room" ><span class="del-icon"></span></a>
-		                  </p>
-		              </div>
-	            </div>
-			</div>
-	
-
-
-      <div class="extras" >    
-          <div class="row">
-            <h4 class="producto">Los mejores parques tematicos KoonningTravel!</h4>
-            
-            <a class="top" target="_blank" href="/Parques/Xcaret">
-                <div class="conte"> <img src="/img/extras/xcaretl.png" alt="Xcaret, xperiencias,parque" class="img-responsive center-block" >
-                  <div class="card-hotel"> <span class="card-txt-clase">Parque Xcaret!</span>
-                    <p class="card-txt-hotel">Entradas Xcaret!</p>
-                    <figure class="img-hotel-disney"> <img src="/img/extras/xcaret.png" alt="xcaret, parques, xperiencias" class="img-w"></figure>
-                    <a href="/Parques/Xcaret" target="_blank">
-                    <div class="card-precios"> <span class="txt-paquete">Entrada Adulto</span>
-                      <p class="txt-precio">desde: <span class="precio">1,874.81MXN</span></p>
-                    </div>
-                    </a> <a href="/Parques/Xcaret" target="_blank">
-                    <div class="card-precios"> <span class="txt-paquete">Entrada Niño</span>
-                      <p class="txt-precio">desde: <span class="precio">$937.31MXN</span></p>
-                    </div>
-                    </a>
-                    <p class="mensualidades">*Hasta 12 Meses sin Intereses</p>
-                  </div>
-                </div>
-              </a>
-                
-             <a class="top" target="_blank" href="/Tours/Chichen-Itza"> 
-                <div class="conte"> <img src="/img/extras/mayalandl.png" alt="Chichen Itza, Tours, tour" class="img-responsive center-block" >
-                  <div class="card-hotel"> <span class="card-txt-clase">Tour Mayaland!</span>
-                    <p class="card-txt-hotel">Entradas Chichen Itza!</p>
-                    <figure class="img-hotel-disney"> <img src="/img/extras/mayaland.png" alt="mayaland, tour, chichen itza" class="img-w"></figure>
-                    <a target="_blank" href="/Tours/Chichen-Itza" target="_blank">
-                    <div class="card-precios"> <span class="txt-paquete">Entrada Adulto</span>
-                      <p class="txt-precio">desde: <span class="precio">$2,109.80MXN</span></p>
-                    </div>
-                    </a> <a href="/Tours/Chichen-Itza" target="_blank">
-                    <div class="card-precios"> <span class="txt-paquete">Entrada Niño</span>
-                      <p class="txt-precio">desde: <span class="precio">$1,534.40MXN</span></p>
-                    </div>
-                    </a>
-                    <p class="mensualidades">*Hasta 12 Meses sin Intereses</p>
-                  </div>
-                </div>
-             </a>   
-
-             <a class="top" target="_blank" href="/Parques/Cirque-Soleil">
-                <div class="conte"> <img src="/img/extras/joya.png" alt="soleil, parque, circus" class="img-responsive center-block" >
-                  <div class="card-hotel"> <span class="card-txt-clase">Parque La Joya</span>
-                    <p class="card-txt-hotel">Entradas Cirque Soleil!</p>
-                    <figure class="img-hotel-disney"> <img src="/img/extras/lajoya.png" alt="Cirque Soleil, parques, parque" class="img-w"></figure>
-                    <a target="_blank" href="/Parques/Cirque-Soleil" target="_blank">
-                    <div class="card-precios"> <span class="txt-paquete">Entrada Adulto</span>
-                      <p class="txt-precio">desde: <span class="precio">$1,463.00MXN</span></p>
-                    </div>
-                    </a> <a href="/Parques/Cirque-Soleil" target="_blank">
-                    <div class="card-precios"> <span class="txt-paquete">Entrada Niño</span>
-                      <p class="txt-precio">desde: <span class="precio">$1,463.00MXN</span></p>
-                    </div>
-                    </a>
-                    <p class="mensualidades">*Hasta 12 Meses sin Intereses</p>
-                  </div>
-                </div>
-              </a>  
-
-          </div>
-      </div>
-  <!--End Contenedor de Productos Extras -->
-
-
-
-		</div>
-
-
-		<div class="col-md-3" >	
-
-          <div class="medium" >
-            <div class="top-car">
-              <h2>Reservacion</h2>
-              <h3>Datos de Reserva </h3>
+<div class="body-cart" >
+  <div class="col-md-12" >
+    <ul class="nav nav-pills nav-wizard">
+      <li id="step1" class="active">
+        <div class="nav-wedge"></div>
+        <a data-toggle="tab" >1. Reservacion</a>
+        <div class="nav-arrow"></div>
+      </li>
+      <li id="step2">
+        <div class="nav-wedge"></div>
+        <a data-toggle="tab">2. Forma de pago</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-9" id="step-1" >
+    <div class="row-fluid" >
+      <!--Bloque Hotel-->
+      <div class="small hotel">
+        <div class="bloque">
+          <img class="img-cart" alt="Hotel,parque,tour,kooning travel" src="/img/parques/hotel.png">
+          <h2>Hotel</h2>
+          <h3 class="hotel-bloque" >Grand Hotel Acapulco and Convention Center</h3>
+        </div>
+        <div class="bloque center">
+          <p><i class="fa fa-building" aria-hidden="true"></i><span>Grand Hotel Acapulco and Convention Center</span></p>
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i><span> Acapulco, México</span></p>
+          <p><i class="fa fa-clock-o" aria-hidden="true"></i><span>Llegada Tuesday, 21/Aug/2018</span></p>
+          <p><i class="fa fa-clock-o" aria-hidden="true"></i><span>Salida Saturday, 25/Aug/2018</span></p>
+          <div class="roms" >
+            <div class="vacancy" >
+              <i class="fa fa-male" aria-hidden="true"></i>
+              <span>2 Adultos</span>
             </div>
-                 
-              <form name="contactform" id="contactform" class="needs-validation" action="/hotels/confirm" onsubmit="" method="post">
-	               <div style="display: none;" >
-		                <input type="hidden" name="name2" />
-		                <input type="hidden" name="Aerolinea" />
-		                <input type="hidden" name="NumVuelo" />
-		                <input type="hidden" name="name1" />
-		                <input type="hidden" name="lname2" />
-		                <input type="hidden" name="lname1" />
-	                </div>
-                
-                 
-            
-                      
-                      <div class="form-row">
-                      	
-                        <div class="marquito"> 
-                           <p class="main-title" >Datos del traslado</p>                         
-                          <input type="text" class="form-control" autocomplete="on" name="Aerolinea" id="validationCustom01" placeholder="Aerolinea" required>
-                        </div>
-
-                        <div class="marquito">
-                          <p class="main-title" > Si tiene escalas proporciona el último vuelo</p>
-                          <input type="text" class="form-control" autocomplete="on" name="NumVuelo" id="validationCustom02" placeholder="Numero de vuelo" required>
-                        </div>
-                      </div>                      
-    
-                      <div class="form-row">                      	
-              						<div class="marquito">
-                            <p class="main-title">Datos de Reserva</p>
-              							<input type="text" class="form-control" autocomplete="on" name="nombre" id="validationCustom01" placeholder="Nombre" required>
-              							<input type="text" class="form-control" autocomplete="on" name="apellidos" id="validationCustom02" placeholder="Apellidos" required>
-              							<input type="text" class="form-control" name="correo" id="validationCustomUsername" placeholder="Correo" aria-describedby="inputGroupPrepend" >
-              							 <input type="text" class="form-control" autocomplete="on" name="ciudad" id="validationCustom04" placeholder="Ciudad" required>
-              							 <input type="text" class="form-control" autocomplete="on" name="estado" id="validationCustom05" placeholder="Estado" required>
-
-              							 <select name="pais" id="pais" class="form-control">
-                                          <option value="Argentina">Argentina</option>
-                                          <option value="Australia">Australia</option>
-                                          <option value="Austria">Austria</option>
-                                          <option value="Belgium">Belgium</option>
-                                          <option value="Brazil">Brazil</option>
-                                          <option value="Bulgaria">Bulgaria</option>
-                                          <option value="Canada">Canada</option>
-                                          <option value="Caribbean">Caribbean</option>
-                                          <option value="Chile">Chile</option>
-                                          <option value="China">China</option>
-                                          <option value="Colombia">Colombia</option>
-                                          <option value="Costa Rica">Costa Rica</option>
-                                          <option value="Croatia">Croatia</option>
-                                          <option value="Czech Republic">Czech Republic</option>
-                                          <option value="Denmark">Denmark</option>
-                                          <option value="Dominican Republic">Dominican Republic</option>
-                                          <option value="Estonia">Estonia</option>
-                                          <option value="Finland">Finland</option>
-                                          <option value="France">France</option>
-                                          <option value="Germany">Germany</option>
-                                          <option value="Greece">Greece</option>
-                                          <option value="Guatemala">Guatemala</option>
-                                          <option value="Hong Kong">Hong Kong</option>
-                                          <option value="Hungary">Hungary</option>
-                                          <option value="India">India</option>
-                                          <option value="Indonesia">Indonesia</option>
-                                          <option value="Ireland">Ireland</option>
-                                          <option value="Israel">Israel</option>
-                                          <option value="Italy">Italy</option>
-                                          <option value="Japan">Japan</option>
-                                          <option value="Korea">Korea</option>
-                                          <option value="Latvia">Latvia</option>
-                                          <option value="Lithuania">Lithuania</option>
-                                          <option value="Malaysia">Malaysia</option>
-                                          <option value="Mexico" selected>Mexico</option>
-                                          <option value="Morocco">Morocco</option>
-                                          <option value="Netherlands">Netherlands</option>
-                                          <option value="New Zealand">New Zealand</option>
-                                          <option value="Norway">Norway</option>
-                                          <option value="Panama">Panama</option>
-                                          <option value="Peru">Peru</option>
-                                          <option value="Philippines">Philippines</option>
-                                          <option value="Poland">Poland</option>
-                                          <option value="Portugal">Portugal</option>
-                                          <option value="Puerto Rico">Puerto Rico</option>
-                                          <option value="Romania">Romania</option>
-                                          <option value="Russian Federation">Russian Federation</option>
-                                          <option value="Singapore">Singapore</option>
-                                          <option value="Slovakia">Slovakia</option>
-                                          <option value="Slovenia">Slovenia</option>
-                                          <option value="South Africa">South Africa</option>
-                                          <option value="Spain">Spain</option>
-                                          <option value="Sweden">Sweden</option>
-                                          <option value="Switzerland">Switzerland</option>
-                                          <option value="Taiwan">Taiwan</option>
-                                          <option value="Thailand">Thailand</option>
-                                          <option value="Turkey">Turkey</option>
-                                          <option value="Ukraine">Ukraine</option>
-                                          <option value="United Kingdom">United Kingdom</option>
-                                          <option value="United States">United States</option>
-                                          <option value="Venezuela">Venezuela</option>
-                                          <option value="Vietnam">Vietnam</option>
-                                      </select>
-
-              						</div>                   
-                      </div>
-
-                      <div class="form-row">
-                       
-                        <div class="marquito">
-                          <input type="text" class="form-control" autocomplete="on"  name="zip" id="validationCustom03" placeholder="Codigo postal" required />                     
-                          <input type="text" class="form-control" autocomplete="on" name="telefono" id="validationCustom03" placeholder="Numero Telefonico" required />                     
-                          <textarea name="address" id="Direccion" type="text" rows="4" placeholder="Direccion..." class="form-control" required=""></textarea>
-                        </div>
-
-                      </div>
-
-	
-                    <div class="form-row">                      	
-          							<div class="marquito">
-                            <p class="main-title" >Datos del traslado</p>
-            								<input type="text" name="name" class="form-control" id="validationCustom01" placeholder="Nombre" required />
-            								<input type="text" name="lname" class="form-control" id="validationCustom02" placeholder="Apellido" required />
-            								<input type="text" name="name" class="form-control" id="validationCustom01" placeholder="Nombre Menor" required />                     
-            								<input type="text" name="lname" class="form-control" id="validationCustom02" placeholder="Apellido Menor" required />
-          							</div>
-                     </div>         
-                        
-                           
-                        <div class="form-row">
-                        	 
-                           <div class="marquito">
-                              <p class="main-title" >Datos del huesped del cuarto</p>
-                              <input type="text" name="name" class="form-control" id="validationCustom01" placeholder="Nombre" required>
-                              <input type="text" name="lname" class="form-control" id="validationCustom02" placeholder="Apellido" required>
-                           </div>
-                        </div>                      
-                     
-                    <div class="form-row">                    	
-	                  	 <div class="marquito">
-                          <p class="main-title" >Datos del huesped del cuarto</p>
-	                        <input class="form-check-input" name="acept" type="checkbox" id="ok" required>
-	                        <label class="form-check-label" for="invalidCheck" ></label>
-	                        <label>He leí­do y acepto el  <a href="https://kooningtravel.com/terminos" target="_blank">Aviso de privacidad</a></label>
-	                    </div>
-                    </div>
-
-					          <div class="form-row">                 
-                      <input id="btn_pagar" type="submit" class="btn btn-sm btn-caja-reserva" value="Pagar" >
-                    </div>
-
-
-                    
-              </form>
-
-
-
-			        <div class="form-group">  
-                <p><strong>MXN $ 6,524</strong></p>
-              </div>
-            
+            <div class="vacancy" >
+              <i class="fa fa-child" aria-hidden="true"></i>
+              <span> 0 Menores</span>
+            </div>
           </div>
-
-
-
-			<img style="display: none;" class="img-banner-right" src="/img/extras/banner-right.png" alt="viajes, vacaciones, parques,tour" >
-
-
-		</div>	
-	
-	
-	
-	
-	</div>
-	
+        </div>
+        <div class="bloque">
+          <p class="price-r" >
+            <strong class="price-roms" >MXN $7,495.60</strong>
+            <a class="del-room" ><span class="del-icon"></span></a>
+          </p>
+        </div>
+      </div>
+      <!--Bloque Hotel-->
+      <!--Bloque Parques-->
+      <div class="small parque">
+        <div class="bloque">
+          <img class="img-cart" alt="parques,parque,tour,kooning travel" src="/img/parques/parques.png">
+          <h2>Parque</h2>
+          <h3 class="parque-bloque" >Grand Hotel Acapulco and Convention Center</h3>
+        </div>
+        <div class="bloque center">
+          <p><strong>Fecha: </strong> 2018-08-24</p>
+          <p><strong>Adultos: </strong> 1 &nbsp;&nbsp;&nbsp;
+            <strong>Niños: </strong> 0</p>
+          <p><strong>Ubicacion: </strong> Xcaret, Riviera Maya Quintana Roo, México.</p>
+          <p><strong>Horario: </strong> 09:30</p>
+        </div>
+        <div class="bloque">
+          <p class="price-r" >
+            <strong class="price-roms" >MXN $7,495.60</strong>
+            <a class="del-room" ><span class="del-icon"></span></a>
+          </p>
+        </div>
+      </div>
+      <!--Bloque Parques-->
+      <!--Bloque Tours-->
+      <div class="small tours">
+        <div class="bloque">
+          <img class="img-cart" alt="parques,parque,tour,kooning travel" src="/img/parques/tours.png">
+          <h2>Tour</h2>
+          <h3 class="tours-bloque">Grand Hotel Acapulco and Convention Center</h3>
+        </div>
+        <div class="bloque center">
+          <p><strong>Fecha: </strong> 2018-08-26</p>
+          <p><strong>Adultos: </strong> 1 &nbsp;&nbsp;&nbsp;
+            <strong>Niños: </strong> 0</p>
+          <p><strong>Ubicacion: </strong> Chichen Itza, Yucatan, México.</p>
+          <p><strong>Horario: </strong> 09:00</p>
+        </div>
+        <div class="bloque">
+          <p class="price-r" >
+            <strong class="price-roms" >MXN $7,495.60</strong>
+            <a class="del-room" ><span class="del-icon"></span></a>
+          </p>
+        </div>
+      </div>
+      <!--Bloque Tours-->
+      <!--Bloque Traslados-->
+      <div class="small traslado">
+        <div class="bloque">
+          <img class="img-cart" alt="parques,parque,tour,kooning travel" src="/img/parques/traslados.png">
+          <h2>Traslado</h2>
+          <h3 class="traslado-bloque">Grand Hotel Acapulco and Convention Center</h3>
+        </div>
+        <div class="bloque center">
+          <p><strong> Hotel: </strong> The Beloved Hotel Playa Mujeres Boutique All Inclusive | Cancun </p>
+          <p><strong> Fecha LLegada:</strong> 2018-09-10</p>
+          <p><strong> Hora LLegada:</strong> 01:00</p>
+          <p><strong> Fecha Salida:</strong> 2018-09-13</p>
+          <p><strong> Hora Salida</strong> 01:00</p>
+          <p><strong> Servicios:</strong> 1</p>
+          <p><strong> Camioneta tipo:</strong> Van</p>
+        </div>
+        <div class="bloque">
+          <p class="price-r" >
+            <strong class="price-roms" >MXN $7,495.60</strong>
+            <a class="del-room" ><span class="del-icon"></span></a>
+          </p>
+        </div>
+      </div>
+      <!--Bloque Traslados-->
+    </div>
+    <div class="extras" >
+      <div class="row">
+        <h4 class="producto">Los mejores parques tematicos KoonningTravel!</h4>
+        <a class="top" target="_blank" href="/Parques/Xcaret">
+        <div class="conte">
+          <img src="/img/extras/xcaretl.png" alt="Xcaret, xperiencias,parque" class="img-responsive center-block" >
+          <div class="card-hotel">
+            <span class="card-txt-clase">Parque Xcaret!</span>
+            <p class="card-txt-hotel">Entradas Xcaret!</p>
+            <figure class="img-hotel-disney">
+              <img src="/img/extras/xcaret.png" alt="xcaret, parques, xperiencias" class="img-w"></figure>
+            <a href="/Parques/Xcaret" target="_blank">
+            <div class="card-precios">
+              <span class="txt-paquete">Entrada Adulto</span>
+              <p class="txt-precio">desde: <span class="precio">1,874.81MXN</span></p>
+            </div>
+            </a>
+            <a href="/Parques/Xcaret" target="_blank">
+              <div class="card-precios">
+                <span class="txt-paquete">Entrada Niño</span>
+                <p class="txt-precio">desde: <span class="precio">$937.31MXN</span></p>
+              </div>
+            </a>
+            <p class="mensualidades">*Hasta 12 Meses sin Intereses</p>
+          </div>
+        </div>
+        </a>
+        <a class="top" target="_blank" href="/Tours/Chichen-Itza">
+        <div class="conte">
+          <img src="/img/extras/mayalandl.png" alt="Chichen Itza, Tours, tour" class="img-responsive center-block" >
+          <div class="card-hotel">
+            <span class="card-txt-clase">Tour Mayaland!</span>
+            <p class="card-txt-hotel">Entradas Chichen Itza!</p>
+            <figure class="img-hotel-disney">
+              <img src="/img/extras/mayaland.png" alt="mayaland, tour, chichen itza" class="img-w"></figure>
+            <a target="_blank" href="/Tours/Chichen-Itza" target="_blank">
+            <div class="card-precios">
+              <span class="txt-paquete">Entrada Adulto</span>
+              <p class="txt-precio">desde: <span class="precio">$2,109.80MXN</span></p>
+            </div>
+            </a>
+            <a href="/Tours/Chichen-Itza" target="_blank">
+              <div class="card-precios">
+                <span class="txt-paquete">Entrada Niño</span>
+                <p class="txt-precio">desde: <span class="precio">$1,534.40MXN</span></p>
+              </div>
+            </a>
+            <p class="mensualidades">*Hasta 12 Meses sin Intereses</p>
+          </div>
+        </div>
+        </a>
+        <a class="top" target="_blank" href="/Parques/Cirque-Soleil">
+        <div class="conte">
+          <img src="/img/extras/joya.png" alt="soleil, parque, circus" class="img-responsive center-block" >
+          <div class="card-hotel">
+            <span class="card-txt-clase">Parque La Joya</span>
+            <p class="card-txt-hotel">Entradas Cirque Soleil!</p>
+            <figure class="img-hotel-disney">
+              <img src="/img/extras/lajoya.png" alt="Cirque Soleil, parques, parque" class="img-w"></figure>
+            <a target="_blank" href="/Parques/Cirque-Soleil" target="_blank">
+            <div class="card-precios">
+              <span class="txt-paquete">Entrada Adulto</span>
+              <p class="txt-precio">desde: <span class="precio">$1,463.00MXN</span></p>
+            </div>
+            </a>
+            <a href="/Parques/Cirque-Soleil" target="_blank">
+              <div class="card-precios">
+                <span class="txt-paquete">Entrada Niño</span>
+                <p class="txt-precio">desde: <span class="precio">$1,463.00MXN</span></p>
+              </div>
+            </a>
+            <p class="mensualidades">*Hasta 12 Meses sin Intereses</p>
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+    <!--End Contenedor de Productos Extras -->
+  </div>
+  <div class="col-md-9" id="step-2" >
+    <!-- aqui empiza -->
+    
+    <form class="form-pay-reservation" action="https://kooningtravel.com/reservacion/pagar" method="POST">
+      <div id="radCardPayments" class="paymentType" >
+        <ul id="rad-payment-form">
+          <li class="selected allc">
+            <input type="radio" id="credit1" name="radpayment1" value="radCC" checked="checked">
+            <label for="credit1">Tarjeta de Crédito</label>
+          </li>
+          <li class=" amer">
+            <input type="radio" id="credit2" name="radpayment1" value="radDC">
+            <label for="credit2">Tarjeta de Débito</label>
+          </li>
+          <li class="">
+            <input type="radio" data-fop-minimumamount="0" data-fop-multiple="false" data-fop-pays="0" data-fop-interest="0" data-fop-type="paypal" name="radpayment1" value="PAYPALMX" id="credit3">
+            <label for="credit3"><img src="/img/bancos/PAYPALMX_xm.png" alt="PayPal (tarjeta de crédito o débito)"></label>
+          </li>
+        </ul>
+      </div>
+      <div id="first-fop" class="amount-pay box-blue-payment ">
+        <div class="first-bloque" >
+          <span class="Aviso-Mens ">
+          <span>Contamos con 3, 6 y 9 meses sin intereses</span><img src="/img/bancos/tag-white.png">
+          </span>
+          <ul id="payment-form-BD" class="one-payment">
+            <li class="selected text1">
+              <input type="radio" data-fop-minimumamount="0" data-fop-multiple="true" data-fop-debit="false" data-fop-pays="0" data-fop-interest="0" data-fop-type="cc" name="payment1" value="VM" id="BC7" checked="checked">
+              <label for="BC7" class="imgContainer"><img src="/img/bancos/v_xm.png" alt="Visa"></label>
+            </li>
+            <li class="ame text2" >
+              <input type="radio" data-fop-minimumamount="0" data-fop-multiple="true" data-fop-debit="false" data-fop-pays="0" data-fop-interest="0" data-fop-type="cc" name="payment1" value="A" id="AMEX12">
+              <label for="AMEX12" class="imgContainer"><img src="/img/bancos/amex_xm.png" alt="Amex"></label>
+            </li>
+          </ul>
+          <div id="select-bank">
+            <label for="banco-select">Elija un banco</label>
+            <span id="fakeInput" class="fakeInput"><span class="selectedBank"><span class="logoBank"><img src="/img/bancos/1pago_m.png" alt="Un solo pago"></span>
+            <strong>Todo los Bancos</strong>
+            </span><img class="arrows" src="/img/bancos/sprite.gif"></span>
+            <div id="fakeInput-required" class="stTxtError" style="display: none;">Opción inválida</div>
+            <div id="note-debit-card" class="stLabTB" style="display: none;">* Por el momento no podemos recibir todas las tarjetas de débito. Por favor sólo use esta forma de pago si su banco se encuentra en esta lista.</div>
+            <ul id="banco-select" class="bankSelection" style="display:none;">
+              <li class="otherBank selected all" data-fop-id="-1" data-fop-issuerid="V" data-fop-mean="V" data-fop-minimumamount="0" >
+                <span class="logoBank"><img src="/img/bancos/1pago_m.png" alt="Un solo pago"></span>
+                <strong>Todo los Bancos</strong>
+              </li>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Santander-Serfin" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/Santander-Serfin_m.png"></span>
+                <strong>Santander Serfin</strong>
+              </li>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Banorte" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/Banorte_m.png"></span>
+                <strong>Banorte</strong>
+              </li>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="IxeBanco" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/IxeBanco_m.png"></span>
+                <strong>Banco Ixe</strong>
+              </li>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="HSBC" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/HSBC_m.png"></span>
+                <strong>HSBC</strong>
+              </li>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Scotiabank-Inverlat" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/Scotiabank-Inverlat_m.png"></span>
+                <strong>Scotiabank Inverlat</strong>
+              </li>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Inbursa" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/Inbursa_m.png"></span>
+                <strong>Inbursa</strong>
+              </li>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="BancaAfirme" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/BancaAfirme_m.png"></span>
+                <strong>Banca Afirme</strong>
+              </li>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="BancodelBajio" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/BanBajio_m.png"></span>
+                <strong>Banco del Bajio</strong>
+              </li>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="BancaMifel" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/BancaMifel_m.png"></span>
+                <strong>Banca Mifel</strong>
+              </li>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="FAMSA" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/FAMSA_m.png"></span>
+                <strong>Ahorro FAMSA</strong>
+              </li>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Banjercito" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/Banjercito_m.png"></span>
+                <strong>Banjercito</strong>
+              </li>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="BanRegio" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/BanRegio_m.png"></span>
+                <strong>BanRegio</strong>
+              </li>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Invex" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/Invex_m.png"></span>
+                <strong>Banco Invex</strong>
+              </li>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Itau" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/Itau_m.png"></span>
+                <strong>Itaú</strong>
+              </li>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Liverpool" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/Liverpool_m.png"></span>
+                <strong>Liverpool</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="second-bloque">
+          <div class="ts" >
+            <input type="radio" value="1" id="1" placeholder="1 Pago" name="MESES" checked />
+            <span id='negritass'>1x 52455</span>
+            <input type="radio" value="03" id="3" placeholder="3 meses sin intereses" name="MESES" disabled />
+            <span id='negritass'>3x 544854</span>
+            <input  type="radio" value="06" id="6" placeholder="6 meses sin intereses" name="MESES" disabled />
+            <span id='negritass'> 6x 54844</span>
+            <input type="radio" value="09" id="9" placeholder="9 meses sin intereses" name="MESES" disabled />
+            <span id='negritass'> 9x 5588</span>
+          </div>
+          <div class="right">
+            <div class="imput" >
+              <input class="bgc" id="numbercard" placeholder="Numero de Tarjeta" type="text" name="sourceOfFunds[provided][card][number]" maxlength="16" required />
+              <input class="bgm" id="month" placeholder="Mes" type="text" name="sourceOfFunds[provided][card][expiry][month]" maxlength="2" required />
+              <input class="bgy" id="year" placeholder="Año" type="text" name="sourceOfFunds[provided][card][expiry][year]"  maxlength="2" required />
+              <input class="bgs" id="securityCode" placeholder="CVC" type="text" name="sourceOfFunds[provided][card][securityCode]" maxlength="3" required />
+            </div>
+            <input type="submit" id="pagar" class="pagar" name="submit" value="Pagar">
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- aqui termina -->
+  </div>
+  <div class="col-md-3" >
+    <div class="medium" id="form-pago" >
+      <div class="top-car">
+        <h2>Reservacion</h2>
+        <h3>Datos de la Reserva </h3>
+      </div>
+      <form name="contactform" id="contactform" class="needs-validation" action="/hotels/confirm" onsubmit="" method="post">
+        <div style="display: none;" >
+          <input type="hidden" name="name2" />
+          <input type="hidden" name="Aerolinea" />
+          <input type="hidden" name="NumVuelo" />
+          <input type="hidden" name="name1" />
+          <input type="hidden" name="lname2" />
+          <input type="hidden" name="lname1" />
+        </div>
+        <div class="form-row">
+          <div class="marquito">
+            <p class="main-title" >Datos del traslado</p>
+            <input type="text" class="form-control" autocomplete="on" name="Aerolinea" id="aerolinea" placeholder="Aerolinea" required>
+          </div>
+          <div class="marquito">
+            <p class="main-title" > Si tiene escalas proporciona el último vuelo</p>
+            <input type="text" class="form-control" autocomplete="on" name="NumVuelo" id="numvuelo" placeholder="Numero de vuelo" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="marquito">
+            <p class="main-title">Datos de la Reserva</p>
+            <input type="text" class="form-control" autocomplete="on" name="nombre" id="nombre" placeholder="Nombre" required>
+            <input type="text" class="form-control" autocomplete="on" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+            <input type="text" class="form-control" name="correo" id="correo" placeholder="Correo" aria-describedby="inputGroupPrepend" >
+            <input type="text" class="form-control" autocomplete="on" name="ciudad" id="ciudad" placeholder="Ciudad" required>
+            <input type="text" class="form-control" autocomplete="on" name="estado" id="estado" placeholder="Estado" required>
+            <select name="pais" id="pais" class="form-control">
+              <option value="Argentina">Argentina</option>
+              <option value="Australia">Australia</option>
+              <option value="Austria">Austria</option>
+              <option value="Belgium">Belgium</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Bulgaria">Bulgaria</option>
+              <option value="Canada">Canada</option>
+              <option value="Caribbean">Caribbean</option>
+              <option value="Chile">Chile</option>
+              <option value="China">China</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Costa Rica">Costa Rica</option>
+              <option value="Croatia">Croatia</option>
+              <option value="Czech Republic">Czech Republic</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Dominican Republic">Dominican Republic</option>
+              <option value="Estonia">Estonia</option>
+              <option value="Finland">Finland</option>
+              <option value="France">France</option>
+              <option value="Germany">Germany</option>
+              <option value="Greece">Greece</option>
+              <option value="Guatemala">Guatemala</option>
+              <option value="Hong Kong">Hong Kong</option>
+              <option value="Hungary">Hungary</option>
+              <option value="India">India</option>
+              <option value="Indonesia">Indonesia</option>
+              <option value="Ireland">Ireland</option>
+              <option value="Israel">Israel</option>
+              <option value="Italy">Italy</option>
+              <option value="Japan">Japan</option>
+              <option value="Korea">Korea</option>
+              <option value="Latvia">Latvia</option>
+              <option value="Lithuania">Lithuania</option>
+              <option value="Malaysia">Malaysia</option>
+              <option value="Mexico" selected>Mexico</option>
+              <option value="Morocco">Morocco</option>
+              <option value="Netherlands">Netherlands</option>
+              <option value="New Zealand">New Zealand</option>
+              <option value="Norway">Norway</option>
+              <option value="Panama">Panama</option>
+              <option value="Peru">Peru</option>
+              <option value="Philippines">Philippines</option>
+              <option value="Poland">Poland</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Puerto Rico">Puerto Rico</option>
+              <option value="Romania">Romania</option>
+              <option value="Russian Federation">Russian Federation</option>
+              <option value="Singapore">Singapore</option>
+              <option value="Slovakia">Slovakia</option>
+              <option value="Slovenia">Slovenia</option>
+              <option value="South Africa">South Africa</option>
+              <option value="Spain">Spain</option>
+              <option value="Sweden">Sweden</option>
+              <option value="Switzerland">Switzerland</option>
+              <option value="Taiwan">Taiwan</option>
+              <option value="Thailand">Thailand</option>
+              <option value="Turkey">Turkey</option>
+              <option value="Ukraine">Ukraine</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="United States">United States</option>
+              <option value="Venezuela">Venezuela</option>
+              <option value="Vietnam">Vietnam</option>
+            </select>
+            <input type="text" class="form-control" autocomplete="on"  name="zip" id="zip" placeholder="Codigo postal" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="marquito">
+            <input type="text" class="form-control" autocomplete="on" name="telefono" id="telefono" placeholder="Numero Telefonico" required />
+            <textarea name="address" id="address" type="text" placeholder="Direccion..." class="form-control" required=""></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="marquito">
+            <p class="main-title" >Datos del traslado</p>
+            <input type="text" name="name" class="form-control" id="name1" placeholder="Nombre" required />
+            <input type="text" name="lname" class="form-control" id="lname1" placeholder="Apellido" required />
+            <input type="text" name="name" class="form-control" id="name2" placeholder="Nombre Menor" required />
+            <input type="text" name="lname" class="form-control" id="lname2" placeholder="Apellido Menor" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="marquito">
+            <p class="main-title" >Datos del huesped del cuarto</p>
+            <input type="text" name="name" class="form-control" id="name3" placeholder="Nombre" required>
+            <input type="text" name="lname" class="form-control" id="lname3" placeholder="Apellido" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="marquito">
+            <input class="form-check-input" name="acept" type="checkbox" id="ok" required>
+            <label class="terminos" > He leí­do y acepto el
+              <a href="https://kooningtravel.com/terminos" target="_blank">Aviso de privacidad</a>
+            </label>
+          </div>
+        </div>
+        <div class="form-row">
+          <input id="btn_pagar" type="submit" class="btn btn-sm btn-caja-reserva" value="Pagar" >
+        </div>
+        <div class="form-row">
+          <label class="price" >MXN $6,524</label>
+        </div>
+      </form>
+    </div>
+    <div class="medium" id="form-pagar" >
+      <div class="top-car">
+        <h2>Reservacion</h2>
+        <h3>Datos de la Reserva </h3>
+      </div>
+      <form name="contactform" id="contactform" class="needs-validation" action="/hotels/confirm" onsubmit="" method="post">
+        <div class="form-row">
+          <label class="price" >MXN $6,524</label>
+        </div>
+        <div class="form-row">
+          <input  type="submit" class="pagar" id="pay-cart" value="Pagar" >
+        </div>
+      </form>
+    </div>
+    <img style="display: none;" class="img-banner-right" src="/img/extras/banner-right.png" alt="viajes, vacaciones, parques,tour" >
+  </div>
+</div>
 @stop
-
-
-	

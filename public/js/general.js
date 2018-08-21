@@ -450,6 +450,11 @@ function closeMe(){
 
 	});
 
+	$('#telefono, .imput input').on('input', function () { 
+	    this.value = this.value.replace(/[^0-9]/g,'');
+	});
+
+
 		$("#btn_pagar").click(function(){
 
 			var correo = $("#validationCustomUsername").val();
@@ -468,6 +473,12 @@ function closeMe(){
 				return false;
 
 			}else{
+
+				$("#step-1").hide();
+				$("#step1").removeClass("active")
+				$("#step-2").show();
+				$("#step1").addClass("active")
+
 
 				return true;
 			}

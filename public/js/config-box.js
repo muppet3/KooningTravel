@@ -590,11 +590,19 @@ var link =  "hotel-"+$("#search_hotel").val();
 
 $(".messaje").delay(3000).fadeOut("slow");
 
+      
+      $("#step-2, #form-pagar").hide();
+      
 
+      $("#step1").click(function(){
+        $("#step-1, #form-pago").show(); 
+        $("#step-2, #form-pagar").hide();   
+      });
 
-
-
- 
+      $("#step2").click(function(){
+        $("#step-2, #form-pagar").show(); 
+        $("#step-1, #form-pago").hide();    
+      });
 
 
 
