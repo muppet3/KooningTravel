@@ -272,23 +272,24 @@ a:link, a:visited { text-decoration: none; }
 
 
 /*https://www.kooningtravel.com/Gracias*/
-.great { background: url("https://www.kooningtravel.com/img/gracias.png") no-repeat 15% 7% #F2F2F2 /70%; width: 80%; height: 500px; margin: 0px auto; margin-top: 20px; position: relative; }
-.great .left { left: 4%; }
-.great .left .tig { margin: 15px 0px; font-family: HelveticaThin; color: #4d6a8e; font-size: 32px; }
-.ti { font-family: HelveticaThin; color: #4d6a8e; font-size: 16px; display: inline-block; font-weight: bold; width: 28%; position: absolute; left: 10%; }
-.great .left, .great .right, .great .redes { position: absolute; top: 30%; float: left; width: 50%; display: inline-block; }
-.great .right { text-align: center; float: right; right: 0%; top: 10%; }
-.great .right img { margin: 0px auto; display: inline-block; }
+.great { position: relative; background: url("https://www.kooningtravel.com/img/gracias.png") no-repeat 15% 7% #F2F2F2 /70%; width:90%; height: 500px; margin: 0px auto; margin-top: 20px; }
+.great .left .tig { margin: 15px 0px; font-family: HelveticaThin; color: #4d6a8e; font-size:25px; width: 100%; }
+.ti {font-family:HelveticaThin!important; margin: 10px 0px!important; color: #4d6a8e;font-size: 16px;font-weight: bold; width: 24%;text-align: center; }
+.great .left, .great .right{ position: absolute; width: 50%; top: 20%; }
+.great .left{ left: 0px; top:30%; } 
+.great .right { right: 0px; }
+.great .right { text-align: center; }
+.great .right img { margin: 0px auto; }
 .great .redes { position: relative; border-top: 1px dotted #0000004a; text-align: center; top: 78%; width: 100%; height: 80px; background: #f2f2f2; }
-.great .redes ul { margin: 0px auto; margin-top: 5px; padding: 0px; list-style: none; display: inline-block; width: 33%; height: 100%; }
-.great .redes ul li { margin-left: 22px; list-style: none; display: inline-block; height: 100%; }
-.great .redes ul li a { list-style: none; display: inline-block; height: 100%; }
-.great .redes ul li a img { display: inline-block; }
-.great .left .tig a { display: inline-block; }
-.great .left .tig a strong { display: inline-block; font-size: 20px; }
-.mas { margin-top: 60px!important; }
+.great .redes ul { margin: 0px auto; margin-top: 5px; padding: 0px; list-style: none;  width: 33%; height: 100%; }
+.great .redes ul li { margin-left: 22px; list-style: none; height: 100%; }
+.great .redes ul li a { list-style: none; height: 100%; }
+.great .redes ul li a img { }
+.mas{color: #337ab7;font-size: 20px;font-weight: 700;margin: 15px 0px 0px 10px!important;font-family: HelveticaThin!important;width: auto;text-align: left;}
+.mas:hover, .ti:hover{ text-decoration: none; }
+
 .tr .imgb { margin-top: 61px; float: left; }
-#tsm { position: absolute; top: 23px; right: 35px; }
+#tsm {}
 .col-md-3 .logo img { margin: 0px auto; float: none; }
 .st { margin-top: 15px; }
 .no-touch#breadcrumb a:hover, .no-touch#breadcrumb li:first-child a:hover { background: rgba(0, 0, 0, 0.15) }

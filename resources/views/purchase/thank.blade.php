@@ -23,13 +23,13 @@
 	       <div class="fb-share-button" data-href="https://www.kooningtravel.com" data-layout="button" data-size="large" data-mobile-iframe="true">
 	        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.kooningtravel.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"></a>
 	      </div>
-	        <h1 class="tig mas" ><a href="https://www.kooningtravel.com"><strong>Seguir comprando</strong></a></h1>    
+	        <a href="https://www.kooningtravel.com" class="mas" >Seguir comprando</a>   
 	    </div>
 	    <div class="right">      
 	      <img src="/img/woman.png">
 	    </div>
 	    <div class="redes">
-	      <h1 class="ti" ><a href="javascript:void(0);">Siguenos en nuestras redes sociales</a></h1> 
+	     <a href="javascript:void(0);"  class="ti" >Siguenos en nuestras redes sociales</a>
 	        <ul>
 	            <li><a class="fb" target="_blank" href="https://www.facebook.com/kooningtraveloficial"><img src="/img/fb.png" alt="Facebook"></a></li>
 	            <li><a class="tw" target="_blank" href="https://twitter.com/kooningtravel"><img src="/img/inst.png" alt="Tweeter"></a></li>

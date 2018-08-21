@@ -422,6 +422,7 @@
     </div>
   </div>
 
+  <!-- Por favor cargando -->
   <div style="display: none;" class='wait'>
     <div class='loader'>
       <div class='loader--dot'></div>
@@ -431,6 +432,19 @@
       <div class='loader--dot'></div>
       <div class='loader--dot'></div>
       <div class='loader--text'></div>
+    </div>
+  </div>
+
+    <!-- Por favor espere -->
+  <div style="display: none;" class='espere'>
+    <div class='loader'>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='load--text'></div>
     </div>
   </div>
 

@@ -393,7 +393,7 @@ disableSelection(document.body);
 
 	$(".bloqueh a").click(function(){ $(".wait").show(); });
 
-	$(".product .fancyb a, .search, #accordion .item-hotel .alineacion-derecha .btn-danger").click(function(){
+	$(".bg-home li a").click(function(){
 		$(".espere").show();
 	});
 
