@@ -31,6 +31,10 @@ class HomeController extends Controller
         $data['background']="";
         return view('home/home',$data);
     }
+    public function explor(){
+        $data['background']=" height: 100px; background-image: url(https://kooningtravel.com/img/Home/fondos/fondoParque.png); ";
+        return view('home/explor',$data);
+    }
     public function search($destino){
         $data['checkin']=Carbon::now()->addDay(4);
         $data['checkout']=Carbon::now()->addDay(8);
