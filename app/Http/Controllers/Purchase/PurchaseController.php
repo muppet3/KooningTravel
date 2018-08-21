@@ -14,6 +14,7 @@ class PurchaseController extends Controller
         $data['tours']="";
         $data['traslados']="";
         $data['ofertas']="";  
+         $data['background']=" height: 100px; background-image: url(https://kooningtravel.com/img/Home/fondos/fondoParque.png); ";
     	return view('purchase/thank',$data);
     }
 
