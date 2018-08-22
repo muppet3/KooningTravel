@@ -16,28 +16,27 @@
 body { margin: 0px; padding: 0px; text-align: center; }
 @font-face { font-family: HelveticaThin; src: url("fonts/HelveticaNeueEroski-Thin.otf") format('opentype'), url("fonts/HelveticaNeueEroski-Thin.woff") format('woff'), url("fonts/HelveticaNeueEroski-Thin.ttf") format('truetype'); font-weight: 400; font-style: normal }
 
-/*Carrito de compras css*/
-#imgtold .mt .item { margin-bottom: 15px; }
-#shopcart { width: 10%; height: 100%; background: url("https://www.kooningtravel.com/img/circle.png") no-repeat center 10px transparent; cursor: pointer; }
-#shopcart #cost { width: 100%; text-align: center; color: #ef6437; margin-top: 1px; font-size: 16px; text-indent: 3px; font-weight: bold; line-height: 54px; }
-.contt:before { content: ''; position: absolute; width: 43px; height: 10px; background: url(https://www.kooningtravel.com/img/arrow2.png) -85px -8px no-repeat; top: 2.5px; left: 71%; }
-.contt { width: 254px; position: absolute; right: 5px; top: 45px; z-index: 200; }
-.arr { right: -82px; width: 18%; position: relative; z-index: 50; margin: 0px auto!important; float: none!important; height: 13px; }
-.listcart { box-shadow: 0 10px 35px rgba(0,0,0,.5), 0 0 0 1px rgba(0,0,0,.1); position: relative; z-index: 20; top: -5px; width: 100%; border-radius: 8px; background: rgba(0, 0, 0, 0.68); height: auto; color: #FFF; }
-.listcart div, .listcart span { cursor: default; }
-.listcart .headt { border-radius: 8px 8px 0px 0px; width: 100%; height: 30px; background: rgba(230, 27, 118, 0.8); }
-.listcart .headt span { width: 50%; color: #FFF; margin-top: 5px; font-size: 14px; font-weight: bold; }
-.listcart .detailst { width: 100%; border-bottom: 1px solid #b7b7b794; border-top: 1px solid #b7b7b794; height: auto; margin: 5px 0px; }
-.listcart .detailst .desct { width: 67%; font-size: 14px; border-right: 1px solid #b7b7b794; margin: 0px auto; float: none; }
-.listcart .detailst .costt { width: 28%; float: right; }
-.listcart .subt { width: 100%; height: 48px; border-bottom: 1px solid #b7b7b794; }
-.listcart .subt .btnt { background: url("https://www.kooningtravel.com/img/BotonCarrito.png") no-repeat center center transparent; display: inline-block; width: 100%; height: 40px; }
-.listcart .tott { width: 100%; height: 25px; background: rgba(230, 27, 118, 0.8); margin: 10px 0px; }
-.listcart .tott span { width: 50%; color: #FFF; margin-top : 5px; }
-.listcart .teltt { background: url(https://www.kooningtravel.com/img/Home/flags/flags.png) no-repeat right center transparent; width: 53%; color: #FFF; margin: 10px 0px; text-align: left; font-weight: 600; font-size: 13px; }
-.del-room { cursor: pointer; }
+/*Carrito de compras css menu desplegable*/
+html body .other .header .menu2 #shopcart { width: 10%; height: 100%; background: url("https://www.kooningtravel.com/img/circle.png") no-repeat center 10px transparent; cursor: pointer; }
+html body .other .header .menu2 #shopcart #cost { width: 100%; text-align: center; color: #ef6437; margin-top: 1px; font-size: 16px; text-indent: 3px; font-weight: bold; line-height: 54px; }
+html body .other .header .menu2 #shopcart .contt:before { content: ''; position: absolute; width: 43px; height: 10px; background: url(https://www.kooningtravel.com/img/arrow2.png) -85px -8px no-repeat; top: 2.5px; left: 71%; }
+html body .other .header .menu2 #shopcart .contt { width: 254px; position: absolute; right: 5px; top: 45px; z-index: 200; }
+html body .other .header .menu2 #shopcart .contt .arr { right: -82px; width: 18%; position: relative; z-index: 50; margin: 0px auto!important; float: none!important; height: 13px; }
+html body .other .header .menu2 #shopcart .contt .listcart { box-shadow: 0 10px 35px rgba(0,0,0,.5), 0 0 0 1px rgba(0,0,0,.1); position: relative; z-index: 20; top: -5px; width: 100%; border-radius: 8px; background: rgba(0, 0, 0, 0.68); height: auto; color: #FFF; }
+html body .other .header .menu2 #shopcart .contt .listcart div, html body .other .header .menu2 #shopcart .contt .listcart span { cursor: default; }
+html body .other .header .menu2 #shopcart .contt .listcart .headt { border-radius: 8px 8px 0px 0px; width: 100%; height: 30px; background: rgba(230, 27, 118, 0.8); }
+html body .other .header .menu2 #shopcart .contt .listcart .headt span { width: 50%; color: #FFF; margin-top: 5px; font-size: 14px; font-weight: bold; }
+html body .other .header .menu2 #shopcart .contt .listcart .detailst { width: 100%; border-bottom: 1px solid #b7b7b794; border-top: 1px solid #b7b7b794; height: auto; margin: 5px 0px; }
+html body .other .header .menu2 #shopcart .contt .listcart .detailst .desct { width: 67%; font-size: 14px; border-right: 1px solid #b7b7b794; margin: 0px auto; float: none; }
+html body .other .header .menu2 #shopcart .contt .listcart .detailst .costt { width: 28%; float: right; }
+html body .other .header .menu2 #shopcart .contt .listcart .subt { width: 100%; height: 48px; border-bottom: 1px solid #b7b7b794; }
+html body .other .header .menu2 #shopcart .contt .listcart .subt .btnt { background: url("https://www.kooningtravel.com/img/BotonCarrito.png") no-repeat center center transparent; display: inline-block; width: 100%; height: 40px; }
+html body .other .header .menu2 #shopcart .contt .listcart .tott { width: 100%; height: 25px; background: rgba(230, 27, 118, 0.8); margin: 10px 0px; }
+html body .other .header .menu2 #shopcart .contt .listcart .tott span { width: 50%; color: #FFF; margin-top : 5px; }
+html body .other .header .menu2 #shopcart .contt .listcart .teltt { background: url(https://www.kooningtravel.com/img/Home/flags/flags.png) no-repeat right center transparent; width: 53%; color: #FFF; margin: 10px 0px; text-align: left; font-weight: 600; font-size: 13px; }
 
-/*checkout*/
+
+/*checkout carrito de compras*/
 html body .body-cart { background: #FFF; width: 100%; display: inline-block; float: left; margin:0px; padding: 0px; list-style: none;  }
 html body .body-cart .col-md-9{ display: inline-block; float: left;  }
 html body .body-cart div div,html body .body-cart div div ul, html body .body-cart div div ul li, .body-cart div p,.body-cart div h2, .body-cart div h3,.body-cart div a, .body-cart div input, .body-cart div  select, .body-cart div label, .body-cart div span, .body-cart div p { display: inline-block; margin:0px; float: left; padding: 0px; list-style: none; font-family: Roboto,sans-serif; }
@@ -63,14 +62,11 @@ html body .body-cart .col-md-9 .small .center .roms .vacancy{width: 100%; margin
 html body .body-cart .col-md-9 .small .center p i{ }
 html body .body-cart .col-md-9 .small .bloque p .price-roms{ font-weight: 700;text-align: center; font-size: 20px; float: none; }
 html body .body-cart .col-md-9 .small .bloque .price-r{ text-align: center; }
-.del-room { font-size: 24px; color: #aaa; padding: 0px; float: right!important; border-left: 1px solid #eee; height: 35px!important; background: none!important; line-height: 0px!important; width: 20%!important; text-align: center; }
-.del-room .del-icon {width: 18px;height: 21px;display: inline-block;background: url("/img/trash-icon.png") no-repeat 0px 0px transparent;float: none;margin: 0px auto;margin-top: 7px;}
-.del-room:hover { background: #fa444d!important; color: #fff; }
-.del-room:hover .del-icon, .del-room:active .del-icon { background-position: -20px 0; }
-.del-room:active { background: #bf343b!important; color: #fff; }
-
-
-
+html body .body-cart .col-md-9 .small .bloque .price-r .del-room { cursor: pointer; font-size: 24px; color: #aaa; padding: 0px; float: right!important; border-left: 1px solid #eee; height: 35px!important; background: none!important; line-height: 0px!important; width: 20%!important; text-align: center; }
+html body .body-cart .col-md-9 .small .bloque .price-r .del-room .del-icon {width: 18px;height: 21px;display: inline-block;background: url("/img/trash-icon.png") no-repeat 0px 0px transparent;float: none;margin: 0px auto;margin-top: 7px;}
+html body .body-cart .col-md-9 .small .bloque .price-r .del-room:hover { background: #fa444d!important; color: #fff; }
+html body .body-cart .col-md-9 .small .bloque .price-r .del-room:hover .del-icon, .del-room:active .del-icon { background-position: -20px 0; }
+html body .body-cart .col-md-9 .small .bloque .price-r .del-room:active { background: #bf343b!important; color: #fff; }
 html body .body-cart .col-md-12 .nav-wizard > li.active:not(:last-child) a:after { border-color: transparent transparent transparent #E61B76; }
 html body .body-cart .col-md-12 .nav-wizard > li.active:not(:first-child) a:before { border-color: #E61B76 #E61B76 #E61B76 transparent; }
 html body .body-cart .col-md-12 .nav-wizard > li:not(:last-child) a:after { position: absolute; content: ""; top: 0px; right: -20px; width: 0px; height: 0px; border-style: solid; border-width: 20px 0 20px 20px;border-color: transparent transparent transparent #eee; z-index: 10; }
@@ -84,22 +80,25 @@ html body .body-cart .col-md-12 .nav-wizard > li:first-child a { border-radius: 
 html body .body-cart .col-md-12 .nav-wizard{ margin-top: 30px; width: 100%; display: inline-block; float: left; list-style: none; }
 html body .body-cart .col-md-12 .nav-wizard li{ cursor: pointer; float: left; text-align: center; display: inline-block; position: relative; overflow: visible; border-right: 15px solid transparent; }
 
-.form-pay-reservation .paymentType, .form-pay-reservation .amount-pay { width: 100%; }
-.form-pay-reservation .paymentType #rad-payment-form { width: 100%; display: inline-block; float: left; padding: 0px; margin: 0px; }
-.form-pay-reservation .amount-pay { background: #f4f7f9; }
-.form-pay-reservation .paymentType li { width:auto; border-top-left-radius: 4px; border-top-right-radius: 4px; font-size: 14px;color: #3D66A0; height: 52px; padding: 5px!important; }
-.form-pay-reservation .paymentType li input{  }
-.form-pay-reservation .paymentType li label{ font-size:12px; cursor:pointer; font-weight:700;color:#3D66A0; padding: 0px 4px; }
-.form-pay-reservation .paymentType li.selected { background: #f4f7f9; }
-.form-pay-reservation .paymentType img { height: 24px; margin-top: 2px; text-decoration: none; border: 0; }
+html body .body-cart .col-md-9 .form-pay-reservation .paymentType, html body .body-cart .col-md-9 .form-pay-reservation .amount-pay { width: 100%; }
+html body .body-cart .col-md-9 .form-pay-reservation .paymentType #rad-payment-form { width: 100%; display: inline-block; float: left; padding: 0px; margin: 0px; }
+html body .body-cart .col-md-9 .form-pay-reservation .amount-pay { background: #f4f7f9; }
+html body .body-cart .col-md-9 .form-pay-reservation .paymentType li { width:auto; border-top-left-radius: 4px; border-top-right-radius: 4px; font-size: 14px;color: #3D66A0; height: 52px; padding: 5px!important; }
+html body .body-cart .col-md-9 .form-pay-reservation .paymentType li input{  }
+html body .body-cart .col-md-9 .form-pay-reservation .paymentType li label{ font-size:12px; cursor:pointer; font-weight:700;color:#3D66A0; padding: 0px 4px; }
+html body .body-cart .col-md-9 .form-pay-reservation .paymentType li.selected { background: #f4f7f9; }
+html body .body-cart .col-md-9 .form-pay-reservation .paymentType img { height: 24px; margin-top: 2px; text-decoration: none; border: 0; }
+
+
+
 #first-fop-calculation, #second-fop-calculation { border-bottom: 1px solid #e3e3e3; padding-bottom: 15px; margin-bottom: 15px; overflow: hidden; }
 .payment li { float: left; }
 #first-fop .first-bloque, #first-fop .second-bloque{ width: 50%; margin-top:30px; }
 #payment-info h3, #payment-form h3 { font-size: 1.2em; padding-bottom: 7px; }
 .payment h3 { position: relative; }
 #payment-info input.icon-currency, #payment-form input.icon-currency { width: 98px; }
-.form-pay-reservation { display: inline-block; width: 100%; float: left; height: auto; margin-top: 10px; }
-.form-pay-reservation fieldset { display: inline-block; width: 100%; float: left; }
+html body .body-cart .col-md-9 .form-pay-reservation { display: inline-block; width: 100%; float: left; height: auto; margin-top: 10px; }
+html body .body-cart .col-md-9 .form-pay-reservation fieldset { display: inline-block; width: 100%; float: left; }
 .Aviso-Mens {background: url(/img/bancos/blue_large.png) no-repeat 0px 0px transparent;height: 35px;width:90%;margin-left:-9px!important;}
 .Aviso-Mens span { margin:7px 0px 0px 23px!important; font-size: 12px; color: white; font-weight: bold; }
 .Aviso-Mens img { margin-left: 10px; margin-top: 4px; }
@@ -135,6 +134,7 @@ html body .body-cart .col-md-12 .nav-wizard li{ cursor: pointer; float: left; te
 .bgy{ float: right!important; }
 .bgs{ background: url("/img/bancos/cvc.png") no-repeat 0px 0px #FFF; width:48%!important; }
 
+/*Formulario de carrito de compras*/
 html body .body-cart .col-md-3 .medium { text-align: center; float: left; display: inline-block; width: 100%; margin: 20px 0; background: url("/img/extras/line.png") repeat; -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.2); -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.2); box-shadow: 0 2px 5px 0 rgba(0,0,0,.2); border: 1px solid #a12f23; border-bottom: 10px solid #a12f23; }
 html body .body-cart .col-md-3 .top-car { text-align: center; padding: 5px 0 5px 0!important; background: #c0392b; border-bottom: 10px solid #a12f23; width: 100%; }
 html body .body-cart .col-md-3 .medium #contactform { display: inline-block; float: none; text-align: left; width: 90%; margin-top: 10px; font-size: 14px; color: #888; }
@@ -162,9 +162,6 @@ html body .body-cart .col-md-3 .medium #contactform .form-row .marquito .termino
 html body .body-cart .col-md-3 .medium #contactform .form-row .marquito .terminos a{margin: 0px 3px;color: #CA5C04;float: right;text-decoration: underline;}
 html body .body-cart .col-md-3 .medium #contactform .form-row #btn_pagar{ cursor: pointer; font-weight: 900; border: 0px; padding: 5px 10px; font-size: 12px; float: right; border-radius: 3px;  background: #002e82; width:100px; color: #fff; }
 html body .body-cart .col-md-3 .medium #contactform .form-row .price{border-top: 1px dashed #888;width: 100%;text-align: center;height: 100%;font-size: 20px;font-family: Roboto,sans-serif;color: #888;float: left;padding-top: 10px;margin: 0px;}
-
-
-
 html body .body-cart .col-md-3 .medium .top-car h2, html body .body-cart .col-md-3 .medium .top-car h3 { font-weight: 700; color: #FFF; font-size: 31px; margin:10px 0px 0px 0px; width: 100%; text-align: center; }
 html body .body-cart .col-md-3 h3 { font-size: 20px!important; }
 html body .body-cart .col-md-9 .extras { float: left; width: 100%; background:url("/img/extras/line.png") repeat; }
@@ -185,7 +182,7 @@ html body .body-cart .col-md-9 .extras .row .conte .card-hotel .mensualidades { 
 html body .body-cart .col-md-9 .extras .row .conte .card-hotel { position: relative; display: inline-block; background: #fff; margin-top: 15px; -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.09); box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.09); -webkit-transition: .3s; -o-transition: .3s; transition: .3s; }
 html body .body-cart .col-md-9 .extras .row .conte .card-hotel:hover { -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.7)!important; box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.7)!important; -webkit-transform: translateY(-8px); -ms-transform: translateY(-8px); transform: translateY(-8px); }
 
-/*Search*/
+/*Search caja de reservas*/
 body .search-body { width: 100%; display: inline-block;float: left; }
 body .search-body .container .bread-crub { padding: 15px; color: #000; width: 100%; text-align: left; font-family: Roboto, sans-serif; }
 body .search-body .container .bread-crub .icon-home { color: #000; }
@@ -214,56 +211,59 @@ body .search-body .container .main-box .caja-search #contactform .inline-block .
 #search-tabs-2 { display: inline-block; }
 .reset .col-md-3 { width: 24%; height: 100%; padding: 0px; display: inline-block; float: left; }
 .img-hotel-disney .img-w { width: 100%; display: inline-block; float: left; }
+
+
 /*Details*/
-body .search-body .container .detalles-hotel { border: 1px solid #f2f8fc; border-radius: 6px; margin: 15px 0px; color: #2c678d; font-family: Oswald; font-size: 18px; font-weight: 900; text-align: left; width: 100%; display: inline-block; padding: 10px; }
-body .search-body .container .nav { margin: 10px 0px; width: 98%;  float: none; display: inline-block;}
-.info-title { background: #fff; border: 1px solid #f2f2f2; border-radius: 6px; color: #e9540d; font-family: Oswald; font-size: 16px; font-weight: 900; padding: 10px; text-transform: uppercase; text-align: left; margin: 10px 0px; width: 98%; float: none!important; display: inline-block; }
-.estructura-habitacion { border-left: 1px solid #f2f2f2; border-right: 1px solid #f2f2f2; }
-.bloque-hotel-item { display: inline-block; width: 100%; float: left; }
-.bloque-hotel-item .items-hotel { display: inline-block; float: left; }
-.bloque-hotel-item .items-hotel p { font-size: 13px; color: #999; display: inline-block; width: 100%; padding: 0px; margin: 6px 0px; text-align: center; }
-.bloque-hotel-item .items-hotel .precio-real { color: #000; font-size: 16px; font-weight: bold; }
-.bloque-hotel-item .items-hotel .precio-final { font-size: 14px; font-weight: bold; }
-.bloque-hotel-item .items-hotel .btn { margin: 10px 0px; }
-.bloque-hotel-item .items-hotel .img-hotel-details { width: 100%; }
-.bloque-hotel-item .items-hotel h3 { color: #000; font-weight: bold; font-size: 14px; text-align: left; width: 100%; margin: 15px 0px; }
-.bloque-hotel-item .items-hotel .info-promo { color: #55a797; font-size: 14px; width: 100%; text-align: justify; }
-.bloque-hotel-item .background { background: url("https://www.kooningtravel.com/img/extras/line.png") repeat; }
-.container .tab-content { display: inline-block; float: left; width: 100%; }
-.container .tab-content .tab-pane { float: left; width: 100%; }
-.container .tab-content .tab-pane .item-hotel { text-align: center; width: 100%; display: inline-block; }
-.container .tab-content .tab-pane .item-hotel .col-md-12{ display: inline-block; float: left; width: 100%; }
-.container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8, .container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-4 { display: inline-block; }
-.container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel {width: 100%;display: inline-block;}
-.container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel .carousel-inner{width: 100%;display: inline-block;}
-.container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel .carousel-inner .item{width: 100%;}
-.container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel .carousel-inner .item img{height: 468px;width: 100%;display: inline-block;}
-.container .tab-content .tab-pane .item-hotel .col-md-12 .best-price { text-align: center; background: #dfeefa none repeat scroll 0px 0px; border-radius: 0px 4px 6px 0px; font-weight: bold; color: #014999; font-size: 17px; width: 100%; }
-.container .tab-content .tab-pane .item-hotel .col-md-12 .best-price .search-price { width: 100%; color: #014999; font-family: Oswald; font-weight: 300; font-size: 28px; display: inline-block; float: left; }
-.container .tab-content .tab-pane .item-hotel .col-md-12 .best-price .btn { display: inline-block; float: none; width: 50%; margin: 10px 0px; }
-.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in { background: #F8F8F8; }
-.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in h3 { color: #000; font-size: 16px; font-weight: 900; margin-bottom: 10px; margin-top: 10px; display: inline-block; float: left; padding: 0px; width: 100%; text-align: left; font-family: Roboto, sans-serif; }
-.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in h3 .text-details { font-size: 12px; font-family: Roboto, sans-serif; color: #333; display: inline-block; font-weight: normal; width: 100%; margin: 10px 0px 0px 0px; }
-.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in h3 span { }
-.container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in .details { text-align: center; color: #014999; font-weight: bold; padding: 15px 0px; border-bottom: 1px dotted #cccccc; font-size: 16px; margin: 0px; }
-.container .tab-content .tab-pane .item-hotel .col-md-12 .info-details-hotel { color: #888; font-family: Roboto, sans-serif; font-size: 12px; width: 97%; text-align: justify; float: none!important; margin: 10px 0px; display: inline-block; }
-.container .tab-content .tab-pane .item-hotel .col-md-12 .list-items {list-style: none;display: inline-block;float: left;width: 100%;}
-.container .tab-content .tab-pane .item-hotel .col-md-12 .list-items li {width: 32%;text-align: left;color: #333;font-size: 13px;font-family: Roboto, sans-serif;float: left;display: inline-block;}
-.container .tab-content .tab-pane .item-hotel .col-md-12 .list-items li i { margin-right: 3px; color: #E9540D; }
-.tab-content #info div, .tab-content #info p, .tab-content #details p { float: left; }
-.line-details { height: 9px; display: inline-block; float: left; width: 100%; background: #f0f0f0; border: none; }
-.bloque-hotel-item .items-hotel .destino-hotel { width: 100%; display: inline-block; }
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default { display: inline-block; width: 100%; }
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default div { width: 100%; }
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading { width: 100%; display: inline-block; }
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading .panel-title { width: 100%; display: inline-block; }
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading .panel-title { width: 100%; display: inline-block; }
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading .panel-title .pa_italic { width: 100%; display: inline-block; color: #727176; font-size: 12px; text-transform: capitalize; font-family: 'Play', sans-serif; }
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse { }
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse .panel-body { }
-.bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse .panel-body .info-message { font-size: 12px; color: #888; display: inline-block; width: 100%; text-align: justify; }
-.container #verMapa { background: #fff; text-align: center; width: 100%; display: inline-block; }
-.container #verMapa #mapa { width: 98%; float: none; height: 350px; display: inline-block; }
+html body .search-body .container .detalles-hotel { border: 1px solid #f2f8fc; border-radius: 6px; margin: 15px 0px; color: #2c678d; font-family: Oswald; font-size: 18px; font-weight: 900; text-align: left; width: 100%; display: inline-block; padding: 10px; }
+html body .search-body .container .nav { margin: 10px 0px; width: 98%;  float: none; display: inline-block;}
+html body .search-body .container .tab-content .tab-pane .item-hotel .info-title { background: #fff; border: 1px solid #f2f2f2; border-radius: 6px; color: #e9540d; font-family: Oswald; font-size: 16px; font-weight: 900; padding: 10px; text-transform: uppercase; text-align: left; margin: 10px 0px; width: 98%; float: none!important; display: inline-block; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .estructura-habitacion { border-left: 1px solid #f2f2f2; border-right: 1px solid #f2f2f2; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item { display: inline-block; width: 100%; float: left; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel { display: inline-block; float: left; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel p { font-size: 13px; color: #999; display: inline-block; width: 100%; padding: 0px; margin: 6px 0px; text-align: center; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .precio-real { color: #000; font-size: 16px; font-weight: bold; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .precio-final { font-size: 14px; font-weight: bold; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .btn { margin: 10px 0px; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .img-hotel-details { width: 100%; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel h3 { color: #000; font-weight: bold; font-size: 14px; text-align: left; width: 100%; margin: 15px 0px; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .info-promo { color: #55a797; font-size: 14px; width: 100%; text-align: justify; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .background { background: url("https://www.kooningtravel.com/img/extras/line.png") repeat; }
+html body .search-body .container .tab-content { display: inline-block; float: left; width: 100%; }
+html body .search-body .container .tab-content .tab-pane { float: left; width: 100%; }
+html body .search-body .container .tab-content .tab-pane .item-hotel { text-align: center; width: 100%; display: inline-block; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12{ display: inline-block; float: left; width: 100%; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8, html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-4 { display: inline-block; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel {width: 100%;display: inline-block;}
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel .carousel-inner{width: 100%;display: inline-block;}
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel .carousel-inner .item{width: 100%;}
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .col-md-8 .carousel .carousel-inner .item img{height: 468px;width: 100%;display: inline-block;}
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .best-price { text-align: center; background: #dfeefa none repeat scroll 0px 0px; border-radius: 0px 4px 6px 0px; font-weight: bold; color: #014999; font-size: 17px; width: 100%; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .best-price .search-price { width: 100%; color: #014999; font-family: Oswald; font-weight: 300; font-size: 28px; display: inline-block; float: left; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .best-price .btn { display: inline-block; float: none; width: 50%; margin: 10px 0px; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in { background: #F8F8F8; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in h3 { color: #000; font-size: 16px; font-weight: 900; margin-bottom: 10px; margin-top: 10px; display: inline-block; float: left; padding: 0px; width: 100%; text-align: left; font-family: Roboto, sans-serif; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in h3 .text-details { font-size: 12px; font-family: Roboto, sans-serif; color: #333; display: inline-block; font-weight: normal; width: 100%; margin: 10px 0px 0px 0px; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in h3 span { }
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .chek-in .details { text-align: center; color: #014999; font-weight: bold; padding: 15px 0px; border-bottom: 1px dotted #cccccc; font-size: 16px; margin: 0px; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .info-details-hotel { color: #888; font-family: Roboto, sans-serif; font-size: 12px; width: 97%; text-align: justify; float: none!important; margin: 10px 0px; display: inline-block; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .list-items {list-style: none;display: inline-block;float: left;width: 100%;}
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .list-items li {width: 32%;text-align: left;color: #333;font-size: 13px;font-family: Roboto, sans-serif;float: left;display: inline-block;}
+html body .search-body .container .tab-content .tab-pane .item-hotel .col-md-12 .list-items li i { margin-right: 3px; color: #E9540D; }
+html body .search-body .container .tab-content #info div, html body .search-body .container .tab-content #info p, html body .search-body .container .tab-content #details p { float: left; }
+html body .search-body .container .line-details { height: 9px; display: inline-block; float: left; width: 100%; background: #f0f0f0; border: none; }
+html body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .destino-hotel { width: 100%; display: inline-block; }
+html body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .destino-hotel .panel-default { display: inline-block; width: 100%; }
+html body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .destino-hotel .panel-default div { width: 100%; }
+html body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading { width: 100%; display: inline-block; }
+html body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading .panel-title { width: 100%; display: inline-block; }
+html body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading .panel-title { width: 100%; display: inline-block; }
+html body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-heading .panel-title .pa_italic { width: 100%; display: inline-block; color: #727176; font-size: 12px; text-transform: capitalize; font-family: 'Play', sans-serif; }
+html body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse { }
+html body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse .panel-body { }
+html body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse .panel-body .info-message { font-size: 12px; color: #888; display: inline-block; width: 100%; text-align: justify; }
+html body .container #verMapa { background: #fff; text-align: center; width: 100%; display: inline-block; }
+html body .container #verMapa #mapa { width: 98%; float: none; height: 350px; display: inline-block; }
+
 /*Reset genearal css*/
 .head * { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box }
 .head div, .head span, .head p, .head .tour li a, .head input, .head form, .head img, .head label, .head ul, .head li { display: inline-block; float: left; margin: 0px; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; }
@@ -383,6 +383,8 @@ a:link, a:visited { text-decoration: none; }
 	50% { content: "Cargando..";}
 	75% { content: "Cargando...";}
 }
+
+
 /*Fancy box*/
 #cboxLoadedContent { display: none; border-radius: 6px; text-align: center; }
 #cboxLoadedContent h3 { display: inline-block; text-align: left; font-size: 1.33em; width: 100%; margin: 0px 0px 10px 0px; float: left; }
@@ -406,6 +408,8 @@ td.issuer img { margin: 0 .5em 0 0; float: left; }
 .msi span, .pagosFijos span { font-size: 1.25em; }
 .odd td { padding: 0px; }
 .spriteBank { margin-left: 6px!important; }
+
+
 /* Caja Generica */
 #promo { position: relative; text-align: center; display: inline-block; width: 100%; float: left; }
 #promo .imgpro { width: 100%; display: inline-block; float: left; }
@@ -434,6 +438,8 @@ td.issuer img { margin: 0 .5em 0 0; float: left; }
 #promo .contp #contactform .inline-date .caln { width: 15%; height: 100%; padding: 0px; }
 #promo .contp #contactform .inline-date .caln .number-nights { height: 100%; width: 69%; color: #FFF; float: none; line-height: 30px; font-size: 15px; font-weight: bold; }
 #promo .contp #contactform .param { display: none; }
+
+
 /*Autocomplete*/
 body .select2-container { }
 body .select2-container, body .select2-container span, body .select2-container ul, body .select2-container ul li, body .select2-container strong { text-align: left; color: #666; font-family: Roboto, sans-serif; display: inline-block; float: left; margin: 0px; text-decoration: none; outline: none; list-style: none; height: auto; }
@@ -446,12 +452,13 @@ body .selection .select2-selection .select2-selection__rendered .select2-selecti
 body .selection .select2-selection .select2-selection__rendered .select2-selection__choice { position: absolute; top: 0px; left: 0px; z-index: 100; line-height: 44px; }
 body .select2-selection__choice__remove { position: absolute; top: 0px; left: 0px; }
 .select2-results__options, .select2-results__options li, .select2-results__options strong, .select2-results__options ul, .select2-results__options li { width: 100%; }
+
+
 /*Calendario CSS*/
-html .ui-datepicker.ui-datepicker-multi { width: auto; left: 3px!important; }
+html .ui-datepicker.ui-datepicker-multi { width: auto; margin-left: -110px; float: none; }
 html .ui-datepicker-trigger.ui-button-icon-only .ui-button-text { padding: 0 }
 html .ui-datepicker { display: none; margin-top: 13px; padding: 7px 36px 4px 36px; width: auto !important; border-radius: 8px; background: #fff; z-index: 9999 !important; -o-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -ms-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); user-select: none; -webkit-user-select: none; -moz-user-select: -moz-none; -o-user-select: -moz-none; -khtml-user-select: none; -ms-user-select: none }
-html.no-boxshadow .ui-datepicker { border: 1px solid #d3d3d3; filter: progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=180, Strength=5) progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=90, Strength=3) progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=270, Strength=3);
-}
+html.no-boxshadow .ui-datepicker { border: 1px solid #d3d3d3; filter: progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=180, Strength=5) progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=90, Strength=3) progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=270, Strength=3); }
 html .ui-datepicker .ui-datepicker-header { position: relative; width: 215px; height: 36px; padding: 0; background: #E61B76; border-top-left-radius: 4px; border-top-right-radius: 4px; float: none; left: 3px; }
 html .ui-datepicker .ui-datepicker-prev, html .ui-datepicker .ui-datepicker-next { position: absolute; top: -7px; z-index: 59; width: 37px; height: 218px }
 html .ui-datepicker .ui-datepicker-prev { left: -36px; background: url(https://www.kooningtravel.com/img/basic-arrows.png?v2) no-repeat 9px center !important; border-radius: 9px 0 0 9px !important }
@@ -514,10 +521,10 @@ body .other .h2 { color: #4d6a8e; margin-bottom: 0px; }
 body .other .info-details { margin: 10px 0px; font-size: 20px; color: #fff; width: 100%; text-align: center; }
 body .other .h2 .imagen-estrellas { float: none; margin-left: 5px; }
 body .other .fechas-info { margin: 0px auto; float: left; margin-top: 0px; font-size: 20px; color: #fff; width: 100%; text-align: center; }
-.box-home .inline-search { border-radius: 6px; background: #FFF; text-align: left; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); margin: 0px 7px; }
+.box-home .inline-search { width: 270px; border-radius: 6px; background: #FFF; text-align: left; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); margin: 0px 7px; }
 body div .box .box-home .inline-block .inline-button, body .search-body .container .main-box .caja-search form .inline-block .inline-button { padding: 0px; margin: 0px; border: 0px; display: -moz-inline-stack; display: inline-block; *display: inline;
 float: none; zoom: 1; border-radius: 6px; width: 70px; height: 45px; margin-left: 7px; margin-right: 2px; line-height: 150%; vertical-align: top; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), inset 0 -1px rgba(0, 0, 0, 0.15), inset 0 1px rgba(255, 255, 255, 0.35); background: url(https://kooningtravel.com/img/search.png) no-repeat center center #E61B76; }
-.inline-search .input-style { cursor: pointer; position: relative; padding: 0px; border-top-left-radius: 0px; height: 46px; border-bottom-left-radius: 0px; width: 105px; }
+.inline-search .input-style { width: 108px; cursor: pointer; position: relative; padding: 0px; border-top-left-radius: 0px; height: 46px; border-bottom-left-radius: 0px; }
 .inline-search .input-style .aa { font-size: 32px; display: -moz-inline-stack; display: inline-block; *display: inline;
 zoom: 1; line-height: 45px; padding-right: 2px; }
 .inline-search .input-style .ee { font-size: 13px; margin-top: 8px; display: -moz-inline-stack; display: inline-block; *display: inline;
@@ -613,17 +620,17 @@ zoom: 1; top: 3px; position: relative; float: none; }
 .head .select2-selection__choice__remove { float: right!important; }
 .box-home .select2-search input { width: 226px !important; font-size: 20px; border: 0 none; border-radius: 6px; height: 45px; margin: 0px; color: #444; text-indent: 6px; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; vertical-align: top; }
 .head .select2-container--default .select2-selection--single { position: absolute; top: -44px; left: -1px; display: inline-block; float: left; height: 46px; width: 225px; }
-.head .text date-nights noselect {
-float: :left; padding: 0px; display: inline-block; }
+.head .text date-nights noselect { float: :left; padding: 0px; display: inline-block; }
 .head .inline-search .number-nights { width: 50px; background: #fff url(https://www.kooningtravel.com/img/nights.gif) center top repeat-y; border-radius: 0; text-align: center; color: #fff; font-size: 17px; padding: 0px; font-weight: bold; display: -moz-inline-stack; display: inline-block; zoom: 1; line-height: 46px; position: relative; text-indent: -10px; z-index: 1; }
 .head .inline-search .date-nights-input { opacity: .0; position: absolute; left: 0; top: 0; margin: 0; z-index: 0; width: 48px; height: 45px; -webkit-appearance: none; }
-.head .inline-search .date-wrapper { border-radius: 8px; height: 45px; float: none; }
+.head .inline-search .date-wrapper {border-radius: 8px;height: 45px;margin-left: 4px;width: 100%; }
 .head .inline-search.passengers { padding: 0px; position: relative; width: 142px; height: 45px; background-color: #FFF; margin: 0px auto; float: left; }
 .head .ui-spinner .ui-icon { display: none; }
 .btn.focus, .btn:focus, .btn:hover { color: #FFF!important; }
 .navbar { margin-bottom: 0px!important; }
-/*CSS HOME*/
 
+
+/*CSS HOME*/
 body .head .bgv { width: 100%; height: 360px; overflow: hidden; position: absolute; left: 0px; z-index: -4; }
 body .head .bgv video { position: absolute; top: -260px; left: 0px; width: 100%; }
 body .head .box { position: relative; width: 100%; text-align: center; }
@@ -671,11 +678,14 @@ body .centerh .bloque .colh .gal .sombraPromociones2 .caption span { margin-bott
 body .centerh .fott { margin-top: 15px; height: auto; }
 body .centerh .fott img { display: inline-block; padding: 0px; border: 0px; width: 170px; height: 66px; }
 body .centerh .fott .mar { margin: 0px 55px; }
+
 /*https://kooningtravel.com/Contacto*/
 .conus { position: relative; background: url("https://www.kooningtravel.com/img/contactanos.png") no-repeat 0px 0px transparent/100%; display: inline-block; float: left; margin-bottom: 15px; }
 .envn { float: right; width: 120px; height: 40px; }
 .cuadro-contacto label { color: #FFF; font-weight: normal; font-size: 14px; }
 .rgn { padding: 0px; }
+
+
 /*https://www.kooningtravel.com/Site-Map*/
 .site { height: auto; width: 990px; float: none; margin: 0px auto; display: inline-block; border: 1px solid #e3e3e3; border-radius: 4px; margin-bottom: 15px; background: #fff; }
 .site .tim { font-size: 20px; text-align: left; margin: 0px; font-weight: 400; background: linear-gradient(to bottom, #fff 0, #f8f8f8 100%); border-bottom: 1px solid #e3e3e3; padding: 15px 15px; color: #3d66a0; }
@@ -685,68 +695,65 @@ body .centerh .fott .mar { margin: 0px 55px; }
 .site .contenedorm ul { width: 100px; list-style: square; display: inline-block; float: left; margin-left: 30px; padding: 0px; }
 .site .contenedorm ul li { width: 100%; text-align: center; float: left; display: inline-block; margin: 0px; padding: 0px; }
 .site .contenedorm ul li a { background: url("https://www.kooningtravel.com/img/square.jpg") no-repeat 8px 8px transparent; cursor: pointer; display: inline-block; text-align: left; width: 100%; text-indent: 10px; padding: 0 0 8px 10px; text-decoration: underline; color: #252323; border: none; outline: 0; float: left; }
-/*Search*/
-.detallest { width: 100%; text-align: center; }
-.detallest .starts { font-family: HelveticaThin, Helvetica, Arial, sans-serif!important; font-weight: 500!important; font-size: 32px!important; color: #4d6a8e; line-height: 1.1; margin: 10px 0px 0px!important; float: none!important; }
-.detallest .imagen-estrellas { width: 80px; float: none!important; top: -6px; position: relative; left: 11px; }
-/*Estilos para bloque Busqueda*/
-.search-content { font-family: Roboto, sans-serif; float: right; padding: 0px; width: 795px; display: inline-block; margin: 0px; }
-.titulo-listado-hoteles { font-family: Roboto, sans-serif; text-align: left; background: #37454d; display: inline-block; width: 100%; color: #fff; font-size: 19px; line-height: 40px; font-weight: 300; margin: 0px; padding: 0px; height: 40px; float: left; text-indent: 10px; }
-.search-content .result { width: 100%; height: auto; box-shadow: 0 1px 4px rgba(41,51,57,.5); margin-bottom: 8px; background: #fff; color: #37454d; display: inline-block; }
-.result div, .result h2, .result a, .result img, .result span, .result label, .result p { font-family: Arial, Helvetica, Sans, Sans-Serif, Sans Serif; display: inline-block; float: left; margin: 0px; padding: 0px; }
-.search-content .result .img { position: relative; height: 80%; margin: 10px 0px 0px 10px; width: 20%; }
-.search-content .result .img .ctag { cursor: pointer; position: absolute; width: auto; background: #e61b76; height: 25px; z-index: 100; color: #fff; line-height: 24px; padding-right: 10px; }
-.search-content .result .img .ctag .tag { position: absolute; left: -12px; }
-.search-content .result .img a { display: inline-block; }
-.tooltipp { background: #569e18; border-radius: 2px; color: #fff; position: absolute; top: -97px; width: auto; padding: 5px; border: 1px solid #dedddd; box-sizing: border-box; left: 0px; text-align: left; font-size: 12px; box-shadow: 0 2px 5px rgba(79,79,79,.4); font-family: Helvetica, sans-serif; font-weight: lighter; z-index: 1000; line-height: normal; transition: all .5s ease; -o-transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; z-index: 60; }
-.img.active .tooltipp { display: inline-block!important; }
-.tooltipp p { color: #FFF; padding: 8px; text-align: justify; }
-.tooltipp:after { bottom: -20px; z-index: 10; left: 33px; border: solid transparent; content: " "; height: 0; width: 3px; position: absolute; border-width: 10px; margin: 0px; border-top-color: #569e18; }
-.search-content .result .img a img { width: 100%; height: auto; }
-.search-content .result .details { width: 77%; float: right; height: auto; }
-.search-content .result .details .bloques { height: auto; border-bottom: 0; float: left; padding: 10px 8px; width: 43%; }
-.search-content .result .details .bloques .blh { width: 100%; }
-.search-content .result .details .bloques .title { text-align: left; width: 100%; font-size: 20px; line-height: 1.25; color: #37454d; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-.search-content .result .details .bloques .star { clear: both; }
-.search-content .result .details .bloques .city { text-align: left; width: 100%; font-weight: normal; font-family: Arial, Helvetica, Sans, Sans-Serif, Sans Serif; font-size: 14px; color: #37454d; line-height: 1.25; margin: 10px 0px; }
-.search-content .result .details .bloques .city i { margin-left: 3px; }
-.search-content .result .details .bloques .include { width: 100%; text-align: left; }
-.search-content .result .details .bloques2 { text-align: center; width: 30%; margin-top: 24px; }
-.search-content .result .details .bloques .precio { display: inline-block; color: #428500; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 20px; margin-bottom: 15px; font-weight: bold; text-align: center; width: 100%; }
-.search-content .result .details .bloques2 .info { width: 85%; text-align: left; font-size: 13px; color: #37454d; font-weight: lighter; float: none; }
-.search-content .result .details .bloques2 .descuento { text-align: justify; color: #3F7F00; font-size: 12px; margin-top: 10px; width: 100%; }
-.search-content .result .details .line { height: 200px; width: 1px; background: #cdd0d2; margin-top: 7px; }
-.search-content .result .details .bloque3 { width: 26%; padding: 0px; margin: 0px; text-align: center; height: auto; }
-.search-content .result .details .bloque3 .search, .marco .refill .btn { float: none; box-shadow: #428500 2px 2px 3px; border: 1px solid #428500; width: 95%; background: #428500; color: #FFF; cursor: pointer; line-height: 35px; border-radius: 4px; height: 38px; font-weight: lighter; font-size: 16px; }
-.search-content .result .details .bloque3 .logosn { width: 100%; height: 115px; }
-.marco { box-shadow: 0 1px 4px rgba(41,51,57,.5); background: #FFF; width: 100%; margin-bottom: 20px!important; }
-.marco, .marco a, .marco img, .marco label, .marco p, .marco input, .marco button { border: 0px; font-family: Arial, Helvetica, Sans, Sans-Serif, Sans Serif; display: inline-block; float: left; margin: 0px; padding: 0px; }
-.marco .refill { display: inline-block; width: 100%; border-bottom: 1px solid #00000036; text-align: center; }
-.marco .refill .filtro { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; display: inline-block; background: #37454D; height: 35px; width: 100%; line-height: 33px; text-align: center; color: #FFF; font-size: 15px; }
-.marco .refill .select2 { width: 95%!important; float: none; margin: 15px 0px; height: 30px; }
-.marco .refill .select2 span, .marco .refill .select2 ul, .marco .refill .select2 ul li, .marco .refill .select2 input { display: inline-block; width: 100%!important; height: 30px; }
-.marco .refill .select2 span ul .select2-selection__choice, .marco .refill .select2 span ul .select2-selection__choice .select2-selection__choice__remove { line-height: 32px; height: 30px; margin: 0px; background: transparent; border: 0px; }
-.marco .refill .btn { width: 60%; margin-bottom: 10px; float: none; font-size: 14px; }
+
+
+/*Search y Details*/
+html body .search-content { font-family: Roboto, sans-serif; float: right; padding: 0px; width: 795px; display: inline-block; margin: 0px; }
+html body .search-content .titulo-listado-hoteles { font-family: Roboto, sans-serif; text-align: left; background: #37454d; display: inline-block; width: 100%; color: #fff; font-size: 19px; line-height: 40px; font-weight: 300; margin: 0px; padding: 0px; height: 40px; float: left; text-indent: 10px; }
+html body .search-content .result { width: 100%; height: auto; box-shadow: 0 1px 4px rgba(41,51,57,.5); margin-bottom: 8px; background: #fff; color: #37454d; display: inline-block; }
+html body .search-content .result div, html body .search-content .result h2, html body .search-content .result a, html body .search-content .result img, html body .search-content .result span, html body .search-content .result label, html body .search-content .result p { font-family: Arial, Helvetica, Sans, Sans-Serif, Sans Serif; display: inline-block; float: left; margin: 0px; padding: 0px; }
+html body .search-content .result .img { position: relative; height: 80%; margin: 10px 0px 0px 10px; width: 20%; }
+html body .search-content .result .img .ctag { cursor: pointer; position: absolute; width: auto; background: #e61b76; height: 25px; z-index: 100; color: #fff; line-height: 24px; padding-right: 10px; }
+html body .search-content .result .img .ctag .tag { position: absolute; left: -12px; }
+html body .search-content .result .img a { display: inline-block; }
+html body .search-content .result .img a img { width: 100%; height: auto; }
+html body .search-content .result .details { width: 77%; float: right; height: auto; }
+html body .search-content .result .details .bloques { height: auto; border-bottom: 0; float: left; padding: 10px 8px; width: 43%; }
+html body .search-content .result .details .bloques .blh { width: 100%; }
+html body .search-content .result .details .bloques .title { text-align: left; width: 100%; font-size: 20px; line-height: 1.25; color: #37454d; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+html body .search-content .result .details .bloques .star { clear: both; }
+html body .search-content .result .details .bloques .city { text-align: left; width: 100%; font-weight: normal; font-family: Arial, Helvetica, Sans, Sans-Serif, Sans Serif; font-size: 14px; color: #37454d; line-height: 1.25; margin: 10px 0px; }
+html body .search-content .result .details .bloques .city i { margin-left: 3px; }
+html body .search-content .result .details .bloques .include { width: 100%; text-align: left; }
+html body .search-content .result .details .bloques2 { text-align: center; width: 30%; margin-top: 24px; }
+html body .search-content .result .details .bloques .precio { display: inline-block; color: #428500; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 20px; margin-bottom: 15px; font-weight: bold; text-align: center; width: 100%; }
+html body .search-content .result .details .bloques2 .info { width: 85%; text-align: left; font-size: 13px; color: #37454d; font-weight: lighter; float: none; }
+html body .search-content .result .details .bloques2 .descuento { text-align: justify; color: #3F7F00; font-size: 12px; margin-top: 10px; width: 100%; }
+html body .search-content .result .details .line { height: 200px; width: 1px; background: #cdd0d2; margin-top: 7px; }
+html body .search-content .result .details .bloque3 { width: 26%; padding: 0px; margin: 0px; text-align: center; height: auto; }
+html body .search-content .result .details .bloque3 .search, html body .search-body .container .main-box .marco .refill .btn { float: none; box-shadow: #428500 2px 2px 3px; border: 1px solid #428500; width: 95%; background: #428500; color: #FFF; cursor: pointer; line-height: 35px; border-radius: 4px; height: 38px; font-weight: lighter; font-size: 16px; }
+html body .search-content .result .details .bloque3 .logosn { width: 100%; height: 115px; }
+html body .search-body .container .main-box .marco { box-shadow: 0 1px 4px rgba(41,51,57,.5); background: #FFF; width: 100%; margin-bottom: 20px!important; }
+html body .search-body .container .main-box .marco, html body .search-body .container .main-box .marco a, html body .search-body .container .main-box .marco img, html body .search-body .container .main-box .marco label, html body .search-body .container .main-box .marco p, html body .search-body .container .main-box .marco input, html body .search-body .container .main-box .marco button { border: 0px; font-family: Arial, Helvetica, Sans, Sans-Serif, Sans Serif; display: inline-block; float: left; margin: 0px; padding: 0px; }
+html body .search-body .container .main-box .marco .refill { display: inline-block; width: 100%; border-bottom: 1px solid #00000036; text-align: center; }
+html body .search-body .container .main-box .marco .refill .filtro { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; display: inline-block; background: #37454D; height: 35px; width: 100%; line-height: 33px; text-align: center; color: #FFF; font-size: 15px; }
+html body .search-body .container .main-box .marco .refill .select2 { width: 95%!important; float: none; margin: 15px 0px; height: 30px; }
+html body .search-body .container .main-box .marco .refill .select2 span, html body .search-body .container .main-box .marco .refill .select2 ul, html body .search-body .container .main-box .marco .refill .select2 ul li, html body .search-body .container .main-box .marco .refill .select2 input { display: inline-block; width: 100%!important; height: 30px; }
+html body .search-body .container .main-box .marco .refill .select2 span ul .select2-selection__choice, html body .search-body .container .main-box .marco .refill .select2 span ul .select2-selection__choice .select2-selection__choice__remove { line-height: 32px; height: 30px; margin: 0px; background: transparent; border: 0px; }
+html body .search-body .container .main-box .marco .refill .btn { width: 60%; margin-bottom: 10px; float: none; font-size: 14px; }
+
 /*Categoria de los hoteles*/
-.marco .refill .categoria { display: inline-block; width: auto; height: 60px; margin-top: 15px; float: none; }
-.marco .refill .categoria label { width: 40px; height: 40px; background: url("https://www.kooningtravel.com/img/iconos.png") no-repeat transparent; margin: 3px; cursor: pointer; }
-.marco .refill .categoria #ch_start5 { background-position: -212px -10px; }
-.marco .refill .categoria #ch_start4 { background-position: -164px -10px; }
-.marco .refill .categoria #ch_start3 { background-position: -116px -10px; }
-.marco .refill .categoria #ch_start2 { background-position: -68px -10px; }
-.marco .refill .categoria #ch_start1 { background-position: -20px -10px; }
-#ch_start5.active { background-position: -212px -58px!important; }
-#ch_start4.active { background-position: -164px -58px!important; }
-#ch_start3.active { background-position: -116px -58px!important; }
-#ch_start2.active { background-position: -68px -58px!important; }
-#ch_start1.active { background-position: -20px -58px!important; }
+html body .search-body .container .main-box .marco .refill .categoria { display: inline-block; width: auto; height: 60px; margin-top: 15px; float: none; }
+html body .search-body .container .main-box .marco .refill .categoria label { width: 40px; height: 40px; background: url("https://www.kooningtravel.com/img/iconos.png") no-repeat transparent; margin: 3px; cursor: pointer; }
+html body .search-body .container .main-box .marco .refill .categoria #ch_start5 { background-position: -212px -10px; }
+html body .search-body .container .main-box .marco .refill .categoria #ch_start4 { background-position: -164px -10px; }
+html body .search-body .container .main-box .marco .refill .categoria #ch_start3 { background-position: -116px -10px; }
+html body .search-body .container .main-box .marco .refill .categoria #ch_start2 { background-position: -68px -10px; }
+html body .search-body .container .main-box .marco .refill .categoria #ch_start1 { background-position: -20px -10px; }
+html body .search-body .container .main-box .marco .refill .categoria #ch_start5.active { background-position: -212px -58px!important; }
+html body .search-body .container .main-box .marco .refill .categoria #ch_start4.active { background-position: -164px -58px!important; }
+html body .search-body .container .main-box .marco .refill .categoria #ch_start3.active { background-position: -116px -58px!important; }
+html body .search-body .container .main-box .marco .refill .categoria #ch_start2.active { background-position: -68px -58px!important; }
+html body .search-body .container .main-box .marco .refill .categoria #ch_start1.active { background-position: -20px -58px!important; }
+
 /*Rango de precios*/
-.marco .precio .mont { display: inline-block; width: 90%; height: 80px; }
-.marco .precio .amount { display: inline-block; width: 100%; text-align: center; color: #007fad; font-size: 14px; height: auto; margin: 15px 0px; font-weight: 700; }
-.marco .precio .mont .amount label { float: none; }
-.ui-slider-horizontal { position: relative; text-align: left; height: 5px; background: #dbdbdb !important; border-radius: 2px !important; padding: 0 !important; }
-.ui-slider-horizontal .ui-slider-range { padding: 0px; position: absolute; z-index: 1; font-size: .7em; display: block; background-position: 0 0; top: 0; height: 100%; left: 0; background: #007FAD; border-color: #007FAD; border-radius: 2px !important; }
-.ui-slider .ui-slider-handle { top: -.30em; position: absolute; z-index: 2; margin-left: -.6em; width: 15px; height: 15px; cursor: pointer; background: #fff; border: 1px solid #e2e2e2; border-radius: 16px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); }
+html body .search-body .container .main-box .marco .precio .mont { display: inline-block; width: 90%; height: 80px; }
+html body .search-body .container .main-box .marco .precio .amount { display: inline-block; width: 100%; text-align: center; color: #007fad; font-size: 14px; height: auto; margin: 15px 0px; font-weight: 700; }
+html body .search-body .container .main-box .marco .precio .mont .amount label { float: none; }
+html body .search-body .container .main-box .marco .precio .mont .ui-slider-horizontal { position: relative; text-align: left; height: 5px; background: #dbdbdb !important; border-radius: 2px !important; padding: 0 !important; }
+html body .search-body .container .main-box .marco .precio .mont .ui-slider-horizontal .ui-slider-range { padding: 0px; position: absolute; z-index: 1; font-size: .7em; display: block; background-position: 0 0; top: 0; height: 100%; left: 0; background: #007FAD; border-color: #007FAD; border-radius: 2px !important; }
+html body .search-body .container .main-box .marco .precio .mont .ui-slider-horizontal .ui-slider-handle { top: -.30em; position: absolute; z-index: 2; margin-left: -.6em; width: 15px; height: 15px; cursor: pointer; background: #fff; border: 1px solid #e2e2e2; border-radius: 16px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); }
+
 /*Promociones*/
 .mesin { cursor: pointer; background: #FFF; width: 100%; height: 50px; text-align: center; margin-top: 10px; }
 .mesin .meses { margin: 0px auto; width: 50%; text-align: center; color: #0059ad; font-size: 18px; font-weight: 100; float: none; margin-top: 12px; }
@@ -796,11 +803,11 @@ body .generic-fotter .menus-fotter .sub-fotter li a i:before, body .generic-fott
 body .generic-fotter .menus-fotter .info-fotter { text-align: center; width: 100%; text-align: center; display: inline-block; }
 body .generic-fotter .menus-fotter .info-fotter p { width: 90%; float: none; color: #fff; text-align: center; padding-top: 15px; margin-top: 15px; margin: 0 0 10px; }
 body .generic-fotter .menus-fotter .info-fotter p strong { font-family: Oswald, sans-serif; font-weight: 900; }
-.messaje { z-index: 100; left: 3%; color: #004085; background-color: #cce5ff; position: fixed; bottom: 0; }
-.messaje span { margin-right: 3px; }
+html body .messaje { z-index: 100; left: 3%; color: #004085; background-color: #cce5ff; position: fixed; bottom: 0; }
+html body .messaje span { margin-right: 3px; }
 
-
-html body .search-body .scroll-navbar { background: green; margin: 0px; padding: 0px; position: relative; left: 50px; top: 100px; z-index: 99; float: left; display: inline-block; width: 170px; /*background: #cccccc4a;*/ }
+/*Carrito de compras */
+html body .search-body .scroll-navbar { margin: 0px; padding: 0px; position: relative; left: 50px; top: 100px; z-index: 99; float: left; display: inline-block; width: 170px; background: #cccccc4a; }
 html body .search-body .scroll-navbar .nav-tabs { margin: 0px; padding: 0px; border-radius: 6px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.05); display: block; overflow: hidden; text-align: center; list-style: none; }
 html body .search-body .scroll-navbar-open .nav-tabs, html body .search-body .scroll-navbar:hover .nav-tabs { width: 170px; }
 html body .search-body .scroll-navbar .nav-tabs { border-bottom: 1px solid #ddd; }
@@ -816,123 +823,95 @@ html body .search-body .scroll-navbar .actt .scroll-nav .mir { height: 45px!impo
 html body .search-body .scroll-navbar .actt .scroll-nav { height: 45px!important; padding: 0px!important; cursor: default; }
 html body .search-body .scroll-navbar .nav .active .scroll-nav:hover{ background: #d8528b; color: #FFF; margin: 0px; border:0px;  }
 html body .search-body .scroll-navbar .nav li a .col:hover{ background: #FFF;  }
+html body .search-body .help { width: 190px; margin: 0px; position:relative; top: 100px; float: right; right: 50px; }
+html body .search-body .help .item { display: inline-block; margin-bottom:25px; width:100%; height: 100%; float: left; text-align: center; overflow: hidden }
+html body .search-body .help .item a { color: rgb(13, 114, 255); width: 100%; display: block; height: 100%; padding:0px; border-radius: 6px; text-decoration: none; float: left; }
+html body .search-body .help .item:hover { text-decoration: none; background: #edf0f3; background: rgba(86, 112, 140, 0.1) }
+html body .search-body .help .item:active { text-decoration: none; background: #d4dbe2; background: rgba(86, 112, 140, 0.25) }
+html body .search-body .help .item .h3 { font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-size: 20px; letter-spacing: 1px; -webkit-font-smoothing: subpixel-antialiased; color: #4d6a8e; float: left; width: 100%; margin: 0px; padding: 0px; margin-top: 10px; height: 54px; }
+html body .search-body .help .item.email .h3 { background: url(https://kooningtravel.com/img/email.png) no-repeat center  20px; }
+html body .search-body .help .item.telefono .h3 { background: url(https://kooningtravel.com/img/telephone.png) no-repeat center  20px; }
+html body .search-body .help .item p { margin: 0px auto; color: rgba(86, 112, 140, 0.5); display: inline-block; width: 100%; text-align: center; }
+html body .search-body .help .item .link { font-weight: normal; color: rgb(13, 114, 255); font-size: 12px; width: 100%; display: inline-block; float: left; }
+html body .search-body .help .item .reds { display: inline-block; width: 60%; margin: 0px auto; padding: 0px; list-style: none; height: 30px; margin-top: 13px; }
+html body .search-body .help .item .reds li { float: left; margin: 0px; padding: 0px; display: inline-block; width: 25px; height: 30px; }
+html body .search-body .help .item .reds li a { border-radius: 0px!important; display: inline-block!important; float: left!important; padding: 0px!important; margin: 0px!important; height: 30px!important; text-align: center; }
+html body .search-body .help .item .reds li a i { color: #4c698f; font-size: 20px; margin: 0px auto; float: none; margin-top: 5px; }
+html body .search-body .white-content .win { background: url(/img/rv.png) no-repeat 0px 0px transparent; position: absolute; bottom: 13%; left: 11%; width: 216px; height: 211px; display: inline-block; float: left; }
+html body .search-body #explora-destinos { position: relative; right: -50px; display: inline-block; width: 889px; float: left; }
+html body .search-body .white-content .text { font-weight: bold!important; font-size: 30px!important; text-align: center; font-family: HelveticaThin, Helvetica, Arial, sans-serif!important; color: #4d6a8e!important; margin: 30px 0px; width: 100%; height: 38px; }
 
-.help { background: brown; width: 190px; margin: 0px; position:relative; top: 100px; float: right; right: 50px; }
-.help .item { display: inline-block; margin-bottom:25px; width:100%; height: 100%; float: left; text-align: center; overflow: hidden }
-.help .item a { color: rgb(13, 114, 255); width: 100%; display: block; height: 100%; padding:0px; border-radius: 6px; text-decoration: none; float: left; }
-.help .item:hover { text-decoration: none; background: #edf0f3; background: rgba(86, 112, 140, 0.1) }
-.help .item:active { text-decoration: none; background: #d4dbe2; background: rgba(86, 112, 140, 0.25) }
-.help .item .h3 { font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-size: 20px; letter-spacing: 1px; -webkit-font-smoothing: subpixel-antialiased; color: #4d6a8e; float: left; width: 100%; margin: 0px; padding: 0px; margin-top: 10px; height: 54px; }
-.help .item.email .h3 { background: url(https://kooningtravel.com/img/email.png) no-repeat center  20px; }
-.help .item.telefono .h3 { background: url(https://kooningtravel.com/img/telephone.png) no-repeat center  20px; }
-.help .item p { margin: 0px auto; color: rgba(86, 112, 140, 0.5); display: inline-block; width: 100%; text-align: center; }
-.help .item .link { font-weight: normal; color: rgb(13, 114, 255); font-size: 12px; width: 100%; display: inline-block; float: left; }
+/*Explora tu viaje*/
+html body .search-body .white-content .ve-destinos-list .ir { background-color: transparent; border: 0; overflow: hidden; *text-indent:-9999px }
+html body .search-body .white-content .ve-destinos-list .ir:before { content: ""; display: block; width: 0; height: 100% }
+html body .ui-tooltip { position: absolute; z-index: 9999; max-width: 300px; -webkit-box-shadow: 0 0 5px #aaa; box-shadow: 0 0 5px #aaa; padding: 8px; pointer-events: none; }
+html body .ui-tooltip { background: #fff; color: #888; border-radius: 3px; padding: 7px 10px 5px 10px; pointer-events: none; line-height: 130%; box-shadow: 0 0 4px rgba(0,0,0,0.20); }
+html body .ui-helper-hidden-accessible{ border:0; clip:rect(0000); height:1px; overflow:hidden; position:absolute; width:1px; margin:-1px; padding:0; }
+html body .search-body .white-content .ve-destinos-list .acapulco{top: 67%;left:50%;}
+html body .search-body .white-content .ve-destinos-list .cancun{right: 14%;top: 58%;}
+html body .search-body .white-content .ve-destinos-list .cdmx{right: 46%;top: 60%;}
+html body .search-body .white-content .ve-destinos-list .guadalajara{top: 56%;right: 58%;}
+html body .search-body .white-content .ve-destinos-list .guanajuato{top: 55%;right:51%;}
+html body .search-body .white-content .ve-destinos-list .holbox{top: 56.5%;right: 14.5%;}
+html body .search-body .white-content .ve-destinos-list .huatulco{top: 72%;right: 40%;}
+html body .search-body .white-content .ve-destinos-list .isla{top: 57%;right: 12.8%;}
+html body .search-body .white-content .ve-destinos-list .loreto{ top: 38%; left: 25.5%;  }
+html body .search-body .white-content .ve-destinos-list .lcabos{top: 45.5%;left: 27.5%;}
+html body .search-body .white-content .ve-destinos-list .mazatlan{ top:47.5%; left:37.2%; }
+html body .search-body .white-content .ve-destinos-list .merida{top: 58.9%;right: 21%;}
+html body .search-body .white-content .ve-destinos-list .monterrey{ top:40%; right: 47%; }
+html body .search-body .white-content .ve-destinos-list .morelia{top: 60.5%;left: 46%;}
+html body .search-body .white-content .ve-destinos-list .oaxaca{top: 69%;left: 60%;}
+html body .search-body .white-content .ve-destinos-list .pcarmen{top: 59.5%;right: 14.7%;}
+html body .search-body .white-content .ve-destinos-list .puebla{top: 64%;right: 43%;}
+html body .search-body .white-content .ve-destinos-list .pvallarta{top: 55.5%;right: 63%;}
+html body .search-body .white-content .ve-destinos-list .queretaro{top: 55%;right: 48%;}
+html body .search-body .white-content .ve-destinos-list .rnayarit{top: 54%;right: 63%;}
+html body .search-body .white-content .ve-destinos-list .smiguel{top: 56%;right: 47%;}
+html body .search-body .white-content .ve-destinos-list .taxco{top: 65%;right: 47%;}
+html body .search-body .white-content .ve-destinos-list .vbravo{top: 60.3%;right: 48%;}
+html body .search-body .white-content .ve-destinos-list .veracruz{top: 61%;right: 40%;}
+html body .search-body .white-content .ve-destinos-list .rmaya{top: 60.5%;right: 15.9%;}
+html body .search-body .white-content .ve-destinos-list { width: 100%; display: inline-block; float: left; height: 720px; }
+html body .search-body .white-content .ve-destinos-list .mapamexico{ width: 100%; display: inline-block; float: left; }
+html body .search-body .white-content .ve-destinos-list .ve-destc { border-radius: 100%; position: absolute; display: block; z-index: 1; -webkit-transition: all 200ms linear; -moz-transition: all 200ms linear; -ms-transition: all 200ms linear; -o-transition: all 200ms linear; transition: all 200ms linear; }
+html body .search-body .white-content .ve-destinos-list .ve-destc.active, html body .search-body .white-content .ve-destinos-list.ve-destc:hover { width: 50px; height: 50px; margin-top: -25px; margin-left: -25px; box-shadow: 0 1px 15px rgba(0, 0, 0, 0.15); border: 2px solid #fff; background-color: #fff; background-position: 0 0; background-repeat: no-repeat; z-index: 0; }
+html body .search-body .white-content .ve-destinos-list .ve-destc.active { z-index: 2 !important; }
+html body .search-body .white-content .ve-destinos-list .ve-destc.acapulco.active,html body .search-body .white-content .ve-destinos-list .ve-destc.acapulco:hover { background-image: url("/img/explora/acapulco.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.cancun.active, html body .search-body .white-content .ve-destinos-list .ve-destc.cancun:hover {background-image: url("/img/explora/cancun.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.cdmx.active,html body .search-body .white-content .ve-destinos-list .ve-destc.cdmx:hover {background-image: url("/img/explora/cdmx.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.guadalajara.active, html body .search-body .white-content .ve-destinos-list .ve-destc.guadalajara:hover {background-image: url("/img/explora/guadalajara.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.guanajuato.active, html body .search-body .white-content .ve-destinos-list .ve-destc.guanajuato:hover {background-image: url("/img/explora/guanajuato.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.holbox.active, html body .search-body .white-content .ve-destinos-list .ve-destc.holbox:hover {background-image: url("/img/explora/holbox.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.huatulco.active, html body .search-body .white-content .ve-destinos-list .ve-destc.huatulco:hover {background-image: url("/img/explora/huatulco.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.isla.active, html body .search-body .white-content .ve-destinos-list .ve-destc.isla:hover {background-image: url("/img/explora/islamujeres.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.loreto.active, html body .search-body .white-content .ve-destinos-list .ve-destc.loreto:hover {background-image: url("/img/explora/loretobc.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.lcabos.active, html body .search-body .white-content .ve-destinos-list .ve-destc.lcabos:hover {background-image: url("/img/explora/loscabos.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.mazatlan.active, html body .search-body .white-content .ve-destinos-list .ve-destc.mazatlan:hover {background-image: url("/img/explora/mazatlan.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.merida.active, html body .search-body .white-content .ve-destinos-list .ve-destc.merida:hover {background-image: url("/img/explora/merida.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.monterrey.active, html body .search-body .white-content .ve-destinos-list .ve-destc.monterrey:hover {background-image: url("/img/explora/monterrey.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.morelia.active, html body .search-body .white-content .ve-destinos-list .ve-destc.morelia:hover {background-image: url("/img/explora/morelia.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.oaxaca.active, html body .search-body .white-content .ve-destinos-list .ve-destc.oaxaca:hover {background-image: url("/img/explora/oaxaca.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.pcarmen.active, html body .search-body .white-content .ve-destinos-list .ve-destc.pcarmen:hover {background-image: url("/img/explora/playacarmen.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.puebla.active, html body .search-body .white-content .ve-destinos-list .ve-destc.puebla:hover {background-image: url("/img/explora/puebla.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.pvallarta.active, html body .search-body .white-content .ve-destinos-list .ve-destc.pvallarta:hover {background-image: url("/img/explora/puertovallarta.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.queretaro.active, html body .search-body .white-content .ve-destinos-list .ve-destc.queretaro:hover {background-image: url("/img/explora/queretaro.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.rnayarit.active, html body .search-body .white-content .ve-destinos-list .ve-destc.rnayarit:hover {background-image: url("/img/explora/rivieranayarit.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.smiguel.active, html body .search-body .white-content .ve-destinos-list .ve-destc.smiguel:hover {background-image: url("/img/explora/sanmiguelallende.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.taxco.active, html body .search-body .white-content .ve-destinos-list .ve-destc.taxco:hover {background-image: url("/img/explora/taxco.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.vbravo.active, html body .search-body .white-content .ve-destinos-list .ve-destc.vbravo:hover {background-image: url("/img/explora/vallebravo.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.veracruz.active, html body .search-body .white-content .ve-destinos-list .ve-destc.veracruz:hover {background-image: url("/img/explora/veracruz.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-destc.rmaya.active, html body .search-body .white-content .ve-destinos-list .ve-destc.rmaya:hover {background-image: url("/img/explora/rivieramaya.jpg");}
+html body .search-body .white-content .ve-destinos-list .ve-b1 { width: 9px; height: 9px; margin-top: -9px; margin-left: -9px; border: 2px solid #2dcef6; }
+html body .search-body .white-content .ve-destinos-list .ve-b2 { width: 9px; height: 9px; margin-top: -9px; margin-left: -9px; border: 2px solid #2dcef6; }
+html body .search-body .white-content .ve-destinos-list .ve-b3 { width: 9px; height: 9px; margin-top: -4px; margin-left: -4px; border: 2px solid #eb1c74; }
+html body .search-body .white-content .ve-destinos-list .ve-b4 { width: 9px; height: 9px; margin-top: -3px; margin-left: -3px; border: 2px solid #0d72ff; }
+html body .search-body .white-content .ve-destinos-list .ve-b5 { width: 9px; height: 9px; margin-top: -4px; margin-left: -4px; border: 2px solid #4C698F; }
+html body .search-body .white-content .ve-destinos-list .ve-b6 { width: 9px; height: 9px; margin-top: -3px; margin-left: -3px; border: 2px solid #4C698F; }
+html body .search-body .white-content .ve-destinos-list .ve-b7 { width: 9px; height: 9px; margin-top: -9px; margin-left: -9px; border: 2px solid #fd4f00; }
+html body .search-body .white-content .ve-destinos-list .ve-morelink { position: absolute; bottom: 85px; left: 50%; margin-left: -104px; font-family: HelveticaThin, Helvetica, Arial, sans-serif;font-size: 20px; letter-spacing: 1px; -webkit-font-smoothing: subpixel-antialiased; color: #4d6a8e !important; }
 
-.reds { display: inline-block; width: 60%; margin: 0px auto; padding: 0px; list-style: none; height: 30px; margin-top: 13px; }
-.reds li { float: left; margin: 0px; padding: 0px; display: inline-block; width: 25px; height: 30px; }
-.reds li a { border-radius: 0px!important; display: inline-block!important; float: left!important; padding: 0px!important; margin: 0px!important; height: 30px!important; text-align: center; }
-.reds li a i { color: #4c698f; font-size: 20px; margin: 0px auto; float: none; margin-top: 5px; }
 
-
-
-.win {
-    background: url(/img/rv.png) no-repeat 0px 0px transparent;
-    position: absolute;
-    bottom: 13%;
-    left: 11%;
-    width: 216px;
-    height: 211px;
-    display: inline-block;
-    float: left;
-}
-
-#explora-destinos {
-    position: relative;
-    right: -52px;
-    display: inline-block;
-    width: 900px;
-    float: left;
-}
-
-.text {
-    font-weight: bold!important;
-    font-size: 30px!important;
-    text-align: center;
-    font-family: HelveticaThin, Helvetica, Arial, sans-serif!important;
-    color: #4d6a8e!important;
-    margin: 30px 0px;
-    width: 100%;
-    height: 38px;
-}
-
-
-
-
-.acapulco{ top:76%; left:50%; }
-.cancun{ right: 13.5%; top: 63%;  }
-.cdmx{ right: 46%; top: 66%;  }
-.guadalajara{ top: 60%; right: 58%; }
-.guanajuato{ top:59%; right:51%;  }
-.holbox{ top:60.5%; right: 14.5%;  }
-.huatulco{ top: 82%; right: 40%; }
-.isla{ top:62%; right: 12.5%;  }
-.loreto{ top: 37%; left: 25%;  }
-.lcabos{ top: 46.5%;  left: 27%; }
-.mazatlan{ top:50%; left: 37%; }
-.merida{ top: 63%; right: 20%;  }
-.monterrey{ top:40%; right: 47%; }
-.morelia{ top:67%; left: 46%; }
-.oaxaca{ top:78%; left: 60%; }
-.pcarmen{ top: 64%; right: 14%;  }
-.puebla{ top: 70%; right: 43%; }
-.pvallarta{ top: 59%; right: 63%; }
-.queretaro{ top: 60%; right: 48%;  }
-.rnayarit{ top: 58%; right: 63%;  }
-.smiguel{ top: 60%; right: 47%; }
-.taxco{ top: 72%; right: 47%; }
-.vbravo{ top: 66%; right: 48%; }
-.veracruz{ top: 66%; right: 40%;   }
-.rmaya{ top: 65.5%; right:14.9%;  }
-
-.ve-destinos-list { background: url(/img/explora/mapamexico.png) center 20px no-repeat; height: 700px; position: relative; width: 100%; display: inline-block; float: left; margin: 0 auto; }
-.ve-destinos-list .ve-destc { border-radius: 100%; position: absolute; display: block; z-index: 1; -webkit-transition: all 200ms linear; -moz-transition: all 200ms linear; -ms-transition: all 200ms linear; -o-transition: all 200ms linear; transition: all 200ms linear; }
-.ve-destinos-list .ve-destc.active, .ve-destinos-list .ve-destc:hover { width: 50px; height: 50px; margin-top: -25px; margin-left: -25px; box-shadow: 0 1px 15px rgba(0, 0, 0, 0.15); border: 2px solid #fff; background-color: #fff; background-position: 0 0; background-repeat: no-repeat; z-index: 0; }
-.ve-destinos-list .ve-destc.active { z-index: 2 !important; }
-
-.ve-destinos-list .ve-destc.acapulco.active,.ve-destinos-list .ve-destc.acapulco:hover { background-image: url("/img/explora/acapulco.jpg");}
-.ve-destinos-list .ve-destc.cancun.active,.ve-destinos-list .ve-destc.cancun:hover {background-image: url("/img/explora/cancun.jpg");}
-.ve-destinos-list .ve-destc.cdmx.active,.ve-destinos-list .ve-destc.cdmx:hover {background-image: url("/img/explora/cdmx.jpg");}
-.ve-destinos-list .ve-destc.guadalajara.active,.ve-destinos-list .ve-destc.guadalajara:hover {background-image: url("/img/explora/guadalajara.jpg");}
-.ve-destinos-list .ve-destc.guanajuato.active,.ve-destinos-list .ve-destc.guanajuato:hover {background-image: url("/img/explora/guanajuato.jpg");}
-.ve-destinos-list .ve-destc.holbox.active,.ve-destinos-list .ve-destc.holbox:hover {background-image: url("/img/explora/holbox.jpg");}
-.ve-destinos-list .ve-destc.huatulco.active,.ve-destinos-list .ve-destc.huatulco:hover {background-image: url("/img/explora/huatulco.jpg");}
-.ve-destinos-list .ve-destc.isla.active,.ve-destinos-list .ve-destc.isla:hover {background-image: url("/img/explora/islamujeres.jpg");}
-.ve-destinos-list .ve-destc.loreto.active,.ve-destinos-list .ve-destc.loreto:hover {background-image: url("/img/explora/loretobc.jpg");}
-.ve-destinos-list .ve-destc.lcabos.active,.ve-destinos-list .ve-destc.lcabos:hover {background-image: url("/img/explora/loscabos.jpg");}
-.ve-destinos-list .ve-destc.mazatlan.active,.ve-destinos-list .ve-destc.mazatlan:hover {background-image: url("/img/explora/mazatlan.jpg");}
-.ve-destinos-list .ve-destc.merida.active,.ve-destinos-list .ve-destc.merida:hover {background-image: url("/img/explora/merida.jpg");}
-.ve-destinos-list .ve-destc.monterrey.active,.ve-destinos-list .ve-destc.monterrey:hover {background-image: url("/img/explora/monterrey.jpg");}
-.ve-destinos-list .ve-destc.morelia.active,.ve-destinos-list .ve-destc.morelia:hover {background-image: url("/img/explora/morelia.jpg");}
-.ve-destinos-list .ve-destc.oaxaca.active,.ve-destinos-list .ve-destc.oaxaca:hover {background-image: url("/img/explora/oaxaca.jpg");}
-.ve-destinos-list .ve-destc.pcarmen.active,.ve-destinos-list .ve-destc.pcarmen:hover {background-image: url("/img/explora/playacarmen.jpg");}
-.ve-destinos-list .ve-destc.puebla.active,.ve-destinos-list .ve-destc.puebla:hover {background-image: url("/img/explora/puebla.jpg");}
-.ve-destinos-list .ve-destc.pvallarta.active,.ve-destinos-list .ve-destc.pvallarta:hover {background-image: url("/img/explora/puertovallarta.jpg");}
-.ve-destinos-list .ve-destc.queretaro.active,.ve-destinos-list .ve-destc.queretaro:hover {background-image: url("/img/explora/queretaro.jpg");}
-.ve-destinos-list .ve-destc.rnayarit.active,.ve-destinos-list .ve-destc.rnayarit:hover {background-image: url("/img/explora/rivieranayarit.jpg");}
-.ve-destinos-list .ve-destc.smiguel.active,.ve-destinos-list .ve-destc.smiguel:hover {background-image: url("/img/explora/sanmiguelallende.jpg");}
-.ve-destinos-list .ve-destc.taxco.active,.ve-destinos-list .ve-destc.taxco:hover {background-image: url("/img/explora/taxco.jpg");}
-.ve-destinos-list .ve-destc.vbravo.active,.ve-destinos-list .ve-destc.vbravo:hover {background-image: url("/img/explora/vallebravo.jpg");}
-.ve-destinos-list .ve-destc.veracruz.active,.ve-destinos-list .ve-destc.veracruz:hover {background-image: url("/img/explora/veracruz.jpg");}
-.ve-destinos-list .ve-destc.rmaya.active,.ve-destinos-list .ve-destc.rmaya:hover {background-image: url("/img/explora/rivieramaya.jpg");}
-
-.ve-destinos-list .ve-b1 { width: 9px; height: 9px; margin-top: -9px; margin-left: -9px; border: 2px solid #2dcef6; }
-.ve-destinos-list .ve-b2 { width: 9px; height: 9px; margin-top: -9px; margin-left: -9px; border: 2px solid #2dcef6; }
-.ve-destinos-list .ve-b3 { width: 9px; height: 9px; margin-top: -4px; margin-left: -4px; border: 2px solid #eb1c74; }
-.ve-destinos-list .ve-b4 { width: 9px; height: 9px; margin-top: -3px; margin-left: -3px; border: 2px solid #0d72ff; }
-.ve-destinos-list .ve-b5 { width: 9px; height: 9px; margin-top: -4px; margin-left: -4px; border: 2px solid #4C698F; }
-.ve-destinos-list .ve-b6 { width: 9px; height: 9px; margin-top: -3px; margin-left: -3px; border: 2px solid #4C698F; }
-.ve-destinos-list .ve-b7 { width: 9px; height: 9px; margin-top: -9px; margin-left: -9px; border: 2px solid #fd4f00; }
-.ve-destinos-list .ve-morelink { position: absolute; bottom: 85px; left: 50%; margin-left: -104px; font-family: HelveticaThin, Helvetica, Arial, sans-serif;font-size: 20px; letter-spacing: 1px; -webkit-font-smoothing: subpixel-antialiased; color: #4d6a8e !important; }
-
+/*Tours y Parques*/
 
 

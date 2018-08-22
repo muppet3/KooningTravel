@@ -2,7 +2,6 @@
 <html lang="{{ app()->getLocale() }}">
 
   <head>
-
         <!--Meta tags-->
       <meta charset="utf-8">
       <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -21,14 +20,17 @@
       
        <!--Recursos JS -->
       <script language="javascript" type="text/javascript" src="/js/jquery-3.3.1.js"></script> 
+      <script language="javascript" type="text/javascript" src="/js/jquery.min.js"></script>
       <script language="javascript" type="text/javascript" src="/js/bootstrap.min.js" ></script>   
       <script language="javascript" type="text/javascript" src="/js/jquery-ui.js" ></script>   
+      <script language="javascript" type="text/javascript" src="/js/jcarousel.min.js"></script>
       <script language="javascript" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz2r9rdcvkdJ_6Cy06hX6wmYr7fvyRnaA&callback=initMap" defer></script> 
       <script language="javascript" type="text/javascript" src="/js/jquery.fancybox.min.js" ></script> 
-      <script language="javascript" type="text/javascript" src="/js/config-box.js" ></script>
+      <script language="javascript" type="text/javascript" src="/js/config-box.js" ></script>          
       <script language="javascript" type="text/javascript" src="/js/general.js" ></script>
-      
 
+
+      
       <!--Recursos CSS -->
       <link type="text/css" rel="stylesheet" media="screen" href="/css/kooningtravel.css">
       <link type="text/css" rel="stylesheet" media="screen" href="/css/select2.min.css" />

@@ -1,18 +1,15 @@
 @extends('layouts/structure')
-
 @section('content')
 
 <style type="text/css">
-
-.search-body{ position: relative; background: #FFF; }	
-
+	.search-body{ position: relative; background: #FFF; }	
 </style>
 
 <div class="search-body" >
 
 	<div class="scroll-navbar scroll-navbar-open mh">
 		<ul class="nav nav-tabs" role="tablist">
-			<li class="actt"><a class="scroll-nav" href="javascript:void(0);"><span style="font-size:16px; line-height:47px; " class="mir">RECOMENDADOS</span></a></li>
+		<li class="actt"><a class="scroll-nav" href="javascript:void(0);"><span style="font-size:16px; line-height:47px; " class="mir">RECOMENDADOS</span></a></li>
 			<li class=""><a class="scroll-nav" href="https://kooningtravel.com/hotels/search/Acapulco?type=1&d=1&sd=2018-03-19&ed=2018-03-23&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0&r4a=0&r4k=0&r4k1a=0&r4k2a=0&r4k3a=0&r5a=0&r5k=0&r5k1a=0&r5k2a=0&r5k3a=0"><span class="aca mir col">Acapulco</span></a></li>
 			<li class=""><a class="scroll-nav" href="https://kooningtravel.com/hotels/search/Cancun?type=1&d=2&sd=2018-03-19&ed=2018-03-23&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0&r4a=0&r4k=0&r4k1a=0&r4k2a=0&r4k3a=0&r5a=0&r5k=0&r5k1a=0&r5k2a=0&r5k3a=0"><span class="can mir col">Canc&uacute;n</span></a></li>
 			<li class=""><a class="scroll-nav" href="https://kooningtravel.com/hotels/search/Mexico?type=1&d=11&sd=2018-03-19&ed=2018-03-23&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0&r4a=0&r4k=0&r4k1a=0&r4k2a=0&r4k3a=0&r5a=0&r5k=0&r5k1a=0&r5k2a=0&r5k3a=0"><span class="cdmx mir col">CDMX</span></a></li>
@@ -45,7 +42,7 @@
 <h3 class="text">Explora Destinos</h3>
 
 <div class="ve-destinos-list">
-
+	<img class="mapamexico" src="/img/explora/mapamexico.png" alt="explora tu destino, koning travel, viajes, vacaciones" />
 	<a class="ve-destc ir ve-b5 acapulco" href="https://kooningtravel.com/hotels/search/Acapulco?type=1&d=1&sd=2018-03-19&ed=2018-03-23&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0&r4a=0&r4k=0&r4k1a=0&r4k2a=0&r4k3a=0&r5a=0&r5k=0&r5k1a=0&r5k2a=0&r5k3a=0" data-title="Acapulco">Acapulco</a>
 	<a class="ve-destc ir ve-b1 cancun" href="https://kooningtravel.com/hotels/search/Cancun?type=1&d=2&sd=2018-03-19&ed=2018-03-23&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0&r4a=0&r4k=0&r4k1a=0&r4k2a=0&r4k3a=0&r5a=0&r5k=0&r5k1a=0&r5k2a=0&r5k3a=0" data-title="Cancun">Cancun</a>
 	<a class="ve-destc ir ve-b2 cdmx" href="https://kooningtravel.com/hotels/search/Mexico?type=1&d=11&sd=2018-03-19&ed=2018-03-23&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0&r4a=0&r4k=0&r4k1a=0&r4k2a=0&r4k3a=0&r5a=0&r5k=0&r5k1a=0&r5k2a=0&r5k3a=0" data-title="CDMX">CDMX</a>
