@@ -262,7 +262,7 @@ body .home { height:360px; }
 <!--Caja Home End-->
 <a class="headf" href="/Contacto"></a>
 </div>
-<a class="explor" href="https://www.kooningtravel.com/Explora" >Explora tu próximo viaje</a>
+<a class="explor" href="/explora" >Explora tu próximo viaje</a>
 </div>
 @stop
 @section('content')

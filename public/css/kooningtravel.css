@@ -179,14 +179,14 @@ html body .body-cart .col-md-9 .extras .row .conte .card-hotel .img-hotel-disney
 html body .body-cart .col-md-9 .extras .row .conte .card-hotel a { display: inline-block; float: none; width: 95%; margin: 0px auto; }
 html body .body-cart .col-md-9 .extras .row .conte .card-hotel a .card-precios { margin-top: 7px!important; background-color: bisque; padding: 4px!important; background: rgba(216, 215, 213, 0.2); border-radius: 2px; -webkit-transition: .3s; -o-transition: .3s;  width: 100%; transition: .3s; }
 html body .body-cart .col-md-9 .extras .row .conte .card-hotel .card-precios .txt-paquete { font-size: 14px; float: left; display: inline-block; width: 100%; text-align: left; color: #666; font-family: Roboto,sans-serif;  }
-html body .body-cart .col-md-9 .extras .row .conte .card-hotel .card-precios .txt-precio { margin:0 0 10px; color: #888; font-size: 14px; display: inline-block; float: left; font-family: Roboto,sans-serif }
-html body .body-cart .col-md-9 .extras .row .conte .card-hotel .card-precios .txt-precio .precio { font-size: 18px; color: #2196F3; font-family:  Roboto, sans-serif; }
+html body .body-cart .col-md-9 .extras .row .conte .card-hotel .card-precios .txt-precio { margin:0 0 10px; color: #888; font-size:18px; display: inline-block; float: left; font-family: Roboto,sans-serif }
+html body .body-cart .col-md-9 .extras .row .conte .card-hotel .card-precios .txt-precio .precio { float: right; margin-left: 3px; font-size: 18px; color: #2196F3; font-family:  Roboto, sans-serif; }
 html body .body-cart .col-md-9 .extras .row .conte .card-hotel .mensualidades { font-family: Roboto,sans-serif; margin:0 0 10px!important; font-size: 12px; padding-top: 7px!important; color: #666; text-align: left; width: 100%; text-indent: 8px; }
 html body .body-cart .col-md-9 .extras .row .conte .card-hotel { position: relative; display: inline-block; background: #fff; margin-top: 15px; -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.09); box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.09); -webkit-transition: .3s; -o-transition: .3s; transition: .3s; }
 html body .body-cart .col-md-9 .extras .row .conte .card-hotel:hover { -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.7)!important; box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.7)!important; -webkit-transform: translateY(-8px); -ms-transform: translateY(-8px); transform: translateY(-8px); }
 
 /*Search*/
-body .search-body { width: 100%; display: inline-block; background: #F0F0F0; float: left; }
+body .search-body { width: 100%; display: inline-block;float: left; }
 body .search-body .container .bread-crub { padding: 15px; color: #000; width: 100%; text-align: left; font-family: Roboto, sans-serif; }
 body .search-body .container .bread-crub .icon-home { color: #000; }
 body .search-body .container .bread-crub b { font-weight: 700; font-size: 13px; }
@@ -798,3 +798,141 @@ body .generic-fotter .menus-fotter .info-fotter p { width: 90%; float: none; col
 body .generic-fotter .menus-fotter .info-fotter p strong { font-family: Oswald, sans-serif; font-weight: 900; }
 .messaje { z-index: 100; left: 3%; color: #004085; background-color: #cce5ff; position: fixed; bottom: 0; }
 .messaje span { margin-right: 3px; }
+
+
+html body .search-body .scroll-navbar { background: green; margin: 0px; padding: 0px; position: relative; left: 50px; top: 100px; z-index: 99; float: left; display: inline-block; width: 170px; /*background: #cccccc4a;*/ }
+html body .search-body .scroll-navbar .nav-tabs { margin: 0px; padding: 0px; border-radius: 6px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.05); display: block; overflow: hidden; text-align: center; list-style: none; }
+html body .search-body .scroll-navbar-open .nav-tabs, html body .search-body .scroll-navbar:hover .nav-tabs { width: 170px; }
+html body .search-body .scroll-navbar .nav-tabs { border-bottom: 1px solid #ddd; }
+html body .search-body .scroll-navbar-open .nav-tabs .nav>li, html body .search-body .scroll-navbar-open .nav-tabs .nav>li>a span { line-height: 26px; font-size: 13px; font-weight: normal; display: inline-block; float: left; text-align: center; width: 100%; height: 27px; }
+html body .search-body .scroll-navbar-open .nav>li, html body .search-body .scroll-navbar-open .nav>li>a span { line-height: 26px; font-size: 13px; font-weight: normal; display: inline-block; float: left; text-align: center; width: 100%; height: 27px; }
+html body .search-body .scroll-navbar-open .nav>li, html body .search-body .scroll-navbar-open .nav>li>a { padding: 0px; display: inline-block; float: left; text-align: center; width: 100%; height: 27px; }
+html body .search-body .scroll-navbar li { width: 100%; }
+html body .search-body .nav-tabs>li { float: left; margin-bottom: -1px; }
+html body .search-body .scroll-navbar-open .nav>li, html body .search-body .scroll-navbar-open .nav>li>a { display: block; position: relative; }
+html body .search-body .scroll-navbar .actt { height: 45px!important; }
+html body .search-body .scroll-navbar .actt .scroll-nav { display: block; padding: 4px 0px; margin: 0px; border: 0px; background: #1a8a01; color: #fff; }
+html body .search-body .scroll-navbar .actt .scroll-nav .mir { height: 45px!important; padding: 0px!important; margin: 0px!important; font-size: 16px; line-height: 47px; }
+html body .search-body .scroll-navbar .actt .scroll-nav { height: 45px!important; padding: 0px!important; cursor: default; }
+html body .search-body .scroll-navbar .nav .active .scroll-nav:hover{ background: #d8528b; color: #FFF; margin: 0px; border:0px;  }
+html body .search-body .scroll-navbar .nav li a .col:hover{ background: #FFF;  }
+
+.help { background: brown; width: 190px; margin: 0px; position:relative; top: 100px; float: right; right: 50px; }
+.help .item { display: inline-block; margin-bottom:25px; width:100%; height: 100%; float: left; text-align: center; overflow: hidden }
+.help .item a { color: rgb(13, 114, 255); width: 100%; display: block; height: 100%; padding:0px; border-radius: 6px; text-decoration: none; float: left; }
+.help .item:hover { text-decoration: none; background: #edf0f3; background: rgba(86, 112, 140, 0.1) }
+.help .item:active { text-decoration: none; background: #d4dbe2; background: rgba(86, 112, 140, 0.25) }
+.help .item .h3 { font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-size: 20px; letter-spacing: 1px; -webkit-font-smoothing: subpixel-antialiased; color: #4d6a8e; float: left; width: 100%; margin: 0px; padding: 0px; margin-top: 10px; height: 54px; }
+.help .item.email .h3 { background: url(https://kooningtravel.com/img/email.png) no-repeat center  20px; }
+.help .item.telefono .h3 { background: url(https://kooningtravel.com/img/telephone.png) no-repeat center  20px; }
+.help .item p { margin: 0px auto; color: rgba(86, 112, 140, 0.5); display: inline-block; width: 100%; text-align: center; }
+.help .item .link { font-weight: normal; color: rgb(13, 114, 255); font-size: 12px; width: 100%; display: inline-block; float: left; }
+
+.reds { display: inline-block; width: 60%; margin: 0px auto; padding: 0px; list-style: none; height: 30px; margin-top: 13px; }
+.reds li { float: left; margin: 0px; padding: 0px; display: inline-block; width: 25px; height: 30px; }
+.reds li a { border-radius: 0px!important; display: inline-block!important; float: left!important; padding: 0px!important; margin: 0px!important; height: 30px!important; text-align: center; }
+.reds li a i { color: #4c698f; font-size: 20px; margin: 0px auto; float: none; margin-top: 5px; }
+
+
+
+.win {
+    background: url(/img/rv.png) no-repeat 0px 0px transparent;
+    position: absolute;
+    bottom: 13%;
+    left: 11%;
+    width: 216px;
+    height: 211px;
+    display: inline-block;
+    float: left;
+}
+
+#explora-destinos {
+    position: relative;
+    right: -52px;
+    display: inline-block;
+    width: 900px;
+    float: left;
+}
+
+.text {
+    font-weight: bold!important;
+    font-size: 30px!important;
+    text-align: center;
+    font-family: HelveticaThin, Helvetica, Arial, sans-serif!important;
+    color: #4d6a8e!important;
+    margin: 30px 0px;
+    width: 100%;
+    height: 38px;
+}
+
+
+
+
+.acapulco{ top:76%; left:50%; }
+.cancun{ right: 13.5%; top: 63%;  }
+.cdmx{ right: 46%; top: 66%;  }
+.guadalajara{ top: 60%; right: 58%; }
+.guanajuato{ top:59%; right:51%;  }
+.holbox{ top:60.5%; right: 14.5%;  }
+.huatulco{ top: 82%; right: 40%; }
+.isla{ top:62%; right: 12.5%;  }
+.loreto{ top: 37%; left: 25%;  }
+.lcabos{ top: 46.5%;  left: 27%; }
+.mazatlan{ top:50%; left: 37%; }
+.merida{ top: 63%; right: 20%;  }
+.monterrey{ top:40%; right: 47%; }
+.morelia{ top:67%; left: 46%; }
+.oaxaca{ top:78%; left: 60%; }
+.pcarmen{ top: 64%; right: 14%;  }
+.puebla{ top: 70%; right: 43%; }
+.pvallarta{ top: 59%; right: 63%; }
+.queretaro{ top: 60%; right: 48%;  }
+.rnayarit{ top: 58%; right: 63%;  }
+.smiguel{ top: 60%; right: 47%; }
+.taxco{ top: 72%; right: 47%; }
+.vbravo{ top: 66%; right: 48%; }
+.veracruz{ top: 66%; right: 40%;   }
+.rmaya{ top: 65.5%; right:14.9%;  }
+
+.ve-destinos-list { background: url(/img/explora/mapamexico.png) center 20px no-repeat; height: 700px; position: relative; width: 100%; display: inline-block; float: left; margin: 0 auto; }
+.ve-destinos-list .ve-destc { border-radius: 100%; position: absolute; display: block; z-index: 1; -webkit-transition: all 200ms linear; -moz-transition: all 200ms linear; -ms-transition: all 200ms linear; -o-transition: all 200ms linear; transition: all 200ms linear; }
+.ve-destinos-list .ve-destc.active, .ve-destinos-list .ve-destc:hover { width: 50px; height: 50px; margin-top: -25px; margin-left: -25px; box-shadow: 0 1px 15px rgba(0, 0, 0, 0.15); border: 2px solid #fff; background-color: #fff; background-position: 0 0; background-repeat: no-repeat; z-index: 0; }
+.ve-destinos-list .ve-destc.active { z-index: 2 !important; }
+
+.ve-destinos-list .ve-destc.acapulco.active,.ve-destinos-list .ve-destc.acapulco:hover { background-image: url("/img/explora/acapulco.jpg");}
+.ve-destinos-list .ve-destc.cancun.active,.ve-destinos-list .ve-destc.cancun:hover {background-image: url("/img/explora/cancun.jpg");}
+.ve-destinos-list .ve-destc.cdmx.active,.ve-destinos-list .ve-destc.cdmx:hover {background-image: url("/img/explora/cdmx.jpg");}
+.ve-destinos-list .ve-destc.guadalajara.active,.ve-destinos-list .ve-destc.guadalajara:hover {background-image: url("/img/explora/guadalajara.jpg");}
+.ve-destinos-list .ve-destc.guanajuato.active,.ve-destinos-list .ve-destc.guanajuato:hover {background-image: url("/img/explora/guanajuato.jpg");}
+.ve-destinos-list .ve-destc.holbox.active,.ve-destinos-list .ve-destc.holbox:hover {background-image: url("/img/explora/holbox.jpg");}
+.ve-destinos-list .ve-destc.huatulco.active,.ve-destinos-list .ve-destc.huatulco:hover {background-image: url("/img/explora/huatulco.jpg");}
+.ve-destinos-list .ve-destc.isla.active,.ve-destinos-list .ve-destc.isla:hover {background-image: url("/img/explora/islamujeres.jpg");}
+.ve-destinos-list .ve-destc.loreto.active,.ve-destinos-list .ve-destc.loreto:hover {background-image: url("/img/explora/loretobc.jpg");}
+.ve-destinos-list .ve-destc.lcabos.active,.ve-destinos-list .ve-destc.lcabos:hover {background-image: url("/img/explora/loscabos.jpg");}
+.ve-destinos-list .ve-destc.mazatlan.active,.ve-destinos-list .ve-destc.mazatlan:hover {background-image: url("/img/explora/mazatlan.jpg");}
+.ve-destinos-list .ve-destc.merida.active,.ve-destinos-list .ve-destc.merida:hover {background-image: url("/img/explora/merida.jpg");}
+.ve-destinos-list .ve-destc.monterrey.active,.ve-destinos-list .ve-destc.monterrey:hover {background-image: url("/img/explora/monterrey.jpg");}
+.ve-destinos-list .ve-destc.morelia.active,.ve-destinos-list .ve-destc.morelia:hover {background-image: url("/img/explora/morelia.jpg");}
+.ve-destinos-list .ve-destc.oaxaca.active,.ve-destinos-list .ve-destc.oaxaca:hover {background-image: url("/img/explora/oaxaca.jpg");}
+.ve-destinos-list .ve-destc.pcarmen.active,.ve-destinos-list .ve-destc.pcarmen:hover {background-image: url("/img/explora/playacarmen.jpg");}
+.ve-destinos-list .ve-destc.puebla.active,.ve-destinos-list .ve-destc.puebla:hover {background-image: url("/img/explora/puebla.jpg");}
+.ve-destinos-list .ve-destc.pvallarta.active,.ve-destinos-list .ve-destc.pvallarta:hover {background-image: url("/img/explora/puertovallarta.jpg");}
+.ve-destinos-list .ve-destc.queretaro.active,.ve-destinos-list .ve-destc.queretaro:hover {background-image: url("/img/explora/queretaro.jpg");}
+.ve-destinos-list .ve-destc.rnayarit.active,.ve-destinos-list .ve-destc.rnayarit:hover {background-image: url("/img/explora/rivieranayarit.jpg");}
+.ve-destinos-list .ve-destc.smiguel.active,.ve-destinos-list .ve-destc.smiguel:hover {background-image: url("/img/explora/sanmiguelallende.jpg");}
+.ve-destinos-list .ve-destc.taxco.active,.ve-destinos-list .ve-destc.taxco:hover {background-image: url("/img/explora/taxco.jpg");}
+.ve-destinos-list .ve-destc.vbravo.active,.ve-destinos-list .ve-destc.vbravo:hover {background-image: url("/img/explora/vallebravo.jpg");}
+.ve-destinos-list .ve-destc.veracruz.active,.ve-destinos-list .ve-destc.veracruz:hover {background-image: url("/img/explora/veracruz.jpg");}
+.ve-destinos-list .ve-destc.rmaya.active,.ve-destinos-list .ve-destc.rmaya:hover {background-image: url("/img/explora/rivieramaya.jpg");}
+
+.ve-destinos-list .ve-b1 { width: 9px; height: 9px; margin-top: -9px; margin-left: -9px; border: 2px solid #2dcef6; }
+.ve-destinos-list .ve-b2 { width: 9px; height: 9px; margin-top: -9px; margin-left: -9px; border: 2px solid #2dcef6; }
+.ve-destinos-list .ve-b3 { width: 9px; height: 9px; margin-top: -4px; margin-left: -4px; border: 2px solid #eb1c74; }
+.ve-destinos-list .ve-b4 { width: 9px; height: 9px; margin-top: -3px; margin-left: -3px; border: 2px solid #0d72ff; }
+.ve-destinos-list .ve-b5 { width: 9px; height: 9px; margin-top: -4px; margin-left: -4px; border: 2px solid #4C698F; }
+.ve-destinos-list .ve-b6 { width: 9px; height: 9px; margin-top: -3px; margin-left: -3px; border: 2px solid #4C698F; }
+.ve-destinos-list .ve-b7 { width: 9px; height: 9px; margin-top: -9px; margin-left: -9px; border: 2px solid #fd4f00; }
+.ve-destinos-list .ve-morelink { position: absolute; bottom: 85px; left: 50%; margin-left: -104px; font-family: HelveticaThin, Helvetica, Arial, sans-serif;font-size: 20px; letter-spacing: 1px; -webkit-font-smoothing: subpixel-antialiased; color: #4d6a8e !important; }
+
+
+

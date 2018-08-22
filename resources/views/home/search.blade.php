@@ -6,6 +6,11 @@
 
 @section('content')
 
+<style type="text/css">
+  html body .search-body { background: #F0F0F0; }
+
+</style>
+
 <div class="search-body" >
   <div class="container" >
     <div class="bread-crub">
