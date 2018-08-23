@@ -823,20 +823,20 @@ function initMap2() {
 		  precio();
 	 });
 
-		if ( $(window).width() > 770 ) {
-			$('.carousel').jcarousel({ wrap: 'circular' });
-			$('.carousel-prev').jcarouselControl({ target: '-=1' });
-			$('.carousel-next').jcarouselControl({ target: '+=1' });
-			$('.carousel-prev, .carousel-next').click(function() {
-				$(this).parent().children('.carousel-prev').removeClass('disabled');
-			});
-			// Small Set
-			$('.carousel ul').each(function( index ) {
-				if ( $(this).children().length < 5 ) {
-					$(this).parent().parent().addClass('small-set').children('a').remove();
-				}
-			});
-		};
+	$('.carousel').jcarousel({ wrap: 'circular' });
+	$('.carousel-prev').jcarouselControl({ target: '-=1' });
+	$('.carousel-next').jcarouselControl({ target: '+=1' });
+
+	$('.carousel-prev, .carousel-next').click(function() {
+		$(this).parent().children('.carousel-prev').removeClass('disabled');
+	});
+
+	// Small Set
+	$('.carousel ul').each(function( index ) {
+		if ( $(this).children().length < 5 ) {
+			$(this).parent().parent().addClass('small-set').children('a').remove();
+		}
+	});
 
 	var url =  window.location.pathname.substr(9);	
 

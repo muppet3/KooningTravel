@@ -79,7 +79,6 @@ html body .body-cart .col-md-12 .nav-wizard > li a {background-color: #eee; }
 html body .body-cart .col-md-12 .nav-wizard > li:first-child a { border-radius: 5px 0 0 5px;  }
 html body .body-cart .col-md-12 .nav-wizard{ margin-top: 30px; width: 100%; display: inline-block; float: left; list-style: none; }
 html body .body-cart .col-md-12 .nav-wizard li{ cursor: pointer; float: left; text-align: center; display: inline-block; position: relative; overflow: visible; border-right: 15px solid transparent; }
-
 html body .body-cart .col-md-9 .form-pay-reservation .paymentType, html body .body-cart .col-md-9 .form-pay-reservation .amount-pay { width: 100%; }
 html body .body-cart .col-md-9 .form-pay-reservation .paymentType #rad-payment-form { width: 100%; display: inline-block; float: left; padding: 0px; margin: 0px; }
 html body .body-cart .col-md-9 .form-pay-reservation .amount-pay { background: #f4f7f9; }
@@ -340,7 +339,6 @@ a:link, a:visited { text-decoration: none; }
 .nav1 { left: 21%; }
 .nav2 { left: 27%; }
 .sub-nav li:last-child a { border-radius: 0 0 8px 8px; border-bottom: 0 none; }
-a:link, a:visited { text-decoration: none; }
 .sub-nav .item2 .sublist { display: inline-block; border-radius: 4px; padding: 0px; position: absolute; left: 200px; background: #FFF; top: 0px; width: 200px; }
 .sub-nav .item2 .sublist li { width: 100%; }
 .sub-nav .dophin .sublist { top: 42px; }
@@ -911,81 +909,54 @@ html body .search-body .white-content .ve-destinos-list .ve-b6 { width: 9px; hei
 html body .search-body .white-content .ve-destinos-list .ve-b7 { width: 9px; height: 9px; margin-top: -9px; margin-left: -9px; border: 2px solid #fd4f00; }
 html body .search-body .white-content .ve-destinos-list .ve-morelink { position: absolute; bottom: 85px; left: 50%; margin-left: -104px; font-family: HelveticaThin, Helvetica, Arial, sans-serif;font-size: 20px; letter-spacing: 1px; -webkit-font-smoothing: subpixel-antialiased; color: #4d6a8e !important; }
 
-
 /*Tours y Parques*/
-
-html body .tours div ul, html body .tours div img, html body .tours div h3, html body div ul li, html body .tours div a, html body .tours div span, html body .tours div label, html body .tours div p, html body .tours div { display: inline-block; float: left; margin:0px; padding: 0px; list-style: none; outline: none; border:none;  }
-html body .tours .white-content { background: #fff; }
-html body .tours .grey-content { background: #f6f6f6; }
-html body .tours div .wrapper {margin: 0 auto;width: 100%;text-align: center;}
-html body .tours div .h2 { text-align: center; font-family: HelveticaThin, Helvetica, Arial, sans-serif; color: #4d6a8e; font-size: 32px; margin: 30px 0px; width: 100%; height: 38px; }
-html body .tours div a:hover { text-decoration: none; }
-html body .tours { text-align: center; width: 100%; display: inline-block; float: left; }
-html body .tours .white-content, html body .tours .grey-content{ width: 100%;}
-
-
-.carousel-wrapper {position: relative;float: none!important;}
-.small-set .carousel ul { width: auto; }
-.carousel {overflow: hidden;width: 100%;}
-.ticket-list .item {vertical-align: top;margin: 0 4px 10px 4px;width: 218px;position: relative;}
-.small-set .carousel li {}
-.ticket-list .item .image-wrapp { width: 217px; height: 115px; border-radius: 6px; text-align: center; position: relative; overflow: hidden; background: #fff; box-shadow: 0 0 5px rgba(0, 0, 0, 0.03), 0 12px 25px -10px rgba(0, 0, 0, 0.08); margin: 5px 0 8px 0; border: 1px solid #ececec; }
-.ticket-list .item img { position: absolute; width: 217px; height: 234px; top: -119px; left: 0; -webkit-transition: top 300ms ease-out 200ms; -moz-transition: top 300ms ease-out 200ms; -o-transition: top 300ms ease-out 200ms; -ms-transition: top 300ms ease-out 200ms; transition: top 300ms ease-out 200ms; }
-.ticket-list .item h3 a {width: 100%;color: #444;font-size: 16px;line-height: 20px;-webkit-font-smoothing: subpixel-antialiased;text-decoration: none;text-align: left;font-family: Roboto, sans-serif;font-weight: 300;}
-.ticket-list .item p {margin-bottom: 0;color: #aaa;line-height: 20px;width: 100%;}
-.ticket-list .item p a {color: #aaa;text-decoration: none;width: 100%;text-align: left;}
-.white-content .carousel-prev, .white-content .carousel-next { background: #fff; background: rgba(255, 255, 255, 0.95); }
-.carousel-prev.disabled { opacity: .15; }
-.carousel-next { right: -20px; }
-.carousel-prev, .carousel-next { position: absolute; top: 10px; width: 40px; height: 95px; border-radius: 6px; text-align: center; color: transparent; z-index: 5; cursor: pointer; -o-user-select: none; -ms-user-select: none; -moz-user-select: none; -webkit-user-select: none; user-select: none; }
-.carousel-prev { left: -20px; }
-.item h3 {margin: 10px 0px 10px 0px!important;width: 100%;}
-
-
-
-
-
-
-.ticket-list .item .image-wrapp { width: 217px; height: 115px; border-radius: 6px; text-align: center; position: relative; overflow: hidden; background: #fff; box-shadow: 0 0 5px rgba(0, 0, 0, 0.03), 0 12px 25px -10px rgba(0, 0, 0, 0.08); margin: 5px 0 8px 0; border: 1px solid #ececec }
-.ticket-list .item img { position: absolute; width: 217px; height: 234px; top: -119px; left: 0; -webkit-transition: top 300ms ease-out 200ms; -moz-transition: top 300ms ease-out 200ms; -o-transition: top 300ms ease-out 200ms; -ms-transition: top 300ms ease-out 200ms; transition: top 300ms ease-out 200ms }
-.ticket-list .item:hover img { top: 0 }
-.ticket-list .item .unknown-img { display: block; width: 217px; height: 117px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); border-radius: 6px; margin-bottom: 10px; background: url(https://kooningtravel.com/img/unknown.png) no-repeat }
-.ticket-list .item:hover .unknown-img { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 2px #444 }
-.ticket-list .item h3 span { color: #aaa; font-size: 13px; display: block }
-.ticket-list .item p { margin-bottom: 0; color: #aaa; line-height: 20px }
-.ticket-list .price-from { display: none; color: #e92667 }
-.ticket-list .icon-r1a { background: url(https://kooningtravel.com/img/r1a-kids.png) 0 0 no-repeat; width: 15px; height: 19px; display: -moz-inline-stack; display: inline-block; *display: inline; zoom: 1; margin-right: 2px; top: 3px; position: relative }
-.ticket-list .icon-kids { background: url(https://kooningtravel.com/img/r1a-kids.png) 0 -23px no-repeat; width: 15px; height: 19px; display: -moz-inline-stack; display: inline-block; *display: inline; zoom: 1; margin-right: 2px; top: 3px; position: relative; margin-left: 10px }
-.ticket-list .icon-sincolas { padding-left: 23px; padding-top: 5px; padding-bottom: 1px; height: 15px; color: #444; background: url(https://kooningtravel.com/img/ticket-icons.png) -3px -54px no-repeat; opacity: .5; display: none }
-.ticket-list .icon-sincolas:after { content: ''; display: block; clear: both }
+html body div div .wrapper .h2 { text-align: center; font-family: HelveticaThin, Helvetica, Arial, sans-serif; color: #4d6a8e; font-size: 32px; margin: 30px 0px; width: 100%; height: 38px; }
+html body div div .wrapper >.h2+.h3{ text-align: center; font-family: Helvetica, Arial, sans-serif; color: #476183; font-size: 21px; margin: -20px 0 10px 0; }
+html body div div .wrapper { max-width: 1017px; padding: 0 30px; margin: 0 auto; text-align: center; display: inline-block; }
+html body div .white-content { background: #fff; }
+html body div .grey-content { background: #f6f6f6; }
+html body div div .wrapper .carousel-wrapper { position: relative; }
+html body div div .wrapper .carousel-wrapper .carousel { overflow: hidden; width: 94%; margin: 0 auto; }
+html body div div .wrapper .carousel-wrapper .carousel ul { width: 2000em; position: relative; list-style: none; margin: 0; padding: 0; text-align: center; }
+html body div div .wrapper .small-set .carousel, html body div div .wrapper .small-set .carousel ul { width: auto }
+html body div div .wrapper .carousel-wrapper .carousel-prev, html body div div .wrapper .carousel-wrapper .carousel-next { position: absolute; top: 10px; width: 40px; height: 95px; border-radius: 6px; text-align: center; color: transparent; z-index: 5; cursor: pointer; -o-user-select: none; -ms-user-select: none; -moz-user-select: none; -webkit-user-select: none; user-select: none; }
+html body div div .wrapper .carousel-wrapper .carousel-prev { left: -20px; }
+html body div div .wrapper .carousel-wrapper .carousel-next { right: -20px; }
+html body div div .wrapper .carousel-wrapper .carousel-prev.disabled { opacity: .15 !important; }
+html body div .white-content .carousel-prev, html body div .white-content .carousel-next { background: #fff; }
+html body div .white-content .carousel-prev:hover, html body div .white-content .carousel-next:hover { background: #f6f6f6; }
+html body div .white-content .carousel-prev:active, html body div .white-content .carousel-next:active { background: #f2f2f2; }
+html body div .grey-content .carousel-prev, html body div .grey-content .carousel-next { background: #f6f6f6; }
+html body div .grey-content .carousel-prev:hover, html body div .grey-content .carousel-next:hover { background: #eee; }
+html body div .grey-content .carousel-prev:active, html body div .grey-content .carousel-next:active { background: #e2e2e2; }
+html body div div .wrapper .small-set .carousel ul { width: auto; }
+html body div div .wrapper .carousel-wrapper .carousel ul .item { float: left; vertical-align: top; margin: 0 4px 10px 4px; width: 218px; position: relative; }
+html body div div .wrapper .carousel-wrapper .carousel ul .item .image-wrapp { width: 217px; height: 115px; border-radius: 6px; text-align: center; position: relative; overflow: hidden; background: #fff; box-shadow: 0 0 5px rgba(0, 0, 0, 0.03), 0 12px 25px -10px rgba(0, 0, 0, 0.08); margin: 5px 0 8px 0; border: 1px solid #ececec; }
+html body div div .wrapper .carousel-wrapper .carousel ul .item img { position: absolute; width: 217px; height: 234px; top: -119px; left: 0; -webkit-transition: top 300ms ease-out 200ms; -moz-transition: top 300ms ease-out 200ms; -o-transition: top 300ms ease-out 200ms; -ms-transition: top 300ms ease-out 200ms; transition: top 300ms ease-out 200ms; }
+html body div div .wrapper .carousel-wrapper .carousel ul .item h3 a { width: 100%; color: #444; font-size: 16px; line-height: 20px; -webkit-font-smoothing: subpixel-antialiased; text-decoration: none; text-align: left; font-family: Roboto, sans-serif; font-weight: 300; }
+html body div div .wrapper .carousel-wrapper .carousel ul .item p a { color: #aaa; text-decoration: none; width: 100%; text-align: left; }
+html body div div .wrapper .carousel-wrapper .carousel-prev.disabled { opacity: .15; }
+html body div div .wrapper .carousel-wrapper .carousel-prev { left: -20px; }
+html body div div .wrapper .carousel-wrapper .carousel ul .item h3 { margin: 10px 0px 10px 0px!important; width: 100%; }
+html body div div .wrapper .carousel-wrapper .carousel ul .item:hover img { top: 0 }
+html body div div .wrapper .carousel-wrapper .carousel ul .item .unknown-img { display: block; width: 217px; height: 117px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); border-radius: 6px; margin-bottom: 10px; background: url(https://kooningtravel.com/img/unknown.png) no-repeat }
+html body div div .wrapper .carousel-wrapper .carousel ul .item:hover .unknown-img { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 2px #444 }
+html body div div .wrapper .carousel-wrapper .carousel ul .item h3 span { color: #aaa; font-size: 13px; display: block }
+html body div div .wrapper .carousel-wrapper .carousel ul .item p { margin-bottom: 0; color: #aaa; line-height: 20px }
+html body div div .wrapper .carousel-wrapper .carousel ul .price-from { display: none; color: #e92667 }
+html body div div .wrapper .carousel-wrapper .carousel ul .icon-r1a { background: url(https://kooningtravel.com/img/r1a-kids.png) 0 0 no-repeat; width: 15px; height: 19px; display: -moz-inline-stack; display: inline-block; *display: inline; zoom: 1; margin-right: 2px; top: 3px; position: relative }
+html body div div .wrapper .carousel-wrapper .carousel ul .icon-kids { background: url(https://kooningtravel.com/img/r1a-kids.png) 0 -23px no-repeat; width: 15px; height: 19px; display: -moz-inline-stack; display: inline-block; *display: inline; zoom: 1; margin-right: 2px; top: 3px; position: relative; margin-left: 10px }
+html body div div .wrapper .carousel-wrapper .carousel ul .icon-sincolas { padding-left: 23px; padding-top: 5px; padding-bottom: 1px; height: 15px; color: #444; background: url(https://kooningtravel.com/img/ticket-icons.png) -3px -54px no-repeat; opacity: .5; display: none }
+html body div div .wrapper .carousel-wrapper .carousel ul .icon-sincolas:after { content: ''; display: block; clear: both }
+html body div div .carousel-next span { width: 19px; height: 56px; display: block; background: url("/img/carousel_right.png"); position: absolute; top: 50%; margin-top: -28px; right: 10px; }
+html body div div .carousel-prev span { width: 19px; height: 56px; display: block; background: url("/img/carousel_left.png"); position: absolute; top: 50%; margin-top: -28px; left: 10px; }
+html body div div .wrapper .h2 .labelp { width: 50%;margin: 0px; padding: 0px; display: inline-block; float: left; }
 
 
 
 
 
-
-
-
-
-.carousel-next span { width: 19px; height: 56px; display: block; background: url("/img/carousel_right.png"); position: absolute; top: 50%; margin-top: -28px; right: 10px; }
-.carousel-prev span { width: 19px; height: 56px; display: block; background: url("/img/carousel_left.png"); position: absolute; top: 50%; margin-top: -28px; left: 10px; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Caja generica parques y tours*/
 
 
 
