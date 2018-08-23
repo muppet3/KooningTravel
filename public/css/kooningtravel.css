@@ -914,4 +914,152 @@ html body .search-body .white-content .ve-destinos-list .ve-morelink { position:
 
 /*Tours y Parques*/
 
+html body .tours div ul, html body .tours div img, html body .tours div h3, html body div ul li, html body .tours div a, html body .tours div span, html body .tours div label, html body .tours div p, html body .tours div { display: inline-block; float: left; margin:0px; padding: 0px; list-style: none; outline: none; border:none;  }
+html body .tours .white-content { background: #fff; }
+html body .tours .grey-content { background: #f6f6f6; }
+html body .tours div .wrapper {margin: 0 auto;width: 100%;text-align: center;}
+html body .tours div .h2 { text-align: center; font-family: HelveticaThin, Helvetica, Arial, sans-serif; color: #4d6a8e; font-size: 32px; margin: 30px 0px; width: 100%; height: 38px; }
+html body .tours div a:hover { text-decoration: none; }
+html body .tours { text-align: center; width: 100%; display: inline-block; float: left; }
+html body .tours .white-content, html body .tours .grey-content{ width: 100%;}
+
+
+.carousel-wrapper {position: relative;float: none!important;}
+.small-set .carousel ul { width: auto; }
+.carousel {overflow: hidden;width: 100%;}
+.ticket-list .item {vertical-align: top;margin: 0 4px 10px 4px;width: 218px;position: relative;}
+.small-set .carousel li {}
+.ticket-list .item .image-wrapp { width: 217px; height: 115px; border-radius: 6px; text-align: center; position: relative; overflow: hidden; background: #fff; box-shadow: 0 0 5px rgba(0, 0, 0, 0.03), 0 12px 25px -10px rgba(0, 0, 0, 0.08); margin: 5px 0 8px 0; border: 1px solid #ececec; }
+.ticket-list .item img { position: absolute; width: 217px; height: 234px; top: -119px; left: 0; -webkit-transition: top 300ms ease-out 200ms; -moz-transition: top 300ms ease-out 200ms; -o-transition: top 300ms ease-out 200ms; -ms-transition: top 300ms ease-out 200ms; transition: top 300ms ease-out 200ms; }
+.ticket-list .item h3 a {width: 100%;color: #444;font-size: 16px;line-height: 20px;-webkit-font-smoothing: subpixel-antialiased;text-decoration: none;text-align: left;font-family: Roboto, sans-serif;font-weight: 300;}
+.ticket-list .item p {margin-bottom: 0;color: #aaa;line-height: 20px;width: 100%;}
+.ticket-list .item p a {color: #aaa;text-decoration: none;width: 100%;text-align: left;}
+.white-content .carousel-prev, .white-content .carousel-next { background: #fff; background: rgba(255, 255, 255, 0.95); }
+.carousel-prev.disabled { opacity: .15; }
+.carousel-next { right: -20px; }
+.carousel-prev, .carousel-next { position: absolute; top: 10px; width: 40px; height: 95px; border-radius: 6px; text-align: center; color: transparent; z-index: 5; cursor: pointer; -o-user-select: none; -ms-user-select: none; -moz-user-select: none; -webkit-user-select: none; user-select: none; }
+.carousel-prev { left: -20px; }
+.item h3 {margin: 10px 0px 10px 0px!important;width: 100%;}
+
+
+
+
+
+
+.ticket-list .item .image-wrapp { width: 217px; height: 115px; border-radius: 6px; text-align: center; position: relative; overflow: hidden; background: #fff; box-shadow: 0 0 5px rgba(0, 0, 0, 0.03), 0 12px 25px -10px rgba(0, 0, 0, 0.08); margin: 5px 0 8px 0; border: 1px solid #ececec }
+.ticket-list .item img { position: absolute; width: 217px; height: 234px; top: -119px; left: 0; -webkit-transition: top 300ms ease-out 200ms; -moz-transition: top 300ms ease-out 200ms; -o-transition: top 300ms ease-out 200ms; -ms-transition: top 300ms ease-out 200ms; transition: top 300ms ease-out 200ms }
+.ticket-list .item:hover img { top: 0 }
+.ticket-list .item .unknown-img { display: block; width: 217px; height: 117px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); border-radius: 6px; margin-bottom: 10px; background: url(https://kooningtravel.com/img/unknown.png) no-repeat }
+.ticket-list .item:hover .unknown-img { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 2px #444 }
+.ticket-list .item h3 span { color: #aaa; font-size: 13px; display: block }
+.ticket-list .item p { margin-bottom: 0; color: #aaa; line-height: 20px }
+.ticket-list .price-from { display: none; color: #e92667 }
+.ticket-list .icon-r1a { background: url(https://kooningtravel.com/img/r1a-kids.png) 0 0 no-repeat; width: 15px; height: 19px; display: -moz-inline-stack; display: inline-block; *display: inline; zoom: 1; margin-right: 2px; top: 3px; position: relative }
+.ticket-list .icon-kids { background: url(https://kooningtravel.com/img/r1a-kids.png) 0 -23px no-repeat; width: 15px; height: 19px; display: -moz-inline-stack; display: inline-block; *display: inline; zoom: 1; margin-right: 2px; top: 3px; position: relative; margin-left: 10px }
+.ticket-list .icon-sincolas { padding-left: 23px; padding-top: 5px; padding-bottom: 1px; height: 15px; color: #444; background: url(https://kooningtravel.com/img/ticket-icons.png) -3px -54px no-repeat; opacity: .5; display: none }
+.ticket-list .icon-sincolas:after { content: ''; display: block; clear: both }
+
+
+
+
+
+
+
+
+
+.carousel-next span { width: 19px; height: 56px; display: block; background: url("/img/carousel_right.png"); position: absolute; top: 50%; margin-top: -28px; right: 10px; }
+.carousel-prev span { width: 19px; height: 56px; display: block; background: url("/img/carousel_left.png"); position: absolute; top: 50%; margin-top: -28px; left: 10px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
