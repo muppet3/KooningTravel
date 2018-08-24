@@ -14,6 +14,7 @@ class ComplementsController extends Controller
         $data['tours']="";
         $data['traslados']="class=active";
         $data['ofertas']="";
+        $data['background']='height: 556px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
         return view('complements/traslados',$data);
     }
 }
