@@ -74,6 +74,39 @@ break;case"m":g=x("m");break;case"M":g=w("M",p,f);break;case"y":m=x("y");break;c
 }	
 
 
+
+
+  		var lati=21.0403825;
+  		var longi = -86.8730981;
+  		var latid= 21.08971600000000000000;
+  		var longid= -86.77087900000000000000;
+      function initMap() {
+        var directionsService = new google.maps.DirectionsService;
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        var map = new google.maps.Map(document.getElementById('mapa'), {
+          zoom: 20,
+          center: {lat: lati, lng: longi}
+        });
+        directionsDisplay.setMap(map);        
+          var waypts = [];
+        directionsService.route({
+         // origin: 'Aeropuerto Internacional de Cancún',
+         origin:{lat: lati, lng: longi},
+          destination: {lat: parseFloat(latid), lng: parseFloat(longid)},
+          optimizeWaypoints: true,
+          travelMode: 'DRIVING'
+        }, function(response, status) {
+          if (status === 'OK') {
+            directionsDisplay.setDirections(response);
+            var route = response.routes[0];
+            
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
+
+
 $(document).ready(function () {	
 
     //DIFERENCIA DE DIAS
