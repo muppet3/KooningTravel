@@ -961,11 +961,11 @@ function initMap2() {
 
 
 
+	$("#tabs").tabs();
 
 
 
-
-
+	
  });
 
 

@@ -254,32 +254,4 @@
 </div>	
 
 
-<script>
-
-$(function () {
-
-	$(".tickets_from_datepicker-wrapper").click(function() { $(this).next().datepicker("show"); });
-	$(".tickets_from_datepicker").bind("click",function(e){
-
-		if($('.tickets_from_datepicker').val()){
-			var dateMin = $('.tickets_from_datepicker').datepicker("getDate");
-			var rMin = new Date(dateMin.getFullYear(), dateMin.getMonth(),dateMin.getDate() - 3);
-			var rMax = new Date(dateMin.getFullYear(), dateMin.getMonth(),dateMin.getDate() + 3);
-			$(".tickets_from_datepicker").val(extraeDate(dateMin));
-			$("#ticket-from").val(extraeDate(rMin));
-			$("#ticket-to").val(extraeDate(rMax));
-		}else{
-			e.preventDefault();
-			$('.tickets_from_datepicker').focus();
-		}
-	});
-		$("#tabs").tabs();
-		$("#search-tabs-entradas").tabs();			
-	});
-</script> 
-
-
-
-
-
 @stop
