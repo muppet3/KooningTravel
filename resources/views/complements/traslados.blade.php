@@ -4,13 +4,12 @@
 
 <style type="text/css">
 	
-	.other { height: 590px!important; }
+	.other { height:600px!important; }
 </style>
 
 @section('head')
 
-
-<div class="traslados">
+<div class="traslados top">
 	
 		<div class="tras" >
 		<div class="boxt" >
@@ -201,7 +200,7 @@
 		</div>
 		</div>
 		<div class="tr" >
-		<div class="map" id="mapa" ></div>
+		<div class="map" id="mtraslado" ></div>
 		<img class="imgmap" src="/img/Traslados/cards.png" alt="Tarjetas Participantes" />
 		</div>
 		</div>
@@ -258,4 +257,5 @@
 </div>
 <p class="pp" ></p>
 </div>
+
 @stop

@@ -74,25 +74,25 @@ break;case"m":g=x("m");break;case"M":g=w("M",p,f);break;case"y":m=x("y");break;c
 }	
 
 
+  		var tlati=21.0403825;
+  		var tlongi = -86.8730981;
+  		var tlatid= 21.08971600000000000000;
+  		var tlongid= -86.77087900000000000000;
 
 
-  		var lati=21.0403825;
-  		var longi = -86.8730981;
-  		var latid= 21.08971600000000000000;
-  		var longid= -86.77087900000000000000;
-      function initMap() {
+      function initMapt() {
         var directionsService = new google.maps.DirectionsService;
         var directionsDisplay = new google.maps.DirectionsRenderer;
-        var map = new google.maps.Map(document.getElementById('mapa'), {
+        var mapp = new google.maps.Map(document.getElementById('mtraslado'), {
           zoom: 20,
-          center: {lat: lati, lng: longi}
+          center: {lat: tlati, lng: tlongi }
         });
-        directionsDisplay.setMap(map);        
+        directionsDisplay.setMap(mapp);        
           var waypts = [];
         directionsService.route({
          // origin: 'Aeropuerto Internacional de Cancún',
-         origin:{lat: lati, lng: longi},
-          destination: {lat: parseFloat(latid), lng: parseFloat(longid)},
+         origin:{lat: tlati, lng: tlongi},
+          destination: {lat: parseFloat(tlatid), lng: parseFloat(tlongid)},
           optimizeWaypoints: true,
           travelMode: 'DRIVING'
         }, function(response, status) {
@@ -105,6 +105,8 @@ break;case"m":g=x("m");break;case"M":g=w("M",p,f);break;case"y":m=x("y");break;c
           }
         });
       }
+
+
 
 
 $(document).ready(function () {	
@@ -120,8 +122,14 @@ $(document).ready(function () {
 
 	lati = parseFloat($("#lat").val());
 	long = parseFloat($("#long").val());
+	
+	tlati=parseFloat($("#latitud").val());
+	tlongi = parseFloat($("#longitud").val());
 
 	initMap();
+
+
+	initMapt();
 
 	// PARA QUE NO ENVIE FORMULARIO AL PULSAR INTRO
 	$('#contactform').on("keyup keypress", function(e) {

@@ -1076,7 +1076,8 @@ html body div .wrapper .all-link:focus { border: 1px solid #fff !important }
 html body div .wrapper .all-link:active { color: #fff; background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(0, 0, 0, 0.75) !important }
 
 /*Traslados*/
-.traslados{width: 100%;text-align: center;display: inline-block;float: left;}
+.top{ position: relative; top: 5%; }
+.traslados{ width: 100%;text-align: center;display: inline-block; }
 .tras {width: 80%;float: none!important;margin: 0px auto!important;}
 .tras div, .tras span, .tras p, .tras input, .tras ul, .tras li, .tras a, .tras form, .tras img, .tras select, .tras button { display: inline-block; margin: 0px; padding: 0px; border: 0px; outline: none; }
 .boxt {width: 373px;height:auto;}
