@@ -161,6 +161,7 @@
           <li class="fancyb" ><a class="auto <?php // echo  $Mautos; ?>" href="/Autos">AUTOS</a></li>
           <li><a class="ofer <?php // echo  $Mofertas; ?>" href="/Promociones">OFERTAS</a></li>
           <li><a class="blogh noselect" href="/Blog">BLOG</a></li>
+          
        </div>
 
 
@@ -238,37 +239,49 @@
       </div>
     </div>
     <div id="shopcart" >
-      <a href="/Carrito"> <span id="cost" ><srong>0</srong></span></a>
-<aside style="display: none;"  class="contt" >
-  <label class="arr" ></label>
-  <div class="listcart" > 
-    <div class="headt" >
-      <span>Nombre</span>
-      <span>Precio</span>   
-    </div>
-    <hr>
+      @guest
+        <a href="/Carrito"> <span id="cost" ><srong>0</srong></span></a>
+        <aside style="display: none;"  class="contt" >
+          <label class="arr" ></label>
+          <div class="listcart" > 
+            <div class="headt" >
+              <span>Nombre</span>
+              <span>Precio</span>   
+            </div>
+            <hr>
 
-    <!--  -->
-   
-    <!--  --> 
-    <div class="tott" >
-      <span class="totat" >
-        <strong>Total </strong>
-      </span>
-      <span class="cantt" >
-        <strong>MXN $<?php //echo number_format($total,2); ?> </strong>
-      </span>
-    </div>
+            <!--  -->
+           
+            <!--  --> 
+            <div class="tott" >
+              <span class="totat" >
+                <strong>Total </strong>
+              </span>
+              <span class="cantt" >
+                <strong>MXN $<?php //echo number_format($total,2); ?> </strong>
+              </span>
+            </div>
 
-    <div class="subt" >
-        <a class="btnt" href="/Carrito"></a>
-    </div>
+            <div class="subt" >
+                <a class="btnt" href="/Carrito"></a>
+            </div>
 
-      <a class="teltt fa fa-phone" href="tel:018008908974">(01) 800 890 8974</a>
-  </div>
+              <a class="teltt fa fa-phone" href="tel:018008908974">(01) 800 890 8974</a>
+          </div>
 
-</aside>
+        </aside>
         
+          @else
+            <li >
+              <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+              </a>
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+              </form>
+            </li>
+          @endguest
+      
     </div>
   </div>
 </div>

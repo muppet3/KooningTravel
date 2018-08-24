@@ -18,6 +18,7 @@
 	*/
 
 	Route::get('/', 'Home\HomeController@home');
+	Route::get('/home', 'Home\HomeController@home');
 	Route::get('explora', 'Home\HomeController@explor');
 	Route::get('search/{destino}', 'Home\HomeController@search');
 	Route::get('details/{id}/{hotel}', 'Home\HomeController@details');
@@ -54,9 +55,6 @@
 	*/
 	Route::get('promociones', 'Promotions\PromotionsController@promociones');
 	Route::get('oferta/{oferta}', 'Promotions\PromotionsController@ofertas');
-	Auth::routes();
-
-
 	/*
 		╔══════════════╗
 		║     Pago     ║
@@ -64,3 +62,12 @@
 	*/
 	Route::get('purchase', 'Purchase\Purchase\PurchaseController@Pago');
 	Route::get('gracias',"Purchase\PurchaseController@gracias");
+
+	/*
+		╔═══════════════╗
+		║     login     ║
+		╚═══════════════╝
+	*/
+	Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+	Route::post('login', 'Auth\LoginController@login');
+	Route::post('logout', 'Auth\LoginController@logout')->name('logout');
