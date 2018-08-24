@@ -24,6 +24,7 @@
       <script language="javascript" type="text/javascript" src="/js/bootstrap.min.js" ></script>   
       <script language="javascript" type="text/javascript" src="/js/jquery-ui.js" ></script>   
       <script language="javascript" type="text/javascript" src="/js/jcarousel.min.js"></script>
+      <script language="javascript" type="text/javascript" src="/js/jquery.cycle2.min.js"></script>
       <script language="javascript" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz2r9rdcvkdJ_6Cy06hX6wmYr7fvyRnaA&callback=initMap" defer></script> 
       <script language="javascript" type="text/javascript" src="/js/jquery.fancybox.min.js" ></script> 
       <script language="javascript" type="text/javascript" src="/js/config-box.js" ></script>          
