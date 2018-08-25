@@ -1135,5 +1135,6 @@ html body div .wrapper .all-link:active { color: #fff; background: rgba(0, 0, 0,
 
 
 /*Admin Logout*/
-.logout{ float:none!important; background: red; width:68%; }
-.logout a{ width: 87%; color: #ffffff;background: red;height: 16px;padding: 5px;border-radius: 5px;padding-top: 0px;line-height: 18px; }
+.logout{float: right!important;background: red;width: 60%;border-radius: 5px;padding: 7px!important;}
+.logout a{width: 100%;color: #ffffff;background: red;}
+.logout a b{display: inline-block;float: left;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-weight: bold;padding: 0px;margin: 0px;}

@@ -275,8 +275,8 @@
 
 
             <li class="logout" >
-              <a class="dropdown-item glyphicon glyphicon-log-out" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                {{ __('Logout') }}
+          <a class="dropdown-item glyphicon glyphicon-log-out" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                <b>{{ __('Logout') }}</b>
               </a>
               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
