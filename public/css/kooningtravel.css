@@ -17,7 +17,7 @@ body { margin: 0px; padding: 0px; text-align: center; }
 @font-face { font-family: HelveticaThin; src: url("fonts/HelveticaNeueEroski-Thin.otf") format('opentype'), url("fonts/HelveticaNeueEroski-Thin.woff") format('woff'), url("fonts/HelveticaNeueEroski-Thin.ttf") format('truetype'); font-weight: 400; font-style: normal }
 
 /*Carrito de compras css menu desplegable*/
-html body .other .header .menu2 #shopcart { width: 10%; height: 100%; background: url("https://www.kooningtravel.com/img/circle.png") no-repeat center 10px transparent; cursor: pointer; }
+html body .other .header .menu2 #shopcart { text-align: center; width: 10%; height: 100%; background: url("https://www.kooningtravel.com/img/circle.png") no-repeat center 10px transparent; cursor: pointer; }
 html body .other .header .menu2 #shopcart #cost { width: 100%; text-align: center; color: #ef6437; margin-top: 1px; font-size: 16px; text-indent: 3px; font-weight: bold; line-height: 54px; }
 html body .other .header .menu2 #shopcart .contt:before { content: ''; position: absolute; width: 43px; height: 10px; background: url(https://www.kooningtravel.com/img/arrow2.png) -85px -8px no-repeat; top: 2.5px; left: 71%; }
 html body .other .header .menu2 #shopcart .contt { width: 254px; position: absolute; right: 5px; top: 45px; z-index: 200; }
@@ -1134,3 +1134,6 @@ html body div .wrapper .all-link:active { color: #fff; background: rgba(0, 0, 0,
 .menut2 img{ display: inline-block; float: left; width: auto; height: auto; }
 
 
+/*Admin Logout*/
+.logout{ float:none!important; background: red; width:68%; }
+.logout a{ width: 87%; color: #ffffff;background: red;height: 16px;padding: 5px;border-radius: 5px;padding-top: 0px;line-height: 18px; }
