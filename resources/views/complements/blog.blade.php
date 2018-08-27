@@ -1,5 +1,6 @@
 @extends('layouts/structure')
 @section('content')
+<<<<<<< HEAD
 
 
 
@@ -96,4 +97,6 @@
    
 </div>  
 
+=======
+>>>>>>> 3a2736ae3d7cac5b6bb67fa872ca2198ae3f5d07
 @stop
