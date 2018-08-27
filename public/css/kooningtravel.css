@@ -1116,9 +1116,6 @@ html body .other .traslados .tras .tr .imgb { margin-top:61px; float:left; }
 html body .other .traslados .tras .boxt form .bloq .time1 #tsm{ position: absolute; top:23px; right:35px; }
 .template{ width: 100%; display: inline-block; float: left;  }
 .col-md-3 .logo img{ margin: 0px auto; float: none; }
-
-
-
 .st{ margin-top: 15px; }
 html body .other .traslados .tras .cuadro-contacto{position: absolute;left: 20px;top:0%;color:#000;border-right:1px solid #f2f2f2;width: 50%; }
 html body .other .traslados .tras .cuadro-contacto .titulo-internas{ color:#FFF; width: 93%;display: inline-block;float: right;margin:10px 0px;padding: 0px;text-align:center;}
@@ -1140,8 +1137,142 @@ html body .other .traslados .tras .cuadro-contacto  #conatcton .input-group #env
 .logout a b{display: inline-block;float: left;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-weight: bold;padding: 0px;margin: 0px;}
 
 
+/* Estilos para el blog*/
+.blog{ padding: 0px; display: inline-block; margin:0px auto; width: 100%;  }
+.blog .cont1{ width: 75%; left: 0px; }
+.blog .cont1 .bl{ border-right: 1px solid #eee; border-bottom: 1px solid #eee; background: #FFF; display: inline-block; height:615px; width:31%; float: left; margin: 0px 0px 15px 17px; }
+.blog .cont1 .bl a{ display: inline-block; float: left; width: 100%;  }
+.blog .cont1 .bl .tab1{ color: #1e73be; text-decoration: none; text-transform: uppercase;font-weight: 700; font-size: 13px; font-family: lato; text-align: left; text-indent: 24px; }
+.blog .cont1 .bl .tab2{ margin-top: 13px; color: #333; text-decoration: none; text-transform: uppercase;  font-weight: 300; width:85%; text-align:left; float: none; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; line-height:1.1; font-size:26px; }
+.blog .cont1 .bl .fecha{ width:88%; background: url("../../img/d.png") no-repeat 0px 3px transparent; display: inline-block; margin-left: 24px; float: left; text-indent: 16px; text-align: left;  padding:0; color:#999;text-transform:uppercase;font-family:lato; font-size:14px;  }
+.blog .cont1 .bl .imgb img{display: inline-block; float: none; width: 279px;  }
+.blog .cont1 .bl .info{display: inline-block;  float: none; width: 90%; font-size: 14px;line-height: 1.428571429; color: #333; font-family: lato; margin-top: 10px; text-align: justify; }
+.blog .cont1 .bl .cult{ color: #1e73be; text-transform: uppercase;font-size: 14px; line-height: 1.428571429; font-family: lato; text-align: left; text-decoration: none; width: 88%; text-indent: 15px; margin-bottom: 10px; }
+.blog .cont2{ width: 25%; left: 0px; }
+.widget { display: inline-block; margin-bottom: 20px; height: auto;  }
 
 
+
+.bloque { margin: 0px auto; position: relative; left: 8%; }
+.blog .bloque { height: auto; float: left; display: inline-block; }
+.blog .bloque .block{ width:320px; float:left; box-shadow: grey -3px -1px 9px; border-radius: 6px; padding: 20px 25px 0px 15px; height:auto; border-right:1px solid #eee; border-bottom:0px solid #eee; background:#fff; }
+.blog .bloque .block .lab{ float: left; height: auto; text-transform:uppercase; font-weight:700; font-size:13px; color:#1e73be;  margin: 0px auto; display: inline-block; text-align: left;  margin-right: 6px; }
+.blog .bloque .block .title{ color:#333; text-transform:uppercase; font-weight:300; font-size:28px; width: 100%;display: inline-block; float: left; text-align: left; }
+.blog .bloque .block .fecha, .top .name-author .fecha{ background: url("../../img/d.png") no-repeat 0px 3px transparent; display: inline-block;  float: left; text-indent: 16px; text-align: left; margin:0;  padding:0; color:#999;text-transform:uppercase;font-family:lato; font-size:14px; }
+.blog .bloque .block .img{ margin:0; height: auto; width: 100%; line-height:0; padding: 10px 0 0px 0; max-width:100%; }
+.blog .bloque .block .info{  display: inline-block; padding: 15px 0 0 0; text-align: justify; line-height: 22px; }
+.blog .bloque .block .cult, .blog .bloque .block .event{ display: inline-block; float: left;   width: 50%;  color: #1e73be;   text-align: center;  text-decoration: none; text-transform: uppercase;font-family: lato; font-size: 14px;  }
+.blog .bloque .head{ background:#DBDBDB;  }
+.blog .bloque .block .cult{ background: url("../../img/e.png") no-repeat 5px 2px transparent;  }
+.blog .bloque .block .redes{ float:left; width: 75%;  display: inline-block; height:auto; margin: 10px 0px 10px 80px; }
+.blog .bloque .block .redes li{ width: 16%;  }
+.blog .bloque .block .redes li, .redes li a, .redes li a i{ height:auto; display: inline-block; float: left; }
+.blog .bloque .block .redes li a{  width: 100%; }
+.blog .bloque .block .redes li a i{ width: 100%; font-size: 2em; color:#e61b76; }
+.blog .bloque .banner{ height: 440px; position: relative; margin-bottom: 20px; }
+.blog .bloque .head .desg{ color:#1b3288!important; margin:0px 0px 15px 0px!important; width: 100%!important; height: auto !important; float: left; display: inline-block; }
+.blog .bloque .head .bgg{ background:#DBDBDB; box-shadow: none; margin-top: 30px !important;  }
+.blog .bloque .block #blogcarousel{ position: relative; width:100%; height: 375px; overflow:visible; display: inline-block; float: left; }
+.blog .bloque .block #blogcarousel .carousel-inner{ overflow: hidden; width: 100%; height: 375px; display: inline-block; float: left; } 
+.blog .bloque .block #blogcarousel .carousel-inner .item{ float: left; margin: 0px auto; width:100%; height: 375px; }
+.blog .bloque .block #blogcarousel .carousel-inner .item a{ float: left; display: inline-block; margin:0px auto; width: 100%; height: 375px; }
+.blog .bloque .block #blogcarousel .carousel-inner .item a img{ float: left; display: inline-block; margin:0px auto; width: 100%; height: 375px; }
+.blog .bloque .block #blogcarousel .carousel-indicators{ bottom: -28px; left: 120px; margin: 0px auto; display: inline-block; width:60px; height:20px;  }
+.blog .bloque .block #blogcarousel .carousel-indicators li{ margin: 4px;  } 
+.blog .bloque .widget .title { margin: 0px; width: 100%; height:auto; text-align: center; text-transform:uppercase; font-weight:700; font-size:16px; color: #333; } 
+.blog .bloque .block .travel{ height: auto; width: 100%;  margin:0px; padding:5px; float:left; line-height:15px; text-align:left; border-bottom:1px solid rgb(244, 244, 244); }
+.blog .bloque .block .travel .url{ outline: none; height: auto; width: 100%; display: inline-block; float: left; }
+.blog .bloque .block .travel .url .img2{ float: left; width: 138px; height: 78px; display: inline-block;  }
+.blog .bloque .block .travel .url .tex{ font-size: 16px; font-weight: bold; font-style: normal; font-variant: normal; text-transform: none; font-family: lato; color:#525252; text-align: justify; display: inline-block; float: right; width:125px; height: auto; padding: 0px!important; margin: 0px !important; }
+.blog .bloque .right .jr-insta-thumb, .bloque .right .jr-insta-thumb .jr_col_2{ width: 100%; height:auto; display: inline-block; float: left;  }
+.blog .bloque .right .jr-insta-thumb .jr_col_2 li{ float: left; display: inline-block; width: 132px; height: 140px; margin: 0 0 2.5% 2.5%;  }
+.blog .bloque .right .jr-insta-thumb .jr_col_2 li a, .blog .bloque .right .jr-insta-thumb .jr_col_2 li a img{ width: 132px; height: 140px; border-radius: 3px; display: inline-block; float: left; margin: 0px; }
+.blog .addthis_inline_follow_toolbox{ width:533px; float:none; margin:0px auto; }
+.blog .blog .addthis_inline_follow_toolbox #atftbx p { text-align:left; }
+.blog .info .subt{ width: 80%; margin:20px 0px 20px 100px; text-align:left; display: inline-block; font-weight: bold; font-size: 30px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  }
+.blog .info .text{ margin-left: 100px; font-size: 16px; font-family: lato; text-align:justify; line-height: 25px; display: inline-block; }
+.blog .info .text ul li{ font-weight: lighter; display: inline-block; float: left; width: 100%; margin-bottom: 10px; }
+.blog .info .text h3{ line-height: 30px; font-weight: lighter; float: left; margin-bottom: 15px; text-align: justify;  }
+.blog .info .text h2{  text-align: justify; width: 100%; margin: 15px 0px 15px 0px;color: #42342c; padding: 0px; }
+.blog .info .subimg{ margin:20px 0px 20px 100px; }
+.blog .info ol{ margin-left: 100px; list-style: decimal; display: inline-block; font-size: 17px; font-family: Roboto; line-height: 30px;  }
+.blog .info ol li{ margin-bottom:16px; font-size:16px; font-family:lato; color:#333; text-align:justify; }
+.yuzo_related_post { overflow: hidden; padding: 10px 0;  margin-top: 50px; display:inline-block;  clear: both;  float: right; right: 29px; }
+.yuzo_related_post .yuzo_related_post, .yuzo_widget_wrap .yuzo_related_post { clear: both; display: block; margin: 5px 0; }
+.yuzo_related_post h3 { text-align:left; margin: 0 !important; font-size: 24px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: 500; }
+.yuzo_related_post .relatedthumb {  margin: 0px 0px 0px 0px; padding: 5px 5px 5px 5px;line-height: 15px; text-align: left;}
+.yuzo_related_post .relatedthumb .yuzo-img-wrap { margin-bottom: 10px;}
+.yuzo_views_post {  opacity: .4;  margin: 4px 0; text-align: left;}
+.yuzo_icon_views { padding-left: 21px;background: url(//blog.bestday.com.mx/wp-content/plugins/yuzo-related-post/assets/images/views.png) 0 3px no-repeat; color: #000;  font-style: italic;}
+.yuzo_related_post .relatedthumb a { overflow: hidden; text-decoration: none; display: block; padding: 0;background-image: none !important; background-color: transparent;color: #1e73be;}
+.single{ overflow: hidden; display: inline-block; float: left; height:auto; margin: 0px; padding: 0px; }
+.single .homeb, .top, .top .name-author, .top .sing-tit, .top .name-author .author, .top .name-author .tips, .top .name-author .koo, .top .name-author .thum, .top .name-author .ho{ margin: 0px; padding: 0px; display: inline-block; float: left;  }
+.blog .top .sing-tit{ color: #333; width: 100%; text-align:left; margin: 10px 0 20px 0; text-transform: uppercase; font-weight: 300;  font-size:27px; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; }
+.blog .bg { width: 1000px;  display: inline-block; height: 500px; text-align: center;  }
+.blog .bg .homeb{ margin-left: 5px; display: inline-block; height: 500px; float:none; margin:0px auto; }
+.blog .top{ padding: 3% 5% 1% 5%;  margin: 0px auto; float: none; }
+.name-author{ line-height: 30px; color: #333; font-size:18px; text-transform:capitalize; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: 500; }
+ .name-author .author{ width: 55px; text-align: left; }
+.name-author .koo, .top .name-author .ho{ color:#1e73be; font-family: lato; font-size: 14px; }
+.name-author .ho{ clear: left; }
+.blog .info{ display: inline-block;;  }
+.name-author .fecha{ clear: both;  }
+.name-author .thum{ width: 20px; font-size: 14px; }
+.name-author .tips{ font-size: 14px; color: #333; font-family: lato; }
+.top .name-author .fecha{ background-position: 0px 8px;  }
+.info2{ background:#F6F6F6;  }
+.info2 .text2{ margin-top: 20px; text-align: right!important;  }
+.info2 .subimg2{ border-radius: 4px;  box-shadow: 0 1px 5px #eb1c7459; margin:0px auto; float: none; }
+.info2 .subt2{ text-align: center!important; }
+.info2 .txb{ margin-top: 30px;  }
+.blog .info2 .text2 h2{ display: inline-block; text-align: center;   }
+
+
+/*Estilos Caja de reservas Blog*/
+.right #contactform{ width:100%; height:auto;  }
+.right #contactform .inline-search .efectocaja{ position: absolute; z-index: 30; left:0px; top:0px; height:45px; opacity:.0; }
+.right #contactform #d{ position: relative;  width: 272px; font-size:20px; outline:0px; text-indent:10px; color:#444; height:45px; border-radius:6px;  }
+.right #contactform .bloque{ background:#FFF; width:auto; height:45px; margin-left:4px; position:relative; }
+.right #contactform .datepicker{ position:absolute; left:0px; top:0px; width:112px; height:45px; cursor:pointer; opacity:.0; }
+.right #contactform .bloque .num{ font-size:32px;display:inline-block; line-height:45px; width:40px; height:45px; }
+.right #contactform .bloque .month{ font-weight:bold;  margin-top:8px; }
+.right #contactform .bloque .day{ color:#888; display:block; }
+.right #contactform .gif{ background: url("https://kooningtravel.com/img/nights.gif") no-repeat center top #FFF; width:60px; height:45px; }
+.right #contactform .bloquep, .sub { width:120px;  }
+.right #contactform .date{ background: #FFF;  }
+.blog .cont2 .right .search .position .select2 .selection .select2-selection__rendered .select2-search #limpiar { font-size: 15px; width: 100%!important; height:50px;  margin: 0px; color: #444;  position: absolute; z-index: 35; text-indent: 6px;   }
+.right #contactform .select2-selection__clear{  width:260px; height: 46px; position: absolute;  top: 0px; left: 0px;line-height: 40px; text-indent: 0px;   text-align: right; margin: 0px !important; z-index: 40;  }
+.right #contactform .selection{ height: 46px;  }
+.right #contactform .select2-selection__choice{ height: 40px; margin: 0px; padding: 0px;  position: absolute; top: 0px; left: 0px; line-height: 45px; width:260px;background-color: transparent; text-indent: 4px; color: #444; font-size: 19px;border: 0px;}
+.right #contactform .select2-search, .head .select2-selection__choice{ z-index: 10;  height: 46px;  margin: 0px; padding: 0px; background-color: transparent; border: 0px;  width: 273px; overflow: hidden;}
+.right #contactform .select2{ height: 46px;  }
+.right #contactform .select2-selection__rendered{ width:273px; font-size:20px; color:#E61B76; float:left; height:46px; padding:0px; position:relative; }
+.right #contactform .select2-selection__choice__remove{ float: right;   }
+.right #contactform .select2-search input{ width:100%!important; font-size: 20px; border: 0 none;  border-radius: 6px; height: 45px;  margin: 0px; color: #444;  position: absolute; z-index: 35; text-indent: 6px; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale;  vertical-align: top;  }
+.select2-container .select2-dropdown{top:0px; width: 275px!important; }
+.right #contactform .inline-search { box-shadow:none;  }
+.right .select2-container--default .select2-selection--single{ position: absolute; top: -44px;  left: -1px; display: inline-block; float: left;height: 46px;width: 225px; }
+.right #contactform .inline-search.date .input-style{ padding: 0px !important; width: 110px;     }
+.right #contactform .text date-nights noselect{ float: :left; padding:0px; display: inline-block;  }
+.right #contactform .inline-search .number-nights{padding: 0px; width: 50px;     text-indent: -10px; }
+.right #contactform .inline-search.date .input-style.date-to{     border-top-left-radius: 0px; height: 46px; border-bottom-left-radius: 0px; width: 105px; }
+.right #contactform .fech{ height: 45px ; width:275px; text-align: center; margin-top: 15px; }
+.right #contactform .inline-search .date-nights-input{ left: 52px; opacity: .0; }
+.right #contactform .inline-search.date .date-wrapper{ height: 45px; margin-left: 3px; }
+.right .passengers{  padding: 0px; width: 142px; height: 45px; background-color: #FFF; margin: 0px auto; float: none; }
+.right .inline-button{ padding: 0px;  margin: 0px auto; float: none; display: inline-block; }
+.right .ui-spinner .ui-icon{ display: none; }
+.right .ed{color: #4e6c8f;  font-size: 15px !important;   width: 100%;    text-align: center;    margin-top: 60px !important; }
+.right .ed:hover{text-decoration: none; outline: none;    color: #4e6c8f; }
+.right .select2-dropdown{ display:block; }
+.right .ui-state-error{ box-shadow: 0 0 0 1px #E61B76!important;  }
+.right .select2-container--default .select2-selection--single{ border: 1px solid #E61B76!important;  }
+.right #contactform .bloquep .rom .top{ background: url(https://kooningtravel.com/img/basic-arrows.png) -84px -8px no-repeat; position:absolute; width:43px; height:13px;  top:-13px; left:50%; margin-left:-22px; }
+.right #contactform .sub{ background: url("https://kooningtravel.com/img/search.png") no-repeat center center #E61B76; border-radius:6px; width:70px; height:45px; margin-left:4px; margin-right:2px; }
+.right #contactform .sub input{ box-shadow:  width:70px; height:45px; opacity:.0; cursor:pointer; }
+.right #from_hotel_search{ border-top-right-radius: 0px; border-bottom-right-radius:0px; color: transparent; }
+.right #to_hotel_search{ color: transparent; border-top-left-radius: 0px; border-left-right-radius:0px; }
+.right .col-md-1 .col-md-12 { margin-top: 20px; }
 
 
 
