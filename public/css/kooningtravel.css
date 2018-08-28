@@ -1,14 +1,14 @@
 /*														^^^	   	  ___	   ---
-	***** Autores ******							   {"_"}  	 {^_^}    {º_º}
+	***** Autores ******							   {"_"}  	 {^_^}    {Âº_Âº}
 	-> Ing. Jonas Santiz L. 			| UTC		    --    	  -- 	   --
-	-> Ing. Fernando Morales Robles.	| UPQROO	   <(Ø)>;	 <(^)>;	  <(/)>;
+	-> Ing. Fernando Morales Robles.	| UPQROO	   <(Ã˜)>;	 <(^)>;	  <(/)>;
 	-> Lic. Alan E. Gonzalez.			| UVM		   _| |_ 	  | |     _| |_
 													   .js		  .php     Adobe
 					
 												<---https://www.kooningtravel.com 2018--->
-																¯\_(ツ)_/¯
+																Â¯\_(ãƒ„)_/Â¯
 
-										************ Reestructuración - 01/08/2018 - *************
+										************ ReestructuraciÃ³n - 01/08/2018 - *************
 */
 
 
@@ -410,13 +410,13 @@ td.issuer img { margin: 0 .5em 0 0; float: left; }
 
 
 /* Caja Generica */
-#promo { position: relative; text-align: center; display: inline-block; width: 100%; float: left; }
+#promo {position: relative;text-align: center;display: inline-block;width: 100%;float: left;}
 #promo .imgpro { width: 100%; display: inline-block; float: left; }
-#promo .contp { text-align: center; display: inline-block; float: left; width: 33%; margin: 0px auto; }
-#promo .rig { float: right; display: inline-block; width: 65%; }
+#promo .contp {text-align: center;display: inline-block;float: left;width: 35%;margin: 0px auto;position: absolute;top: 10%;left: 0px;z-index: 100;}
+#promo .rig {float: right;display: inline-block;width: 65%;position: absolute;right: 0px;height: 100px;top: 10%;}
 #promo .rig .promimg { border: 8px solid #fff; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); display: inline-block; }
 #promo .contp #contactform { border-radius: 5px; text-align: center; float: right; width: 280px; height: auto; background: url("https://www.kooningtravel.com/img/promociones/1px.png") repeat 0px 0px transparent; }
-#promo .contp .head .inline-search.passengers { float: left; }
+#promo .contp .head .inline-search.passengers { float: left; border-radius: 4px; }
 #promo .contp #contactform .top { border-bottom: 1px solid #f1f1f1; margin-bottom: 14px; width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px; height: 50px; background: #3987c9c2; }
 #promo .contp #contactform .top h3 { display: inline-block; width: 100%; color: #FFF; margin: 0px; height: 50px; text-align: center; line-height: 50px; }
 #promo .contp #contactform .inline-block, #promo .contp #contactform .inline-date { display: inline-block; height: auto; width: 90%; text-align: center; float: none; margin: 0px auto; margin-bottom: 13px; }
@@ -426,7 +426,7 @@ td.issuer img { margin: 0 .5em 0 0; float: left; }
 #promo .contp #contactform .sear .select2 .selection .select2-selection { height: 100%; }
 #promo .contp #contactform .sear .select2 .selection .select2-selection .select2-selection__rendered { height: 100%; }
 #promo .contp #contactform .sear .select2 .selection .select2-selection .select2-selection__rendered .select2-search { height: 100%; }
-#promo .contp #contactform .sear .select2 .selection .select2-selection .select2-selection__rendered .select2-search input { background: url("https://www.kooningtravel.com/img/promociones/h.png") no-repeat 0px 0px #FFF; text-indent: 36px; width: 100%!important; font-size: 16px!important; height: 92%; }
+#promo .contp #contactform .sear .select2 .selection .select2-selection .select2-selection__rendered .select2-search input { background: url("https://www.kooningtravel.com/img/promociones/h.png") no-repeat 0px 0px #FFF; text-indent: 36px; width: 100%!important; font-size: 16px!important; height:100%; }
 #promo .contp #contactform .sear .select2 .selection .select2-selection .select2-selection__rendered .select2-selection__clear { height: 100%; }
 #promo .contp #contactform .sear .select2 .selection .select2-selection .select2-selection__rendered .select2-selection__choice { z-index: 100; height: 100%; line-height: 29px; text-indent: 35px; font-size: 15px!important; }
 #promo .contp #contactform .sear .des { text-align: left; }
@@ -754,26 +754,40 @@ html body .search-body .container .main-box .marco .precio .mont .ui-slider-hori
 html body .search-body .container .main-box .marco .precio .mont .ui-slider-horizontal .ui-slider-handle { top: -.30em; position: absolute; z-index: 2; margin-left: -.6em; width: 15px; height: 15px; cursor: pointer; background: #fff; border: 1px solid #e2e2e2; border-radius: 16px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); }
 
 /*Promociones*/
-.mesin { cursor: pointer; background: #FFF; width: 100%; height: 50px; text-align: center; margin-top: 10px; }
-.mesin .meses { margin: 0px auto; width: 50%; text-align: center; color: #0059ad; font-size: 18px; font-weight: 100; float: none; margin-top: 12px; }
+.meses {width: 100%;text-align: center;color: #0059ad;font-size: 18px;font-weight: 100;display: inline-block;height: auto;margin-top: 14px!important;margin: 0px;}
 .meses .card { float: none; }
-.pag { top: 25px; height: 90px; display: inline-block; float: left; width: 100%; position: relative; }
-.pag .titl { margin-left: 100px; color: #0059ad; font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-weight: 100; display: inline-block; width: auto; font-size: 40px; float: left; }
-.pag .timerc { width: 30%; float: right; margin: 0px; }
-.pag .timerc .message { display: inline-block; width: 100%; margin-top: 10px; text-align: left; text-indent: 10px; }
+.titl { color: #0059ad;text-align: left;font-family: HelveticaThin, Helvetica, Arial, sans-serif;font-weight: 100;font-size: 40px;margin: 10px 0px;display: inline-block;width: 100%; }
+.timerc { width: 30%; float: right; margin: 0px; }
+.timerc .message { display: inline-block; width: 100%; margin-top: 10px; text-align: left; text-indent: 10px; }
 .contenedoro { display: inline-block; float: left; width: 100%; text-align: center; }
-.cuadro { width: 1173px; margin: 0px auto; display: inline-block; float: none; }
+.cuadro { display: inline-block; }
 .sombra { width: 100%; }
-.wrop { margin: 0px 10px; width: 371px; height: 100%; display: inline-block; float: left; }
 .ofero { margin: 20px 0px; display: inline-block; width: 100%; height: 40px; float: left; font-family: Roboto, sans-serif; font-size: 25px; line-height: 39px; text-align: center; }
 .promos { padding: 0px!important; display: inline-block; float: left; }
 .promos a { display: inline-block; }
 .promos a img { }
 .promos .middle { margin: 14px; }
-.wrop .ih-item a .img h4 { font-weight: bold; }
 .descp { font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-size: 24px; text-align: center; width: 100%; float: left; display: inline-block; height: 38px; color: #e61b76; font-weight: bolder; }
 #DetalleHabitacion .research-b { display: none; }
 #DetalleHabitacion .research-b #contactform { text-align: center; }
+
+/*Promociones*/
+.fancy-promo{ background: #FFF; display: inline-block;float: left;width: 100%;height: 53px;overflow: hidden;}
+.wrop{ display: inline-block; width: 100%; float: left;  text-align: center; }
+.item { background: #FFF; overflow: hidden; width:360px; margin-bottom: 20px; display: inline-block; float: left; border: 8px solid #fff; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); position: relative; -webkit-transition: all 0.35s ease-in-out; -moz-transition: all 0.35s ease-in-out; transition: all 0.35s ease-in-out; }
+.item:nth-child(2) { margin:0px 20px; }
+.item a { display: inline-block; float: left; color: #333; width: 100%; }
+.item a .img h4 { background: #FFF; text-align: center; width: 100%; display: inline-block; margin-bottom: 0px; }
+.item img { width: 100%; height: 100%; display: inline-block; float: left; }
+.item .img { width: 100%; display: inline-block; float: left;  -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); -webkit-transition: all 0.35s ease-in-out; -moz-transition: all 0.35s ease-in-out; transition: all 0.35s ease-in-out; }
+.item .info { height: 40px; background: #FF5001; opacity: 0; -webkit-transition: all 0.35s ease-in-out; -moz-transition: all 0.35s ease-in-out; transition: all 0.35s ease-in-out;  position: absolute; top: 0; bottom: 0; left: 0; right: 0; text-align: center; -webkit-backface-visibility: hidden; backface-visibility: hidden;  top: auto; -webkit-transform: translateY(100%); -moz-transform: translateY(100%); -ms-transform: translateY(100%); -o-transform: translateY(100%); transform: translateY(100%); }
+.item .info h3 { text-transform: uppercase; color: #fff; text-align: center; font-size: 17px; padding: 10px 10px 0 4px; margin: 4px 0 0 0; }
+.item .info p { font-style: italic; font-size: 12px; position: relative; color: #bbb; padding: 5px; text-align: center; }
+.item a:hover { text-decoration: none; }
+.item a:hover .info { visibility: visible; opacity: 1; }
+.item a:hover .img { -webkit-transform: translateY(-50px); -moz-transform: translateY(-50px); -ms-transform: translateY(-50px); -o-transform: translateY(-50px); transform: translateY(-50px); }
+.item a:hover .info { -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
+
 
 
 /*Begin new Kooningtravel css*/
@@ -1107,7 +1121,7 @@ html body .other .traslados .tras .boxt form .bloq .money { background: url(/img
 html body .other .traslados .tras .boxt form .bloq .enviar { background: url(/img/Traslados/btn6.png) no-repeat center center transparent; float: left; width: 50%; height: 43px; font-weight: 500; color: #FFF; }
 html body .other .traslados .tras .tr .map {width:100%;height:390px;border-radius:6px;}
 #show-passengers-panela, .ancla { color: #FFF!important; }
-html body .traslados .cycle-slideshow { width: 1000px; margin: 0px auto; height: 60px; }
+.cycle-slideshow { width: 1000px; margin: 0px auto; height: 60px; margin-top: 20px; display: inline-block; }
 html body div .white-content .pp { display: inline-block; width: 200px; height: 20px; }
 html body .other .traslados .tras .boxt form .bloq .left #result { height: 300px; overflow: auto; width: 249px; background: white; float: left; position: absolute; z-index: 100; left: 0px; background: #FFF; }
 html body .other .traslados .tras .boxt form .bloq .left #result .list-group { width: 100%; float: left; height: auto; margin-bottom: 5px; border-bottom: 1px solid #ddd; cursor: pointer; }
@@ -1269,17 +1283,6 @@ html body .blog .bloque .right #from_hotel_search{ border-top-right-radius: 0px;
 html body .blog .bloque .right #to_hotel_search{ color: transparent; border-top-left-radius: 0px; border-left-right-radius:0px; }
 html body .blog .bloque .right .col-md-1 .col-md-12 { margin-top: 20px; }
 html body .blog .info .centraimagen{  margin:0px auto ; float: none ; margin-top: 30px;  display: inline-block; }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
