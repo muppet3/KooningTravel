@@ -29,4 +29,25 @@ class ComplementsController extends Controller
         $data['background']='height: 100px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
         return view('complements/details',$data);
     }
+
+    public function contacto(){
+        $data['background']='height: 100px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
+        return view('complements/contacto');
+    }
+    public function nosotros(){
+        $data['background']='height: 100px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
+        return view('complements/nosotros');
+    }
+    public function seguridad(){
+        $data['background']='height: 100px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
+        return view('complements/seguridad');
+    }
+    public function terminos(){
+        $data['background']='height: 100px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
+        return view('complements/terminos');
+    }
+    public function privacidad(){
+        $data['background']='height: 100px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
+        return view('complements/privacidad');
+    }
 }

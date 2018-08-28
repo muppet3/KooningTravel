@@ -51,6 +51,12 @@
 	Route::get('blog/{blog}', 'Complements\ComplementsController@details');
 	Route::get('autos', 'Complements\ComplementsController@autos');
 
+	Route::get('contacto','Complements\ComplementsController@contacto');
+	Route::get('nosotros','Complements\ComplementsController@nosotros');
+	Route::get('seguridad','Complements\ComplementsController@seguridad');
+	Route::get('terminos','Complements\ComplementsController@terminos');
+	Route::get('privacidad','Complements\ComplementsController@privacidad');
+
 
 	/*
 		╔══════════════╗
