@@ -230,7 +230,7 @@
               
             </div> 
             <div class="inline-block" >
-                <button class="inline-button" id="enviar1" ></button>
+                <button class="inline-button" id="enviar1" >Buscar</button>
              </div>
           <div class="param" >  
             <input type="hidden" value="0" name="r4a" /> 
@@ -268,10 +268,9 @@
 <div class="cuadro container">
 
 	<span class="titl">Ofertas especiales y de temporada</span>
-
-
+	
 	<div class="wrop" >
-
+	
 		<div class="item">
 			<a href="/ofertas/9/Vive-Disfruta-Viaja">
 				<div class="img" >
@@ -282,8 +281,7 @@
 					<h3>Reserva Ya</h3>
 				</div>
 			</a>
-		</div>
-				
+		</div>					
 
 	</div>
 	

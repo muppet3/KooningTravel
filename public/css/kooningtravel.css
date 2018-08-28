@@ -1,15 +1,16 @@
 /*														^^^	   	  ___	   ---
-	***** Autores ******							   {"_"}  	 {^_^}    {Âº_Âº}
+	***** Autores ******							   {"_"}  	 {^_^}    {º_º}
 	-> Ing. Jonas Santiz L. 			| UTC		    --    	  -- 	   --
-	-> Ing. Fernando Morales Robles.	| UPQROO	   <(Ã˜)>;	 <(^)>;	  <(/)>;
+	-> Ing. Fernando Morales Robles.	| UPQROO	   <(Ø)>;	 <(^)>;	  <(/)>;
 	-> Lic. Alan E. Gonzalez.			| UVM		   _| |_ 	  | |     _| |_
 													   .js		  .php     Adobe
 					
 												<---https://www.kooningtravel.com 2018--->
-																Â¯\_(ãƒ„)_/Â¯
+																¯\_(ツ)_/¯
 
-										************ ReestructuraciÃ³n - 01/08/2018 - *************
+										************ Reestructuración - 01/08/2018 - *************
 */
+
 
 
 ::selection { background: #eb1c744f; }
@@ -87,8 +88,6 @@ html body .body-cart .col-md-9 .form-pay-reservation .paymentType li input{  }
 html body .body-cart .col-md-9 .form-pay-reservation .paymentType li label{ font-size:12px; cursor:pointer; font-weight:700;color:#3D66A0; padding: 0px 4px; }
 html body .body-cart .col-md-9 .form-pay-reservation .paymentType li.selected { background: #f4f7f9; }
 html body .body-cart .col-md-9 .form-pay-reservation .paymentType img { height: 24px; margin-top: 2px; text-decoration: none; border: 0; }
-
-
 
 #first-fop-calculation, #second-fop-calculation { border-bottom: 1px solid #e3e3e3; padding-bottom: 15px; margin-bottom: 15px; overflow: hidden; }
 .payment li { float: left; }
@@ -410,9 +409,9 @@ td.issuer img { margin: 0 .5em 0 0; float: left; }
 
 
 /* Caja Generica */
-#promo {position: relative;text-align: center;display: inline-block;width: 100%;float: left;}
+#promo {position:initial;text-align: center;display: inline-block;width: 100%;float: left;}
 #promo .imgpro { width: 100%; display: inline-block; float: left; }
-#promo .contp {text-align: center;display: inline-block;float: left;width: 35%;margin: 0px auto;position: absolute;top: 10%;left: 0px;z-index: 100;}
+#promo .contp {text-align: center;display: inline-block;float: left;width: 35%;margin: 0px auto;position: absolute;top:20%;left: 0px; }
 #promo .rig {float: right;display: inline-block;width: 65%;position: absolute;right: 0px;height: 100px;top: 10%;}
 #promo .rig .promimg { border: 8px solid #fff; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); display: inline-block; }
 #promo .contp #contactform { border-radius: 5px; text-align: center; float: right; width: 280px; height: auto; background: url("https://www.kooningtravel.com/img/promociones/1px.png") repeat 0px 0px transparent; }
@@ -437,6 +436,7 @@ td.issuer img { margin: 0 .5em 0 0; float: left; }
 #promo .contp #contactform .inline-date .caln { width: 15%; height: 100%; padding: 0px; }
 #promo .contp #contactform .inline-date .caln .number-nights { height: 100%; width: 69%; color: #FFF; float: none; line-height: 30px; font-size: 15px; font-weight: bold; }
 #promo .contp #contactform .param { display: none; }
+#promo .contp #contactform  .inline-block .inline-button{ border: 0px; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);background: #4CA854; color: #FFF; width: 39%; font-size: 22px; float: none; height: 35px;border-radius: 4px; }
 
 
 /*Autocomplete*/
@@ -521,7 +521,7 @@ body .other .info-details { margin: 10px 0px; font-size: 20px; color: #fff; widt
 body .other .h2 .imagen-estrellas { float: none; margin-left: 5px; }
 body .other .fechas-info { margin: 0px auto; float: left; margin-top: 0px; font-size: 20px; color: #fff; width: 100%; text-align: center; }
 .box-home .inline-search { width: 270px; border-radius: 6px; background: #FFF; text-align: left; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); margin: 0px 7px; }
-body div .box .box-home .inline-block .inline-button, body .search-body .container .main-box .caja-search form .inline-block .inline-button, .inline-block .inline-button { padding: 0px; margin: 0px; border: 0px; display: -moz-inline-stack; display: inline-block; *display: inline;
+body div .box .box-home .inline-block .inline-button, body .search-body .container .main-box .caja-search form .inline-block .inline-button { padding: 0px; margin: 0px; border: 0px; display: -moz-inline-stack; display: inline-block; *display: inline;
 float: none; zoom: 1; border-radius: 6px; width: 70px; height: 45px; margin-left: 7px; margin-right: 2px; line-height: 150%; vertical-align: top; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), inset 0 -1px rgba(0, 0, 0, 0.15), inset 0 1px rgba(255, 255, 255, 0.35); background: url(https://kooningtravel.com/img/search.png) no-repeat center center #E61B76; }
 .inline-search .input-style { width: 108px; cursor: pointer; position: relative; padding: 0px; border-top-left-radius: 0px; height: 46px; border-bottom-left-radius: 0px; }
 .inline-search .input-style .aa { font-size: 32px; display: -moz-inline-stack; display: inline-block; *display: inline;
@@ -752,43 +752,6 @@ html body .search-body .container .main-box .marco .precio .mont .amount label {
 html body .search-body .container .main-box .marco .precio .mont .ui-slider-horizontal { position: relative; text-align: left; height: 5px; background: #dbdbdb !important; border-radius: 2px !important; padding: 0 !important; }
 html body .search-body .container .main-box .marco .precio .mont .ui-slider-horizontal .ui-slider-range { padding: 0px; position: absolute; z-index: 1; font-size: .7em; display: block; background-position: 0 0; top: 0; height: 100%; left: 0; background: #007FAD; border-color: #007FAD; border-radius: 2px !important; }
 html body .search-body .container .main-box .marco .precio .mont .ui-slider-horizontal .ui-slider-handle { top: -.30em; position: absolute; z-index: 2; margin-left: -.6em; width: 15px; height: 15px; cursor: pointer; background: #fff; border: 1px solid #e2e2e2; border-radius: 16px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); }
-
-/*Promociones*/
-.meses {width: 100%;text-align: center;color: #0059ad;font-size: 18px;font-weight: 100;display: inline-block;height: auto;margin-top: 14px!important;margin: 0px;}
-.meses .card { float: none; }
-.titl { color: #0059ad;text-align: left;font-family: HelveticaThin, Helvetica, Arial, sans-serif;font-weight: 100;font-size: 40px;margin: 10px 0px;display: inline-block;width: 100%; }
-.timerc { width: 30%; float: right; margin: 0px; }
-.timerc .message { display: inline-block; width: 100%; margin-top: 10px; text-align: left; text-indent: 10px; }
-.contenedoro { display: inline-block; float: left; width: 100%; text-align: center; }
-.cuadro { display: inline-block; }
-.sombra { width: 100%; }
-.ofero { margin: 20px 0px; display: inline-block; width: 100%; height: 40px; float: left; font-family: Roboto, sans-serif; font-size: 25px; line-height: 39px; text-align: center; }
-.promos { padding: 0px!important; display: inline-block; float: left; }
-.promos a { display: inline-block; }
-.promos a img { }
-.promos .middle { margin: 14px; }
-.descp { font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-size: 24px; text-align: center; width: 100%; float: left; display: inline-block; height: 38px; color: #e61b76; font-weight: bolder; }
-#DetalleHabitacion .research-b { display: none; }
-#DetalleHabitacion .research-b #contactform { text-align: center; }
-
-/*Promociones*/
-.fancy-promo{ background: #FFF; display: inline-block;float: left;width: 100%;height: 53px;overflow: hidden;}
-.wrop{ display: inline-block; width: 100%; float: left;  text-align: center; }
-.item { background: #FFF; overflow: hidden; width:360px; margin-bottom: 20px; display: inline-block; float: left; border: 8px solid #fff; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); position: relative; -webkit-transition: all 0.35s ease-in-out; -moz-transition: all 0.35s ease-in-out; transition: all 0.35s ease-in-out; }
-.item:nth-child(2) { margin:0px 20px; }
-.item a { display: inline-block; float: left; color: #333; width: 100%; }
-.item a .img h4 { background: #FFF; text-align: center; width: 100%; display: inline-block; margin-bottom: 0px; }
-.item img { width: 100%; height: 100%; display: inline-block; float: left; }
-.item .img { width: 100%; display: inline-block; float: left;  -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); -webkit-transition: all 0.35s ease-in-out; -moz-transition: all 0.35s ease-in-out; transition: all 0.35s ease-in-out; }
-.item .info { height: 40px; background: #FF5001; opacity: 0; -webkit-transition: all 0.35s ease-in-out; -moz-transition: all 0.35s ease-in-out; transition: all 0.35s ease-in-out;  position: absolute; top: 0; bottom: 0; left: 0; right: 0; text-align: center; -webkit-backface-visibility: hidden; backface-visibility: hidden;  top: auto; -webkit-transform: translateY(100%); -moz-transform: translateY(100%); -ms-transform: translateY(100%); -o-transform: translateY(100%); transform: translateY(100%); }
-.item .info h3 { text-transform: uppercase; color: #fff; text-align: center; font-size: 17px; padding: 10px 10px 0 4px; margin: 4px 0 0 0; }
-.item .info p { font-style: italic; font-size: 12px; position: relative; color: #bbb; padding: 5px; text-align: center; }
-.item a:hover { text-decoration: none; }
-.item a:hover .info { visibility: visible; opacity: 1; }
-.item a:hover .img { -webkit-transform: translateY(-50px); -moz-transform: translateY(-50px); -ms-transform: translateY(-50px); -o-transform: translateY(-50px); transform: translateY(-50px); }
-.item a:hover .info { -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
-
-
 
 /*Begin new Kooningtravel css*/
 body .generic-fotter, body .generic-fotter a, body .generic-fotter p, body .generic-fotter ul, body .generic-fotter li, body .generic-fotter span, body .generic-fotter div, body .generic-fotter input, body .generic-fotter b, body .generic-fotter textarea, body .generic-fotter form, body .generic-fotter label, body .generic-fotter img, body .generic-fotter select, body .generic-fotter h1, body .generic-fotter h2, body .generic-fotter h3, body .generic-fotter h4, body .generic-fotter h5, body .generic-fotter h6 { color: #FFF; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: normal; display: inline-block; float: left; margin: 0px; border: 0px; padding: 0px; text-decoration: none; outline: none; }
@@ -1285,4 +1248,39 @@ html body .blog .bloque .right .col-md-1 .col-md-12 { margin-top: 20px; }
 html body .blog .info .centraimagen{  margin:0px auto ; float: none ; margin-top: 30px;  display: inline-block; }
 
 
-
+/*Promociones*/
+.meses {width: 100%;text-align: center;color: #0059ad;font-size: 18px;font-weight: 100;display: inline-block;height: auto;margin-top: 14px!important;margin: 0px;}
+.meses .card { float: none; }
+html body .cuadro .titl { color: #0059ad;text-align: left;font-family: HelveticaThin, Helvetica, Arial, sans-serif;font-weight: 100;font-size:35px;margin: 10px 0px;display: inline-block;width: 100%; }
+.timerc { width: 30%; float: right; margin: 0px; }
+.timerc .message { display: inline-block; width: 100%; margin-top: 10px; text-align: left; text-indent: 10px; }
+.contenedoro { display: inline-block; float: left; width: 100%; text-align: center; }
+html body .cuadro { display: inline-block; }
+.sombra { width: 100%; }
+.ofero { margin: 20px 0px; display: inline-block; width: 100%; height: 40px; float: left; font-family: Roboto, sans-serif; font-size: 25px; line-height: 39px; text-align: center; }
+.promos { padding: 0px!important; display: inline-block; float: left; }
+.promos a { display: inline-block; }
+.promos a img { }
+.promos .middle { margin: 14px; }
+.descp { font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-size: 24px; text-align: center; width: 100%; float: left; display: inline-block; height: 38px; color: #e61b76; font-weight: bolder; }
+#DetalleHabitacion .research-b { display: none; }
+#DetalleHabitacion .research-b #contactform { text-align: center; }
+html body .fancy-promo{ background: #FFF; display: inline-block;float: left;width: 100%;height: 53px;overflow: hidden;}
+html body .oferr{ background: #f1f1f1; }
+html body .oferr:link, html body .oferr:visited, html body .oferr:hover{ text-decoration: none; }
+html body .ofer .wrop .min{ padding: 0px; width: 300px!important; margin-left: 8px; }
+html body .cuadro .wrop .item .img .tittle{ font-weight: 700; text-align: center; color: #FF5001; font-size: 20px;font-family: Montserrat,sans-serif; }
+html body .cuadro .titlo{ color: #0059ad; text-align: left; font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-weight: 100; font-size:30px; margin:20px 0px 6px; display: inline-block; width: 100%; text-align: center; }
+html body .cuadro .wrop{ display: inline-block; width: 100%; float: left;  text-align: center; margin-top: 10px; }
+html body .cuadro .wrop .item { margin-right: 20px;  background: #FFF; overflow: hidden; width:360px; margin-bottom: 20px; display: inline-block; float: left; border: 8px solid #fff; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); position: relative; -webkit-transition: all 0.35s ease-in-out; -moz-transition: all 0.35s ease-in-out; transition: all 0.35s ease-in-out; }
+html body .cuadro .wrop .item a { display: inline-block; float: left; color: #333; width: 100%; }
+html body .cuadro .wrop .item a .img h4 { background: #FFF; text-align: center; width: 100%; display: inline-block; margin-bottom: 0px; }
+html body .cuadro .wrop .item img { width: 100%; height: 100%; display: inline-block; float: left; }
+html body .cuadro .wrop .item .img { width: 100%; display: inline-block; float: left;  -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); -webkit-transition: all 0.35s ease-in-out; -moz-transition: all 0.35s ease-in-out; transition: all 0.35s ease-in-out; }
+html body .cuadro .wrop .item .info { height: 40px; background: #FF5001; opacity: 0; -webkit-transition: all 0.35s ease-in-out; -moz-transition: all 0.35s ease-in-out; transition: all 0.35s ease-in-out;  position: absolute; top: 0; bottom: 0; left: 0; right: 0; text-align: center; -webkit-backface-visibility: hidden; backface-visibility: hidden;  top: auto; -webkit-transform: translateY(100%); -moz-transform: translateY(100%); -ms-transform: translateY(100%); -o-transform: translateY(100%); transform: translateY(100%); }
+html body .cuadro .wrop .item .info h3 { text-transform: uppercase; color: #fff; text-align: center; font-size: 17px; padding: 10px 10px 0 4px; margin: 4px 0 0 0; }
+html body .cuadro .wrop .item .info p { font-style: italic; font-size: 12px; position: relative; color: #bbb; padding: 5px; text-align: center; }
+html body .cuadro .wrop .item a:hover { text-decoration: none; }
+html body .cuadro .wrop .item a:hover .info { visibility: visible; opacity: 1; }
+html body .cuadro .wrop .item a:hover .img { -webkit-transform: translateY(-50px); -moz-transform: translateY(-50px); -ms-transform: translateY(-50px); -o-transform: translateY(-50px); transform: translateY(-50px); }
+html body .cuadro .wrop .item a:hover .info { -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
