@@ -155,12 +155,12 @@
       
       <div class="bg-home" >
           <li><a class="hotel <?php //// echo  $Mhoteles; ?>" href="/">HOTELES</a></li>
-          <li><a class="park <?php //// echo  $park; ?>" href="/Parques">PARQUES</a></li>
-          <li><a class="tour tour2 <?php // echo  $Mtours; ?>" href="/Tours">TOURS</a></li>
-          <li><a class="trasl <?php // echo  $Mtraslados; ?>" href="/Traslado">TRASLADOS</a></li>
-          <li class="fancyb" ><a class="auto <?php // echo  $Mautos; ?>" href="/Autos">AUTOS</a></li>
-          <li><a class="ofer <?php // echo  $Mofertas; ?>" href="/Promociones">OFERTAS</a></li>
-          <li><a class="blogh noselect" href="/Blog">BLOG</a></li>
+          <li><a class="park <?php //// echo  $park; ?>" href="/parques">PARQUES</a></li>
+          <li><a class="tour tour2 <?php // echo  $Mtours; ?>" href="/tours">TOURS</a></li>
+          <li><a class="trasl <?php // echo  $Mtraslados; ?>" href="/traslados">TRASLADOS</a></li>
+          <li class="fancyb" ><a class="auto <?php // echo  $Mautos; ?>" href="/autos">AUTOS</a></li>
+          <li><a class="ofer <?php // echo  $Mofertas; ?>" href="/promociones">OFERTAS</a></li>
+          <li><a class="blogh noselect" href="/blog">BLOG</a></li>
           
        </div>
 
@@ -170,53 +170,53 @@
 
     <!--Parques-->
     <ul style="display: none;" class="sub-nav nav1">
-      <li class="item2 xperiencia"> <a href="/Parques">Experiencias</a>
+      <li class="item2 xperiencia"> <a href="/parques">Experiencias</a>
         <ol style="display: none;" class="sublist" >
-            <li><a href="/Parques/Xcaret">Xcaret</a></li>
-            <li><a href="/Parques/Xel-ha">Xel-ha</a></li>
-            <li><a href="/Parques/Xplor">Xplor</a></li>
-            <li><a href="/Parques/Xplor-Fuego">Xplor Fuego</a></li>
-            <li><a href="/Parques/Xichen">Xichen</a></li>
-            <li><a href="/Parques/Xenotes">Xenotes</a></li>
-            <li><a href="/Parques/Xoximilco">Xoximilco</a></li>
-            <li><a href="/Parques/Xenses">Xenses</a></li>
+            <li><a href="/parques/Xcaret">Xcaret</a></li>
+            <li><a href="/parques/Xel-ha">Xel-ha</a></li>
+            <li><a href="/parques/Xplor">Xplor</a></li>
+            <li><a href="/parques/Xplor-Fuego">Xplor Fuego</a></li>
+            <li><a href="/parques/Xichen">Xichen</a></li>
+            <li><a href="/parques/Xenotes">Xenotes</a></li>
+            <li><a href="/parques/Xoximilco">Xoximilco</a></li>
+            <li><a href="/parques/Xenses">Xenses</a></li>
         </ol>
        </li>
-      <li class="item2 dophin"><a href="/Parques">Dolphin Discovery</a> 
+      <li class="item2 dophin"><a href="/parques">Dolphin Discovery</a> 
         <ol style="display: none;" class="sublist">
-            <li><a href="/Parques/Royal-Garrafon">Royal Garraf&oacute;n</a></li>
-            <li><a href="/Parques/Royal-Swim">Dolphin Swim Adventure</a></li>
-            <li><a href="/Parques/Dolphin-Encounter">Dolphin Encounter</a></li>
-            <li><a href="/Parques/Columbus">Columbus</a></li>
+            <li><a href="/parques/Royal-Garrafon">Royal Garraf&oacute;n</a></li>
+            <li><a href="/parques/Royal-Swim">Dolphin Swim Adventure</a></li>
+            <li><a href="/parques/Dolphin-Encounter">Dolphin Encounter</a></li>
+            <li><a href="/parques/Columbus">Columbus</a></li>
         </ol>
       </li>
-      <li class="item2 riosecreto"> <a href="/Parques">Rio Secreto</a> 
+      <li class="item2 riosecreto"> <a href="/parques">Rio Secreto</a> 
         <ol style="display: none;" class="sublist">
-            <li><a href="/Parques/Rio-Secreto">Solo entrada, Riviera Maya</a></li>
-            <li><a href="/Parques/Rio-Secreto-">Entrada + Transportaci&oacute;n, Riviera Maya</a></li>
+            <li><a href="/parques/Rio-Secreto">Solo entrada, Riviera Maya</a></li>
+            <li><a href="/parques/Rio-Secreto-">Entrada + Transportaci&oacute;n, Riviera Maya</a></li>
         </ol>
       </li>
-      <li class="item2 cirque"> <a href="/Parques">Cirque Du Soleil</a> 
+      <li class="item2 cirque"> <a href="/parques">Cirque Du Soleil</a> 
         <ol style="display: none;" class="sublist">
-            <li><a href="/Parques/Cirque-Soleil">Solo entrada, Riviera Maya</a></li>
-            <li><a href="/Parques/Cirque-Soleil-">Entrada + Transportaci&oacute;n, Canc&uacute;n</a></li>
-            <li><a href="/Parques/Cirque-Du-Soleil">Entrada + Transportaci&oacute;n, Playa del Carmen</a></li>
+            <li><a href="/parques/Cirque-Soleil">Solo entrada, Riviera Maya</a></li>
+            <li><a href="/parques/Cirque-Soleil-">Entrada + Transportaci&oacute;n, Canc&uacute;n</a></li>
+            <li><a href="/parques/Cirque-Du-Soleil">Entrada + Transportaci&oacute;n, Playa del Carmen</a></li>
         </ol>
       </li>
     </ul>
 
     <!--Tours-->
     <ul style="display: none;" class="sub-nav nav2">
-      <li class="item2 mayalandt"><a href="/Tours/Chichen-Itza">Mayaland</a>
+      <li class="item2 mayalandt"><a href="/tours/Chichen-Itza">Mayaland</a>
         <ol style="display: none;" class="sublist">
-            <li><a href="/Tours/Chichen-Itza">Chichén Itz&aacute; Yucat&aacute;n, M&eacute;xico.</a></li>
-            <li><a href="/Tours/Uxmal">¡Uxmal, Yucat&aacute;n, M&eacute;xico.</a></li>
-            <li><a href="/Tours/Celestun">Celestun, Yucat&aacute;n, M&eacute;xico.</a></li>
-            <li><a href="/Tours/Parque-Ecologico">Sitios Arqueológicos Tulum y Parque Ecológico Tankah.</a></li>
+            <li><a href="/tours/Chichen-Itza">Chichén Itz&aacute; Yucat&aacute;n, M&eacute;xico.</a></li>
+            <li><a href="/tours/Uxmal">¡Uxmal, Yucat&aacute;n, M&eacute;xico.</a></li>
+            <li><a href="/tours/Celestun">Celestun, Yucat&aacute;n, M&eacute;xico.</a></li>
+            <li><a href="/tours/Parque-Ecologico">Sitios Arqueológicos Tulum y Parque Ecológico Tankah.</a></li>
         </ol>
       </li>
-      <li class="item2"><a href="/Tours/Catamaran">Catamaran</a> </li>
-      <li class="item2"><a href="/Tours/Holbox">Tours Holbox</a></li>      
+      <li class="item2"><a href="/tours/Catamaran">Catamaran</a> </li>
+      <li class="item2"><a href="/tours/Holbox">Tours Holbox</a></li>      
     </ul>
 
     <div class="tel">
@@ -240,7 +240,7 @@
     </div>
     <div id="shopcart" >
       @guest
-        <a href="/Carrito"> <span id="cost" ><srong>0</srong></span></a>
+        <a href="/carrito"> <span id="cost" ><srong>0</srong></span></a>
         <aside style="display: none;"  class="contt" >
           <label class="arr" ></label>
           <div class="listcart" > 
@@ -266,7 +266,7 @@
                 <a class="btnt" href="/Carrito"></a>
             </div>
 
-              <a class="teltt fa fa-phone" href="tel:018008908974">(01) 800 890 8974</a>
+              <a class="teltt fa fa-phone" href="skype:018008908974?call">(01) 800 890 8974</a>
           </div>
 
         </aside>
@@ -488,12 +488,12 @@
 
                
                 <li><a href="/" >Página de Inicio</a></li>
-                <li><a href="/Nosotros" >Nosotros</a></li>
-                <li><a href="/Blog" >Blog</a></li>
-                <li><a href="/Seguridad" >Seguridad</a></li>
-                <li><a href="/Terminos" >Términos y condiciones</a></li>
-                <li><a href="/Privacidad" >Aviso de Privacidad</a></li>
-                <li><a href="/Site-Map" >Mapa del Sitio</a></li>
+                <li><a href="/nosotros" >Nosotros</a></li>
+                <li><a href="/blog" >Blog</a></li>
+                <li><a href="/seguridad" >Seguridad</a></li>
+                <li><a href="/terminos" >Términos y condiciones</a></li>
+                <li><a href="/privacidad" >Aviso de Privacidad</a></li>
+                <li><a href="/site-map" >Mapa del Sitio</a></li>
                 <div class="img-trip">
                    <img src="https://kooningtravel.com/img/home/TripAdvisor.png" class="tripadvisor" alt="trip advisor">
                 </div>                
@@ -536,10 +536,10 @@
 
               <ul class="sub-fotter" >
                 <h3>CONTÁCTANOS</h3>
-                <a class="kooning-contact" href="/Contacto">
+                <a class="kooning-contact" href="/contacto">
                      <img src="https://kooningtravel.com/img/Home/Audifonos.png" alt="Llamanos">
                 </a>
-                <li><a href="/Contacto">¿Necesitas que te llamemos?</a></li>
+                <li><a href="/contacto">¿Necesitas que te llamemos?</a></li>
                 <li><a href="skype:018008908974?call" ><i class="fa fa-phone" aria-hidden="true"></i>01 800 890 8974</a></li>
                 <li><a href="mailto:reservaciones@kooningtravel.com" >reservaciones@kooningtravel.com</a></li>
               </ul>
@@ -549,10 +549,7 @@
     </div>
 
 </div>        
-
  
-  
-  
         <input type="hidden" id="mapa" >      
 
 

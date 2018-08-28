@@ -1,13 +1,12 @@
 @extends('layouts/structure')
-@section('content')
+
+@section('head')
 
 
 <style type="text/css">
 	
 	.other { height:600px!important; }
 </style>
-
-@section('head')
 
 <div class="traslados top">
 	
@@ -206,6 +205,8 @@
 		</div>
 </div>
 @stop
+
+@section('content')
 
 <div class="traslados">
 <div class="white-content clear bgt2" id="parque-de-atracciones-parques-tematicos">

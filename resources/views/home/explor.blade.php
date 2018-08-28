@@ -84,8 +84,8 @@
 	<div class="item email">
 		<a href="mailto:reservaciones@kooningtravel.com"><h3 class="h3">Email</h3><p>Resolveremos las dudas que puedas<br>tener con tu reserva</p><span class="link">reservaciones@kooningtravel.com</span></a>
 	</div>
-	<div class="item telefono">
-		<a href="tel:018008908974?call"><h3 class="h3">Teléfono</h3><p>¿Necesitas ayuda para reservar?<br>¿Alguna duda rápida?</p><span class="link">(01) 800 890 8974</span></a>
+	<div class="item telefono"> 
+		<a href="skype:018008908974?call"><h3 class="h3">Teléfono</h3><p>¿Necesitas ayuda para reservar?<br>¿Alguna duda rápida?</p><span class="link">(01) 800 890 8974</span></a>
 	</div>
 	<div class="item agencias">
 		<div class="co" ><h3 class="h3">Redes Sociales</h3><p>Atención personalizada!</p>
