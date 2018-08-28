@@ -17,6 +17,10 @@ class ComplementsController extends Controller
         $data['background']='height: 556px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
         return view('complements/traslados',$data);
     }
+    public function autos(){
+        $data['background']='height: 556px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
+        return view('complements/autos',$data);
+    }
     public function blog(){
         $data['background']='height: 100px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
         return view('complements/blog',$data);
