@@ -32,22 +32,22 @@ class ComplementsController extends Controller
 
     public function contacto(){
         $data['background']='height: 100px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
-        return view('complements/contacto');
+        return view('complements/contacto',$data);
     }
     public function nosotros(){
         $data['background']='height: 100px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
-        return view('complements/nosotros');
+        return view('complements/nosotros',$data);
     }
     public function seguridad(){
         $data['background']='height: 100px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
-        return view('complements/seguridad');
+        return view('complements/seguridad',$data);
     }
     public function terminos(){
         $data['background']='height: 100px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
-        return view('complements/terminos');
+        return view('complements/terminos',$data);
     }
     public function privacidad(){
         $data['background']='height: 100px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
-        return view('complements/privacidad');
+        return view('complements/privacidad',$data);
     }
 }
