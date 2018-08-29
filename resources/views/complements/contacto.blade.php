@@ -6,8 +6,10 @@
 
 <div class="alert alert-success" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <span></span> 
+  <span>"mensaje"</span> 
 </div>
+
+
 
 <div class="ubicacion-pagina" > <i class="fa fa-home" aria-hidden="true"></i> <a href="/" style="color:#000;">&nbsp;Inicio</a> > <b>Contacto</b> </div>
 
