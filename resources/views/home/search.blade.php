@@ -29,7 +29,9 @@
           <span class="label1">Destino / Hotel</span>
           <hr>
           <div class="inline-search">
-          <select id="d" data-placeholder="test"  class="destination" name="d"  style="width:100%;"  multiple="multiple" ></select>
+          <select id="d" data-placeholder="{{$destino}}"  class="destination" name="d"  style="width:100%;"  multiple="multiple" >
+            
+          </select>
         </div>
         
         

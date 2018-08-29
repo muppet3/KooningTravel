@@ -23,7 +23,6 @@
 	Route::get('search/{destino}', 'Home\HomeController@search');
 	Route::get('details/{id}/{hotel}', 'Home\HomeController@details');
 	Route::get('list/destino',"Home\HomeController@list");
-	Route::get('search/list/destino',"Home\HomeController@list");
 	Route::get('checkout/{idroom}/{id}',"Home\HomeController@booking");
 	Route::post('checkout/{idroom}/{id}',"Home\HomeController@alertemail");
 
