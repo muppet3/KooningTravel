@@ -3,13 +3,15 @@
 namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Helpers\Hotelbeds;
 use App\Http\Controllers\Helpers\Hoteldo;
 use App\Models\Campaign;
+use App\Models\City;
 use App\Models\Destination;
 use App\Models\Purchase;
 use Carbon\Carbon;
-
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -19,7 +21,9 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function home(){
+        $data['filtros']="&sd=".Carbon::now()->addDay(4)->toDateString()."&ed=".Carbon::now()->addDay(8)->toDateString()."&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0&r4a=0&r4k=0&r4k1a=0&r4k2a=0&r4k3a=0&r5a=0&r5k=0&r5k1a=0&r5k2a=0&r5k3a=0";
         $data['checkin']=Carbon::now()->addDay(4);
         $data['checkout']=Carbon::now()->addDay(8);
         $data['pathSearch']='';
@@ -29,6 +33,7 @@ class HomeController extends Controller
         $data['traslados']="";
         $data['ofertas']=""; 
         $data['background']="";
+
         return view('home/home',$data);
     }
     public function explor(){
@@ -36,8 +41,8 @@ class HomeController extends Controller
         return view('home/explor',$data);
     }
     public function search($destino){
-        $data['checkin']=Carbon::now()->addDay(4);
-        $data['checkout']=Carbon::now()->addDay(8);
+        $data['checkin']=new Carbon($_GET['sd']);
+        $data['checkout']=new Carbon($_GET['ed']);
         // validacion de fechas   background-image: url(https://kooningtravel.com/img/Home/fondos/FondoHoteles.png
         $data['background']="height: 270px; background-image: url(https://kooningtravel.com/img/Home/fondos/FondoHoteles.png";
         $errores= $this->validationrooms();
@@ -45,12 +50,8 @@ class HomeController extends Controller
         if(count($errores)>0){
             $defaultquery=true;
         }
-        $errores=$this->validationdates($errores);        
-        if($defaultquery){
-            $query = $this->defaultquery();
-            $huespedes='<span class="date">2 adultos sin menores, 1 habitación.</span>';
-        }else{
-            $query = $this->query();
+        $errores=$this->validationdates($errores);   
+        if(Auth::check()){
             $totaladultos=$_GET['r1a']+$_GET['r2a']+$_GET['r3a'];
             $totalmenores=$_GET['r1k']+$_GET['r2k']+$_GET['r3k'];
             $huespedes='<span class="date"> ';
@@ -69,140 +70,246 @@ class HomeController extends Controller
             }else{
                 $huespedes.=$_GET['r'].' habitaciones.</span>';
             }
-        }
-        $errorquery="0";
-        if (isset($_GET['type']) and $_GET['type']==1) {
-            $query->d=$_GET['d'];
-            $query->h="";
-        }else{
-            $query->h=$_GET['d'];
-            $query->d="";
-        }
-        $query->setCached(false);
-        $query->exec();
-        
-        if ( $query->fail() ) {
-            switch ($query->getError()) {
-                case 'No se encontraron resultados':
-                    $errorquery="No se encontraron resultados, le sugerimos cambiar de fechas o destino.";
-                    break;
-                case 'No results found':
-                    $errorquery="No se encontraron resultados, le sugerimos cambiar de fechas o destino.";
-                    break;
-                case 'Hubo un error de timeout':
-                    $errorquery="El servidor tardo mucho tiempo en responder, intentelo nuevamente.";
-                    break;
-                default:
-                    $errorquery="Ocurrio una interrupcion inesperada. intentelo nuevamente.";
-                    break;
+            $pais=City::where('code',''.$_GET['d'])->first();
+            $hoteles = json_decode(file_get_contents("js/Hoteles/".$pais->country."/destino".$_GET['d'].".json"));
+            
+            $listhotels="<hotels>";
+            foreach ($hoteles->hotels as $key) {
+                $listhotels=$listhotels."<hotel>".$key->code."</hotel>";
             }
-        }
-        $sd = new \DateTime($_GET['sd']);
-        $ed = new \DateTime($_GET['ed']);
-        $interval = $ed->diff($sd);
-        if($errorquery=="0"){
-            $room_list=[];
-            $min=100000;
-            $max=0;
-            foreach ($query->getXml()->Hotels->Hotel as $hotel) {
-                $destinocorrecto=$hotel->Destination->Name;
-                foreach ($hotel->Rooms->Room as $room) {
-                    $item=[];
-                    $item['adultos'] = ($_GET['r1a']+$_GET['r2a']+$_GET['r3a']);
-                    $precio=$room->MealPlans->MealPlan->AgencyPublic->AgencyPublic/$interval->d;
-                    
-                    if (empty($hotel->Reviews->Review->Rating)) {
-                        if($precio < 1000){
-                            $item['stars']=1;
-                        }else if($precio < 2000){
-                            $item['stars']=3;
-                        }else if($precio < 3000){
-                            $item['stars']=4;
-                        }else{
-                            $item['stars']=5;
+            $listhotels=$listhotels."</hotels>";
+            $query = new Hotelbeds('hotels');
+            $query=$this->bedsquery($query);
+            $query->hotels($listhotels);
+            $errorquery="0";
+            if($query->fail()){
+                $errorquery="ocurrio un error inesperado";
+            }
+            $sd = new \DateTime($_GET['sd']);
+            $ed = new \DateTime($_GET['ed']);
+            $interval = $ed->diff($sd);
+            if($errorquery=="0"){
+                $room_list=[];
+                $min=100000;
+                $max=0;
+                
+                foreach ($query->getResult()->hotels->hotels as $hotel) {
+                    $destinocorrecto=$hotel->destinationName;
+                    foreach ($hotel->rooms as $room) {
+                        $item=[];
+                        $item['adultos'] = ($_GET['r1a']+$_GET['r2a']+$_GET['r3a']);
+                        /*clasificacion de precios*/ 
+                        $precio=$room->rates[0]->sellingRate/$interval->d;
+                        if ($precio> 0 and $precio<= 1000) {
+                            $item['pricerange'] = "btw0k-1k";
+                        }elseif ($precio> 1000 and $precio<= 3000) {
+                            $item['pricerange'] = "btw1k-3k";
+                        }elseif ($precio> 3000 and $precio<= 6000) {
+                            $item['pricerange'] = "btw3k-5k";
+                        }elseif ($precio> 6000 and $precio<= 8000) {
+                            $item['pricerange'] = "btw5k-8k";
+                        }elseif ($precio> 8000 ) {
+                            $item['pricerange'] = "more8k";
                         }
-                    }else{
-                        $item['stars']= (float) $hotel->Reviews->Review->Rating;
-                    }
-                    if ($precio> 0 and $precio<= 1000) {
-                        $item['pricerange'] = "btw0k-1k";
-                    }elseif ($precio> 1000 and $precio<= 3000) {
-                        $item['pricerange'] = "btw1k-3k";
-                    }elseif ($precio> 3000 and $precio<= 6000) {
-                        $item['pricerange'] = "btw3k-5k";
-                    }elseif ($precio> 6000 and $precio<= 8000) {
-                        $item['pricerange'] = "btw5k-8k";
-                    }elseif ($precio> 8000 ) {
-                        $item['pricerange'] = "more8k";
-                    }
-                    
-                    if (isset($room->MealPlans->MealPlan->Promotions)) {
-                        $promotionhoteldo=(string) $room->MealPlans->MealPlan->Promotions->Promotion->Description;
-                        $desc = substr($promotionhoteldo, 0,2);
-                        if(is_numeric($desc)){
-                            $item['descuento']="-".$desc."%";
-                            $item['preciodescuento']=number_format((100*$precio)/(100-$desc));
+                        /*estrellas*/
+                        $item['stars']=substr($hotel->categoryCode,0,1);
+                        $item['id']= $hotel->code;
+                        $item['name']= (string) $hotel->name;
+                        $item['url']=str_replace(" ","-",$hotel->name);
+                        /*pendiente imagenes*/
+                        for ($i=count($hoteles->hotels)-1; $i >1; $i--) {
+                            if($hoteles->hotels[$i]->code==$hotel->code){
+                                $item['image']="https://photos.hotelbeds.com/giata/medium/".$hoteles->hotels[$i]->images[0]->path;
+                                break;
+                                unset($hoteles->hotels[$i]);
+                            }
+                        } 
+                        /*=============*/
+                        $item['city_name']= (string) $hotel->destinationName;
+                        $item['country_name']= (string) $pais->country;
+                        $item['room_name']= (string) $room->name;
+                        $item['meal_plan']= (string) $room->rates[0]->boardName;
+                        $item['total_noches'] = $interval->d;
+                        $item['agency_public']="h";
+                        $item['price']=number_format($precio);
+                        $item['precio']=$precio;
+                        if (!isset($menor)) {
+                            $menor = $item;
+                        }
+                        if ($item['price'] < $menor['price'] ) {
+                            $menor = $item;
                         }
                     }
-                    $item['id']= (string) $hotel->Id;
-                    $item['name']= (string) $hotel->Name;
-                    $item['url']=str_replace(" ","-",$hotel->Name);
-                    if (empty((string) $hotel->Image)) {
-                        $item['image']= '//kooningtravel.com/images/hotel-generico.jpg';
-                    }else{
-                        $item['image']= (string) $hotel->Image;
+                    if($min > $menor['precio']){
+                        $min=$menor['precio'];
                     }
-                    $item['city_name']= (string) $hotel->CityName;
-                    $item['country_name']= (string) $hotel->CountryName;
-                    $item['room_name']= (string) $room->Name;
-                    $item['meal_plan']= (string) $room->MealPlans->MealPlan->Name;
-                    $item['agency_public'] = (string) $room->MealPlans->MealPlan->AgencyPublic->AgencyPublic;
-                    $totaldo=((float) $room->MealPlans->MealPlan->Total/$interval->d);
-                    $item['total_noches'] = $interval->d;
-                    $item['price']=number_format($precio);
-                    $item['precio']=$precio;
+                    if($menor['precio']> $max){
+                        $max=$menor['precio'];
+                    }
+                    $room_list[]=$menor;
+                    unset($menor);
+                }
+                $data['min']=$min;
+                if($max>8000){
+                    $max=8001;
+                }
+                $data['max']=$max;
+                $data['destino']=$destinocorrecto;
+                $data['rooms']=$room_list;
+                $data['url']=$this->autolink();
+            }
 
-                    if (!isset($menor)) {
-                        $menor = $item;
-                    }
-                    if ($item['price'] < $menor['price'] ) {
-                        $menor = $item;
-                    }
-                }
-                if($min > $menor['precio']){
-                    $min=$menor['precio'];
-                }
-                if($menor['precio']> $max){
-                    $max=$menor['precio'];
-                }
-                $room_list[]=$menor;
-                unset($menor);
-            }
-            $data['min']=$min;
-            if($max>8000){
-                $max=8001;
-            }
-            $data['max']=$max;
-            $data['destino']=$destinocorrecto;
-            $data['rooms']=$room_list;
-            if($defaultquery){
-                $data['url']='&sd='.$_GET["sd"].'&ed='.$_GET["ed"].'&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0';
-            }else{
-                $get_numero = count($_GET);
-                $get_etiquetas = array_keys($_GET);
-                $get_valores = array_values($_GET);
-                $url="";
-                for ($i=2; $i <=($get_numero-1) ; $i++) { 
-                    if(strcmp($get_etiquetas[$i],"d")!== 0){
-                        $url.="&".$get_etiquetas[$i]."=".$get_valores[$i];
-                    }
-                    
-                }
-               $data['url']=$url;
-            }
         }else{
-            $data['destino']=$destino;
-            $data['erroresquery']=$errorquery;
+            /* inicia hotel do*/     
+            if($defaultquery){
+                $query = $this->defaultquery();
+                $huespedes='<span class="date">2 adultos sin menores, 1 habitación.</span>';
+            }else{
+                $query = $this->query();
+                $totaladultos=$_GET['r1a']+$_GET['r2a']+$_GET['r3a'];
+                $totalmenores=$_GET['r1k']+$_GET['r2k']+$_GET['r3k'];
+                $huespedes='<span class="date"> ';
+                if($totaladultos==1){
+                    $huespedes.='1 Adulto ';
+                }else{
+                    $huespedes.=$totaladultos.' Adultos ';
+                }
+                if($totalmenores==1){
+                    $huespedes.='1 menor';
+                }else{
+                    $huespedes.=$totalmenores.' menores, ';
+                }
+                if($_GET['r']=1){
+                    $huespedes.='1 habitación.</span>';
+                }else{
+                    $huespedes.=$_GET['r'].' habitaciones.</span>';
+                }
+            }
+            $errorquery="0";
+            if (isset($_GET['type']) and $_GET['type']==1) {
+                $query->d=$_GET['d'];
+                $query->h="";
+            }else{
+                $query->h=$_GET['d'];
+                $query->d="";
+            }
+            $query->setCached(false);
+            $query->exec();
+            
+            if ( $query->fail() ) {
+                switch ($query->getError()) {
+                    case 'No se encontraron resultados':
+                        $errorquery="No se encontraron resultados, le sugerimos cambiar de fechas o destino.";
+                        break;
+                    case 'No results found':
+                        $errorquery="No se encontraron resultados, le sugerimos cambiar de fechas o destino.";
+                        break;
+                    case 'Hubo un error de timeout':
+                        $errorquery="El servidor tardo mucho tiempo en responder, intentelo nuevamente.";
+                        break;
+                    default:
+                        $errorquery="Ocurrio una interrupcion inesperada. intentelo nuevamente.";
+                        break;
+                }
+            }
+            $sd = new \DateTime($_GET['sd']);
+            $ed = new \DateTime($_GET['ed']);
+            $interval = $ed->diff($sd);
+            if($errorquery=="0"){
+                $room_list=[];
+                $min=10000000;
+                $max=0;
+                foreach ($query->getXml()->Hotels->Hotel as $hotel) {
+                    $destinocorrecto=$hotel->Destination->Name;
+                    foreach ($hotel->Rooms->Room as $room) {
+                        $item=[];
+                        $item['adultos'] = ($_GET['r1a']+$_GET['r2a']+$_GET['r3a']);
+                        $precio=$room->MealPlans->MealPlan->AgencyPublic->AgencyPublic/$interval->d;
+                        
+                        if (empty($hotel->Reviews->Review->Rating)) {
+                            if($precio < 1000){
+                                $item['stars']=1;
+                            }else if($precio < 2000){
+                                $item['stars']=3;
+                            }else if($precio < 3000){
+                                $item['stars']=4;
+                            }else{
+                                $item['stars']=5;
+                            }
+                        }else{
+                            $item['stars']= (float) $hotel->Reviews->Review->Rating;
+                        }
+                        if ($precio> 0 and $precio<= 1000) {
+                            $item['pricerange'] = "btw0k-1k";
+                        }elseif ($precio> 1000 and $precio<= 3000) {
+                            $item['pricerange'] = "btw1k-3k";
+                        }elseif ($precio> 3000 and $precio<= 6000) {
+                            $item['pricerange'] = "btw3k-5k";
+                        }elseif ($precio> 6000 and $precio<= 8000) {
+                            $item['pricerange'] = "btw5k-8k";
+                        }elseif ($precio> 8000 ) {
+                            $item['pricerange'] = "more8k";
+                        }
+                        
+                        if (isset($room->MealPlans->MealPlan->Promotions)) {
+                            $promotionhoteldo=(string) $room->MealPlans->MealPlan->Promotions->Promotion->Description;
+                            $desc = substr($promotionhoteldo, 0,2);
+                            if(is_numeric($desc)){
+                                $item['descuento']="-".$desc."%";
+                                $item['preciodescuento']=number_format((100*$precio)/(100-$desc));
+                            }
+                        }
+                        $item['id']= (string) $hotel->Id;
+                        $item['name']= (string) $hotel->Name;
+                        $item['url']=str_replace(" ","-",$hotel->Name);
+                        if (empty((string) $hotel->Image)) {
+                            $item['image']= '//kooningtravel.com/images/hotel-generico.jpg';
+                        }else{
+                            $item['image']= (string) $hotel->Image;
+                        }
+                        $item['city_name']= (string) $hotel->CityName;
+                        $item['country_name']= (string) $hotel->CountryName;
+                        $item['room_name']= (string) $room->Name;
+                        $item['meal_plan']= (string) $room->MealPlans->MealPlan->Name;
+                        $item['agency_public'] = (string) $room->MealPlans->MealPlan->AgencyPublic->AgencyPublic;
+                        $totaldo=((float) $room->MealPlans->MealPlan->Total/$interval->d);
+                        $item['total_noches'] = $interval->d;
+                        $item['price']=number_format($precio);
+                        $item['precio']=$precio;
+
+                        if (!isset($menor)) {
+                            $menor = $item;
+                        }
+                        if ($item['price'] < $menor['price'] ) {
+                            $menor = $item;
+                        }
+                    }
+                    if($min > $menor['precio']){
+                        $min=$menor['precio'];
+                    }
+                    if($menor['precio']> $max){
+                        $max=$menor['precio'];
+                    }
+                    $room_list[]=$menor;
+                    unset($menor);
+                }
+                $data['min']=$min;
+                if($max>8000){
+                    $max=8001;
+                }
+                $data['max']=$max;
+                $data['destino']=$destinocorrecto;
+                $data['rooms']=$room_list;
+                if($defaultquery){
+                    $data['url']='&sd='.$_GET["sd"].'&ed='.$_GET["ed"].'&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0';
+                }else{
+                    $data['url']=$this->autolink();
+                }
+            }else{
+                $data['destino']=$destino;
+                $data['erroresquery']=$errorquery;
+            }
+            /* termina hotel do*/
         }
         if(!empty($errores)){
             $data['errores']=$errores;
@@ -224,6 +331,8 @@ class HomeController extends Controller
         return view('home/search',$data);
     }
     public function details($id, $hotel){
+        $data['checkin']=new Carbon($_GET['sd']);
+        $data['checkout']=new Carbon($_GET['ed']);
         $data['background']="height: 270px; background-image: url(https://kooningtravel.com/img/Home/fondos/FondoHoteles.png";
         $data['hotel']=$hotel;
         $errores= $this->validationrooms();
@@ -578,27 +687,55 @@ class HomeController extends Controller
     }
     public function list(){
         if (isset($_GET['term'])) {
-            $hoteles = json_decode(file_get_contents("js/Destinos/DestinosHoteldo.json"));
             $destinations_array=[];
-            $c=0;
-            foreach ($hoteles->Destination as $destination) {
-                if (preg_match('/^'.$_GET['term'].'/i',(string) $destination->Name)) {
-                    $destinations_array[]=['id'=>(string)$destination->Id,'text'=>(string) $destination->Name,'metadata'=>'1'];
-                    $c++;
-                    if ($c==5) {
-                        break;
+            $hotels_array=[];
+            if(Auth::check()){
+                $hoteles = json_decode(file_get_contents("js/Destinos/Destinos.json"));
+                $c=0;
+                foreach ($hoteles as $destino) {
+                    if (preg_match('/^'.$_GET['term'].'/i',(string) $destino->Nombre)) {
+                        $destinations_array[]=['id'=>(string)$destino->Codigo,'text'=>(string) $destino->Nombre,'metadata'=>'1','cadena'=>'1'];
+                        $c++;
+                        if ($c==5) {
+                            break;
+                        }
                     }
                 }
-            }
-            $c=0;
-            $hotels = json_decode(file_get_contents("js/Hoteles/HotelDo.json"));
-            $hotels_array=[];
-            foreach ($hotels as $hotel) {
-                if (preg_match('/^'.$_GET['term'].'/i',(string) $hotel->Name)) {
-                    $hotels_array[]=['id'=>(string)$hotel->Id,'text'=>(string) $hotel->Name,'metadata'=>'0'];
-                    $c++;
-                    if ($c==5) {
-                        break;
+                $inicial=substr(strtolower($_GET['term']),0,1);
+                $busqueda = array("a"=>"AB", "b"=>"AB", "c"=>"CD", "d"=>"CD", "e"=>"EFG", "f"=>"EFG", "g"=>"EFG", "h"=>"HIJ", "i"=>"HIJ", "j"=>"HIJ", "k"=>"KLM", "l"=>"KLM", "m"=>"KLM", "n"=>"NOP", "o"=>"NOP", "p"=>"NOP", "q"=>"QRS", "r"=>"QRS", "s"=>"QRS", "t"=>"TUV", "u"=>"TUV", "v"=>"TUV", "w"=>"WXYZ", "x" =>"WXYZ","y"=>"WXYZ", "z"=>"WXYZ");
+                $inicialhotel = strtr($inicial,$busqueda);
+                $c=0;
+                $hoteles = json_decode(file_get_contents("js/hoteles/hoteles".$inicialhotel.".json"));
+                foreach ($hoteles as $hotel) {
+                    if (preg_match('/^'.$_GET['term'].'/i',(string) $hotel->Nombre)) {
+                        $hotels_array[]=['id'=>(string)$hotel->Codigo,'text'=>(string) $hotel->Nombre,'metadata'=>'1','cadena'=>'1'];
+                        $c++;
+                        if ($c==6) {
+                            break;
+                        }
+                    }
+                }
+            }else{
+                $hoteles = json_decode(file_get_contents("js/Destinos/DestinosHoteldo.json"));
+                $c=0;
+                foreach ($hoteles->Destination as $destination) {
+                    if (preg_match('/^'.$_GET['term'].'/i',(string) $destination->Name)) {
+                        $destinations_array[]=['id'=>(string)$destination->Id,'text'=>(string) $destination->Name,'metadata'=>'1'];
+                        $c++;
+                        if ($c==5) {
+                            break;
+                        }
+                    }
+                }
+                $c=0;
+                $hotels = json_decode(file_get_contents("js/Hoteles/HotelDo.json"));
+                foreach ($hotels as $hotel) {
+                    if (preg_match('/^'.$_GET['term'].'/i',(string) $hotel->Name)) {
+                        $hotels_array[]=['id'=>(string)$hotel->Id,'text'=>(string) $hotel->Name,'metadata'=>'0'];
+                        $c++;
+                        if ($c==5) {
+                            break;
+                        }
                     }
                 }
             }
@@ -796,5 +933,45 @@ class HomeController extends Controller
         $query->r5k2a="0";
         $query->r5k3a="0";
         return $query;
+    }
+    private static function bedsquery($query) {
+        $query->l='esp';
+        $query->d=$_GET['d'];
+        $query->sd=$_GET['sd'];
+        $query->ed=$_GET['ed'];
+        $query->r=$_GET['r'];
+        $query->adultos= $_GET['r1a'] + $_GET['r2a'] + $_GET['r3a'];
+        $query->menores=$_GET['r1k'] + $_GET['r2k'] + $_GET['r3k'];
+        $query->total=[
+            'r1a'=>$_GET['r1a'],
+            'r1k'=>$_GET['r1k'],
+            'r1k1a'=>$_GET['r1k1a'],
+            'r1k2a'=>$_GET['r1k2a'],
+            'r1k3a'=>$_GET['r1k3a'],
+            'r2a'=>$_GET['r2a'],
+            'r2k'=>$_GET['r2k'],
+            'r2k1a'=>$_GET['r2k1a'],
+            'r2k2a'=>$_GET['r2k2a'],
+            'r2k3a'=>$_GET['r2k3a'],
+            'r3a'=>$_GET['r3a'],
+            'r3k'=>$_GET['r3k'],
+            'r3k1a'=>$_GET['r3k1a'],
+            'r3k2a'=>$_GET['r3k2a'],
+            'r3k3a'=>$_GET['r3k3a'],
+        ];
+        return $query;
+    }
+    function autolink(){
+        $get_numero = count($_GET);
+        $get_etiquetas = array_keys($_GET);
+        $get_valores = array_values($_GET);
+        $url="";
+        for ($i=2; $i <=($get_numero-1) ; $i++) { 
+            if(strcmp($get_etiquetas[$i],"d")!== 0){
+                $url.="&".$get_etiquetas[$i]."=".$get_valores[$i];
+            }
+                        
+        }
+        return $url;
     }
 }
