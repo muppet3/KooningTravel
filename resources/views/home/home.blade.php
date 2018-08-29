@@ -471,9 +471,9 @@ body .home { height:360px; }
 									<div class="carousel slide" data-ride="carousel" >
 										<!-- Carousel items -->
 										<div class="carousel-inner" >
-											<div class="item active"><a  href="/Parques/Xcaret"><img class="imgh" src="https://www.kooningtravel.com/img/Home/publicidadtours/Xcaret.png" alt="Xcaret" /></a> </div>
-											<div class="item"><a href="/Parques/Royal-Garrafon"><img class="imgh" src="https://www.kooningtravel.com/img/Home/publicidadtours/Dolphin.png" alt="Dolphin" /></a> </div>
-											<div class="item"><a href="/Parques/Rio-Secreto"><img class="imgh" src="https://www.kooningtravel.com/img/Home/publicidadtours/RioSecreto.png" alt="Holbox" /></a> </div>
+											<div class="item active"><a  href="/parques/Xcaret"><img class="imgh" src="https://www.kooningtravel.com/img/Home/publicidadtours/Xcaret.png" alt="Xcaret" /></a> </div>
+											<div class="item"><a href="/parques/Royal-Garrafon"><img class="imgh" src="https://www.kooningtravel.com/img/Home/publicidadtours/Dolphin.png" alt="Dolphin" /></a> </div>
+											<div class="item"><a href="/parques/Rio-Secreto"><img class="imgh" src="https://www.kooningtravel.com/img/Home/publicidadtours/RioSecreto.png" alt="Holbox" /></a> </div>
 										</div>
 										<!-- Carousel nav -->
 									</div>
@@ -487,8 +487,8 @@ body .home { height:360px; }
 										<div class="carousel slide" data-ride="carousel" >
 											<!-- Carousel items -->
 											<div class="carousel-inner" >
-												<div class="item active"><a  href="/Tours/Chichen-Itza"><img class="imgh" src="https://www.kooningtravel.com/img/Home/publicidadtour/Mayaland.png" alt="Xcaret" /></a> </div>
-												<div class="item"><a href="/Tours/Holbox"><img class="imgh" src="https://www.kooningtravel.com/img/Home/publicidadtour/Holbox.png" alt="Dolphin" /></a> </div>
+												<div class="item active"><a  href="/tours/Chichen-Itza"><img class="imgh" src="https://www.kooningtravel.com/img/Home/publicidadtour/Mayaland.png" alt="Xcaret" /></a> </div>
+												<div class="item"><a href="/tours/Holbox"><img class="imgh" src="https://www.kooningtravel.com/img/Home/publicidadtour/Holbox.png" alt="Dolphin" /></a> </div>
 											</div>
 											<!-- Carousel nav -->
 										</div>

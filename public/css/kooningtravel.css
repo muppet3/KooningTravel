@@ -11,9 +11,20 @@
 										************ Reestructuración - 01/08/2018 - *************
 */
 
-::selection { background: #eb1c744f; }
-body { margin: 0px; padding: 0px; text-align: center; }
+/*Font face*/
 @font-face { font-family: HelveticaThin; src: url("fonts/HelveticaNeueEroski-Thin.otf") format('opentype'), url("fonts/HelveticaNeueEroski-Thin.woff") format('woff'), url("fonts/HelveticaNeueEroski-Thin.ttf") format('truetype'); font-weight: 400; font-style: normal }
+
+/*Color selected text*/
+::selection { background:#ff54548c; }
+
+/*Reset genearal css*/
+body { margin: 0px; padding: 0px; text-align: center; }
+.head * { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box }
+.head div, .head span, .head p, .head .tour li a, .head input, .head form, .head img, .head label, .head ul, .head li { display: inline-block; float: left; margin: 0px; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; }
+.head { height: auto; width: 100%; margin: 0px auto; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; text-align: center; }
+a:link, a:visited { text-decoration: none; }
+
+
 
 /*Carrito de compras css menu desplegable*/
 html body .other .header .menu2 #shopcart { text-align: center; width: 10%; height: 100%; background: url("https://www.kooningtravel.com/img/circle.png") no-repeat center 10px transparent; cursor: pointer; }
@@ -33,7 +44,6 @@ html body .other .header .menu2 #shopcart .contt .listcart .subt .btnt { backgro
 html body .other .header .menu2 #shopcart .contt .listcart .tott { width: 100%; height: 25px; background: rgba(230, 27, 118, 0.8); margin: 10px 0px; }
 html body .other .header .menu2 #shopcart .contt .listcart .tott span { width: 50%; color: #FFF; margin-top : 5px; }
 html body .other .header .menu2 #shopcart .contt .listcart .teltt { background: url(https://www.kooningtravel.com/img/Home/flags/flags.png) no-repeat right center transparent; width: 53%; color: #FFF; margin: 10px 0px; text-align: left; font-weight: 600; font-size: 13px; }
-
 
 /*checkout carrito de compras*/
 html body .body-cart { background: #FFF; width: 100%; display: inline-block; float: left; margin:0px; padding: 0px; list-style: none;  }
@@ -179,36 +189,35 @@ html body .body-cart .col-md-9 .extras .row .conte .card-hotel { position: relat
 html body .body-cart .col-md-9 .extras .row .conte .card-hotel:hover { -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.7)!important; box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.7)!important; -webkit-transform: translateY(-8px); -ms-transform: translateY(-8px); transform: translateY(-8px); }
 
 /*Search caja de reservas*/
-body .search-body { width: 100%; display: inline-block;float: left; }
-body .search-body .container .bread-crub { padding: 15px; color: #000; width: 100%; text-align: left; font-family: Roboto, sans-serif; }
-body .search-body .container .bread-crub .icon-home { color: #000; }
-body .search-body .container .bread-crub b { font-weight: 700; font-size: 13px; }
-body .search-body .container .main-box { padding: 0px; }
-body .search-body .container .main-box .caja-search { box-shadow: 0 1px 4px rgba(41,51,57,.5); background: #37454d; margin-bottom: 17px; display: inline-block; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; width: 100%; height: auto; position: relative; float: none; text-align: center; }
-body .search-body .container .main-box .caja-search #contactform { margin-top: 15px; width: 94%; height: auto; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; text-align: center; display: inline-block; float: none; }
-body .search-body .container .main-box .caja-search #contactform .label1 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; color: #FFF; }
-body .search-body .container .main-box .caja-search #contactform hr { margin-bottom: 10px; float: left; display: inline-block; height: 1px; width: 100%; background: #bdbdbd; opacity: .4; }
-body .search-body .container .main-box .caja-search #contactform .inline-search { background: #FFF; display: inline-block; border-radius: 6px; margin: 10px 0px; text-align: center; box-shadow: none; width: 100%; }
-body .search-body .container .main-box .caja-search #contactform .inline-search .select2 { height: 33px; }
-body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection { height: 32px; width: 100%; }
-body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection { overflow: hidden; width: 100%; }
-body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered { height: 32px; width: 100%; list-style: none; margin: 0; }
-body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-search { z-index: 10; height: 32px; width: 100%; overflow: hidden; list-style: none; float: left; margin: 0px; padding: 0px; background-color: transparent; border: 0px; }
-body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-search .select2-search__field { font-size: 15px; width: 100%!important; height: 32px; margin: 0px; color: #444; position: absolute; z-index: 35; text-indent: 6px; background: transparent; border: none; outline: 0; box-shadow: none; -webkit-appearance: textfield; }
+html body .search-body { width: 100%; display: inline-block;float: left; }
+html body .search-body .container .bread-crub { padding: 15px; color: #000; width: 100%; text-align: left; font-family: Roboto, sans-serif; }
+html body .search-body .container .bread-crub .icon-home { color: #000; }
+html body .search-body .container .bread-crub b { font-weight: 700; font-size: 13px; }
+html body .search-body .container .main-box { padding: 0px; }
+html body .search-body .container .main-box .caja-search { box-shadow: 0 1px 4px rgba(41,51,57,.5); background: #37454d; margin-bottom: 17px; display: inline-block; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; width: 100%; height: auto; position: relative; float: none; text-align: center; }
+html body .search-body .container .main-box .caja-search #contactform { margin-top: 15px; width: 94%; height: auto; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; text-align: center; display: inline-block; float: none; }
+html body .search-body .container .main-box .caja-search #contactform .label1 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; color: #FFF; }
+html body .search-body .container .main-box .caja-search #contactform hr { margin-bottom: 10px; float: left; display: inline-block; height: 1px; width: 100%; background: #bdbdbd; opacity: .4; }
+html body .search-body .container .main-box .caja-search #contactform .inline-search { background: #FFF; display: inline-block; border-radius: 6px; margin: 10px 0px; text-align: center; box-shadow: none; width: 100%; }
+html body .search-body .container .main-box .caja-search #contactform .inline-search .select2 { height: 33px; }
+html body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection { height: 32px; width: 100%; }
+html body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection { overflow: hidden; width: 100%; }
+html body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered { height: 32px; width: 100%; list-style: none; margin: 0; }
+html body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-search { z-index: 10; height: 32px; width: 100%; overflow: hidden; list-style: none; float: left; margin: 0px; padding: 0px; background-color: transparent; border: 0px; }
+html body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-search .select2-search__field { font-size: 15px; width: 100%!important; height: 32px; margin: 0px; color: #444; position: absolute; z-index: 35; text-indent: 6px; background: transparent; border: none; outline: 0; box-shadow: none; -webkit-appearance: textfield; }
 .select2-container--default .select2-selection--multiple { background-color: white; border: 1px solid #aaa; border-radius: 4px; cursor: text; }
-body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-selection__clear { height: 32px; width: 97%; position: absolute; top: 0px; left: 0px; line-height: 33px; text-indent: 0px; text-align: right; margin: 0px; z-index: 40; }
-body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-selection__choice { height: 32px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; line-height: 33px; font-weight: bold; width: 90%; background-color: transparent; text-indent: 4px; color: #444; font-size: 12px; border: 0px; }
-body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove { color: #999; cursor: pointer; display: inline-block; font-weight: bold; margin-right: 2px; }
-body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-search { z-index: 10; height: 32px; width: 100%; margin: 0px; padding: 0px; background-color: transparent; border: 0px; overflow: hidden; }
-body .search-body .container .main-box .caja-search form .inline-block { text-align: center; width: 100%; }
-body .search-body .container .main-box .caja-search form .inline-block:nth-child(5){   }
-body .search-body .container .main-box .caja-search #contactform .inline-search .inline-block .inline-search { }
-body .search-body .container .main-box .caja-search #contactform .inline-block .inline-search .input-style { width: 60%; float: none; }
+html body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-selection__clear { height: 32px; width: 97%; position: absolute; top: 0px; left: 0px; line-height: 33px; text-indent: 0px; text-align: right; margin: 0px; z-index: 40; }
+html body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-selection__choice { height: 32px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; line-height: 33px; font-weight: bold; width: 90%; background-color: transparent; text-indent: 4px; color: #444; font-size: 12px; border: 0px; }
+html body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove { color: #999; cursor: pointer; display: inline-block; font-weight: bold; margin-right: 2px; }
+html body .search-body .container .main-box .caja-search #contactform .inline-search .select2 .selection .select2-selection .select2-selection__rendered .select2-search { z-index: 10; height: 32px; width: 100%; margin: 0px; padding: 0px; background-color: transparent; border: 0px; overflow: hidden; }
+html body .search-body .container .main-box .caja-search form .inline-block { text-align: center; width: 100%; }
+html body .search-body .container .main-box .caja-search form .inline-block:nth-child(5){   }
+html body .search-body .container .main-box .caja-search #contactform .inline-search .inline-block .inline-search { }
+html body .search-body .container .main-box .caja-search #contactform .inline-block .inline-search .input-style { width: 60%; float: none; }
 #header { width: 100%; }
 #search-tabs-2 { display: inline-block; }
 .reset .col-md-3 { width: 24%; height: 100%; padding: 0px; display: inline-block; float: left; }
 .img-hotel-disney .img-w { width: 100%; display: inline-block; float: left; }
-
 
 /*Details*/
 html body .search-body .container .detalles-hotel { border: 1px solid #f2f8fc; border-radius: 6px; margin: 15px 0px; color: #2c678d; font-family: Oswald; font-size: 18px; font-weight: 900; text-align: left; width: 100%; display: inline-block; padding: 10px; }
@@ -260,13 +269,6 @@ html body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .item
 html body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .destino-hotel .panel-default .panel-collapse .panel-body .info-message { font-size: 12px; color: #888; display: inline-block; width: 100%; text-align: justify; }
 html body .container #verMapa { background: #fff; text-align: center; width: 100%; display: inline-block; }
 html body .container #verMapa #mapa { width: 98%; float: none; height: 350px; display: inline-block; }
-
-/*Reset genearal css*/
-.head * { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box }
-.head div, .head span, .head p, .head .tour li a, .head input, .head form, .head img, .head label, .head ul, .head li { display: inline-block; float: left; margin: 0px; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; }
-.head { height: auto; width: 100%; margin: 0px auto; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; text-align: center; }
-a:link, a:visited { text-decoration: none; }
-
 
 /*https://www.kooningtravel.com/Gracias*/
 .great { position: relative; background: url("https://www.kooningtravel.com/img/gracias.png") no-repeat 15% 7% #F2F2F2 /70%; width:90%; height: 500px; margin: 0px auto; margin-top: 20px; }
@@ -436,20 +438,18 @@ td.issuer img { margin: 0 .5em 0 0; float: left; }
 #promo .contp #contactform .param { display: none; }
 #promo .contp #contactform  .inline-block .inline-button{ border: 0px; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);background: #4CA854; color: #FFF; width: 39%; font-size: 22px; float: none; height: 35px;border-radius: 4px; }
 
-
 /*Autocomplete*/
-body .select2-container { }
-body .select2-container, body .select2-container span, body .select2-container ul, body .select2-container ul li, body .select2-container strong { text-align: left; color: #666; font-family: Roboto, sans-serif; display: inline-block; float: left; margin: 0px; text-decoration: none; outline: none; list-style: none; height: auto; }
-body .select2-container strong { background: #FFF; }
-body .select2-results__options ul li strong { margin: 5px 0px; }
-body .select2-results__options ul { background: #a7c0e7; }
-body .select2-results__options ul li { font-family: 'Roboto', sans-serif; border-bottom: 1px dotted #FFF; color: #1d1b19; font-weight: normal; height: auto; font-size: 15px; }
-body .selection .select2-selection .select2-selection__rendered { position: relative; overflow: hidden; text-align: center; }
-body .selection .select2-selection .select2-selection__rendered .select2-selection__clear { text-align: right; position: absolute; left: 0px; top: 0px; z-index: 200; }
-body .selection .select2-selection .select2-selection__rendered .select2-selection__choice { position: absolute; top: 0px; left: 0px; z-index: 100; line-height: 44px; }
-body .select2-selection__choice__remove { position: absolute; top: 0px; left: 0px; }
+html body .select2-container { }
+html body .select2-container, body .select2-container span, body .select2-container ul, body .select2-container ul li, body .select2-container strong { text-align: left; color: #666; font-family: Roboto, sans-serif; display: inline-block; float: left; margin: 0px; text-decoration: none; outline: none; list-style: none; height: auto; }
+html body .select2-container strong { background: #FFF; }
+html body .select2-results__options ul li strong { margin: 5px 0px; }
+html body .select2-results__options ul { background: #a7c0e7; }
+html body .select2-results__options ul li { font-family: 'Roboto', sans-serif; border-bottom: 1px dotted #FFF; color: #1d1b19; font-weight: normal; height: auto; font-size: 15px; }
+html body .selection .select2-selection .select2-selection__rendered { position: relative; overflow: hidden; text-align: center; }
+html body .selection .select2-selection .select2-selection__rendered .select2-selection__clear { text-align: right; position: absolute; left: 0px; top: 0px; z-index: 200; }
+html body .selection .select2-selection .select2-selection__rendered .select2-selection__choice { position: absolute; top: 0px; left: 0px; z-index: 100; line-height: 44px; }
+html body .select2-selection__choice__remove { position: absolute; top: 0px; left: 0px; }
 .select2-results__options, .select2-results__options li, .select2-results__options strong, .select2-results__options ul, .select2-results__options li { width: 100%; }
-
 
 /*Calendario CSS*/
 html .ui-datepicker.ui-datepicker-multi { width: auto; margin-left: -110px; float: none; }
@@ -625,63 +625,77 @@ zoom: 1; top: 3px; position: relative; float: none; }
 .btn.focus, .btn:focus, .btn:hover { color: #FFF!important; }
 .navbar { margin-bottom: 0px!important; }
 
-
 /*CSS HOME*/
-body .head .bgv { width: 100%; height: 360px; overflow: hidden; position: absolute; left: 0px; z-index: -4; }
-body .head .bgv video { position: absolute; top: -260px; left: 0px; width: 100%; }
-body .head .box { position: relative; width: 100%; text-align: center; }
-body .head .box .headf { background: url("https://www.kooningtravel.com/img/Home/Audifonos.png") no-repeat center center transparent; display: inline-block; width: 62px; height: 51px; border-radius: 4px; position: absolute; right: 8%; }
-body .home .explor { display: inline-block; width: auto; text-align: center; color: #FFF; font-weight: 300; font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-size: 20px; text-decoration: none; position: relative; top: 45px; }
-body .head .box #contactform { margin: 0px auto; float: none; }
-body .head .box #contactform .position { left: -17px; }
-body .pannel { text-align: center; margin-top: 20px; display: inline-block; width: 100%; float: left; }
-body .pannel .lereve { float: left; display: inline-block; text-align: center; width: 185px; }
-body .pannel .azull { display: inline-block; width: 185px; text-align: center; float: right; }
-body .pannel .cb { position: relative; float: left; width: 230px; height: 200px; background: url(https://www.kooningtravel.com/img/home/TarjetasBancosC.png) center center no-repeat #f9f9f9; border: 1px solid #eee!important; border-radius: 0 3px 3px 0!important; }
-body .pannel .cb .det { display: inline-block; width: 100%; position: absolute; bottom: 0px; text-align: center; margin: 0px; }
-body .pannel .sliderh { display: inline-block; float: none; margin: 0px auto; }
-body .pannel .contr { width: 17%; display: inline-block; float: right; }
-body .pannel .contr #visitc { background: url("https://www.kooningtravel.com/img/home/VisitMexico.png") no-repeat center center #f9f9f9; width: 134px; height: 82px; display: inline-block; border: 1px solid #eee; border-radius: 0 3px 3px 0; float: right; }
-body .pannel .contr .visith { display: inline-block; float: right; margin-top: 10px; }
-body .centerh { display: inline-block; float: left; margin-top: 30px; width: 100%; }
-body .centerh .playash { font-family: HelveticaThin, Helvetica, Arial, sans-serif; display: inline-block; float: left; padding-bottom: 9px; margin: 25px 0 20px; border-bottom: 1px solid #eee; text-align: center; font-size: 30px; color: #c3c0cc; background: #f6f6f6; width: 100%; }
-body .centerh .bloque {  margin-bottom: 10px;  position: relative; text-align: center; display: inline-block; float: left; width: 100%; }
-body .centerh .bloque:nth-child(2) { margin:0px;  }
-body .centerh .bloque #anuncio, body .centerh .bloque #comodin { margin-left: 1%; margin-top: 4%; left: 3%; width: 12%; display: inline-block; float: left; }
-body .centerh .hint { overflow: hidden; display: inline-block; float: left; margin-left: 2%; text-align: center; width: 67%; }
-body .centerh .bloqueh { display: inline-block; float: none; width: 860px; margin-bottom: 40px; margin: 0px auto; }
-body .centerh .bloqueh div { display: inline-block; }
-body .centerh .bloqueh .banerh { float: left; }
-body .centerh .bloqueh .banerh2 { float: right; }
-body .centerh .bloqueh div a { float: left; }
-body .centerh .bloqueh div a img { border-radius: 3px; }
-body .centerh .bloqueh .banerh2 .mar { margin-left: 8px; }
-body .centerh .bloqueh .homeb a { display: inline-block; float: left; }
-body .centerh .gray { background: #f6f6f6; }
-body .centerh .bloque #anuncio4, body .centerh .bloque #anuncio5 { margin-top: 13%; width: 220px; height: 131px; overflow: hidden; }
-body .centerh .bloque .posh { margin-top: 20%; overflow: hidden; text-align: center; float: none; display: inline-block; }
-body .centerh .bloque .white { background: #FFF; }
-body .centerh .bloque .colh { display: inline-block; width: 81%; text-align: center; }
-body .centerh .bloque .hintr { overflow: hidden; display: inline-block; float: left; width: 16%; margin-left: 2%; }
-body .centerh .bloque .hintr #anuncio3 { margin-top: 13%; }
-body .centerh .bloque .colh .gal { display: inline-block; width: 310px; height: auto; }
-body .centerh .bloque .colh .gal2 { margin: 0px 27px; }
-body .centerh .bloque .colh .gal .sombraPromociones2 { background-color: #fff; border: 1px solid #ddd; border-radius: 4px; -webkit-transition: border .2s ease-in-out; -o-transition: border .2s ease-in-out; transition: border .2s ease-in-out; display: inline-block; float: left; width: auto; height: auto; padding: 4px; }
-body .centerh .bloque .colh .gal .sombraPromociones2 .imgh { display: inline-block; float: left; margin: 0px; }
-body .centerh .bloque .colh .gal .sombraPromociones2 .caption { cursor: pointer; display: inline-block; float: left; width: 100%; font-weight: bold; color: #333; text-align: center; padding: 0px; height: auto; }
-body .centerh .bloque .colh .gal .sombraPromociones2 .caption h4 { margin: 7px 0px; display: inline-block; width: 100%; float: left; font-size: 18px; font-weight: 500; padding: 0px; text-align: center; }
-body .centerh .bloque .colh .gal .sombraPromociones2 .caption span { margin-bottom: 6px; display: inline-block; float: left; width: 100%; text-align: center; font-size: 14px; }
-body .centerh .bloqueh div a img:hover, body .centerh .bloque .colh .gal .sombraPromociones2:hover{-webkit-box-shadow:0 0 30px 0 rgba(0,0,0,.75);-moz-box-shadow:0 0 30px 0 rgba(0,0,0,.75);box-shadow:0 0 30px 0 rgba(0,0,0,.75);transition:all .5s ease; }
-body .centerh .fott { margin-top: 15px; height: auto; }
-body .centerh .fott img { display: inline-block; padding: 0px; border: 0px; width: 170px; height: 66px; }
-body .centerh .fott .mar { margin: 0px 55px; }
+html body .head .bgv { width: 100%; height: 360px; overflow: hidden; position: absolute; left: 0px; z-index: -4; }
+html body .head .bgv video { position: absolute; top: -260px; left: 0px; width: 100%; }
+html body .head .box { position: relative; width: 100%; text-align: center; }
+html body .head .box .headf { background: url("https://www.kooningtravel.com/img/Home/Audifonos.png") no-repeat center center transparent; display: inline-block; width: 62px; height: 51px; border-radius: 4px; position: absolute; right: 8%; }
+html body .home .explor { display: inline-block; width: auto; text-align: center; color: #FFF; font-weight: 300; font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-size: 20px; text-decoration: none; position: relative; top: 45px; }
+html body .head .box #contactform { margin: 0px auto; float: none; }
+html body .head .box #contactform .inline-block:nth-child(5){  }
+html body .head .box #contactform .position { left: -17px; }
+html body .pannel { text-align: center; margin-top: 20px; display: inline-block; width: 100%; float: left; }
+html body .pannel .lereve { float: left; display: inline-block; text-align: center; width: 185px; }
+html body .pannel .azull { display: inline-block; width: 185px; text-align: center; float: right; }
+html body .pannel .cb { position: relative; float: left; width: 230px; height: 200px; background: url(https://www.kooningtravel.com/img/home/TarjetasBancosC.png) center center no-repeat #f9f9f9; border: 1px solid #eee!important; border-radius: 0 3px 3px 0!important; }
+html body .pannel .cb .det { display: inline-block; width: 100%; position: absolute; bottom: 0px; text-align: center; margin: 0px; }
+html body .pannel .sliderh { display: inline-block; float: none; margin: 0px auto; }
+html body .pannel .contr { width: 17%; display: inline-block; float: right; }
+html body .pannel .contr #visitc { background: url("https://www.kooningtravel.com/img/home/VisitMexico.png") no-repeat center center #f9f9f9; width: 134px; height: 82px; display: inline-block; border: 1px solid #eee; border-radius: 0 3px 3px 0; float: right; }
+html body .pannel .contr .visith { display: inline-block; float: right; margin-top: 10px; }
+html body .centerh { display: inline-block; float: left; margin-top: 30px; width: 100%; }
+html body .centerh .playash { font-family: HelveticaThin, Helvetica, Arial, sans-serif; display: inline-block; float: left; padding-bottom: 9px; margin: 25px 0 20px; border-bottom: 1px solid #eee; text-align: center; font-size: 30px; color: #c3c0cc; background: #f6f6f6; width: 100%; }
+html body .centerh .bloque {  margin-bottom: 10px;  position: relative; text-align: center; display: inline-block; float: left; width: 100%; }
+html body .centerh .bloque:nth-child(2) { margin:0px;  }
+html body .centerh .bloque #anuncio, body .centerh .bloque #comodin { margin-left: 1%; margin-top: 4%; left: 3%; width: 12%; display: inline-block; float: left; }
+html body .centerh .hint { overflow: hidden; display: inline-block; float: left; margin-left: 2%; text-align: center; width: 67%; }
+html body .centerh .bloqueh { display: inline-block; float: none; width: 860px; margin-bottom: 40px; margin: 0px auto; }
+html body .centerh .bloqueh div { display: inline-block; }
+html body .centerh .bloqueh .banerh { float: left; }
+html body .centerh .bloqueh .banerh2 { float: right; }
+html body .centerh .bloqueh div a { float: left; }
+html body .centerh .bloqueh div a img { border-radius: 3px; }
+html body .centerh .bloqueh .banerh2 .mar { margin-left: 8px; }
+html body .centerh .bloqueh .homeb a { display: inline-block; float: left; }
+html body .centerh .gray { background: #f6f6f6; }
+html body .centerh .bloque #anuncio4, body .centerh .bloque #anuncio5 { margin-top: 13%; width: 220px; height: 131px; overflow: hidden; }
+html body .centerh .bloque .posh { margin-top: 20%; overflow: hidden; text-align: center; float: none; display: inline-block; }
+html body .centerh .bloque .white { background: #FFF; }
+html body .centerh .bloque .colh { display: inline-block; width: 81%; text-align: center; }
+html body .centerh .bloque .hintr { overflow: hidden; display: inline-block; float: left; width: 16%; margin-left: 2%; }
+html body .centerh .bloque .hintr #anuncio3 { margin-top: 13%; }
+html body .centerh .bloque .colh .gal { display: inline-block; width: 310px; height: auto; }
+html body .centerh .bloque .colh .gal2 { margin: 0px 27px; }
+html body .centerh .bloque .colh .gal .sombraPromociones2 { background-color: #fff; border: 1px solid #ddd; border-radius: 4px; -webkit-transition: border .2s ease-in-out; -o-transition: border .2s ease-in-out; transition: border .2s ease-in-out; display: inline-block; float: left; width: auto; height: auto; padding: 4px; }
+html body .centerh .bloque .colh .gal .sombraPromociones2 .imgh { display: inline-block; float: left; margin: 0px; }
+html body .centerh .bloque .colh .gal .sombraPromociones2 .caption { cursor: pointer; display: inline-block; float: left; width: 100%; font-weight: bold; color: #333; text-align: center; padding: 0px; height: auto; }
+html body .centerh .bloque .colh .gal .sombraPromociones2 .caption h4 { margin: 7px 0px; display: inline-block; width: 100%; float: left; font-size: 18px; font-weight: 500; padding: 0px; text-align: center; }
+html body .centerh .bloque .colh .gal .sombraPromociones2 .caption span { margin-bottom: 6px; display: inline-block; float: left; width: 100%; text-align: center; font-size: 14px; }
+html body .centerh .bloqueh div a img:hover, body .centerh .bloque .colh .gal .sombraPromociones2:hover{-webkit-box-shadow:0 0 30px 0 rgba(0,0,0,.75);-moz-box-shadow:0 0 30px 0 rgba(0,0,0,.75);box-shadow:0 0 30px 0 rgba(0,0,0,.75);transition:all .5s ease; }
+html body .centerh .fott { margin-top: 15px; height: auto; }
+html body .centerh .fott img { display: inline-block; padding: 0px; border: 0px; width: 170px; height: 66px; }
+html body .centerh .fott .mar { margin: 0px 55px; }
 
-/*https://kooningtravel.com/Contacto*/
-.conus { position: relative; background: url("https://www.kooningtravel.com/img/contactanos.png") no-repeat 0px 0px transparent/100%; display: inline-block; float: left; margin-bottom: 15px; }
-.envn { float: right; width: 120px; height: 40px; }
-.cuadro-contacto label { color: #FFF; font-weight: normal; font-size: 14px; }
-.rgn { padding: 0px; }
-
+/*  https://kooningtravel.com/Contacto  */
+html body .conus { background: url("https://www.kooningtravel.com/img/contactanos.png") no-repeat 0px 0px transparent/100%; position: relative; display: inline-block; float: left; }
+html body .conus .alert{ width: 30%; left: 30%;position: absolute; top: 0px; }
+html body .conus .cuadro-contacto .top-menu .ubicacion-pagina {width: 23%;color: #000;font-family: Oswald,sans-serif;font-weight: 300;text-align: left;float: left;display: inline-block;text-align: center;}
+html body .conus .cuadro-contacto .top-menu .titulo-internas {color: #1c252b;font-family: Oswald,sans-serif;font-size: 26px;font-weight: 300;text-transform: uppercase;text-align: center;display: inline-block;float: left;width: 50%;margin: 0px;}
+html body .conus .cuadro-contacto { color: #000; width: 100%; display: inline-block; float: left; }
+html body .conus .cuadro-contacto .contacton .input-group {margin: 8px 0px;float: none;width: 75%;text-align: center;display: inline-block;}
+html body .conus .cuadro-contacto .contacton .input-group .form-control { width: 90%; height: 34px; padding: 0px 4px; background-color: #fff; border: 1px solid #ccc;    border-top-left-radius: 4px!important; border-bottom-left-radius: 4px!important; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 1px rgba(0,0,0,.075); -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s; -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; border-right: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; }
+html body .conus .cuadro-contacto .contacton .input-group .input-group-addon { width: 10%; white-space: nowrap; vertical-align: middle; font-size: 14px; font-weight: 400; line-height: 1; height: 34px; color: #555; text-align: center; background-color: #eee; border: 1px solid #ccc; border-radius: 4px; border-left: 0px; border-top-left-radius: 0px; border-bottom-left-radius: 0px; }
+html body .conus .cuadro-contacto .contacton { display: inline-block; float: left; width: 50%; text-align: center; border-right:1px solid #f2f2f2; }
+html body .conus .cuadro-contacto label { color: #FFF; margin: 0px; float: left; width: 100%; text-align: left; }
+html body .conus .cuadro-contacto .rgn { margin-top: 20px; text-align: left; width: 47%; float: right; display: inline-block; }
+html body .conus .cuadro-contacto .top-menu { display: inline-block; float: left; width: 100%; margin-top: 20px; border-bottom: 1px solid #f2f2f2; height: 35px; }
+html body .conus .cuadro-contacto .contacton .input-group textarea { width: 100%!important; resize: none; height: 80px!important; }
+html body .conus .cuadro-contacto .contacton .input-group #enviac { float: right; width: 120px; height: 40px; background: #E61B76; color: #fff; border: 0px; font-weight: 900; display: inline-block; padding: 5px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px; margin: 0; }
+html body .conus .cuadro-contacto .rgn .tittle-contact { color: #E61B76; font-size: 18px; font-weight: 300; margin: 10px 0px; text-transform: uppercase; font-family: Oswald, sans-serif; display: inline-block; float: left; width: 100%; }
+html body .conus .cuadro-contacto .rgn .tel, html body .conus .cuadro-contacto .rgn .mail{ display: inline-block; float: left; width: 100%; }
+html body .conus .cuadro-contacto .rgn .tel a, html body .conus .cuadro-contacto .rgn .mail a{ color: #f4731c; }
+html body .conus .cuadro-contacto .rgn .tel .fa, html body .conus .cuadro-contacto .rgn .mail .fa{ color:#f4731c; float:left; margin:4px 4px; }
+html body .conus .cuadro-contacto .rgn .text-contact{ color: #495e79; width: 100%; float: left; display: inline-block; }
 
 /*https://www.kooningtravel.com/Site-Map*/
 .site { height: auto; width: 990px; float: none; margin: 0px auto; display: inline-block; border: 1px solid #e3e3e3; border-radius: 4px; margin-bottom: 15px; background: #fff; }
@@ -692,7 +706,6 @@ body .centerh .fott .mar { margin: 0px 55px; }
 .site .contenedorm ul { width: 100px; list-style: square; display: inline-block; float: left; margin-left: 30px; padding: 0px; }
 .site .contenedorm ul li { width: 100%; text-align: center; float: left; display: inline-block; margin: 0px; padding: 0px; }
 .site .contenedorm ul li a { background: url("https://www.kooningtravel.com/img/square.jpg") no-repeat 8px 8px transparent; cursor: pointer; display: inline-block; text-align: left; width: 100%; text-indent: 10px; padding: 0 0 8px 10px; text-decoration: underline; color: #252323; border: none; outline: 0; float: left; }
-
 
 /*Search y Details*/
 html body .search-content { font-family: Roboto, sans-serif; float: right; padding: 0px; width: 795px; display: inline-block; margin: 0px; }
@@ -752,31 +765,31 @@ html body .search-body .container .main-box .marco .precio .mont .ui-slider-hori
 html body .search-body .container .main-box .marco .precio .mont .ui-slider-horizontal .ui-slider-handle { top: -.30em; position: absolute; z-index: 2; margin-left: -.6em; width: 15px; height: 15px; cursor: pointer; background: #fff; border: 1px solid #e2e2e2; border-radius: 16px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); }
 
 /*Begin new Kooningtravel css*/
-body .generic-fotter, body .generic-fotter a, body .generic-fotter p, body .generic-fotter ul, body .generic-fotter li, body .generic-fotter span, body .generic-fotter div, body .generic-fotter input, body .generic-fotter b, body .generic-fotter textarea, body .generic-fotter form, body .generic-fotter label, body .generic-fotter img, body .generic-fotter select, body .generic-fotter h1, body .generic-fotter h2, body .generic-fotter h3, body .generic-fotter h4, body .generic-fotter h5, body .generic-fotter h6 { color: #FFF; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: normal; display: inline-block; float: left; margin: 0px; border: 0px; padding: 0px; text-decoration: none; outline: none; }
-body .generic-fotter { background: #1B242A; width: 100%; text-align: center; }
-body .info-kooning { width: 100%; display: inline-block; float: left; margin: 10px 0px 15px 0px; }
-body .info-kooning img { display: inline-block; padding: 0px; border: 0px; width: 170px; height: 66px; }
-body .info-kooning .mar { margin: 0px 55px; }
-body .generic-fotter .menus-fotter { width: 78%; float: none; text-align: center; margin-top: 20px; }
-body .generic-fotter .menus-fotter .sub-fotter { height: 337px; border-right: 1px solid #222f37; border-bottom: 1px solid #222f37; width: 261px; text-align: center; }
-body .generic-fotter .menus-fotter ul:nth-child(4) { border-right: 0px; }
-body .generic-fotter .menus-fotter ul:nth-child(2) li, body .generic-fotter .menus-fotter ul:nth-child(3) li { margin: 0px 0px 15px 0px; }
-body .generic-fotter .menus-fotter .sub-fotter h3 { text-align: center; height: 68px; margin: 0px; width: 100%; line-height: 60px; color: #FFF; font-size: 18px; font-family: Oswald, sans-serif; font-weight: 900; }
-body .generic-fotter .menus-fotter .sub-fotter .logo-fott { text-align: center; margin-bottom: 10px; width: 100%; }
-body .generic-fotter .menus-fotter .sub-fotter .logo-fott .logo-kooning { float: none; }
-body .generic-fotter .menus-fotter .sub-fotter .img-trip { text-align: center; width: 100%; margin: 10px 0px; }
-body .generic-fotter .menus-fotter .sub-fotter .img-trip .tripadvisor { float: none; height: 89px; width: 180px; }
-body .generic-fotter .menus-fotter .sub-fotter .made-in { float: none; }
-body .generic-fotter .menus-fotter .sub-fotter li { width: 100%; margin: 3px 0px; text-align: left; text-indent: 35px; }
-body .generic-fotter .menus-fotter .sub-fotter li a { text-indent: 35px; width: 100%; text-align: left; font-size: 14px; font-weight: 300; font-family: 'Roboto', sans-serif; }
-body .generic-fotter .menus-fotter .sub-fotter .kooning-contact { float: none; width: 62px; height: 51px; border-radius: 4px; text-align: center; margin-bottom: 10px; }
-body .generic-fotter .menus-fotter .sub-fotter .kooning-contact:hover { background: #7eb7e2; }
-body .generic-fotter .menus-fotter .sub-fotter .kooning-contact img { margin-top: 5px; width: auto; height: auto; float: none; }
-body .generic-fotter .menus-fotter .sub-fotter li a:hover { color: #F3721F; }
-body .generic-fotter .menus-fotter .sub-fotter li a i:before, body .generic-fotter .menus-fotter .sub-fotter li i:before { margin-right: 5px; }
-body .generic-fotter .menus-fotter .info-fotter { text-align: center; width: 100%; text-align: center; display: inline-block; }
-body .generic-fotter .menus-fotter .info-fotter p { width: 90%; float: none; color: #fff; text-align: center; padding-top: 15px; margin-top: 15px; margin: 0 0 10px; }
-body .generic-fotter .menus-fotter .info-fotter p strong { font-family: Oswald, sans-serif; font-weight: 900; }
+html body .generic-fotter, body .generic-fotter a, body .generic-fotter p, body .generic-fotter ul, body .generic-fotter li, body .generic-fotter span, body .generic-fotter div, body .generic-fotter input, body .generic-fotter b, body .generic-fotter textarea, body .generic-fotter form, body .generic-fotter label, body .generic-fotter img, body .generic-fotter select, body .generic-fotter h1, body .generic-fotter h2, body .generic-fotter h3, body .generic-fotter h4, body .generic-fotter h5, body .generic-fotter h6 { color: #FFF; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: normal; display: inline-block; float: left; margin: 0px; border: 0px; padding: 0px; text-decoration: none; outline: none; }
+html body .generic-fotter { background: #1B242A; width: 100%; text-align: center; }
+html body .info-kooning { width: 100%; display: inline-block; float: left; margin: 10px 0px 15px 0px; }
+html body .info-kooning img { display: inline-block; padding: 0px; border: 0px; width: 170px; height: 66px; }
+html body .info-kooning .mar { margin: 0px 55px; }
+html body .generic-fotter .menus-fotter { width: 78%; float: none; text-align: center; margin-top: 20px; }
+html body .generic-fotter .menus-fotter .sub-fotter { height: 337px; border-right: 1px solid #222f37; border-bottom: 1px solid #222f37; width: 261px; text-align: center; }
+html body .generic-fotter .menus-fotter ul:nth-child(4) { border-right: 0px; }
+html body .generic-fotter .menus-fotter ul:nth-child(2) li, body .generic-fotter .menus-fotter ul:nth-child(3) li { margin: 0px 0px 15px 0px; }
+html body .generic-fotter .menus-fotter .sub-fotter h3 { text-align: center; height: 68px; margin: 0px; width: 100%; line-height: 60px; color: #FFF; font-size: 18px; font-family: Oswald, sans-serif; font-weight: 900; }
+html body .generic-fotter .menus-fotter .sub-fotter .logo-fott { text-align: center; margin-bottom: 10px; width: 100%; }
+html body .generic-fotter .menus-fotter .sub-fotter .logo-fott .logo-kooning { float: none; }
+html body .generic-fotter .menus-fotter .sub-fotter .img-trip { text-align: center; width: 100%; margin: 10px 0px; }
+html body .generic-fotter .menus-fotter .sub-fotter .img-trip .tripadvisor { float: none; height: 89px; width: 180px; }
+html body .generic-fotter .menus-fotter .sub-fotter .made-in { float: none; }
+html body .generic-fotter .menus-fotter .sub-fotter li { width: 100%; margin: 3px 0px; text-align: left; text-indent: 35px; }
+html body .generic-fotter .menus-fotter .sub-fotter li a { text-indent: 35px; width: 100%; text-align: left; font-size: 14px; font-weight: 300; font-family: 'Roboto', sans-serif; }
+html body .generic-fotter .menus-fotter .sub-fotter .kooning-contact { float: none; width: 62px; height: 51px; border-radius: 4px; text-align: center; margin-bottom: 10px; }
+html body .generic-fotter .menus-fotter .sub-fotter .kooning-contact:hover { background: #7eb7e2; }
+html body .generic-fotter .menus-fotter .sub-fotter .kooning-contact img { margin-top: 5px; width: auto; height: auto; float: none; }
+html body .generic-fotter .menus-fotter .sub-fotter li a:hover { color: #F3721F; }
+html body .generic-fotter .menus-fotter .sub-fotter li a i:before, body .generic-fotter .menus-fotter .sub-fotter li i:before { margin-right: 5px; }
+html body .generic-fotter .menus-fotter .info-fotter { text-align: center; width: 100%; text-align: center; display: inline-block; }
+html body .generic-fotter .menus-fotter .info-fotter p { width: 90%; float: none; color: #fff; text-align: center; padding-top: 15px; margin-top: 15px; margin: 0 0 10px; }
+html body .generic-fotter .menus-fotter .info-fotter p strong { font-family: Oswald, sans-serif; font-weight: 900; }
 html body .messaje { z-index: 100; left: 3%; color: #004085; background-color: #cce5ff; position: fixed; bottom: 0; }
 html body .messaje span { margin-right: 3px; }
 
@@ -1244,24 +1257,6 @@ html body .blog .bloque .right .col-md-1 .col-md-12 { margin-top: 20px; }
 html body .blog .info .centraimagen{  margin:0px auto ; float: none ; margin-top: 30px;  display: inline-block; }
 
 /*Promociones*/
-.meses {width: 100%;text-align: center;color: #0059ad;font-size: 18px;font-weight: 100;display: inline-block;height: auto;margin-top: 14px!important;margin: 0px;}
-.meses .card { float: none; }
-html body .cuadro .titl { color: #0059ad;text-align: left;font-family: HelveticaThin, Helvetica, Arial, sans-serif;font-weight: 100;font-size:35px;margin: 10px 0px;display: inline-block;width: 100%; }
-.timerc { width: 30%; float: right; margin: 0px; }
-.timerc .message { display: inline-block; width: 100%; margin-top: 10px; text-align: left; text-indent: 10px; }
-.contenedoro { display: inline-block; float: left; width: 100%; text-align: center; }
-html body .cuadro { display: inline-block; }
-.sombra { width: 100%; }
-.ofero { margin: 20px 0px; display: inline-block; width: 100%; height: 40px; float: left; font-family: Roboto, sans-serif; font-size: 25px; line-height: 39px; text-align: center; }
-.promos { padding: 0px!important; display: inline-block; float: left; }
-.promos a { display: inline-block; }
-.promos a img { }
-.promos .middle { margin: 14px; }
-.descp { font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-size: 24px; text-align: center; width: 100%; float: left; display: inline-block; height: 38px; color: #e61b76; font-weight: bolder; }
-#DetalleHabitacion .research-b { display: none; }
-#DetalleHabitacion .research-b #contactform { text-align: center; }
-
-
 html body .fancy-promo{ background: #FFF; display: inline-block;float: left;width: 100%;height: 53px;overflow: hidden;}
 html body .oferr{ background: #f1f1f1; }
 html body .oferr:link, html body .oferr:visited, html body .oferr:hover{ text-decoration: none; }
@@ -1281,7 +1276,24 @@ html body .cuadro .wrop .item a:hover { text-decoration: none; }
 html body .cuadro .wrop .item a:hover .info { visibility: visible; opacity: 1; }
 html body .cuadro .wrop .item a:hover .img { -webkit-transform: translateY(-50px); -moz-transform: translateY(-50px); -ms-transform: translateY(-50px); -o-transform: translateY(-50px); transform: translateY(-50px); }
 html body .cuadro .wrop .item a:hover .info { -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
- 
+
+.meses {width: 100%;text-align: center;color: #0059ad;font-size: 18px;font-weight: 100;display: inline-block;height: auto;margin-top: 14px!important;margin: 0px;}
+.meses .card { float: none; }
+html body .cuadro .titl { color: #0059ad;text-align: left;font-family: HelveticaThin, Helvetica, Arial, sans-serif;font-weight: 100;font-size:35px;margin: 10px 0px;display: inline-block;width: 100%; }
+.timerc { width: 30%; float: right; margin: 0px; }
+.timerc .message { display: inline-block; width: 100%; margin-top: 10px; text-align: left; text-indent: 10px; }
+.contenedoro { display: inline-block; float: left; width: 100%; text-align: center; }
+html body .cuadro { display: inline-block; }
+.sombra { width: 100%; }
+.ofero { margin: 20px 0px; display: inline-block; width: 100%; height: 40px; float: left; font-family: Roboto, sans-serif; font-size: 25px; line-height: 39px; text-align: center; }
+.promos { padding: 0px!important; display: inline-block; float: left; }
+.promos a { display: inline-block; }
+.promos a img { }
+.promos .middle { margin: 14px; }
+.descp { font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-size: 24px; text-align: center; width: 100%; float: left; display: inline-block; height: 38px; color: #e61b76; font-weight: bolder; }
+#DetalleHabitacion .research-b { display: none; }
+#DetalleHabitacion .research-b #contactform { text-align: center; } 
+
 /*Autos*/
 html body .other .autos { float: none!important; margin: 0px auto!important; width: 82%!important;  }
 html body .other .autos .cuadro-contacto{ position: absolute;left:0px;top:0%;color:#000;border-right:1px solid #f2f2f2;width:45%; height: 100%; }
@@ -1295,3 +1307,4 @@ html body .other .autos .cuadro-contacto  #conatcton .input-group .input-group-a
 html body .other .autos .cuadro-contacto  #conatcton .input-group div .fa{ display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin-top:10px;}
 html body .other .autos .cuadro-contacto  #conatcton .input-group #enviac{ width: 120px; height: 40px; border-radius: 3px; background: #E61B76; color: #fff;    font-weight: 900; float:left; margin: 8px 0px; }
 html body .other .autos .viaja { border-radius: 3px; box-shadow: 0px 0px 6px #423e3e; }
+
