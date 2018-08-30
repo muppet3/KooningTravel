@@ -532,42 +532,24 @@ $(document).ready(function () {
    });
 
 
-
-
 $("#envio1").click(function(){
 
    var d = $("#d").select2('data');
 
-   var fecha1= $("#sd").val();
-   var fecha2= $("#ed").val();
-
 	if( d.length == 0 ) {
 
-	$(".wait").show(); 
-	window.location =  ""+$("#destino").val()+"?"+$( '#contactform' ).serialize();	
-    	
+		$(".wait").show(); 
+		window.location =  ""+$("#destino").val()+"?"+$( '#contactform' ).serialize();	    	
 
-   }else if($("#sd").val() == ""){
-     return false;
-   }
-   else if($("#ed").val() == "")
-   {
-     return false;
-   }
-   else
-   {
+	   }else{
 
-    $(".wait").show();
-    $("#contactform").submit();
+	    $(".wait").show();
+	    $("#contactform").submit();
 
-
-   }
+	    
+	   }
 
  });
-
-
-
-
 
 
 $(".starts .categoria label").click(function () {

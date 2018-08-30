@@ -53,7 +53,7 @@ html body .body-cart .col-md-9 .row-fluid{  }
 html body .body-cart .col-md-9 .small{ width: 23%; float: left;margin: 20px 8px; background: url("/img/extras/line.png") repeat;-moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);box-shadow: 0 2px 5px 0 rgba(0,0,0,.2); }
 html body .body-cart .col-md-9 .hotel{ border: 1px solid #cd8109;border-bottom: 10px solid #cd8109; }
 html body .body-cart .col-md-9 .parque{ border: 1px solid #1d6391; border-bottom: 10px solid #1d6391; }
-html body .body-cart .col-md-9 .tours{ border: 1px solid #f4731c; border-bottom: 10px solid#f4731c; }
+html body .body-cart .col-md-9 .tour{ border: 1px solid #f4731c; border-bottom: 10px solid#f4731c; }
 html body .body-cart .col-md-9 .traslado{ border: 1px solid #e13c90; border-bottom: 10px solid #e13c90; }
 html body .body-cart .col-md-9 .small .bloque{ text-align: center; position: relative; width: 100%; margin-bottom: 5px; }
 html body .body-cart .col-md-9 .small .bloque .img-cart{ display: inline-block; float: left; position: absolute; top: 0px; left: 0px; height: 100%; width: 100%; }
@@ -61,7 +61,7 @@ html body .body-cart .col-md-9 .small .bloque h2 { font-size: 31px;  font-weight
 html body .body-cart .col-md-9 .small .bloque h3{ font-weight: 500; font-size: 20px; padding: 2px; }
 html body .body-cart .col-md-9 .small .bloque .hotel-bloque{ border-bottom: 10px solid #cd8109; }
 html body .body-cart .col-md-9 .small .bloque .parque-bloque { border-bottom:10px solid #1d6391; }
-html body .body-cart .col-md-9 .small .bloque .tours-bloque{ border-bottom:10px solid #f4731c; }
+html body .body-cart .col-md-9 .small .bloque .tour-bloque{ border-bottom:10px solid #f4731c; }
 html body .body-cart .col-md-9 .small .bloque .traslado-bloque{ border-bottom:10px solid #e13c90; }
 html body .body-cart .col-md-9 .small .bloque h2, .body-cart .col-md-9 .small .bloque h3{ background: #f4731c14; font-family: HelveticaThin, Helvetica, Arial, sans-serif; position: relative;width: 100%; text-align: center; color: #FFF; }
 html body .body-cart .col-md-9 .small .bloque p, .body-cart .col-md-9 .small .center .roms{ padding: 3px; margin:0 0 10px; width:100%; text-align: left; color: #888; font-size: 14px; font-family: Roboto,sans-serif; font-weight: 300;  } 
