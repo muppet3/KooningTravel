@@ -531,6 +531,26 @@ $(document).ready(function () {
      }
    });
 
+$("#envio1").click(function(){
+
+   var d = $("#d").select2('data');
+   var destino= $("#d").val();
+
+
+
+if( d.length == 0 ) {
+
+   // $(".wait").show();  
+    // window.location = ""+$("#destino").val()+"?"+$( '#contactform' ).serialize();
+          $(".wait").show();
+     $("#contactform").submit();
+
+
+   } 
+ });
+
+
+
 
 
 
