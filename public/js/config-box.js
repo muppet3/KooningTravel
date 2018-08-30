@@ -490,8 +490,8 @@ $(document).ready(function () {
     destino=destino.replace(/\&/g,"");
     destino=destino.replace(/amp;/g,"");
 
-      $(".wait").show();
-      window.location = "/search/"+destino+"?"+$( this ).serialize();
+	  $(".wait").show();
+	  window.location = "/search/"+destino+"?"+$( this ).serialize();
 
   }); 
 
@@ -531,22 +531,38 @@ $(document).ready(function () {
      }
    });
 
+
+
+
 $("#envio1").click(function(){
 
    var d = $("#d").select2('data');
-   var destino= $("#d").val();
+
+   var fecha1= $("#sd").val();
+   var fecha2= $("#ed").val();
+
+	if( d.length == 0 ) {
+
+	$(".wait").show(); 
+	window.location =  ""+$("#destino").val()+"?"+$( '#contactform' ).serialize();	
+    	
+
+   }else if($("#sd").val() == ""){
+     return false;
+   }
+   else if($("#ed").val() == "")
+   {
+     return false;
+   }
+   else
+   {
+
+    $(".wait").show();
+    $("#contactform").submit();
 
 
+   }
 
-if( d.length == 0 ) {
-
-   // $(".wait").show();  
-    // window.location = ""+$("#destino").val()+"?"+$( '#contactform' ).serialize();
-          $(".wait").show();
-     $("#contactform").submit();
-
-
-   } 
  });
 
 

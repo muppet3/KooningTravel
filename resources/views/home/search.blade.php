@@ -23,8 +23,8 @@
         <form id="contactform" class="head" action="javascript:(void);" method="GET" >
           <div class="hidden">
             <input type="hidden" name="type" id="type" value="1">
-            <input type="hidden" value="2"  id="destino">
-            <input type='hidden' value="2" name="d" >
+            <input type="hidden" value="{{$destino}}"  id="destino"> <!--url -->
+            <input type='hidden' value="2" name="d" >                <!--numero -->
           </div>
           <span class="label1">Destino / Hotel</span>
           <hr>
@@ -263,7 +263,7 @@
             </div>
           </div>
           <div class="inline-block">
-            <button class="inline-button" id="envio1" ></button>
+            <button class="inline-button" id="envio1" type="button" ></button>
           </div>
           <div class="hidden" >
             <input type="hidden" value="0" name="r4a" />
