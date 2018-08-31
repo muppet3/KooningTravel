@@ -3,10 +3,11 @@
 <div class="tours" >
 	
 	<!-- Tours Mayaland 2018 -->
-	<div class="white-content clear" id="parque-de-atracciones-parques-tematicos">
+	@foreach($categorias as $categoria)
+	<div class="{{$categoria->colorfondo}}-content clear" id="parque-de-atracciones-parques-tematicos">
 		<div class="wrapper icon-tickets categoria-tickets clear">
 			
-			@foreach($categorias as $categoria)
+			
 			<h2 class="h2">{{$categoria->name}}</h2>
 			<div class="carousel-wrapper">
 				<div class="carousel center">
@@ -20,13 +21,15 @@
 							<p><a href="{{Request::root()}}/tours/{{$activity->name}}">{{$activity->location}}</a></p>
 						</li>
 						@endforeach
-						@endforeach
+						
 					</ul>
 				</div>
 				<a class="carousel-prev disabled"><span class="ir"></span></a> <a class="carousel-next"><span class="ir"></span></a>
 			</div>
+			
 		</div>
 	</div>
+	@endforeach
 	<!-- Otros Tours 2018 -->
 	<div class="grey-content clear" id="parque-de-atracciones-parques-tematicos">
 		<div class="wrapper icon-tickets categoria-tickets clear">

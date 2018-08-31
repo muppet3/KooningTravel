@@ -15,16 +15,18 @@
 <div class="blog col-md-12" >
   <div class="bloque cont1" >
 
-
-    <div class="bl">
-      <a class="tab1" href="javascript:void(0);">México | Cancún, Quintana Roo..</a>
-      <a class="tab2" href="https://kooningtravel.com/blog/Los-Mejores-Hoteles-en-Cancun-para-Viajar-en-Familia">Los Mejores Hoteles en Cancún para Viajar en Familia</a>
-      <div class="fecha">11 May 2018</div>
-      <a class="imgb" href="https://kooningtravel.com/blog/Los-Mejores-Hoteles-en-Cancun-para-Viajar-en-Familia"><img class="img" src="https://kooningtravel.com/img/blog/chicos/miniatura.png" alt="Cancún, Quintana Roo" />
-      </a>
-      <p class="info" >Viajar en familia es una de las experiencias más reconfortantes de la vida, olvidarse de la cotidianidad y disponer cuerpo, mente y alma a la aventura es algo que indudablemente debemos hacer al menos una vez al año y que mejor lugar para hacerlo que Cancún.</p>
-      <a class="cult" href="https://kooningtravel.com/blog/Los-Mejores-Hoteles-en-Cancun-para-Viajar-en-Familia">Ver más...</a>
-    </div>
+    @foreach ($blogs as $blog)
+       <div class="bl">
+        <a class="tab1" href="javascript:void(0);">{{$blog->location}}.</a>
+        <a class="tab2" href="{{Request::root()}}/blog/{{str_replace(" ","-",$blog->title)}}">{{$blog->title}}</a>
+        <div class="fecha">11 May 2018</div>
+        <a class="imgb" href="{{Request::root()}}/blog/{{str_replace(" ","-",$blog->title)}}"><img class="img" src="https://kooningtravel.com/img/blog/chicos/miniatura.png" alt="Cancún, Quintana Roo" />
+        </a>
+        <p class="info" >{!!substr($blog->description,0,45)!!}...</p>
+        <a class="cult" href="{{Request::root()}}/blog/{{str_replace(" ","-",$blog->title)}}">Ver más...</a>
+      </div>
+    @endforeach
+     
 
     <div class="yuzo_related_post style-1" data-version="5.12.70">
       <h3>Posts Relacionados</h3>

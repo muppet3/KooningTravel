@@ -16,7 +16,7 @@ fjs.parentNode.insertBefore(js, fjs);
   <div class="bloque cont1">
     <div class="bg"><img class="homeb img-fluid"  src="https://kooningtravel.com/img/blog/grandes/Principal.png" alt="Los Mejores Hoteles en Cancún para Viajar en Familia" /></div>
     <div class="top" >
-      <h2 class="sing-tit">Los Mejores Hoteles en Cancún para Viajar en Familia</h2>
+      <h2 class="sing-tit">{{$blog->title}}</h2>
       <div class="name-author">
         <a class="ho" href="/blog">HOME</a>
         <p class="thum" > » </p>
@@ -24,19 +24,31 @@ fjs.parentNode.insertBefore(js, fjs);
       </div>
     </div>
     <div class="info">
-      <span class="text col-md-11"> Viajar en familia es una de las experiencias más reconfortantes de la vida, olvidarse de la cotidianidad y disponer cuerpo, mente y alma a la aventura es algo que indudablemente debemos hacer al menos una vez al año y que mejor lugar para hacerlo que Cancún.
+      <span class="text col-md-11"> {{$blog->description}} </span>
+      @foreach ($blog->segments as $segment)
         
-      Cancún cuenta con hoteles para todos los gustos, desde excéntricos complejos para viajes en pareja hasta increíbles hoteles con atracciones para toda la familia. Aquí te dejo las mejores opciones de hoteles familiares para que puedan disfrutar su estancia al máximo. </span>
-      <h2 class="subt col-md-8">Seadust Cancun Family Resort</h2>
+     
+      <h2 class="subt col-md-8">{{$segment->subtitle}}</h2>
       <img class="subimg img-fluid centraimagen" src="https://kooningtravel.com/img/blog/grandes/seadust.png" alt="Seadust Cancun Family Resort" />
       <ol class="col-md-11" >
-        Situado en la zona hotelera de Cancún, a pie de playa se encuentra el hotel
-        <a href="https://www.kooningtravel.com/hotels/947/seadust-cancun-family-resort?d=947&amp;sd=2018-07-13&amp;ed=2018-07-17&amp;r=1&amp;r1a=2&amp;r1k=1&amp;r1k1a=10&amp;r1k2a=0&amp;r1k3a=0&amp;r2a=0&amp;r2k=0&amp;r2k1a=0&amp;r2k2a=0&amp;r2k3a=0&amp;r3a=0&amp;r3k=0&amp;r3k1a=0&amp;r3k2a=0&amp;r3k3a=0&amp;r4a=0&amp;r4k=0&amp;r4k1a=0&amp;r4k2a=0&amp;r4k3a=0&amp;r5a=0&amp;r5k=0&amp;r5k1a=0&amp;r5k2a=0&amp;r5k3a=0">Seadust Cancun</a>
-        , el cual ofrece una de las experiencias todo incluido más completas en concepto familiar. Veintidós centros de consumo los esperan, entre comida buffet, a la carta, bebidas y postres que cautivarán el paladar de toda tu familia. Tus niños desearán que los días no terminen cuando conozcan el Treasure Island, un parque acuático diseñado especialmente para ellos. Adicionalmente tus pequeños podrán disfrutar de los salones de juego, club de niños, áreas de juegos infantiles entre otros, mientras que para los mayores, el spa, gimnasio, teatro y la terraza exclusiva para adultos los consentirán. Como parte de la experiencia
-        <a href="https://www.kooningtravel.com/hotels/947/seadust-cancun-family-resort?d=947&amp;sd=2018-07-13&amp;ed=2018-07-17&amp;r=1&amp;r1a=2&amp;r1k=1&amp;r1k1a=10&amp;r1k2a=0&amp;r1k3a=0&amp;r2a=0&amp;r2k=0&amp;r2k1a=0&amp;r2k2a=0&amp;r2k3a=0&amp;r3a=0&amp;r3k=0&amp;r3k1a=0&amp;r3k2a=0&amp;r3k3a=0&amp;r4a=0&amp;r4k=0&amp;r4k1a=0&amp;r4k2a=0&amp;r4k3a=0&amp;r5a=0&amp;r5k=0&amp;r5k1a=0&amp;r5k2a=0&amp;r5k3a=0">Seadust</a>
-        en dicha terraza puedes pedir el platillo que gustes, el que sea y los chefs del hotel se encargarán del resto, así que ve que pensando en ese platillo especial.
+        {!!$segment->description!!}
       </ol>
+      @endforeach
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="yuzo_related_post style-1" data-version="5.12.70">
       <h3>Posts Relacionados</h3>
       <div class="relatedthumb relatedpost-1977" style="width: 126.5px; float: left; overflow: hidden; height: 182px;"><span class="equalizer-inner" style="display:block;">

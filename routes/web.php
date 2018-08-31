@@ -36,8 +36,10 @@
 
 	Route::get('parques', 'Activities\ActivitiesController@parques');
 	Route::get('parques/{parque}', 'Activities\ActivitiesController@details');
+	Route::post('parques/{parque}', 'Activities\ActivitiesController@booking');
 	Route::get('tours', 'Activities\ActivitiesController@tours');
 	Route::get('tours/{tour}', 'Activities\ActivitiesController@details');
+	Route::post('tours/{tour}', 'Activities\ActivitiesController@booking');
 
 	/*
 		╔═══════════════╗
@@ -69,8 +71,10 @@
 		║     Pago     ║
 		╚══════════════╝
 	*/
-	Route::get('purchase', 'Purchase\Purchase\PurchaseController@Pago');
+	Route::get('checkout', 'Purchase\PurchaseController@checkout');
+	Route::get('purchase', 'Purchase\PurchaseController@Pago');
 	Route::get('gracias',"Purchase\PurchaseController@gracias");
+	Route::get('eliminar/{id}',"Purchase\PurchaseController@delete");
 
 	/*
 		╔═══════════════╗

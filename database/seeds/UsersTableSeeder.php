@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Helpers\Hotelbeds;
 use Illuminate\Database\Seeder;
 
 class UsersTableSeeder extends Seeder
@@ -9,9 +10,45 @@ class UsersTableSeeder extends Seeder
      *
      * @return void
      */
+    public function destinos($inicio,$fin){
+        $hotel= new Hotelbeds('locations/destinations');
+        foreach ($hotel->content($inicio,$fin)->destinations as $destination) {
+            if(isset($destination->name->content)){
+                DB::table('cities')->insert([
+                    'name'=> "".$destination->name->content,
+                    'code'=> "".$destination->code,
+                    'country'=> "".$destination->countryCode,
+                ]);
+                
+            }
+        }
+    }
     public function run()
     {
-       
+        /* hotelbeds */
+        $this->destinos('1','1000');
+        $this->destinos('1001','2000');
+        $this->destinos('2001','3000');
+        $this->destinos('3001','4000');
+        $this->destinos('4001','5000');
+
+        $gorups = new Hotelbeds('types/facilitygroups');
+        foreach ( $gorups->content('1','1000')->facilityGroups as $group) {
+            DB::table('groupfacilities')->insert([
+                'code'       => (int)$group->code,
+                'description'=> $group->description->content,
+            ]);
+        }
+        $facilities = new Hotelbeds('types/facilities');
+        foreach ( $facilities->content('1','1000')->facilities as $facility) {
+            DB::table('facilities')->insert([
+                'code' => (int) $facility->code,
+                'description' =>  $facility->description->content,
+                'groupfacility_id' => (int) $facility->facilityGroupCode,
+            ]);
+        }
+
+        /* fin hotelbeds*/
         DB::table('users')->insert([
             'name'      => 'Administrator',
             'email'     => 'admin@admin.com',
@@ -19,87 +56,45 @@ class UsersTableSeeder extends Seeder
             //'type_user' => 'Admin'
         ]);
 
-
-
-
         DB::table('categories')->insert([
             'name'      => 'Experiencias Xcaret',
             'type'      => 'Parque',
-            'divisa'    =>  18.65 
+            'divisa'    =>  19.00 
                     ]);
         DB::table('categories')->insert([
             'name'      => 'Dolphin Discovery',
             'type'      => 'Parque',
-            'divisa'    =>  18.75 
+            'divisa'    =>  19.00 
                     ]);
         DB::table('categories')->insert([
-            'name'      => 'Experiencias Xcaret',
-            'type'      => 'Tour',
-            'divisa'    =>  18.50 
+            'name'      => 'Rio-Secreto',
+            'type'      => 'Parque',
+            'divisa'    =>  19.00 
+                    ]);
+         DB::table('categories')->insert([
+            'name'      => 'Circus-Soleil',
+            'type'      => 'Parque',
+            'divisa'    =>  19.00 
                     ]);
 
 
 
-        DB::table('activities')->insert([
-            'name'          =>  'Xcaret',
-            'description'   =>  'Diviertete con tu familia y amigos, pásala en grande',
-            'map'           =>  'Map Xcaret.jpg',
-            'slogan'        =>  '!Orgullo México¡',
-            'image'         =>  'Xcaret.jpg',
-            'location'      =>  'Muy lejos ',
-            'coordinates'   =>  'x=5 , y = S x/dx +c',
-            'background'    =>  '#EFFBFB',
-            'terms'         =>  'Terminos y condiciones.pdf',
-            'category_id'   =>  1
-        ]);
-        DB::table('activities')->insert([
-            'name'          =>  'Xplor Fuego',
-            'description'   =>  'Diviertete con tu familia y amigos, pásala en grande',
-            'map'           =>  'Map Xcaret.jpg',
-            'slogan'        =>  '!Orgullo México¡',
-            'image'         =>  'Xcaret.jpg',
-            'location'      =>  'Muy lejos ',
-            'coordinates'   =>  'x=5 , y = S x/dx +c',
-            'background'    =>  '#EFFBFB',
-            'terms'         =>  'Terminos y condiciones.pdf',
-            'category_id'   =>  1
-        ]);
-        DB::table('activities')->insert([
-            'name'          =>  'Dolphin',
-            'description'   =>  '!Nada con delfines salvajes¡',
-            'map'           =>  'Map Dolphin.gif',
-            'slogan'        =>  '!El paraíso acuatico¡',
-            'image'         =>  'Dolphin.jpg',
-            'location'      =>  'Lugar muy muy lejano',
-            'coordinates'   =>  'x=5 , y = S x/dx +c',
-            'background'    =>  '#EFFBFB',
-            'terms'         =>  'Terminos y condiciones.pdf',
-            'category_id'   =>  2
-        ]);
+         DB::table('categories')->insert([
+            'name'      => 'Mayaland-Tours',
+            'type'      => 'Tour',
+            'divisa'    =>  19.00 
+                    ]);
+         DB::table('categories')->insert([
+            'name'      => 'Catamaran-Tours',
+            'type'      => 'Tour',
+            'divisa'    =>  19.00 
+                    ]);
+         DB::table('categories')->insert([
+            'name'      => 'Holbox-Tours',
+            'type'      => 'Tour',
+            'divisa'    =>  19.00 
+                    ]);
 
-
-        DB::table('activities')->insert([
-            'name'          =>  'Xel-Há',
-            'description'   =>  '!Nada con peces extraños¡',
-            'map'           =>  'map Xlel-ha.jpg',
-            'slogan'        =>  '!Nada hasta que te ahogues¡',
-            'image'         =>  'Xelha.jpg',
-            'location'      =>  'Fondo de bikini',
-            'coordinates'   =>  'x=5 , y = S x/dx +c',
-            'background'    =>  '#EFFBFB',
-            'terms'         =>  'Terminos y condiciones.pdf',
-            'category_id'   =>  3
-        ]);
-        // $this->call(UsersTableSeeder::class);
-        DB::table('tickets')->insert([
-            'name' => 'Entrada Xel-Há Todo Incluído',
-            'image' => 'XelHa1.png',
-            'description' => 'Xel-Há cuenta con varias tiendas ubicadas en puntos estratégicos, donde es posible adquirir una gran variedad de productos como souvenirs exclusivos, artículos de primera necesidad y farmacéuticos.',
-            'content' => 'AdmisiónXelhaAllclude.pdf',
-            'adult' => '100',
-            'child' => '75',
-            'activity_id' => 4,
-        ]);
 
         DB::table('campaigns')->insert([
             'name'      => 'Goza tus viajes de negocios',

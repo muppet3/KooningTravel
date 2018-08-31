@@ -31,6 +31,7 @@ class Hoteldo extends Controller
 			$this->data=$this->data+$data;
 		}
 	}
+
 	public function getRecuestData()
 	{
 		return $this->data;

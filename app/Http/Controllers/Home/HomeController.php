@@ -496,7 +496,7 @@ class HomeController extends Controller
         $valores=\Session::get('query');
         $valores['h']=$id;
         $query= new Hoteldo('GetQuoteHotels',$valores);
-        $_SESSION["room_id"]=$room_id;
+       
         $query->setCached(false);
         $query->exec();
         if ( $query->fail() ) {
@@ -517,67 +517,31 @@ class HomeController extends Controller
         }
         $query=$query->getXml();
         $room=$query->xpath('Hotels/Hotel/Rooms/Room/Id[.="'.$room_id.'"]/..')[0];
+
         $room->Destino=$query->Hotels->Hotel->CityName.", ".$query->Hotels->Hotel->CountryName;
-        $room->NameHotel=$query->Hotels->Hotel->Name;
+        $room->NameHotel=
+        
+        $item['type']="hotel";
+        $item['name']=(string)$query->Hotels->Hotel->Name;
+        $item['location']=$query->Hotels->Hotel->CityName.", ".$query->Hotels->Hotel->CountryName;
         $sd=$this->formatofechas($valores['sd']);
         $ed=$this->formatofechas($valores['ed']);
-        $room->Entrada=$this->stylefecha($sd,1);
-        $room->Salida=$this->stylefecha($ed,1);
-        $sd = new \DateTime($sd);
-        $ed = new \DateTime($ed);
-        $interval = $ed->diff($sd);
-        if($interval->d==1){
-            $room->Noche="1 Noche";
-        }else{
-            $room->Noche=$interval->d." Noches";
-        }
-        if($valores['r']==1){
-             $room->Habitaciones="1 Habitacion";
-        }else{
-             $room->Habitaciones=$valores['r']." Habitaciones";
-        }
-        if(isset($query->Hotels->Hotel->Image)){
-            $room->ImagenHotel=$query->Hotels->Hotel->Image;
-        }
-        if(isset($query->Hotels->Hotel->CategoryId)){
-            $room->Estrellas= substr($query->Hotels->Hotel->CategoryId, 1,1);
-        }
-        $adultos=$valores['r1a']+$valores['r2a']+$valores['r3a'];
-        $menores=$valores['r1k']+$valores['r2k']+$valores['r2k'];
-        if($adultos==1){
-            $room->Adultos="1 Adulto";
-        }else{
-            $room->Adultos=$adultos." Adultos";
-        }
-        if($menores==1){
-            $room->Menores="1 Menor";
-        }elseif($menores==0){
+        $item['checkin']=$this->stylefecha($sd,1);
+        $item['checkout']=$this->stylefecha($ed,1);
+        $item['adults']=$adultos=$valores['r1a']+$valores['r2a']+$valores['r3a'];
+        $item['children']=$menores=$valores['r1k']+$valores['r2k']+$valores['r2k'];
+        $item['total']="".$precio=$room->MealPlans->MealPlan->AgencyPublic->AgencyPublic;
+        $carrito=\Session::get('cart');
+        
+        if(is_null($carrito) || empty($carrito)){
+            \Session::forget('cart');
+            $carrito['1']=$item;
             
+            \Session::put('cart', $carrito); 
         }else{
-            $room->Menores=$menores." Menores";
+            \Session::push('cart', $item); 
         }
-        $precio=$room->MealPlans->MealPlan->AgencyPublic->AgencyPublic;
-        if(isset($room->MealPlans->MealPlan->Promotions)){
-            $desc = substr($room->MealPlans->MealPlan->Promotions->Promotion->Description, 0,2);
-            if(is_numeric($desc)){
-                $room->MealPlans->MealPlan->Promotions->Promotion->Porcentaje="-".$desc."%";
-                $room->MealPlans->MealPlan->Promotions->Promotion->Monto=number_format((100*$precio)/(100-$desc));
-            }
-        }
-        $total=(float)$precio;
-        $room->MealPlans->MealPlan->AgencyPublic->Precio=number_format($total);
-        //1001 -> tulum || 2 - cancun || riviera maya -> 13 || playa del carmen -> 16
-        $iddestino=$query->Hotels->Hotel->Destination->Id;
-        if($iddestino==2 or $iddestino==1001 or $iddestino==13 or $iddestino==16){
-            $data['traslado']="existe traslado";
-        }
-        $data['room']=$room;
-        $data['tres']=number_format($total/3);
-        $data['seis']=number_format($total/6);
-        $data['nueve']=number_format($total/9);
-        $data['total']=number_format($total);
-        //dd($data);
-        return view('purchase/checkout',$data);   
+        return redirect('checkout'); 
     }
     public function alertemail(Request $request, $room_id,$id){
         $idhotel=\Session::get('idhotel');

@@ -4,21 +4,23 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCitiesTable extends Migration
+class CreateFacilitiesTable extends Migration
 {
     /**
      * Run the migrations.
-     *v
+     *
      * @return void
      */
     public function up()
     {
-        Schema::create('cities', function (Blueprint $table) {
+        Schema::create('facilities', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name',100);
-            $table->string('code',45)->unique();
-            $table->string('country',100);
+            $table->unsignedInteger('code');
+            $table->string('description',200);
+            $table->unsignedInteger('groupfacility_id');
             $table->timestamps();
+
+            $table->foreign('groupfacility_id')->references('code')->on('groupfacilities');
         });
     }
 
@@ -29,7 +31,6 @@ class CreateCitiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('blogs');
-        Schema::dropIfExists('cities');
+        Schema::dropIfExists('facilities');
     }
 }

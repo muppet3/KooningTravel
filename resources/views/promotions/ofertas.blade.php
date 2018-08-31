@@ -256,48 +256,72 @@
 </a>
 
 <div class="cuadro col-md-12 ofer">
+  @isset ($playas)
+    <span class="titlo">¡Playas de México!</span>
+    <hr>
+    <div class="wrop" >
+      @foreach($playas as $playa)
+    		<div class="item min">
+    			<a href="{{Request::root()}}/search/{{$playa->name}}?type=1&d={{$playa->code}}{{$check_in}}{{$check_out}}{{$adicionales}}">
+    				<div class="img" >
+    	      			<div class="tittle">{{$playa->name}}</div> 
+    				  	<hr> 
+    					<img src="{{Request::root()}}/img/campaign/{{$campaña->name}}/{{str_replace(' ','',$playa->name)}}.png" alt="{{str_replace('-',' ',$campaña->name)}}" alt="{{$playa->name}}" />
+    				</div>
+    				<div class="info">
+    					<h3>Reserva Ya</h3>
+    				</div>
+    			</a>
+    		</div>
+      @endforeach
+    </div>
+	@endisset
+  
+  @isset ($ciudades)
+    <span class="titlo">¡Ciudades de México!</span>
+    <hr>
+    
+    <div class="wrop" >
+      @foreach($ciudades as $ciudad)
+        <div class="item min">
+          <a href="{{Request::root()}}/search/{{$ciudad->name}}?type=1&d={{$ciudad->code}}{{$check_in}}{{$check_out}}{{$adicionales}}">
+            <div class="img" >
+                  <div class="tittle">{{$ciudad->name}}</div> 
+                <hr> 
+              <img src="{{Request::root()}}/img/campaign/{{$campaña->name}}/{{str_replace(' ','',$ciudad->name)}}.png" alt="{{str_replace('-',' ',$campaña->name)}}" alt="{{$ciudad->name}}" />
+            </div>
+            <div class="info">
+              <h3>Reserva Ya</h3>
+            </div>
+          </a>
+        </div>
+      @endforeach
+    </div>
+  @endisset
 
-	<span class="titlo">¡Playas de México!</span>
-<hr>
-
-	<div class="wrop" >
-
-		<div class="item min">
-			<a href="/ofertas/9/Vive-Disfruta-Viaja">
-				<div class="img" >
-	      			<div class="tittle"> Acapulco</div> 
-				  	<hr> 
-					<img src="/img/campanas/ViveDisfrutaViaja.png" alt="Vive Disfruta y Viaja" alt="Acapulco" />
-				</div>
-				<div class="info">
-					<h3>Reserva Ya</h3>
-				</div>
-			</a>
-		</div>
-
-	</div>
-	
-
-<span class="titlo">¡Ciudades de México!</span>
-<hr>
-
-	<div class="wrop" >
-
-		<div class="item min">
-			<a href="/ofertas/9/Vive-Disfruta-Viaja">
-				<div class="img" >
-	      			<div class="tittle">Guadalajara</div> 
-				  	<hr> 
-					<img src="/img/campanas/ViveDisfrutaViaja.png" alt="Vive Disfruta y Viaja" alt="Acapulco" />
-				</div>
-				<div class="info">
-					<h3>Reserva Ya</h3>
-				</div>
-			</a>
-		</div>		
+  @isset ($internacionales)
+    <span class="titlo">¡Destinos internacionales!</span>
+    <hr>
+    
+    <div class="wrop" >
+      @foreach($internacionales as $internacional)
+        <div class="item min">
+          <a href="{{Request::root()}}/search/{{$internacional->name}}?type=1&d={{$internacional->code}}{{$check_in}}{{$check_out}}{{$adicionales}}">
+            <div class="img" >
+                  <div class="tittle">{{$internacional->name}}</div> 
+                <hr> 
+              <img src="{{Request::root()}}/img/campaign/{{$campaña->name}}/{{str_replace(' ','',$internacional->name)}}.png" alt="{{str_replace('-',' ',$campaña->name)}}" alt="{{$internacional->name}}" />
+            </div>
+            <div class="info">
+              <h3>Reserva Ya</h3>
+            </div>
+          </a>
+        </div>
+      @endforeach
+    </div>
+  @endisset
 
 
-	</div>
 
 	<div class="cycle-slideshow cycle-autoinit"
 		data-cycle-fx="scrollHorz"

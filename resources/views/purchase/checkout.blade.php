@@ -17,105 +17,92 @@
   </div>
   <div class="col-md-9" id="step-1" >
     <div class="row-fluid" >
-      <!--Bloque Hotel-->
-      <div class="small hotel">
-        <div class="bloque">
-          <img class="img-cart" alt="Hotel,parque,tour,kooning travel" src="/img/parques/hotel.png">
-          <h2>Hotel</h2>
-          <h3 class="hotel-bloque" >Grand Hotel Acapulco and Convention Center</h3>
-        </div>
-        <div class="bloque center">
-          <p><i class="fa fa-building" aria-hidden="true"></i><span>Grand Hotel Acapulco and Convention Center</span></p>
-          <p><i class="fa fa-map-marker" aria-hidden="true"></i><span> Acapulco, México</span></p>
-          <p><i class="fa fa-clock-o" aria-hidden="true"></i><span>Llegada Tuesday, 21/Aug/2018</span></p>
-          <p><i class="fa fa-clock-o" aria-hidden="true"></i><span>Salida Saturday, 25/Aug/2018</span></p>
-          <div class="roms" >
-            <div class="vacancy" >
-              <i class="fa fa-male" aria-hidden="true"></i>
-              <span>2 Adultos</span>
-            </div>
-            <div class="vacancy" >
-              <i class="fa fa-child" aria-hidden="true"></i>
-              <span> 0 Menores</span>
-            </div>
-          </div>
-        </div>
-        <div class="bloque">
-          <p class="price-r" >
-            <strong class="price-roms" >MXN $7,495.60</strong>
-            <a class="del-room" ><span class="del-icon"></span></a>
-          </p>
-        </div>
-      </div>
-      <!--Bloque Hotel-->
-      <!--Bloque Parques-->
-      <div class="small parque">
-        <div class="bloque">
-          <img class="img-cart" alt="parques,parque,tour,kooning travel" src="/img/parques/parques.png">
-          <h2>Parque</h2>
-          <h3 class="parque-bloque" >Grand Hotel Acapulco and Convention Center</h3>
-        </div>
-        <div class="bloque center">
-          <p><strong>Fecha: </strong> 2018-08-24</p>
-          <p><strong>Adultos: </strong> 1 &nbsp;&nbsp;&nbsp;
-            <strong>Niños: </strong> 0</p>
-          <p><strong>Ubicacion: </strong> Xcaret, Riviera Maya Quintana Roo, México.</p>
-          <p><strong>Horario: </strong> 09:30</p>
-        </div>
-        <div class="bloque">
-          <p class="price-r" >
-            <strong class="price-roms" >MXN $7,495.60</strong>
-            <a class="del-room" ><span class="del-icon"></span></a>
-          </p>
-        </div>
-      </div>
-      <!--Bloque Parques-->
-      <!--Bloque Tours-->
-      <div class="small tours">
-        <div class="bloque">
-          <img class="img-cart" alt="parques,parque,tour,kooning travel" src="/img/parques/tours.png">
-          <h2>Tour</h2>
-          <h3 class="tours-bloque">Grand Hotel Acapulco and Convention Center</h3>
-        </div>
-        <div class="bloque center">
-          <p><strong>Fecha: </strong> 2018-08-26</p>
-          <p><strong>Adultos: </strong> 1 &nbsp;&nbsp;&nbsp;
-            <strong>Niños: </strong> 0</p>
-          <p><strong>Ubicacion: </strong> Chichen Itza, Yucatan, México.</p>
-          <p><strong>Horario: </strong> 09:00</p>
-        </div>
-        <div class="bloque">
-          <p class="price-r" >
-            <strong class="price-roms" >MXN $7,495.60</strong>
-            <a class="del-room" ><span class="del-icon"></span></a>
-          </p>
-        </div>
-      </div>
-      <!--Bloque Tours-->
-      <!--Bloque Traslados-->
-      <div class="small traslado">
-        <div class="bloque">
-          <img class="img-cart" alt="parques,parque,tour,kooning travel" src="/img/parques/traslados.png">
-          <h2>Traslado</h2>
-          <h3 class="traslado-bloque">Grand Hotel Acapulco and Convention Center</h3>
-        </div>
-        <div class="bloque center">
-          <p><strong> Hotel: </strong> The Beloved Hotel Playa Mujeres Boutique All Inclusive | Cancun </p>
-          <p><strong> Fecha LLegada:</strong> 2018-09-10</p>
-          <p><strong> Hora LLegada:</strong> 01:00</p>
-          <p><strong> Fecha Salida:</strong> 2018-09-13</p>
-          <p><strong> Hora Salida</strong> 01:00</p>
-          <p><strong> Servicios:</strong> 1</p>
-          <p><strong> Camioneta tipo:</strong> Van</p>
-        </div>
-        <div class="bloque">
-          <p class="price-r" >
-            <strong class="price-roms" >MXN $7,495.60</strong>
-            <a class="del-room" ><span class="del-icon"></span></a>
-          </p>
-        </div>
-      </div>
-      <!--Bloque Traslados-->
+      @empty ($cart)
+      @else    
+        @foreach ($cart as $key =>$item)
+        {{$key}}
+          @switch($item['type'])
+              @case('hotel')
+                <div class="small hotel">
+                  <div class="bloque">
+                    <img class="img-cart" alt="Hotel,parque,tour,kooning travel" src="/img/parques/hotel.png">
+                    <h2>Hotel</h2>
+                    <h3 class="hotel-bloque" >{{$item['name']}}</h3>
+                  </div>
+                  <div class="bloque center">
+                    <p><i class="fa fa-building" aria-hidden="true"></i><span>{{$item['name']}}</span></p>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i><span> {{$item['location']}}</span></p>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i><span>Llegada {{$item['checkin']}}</span></p>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i><span>Salida {{$item['checkout']}}</span></p>
+                    <div class="roms" >
+                      <div class="vacancy" >
+                        <i class="fa fa-male" aria-hidden="true"></i>
+                        <span>{{$item['adults']}} Adultos</span>
+                      </div>
+                      <div class="vacancy" >
+                        <i class="fa fa-child" aria-hidden="true"></i>
+                        <span> {{$item['children']}} Menores</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bloque">
+                    <p class="price-r" >
+                      <strong class="price-roms" >MXN ${{number_format($item['total'],2)}}</strong>
+                      <a href="{{Request::root()}}/eliminar/{{$key}}" class="del-room" ><span class="del-icon"></span></a>
+                    </p>
+                  </div>
+                </div>
+                @break
+              @case('parque'||'tour')
+                  <div class="small {{$item['type']}}">
+                    <div class="bloque">
+                      <img class="img-cart" alt="{{$item['type']}}s,{{$item['type']}},kooning travel" src="/img/parques/parques.png">
+                      <h2>{{$item['activity']}}</h2>
+                      <h3 class="{{$item['type']}}-bloque"> {{$item['ticket']}}</h3>
+                    </div>
+                    <div class="bloque center">
+                      <p><strong>Fecha: </strong> {{$item['date']}}</p>
+                      <p><strong>Adultos: </strong> {{$item['adults']}} &nbsp;&nbsp;&nbsp;
+                        <strong>Niños: </strong> {{$item['children']}}</p>
+                      <p><strong>Ubicacion: </strong> {{$item['location']}}</p>
+                      <p><strong>Horario: </strong> {{$item['schedule']}}</p>
+                    </div>
+                    <div class="bloque">
+                      <p class="price-r" >
+                        <strong class="price-roms" >MXN ${{number_format($item['total'])}}</strong>
+                        <a class="del-room" href="{{Request::root()}}/eliminar/{{$key}}" ><span class="del-icon"></span></a>
+                      </p>
+                    </div>
+                  </div>
+                  @break
+              @case('traslado')
+                <div class="small traslado">
+                  <div class="bloque">
+                    <img class="img-cart" alt="parques,parque,tour,kooning travel" src="/img/parques/traslados.png">
+                    <h2>Traslado</h2>
+                    <h3 class="traslado-bloque">Grand Hotel Acapulco and Convention Center</h3>
+                  </div>
+                  <div class="bloque center">
+                    <p><strong> Hotel: </strong> The Beloved Hotel Playa Mujeres Boutique All Inclusive | Cancun </p>
+                    <p><strong> Fecha LLegada:</strong> 2018-09-10</p>
+                    <p><strong> Hora LLegada:</strong> 01:00</p>
+                    <p><strong> Fecha Salida:</strong> 2018-09-13</p>
+                    <p><strong> Hora Salida</strong> 01:00</p>
+                    <p><strong> Servicios:</strong> 1</p>
+                    <p><strong> Camioneta tipo:</strong> Van</p>
+                  </div>
+                  <div class="bloque">
+                    <p class="price-r" >
+                      <strong class="price-roms" >MXN $7,495.60</strong>
+                      <a class="del-room" ><span class="del-icon"></span></a>
+                    </p>
+                  </div>
+                </div>
+                @break                    
+          @endswitch
+        @endforeach
+      @endempty
+     
     </div>
     <div class="extras" >
       <div class="row">
@@ -331,89 +318,95 @@
           <input type="hidden" name="lname2" />
           <input type="hidden" name="lname1" />
         </div>
-        <div class="form-row">
-          <div class="marquito">
-            <p class="main-title" >Datos del traslado</p>
-            <input type="text" class="form-control" autocomplete="on" name="Aerolinea" id="aerolinea" placeholder="Aerolinea" required>
+        @isset ($traslado)
+        {{$traslado}}
+          <div class="form-row">
+            <div class="marquito">
+              <p class="main-title" >Datos del traslado</p>
+              <input type="text" class="form-control" autocomplete="on" name="Aerolinea" id="aerolinea" placeholder="Aerolinea" required>
+            </div>
+            <div class="marquito">
+              <p class="main-title" > Si tiene escalas proporciona el último vuelo</p>
+              <input type="text" class="form-control" autocomplete="on" name="NumVuelo" id="numvuelo" placeholder="Numero de vuelo" required>
+            </div>
           </div>
-          <div class="marquito">
-            <p class="main-title" > Si tiene escalas proporciona el último vuelo</p>
-            <input type="text" class="form-control" autocomplete="on" name="NumVuelo" id="numvuelo" placeholder="Numero de vuelo" required>
-          </div>
-        </div>
+        @endisset
+        
         <div class="form-row">
           <div class="marquito">
             <p class="main-title">Datos de la Reserva</p>
             <input type="text" class="form-control" autocomplete="on" name="nombre" id="nombre" placeholder="Nombre" required>
             <input type="text" class="form-control" autocomplete="on" name="apellidos" id="apellidos" placeholder="Apellidos" required>
             <input type="text" class="form-control" name="correo" id="correo" placeholder="Correo" aria-describedby="inputGroupPrepend" >
-            <input type="text" class="form-control" autocomplete="on" name="ciudad" id="ciudad" placeholder="Ciudad" required>
-            <input type="text" class="form-control" autocomplete="on" name="estado" id="estado" placeholder="Estado" required>
-            <select name="pais" id="pais" class="form-control">
-              <option value="Argentina">Argentina</option>
-              <option value="Australia">Australia</option>
-              <option value="Austria">Austria</option>
-              <option value="Belgium">Belgium</option>
-              <option value="Brazil">Brazil</option>
-              <option value="Bulgaria">Bulgaria</option>
-              <option value="Canada">Canada</option>
-              <option value="Caribbean">Caribbean</option>
-              <option value="Chile">Chile</option>
-              <option value="China">China</option>
-              <option value="Colombia">Colombia</option>
-              <option value="Costa Rica">Costa Rica</option>
-              <option value="Croatia">Croatia</option>
-              <option value="Czech Republic">Czech Republic</option>
-              <option value="Denmark">Denmark</option>
-              <option value="Dominican Republic">Dominican Republic</option>
-              <option value="Estonia">Estonia</option>
-              <option value="Finland">Finland</option>
-              <option value="France">France</option>
-              <option value="Germany">Germany</option>
-              <option value="Greece">Greece</option>
-              <option value="Guatemala">Guatemala</option>
-              <option value="Hong Kong">Hong Kong</option>
-              <option value="Hungary">Hungary</option>
-              <option value="India">India</option>
-              <option value="Indonesia">Indonesia</option>
-              <option value="Ireland">Ireland</option>
-              <option value="Israel">Israel</option>
-              <option value="Italy">Italy</option>
-              <option value="Japan">Japan</option>
-              <option value="Korea">Korea</option>
-              <option value="Latvia">Latvia</option>
-              <option value="Lithuania">Lithuania</option>
-              <option value="Malaysia">Malaysia</option>
-              <option value="Mexico" selected>Mexico</option>
-              <option value="Morocco">Morocco</option>
-              <option value="Netherlands">Netherlands</option>
-              <option value="New Zealand">New Zealand</option>
-              <option value="Norway">Norway</option>
-              <option value="Panama">Panama</option>
-              <option value="Peru">Peru</option>
-              <option value="Philippines">Philippines</option>
-              <option value="Poland">Poland</option>
-              <option value="Portugal">Portugal</option>
-              <option value="Puerto Rico">Puerto Rico</option>
-              <option value="Romania">Romania</option>
-              <option value="Russian Federation">Russian Federation</option>
-              <option value="Singapore">Singapore</option>
-              <option value="Slovakia">Slovakia</option>
-              <option value="Slovenia">Slovenia</option>
-              <option value="South Africa">South Africa</option>
-              <option value="Spain">Spain</option>
-              <option value="Sweden">Sweden</option>
-              <option value="Switzerland">Switzerland</option>
-              <option value="Taiwan">Taiwan</option>
-              <option value="Thailand">Thailand</option>
-              <option value="Turkey">Turkey</option>
-              <option value="Ukraine">Ukraine</option>
-              <option value="United Kingdom">United Kingdom</option>
-              <option value="United States">United States</option>
-              <option value="Venezuela">Venezuela</option>
-              <option value="Vietnam">Vietnam</option>
-            </select>
-            <input type="text" class="form-control" autocomplete="on"  name="zip" id="zip" placeholder="Codigo postal" required />
+            @isset ($hotel)
+              <input type="text" class="form-control" autocomplete="on" name="ciudad" id="ciudad" placeholder="Ciudad" required>
+              <input type="text" class="form-control" autocomplete="on" name="estado" id="estado" placeholder="Estado" required>
+              <select name="pais" id="pais" class="form-control">
+                <option value="Argentina">Argentina</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Canada">Canada</option>
+                <option value="Caribbean">Caribbean</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Greece">Greece</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Hong Kong">Hong Kong</option>
+                <option value="Hungary">Hungary</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Japan">Japan</option>
+                <option value="Korea">Korea</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Mexico" selected>Mexico</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Norway">Norway</option>
+                <option value="Panama">Panama</option>
+                <option value="Peru">Peru</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="Romania">Romania</option>
+                <option value="Russian Federation">Russian Federation</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Slovakia">Slovakia</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Spain">Spain</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Taiwan">Taiwan</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Vietnam">Vietnam</option>
+              </select>
+              <input type="text" class="form-control" autocomplete="on"  name="zip" id="zip" placeholder="Codigo postal" required />
+            @endisset
           </div>
         </div>
         <div class="form-row">
@@ -422,22 +415,16 @@
             <textarea name="address" id="address" type="text" placeholder="Direccion..." class="form-control" required=""></textarea>
           </div>
         </div>
-        <div class="form-row">
-          <div class="marquito">
-            <p class="main-title" >Datos del traslado</p>
-            <input type="text" name="name" class="form-control" id="name1" placeholder="Nombre" required />
-            <input type="text" name="lname" class="form-control" id="lname1" placeholder="Apellido" required />
-            <input type="text" name="name" class="form-control" id="name2" placeholder="Nombre Menor" required />
-            <input type="text" name="lname" class="form-control" id="lname2" placeholder="Apellido Menor" required />
+        @isset ($hotel)
+          <div class="form-row">
+            <div class="marquito">
+              <p class="main-title" >Datos del huesped del cuarto</p>
+              <input type="text" name="name" class="form-control" id="name3" placeholder="Nombre" required>
+              <input type="text" name="lname" class="form-control" id="lname3" placeholder="Apellido" required>
+            </div>
           </div>
-        </div>
-        <div class="form-row">
-          <div class="marquito">
-            <p class="main-title" >Datos del huesped del cuarto</p>
-            <input type="text" name="name" class="form-control" id="name3" placeholder="Nombre" required>
-            <input type="text" name="lname" class="form-control" id="lname3" placeholder="Apellido" required>
-          </div>
-        </div>
+        @endisset
+        
         <div class="form-row">
           <div class="marquito">
             <input class="form-check-input" name="acept" type="checkbox" id="ok" required>
@@ -450,7 +437,7 @@
           <input id="btn_pagar" type="submit" class="btn btn-sm btn-caja-reserva" value="Pagar" >
         </div>
         <div class="form-row">
-          <label class="price" >MXN $6,524</label>
+          <label class="price" >MXN ${{number_format($total)}}</label>
         </div>
       </form>
     </div>

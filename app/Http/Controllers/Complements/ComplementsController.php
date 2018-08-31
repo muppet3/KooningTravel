@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Complements;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Blog;
+use Illuminate\Http\Request;
 
 class ComplementsController extends Controller
 {
@@ -23,10 +24,13 @@ class ComplementsController extends Controller
     }
     public function blog(){
         $data['background']='height: 100px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
+        $data['blogs']=Blog::orderBy('id','desc')->get();
         return view('complements/blog',$data);
     }
-    public function details(){
+    public function details($blog){
         $data['background']='height: 100px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
+        $data['blog']=Blog::where('title',str_replace('-',' ',$blog))->first();
+
         return view('complements/details',$data);
     }
 

@@ -8,14 +8,8 @@
         <h3>¡RESERVA HOY!</h3>
       </div>
       <form class="fxcaret" id="parquess" action="" method="post" >
-        <input type="hidden" name="tipotours" value="20" />
-        <input type="hidden" id="Padultos" name="precioadultos" value="" />
-        <input type="hidden" id="Pmenores" name="preciomenores" value="" />
-        <input type="hidden" name="Parque" value="" />
-        <input type="hidden" name="Ubicacion" value="" />
-        <input type="hidden" name="link" value="" />
-        <input type="hidden" id="imgentrada" name="imagen" value="5454" />
-        <input type="hidden" id="identradas" name="id" value="654" />
+        @csrf
+        
         <div style="" class="Parquex" >
           <input style="display: none;" type="checkbox" id="transport" name="transport" />
           <label style="display: none;" class="txttr" for="transport">Agregar Transportaci&oacute;n</label>
@@ -34,7 +28,7 @@
         </div>
         <div class="date right m" >
           <select name="horario" class="cant ">
-            <option value="76">76</option>
+            <option value="02:30">02:30</option>
           </select>
           <label for="time" class="time" ></label>
         </div>
@@ -96,7 +90,7 @@
           </select>
         </div>
         <div class="Parquex m" >
-          <button class="btn-compra" onclick="validar()" type="button">Comprar</button>
+          <button class="btn-compra" type="submit">Comprar</button>
         </div>
         <label class="tx16">Precios sujetos a cambios sin previo aviso. Aplican restricciones.</label>
       </form>
@@ -193,7 +187,7 @@
               <a  href="javascript:void(0);">
                 <img alt="Mapa del parque el parque!" class="left" src="{{$activity->image}}" style="margin-top: 0px; max-height: 250px;" />
               </a>
-              <p>{{$activity->description}}</p>
+              <p>{!!$activity->description!!}</p>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/8ofAxR3v3oU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
             <div id="tabs-2">

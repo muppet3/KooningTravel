@@ -18,12 +18,9 @@ class CreateBlogsTable extends Migration
             $table->string('title',45);
             $table->string('location',45);
             $table->string('image',45);
-            $table->string('description',45);
+            $table->longText('description');
             $table->integer('views');
             $table->timestamps();
-
-            $table->unsignedInteger('cities_id');
-            $table->foreign('cities_id')->references('id')->on('cities');
         });
     }
 

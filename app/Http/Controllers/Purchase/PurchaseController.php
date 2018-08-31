@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Purchase;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
 
 class PurchaseController extends Controller
 {
@@ -88,5 +89,32 @@ class PurchaseController extends Controller
 			error_log('BANORTE TRANSACTION FAILURE URL: '.$url_split[3]);
 			header('Location: '.PATH.'/error/'.$id);
 		}	
+  	}
+  	public function delete($id){
+  		\Session::forget('cart.'.$id);
+  		$cart=\Session::get('cart');
+  		
+  		return redirect('checkout');
+  	}
+  	public function checkout(){
+  		$data['background']=" height: 100px; background-image: url(https://kooningtravel.com/img/Home/fondos/FondoTours.jpg); ";
+  		$cart=\Session::get('cart');
+  		  
+  		$total=0;
+  		foreach ($cart as $item) {
+  			
+  			if(!strcmp($item['type'],'hotel')){
+  				$data['hotel']=true;
+  			}
+  			if(!strcmp($item['type'],'traslado')){
+  				$data['traslado']=true;
+  			}
+  			$total+=$item['total'];
+  		}
+  		$data['cart']=$cart;
+  		$data['total']=$total;
+
+
+  		return view('purchase/checkout',$data); 
   	}
 }

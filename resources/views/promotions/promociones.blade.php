@@ -271,17 +271,23 @@
 	
 	<div class="wrop" >
 	
-		<div class="item">
-			<a href="/ofertas/9/Vive-Disfruta-Viaja">
-				<div class="img" >
-					<img src="/img/campanas/ViveDisfrutaViaja.png" alt="Vive Disfruta y Viaja">
-					<h4>Vive Disfruta y Viaja</h4>
-				</div>
-				<div class="info">
-					<h3>Reserva Ya</h3>
-				</div>
-			</a>
-		</div>					
+  
+  @foreach($promociones as $promocion)
+    <div class="item">
+      <a href="{{Request::root()}}/oferta/{{str_replace(' ','-',$promocion->name)}}">
+        <div class="img" >
+          <img src="{{Request::root()}}/img/campaign/{{str_replace(' ','-',$promocion->name)}}/{{str_replace(' ','-',$promocion->name)}}.png"" alt="{{$promocion->name}}">
+          <h4>{{$promocion->name}}</h4>
+        </div>
+        <div class="info">
+          <h3>Reserva Ya</h3>
+        </div>
+      </a>
+    </div>
+  @endforeach  
+
+
+							
 
 	</div>
 	

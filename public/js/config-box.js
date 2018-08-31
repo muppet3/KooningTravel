@@ -802,7 +802,7 @@ function initMap2() {
 	  //$('#state').val('');
 	  var searchField = $('#hotel').val();
 	  var expression = new RegExp(searchField, "i");
-		  $.getJSON('/js/destinos/HotelesTraslado.json', function(data) {
+		  $.getJSON('/js/Hoteles/HotelesTraslado.json', function(data) {
 		   $.each(data, function(key, value){
 
 		   	var hotel = $('#hotel').val();
