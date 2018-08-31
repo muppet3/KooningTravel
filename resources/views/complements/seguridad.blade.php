@@ -31,7 +31,7 @@
 			</div>
 			<hr>
 			<div class="kooning-us" >
-				<p class="parrafo">Si usted tiene cualquier pregunta sobre esta política de seguridad o referente a cualquier contenido mostrado en este sitio, por favor contáctenos a <a href="mailto:info@kooningtravel.com">info@kooningtravel.com</a></p>
+				<p class="parrafo">Si usted tiene cualquier pregunta sobre esta política de seguridad o referente a cualquier contenido mostrado en este sitio, por favor contáctenos a <a href="mailto:reservaciones@kooningtravel.com">reservaciones@kooningtravel.com</a></p>
 			</div>
 		</div>
 	</div>

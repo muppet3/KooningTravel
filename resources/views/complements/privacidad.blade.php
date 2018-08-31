@@ -55,7 +55,7 @@
 	
 	<h2 class="minititulo-internas">¿Cuál es el área responsable del manejo y administración de los datos personales?</h2>
 	
-	<p class="parrafo">El área responsable del manejo y la administración de los datos personales es el Departamento de Servicio a Clientes de Site Free S.A de C.V.,usted podrá contactarlo mediante el correo electrónico info@<a href="/">Kooning Travel</a>.com.mx, o directamente en nuestras oficinas ubicadas en Circuito Mar Baltico, , Manzana 10, Lote 3 en la Ciudad de Cancún Quintana Roo, en días hábiles en un horario de 9:00 horas a 18:00 horas.</p>
+<p class="parrafo">El área responsable del manejo y la administración de los datos personales es el Departamento de Servicio a Clientes de Site Free S.A de C.V.,usted podrá contactarlo mediante el correo electrónico <a href="mailto:reservaciones@kooningtravel.com">reservaciones@kooningtravel.com</a>, o directamente en nuestras oficinas ubicadas en Circuito Mar Baltico, Manzana 10, Lote 3 en la Ciudad de Cancún Quintana Roo, en días hábiles en un horario de 9:00 horas a 18:00 horas.</p>
 	
 	
 
