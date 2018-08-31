@@ -47,9 +47,17 @@ break;case"m":g=x("m");break;case"M":g=w("M",p,f);break;case"y":m=x("y");break;c
 	}
 }());
 
-	var lati = 0;
-	var long = 0;
- 
+
+
+
+  		var lati=21.0403825;
+  		var longi = -86.8730981;
+  		var latid= 21.08971600000000000000;
+  		var longid= -86.77087900000000000000;
+
+		//var lati = 0;
+		var long = 0;
+	 
 	function initMap() {
 		// Creamos un objeto mapa y especificamos el elemento DOM donde se va a mostrar.
 		var map = new google.maps.Map(document.getElementById('mapa'), {
