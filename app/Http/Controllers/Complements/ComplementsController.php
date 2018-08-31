@@ -21,19 +21,19 @@ class ComplementsController extends Controller
     }
     public function price(){
 
-        $traslado = Transfer::where('NombreTraslado',$_POST['ciudad'])->first();
+        $traslado = Transfer::where('name',$_POST['ciudad'])->first();
         
         if(strcmp($_POST['tipo'], 'Van') ==0){
-            $precio=$traslado->PrecioVan;
+            $precio=$traslado->van;
         }
         if(strcmp($_POST['tipo'], 'Escalade') ==0){
-            $precio=$traslado->PrecioEscalade;
+            $precio=$traslado->escalade;
         }
         if(strcmp($_POST['tipo'], 'Suburban') ==0){
-            $precio=$traslado->PrecioSuburban;
+            $precio=$traslado->suburban;
         }
         if(strcmp($_POST['tipo'], 'Sprinter') ==0){
-            $precio=$traslado->PrecioSprinter;
+            $precio=$traslado->sprinter;
         }
 
 
@@ -44,10 +44,8 @@ class ComplementsController extends Controller
 
         $precio=$precio*$_POST['cantidad'];
         
-        http_response_code(201);
-        header('Content-Type: application/json');
-        echo json_encode($precio);
-        exit();
+        echo $precio;
+        
     }
     public function autos(){
         $data['background']='height: 556px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';

@@ -663,15 +663,13 @@ $(".messaje").delay(3000).fadeOut("slow");
 				var tipoentrada= "sd=" + $('input[name=sd]').val()  +"&ed=" + $('input[name=ed]').val()  +"&auto="+$('select[name=auto]').val()+"&cantidad="+$('select[name=cantidada]').val();
 		 		//console.log(tipoentrada);
 				 $.ajax ( {
-						url: 'traslados/price',
-						type: 'get',
+						url: 'traslado/price',
+						type: 'POST',
 						data: tipoentrada,
-			  			statusCode:{
-							201:function (response) {																	
-								$(".money").text("$"+response);
-								$("#total").val(response);		 			
-							}
-		  			   	}
+			  			success : function(response){
+					$(".money").text("$ "+response);
+					$("#total").val(response);
+				}
 		  			});
 				 
 
@@ -679,21 +677,16 @@ $(".messaje").delay(3000).fadeOut("slow");
 
 			//funcion calcular precio traslado
       function precio(){
-	var tipoentrada= "ciudad=" + $('input[name=destino]').val()  +"&tipo="+$('select[name=clase]').val()+"&cantidad="+$('select[name=cantidad]').val()+"&servicio="+$('select[name=servicio]').val();
-		 // console.log(tipoentrada);
+		var tipoentrada= "ciudad=" + $('input[name=destino]').val()  +"&tipo="+$('select[name=clase]').val()+"&cantidad="+$('select[name=cantidad]').val()+"&servicio="+$('select[name=servicio]').val();
+		console.log(tipoentrada);
 		 $.ajax ( {
 				url: 'traslado/price',
 				type: 'POST',
 				data: tipoentrada,
-	  			statusCode:{
-					201:function (response) {
-							//console.log(response);
-							
-						$(".money").text("$ "+response);
-						$("#total").val(response);
- 			
-					}
-  			   	}
+				success : function(response){
+					$(".money").text("$ "+response);
+					$("#total").val(response);
+				}
   			});
 }
 
