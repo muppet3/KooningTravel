@@ -655,8 +655,8 @@ $(".messaje").delay(3000).fadeOut("slow");
 				var tipoentrada= "sd=" + $('input[name=sd]').val()  +"&ed=" + $('input[name=ed]').val()  +"&auto="+$('select[name=auto]').val()+"&cantidad="+$('select[name=cantidada]').val();
 		 		//console.log(tipoentrada);
 				 $.ajax ( {
-						url: '/precioautos',
-						type: 'POST',
+						url: 'traslados/price',
+						type: 'get',
 						data: tipoentrada,
 			  			statusCode:{
 							201:function (response) {																	
