@@ -10,7 +10,7 @@ body .home { height:360px; }
 	
 	<div class="bgv">
 		<video preload="auto" poster="" autoplay loop muted playsinline >
-			<source src="https://www.kooningtravel.com/img/Home/fondos/video1.webm" type="video/webm" />
+			<source src="/img/fondos/video1.webm" type="video/webm" />
 		</video>
 	</div>
 	<span class="h2">Descansa en tu hotel ideal</span>
@@ -54,9 +54,13 @@ body .home { height:360px; }
 			</div>
 			<div class="inline-block">
 				<div class="inline-search passengers noselect">
-					<div class="input-style" id="show-passengers-panel"> <span class="rooms-icon" data-title="Habitaciones">1</span><span class="sep"></span><span class="r1a-icon" data-title="Adultos">2</span> <span class="childs-icon none" data-title="Niños">0</span>
-					<input class="pax rooms" name="r" id="habita" value="1" type="hidden" />
-				</div>
+					<div class="input-style" id="show-passengers-panel"> 
+						<span class="rooms-icon" data-title="Habitaciones">1</span>
+						<span class="sep"></span>
+						<span class="r1a-icon" data-title="Adultos">2</span> 
+						<span class="childs-icon none" data-title="Niños">0</span>
+						<input class="pax rooms" name="r" id="habita" value="1" type="hidden" />
+					</div>
 				<div id="passengers-panel" class="noselect simple" style="display: none;"> <span class="panel-arrow"></span>
 				<div class="panel-content">
 					<ul class="rooms-list">
@@ -119,7 +123,8 @@ body .home { height:360px; }
 								</select>
 							</div>
 						</li>
-						<li class="item room-2 clear hidden" data-room="2"> <a class="del-room" href="#"> <span class="del-icon"/> </a>
+						<li class="item room-2 clear hidden" data-room="2"> 
+						<a class="del-room" href="#"> <span class="del-icon"/></a>
 						<div class="room-name inline">Hab 2</div>
 						<div class="room-r1a inline center">
 							<label class="sup-label">Adultos</label>
@@ -267,7 +272,9 @@ body .home { height:360px; }
 @stop
 @section('content')
 <div class="pannel">
-<a class="lereve" href="{{Request::root()}}/details/1630/le-reve-hotel-and-spa?d=1630{{$filtros}}"><img src="https://www.kooningtravel.com/img/Home/lereve.png" alt="Hotel Lereve" ></a>
+<a class="lereve" href="{{Request::root()}}/details/1630/le-reve-hotel-and-spa?d=1630{{$filtros}}">
+	<img src="/img/lereve.png" alt="Hotel Lereve" >
+</a>
 
 
 <!-- Slider -->
@@ -276,7 +283,7 @@ body .home { height:360px; }
 <!-- Carousel items -->
 <div class="carousel-inner" >
 	<div class="item active" >
-		<img src="https://www.kooningtravel.com/img/Home/ofer1.png"  usemap="#Map1" alt="Verano" />
+		<img src="/img/publicidad/anuncios/ofer1.png"  usemap="#Map1" alt="Verano" />
 		<map name="Map1">
 		<area shape="rect" target="_blank" coords="2,1,361,268" href="/ofertas/10/Preventa-Verano">
 			<area class="fives1" shape="rect" target="_blank" coords="368,1,726,136" href="/ofertas/6/Viaja-En-Mexico-Y-Por-Mexico">
@@ -284,7 +291,7 @@ body .home { height:360px; }
 					</map>
 				</div>
 				<div class="item" >
-					<img src="https://www.kooningtravel.com/img/Home/ofer2.png"  usemap="#Map" alt="Verano" />
+					<img src="/img/publicidad/anuncios/ofer2.png"  usemap="#Map" alt="Verano" />
 					<map name="Map">
 					<area shape="rect" target="_blank" coords="2,1,361,268" href="https://www.kooningtravel.com/ofertas/9/Vive-Disfruta-Viaja">
 						<area class="fives1" shape="rect" target="_blank" coords="368,1,726,136" href="https://www.kooningtravel.com/ofertas/5/Disfruta-Mexico">
@@ -295,7 +302,9 @@ body .home { height:360px; }
 					</div>
 				</div>
 				<!-- Slider -->
-				<a class="azull" href="{{Request::root()}}/details/381/azul-beach-resort-riviera-maya-hotel-by-karisma?d=381{{$filtros}}"><img src="https://www.kooningtravel.com/img/Home/azul.png" alt="Hotel Azul" ></a>
+				<a class="azull" href="{{Request::root()}}/details/381/azul-beach-resort-riviera-maya-hotel-by-karisma?d=381{{$filtros}}">
+					<img src="/img/publicidad/banners/azul.png" alt="Hotel Azul" >
+				</a>
 			</div>
 		</div>
 		<div class="centerh" >
@@ -304,22 +313,24 @@ body .home { height:360px; }
 				<!-- CARRUSEL VERTICAL-->
 				<div id="anuncio">
 					<!-- Carousel items -->
-					<a href="{{Request::root()}}/details/371/krystal-cancun?d=2{{$filtros}}"><img src="https://www.kooningtravel.com/img/search/publicidad/Krystal.png" alt="Temptation" /></a>
+					<a href="{{Request::root()}}/details/371/krystal-cancun?d=2{{$filtros}}">
+						<img src="/img/publicidad/banners/Krystal.png" alt="Temptation" />
+					</a>
 					<!-- Carousel nav -->
 				</div>
 				<div class="hint" >
 					<div class="bloqueh">
 						<div class="banerh" >
 							<a href="{{Request::root()}}/search/Cancun?type=1&d=2{{$filtros}}">
-								<img alt=" " src="https://www.kooningtravel.com/img/playas/cancun.png" />
+								<img alt=" " src="/img/publicidad/playas/cancun.png" />
 							</a>
 						</div>
 						<div  class="banerh2">
 							<a href="{{Request::root()}}/search/Acapulco?type=1&d=1{{$filtros}}">
-								<img alt=" " src="https://www.kooningtravel.com/img/playas/Acapulco.jpg" />
+								<img alt=" " src="/img/publicidad/playas/Acapulco.jpg" />
 							</a>
 							<a class="mar" href="{{Request::root()}}/search/Puerto-Vallarta?type=1&d=12{{$filtros}}">
-								<img alt=" "  src="https://www.kooningtravel.com/img/playas/PuertoVallarta.jpg" />
+								<img alt=" "  src="/img/publicidad/playas/PuertoVallarta.jpg" />
 							</a>
 						</div>
 					</div>
@@ -327,30 +338,30 @@ body .home { height:360px; }
 					<div class="bloqueh">
 						<div style="float:left;" class="banerh2">
 							<a href="{{Request::root()}}/search/Riviera-Nayarit?type=1&d=112{{$filtros}}" >
-								<img alt=" " src="https://www.kooningtravel.com/img/playas/RivieraNayarit.jpg" />
+								<img alt=" " src="/img/publicidad/playas/RivieraNayarit.jpg" />
 							</a>
 							<a class="mar" href="{{Request::root()}}/search/Mazatlan?type=1&d=9{{$filtros}}" >
-								<img alt=" " src="https://www.kooningtravel.com/img/playas/Mazatlan.jpg" />
+								<img alt=" " src="/img/publicidad/playas/Mazatlan.jpg" />
 							</a>
 						</div>
 						<div style="float:right;" class="banerh">
 							<a href="{{Request::root()}}/search/Playa-del-Carmen?type=1&d=16{{$filtros}}" >
-								<img alt=" " src="https://www.kooningtravel.com/img/playas/playadc.png" />
+								<img alt=" " src="/img/publicidad/playas/playadc.png" />
 							</a>
 						</div>
 					</div>
 					<div class="bloqueh">
 						<div class="banerh">
 							<a href="{{Request::root()}}/search/Riviera-Maya?type=1&d=13{{$filtros}}" >
-								<img alt=" " src="https://www.kooningtravel.com/img/playas/rivieramaya.png"  />
+								<img alt=" " src="/img/publicidad/playas/rivieramaya.png"  />
 							</a>
 						</div>
 						<div class="banerh2">
 							<a href="{{Request::root()}}/search/Ixtapa-Zihuatanejo?type=1&d=7{{$filtros}}" >
-								<img alt=" " src="https://www.kooningtravel.com/img/playas/ixtapa.png" />
+								<img alt=" " src="/img/publicidad/playas/ixtapa.png" />
 							</a>
 							<a class="mar" href="{{Request::root()}}/search/Veracruz?type=1&d=31{{$filtros}}" >
-								<img alt=" " src="https://www.kooningtravel.com/img/playas/Veracruz.jpg" />
+								<img alt=" " src="/img/publicidad/playas/Veracruz.jpg" />
 							</a>
 						</div>
 						
@@ -359,7 +370,9 @@ body .home { height:360px; }
 				<div class="hintr" >
 					<div id="anuncio2" class="posh" >
 						<!-- Carousel items -->
-						<a href="{{Request::root()}}/details/1346/nina-hotel---beach-club-by-tukan?d=1346{{$filtros}}"><img src="https://www.kooningtravel.com/img/search/publicidad/Nina.png" alt="Tucan Nina" /></a>
+						<a href="{{Request::root()}}/details/1346/nina-hotel---beach-club-by-tukan?d=1346{{$filtros}}">
+							<img src="/img/publicidad/banners/Nina.png" alt="Tucan Nina" />
+						</a>
 						
 						<!-- Carousel nav -->
 					</div>
@@ -367,10 +380,14 @@ body .home { height:360px; }
 						<!-- Carousel items -->
 						<div class="carousel-inner" >
 							<div class="item active">
-								<a href="{{Request::root()}}/search/Isla-Mujeres?type=1&d=6{{$filtros}}"><img src="https://www.kooningtravel.com/img/Home/IslaMujeres1.png" alt="Isla Mujeres, Quintana Roo, M&eacute;xico." /></a>
+								<a href="{{Request::root()}}/search/Isla-Mujeres?type=1&d=6{{$filtros}}">
+									<img src="/img/IslaMujeres1.png" alt="Isla Mujeres, Quintana Roo, M&eacute;xico." />
+								</a>
 							</div>
 							<div class="item">
-								<a href="{{Request::root()}}/search/Isla-Mujeres?type=1&d=6{{$filtros}}"><img src="https://www.kooningtravel.com/img/Home/IslaMujeres2.png" alt="Isla Mujeres, Quintana Roo, M&eacute;xico." /></a>
+								<a href="{{Request::root()}}/search/Isla-Mujeres?type=1&d=6{{$filtros}}">
+									<img src="/img/IslaMujeres2.png" alt="Isla Mujeres, Quintana Roo, M&eacute;xico." />
+								</a>
 							</div>
 						</div>
 						<!-- Carousel nav -->
@@ -388,45 +405,45 @@ body .home { height:360px; }
 					<div class="bloqueh">
 						<div class="banerh">
 							<a href="{{Request::root()}}/search/Ciudad-de-Mexico?type=1&d=11{{$filtros}}" >
-								<img src="https://www.kooningtravel.com/img/ciudades/cdmx.png" alt=" " />
+								<img src="/img/publicidad/ciudades/cdmx.png" alt=" " />
 							</a>
 						</div>
 						<div class="banerh2">
 							<a  href="{{Request::root()}}/search/Puebla?type=1&d=39{{$filtros}}" >
-								<img src="https://www.kooningtravel.com/img/ciudades/Puebla.jpg" alt=" " />
+								<img src="/img/publicidad/ciudades/Puebla.jpg" alt=" " />
 							</a>
 							<a class="mar" href="{{Request::root()}}/search/Queretaro?type=1&d=40{{$filtros}}" >
-								<img src="https://www.kooningtravel.com/img/ciudades/Queretaro.jpg" alt=" " />
+								<img src="/img/publicidad/ciudades/Queretaro.jpg" alt=" " />
 							</a>
 						</div>
 					</div>
 					<div class="bloqueh">
 						<div style="float:left;" class="banerh2">
 							<a href="{{Request::root()}}/search/Merida?type=1&d=10{{$filtros}}" >
-								<img src="https://www.kooningtravel.com/img/ciudades/Merida.jpg" alt=" " />
+								<img src="/img/publicidad/ciudades/Merida.jpg" alt=" " />
 							</a>
 							<a class="mar" href="{{Request::root()}}/search/Guanajuato?type=1&d=47{{$filtros}}" >
-								<img src="https://www.kooningtravel.com/img/ciudades/Guanajuato.jpg" alt=" " />
+								<img src="/img/publicidad/ciudades/Guanajuato.jpg" alt=" " />
 							</a>
 						</div>
 						<div style="float:right;" class="banerh">
 							<a href="{{Request::root()}}/search/Guadalajara?type=1&d=15{{$filtros}}" >
-								<img src="https://www.kooningtravel.com/img/ciudades/guadalajara.png" alt=" " />
+								<img src="/img/publicidad/ciudades/guadalajara.png" alt=" " />
 							</a>
 						</div>
 					</div>
 					<div class="bloqueh">
 						<div class="banerh">
 							<a href="{{Request::root()}}/search/Monterrey?type=1&d=32{{$filtros}}" >
-								<img src="https://www.kooningtravel.com/img/ciudades/monterrey.png" alt=" " />
+								<img src="/img/publicidad/ciudades/monterrey.png" alt=" " />
 							</a>
 						</div>
 						<div class="banerh2">
 							<a href="{{Request::root()}}/search/Oaxaca?type=1&d=17{{$filtros}}" >
-								<img src="https://www.kooningtravel.com/img/ciudades/Oaxaca.jpg" alt=" " />
+								<img src="/img/publicidad/ciudades/Oaxaca.jpg" alt=" " />
 							</a>
 							<a class="mar" href="{{Request::root()}}/search/Morelia?type=1&d=5{{$filtros}}" >
-								<img src="https://www.kooningtravel.com/img/ciudades/Morelia.jpg" alt=" " />
+								<img src="/img/publicidad/ciudades/Morelia.jpg" alt=" " />
 							</a>
 						</div>
 					</div>
@@ -434,7 +451,7 @@ body .home { height:360px; }
 				<div class="hintr" >
 					<div class="banner-puebla  posh">
 						<a href="{{Request::root()}}/details/4635/xoxula-by-inmense?d=39{{$filtros}}">
-							<img src="https://www.kooningtravel.com/img/search/publicidad/Xolula.png" alt="Cholula, Puebla. M&eacute;xico." />
+							<img src="/img/publicidad/banners/Xolula.png" alt="Cholula, Puebla. M&eacute;xico." />
 						</a>
 					</div>
 					<div id="anuncio3" class="carousel slide" data-ride="carousel">
@@ -442,12 +459,12 @@ body .home { height:360px; }
 						<div class="carousel-inner" >
 							<div class="item active">
 								<a href="{{Request::root()}}/search/San-Cristobal-de-las-Casas?type=1&d=76{{$filtros}}">
-									<img src="https://www.kooningtravel.com/img/Home/SanCristobaldelasCasas1.png" alt="Isla Mujeres, Quintana Roo, M&eacute;xico." />
+									<img src="/img/SanCristobaldelasCasas1.png" alt="Isla Mujeres, Quintana Roo, M&eacute;xico." />
 								</a>
 							</div>
 							<div class="item">
 								<a href="{{Request::root()}}/search/San-Cristobal-de-las-Casas?type=1&d=76{{$filtros}}">
-									<img src="https://www.kooningtravel.com/img/Home/SanCristobaldelasCasas2.png" alt="San Cristobal de las Casas, Chiapas, M&eacute;xico." />
+									<img src="/img/SanCristobaldelasCasas2.png" alt="San Cristobal de las Casas, Chiapas, M&eacute;xico." />
 								</a>
 							</div>
 						</div>
@@ -460,20 +477,34 @@ body .home { height:360px; }
 					<div class="playash" >Complementa tu viaje</div>
 					<div class="colh" >
 						<a class="gal" href="{{Request::root()}}/promociones" >
-							<div class="sombraPromociones2" > <img class="imgh" src="https://www.kooningtravel.com/img/Home/SliderOfertas.png" />
+							<div class="sombraPromociones2" > 
+								<img alt=" " class="imgh" src="/img/publicidad/complementos/SliderOfertas.png" />
 								<div class="caption">
 									<h4>DESCUENTOS</h4>
-									<span>¡Descuentos imperdibles!</span> </div>
+									<span>¡Descuentos imperdibles!</span> 
 								</div>
+							</div>
 							</a>
 							<div class="gal gal2">
 								<div class="sombraPromociones2" >
 									<div class="carousel slide" data-ride="carousel" >
 										<!-- Carousel items -->
 										<div class="carousel-inner" >
-											<div class="item active"><a  href="/parques/Xcaret"><img class="imgh" src="https://www.kooningtravel.com/img/Home/publicidadtours/Xcaret.png" alt="Xcaret" /></a> </div>
-											<div class="item"><a href="/parques/Royal-Garrafon"><img class="imgh" src="https://www.kooningtravel.com/img/Home/publicidadtours/Dolphin.png" alt="Dolphin" /></a> </div>
-											<div class="item"><a href="/parques/Rio-Secreto"><img class="imgh" src="https://www.kooningtravel.com/img/Home/publicidadtours/RioSecreto.png" alt="Holbox" /></a> </div>
+											<div class="item active">
+												<a  href="/parques/Xcaret">
+													<img class="imgh" src="/img/publicidad/complementos/Xcaret.png" alt="Xcaret" />
+												</a> 
+											</div>
+											<div class="item">
+												<a href="/parques/Royal-Garrafon">
+													<img class="imgh" src="/img/publicidad/complementos/Dolphin.png" alt="Dolphin" />
+												</a> 
+											</div>
+											<div class="item">
+												<a href="/parques/Rio-Secreto">
+													<img class="imgh" src="/img/publicidad/complementos/RioSecreto.png" alt="Holbox" />
+												</a> 
+											</div>
 										</div>
 										<!-- Carousel nav -->
 									</div>
@@ -487,8 +518,16 @@ body .home { height:360px; }
 										<div class="carousel slide" data-ride="carousel" >
 											<!-- Carousel items -->
 											<div class="carousel-inner" >
-												<div class="item active"><a  href="/tours/Chichen-Itza"><img class="imgh" src="https://www.kooningtravel.com/img/Home/publicidadtour/Mayaland.png" alt="Xcaret" /></a> </div>
-												<div class="item"><a href="/tours/Holbox"><img class="imgh" src="https://www.kooningtravel.com/img/Home/publicidadtour/Holbox.png" alt="Dolphin" /></a> </div>
+												<div class="item active">
+													<a  href="/tours/Chichen-Itza">
+														<img class="imgh" src="/img/publicidad/complementos/Mayaland.png" alt="Xcaret" />
+													</a> 
+												</div>
+												<div class="item">
+													<a href="/tours/Holbox">
+														<img class="imgh" src="/img/publicidad/complementos/Holbox.png" alt="Dolphin" />
+													</a> 
+												</div>
 											</div>
 											<!-- Carousel nav -->
 										</div>
@@ -501,4 +540,4 @@ body .home { height:360px; }
 							</div>
 						</div>
 						
-						@stop
+@stop

@@ -666,7 +666,7 @@ html body .centerh .bloque .hintr { overflow: hidden; display: inline-block; flo
 html body .centerh .bloque .hintr #anuncio3 { margin-top: 13%; }
 html body .centerh .bloque .colh .gal { display: inline-block; width: 310px; height: auto; }
 html body .centerh .bloque .colh .gal2 { margin: 0px 27px; }
-html body .centerh .bloque .colh .gal .sombraPromociones2 { background-color: #fff; border: 1px solid #ddd; border-radius: 4px; -webkit-transition: border .2s ease-in-out; -o-transition: border .2s ease-in-out; transition: border .2s ease-in-out; display: inline-block; float: left; width: auto; height: auto; padding: 4px; }
+html body .centerh .bloque .colh .gal .sombraPromociones2 { overflow: hidden; background-color: #fff; border: 1px solid #ddd; border-radius: 4px; -webkit-transition: border .2s ease-in-out; -o-transition: border .2s ease-in-out; transition: border .2s ease-in-out; display: inline-block; float: left; width: auto; height: auto; padding: 4px; }
 html body .centerh .bloque .colh .gal .sombraPromociones2 .imgh { display: inline-block; float: left; margin: 0px; }
 html body .centerh .bloque .colh .gal .sombraPromociones2 .caption { cursor: pointer; display: inline-block; float: left; width: 100%; font-weight: bold; color: #333; text-align: center; padding: 0px; height: auto; }
 html body .centerh .bloque .colh .gal .sombraPromociones2 .caption h4 { margin: 7px 0px; display: inline-block; width: 100%; float: left; font-size: 18px; font-weight: 500; padding: 0px; text-align: center; }

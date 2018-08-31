@@ -470,11 +470,11 @@
   </div>
 
 <div class="info-kooning" > 
-  <img src="https://www.kooningtravel.com/images/logo-vive-mexico.png" > 
-  <img class="mar" src="https://www.kooningtravel.com/images/logo-sectur.png" > 
-  <img src="https://www.kooningtravel.com/images/logo-banorte.png" > 
-  <img class="mar" src="https://www.kooningtravel.com/images/logo-paypal.png" > 
-  <img src="https://www.kooningtravel.com/images/logo-sitio-seguro.png" > 
+  <img src="/img/logo-vive-mexico.png" > 
+  <img class="mar" src="/img/logo-sectur.png" > 
+  <img src="/img/logo-banorte.png" > 
+  <img class="mar" src="/img/logo-paypal.png" > 
+  <img src="/img/logo-sitio-seguro.png" > 
 </div>
       
 <div class="generic-fotter">
@@ -484,9 +484,7 @@
             <div class="logo-fott">
                <img src="/img/logo.png" class="logo-kooning" />
             </div>
-
-
-               
+                           
                 <li><a href="/" >Página de Inicio</a></li>
                 <li><a href="/nosotros" >Nosotros</a></li>
                 <li><a href="/blog" >Blog</a></li>
@@ -495,7 +493,7 @@
                 <li><a href="/privacidad" >Aviso de Privacidad</a></li>
                 <li><a href="/site-map" >Mapa del Sitio</a></li>
                 <div class="img-trip">
-                   <img src="https://kooningtravel.com/img/home/TripAdvisor.png" class="tripadvisor" alt="trip advisor">
+                   <img src="/img/TripAdvisor.png" class="tripadvisor" alt="trip advisor">
                 </div>                
               </ul>
 
@@ -523,7 +521,7 @@
                     </a>
                   </li>
                   <div class="img-trip">
-                     <img src="https://kooningtravel.com/img/home/HechoEnMexico.png" class="made-in" alt="echo  en M&eacute;xico" />
+                     <img src="/img/HechoEnMexico.png" class="made-in" alt="echo  en M&eacute;xico" />
                   </div> 
               </ul>
 
@@ -537,7 +535,7 @@
               <ul class="sub-fotter" >
                 <h3>CONTÁCTANOS</h3>
                 <a class="kooning-contact" href="/contacto">
-                     <img src="https://kooningtravel.com/img/Home/Audifonos.png" alt="Llamanos">
+                     <img src="/img/Audifonos.png" alt="Llamanos">
                 </a>
                 <li><a href="/contacto">¿Necesitas que te llamemos?</a></li>
                 <li><a href="skype:018008908974?call" ><i class="fa fa-phone" aria-hidden="true"></i>01 800 890 8974</a></li>
