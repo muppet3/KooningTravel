@@ -683,10 +683,15 @@ $(".messaje").delay(3000).fadeOut("slow");
 				url: 'traslado/price',
 				type: 'POST',
 				data: tipoentrada,
-				success : function(response){
-					$(".money").text("$ "+response);
-					$("#total").val(response);
-				}
+				statusCode:{
+					201:function (response) {
+							//console.log(response);
+							
+						$(".money").text("$ "+response);
+						$("#total").val(response);
+ 			
+					}
+  			   	}
   			});
 }
 

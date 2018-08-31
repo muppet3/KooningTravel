@@ -43,8 +43,8 @@ class ComplementsController extends Controller
         
 
         $precio=$precio*$_POST['cantidad'];
-        
-        echo $precio;
+        http_response_code(201);
+        echo json_encode($precio);
         
     }
     public function autos(){
