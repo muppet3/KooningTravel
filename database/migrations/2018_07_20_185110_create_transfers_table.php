@@ -21,8 +21,6 @@ class CreateTransfersTable extends Migration
             $table->float('suburban');
             $table->float('sprinter');
             $table->timestamps();
-            $table->integer('cities_id')->unsigned();
-            $table->foreign('cities_id')->references('id')->on('cities');
         });
     }
 

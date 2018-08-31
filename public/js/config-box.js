@@ -682,7 +682,7 @@ $(".messaje").delay(3000).fadeOut("slow");
 	var tipoentrada= "ciudad=" + $('input[name=destino]').val()  +"&tipo="+$('select[name=clase]').val()+"&cantidad="+$('select[name=cantidad]').val()+"&servicio="+$('select[name=servicio]').val();
 		 // console.log(tipoentrada);
 		 $.ajax ( {
-				url: '/preciotraslasdo',
+				url: 'traslado/price',
 				type: 'POST',
 				data: tipoentrada,
 	  			statusCode:{
