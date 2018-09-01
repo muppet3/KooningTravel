@@ -48,64 +48,14 @@ break;case"m":g=x("m");break;case"M":g=w("M",p,f);break;case"y":m=x("y");break;c
 }());
 
 
-  		var tlati=21.0403825;
-  		var tlongi = -86.8730981;
-  		var tlatid= 21.08971600000000000000;
-  		var tlongid= -86.77087900000000000000;
-
-
-      function initMap2() {
-
-        var directionsService = new google.maps.DirectionsService;
-        var directionsDisplay = new google.maps.DirectionsRenderer;
-        var mapp = new google.maps.Map(document.getElementById('mtraslado'), {
-          zoom: 20,
-          center: {lat: tlati, lng: tlongi }
-        });
-        directionsDisplay.setMap(mapp);        
-          var waypts = [];
-        directionsService.route({
-         // origin: 'Aeropuerto Internacional de Cancún',
-         origin:{lat: tlati, lng: tlongi},
-          destination: {lat: parseFloat(tlatid), lng: parseFloat(tlongid)},
-          optimizeWaypoints: true,
-          travelMode: 'DRIVING'
-        }, function(response, status) {
-          if (status === 'OK') {
-            directionsDisplay.setDirections(response);
-            var route = response.routes[0];
-            
-          } else {
-            window.alert('Directions request failed due to ' + status);
-          }
-        });
-      }
-
-
-
-      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-      
-        var waypts = [];
-        directionsService.route({
-         // origin: 'Aeropuerto Internacional de Cancún',
-         origin:{lat: lati, lng: longi},
-          destination: {lat: parseFloat(latid), lng: parseFloat(longid)},
-          optimizeWaypoints: true,
-          travelMode: 'DRIVING'
-        }, function(response, status) {
-          if (status === 'OK') {
-            directionsDisplay.setDirections(response);
-            var route = response.routes[0];
-            
-          } else {
-            window.alert('Directions request failed due to ' + status);
-          }
-        });
-      }
-
 
 
 $(document).ready(function () {	
+
+
+
+
+
 
     //DIFERENCIA DE DIAS
     var date1 = new Date($("#from_hotel_search").val());
@@ -115,7 +65,6 @@ $(document).ready(function () {
     var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
 
    $(".number-nights").text(diffDays);
-
 
 	// PARA QUE NO ENVIE FORMULARIO AL PULSAR INTRO
 	$('#contactform').on("keyup keypress", function(e) {
@@ -629,8 +578,6 @@ var link =  "hotel-"+$("#search_hotel").val();
 
   $('a[id ='+link+' ]').fadeIn( "slow" );
 
-  	console.log(link);
-
   $('body, html').animate({
       scrollTop: '0px'
     });
@@ -668,18 +615,22 @@ $(".messaje").delay(3000).fadeOut("slow");
 	});
 
 
+	//funcion calcular precio traslado
+  function precio(){
+
+
+	var tipoentrada= "ciudad=" + $('input[name=destino]').val()  +"&tipo="+$('select[name=clase]').val()+"&cantidad="+$('select[name=cantidad]').val()+"&servicio="+$('select[name=servicio]').val();
+
+	console.log("datos > " + tipoentrada );
 
 
 
-			//funcion calcular precio traslado
-      function precio(){
-		var tipoentrada= "ciudad=" + $('input[name=destino]').val()  +"&tipo="+$('select[name=clase]').val()+"&cantidad="+$('select[name=cantidad]').val()+"&servicio="+$('select[name=servicio]').val();
-		console.log(tipoentrada);
-		 $.ajax ( {
+
+ $.ajax ( {
 				url: 'traslado/price',
 				type: 'POST',
 				data: tipoentrada,
-				statusCode:{
+	  			statusCode:{
 					201:function (response) {
 							//console.log(response);
 							
@@ -689,14 +640,21 @@ $(".messaje").delay(3000).fadeOut("slow");
 					}
   			   	}
   			});
-}
 
 
-$("#result").hide();
+
+
+
+
+
+
+
+	$("#result").hide();
 
  $.ajaxSetup({ cache: false });
 
 	 $('#hotel').keyup(function(){
+
 	 $("#result").show();
 	  $('#result').html('');
 	  //$('#state').val('');
@@ -723,19 +681,17 @@ $("#result").hide();
 		  	 });   
 		  }); 
 	 });
-
-
-
   
-	 $('#result').on('click', 'li', function() {
+
+$('#result').on('click', 'li', function() {
 
 		  var text = $(this).text();
 		  latid = $(this).next().text();
 		  longid = $(this).next().next().text();
 		  var dest = $(this).next().next().next().text();
 
+		  initMap();
 
-		  initMap2();
 		  $('#hotel').val(text);
 		  $('#latitud').val(latid);
 		  $('#longitud').val(longid);		
@@ -743,12 +699,11 @@ $("#result").hide();
 
 		  $("#result").hide();
 		  $("#result").html('');
-		  precio();
+
+		 console.log( "aqui el error > " + precio() );
+
+
 	 });
-
-
-
-
 
 
 	$('.carousel').jcarousel({ wrap: 'circular' });
@@ -897,4 +852,3 @@ $("#result").hide();
  });
 
 
-	
