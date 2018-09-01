@@ -20,7 +20,8 @@
       
        <!--Recursos JS -->
       <script language="javascript" type="text/javascript" src="/js/jquery-3.3.1.js"></script> 
-      <script language="javascript" type="text/javascript" src="/js/jquery.min.js"></script>
+      <script language="javascript" type="text/javascript" src="https://kooningtravel.com/js/jquery.min.js"></script>
+      
       <script language="javascript" type="text/javascript" src="/js/bootstrap.min.js" ></script>   
       <script language="javascript" type="text/javascript" src="/js/jquery-ui.js" ></script>   
       <script language="javascript" type="text/javascript" src="/js/jcarousel.min.js"></script>
