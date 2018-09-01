@@ -14,8 +14,9 @@
 		<div class="boxt" >
 			<span class="tit" >Reserva tu Traslado!</span>
 			<div class="con" >
-				<form id="form" action="javascript:void(0);" method="post" >
-					<input type="hidden" name="tipotours" value="22">
+				<form id="form" action="" method="post" >
+					 @csrf
+					
 					<div class="bloq">
 						<div class="left" >
 							<p class="tipo" >Tipo de Servicio</p>
@@ -193,7 +194,7 @@
 				</div>
 				<div class="bloq" >
 					<label class="tx16 text7">Terminos y condiciones con el prestador del servicio.</label>
-					<button  type="button" id="traslados" class="enviar" >RESERVAR</button>
+					<button  type="submit" class="enviar" >RESERVAR</button>
 				</div>
 			</form>
 		</div>

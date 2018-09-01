@@ -20,7 +20,7 @@
       @empty ($cart)
       @else    
         @foreach ($cart as $key =>$item)
-        {{$key}}
+        {{count($cart)}}
           @switch($item['type'])
               @case('hotel')
                 <div class="small hotel">
@@ -53,6 +53,31 @@
                   </div>
                 </div>
                 @break
+              
+              @case('traslado')
+                <div class="small traslado">
+                  <div class="bloque">
+                    <img class="img-cart" alt="parques,parque,tour,kooning travel" src="/img/parques/traslados.png">
+                    <h2>Traslado</h2>
+                    <h3 class="traslado-bloque">{{$item['destiny']}}</h3>
+                  </div>
+                  <div class="bloque center">
+                    <p><strong> Hotel: </strong> {{$item['destiny']}} </p>
+                    <p><strong> Fecha LLegada:</strong> {{$item['checkin']}}</p>
+                    <p><strong> Hora LLegada:</strong> {{$item['timein']}}</p>
+                    <p><strong> Fecha Salida:</strong> {{$item['checkout']}}</p>
+                    <p><strong> Hora Salida</strong> {{$item['timeout']}}</p>
+                    <p><strong> Servicios:</strong> {{$item['service']}}</p>
+                    <p><strong> Camioneta tipo:</strong> {{$item['transport']}}</p>
+                  </div>
+                  <div class="bloque">
+                    <p class="price-r" >
+                      <strong class="price-roms" >MXN ${{number_format($item['total'])}}</strong>
+                      <a class="del-room" ><span class="del-icon"></span></a>
+                    </p>
+                  </div>
+                </div>
+                @break
               @case('parque'||'tour')
                   <div class="small {{$item['type']}}">
                     <div class="bloque">
@@ -74,31 +99,7 @@
                       </p>
                     </div>
                   </div>
-                  @break
-              @case('traslado')
-                <div class="small traslado">
-                  <div class="bloque">
-                    <img class="img-cart" alt="parques,parque,tour,kooning travel" src="/img/parques/traslados.png">
-                    <h2>Traslado</h2>
-                    <h3 class="traslado-bloque">Grand Hotel Acapulco and Convention Center</h3>
-                  </div>
-                  <div class="bloque center">
-                    <p><strong> Hotel: </strong> The Beloved Hotel Playa Mujeres Boutique All Inclusive | Cancun </p>
-                    <p><strong> Fecha LLegada:</strong> 2018-09-10</p>
-                    <p><strong> Hora LLegada:</strong> 01:00</p>
-                    <p><strong> Fecha Salida:</strong> 2018-09-13</p>
-                    <p><strong> Hora Salida</strong> 01:00</p>
-                    <p><strong> Servicios:</strong> 1</p>
-                    <p><strong> Camioneta tipo:</strong> Van</p>
-                  </div>
-                  <div class="bloque">
-                    <p class="price-r" >
-                      <strong class="price-roms" >MXN $7,495.60</strong>
-                      <a class="del-room" ><span class="del-icon"></span></a>
-                    </p>
-                  </div>
-                </div>
-                @break                    
+                  @break                    
           @endswitch
         @endforeach
       @endempty
@@ -319,7 +320,7 @@
           <input type="hidden" name="lname1" />
         </div>
         @isset ($traslado)
-        {{$traslado}}
+        
           <div class="form-row">
             <div class="marquito">
               <p class="main-title" >Datos del traslado</p>
