@@ -188,7 +188,7 @@
 				</div>
 				<input type="hidden" name="precio" id='total'>
 				
-				<div class="bloq" >
+				<div class="bloq" > 
 					<span class="money" ></span>
 				</div>
 				<div class="bloq" >
@@ -258,45 +258,6 @@
 </div>
 <p class="pp" ></p>
 </div>
-
-
-<script type="text/javascript">
-	
-
-
-  		var tlati=21.0403825;
-  		var tlongi = -86.8730981;
-  		var tlatid= 21.08971600000000000000;
-  		var tlongid= -86.77087900000000000000;
-      function initMap() {
-        var directionsService = new google.maps.DirectionsService;
-        var directionsDisplay = new google.maps.DirectionsRenderer;
-        var mapp = new google.maps.Map(document.getElementById('mtraslado'), {
-          zoom: 20,
-          center: {lat: tlati, lng: tlongi }
-        });
-        directionsDisplay.setMap(mapp);        
-          var waypts = [];
-        directionsService.route({
-         // origin: 'Aeropuerto Internacional de Cancún',
-         origin:{lat: tlati, lng: tlongi},
-          destination: {lat: parseFloat(tlatid), lng: parseFloat(tlongid)},
-          optimizeWaypoints: true,
-          travelMode: 'DRIVING'
-        }, function(response, status) {
-          if (status === 'OK') {
-            directionsDisplay.setDirections(response);
-            var route = response.routes[0];
-            
-          } else {
-            window.alert('Directions request failed due to ' + status);
-          }
-        });
-      }
-
-
-
-</script>
 
 
 

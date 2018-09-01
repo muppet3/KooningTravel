@@ -48,38 +48,61 @@ break;case"m":g=x("m");break;case"M":g=w("M",p,f);break;case"y":m=x("y");break;c
 }());
 
 
+  		var tlati=21.0403825;
+  		var tlongi = -86.8730981;
+  		var tlatid= 21.08971600000000000000;
+  		var tlongid= -86.77087900000000000000;
 
 
-  		var lati=21.0403825;
-  		var longi = -86.8730981;
-  		var latid= 21.08971600000000000000;
-  		var longid= -86.77087900000000000000;
+      function initMap2() {
 
-		//var lati = 0;
-		var long = 0;
-	 
-	function initMap() {
-		// Creamos un objeto mapa y especificamos el elemento DOM donde se va a mostrar.
-		var map = new google.maps.Map(document.getElementById('mapa'), {
-		center: {lat: lati, lng: long},
-		scrollwheel: false,
-		zoom: 17,
-		zoomControl: true,
-		rotateControl : false,
-		mapTypeControl: true,
-		streetViewControl: false,
- });
+        var directionsService = new google.maps.DirectionsService;
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        var mapp = new google.maps.Map(document.getElementById('mtraslado'), {
+          zoom: 20,
+          center: {lat: tlati, lng: tlongi }
+        });
+        directionsDisplay.setMap(mapp);        
+          var waypts = [];
+        directionsService.route({
+         // origin: 'Aeropuerto Internacional de Cancún',
+         origin:{lat: tlati, lng: tlongi},
+          destination: {lat: parseFloat(tlatid), lng: parseFloat(tlongid)},
+          optimizeWaypoints: true,
+          travelMode: 'DRIVING'
+        }, function(response, status) {
+          if (status === 'OK') {
+            directionsDisplay.setDirections(response);
+            var route = response.routes[0];
+            
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
 
-	var marker = new google.maps.Marker({
-		 position: {lat: lati, lng: long }, 
-		 title:"Hotel",
-		 animation: google.maps.Animation.DROP,
-		 draggable: false,
-		 icon: "https://www.kooningtravel.com/images/mark.png"
-	});
 
-	marker.setMap(map);
-}	
+
+      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+      
+        var waypts = [];
+        directionsService.route({
+         // origin: 'Aeropuerto Internacional de Cancún',
+         origin:{lat: lati, lng: longi},
+          destination: {lat: parseFloat(latid), lng: parseFloat(longid)},
+          optimizeWaypoints: true,
+          travelMode: 'DRIVING'
+        }, function(response, status) {
+          if (status === 'OK') {
+            directionsDisplay.setDirections(response);
+            var route = response.routes[0];
+            
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
+
 
 
 $(document).ready(function () {	
@@ -93,10 +116,6 @@ $(document).ready(function () {
 
    $(".number-nights").text(diffDays);
 
-	lati = parseFloat($("#lat").val());
-	long = parseFloat($("#long").val());
-
-	initMap();
 
 	// PARA QUE NO ENVIE FORMULARIO AL PULSAR INTRO
 	$('#contactform').on("keyup keypress", function(e) {
@@ -650,30 +669,7 @@ $(".messaje").delay(3000).fadeOut("slow");
 
 
 
-      		//funcion calcular precio autos
-    function precioa(){
 
-			//var recibe = $("#recibe").find(":selected").val();
-			//var entrega = $("#entrega").find(":selected").val();
-			//var sd = $("input[name='sd']").val();
-			//var ed = $("input[name='ed']").val();	
-			//var auto = $("select[name='auto']").find(":selected").val();
-
-            	//
-				var tipoentrada= "sd=" + $('input[name=sd]').val()  +"&ed=" + $('input[name=ed]').val()  +"&auto="+$('select[name=auto]').val()+"&cantidad="+$('select[name=cantidada]').val();
-		 		//console.log(tipoentrada);
-				 $.ajax ( {
-						url: 'traslado/price',
-						type: 'POST',
-						data: tipoentrada,
-			  			success : function(response){
-					$(".money").text("$ "+response);
-					$("#total").val(response);
-				}
-		  			});
-				 
-
-			}
 
 			//funcion calcular precio traslado
       function precio(){
@@ -696,109 +692,7 @@ $(".messaje").delay(3000).fadeOut("slow");
 }
 
 
-
-
-	 $("select[name='auto']").change(function () { 	
-
-	 	precioa();
-
-	 	txt = $(this).find(":selected").val(); 
-
-	 	var img2 = "/img/Autos/jetta.png";
-	 	var img3 = "/img/Autos/vento.png";
-
- 			 if ( txt == "VW Jetta o similar" ){			 	 
-
-				$(".tr .imgb").attr('src', img2);	
-			} else if( txt == "VW Vento o similar" ){
-			
-			
-				$(".tr .imgb").attr('src', img3);	
-		}
-	 });
-
-	 
-	$("#autos").click(function(){
-
-	var recibe = $("#recibe").find(":selected").val();
-	var entrega = $("#entrega").find(":selected").val();
-	var sd = $("input[name='sd']").val();
-	var auto = $("#auto").find(":selected").val();
-	var money = $(".money").text();
-	
-
-	if( recibe == 0 ){		
-			
-		alert("Favor de selecionar donde lo recoge");	
-	} else if (entrega== 0 ){
-
-		alert("Favor de selecionar donde lo entrega");
-
-	} else if (sd==""){
-
-		$("input[name='sd']").focus();
-
-	} else if ( auto == 0 ){
-
-		alert("Favor de selecionar el tipo de Vehiculo");
-
-
-	} else if ( money == "0" ){
-
-		alert("Favor de selecionar un tipo de Vehiculo");
-	}
-	else{
-		
-		$("body").append('<div class="alert alert-success"><strong>Producto Agregado al Carrito!</strong></div>');
-		var div = $(".alert");
-        div.animate({top: '20px'}, "slow");
-        div.animate({right: '40px'}, "slow");
-		$(".alert").delay(100).fadeOut("slow");	
-		addtraslados();
-	}		 
-});
-
-$("input[name='sd']").keyup(function(){
-
-	precioa();
-
-});
-
-function nada(){
-
-}
-function initMap2() {
-        var directionsService = new google.maps.DirectionsService;
-        var directionsDisplay = new google.maps.DirectionsRenderer;
-        var map = new google.maps.Map(document.getElementById('mapa'), {
-          zoom: 20,
-          center: {lat: lati, lng: longi}
-        });
-        directionsDisplay.setMap(map);   
-        calculateAndDisplayRoute(directionsService,directionsDisplay);
-          
-      }
-      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-      
-        var waypts = [];
-        directionsService.route({
-         // origin: 'Aeropuerto Internacional de Cancún',
-         origin:{lat: lati, lng: longi},
-          destination: {lat: parseFloat(latid), lng: parseFloat(longid)},
-          optimizeWaypoints: true,
-          travelMode: 'DRIVING'
-        }, function(response, status) {
-          if (status === 'OK') {
-            directionsDisplay.setDirections(response);
-            var route = response.routes[0];
-            
-          } else {
-            window.alert('Directions request failed due to ' + status);
-          }
-        });
-      }
-
-	$("#result").hide();
+$("#result").hide();
 
  $.ajaxSetup({ cache: false });
 
@@ -829,6 +723,9 @@ function initMap2() {
 		  	 });   
 		  }); 
 	 });
+
+
+
   
 	 $('#result').on('click', 'li', function() {
 
@@ -836,6 +733,8 @@ function initMap2() {
 		  latid = $(this).next().text();
 		  longid = $(this).next().next().text();
 		  var dest = $(this).next().next().next().text();
+
+
 		  initMap2();
 		  $('#hotel').val(text);
 		  $('#latitud').val(latid);
@@ -846,6 +745,11 @@ function initMap2() {
 		  $("#result").html('');
 		  precio();
 	 });
+
+
+
+
+
 
 	$('.carousel').jcarousel({ wrap: 'circular' });
 	$('.carousel-prev').jcarouselControl({ target: '-=1' });
