@@ -74,6 +74,7 @@
 		╚══════════════╝
 	*/
 	Route::get('checkout', 'Purchase\PurchaseController@checkout');
+	Route::post('checkout', 'Purchase\PurchaseController@email');
 	Route::get('purchase', 'Purchase\PurchaseController@Pago');
 	Route::get('gracias',"Purchase\PurchaseController@gracias");
 	Route::get('eliminar/{id}',"Purchase\PurchaseController@delete");

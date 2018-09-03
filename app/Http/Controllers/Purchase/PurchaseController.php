@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Purchase;
 
 use App\Http\Controllers\Controller;
+use App\Models\Purchase;
 use Illuminate\Http\Request;
 
 
@@ -115,6 +116,52 @@ class PurchaseController extends Controller
   		$data['total']=$total;
 
 
+  		return view('purchase/checkout',$data); 
+  	}
+  	public function email(Request $res){
+		$data['background']=" height: 100px; background-image: url(https://kooningtravel.com/img/Home/fondos/FondoTours.jpg); ";
+  		$cart=\Session::get('cart');
+
+  		$total=0;
+  		foreach ($cart as $item) {
+  			
+  			if(!strcmp($item['type'],'hotel')){
+  				$data['hotel']=true;
+  				$hotel=$item;
+  			}
+  			if(!strcmp($item['type'],'traslado')){
+  				$traslado=$item;
+  				$data['traslado']=true;
+  			}
+  			$total+=$item['total'];
+  		}
+  		$data['cart']=$cart;
+  		$data['total']=$total;
+
+		$llenados['code']= "".substr(md5(uniqid(rand(1,6))), 0, 16);
+		$llenados['name']= $res->input('nombre');
+		$llenados['surnames']= $res->input('apellidos');
+		$llenados['email']= $res->input('correo');
+		$llenados['phone']= $res->input('telefono');
+		$purchase= Purchase::create($llenados);
+
+		if(isset($hotel)){
+			$purchase->country=$res->input('ciudad');
+			$purchase->state=$res->input('estado');
+			$purchase->save();
+		}
+		if(isset($traslados)){
+			$llenados['Aerolinea']=$res->input('Aerolinea');
+			$llenados['NumVuelo']=$res->input('NumVuelo');
+		}
+		dd($purchase);
+
+
+
+		\Mail::send('emails.noticereservation',$campos,function($mail){
+                $mail->subject($_POST['name'].' '.$_POST['surnames'].' realizo una cotizacion');
+                $mail->to('ferr.95.fer.fmr@gmail.com');
+            });
   		return view('purchase/checkout',$data); 
   	}
 }

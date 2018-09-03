@@ -458,7 +458,7 @@ function closeMe(){
 
 		$("#btn_pagar").click(function(){
 
-			var correo = $("#validationCustomUsername").val();
+			var correo = $("#correo").val();
 			var telefono = $("input[name='telefono']").val();
 			var fil = isValidEmail(correo);
 
