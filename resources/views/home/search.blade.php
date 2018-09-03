@@ -29,12 +29,9 @@
           <span class="label1">Destino / Hotel</span>
           <hr>
           <div class="inline-search">
-          <select id="d" data-placeholder="{{$destino}}"  class="destination" name="d"  style="width:100%;"  multiple="multiple" >
-            
+          <select id="d" data-placeholder="{{$destino}}"  class="destination" name="d"  style="width:100%;"  multiple="multiple" >            
           </select>
-        </div>
-        
-        
+        </div>        
         <div class="inline-search">
           <div class="input-style date-from noselect">
             <div class="date-wrapper from_datepicker-wrapper">
@@ -313,8 +310,7 @@
     </div>
     <div class="col-md-9 search-content">
       <h1 class="titulo-listado-hoteles"><?php echo count($rooms) ?> Hoteles que concuerdan con tu búsqueda</h1>
-      
-      
+           
       @foreach($rooms as $room)
       <a class="result star_{{$room['stars']}} {{$room['pricerange']}}" id="hotel-{{$room['id']}}" href="{{Request::root()}}/details/{{$room['id']}}/{{$room['url']}}?d={{$room['id']}}{{$url}}" >
         <div class="img" >
@@ -347,37 +343,11 @@
   </div>
 </div>
 
-
-
-
 <!--Begin MENSAJES-->
 <div class="alert alert-primary messaje" role="alert">
   <span class="glyphicon glyphicon-time" aria-hidden="true" ></span>Hay <?php echo rand(12,30); ?> personas más viendo este destino en este momento.
 </div>
 <!--End MENSAJES-->
-
- <!-- Variables pendientes
-        adultos: {{$room['adultos']}}<br>
-        stars {{$room['stars']}} <br>
-        pricerange: {{$room['pricerange']}}<br>
-        @isset($room['preciodescuento'])
-        descuento: {{$room['descuento']}}<br>
-        preciodescuento: {{$room['preciodescuento']}}<br>
-        @endisset
-        id: {{$room['id']}}<br>
-        name: {{$room['name']}}<br>
-        
-        image: {{$room['image']}}<br>
-        city_name: {{$room['city_name']}}<br>
-        country_name: {{$room['country_name']}}<br>
-        room_name: {{$room['room_name']}}<br>
-        meal_plan: {{$room['meal_plan']}}<br>
-        agency_public: {{$room['agency_public']}}<br>
-        total_noches: {{$room['total_noches']}}<br>
-        price: {{$room['price']}}<br>
-   
--->
-
 
 <script type="text/javascript"> 
   

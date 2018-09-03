@@ -4,7 +4,8 @@
 	.container{ background: #FFF; margin:20px auto; border-radius: 4px; padding: 0px; }
 </style>	 
 
-<h2 class="h2" >{{$nombre}}<img src='https://kooningtravel.com/intranet/images/star{{$estrellas}}.png' class='imagen-estrellas' />
+<h2 class="h2" >{{$nombre}}
+	<img src='https://kooningtravel.com/intranet/images/star{{$estrellas}}.png' alt="{{$nombre}}" title="{{$nombre}}" class='imagen-estrellas' />
 </h2>
 <p class='info-details'>{{$ubicacion}}</p>
 <div class="box" >
@@ -462,7 +463,7 @@
 		 title:"Hotel",
 		 animation: google.maps.Animation.DROP,
 		 draggable: false,
-		 icon: "https://www.kooningtravel.com/images/mark.png"
+		 icon: "/img/mark.png"
 	});
 
 	marker.setMap(map);

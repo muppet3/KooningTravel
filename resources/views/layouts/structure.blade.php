@@ -2,16 +2,19 @@
 <html lang="{{ app()->getLocale() }}">
 
   <head>
+
         <!--Meta tags-->
       <meta charset="utf-8">
-      <meta name="csrf-token" content="{{ csrf_token() }}">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="csrf-token" content="{{ csrf_token() }}" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-      <meta name="keywords" content="hoteles, hotel, vacaciones, viajes, viajes baratos, playa, playas, maletas, viajar, descuentos, parques,tour,tours,xcaret, circus do soleil, dolphin, promocion, ">
-      <meta name="google-site-verification" content="JsJB8p487oyOxvtEpsDjpuQZJ7GeOMe22sQr39OBTQ0" >
-      <meta name="description" content="Hoteles, traslados y tours en Cancún, y la Riviera Maya. Elige tus vacaciones entre miles de hoteles y destinos.">
-      <meta name="author" content="Ing. Jonas Santiz L., Lic. Alan E. Gonzalez, Ing. Fernando Morales R. || Kooning Travel 2018 ">
-      <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+      <meta name="keywords" content="hoteles, hotel, vacaciones, viajes, viajes baratos, playa, playas, maletas, viajar, descuentos, parques,tour,tours,xcaret, circus do soleil, dolphin, promocion, " />
+      <meta name="google-site-verification" content="JsJB8p487oyOxvtEpsDjpuQZJ7GeOMe22sQr39OBTQ0" />
+      <meta name="description" content="Hoteles, traslados y tours en Cancún, y la Riviera Maya. Elige tus vacaciones entre miles de hoteles y destinos." />
+      <meta name="author" content="Ing. Jonas Santiz L., Lic. Alan E. Gonzalez, Ing. Fernando Morales R. || Kooning Travel 2018 " />
+      <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
+
+
       @isset($titulo)
         <title>{{$titulo}}</title>
       @else
@@ -153,16 +156,15 @@
 
       
       <div class="bg-home" >
-          <li><a class="hotel <?php //// echo  $Mhoteles; ?>" href="/">HOTELES</a></li>
-          <li><a class="park <?php //// echo  $park; ?>" href="/parques">PARQUES</a></li>
-          <li><a class="tour tour2 <?php // echo  $Mtours; ?>" href="/tours">TOURS</a></li>
-          <li><a class="trasl <?php // echo  $Mtraslados; ?>" href="/traslados">TRASLADOS</a></li>
-          <li class="fancyb" ><a class="auto <?php // echo  $Mautos; ?>" href="/autos">AUTOS</a></li>
-          <li><a class="ofer <?php // echo  $Mofertas; ?>" href="/promociones">OFERTAS</a></li>
+          <li><a class="hotel" href="/">HOTELES</a></li>
+          <li><a class="park" href="/parques">PARQUES</a></li>
+          <li><a class="tour tour2" href="/tours">TOURS</a></li>
+          <li><a class="trasl" href="/traslados">TRASLADOS</a></li>
+          <li class="fancyb" ><a class="auto" href="/autos">AUTOS</a></li>
+          <li><a class="ofer" href="/promociones">OFERTAS</a></li>
           <li><a class="blogh noselect" href="/blog">BLOG</a></li>
           
        </div>
-
 
       <li class="month" ><a class="meses" data-fancybox data-src="#cboxLoadedContent" href="javascript:void(0);" ></a></li>
     </ul>
@@ -308,7 +310,7 @@
           </tr>
           <tr>
             <td class="issuer">
-              <img src="/img/bancos/paypal.png" alt="" class="bank2 spriteBank" title="Paypal" align="left">
+              <img src="/img/complements/extras/bancos/paypal.png" alt="" class="bank2 spriteBank" title="Paypal" align="left">
               <div>Paypal</div>
             </td>            
             <td class="plans"><ul class="fl">
@@ -317,7 +319,7 @@
             </td>
           </tr>
           <tr class="odd">
-            <td class="issuer"><img src="/img/bancos/Banorte.png" alt="" class="bank2 spriteBank" title="Banorte" align="left">
+            <td class="issuer"><img src="/img/complements/extras/bancos/Banorte.png" alt="" class="bank2 spriteBank" title="Banorte" align="left">
               <div>Banorte</div></td>            
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -325,7 +327,7 @@
               </ul></td>
           </tr>
           <tr>
-            <td class="issuer"><img src="/img/bancos/Hsbc.png" alt="" class="bank3 spriteBank" title="HSBC" align="left">
+            <td class="issuer"><img src="/img/complements/extras/bancos/Hsbc.png" alt="" class="bank3 spriteBank" title="HSBC" align="left">
               <div>HSBC</div></td>
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -333,7 +335,7 @@
               </ul></td>
           </tr>
           <tr class="odd">
-            <td class="issuer"><img src="/img/bancos/Afirme.png" alt="" class="bank8 spriteBank" title="Afirme" align="left">
+            <td class="issuer"><img src="/img/complements/extras/bancos/Afirme.png" alt="" class="bank8 spriteBank" title="Afirme" align="left">
               <div>Afirme</div></td>
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -341,7 +343,7 @@
               </ul></td>
           </tr>
           <tr>
-            <td class="issuer"><img src="/img/bancos/BanBajio.png" alt="" class="bank6 spriteBank" title="BanBajio" align="left">
+            <td class="issuer"><img src="/img/complements/extras/bancos/BanBajio.png" alt="" class="bank6 spriteBank" title="BanBajio" align="left">
               <div>BanBajio</div></td>
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -349,7 +351,7 @@
               </ul></td>
           </tr>
           <tr class="odd">
-            <td class="issuer"><img src="/img/bancos/Banjercito.png" alt="" class="bank42 spriteBank" title="Banjercito" align="left">
+            <td class="issuer"><img src="/img/complements/extras/bancos/Banjercito.png" alt="" class="bank42 spriteBank" title="Banjercito" align="left">
               <div>Banjercito</div></td>
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -357,7 +359,7 @@
               </ul></td>
           </tr>
           <tr>
-            <td class="issuer"><img src="/img/bancos/Banrejio.png" alt="" class="bank5 spriteBank" title="BanRegio" align="left">
+            <td class="issuer"><img src="/img/complements/extras/bancos/Banrejio.png" alt="" class="bank5 spriteBank" title="BanRegio" align="left">
               <div>BanRegio</div></td>
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -365,7 +367,7 @@
               </ul></td>
           </tr>
           <tr class="odd">
-            <td class="issuer"><img src="/img/bancos/Santander.png" alt="" class="bank9 spriteBank" title="Santander" align="left">
+            <td class="issuer"><img src="/img/complements/extras/bancos/Santander.png" alt="" class="bank9 spriteBank" title="Santander" align="left">
               <div>Santander</div></td>
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -373,7 +375,7 @@
               </ul></td>
           </tr>
           <tr>
-            <td class="issuer"><img src="/img/bancos/Famsa.png" alt="" class="bank4 spriteBank" title="Famsa" align="left">
+            <td class="issuer"><img src="/img/complements/extras/bancos/Famsa.png" alt="" class="bank4 spriteBank" title="Famsa" align="left">
               <div>Famsa</div></td>
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -381,7 +383,7 @@
               </ul></td>
           </tr>
           <tr class="odd">
-            <td class="issuer"><img src="/img/bancos/Inbursa.png" alt="" class="bank7 spriteBank" title="Inbursa" align="left">
+            <td class="issuer"><img src="/img/complements/extras/bancos/Inbursa.png" alt="" class="bank7 spriteBank" title="Inbursa" align="left">
               <div>Inbursa</div></td>
             <td class="plans"><ul class="fl">
                 <li class="msi"><span>3, 6 y 9</span><br>
@@ -389,7 +391,7 @@
               </ul></td>
           </tr>
           <tr>
-            <td class="issuer"><img src="/img/bancos/Invex.png" alt="" class="bank14 spriteBank" title="InvexBanco" align="left">
+            <td class="issuer"><img src="/img/complements/extras/bancos/Invex.png" alt="" class="bank14 spriteBank" title="InvexBanco" align="left">
               <div>InvexBanco</div></td>
             <td class="plans"><ul class="fl">
                 <li class="pagosFijos"><span>3, 6 y 9</span><br>
@@ -397,7 +399,7 @@
               </ul></td>
           </tr>
           <tr class="odd">
-            <td class="issuer"><img src="/img/bancos/Itau.png" alt="" class="bank24 spriteBank" title="Itaucard" align="left">
+            <td class="issuer"><img src="/img/complements/extras/bancos/Itau.png" alt="" class="bank24 spriteBank" title="Itaucard" align="left">
               <div>Itaucard</div></td>
             <td class="plans"><ul class="fl">
                 <li class="pagosFijos"><span>3, 6 y 9</span><br>
@@ -405,7 +407,7 @@
               </ul></td>
           </tr>
           <tr>
-            <td class="issuer"><img src="/img/bancos/Ixe.png" alt="" class="bank22 spriteBank" title="Ixe" align="left">
+            <td class="issuer"><img src="/img/complements/extras/bancos/Ixe.png" alt="" class="bank22 spriteBank" title="Ixe" align="left">
               <div>Ixe</div></td>
             <td class="plans"><ul class="fl">
                 <li class="pagosFijos"><span>3, 6 y 9</span><br>
@@ -413,7 +415,7 @@
               </ul></td>
           </tr>
           <tr class="odd">
-            <td class="issuer"><img src="/img/bancos/Liverpool.png" alt="" class="bank11 spriteBank" title="Premium Card Liverpool" align="left">
+            <td class="issuer"><img src="/img/complements/extras/bancos/Liverpool.png" alt="" class="bank11 spriteBank" title="Premium Card Liverpool" align="left">
               <div>Premium Card Liverpool</div>
             </td>
             <td class="plans"><ul class="fl">
@@ -422,7 +424,7 @@
               </ul></td>
           </tr>
           <tr>
-            <td class="issuer"><img src="/img/bancos/Mifel.png" alt="" class="bank25 spriteBank" title="Banca Mifel" align="left">
+            <td class="issuer"><img src="/img/complements/extras/bancos/Mifel.png" alt="" class="bank25 spriteBank" title="Banca Mifel" align="left">
               <div>Banca Mifel</div></td>
             <td class="plans"><ul class="fl">
                 <li class="pagosFijos"><span>3, 6 y 9</span><br>
@@ -430,7 +432,7 @@
               </ul></td>
           </tr>
           <tr class="odd">
-            <td class="issuer"><img src="/img/bancos/Scotia.png" alt="" class="bank21 spriteBank" title="ScotiaBank" align="left">
+            <td class="issuer"><img src="/img/complements/extras/bancos/Scotia.png" alt="" class="bank21 spriteBank" title="ScotiaBank" align="left">
               <div>ScotiaBank</div></td>
             <td class="plans"><ul class="fl">
                 <li class="pagosFijos"><span>3, 6 y 9</span><br>
