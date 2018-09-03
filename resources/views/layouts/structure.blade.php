@@ -11,7 +11,7 @@
       <meta name="google-site-verification" content="JsJB8p487oyOxvtEpsDjpuQZJ7GeOMe22sQr39OBTQ0" >
       <meta name="description" content="Hoteles, traslados y tours en Cancún, y la Riviera Maya. Elige tus vacaciones entre miles de hoteles y destinos.">
       <meta name="author" content="Ing. Jonas Santiz L., Lic. Alan E. Gonzalez, Ing. Fernando Morales R. || Kooning Travel 2018 ">
-      <link rel="shortcut icon" href="https://kooningtravel.com/images/favicon.png" type="image/png">
+      <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
       @isset($titulo)
         <title>{{$titulo}}</title>
       @else
@@ -20,13 +20,11 @@
       
        <!--Recursos JS -->
       <script language="javascript" type="text/javascript" src="/js/jquery-3.3.1.js"></script> 
-      <script language="javascript" type="text/javascript" src="https://kooningtravel.com/js/jquery.min.js"></script>
-      
+      <script language="javascript" type="text/javascript" src="/js/jquery.min.js"></script>      
       <script language="javascript" type="text/javascript" src="/js/bootstrap.min.js" ></script>   
       <script language="javascript" type="text/javascript" src="/js/jquery-ui.js" ></script>   
       <script language="javascript" type="text/javascript" src="/js/jcarousel.min.js"></script>
       <script language="javascript" type="text/javascript" src="/js/jquery.cycle2.min.js"></script>
-      <script language="javascript" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz2r9rdcvkdJ_6Cy06hX6wmYr7fvyRnaA&callback=initMap" defer></script> 
       <script language="javascript" type="text/javascript" src="/js/jquery.fancybox.min.js" ></script> 
       <script language="javascript" type="text/javascript" src="/js/config-box.js" ></script>          
       <script language="javascript" type="text/javascript" src="/js/general.js" ></script>
@@ -548,9 +546,6 @@
     </div>
 
 </div>        
- 
-        <input type="hidden" id="mapa" >      
-
 
   </body>
 </html>

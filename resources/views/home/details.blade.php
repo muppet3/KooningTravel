@@ -436,6 +436,8 @@
 	</div>
 	<!--End MENSAJES-->
 
+<!--Google maps -->
+  <script language="javascript" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz2r9rdcvkdJ_6Cy06hX6wmYr7fvyRnaA&callback=initMap" defer></script> 
 
 <script type="text/javascript">
 

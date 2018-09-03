@@ -54,4 +54,9 @@
 		</div>
 	</div>
 </div>
+
+
+<script language="javascript" type="text/javascript" src="/js/tourparque.js" ></script>
+
+
 @stop

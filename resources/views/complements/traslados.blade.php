@@ -35,9 +35,9 @@
 							<p class="tipo" >Hotel</p>
 							<input type="text" id="hotel" placeholder="Buscar..." value="" name="hotel" class="hotel"  />
 						<ul class="list-group" id="result"></ul>
-						<input type="hidden" value="" id="destino" name="destino"  />
-						<input type="hidden" value="" id="latitud" name="latitud"  />
-						<input type="hidden" value="" id="longitud" name="longitud"  />
+	             		<input type="hidden" value="" id="destino" name="destino"  />
+	             		<input type="hidden" value="" id="latitud" name="latitud"  />
+	             		<input type="hidden" value="" id="longitud" name="longitud"  />
 					</div>
 				</div>
 				<div class="bloq" >
@@ -247,80 +247,25 @@
 		</div>
 	</div>
 </div>
-<p class="pp" ></p>
+
 <div class="cycle-slideshow cycle-autoinit"
 	data-cycle-fx="scrollHorz"
 	data-cycle-speed="10000"
 	data-cycle-timeout="1"
 	data-cycle-easing="linear"
 	>
-	<img style="position: absolute!important; left: -2px; " src="/img/banorte.png">
-	<img style="position: absolute!important; left:-2px; " src="/img/paypal.png">
-</div>
-<p class="pp" ></p>
+	<img src="/img/banorte.png" alt="" />
+	<img src="/img/paypal.png" alt="" />
 </div>
 
-<script type="text/javascript">
-	
+</div>
+
+<!--Google maps -->
+  <script language="javascript" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz2r9rdcvkdJ_6Cy06hX6wmYr7fvyRnaA&callback=initMap" defer></script> 
+
+<script language="javascript" type="text/javascript" src="/js/tourparque.js" ></script>
 
 
-  		var tlati =21.0403825;
-  		var tlongi = -86.8730981;
-  		var tlatid = 21.08971600000000000000;
-  		var tlongid = -86.77087900000000000000;
-
-
-      function initMap() {
-
-        var directionsService = new google.maps.DirectionsService;
-        var directionsDisplay = new google.maps.DirectionsRenderer;
-        var mapp = new google.maps.Map(document.getElementById('mapa'), {
-          zoom: 20,
-          center: {lat: tlati, lng: tlongi }
-        });
-        directionsDisplay.setMap(mapp);        
-          var waypts = [];
-        directionsService.route({
-         // origin: 'Aeropuerto Internacional de Cancún',
-         origin:{lat: tlati, lng: tlongi},
-          destination: {lat: parseFloat(tlatid), lng: parseFloat(tlongid)},
-          optimizeWaypoints: true,
-          travelMode: 'DRIVING'
-        }, function(response, status) {
-          if (status === 'OK') {
-            directionsDisplay.setDirections(response);
-            var route = response.routes[0];
-            
-          } else {
-            window.alert('Directions request failed due to ' + status);
-          }
-        });
-      }
-
-
-
-      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-      
-        var waypts = [];
-        directionsService.route({
-         // origin: 'Aeropuerto Internacional de Cancún',
-         origin:{lat: lati, lng: longi},
-          destination: {lat: parseFloat(latid), lng: parseFloat(longid)},
-          optimizeWaypoints: true,
-          travelMode: 'DRIVING'
-        }, function(response, status) {
-          if (status === 'OK') {
-            directionsDisplay.setDirections(response);
-            var route = response.routes[0];
-            
-          } else {
-            window.alert('Directions request failed due to ' + status);
-          }
-        });
-      }
-
-
-</script>
 
 
 @stop
