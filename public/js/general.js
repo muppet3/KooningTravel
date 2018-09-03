@@ -115,7 +115,7 @@ disableSelection(document.body);
 	// CONFIG DE https://www.kooningtravel.com/Reservacion
 	$("#AMEX12").click(function(){
 
-		var amex = "/img/banco/1pago_m.png";
+		var amex = "/img/complements/extras/bancos/1pago_m.png";
 
 		$("#banco-select .hidde").hide();
 		$("#fakeInput .selectedBank strong").text("American Express");

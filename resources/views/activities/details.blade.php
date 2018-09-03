@@ -108,7 +108,7 @@
       </div>
     </div>
     <div class="recent-searchs mh clear menut2">
-      <img src="/img/tour/parques/Experiencias-Xcaret/Xcaret/path.png" alt="" width="306" height="39" usemap="#Map"/>
+      <img src="/img/activity/{{$activity->name}}/path.png" alt="" width="306" height="39" usemap="#Map"/>
       <map name="Map">
         <area class="cld1" shape="rect" coords="16,9,112,33" href="/">
         <area class="cld2" shape="rect" coords="136,8,204,33" href="/Parques">
@@ -135,7 +135,7 @@
 	@foreach($activity->tickets as $ticket)
 	        <li class="item hotel">
 	          <a data-fancybox data-type='iframe' data-src='https://kooningtravel.com/img/tour/terminosycondiciones.pdf' class="thumb"  href='javascript:void(0);'>
-	            <div class="thumb-images"><img src="{{$ticket->image}}" alt="el parque"></div>
+	            <div class="thumb-images"><img src="/img/activity/{{$activity->name}}/" alt="el parque"></div>
 	            <div class="info">
 	              <h3 class="title">{{$ticket->name}}<br>
 	                <span class="category category-4CAT"><span class="category-name"></span></span></h3>
@@ -191,7 +191,7 @@
               <iframe width="560" height="315" src="https://www.youtube.com/embed/8ofAxR3v3oU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
             <div id="tabs-2">
-              <iframe src="https://kooningtravel.com/img/tour/terminosycondiciones.pdf" width="750" height="800" style="border:none;"></iframe>
+              <iframe src="/img/activity/{{$activity->name}}/terminosycondiciones.pdf" width="750" height="800" style="border:none;"></iframe>
             </div>
           </div>
         </div>
