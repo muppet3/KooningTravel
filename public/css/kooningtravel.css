@@ -27,9 +27,9 @@ a:link, a:visited { text-decoration: none; }
 
 
 /*Carrito de compras css menu desplegable*/
-html body .other .header .menu2 #shopcart { text-align: center; width: 10%; height: 100%; background: url("https://www.kooningtravel.com/img/circle.png") no-repeat center 10px transparent; cursor: pointer; }
+html body .other .header .menu2 #shopcart { text-align: center; width: 10%; height: 100%; background: url("/img/circle.png") no-repeat center 10px transparent; cursor: pointer; }
 html body .other .header .menu2 #shopcart #cost { width: 100%; text-align: center; color: #ef6437; margin-top: 1px; font-size: 16px; text-indent: 3px; font-weight: bold; line-height: 54px; }
-html body .other .header .menu2 #shopcart .contt:before { content: ''; position: absolute; width: 43px; height: 10px; background: url(https://www.kooningtravel.com/img/arrow2.png) -85px -8px no-repeat; top: 2.5px; left: 71%; }
+html body .other .header .menu2 #shopcart .contt:before { content: ''; position: absolute; width: 43px; height: 10px; background: url(/img/arrow2.png) -85px -8px no-repeat; top: 2.5px; left: 71%; }
 html body .other .header .menu2 #shopcart .contt { width: 254px; position: absolute; right: 5px; top: 45px; z-index: 200; }
 html body .other .header .menu2 #shopcart .contt .arr { right: -82px; width: 18%; position: relative; z-index: 50; margin: 0px auto!important; float: none!important; height: 13px; }
 html body .other .header .menu2 #shopcart .contt .listcart { box-shadow: 0 10px 35px rgba(0,0,0,.5), 0 0 0 1px rgba(0,0,0,.1); position: relative; z-index: 20; top: -5px; width: 100%; border-radius: 8px; background: rgba(0, 0, 0, 0.68); height: auto; color: #FFF; }
@@ -40,17 +40,17 @@ html body .other .header .menu2 #shopcart .contt .listcart .detailst { width: 10
 html body .other .header .menu2 #shopcart .contt .listcart .detailst .desct { width: 67%; font-size: 14px; border-right: 1px solid #b7b7b794; margin: 0px auto; float: none; }
 html body .other .header .menu2 #shopcart .contt .listcart .detailst .costt { width: 28%; float: right; }
 html body .other .header .menu2 #shopcart .contt .listcart .subt { width: 100%; height: 48px; border-bottom: 1px solid #b7b7b794; }
-html body .other .header .menu2 #shopcart .contt .listcart .subt .btnt { background: url("https://www.kooningtravel.com/img/BotonCarrito.png") no-repeat center center transparent; display: inline-block; width: 100%; height: 40px; }
+html body .other .header .menu2 #shopcart .contt .listcart .subt .btnt { background: url("/img/BotonCarrito.png") no-repeat center center transparent; display: inline-block; width: 100%; height: 40px; }
 html body .other .header .menu2 #shopcart .contt .listcart .tott { width: 100%; height: 25px; background: rgba(230, 27, 118, 0.8); margin: 10px 0px; }
 html body .other .header .menu2 #shopcart .contt .listcart .tott span { width: 50%; color: #FFF; margin-top : 5px; }
-html body .other .header .menu2 #shopcart .contt .listcart .teltt { background: url(https://www.kooningtravel.com/img/Home/flags/flags.png) no-repeat right center transparent; width: 53%; color: #FFF; margin: 10px 0px; text-align: left; font-weight: 600; font-size: 13px; }
+html body .other .header .menu2 #shopcart .contt .listcart .teltt { background: url(/img/Home/flags/flags.png) no-repeat right center transparent; width: 53%; color: #FFF; margin: 10px 0px; text-align: left; font-weight: 600; font-size: 13px; }
 
 /*checkout carrito de compras*/
 html body .body-cart { background: #FFF; width: 100%; display: inline-block; float: left; margin:0px; padding: 0px; list-style: none;  }
 html body .body-cart .col-md-9{ display: inline-block; float: left;  }
 html body .body-cart div div,html body .body-cart div div ul, html body .body-cart div div ul li, .body-cart div p,.body-cart div h2, .body-cart div h3,.body-cart div a, .body-cart div input, .body-cart div  select, .body-cart div label, .body-cart div span, .body-cart div p { display: inline-block; margin:0px; float: left; padding: 0px; list-style: none; font-family: Roboto,sans-serif; }
 html body .body-cart .col-md-9 .row-fluid{  }
-html body .body-cart .col-md-9 .small{ width: 23%; float: left;margin: 20px 8px; background: url("/img/extras/line.png") repeat;-moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);box-shadow: 0 2px 5px 0 rgba(0,0,0,.2); }
+html body .body-cart .col-md-9 .small{ width: 23%; float: left;margin: 20px 8px; background: url("/img/complements/extras/line.png") repeat;-moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);box-shadow: 0 2px 5px 0 rgba(0,0,0,.2); }
 html body .body-cart .col-md-9 .hotel{ border: 1px solid #cd8109;border-bottom: 10px solid #cd8109; }
 html body .body-cart .col-md-9 .parque{ border: 1px solid #1d6391; border-bottom: 10px solid #1d6391; }
 html body .body-cart .col-md-9 .tour{ border: 1px solid #f4731c; border-bottom: 10px solid#f4731c; }
@@ -105,7 +105,7 @@ html body .body-cart .col-md-9 .form-pay-reservation .paymentType img { height: 
 #payment-info input.icon-currency, #payment-form input.icon-currency { width: 98px; }
 html body .body-cart .col-md-9 .form-pay-reservation { display: inline-block; width: 100%; float: left; height: auto; margin-top: 10px; }
 html body .body-cart .col-md-9 .form-pay-reservation fieldset { display: inline-block; width: 100%; float: left; }
-.Aviso-Mens {background: url(/img/bancos/blue_large.png) no-repeat 0px 0px transparent;height: 35px;width:90%;margin-left:-9px!important;}
+.Aviso-Mens {background: url(/img/complements/extras/bancos/blue_large.png) no-repeat 0px 0px transparent;height: 35px;width:90%;margin-left:-9px!important;}
 .Aviso-Mens span { margin:7px 0px 0px 23px!important; font-size: 12px; color: white; font-weight: bold; }
 .Aviso-Mens img { margin-left: 10px; margin-top: 4px; }
 #step-3 { padding: 0px; width: 100%; float: left; }
@@ -135,13 +135,13 @@ html body .body-cart .col-md-9 .form-pay-reservation fieldset { display: inline-
 .ts { width: 110px; }
 .ts input {border: 0px;margin-top: 4px!important; cursor: not-allowed;  }
 .ts span {width: 80%;text-align: left;text-indent: 4px;}
-.bgc{ background: url("/img/bancos/cards.png") no-repeat 0px 0px #FFF; }
-.bgy, .bgm{ background: url("/img/bancos/cal3.png") no-repeat 0px 0px #FFF; width:48%!important; }
+.bgc{ background: url("/img/complements/extras/bancos/cards.png") no-repeat 0px 0px #FFF; }
+.bgy, .bgm{ background: url("/img/complements/extras/bancos/cal3.png") no-repeat 0px 0px #FFF; width:48%!important; }
 .bgy{ float: right!important; }
-.bgs{ background: url("/img/bancos/cvc.png") no-repeat 0px 0px #FFF; width:48%!important; }
+.bgs{ background: url("/img/complements/extras/bancos/cvc.png") no-repeat 0px 0px #FFF; width:48%!important; }
 
 /*Formulario de carrito de compras*/
-html body .body-cart .col-md-3 .medium { text-align: center; float: left; display: inline-block; width: 100%; margin: 20px 0; background: url("/img/extras/line.png") repeat; -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.2); -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.2); box-shadow: 0 2px 5px 0 rgba(0,0,0,.2); border: 1px solid #a12f23; border-bottom: 10px solid #a12f23; }
+html body .body-cart .col-md-3 .medium { text-align: center; float: left; display: inline-block; width: 100%; margin: 20px 0; background: url("/img/complements/extras/line.png") repeat; -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.2); -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.2); box-shadow: 0 2px 5px 0 rgba(0,0,0,.2); border: 1px solid #a12f23; border-bottom: 10px solid #a12f23; }
 html body .body-cart .col-md-3 .top-car { text-align: center; padding: 5px 0 5px 0!important; background: #c0392b; border-bottom: 10px solid #a12f23; width: 100%; }
 html body .body-cart .col-md-3 .medium #contactform { display: inline-block; float: none; text-align: left; width: 90%; margin-top: 10px; font-size: 14px; color: #888; }
 html body .body-cart .col-md-3 .medium #contactform .title-cart { color: #888; margin: 0 0 10px; font-size: 14px; width: 100%; text-align: left; font-weight: 300; }
@@ -170,7 +170,7 @@ html body .body-cart .col-md-3 .medium #contactform .form-row #btn_pagar{ cursor
 html body .body-cart .col-md-3 .medium #contactform .form-row .price{border-top: 1px dashed #888;width: 100%;text-align: center;height: 100%;font-size: 20px;font-family: Roboto,sans-serif;color: #888;float: left;padding-top: 10px;margin: 0px;}
 html body .body-cart .col-md-3 .medium .top-car h2, html body .body-cart .col-md-3 .medium .top-car h3 { font-weight: 700; color: #FFF; font-size: 31px; margin:10px 0px 0px 0px; width: 100%; text-align: center; }
 html body .body-cart .col-md-3 h3 { font-size: 20px!important; }
-html body .body-cart .col-md-9 .extras { float: left; width: 100%; background:url("/img/extras/line.png") repeat; }
+html body .body-cart .col-md-9 .extras { float: left; width: 100%; background:url("/img/complements/extras/line.png") repeat; }
 html body .body-cart .col-md-9 .extras .row { text-align: center; margin: 0px; display: inline-block; width: 100%; }
 html body .body-cart .col-md-9 .extras .row .producto { line-height: 40px; font-size: 27px; color: #1a51a1; font-weight: lighter; margin:40px 0px; font-family: Roboto, sans-serif; display: inline-block; text-align: center; width: 100%; }
 html body .body-cart .col-md-9 .extras .row .conte {display: inline-block; width: 28%; float: none; margin-left: 6px; margin-bottom: 20px; }
@@ -233,7 +233,7 @@ html body .search-body .container .tab-content .tab-pane .item-hotel .bloque-hot
 html body .search-body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .img-hotel-details { width: 100%; }
 html body .search-body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel h3 { color: #000; font-weight: bold; font-size: 14px; text-align: left; width: 100%; margin: 15px 0px; }
 html body .search-body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .items-hotel .info-promo { color: #55a797; font-size: 14px; width: 100%; text-align: justify; }
-html body .search-body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .background { background: url("https://www.kooningtravel.com/img/extras/line.png") repeat; }
+html body .search-body .container .tab-content .tab-pane .item-hotel .bloque-hotel-item .background { background: url("/img/extras/line.png") repeat; }
 html body .search-body .container .tab-content { display: inline-block; float: left; width: 100%; }
 html body .search-body .container .tab-content .tab-pane { float: left; width: 100%; }
 html body .search-body .container .tab-content .tab-pane .item-hotel { text-align: center; width: 100%; display: inline-block; }
@@ -271,7 +271,7 @@ html body .container #verMapa { background: #fff; text-align: center; width: 100
 html body .container #verMapa #mapa { width: 98%; float: none; height: 350px; display: inline-block; }
 
 /*https://www.kooningtravel.com/Gracias*/
-.great { position: relative; background: url("https://www.kooningtravel.com/img/gracias.png") no-repeat 15% 7% #F2F2F2 /70%; width:90%; height: 500px; margin: 0px auto; margin-top: 20px; }
+.great { position: relative; background: url("/img/gracias.png") no-repeat 15% 7% #F2F2F2 /70%; width:90%; height: 500px; margin: 0px auto; margin-top: 20px; }
 .great .left .tig { margin: 15px 0px; font-family: HelveticaThin; color: #4d6a8e; font-size:25px; width: 100%; }
 .ti {font-family:HelveticaThin!important; margin: 10px 0px!important; color: #4d6a8e;font-size: 16px;font-weight: bold; width: 24%;text-align: center; }
 .great .left, .great .right{ position: absolute; width: 50%; top: 20%; }
@@ -302,26 +302,26 @@ html body .container #verMapa #mapa { width: 98%; float: none; height: 350px; di
 /*Comienza Estilos para el Header generico*/
 .header { width: 100%; height: auto; margin-top: 15px!important; }
 .header .logo { height: 100%; width: 20%; }
-.header .logo a { background: url(https://www.kooningtravel.com/img/kooning2.png) no-repeat 0px 0px transparent; display: inline-block; margin: 0px auto; width: 160px; height: 57px; }
+.header .logo a { background: url(/img/kooning2.png) no-repeat 0px 0px transparent; display: inline-block; margin: 0px auto; width: 160px; height: 57px; }
 .header .menu2 { width: 80%; height: 100%; }
 .header .menu2 .product { width: 67%; height: 66px; }
 .header .menu2 .product li { width: auto; height: 100%; margin-left: 0px; }
 .header .menu2 .product li a { color: #FFF; text-decoration: none; font-size: 12px; line-height: 110px; display: inline-block; float: left; text-align: center; height: 60px; width: 74px; }
-.header .menu2 .product li .hotel { background: url(https://www.kooningtravel.com/img/hotel.png) no-repeat center 4px transparent; }
-.header .menu2 .product li .park { background: url("https://www.kooningtravel.com/img/park3.png") no-repeat center 4px transparent; }
-.header .menu2 .product li .tour { background: url("https://www.kooningtravel.com/img/tour.png") no-repeat center 4px transparent; }
-.header .menu2 .product li .trasl { background: url("https://www.kooningtravel.com/img/traslado.png") no-repeat center 4px transparent; width: 90px; }
-.header .menu2 .product li .auto { background: url("https://www.kooningtravel.com/img/auto.png") no-repeat center 4px transparent; }
-.header .menu2 .product li .ofer { background: url(https://www.kooningtravel.com/img/ofer.png) no-repeat center 4px transparent; }
-.header .menu2 .product li .blogh { background: url("https://www.kooningtravel.com/img/blogh.png") no-repeat center 4px transparent; }
+.header .menu2 .product li .hotel { background: url(/img/hotel.png) no-repeat center 4px transparent; }
+.header .menu2 .product li .park { background: url("/img/park3.png") no-repeat center 4px transparent; }
+.header .menu2 .product li .tour { background: url("/img/tour.png") no-repeat center 4px transparent; }
+.header .menu2 .product li .trasl { background: url("/img/traslado.png") no-repeat center 4px transparent; width: 90px; }
+.header .menu2 .product li .auto { background: url("/img/auto.png") no-repeat center 4px transparent; }
+.header .menu2 .product li .ofer { background: url(/img/ofer.png) no-repeat center 4px transparent; }
+.header .menu2 .product li .blogh { background: url("/img/blogh.png") no-repeat center 4px transparent; }
 .header .menu2 .product li .selec { border-radius: 4px; box-shadow: 0 0 0 2px rgba(255,255,255,0.25); }
 .header .menu2 .product .month { width: 17%; float: right; }
-.header .menu2 .product li .meses { background: url("https://www.kooningtravel.com/img/meses.png") no-repeat top center transparent; border: 2px solid #fff; border-radius: 3px; width: 115px; height: 60px; cursor: pointer; margin:0px!important; }
+.header .menu2 .product li .meses { background: url("/img/meses.png") no-repeat top center transparent; border: 2px solid #fff; border-radius: 3px; width: 115px; height: 60px; cursor: pointer; margin:0px!important; }
 .header .menu2 .tel { position: relative; width: 22%; left: 15px; }
 .header .menu2 .tel .contact a { color: #FFF; text-indent: 4px; text-decoration: none; display: inline-block; float: left; width: 100%; height: auto; text-align: left; }
 .header .menu2 .tel .contact .mx { margin-top: 7px; }
 .header .menu2 .tel .contact .email { margin-top: 9px; }
-.header .menu2 .tel .contact .flag { margin-left: 7px; background: url(https://www.kooningtravel.com/img/flags.png) no-repeat 0px -3px transparent; width: 24px; height: 18px; }
+.header .menu2 .tel .contact .flag { margin-left: 7px; background: url(/img/flags.png) no-repeat 0px -3px transparent; width: 24px; height: 18px; }
 .header .menu2 .tel .contact a .fa { margin-right: 5px; font-size: 14px; }
 .header .menu2 .tel .zone { width: auto; height: auto; padding: 15px; line-height: 20px; right: 16px; position: absolute; top: 27px; z-index: 2!important; padding: 20px; background: #FFF; border-radius: 3px; border: 1px solid #ccd4dc; -webkit-box-shadow: 0 8px 6px -6px #525252; -moz-box-shadow: 0 8px 6px -6px #525252; box-shadow: 0 8px 6px -6px #525252; display: none; }
 .header .menu2 .tel .zone .top { border-bottom: 16px solid #fff; border-left: 16px solid transparent; border-right: 16px solid transparent; display: block; width: 0; height: 0; position: absolute; right: 90px; top: -16px; }
@@ -330,9 +330,9 @@ html body .container #verMapa #mapa { width: 98%; float: none; height: 350px; di
 .header .menu2 .tel .zone #country li { width: 85%; margin-top: 5px; float: none; }
 .header .menu2 .tel .zone #country li a { display: inline-block; cursor: pointer; float: none; width: 100%; margin: 0px auto; text-align: center; }
 .header .menu2 .tel .zone #country li a span { color: #868686; font-size: 12px; cursor: pointer; float: none; width: 96%; margin: 0px auto; text-indent: 5px; text-align: left; }
-.header .menu2 .tel .zone #country li a span .sprite { margin-top: 4px; background: url(https://www.kooningtravel.com/img/flagicon.gif) no-repeat -70px 0px transparent; width: 14px; height: 11px; }
+.header .menu2 .tel .zone #country li a span .sprite { margin-top: 4px; background: url(/img/flagicon.gif) no-repeat -70px 0px transparent; width: 14px; height: 11px; }
 .sub-nav { float: none; top: 76px; position: absolute; z-index: 99; width: 200px; margin-left: -100px; background: #fff; border-radius: 8px; -o-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -ms-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); }
-.sub-nav:before { content: ''; position: absolute; width: 43px; height: 10px; background: url("https://www.kooningtravel.com/img/tour/parques/basic-arrows.png") -84px -8px no-repeat; top: -10px; left: 40%; }
+.sub-nav:before { content: ''; position: absolute; width: 43px; height: 10px; background: url("/img/basic-arrows.png") -84px -8px no-repeat; top: -10px; left: 40%; }
 .sub-nav .item2 { display: inline-block; margin: 0!important; width: 100%; }
 .sub-nav li:first-child a { border-radius: 8px 8px 0 0!important; }
 .sub-nav li a { text-align: center; text-decoration: none; color: #444; padding: 12px 7px !important; display: block!important; border-radius: 0px; border-bottom: 1px solid #e2e2e2!important; }
@@ -414,7 +414,7 @@ td.issuer img { margin: 0 .5em 0 0; float: left; }
 #promo .contp {text-align: center;display: inline-block;float: left;width: 35%;margin: 0px auto;position: absolute;top:20%;left: 0px; }
 #promo .rig {float: right;display: inline-block;width: 65%;position: absolute;right: 0px;height: 100px;top: 10%;}
 #promo .rig .promimg { border: 8px solid #fff; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); display: inline-block; }
-#promo .contp #contactform { border-radius: 5px; text-align: center; float: right; width: 280px; height: auto; background: url("https://www.kooningtravel.com/img/promociones/1px.png") repeat 0px 0px transparent; }
+#promo .contp #contactform { border-radius: 5px; text-align: center; float: right; width: 280px; height: auto; background: url("/img/promociones/1px.png") repeat 0px 0px transparent; }
 #promo .contp .head .inline-search.passengers { float: left; border-radius: 4px; }
 #promo .contp #contactform .top { border-bottom: 1px solid #f1f1f1; margin-bottom: 14px; width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px; height: 50px; background: #3987c9c2; }
 #promo .contp #contactform .top h3 { display: inline-block; width: 100%; color: #FFF; margin: 0px; height: 50px; text-align: center; line-height: 50px; }
@@ -425,14 +425,14 @@ td.issuer img { margin: 0 .5em 0 0; float: left; }
 #promo .contp #contactform .sear .select2 .selection .select2-selection { height: 100%; }
 #promo .contp #contactform .sear .select2 .selection .select2-selection .select2-selection__rendered { height: 100%; }
 #promo .contp #contactform .sear .select2 .selection .select2-selection .select2-selection__rendered .select2-search { height: 100%; }
-#promo .contp #contactform .sear .select2 .selection .select2-selection .select2-selection__rendered .select2-search input { background: url("https://www.kooningtravel.com/img/promociones/h.png") no-repeat 0px 0px #FFF; text-indent: 36px; width: 100%!important; font-size: 16px!important; height:100%; }
+#promo .contp #contactform .sear .select2 .selection .select2-selection .select2-selection__rendered .select2-search input { background: url("/img/promociones/h.png") no-repeat 0px 0px #FFF; text-indent: 36px; width: 100%!important; font-size: 16px!important; height:100%; }
 #promo .contp #contactform .sear .select2 .selection .select2-selection .select2-selection__rendered .select2-selection__clear { height: 100%; }
 #promo .contp #contactform .sear .select2 .selection .select2-selection .select2-selection__rendered .select2-selection__choice { z-index: 100; height: 100%; line-height: 29px; text-indent: 35px; font-size: 15px!important; }
 #promo .contp #contactform .sear .des { text-align: left; }
 #promo .contp #contactform .inline-date { height: auto; }
 #promo .contp #contactform .inline-date .calp { width: 50%; height: 100%; }
 #promo .contp #contactform .inline-date .calp .fechas, #promo .contp #contactform .sear .des { width: 100%; text-align: left; color: #FFF; font-size: 13px; font-family: Helvetica, sans-serif; font-weight: lighter; }
-#promo .contp #contactform .inline-date .calp input { text-indent: 35px; background: url("https://www.kooningtravel.com/img/promociones/cal.png") no-repeat 0px 0px #FFF; width: 90%; cursor: pointer; height: 29px; border-radius: 4px; box-shadow: inset #80808059 -1px 1px 11px 0px; }
+#promo .contp #contactform .inline-date .calp input { text-indent: 35px; background: url("/img/promociones/cal.png") no-repeat 0px 0px #FFF; width: 90%; cursor: pointer; height: 29px; border-radius: 4px; box-shadow: inset #80808059 -1px 1px 11px 0px; }
 #promo .contp #contactform .inline-date .caln { width: 15%; height: 100%; padding: 0px; }
 #promo .contp #contactform .inline-date .caln .number-nights { height: 100%; width: 69%; color: #FFF; float: none; line-height: 30px; font-size: 15px; font-weight: bold; }
 #promo .contp #contactform .param { display: none; }
@@ -458,14 +458,14 @@ html .ui-datepicker { display: none; margin-top: 13px; padding: 7px 36px 4px 36p
 html.no-boxshadow .ui-datepicker { border: 1px solid #d3d3d3; filter: progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=180, Strength=5) progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=90, Strength=3) progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=270, Strength=3); }
 html .ui-datepicker .ui-datepicker-header { position: relative; width: 215px; height: 36px; padding: 0; background: #E61B76; border-top-left-radius: 4px; border-top-right-radius: 4px; float: none; left: 3px; }
 html .ui-datepicker .ui-datepicker-prev, html .ui-datepicker .ui-datepicker-next { position: absolute; top: -7px; z-index: 59; width: 37px; height: 218px }
-html .ui-datepicker .ui-datepicker-prev { left: -36px; background: url(https://www.kooningtravel.com/img/basic-arrows.png?v2) no-repeat 9px center !important; border-radius: 9px 0 0 9px !important }
-html .ui-datepicker .ui-datepicker-next { right: -36px; background: url(https://www.kooningtravel.com/img/basic-arrows.png?v2) no-repeat -36px center !important; border-radius: 0 9px 9px 0 !important }
+html .ui-datepicker .ui-datepicker-prev { left: -36px; background: url(/img/basic-arrows.png?v2) no-repeat 9px center !important; border-radius: 9px 0 0 9px !important }
+html .ui-datepicker .ui-datepicker-next { right: -36px; background: url(/img/basic-arrows.png?v2) no-repeat -36px center !important; border-radius: 0 9px 9px 0 !important }
 html .ui-datepicker .ui-datepicker-prev:active, html .ui-datepicker .ui-datepicker-next:active { background-color: #f6f6f6 !important }
 html .ui-datepicker-header>.ui-datepicker-prev, html .ui-datepicker-header>.ui-datepicker-next { border: none !important; box-shadow: none !important; text-shadow: none !important; cursor: pointer !important; float: none; }
 html .ui-datepicker-title, html .ui-datepicker-calendar-wrapper, html .ui-datepicker-calendar-end { z-index: 60 }
-html .ui-datepicker .ui-slider-handle.ui-state-hover:hover, html .ui-datepicker .ui-slider-handle.ui-state-hover:active { border: 0 none; background: url(https://www.kooningtravel.com/img/all-icons.png) no-repeat 0 -200px; box-shadow: none }
+html .ui-datepicker .ui-slider-handle.ui-state-hover:hover, html .ui-datepicker .ui-slider-handle.ui-state-hover:active { border: 0 none; background: url(/img/all-icons.png) no-repeat 0 -200px; box-shadow: none }
 html .ui-datepicker .ui-datepicker-title { position: relative; margin: 0; padding-top: 0; color: #fff; text-align: center; font-size: 15px; cursor: default; line-height: 16px; width: 221px; height: 27px; }
-html .ui-datepicker-title select { outline: 0; border: 0; background: url(https://www.kooningtravel.com/img/all-icons.png) 0 -790px no-repeat; -webkit-box-shadow: none; -moz-box-shadow: none; -o-box-shadow: none; -ms-box-shadow: none; box-shadow: none; appearance: normal; -webkit-appearance: normal; -moz-appearance: normal; -o-appearance: normal; -ms-appearance: normal; margin: 1px 2px 0 0 !important; width: 103px !important; height: 35px !important }
+html .ui-datepicker-title select { outline: 0; border: 0; background: url(/img/all-icons.png) 0 -790px no-repeat; -webkit-box-shadow: none; -moz-box-shadow: none; -o-box-shadow: none; -ms-box-shadow: none; box-shadow: none; appearance: normal; -webkit-appearance: normal; -moz-appearance: normal; -o-appearance: normal; -ms-appearance: normal; margin: 1px 2px 0 0 !important; width: 103px !important; height: 35px !important }
 html .ui-datepicker-title select:active { border: 0; background: 0 }
 html .ui-datepicker .ui-datepicker-title .ui-datepicker-month { color: #fff; font-family: Helvetica, Arial, sans-serif; position: relative; top: 10px; font-weight: bold; font-size: 15px; width: 110px; text-align: right; }
 html .ui-datepicker .ui-datepicker-title .ui-datepicker-year { color: #ffc2cb; font-family: Helvetica, Arial, sans-serif; position: relative; font-size: 15px; top: 10px; width: 100px; text-align: left; text-indent: 10px; }
@@ -487,9 +487,9 @@ html .ui-datepicker td span { position: relative; margin-bottom: -1px; margin-le
 html .ui-datepicker td.ui-datepicker-other-month span { color: #fff !important; text-decoration: none !important }
 html .ui-datepicker-calendar thead { width: 215px; height: 22px }
 html .ui-datepicker-calendar thead span { color: #e61b76; font-weight: bold; font-size: 10px; font-family: Helvetica, Arial, sans-serif }
-html .ui-datepicker-arrow { position: absolute; top: -11px; left: 8%; z-index: 61; margin-left: -17px; width: 34px; height: 11px; background: url(https://www.kooningtravel.com/img/all-icons.png) no-repeat 0 -224px }
+html .ui-datepicker-arrow { position: absolute; top: -11px; left: 8%; z-index: 61; margin-left: -17px; width: 34px; height: 11px; background: url(/img/all-icons.png) no-repeat 0 -224px }
 .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: none; float: none; }
-html .ui-datepicker-row-break { position: absolute; width: 43px; height: 13px; background: url(https://www.kooningtravel.com/img/basic-arrows.png) -85px -8px no-repeat; top: -13px; left: 43%; }
+html .ui-datepicker-row-break { position: absolute; width: 43px; height: 13px; background: url(/img/basic-arrows.png) -85px -8px no-repeat; top: -13px; left: 43%; }
 html .ui-datepicker-rtl { direction: rtl }
 html .ui-datepicker-rtl .ui-datepicker-prev { right: 2px; left: auto }
 html .ui-datepicker-rtl .ui-datepicker-next { right: auto; left: 2px }
@@ -507,11 +507,11 @@ html .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header { bord
 html .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header { border-left-width: 0 }
 html .ui-datepicker-multi .ui-datepicker-buttonpane { display: none }
 html .ui-datepicker-cover { position: absolute; top: -4px; left: -4px; z-index: -1; width: 200px; height: 200px; filter: mask() }
-td.date-from-select span, td.date-from-select a { background: #bababa; background: #eee url(https://www.kooningtravel.com/img/cal-from-greyarrow.png) -2px -4px no-repeat !important; text-decoration: none !important; color: #fff !important; font-weight: bold !important; position: relative; z-index: 1; border: 1px solid transparent !important; border-radius: 6px 0 0 6px }
+td.date-from-select span, td.date-from-select a { background: #bababa; background: #eee url(/img/cal-from-greyarrow.png) -2px -4px no-repeat !important; text-decoration: none !important; color: #fff !important; font-weight: bold !important; position: relative; z-index: 1; border: 1px solid transparent !important; border-radius: 6px 0 0 6px }
 td.date-from-select.ui-datepicker-current-day span, td.date-from-select.ui-datepicker-current-day a { background: #E61B76; background: #E61B76!important; text-decoration: none !important; color: #fff !important; font-weight: bold !important; position: relative; z-index: 1; border: 1px solid transparent !important; border-radius: 6px 0 0 6px; }
 td.date-range-selected a { background: #eee !important; position: relative; z-index: 1 }
 td.date-to-select a { background: #E61B76!important; text-decoration: none !important; color: #fff !important; font-weight: bold !important; position: relative; z-index: 1; border: 1px solid transparent !important; border-radius: 0 6px 6px 0 }
-.ui-datepicker-div-from td.date-to-select a { background: #bababa; background: #eee url(https://www.kooningtravel.com/img/cal-to-greyarrow.png) -1px -4px no-repeat !important; border-radius: 0 6px 6px 0 }
+.ui-datepicker-div-from td.date-to-select a { background: #bababa; background: #eee url(/img/cal-to-greyarrow.png) -1px -4px no-repeat !important; border-radius: 0 6px 6px 0 }
 td.ui-datepicker-other-month.ui-datepicker-unselectable span { background: none !important; border: 1px solid transparent !important }
 body .home .h2, body .other .h2 { text-align: center; font-family: HelveticaThin, Helvetica, Arial, sans-serif; color: #FFF; font-size: 32px; margin: 30px 0px; width: 100%; height: 38px; display: inline-block; float: left; }
 body .other .h2 { color: #4d6a8e; margin-bottom: 0px; }
@@ -519,7 +519,7 @@ body .other .info-details { margin: 10px 0px; font-size: 20px; color: #fff; widt
 body .other .h2 .imagen-estrellas { float: none; margin-left: 5px; }
 body .other .fechas-info { margin: 0px auto; float: left; margin-top: 0px; font-size: 20px; color: #fff; width: 100%; text-align: center; }
 .box-home .inline-search { width: 270px; border-radius: 6px; background: #FFF; text-align: left; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); margin: 0px 7px; }
-body div .box .box-home .inline-block .inline-button, body .search-body .container .main-box .caja-search form .inline-block .inline-button, .inline-block .inline-button { padding: 0px; margin: 0px; border: 0px; display: -moz-inline-stack; display: inline-block; *display: inline; float: none; zoom: 1; border-radius: 6px; width: 70px; height: 45px; vertical-align: top; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), inset 0 -1px rgba(0, 0, 0, 0.15), inset 0 1px rgba(255, 255, 255, 0.35); background: url(https://kooningtravel.com/img/search.png) no-repeat center center #E61B76; }
+body div .box .box-home .inline-block .inline-button, body .search-body .container .main-box .caja-search form .inline-block .inline-button, .inline-block .inline-button { padding: 0px; margin: 0px; border: 0px; display: -moz-inline-stack; display: inline-block; *display: inline; float: none; zoom: 1; border-radius: 6px; width: 70px; height: 45px; vertical-align: top; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), inset 0 -1px rgba(0, 0, 0, 0.15), inset 0 1px rgba(255, 255, 255, 0.35); background: url(/img/search.png) no-repeat center center #E61B76; }
 .inline-search .input-style { width: 108px; cursor: pointer; position: relative; padding: 0px; border-top-left-radius: 0px; height: 46px; border-bottom-left-radius: 0px; }
 .inline-search .input-style .aa { font-size: 32px; display: -moz-inline-stack; display: inline-block; *display: inline;
 zoom: 1; line-height: 45px; padding-right: 2px; }
@@ -533,24 +533,24 @@ zoom: 1; position: relative; }
 .inline-search .pax { font-size: 13px; font-weight: bold; text-align: center }
 .inline-search.passengers .input-style { cursor: pointer; padding: 0 6px; width: 128px }
 .inline-search .rooms-icon { color: #e61b76; display: -moz-inline-stack; display: inline-block; *display: inline;
-zoom: 1; background: url(https://www.kooningtravel.com/img/vertical-sprite.png) 8px 8px no-repeat; padding: 0 30px 0 0; font-size: 17px; font-weight: bold; height: 26px; line-height: 246%; vertical-align: middle; margin-top: 5px; margin-right: 5px; }
+zoom: 1; background: url(/img/vertical-sprite.png) 8px 8px no-repeat; padding: 0 30px 0 0; font-size: 17px; font-weight: bold; height: 26px; line-height: 246%; vertical-align: middle; margin-top: 5px; margin-right: 5px; }
 .inline-search .childs-icon.none, .inline-search .babies-icon.none { opacity: .35 }
 .inline-search .r1a-icon, .inline-search .adventurer-icon { color: #444; display: -moz-inline-stack; display: inline-block; *display: inline;
-zoom: 1; background: url(https://www.kooningtravel.com/img/vertical-sprite.png) 22px -45px no-repeat; padding: 0 12px 0 0; width: 20px; font-size: 17px; font-weight: bold; height: 26px; text-align: right; line-height: 197%; vertical-align: middle; margin-top: 5px; margin-right: 5px; }
+zoom: 1; background: url(/img/vertical-sprite.png) 22px -45px no-repeat; padding: 0 12px 0 0; width: 20px; font-size: 17px; font-weight: bold; height: 26px; text-align: right; line-height: 197%; vertical-align: middle; margin-top: 5px; margin-right: 5px; }
 .inline-search .childs-icon { color: #444; display: -moz-inline-stack; display: inline-block; *display: inline;
-zoom: 1; background: url(https://www.kooningtravel.com/img/vertical-sprite.png) 24px -142px no-repeat; padding: 0 12px 0 0; width: 20px; font-size: 17px; font-weight: bold; height: 26px; text-align: right; line-height: 197%; vertical-align: middle; margin-top: 5px; }
+zoom: 1; background: url(/img/vertical-sprite.png) 24px -142px no-repeat; padding: 0 12px 0 0; width: 20px; font-size: 17px; font-weight: bold; height: 26px; text-align: right; line-height: 197%; vertical-align: middle; margin-top: 5px; }
 .inline-search .babies-icon { color: #444; display: -moz-inline-stack; display: inline-block; *display: inline;
-zoom: 1; background: url(https://www.kooningtravel.com/img/vertical-sprite.png) 24px -228px no-repeat; padding: 0 20px 0 0; width: 21px; font-size: 17px; font-weight: bold; height: 26px; text-align: right; line-height: 197%; vertical-align: middle; margin-bottom: 5px; }
+zoom: 1; background: url(/img/vertical-sprite.png) 24px -228px no-repeat; padding: 0 20px 0 0; width: 21px; font-size: 17px; font-weight: bold; height: 26px; text-align: right; line-height: 197%; vertical-align: middle; margin-bottom: 5px; }
 .inline-search .sep { display: -moz-inline-stack; display: inline-block; *display: inline;
 zoom: 1; margin: 8px 1px; width: 1px; height: 30px; background: #e2e2e2; vertical-align: middle; }
 .inline-search .sep-arrow { display: -moz-inline-stack; display: inline-block; *display: inline;
-zoom: 1; margin: 0 3px; width: 11px; height: 45px; background: url(https://www.kooningtravel.com/img/sep-arrow.png) no-repeat; vertical-align: middle; }
+zoom: 1; margin: 0 3px; width: 11px; height: 45px; background: url(/img/sep-arrow.png) no-repeat; vertical-align: middle; }
 #contactform .destination { width: 200px; font-size: 20px }
 .origin-select-input:focus, .days-select-input:focus { outline: 0; box-shadow: 0 0 0 2px #E61B76 }
 #passengers-panel { float: none; position: absolute; top: 45px; left: 50%; margin-left: -170px; display: block; width: 340px; margin-top: 13px; border-radius: 8px; background: #FFF; z-index: 9999 !important; -o-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -ms-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1); box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1) }
-.panel-arrow { position: absolute; width: 43px; height: 13px; background: url(https://www.kooningtravel.com/img/basic-arrows.png) -164px -8px no-repeat; top: -13px; left: 43%; }
+.panel-arrow { position: absolute; width: 43px; height: 13px; background: url(/img/basic-arrows.png) -164px -8px no-repeat; top: -13px; left: 43%; }
 .panel-header { width: 100%; height: 65px; border-radius: 9px 9px 0 0; background: #f6f6f6; background: -webkit-linear-gradient(#f6f6f6 0, #eaeaea 100%); background: -webkit-linear-gradient(#f6f6f6 0, #e6e6e6 100%); border-bottom: 1px solid #d2d2d2; position: relative; text-align: center }
-.panel-header-arrow { position: absolute; width: 43px; height: 13px; background: url(https://www.kooningtravel.com/img/basic-arrows.png) -85px -4px no-repeat; bottom: -1px; margin-left: -22px }
+.panel-header-arrow { position: absolute; width: 43px; height: 13px; background: url(/img/basic-arrows.png) -85px -4px no-repeat; bottom: -1px; margin-left: -22px }
 .panel-header-list .item { display: -moz-inline-stack; display: inline-block; *display: inline;
 zoom: 1; }
 .panel-header-list.size-4 .item { width: 23% }
@@ -561,15 +561,15 @@ zoom: 1; }
 .panel-header-list .item.active a { color: #444 }
 .panel-header-list .item.active span, .panel-header-list .item a:hover span { opacity: 1 }
 .panel-content { float: none!important; display: block!important; overflow: hidden; border-radius: 9px; }
-#passengers-panel.simple .panel-arrow, #triptype-panel.simple .panel-arrow { background: url(https://www.kooningtravel.com/img/basic-arrows.png) -84px -8px no-repeat }
+#passengers-panel.simple .panel-arrow, #triptype-panel.simple .panel-arrow { background: url(/img/basic-arrows.png) -84px -8px no-repeat }
 #passengers-panel.simple .panel-header { display: none }
 #passengers-panel .panel-header { height: 52px }
-.icon-single { background: url(https://www.kooningtravel.com/img/vertical-sprite.png) center -313px no-repeat }
-.icon-double { background: url(https://www.kooningtravel.com/img/vertical-sprite.png) center -377px no-repeat }
-.icon-double-sup { background: url(https://www.kooningtravel.com/img/vertical-sprite.png) center -441px no-repeat }
-.icon-other-room { background: url(https://www.kooningtravel.com/img/vertical-sprite.png) center -501px no-repeat }
+.icon-single { background: url(/img/vertical-sprite.png) center -313px no-repeat }
+.icon-double { background: url(/img/vertical-sprite.png) center -377px no-repeat }
+.icon-double-sup { background: url(/img/vertical-sprite.png) center -441px no-repeat }
+.icon-other-room { background: url(/img/vertical-sprite.png) center -501px no-repeat }
 #passengers-panel .del-room .del-icon { width: 18px; height: 21px; display: -moz-inline-stack; display: inline-block; *display: inline;
-zoom: 1; background: url(https://www.kooningtravel.com/img/trash-icon.png) 0 0 no-repeat; float: none; }
+zoom: 1; background: url(/img/trash-icon.png) 0 0 no-repeat; float: none; }
 #passengers-panel .del-room:hover .del-icon, #passengers-panel .del-room:active .del-icon { background-position: -20px 0 }
 #passengers-panel .del-room { font-size: 24px; color: #aaa; padding: 26px 10px 24px 9px; float: right; border-left: 1px solid #eee; height: 24px; display: block }
 #passengers-panel .with-advent .del-room { padding: 50px 10px 49px 9px }
@@ -587,12 +587,12 @@ zoom: 1; background: url(https://www.kooningtravel.com/img/trash-icon.png) 0 0 n
 #searcher-form-snow .rooms-list .room-name { padding: 35px 13px 25px 15px }
 .rooms-list .ui-spinner input { font-size: 24px }
 .rooms-list .child-ages .sup-label { font-weight: normal; -webkit-font-smoothing: subpixel-antialiased; color: #888; float: none; }
-select.small { -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; -o-appearance: none; appearance: none; border: 1px solid #e2e2e2; padding: 2px 19px 2px 7px; color: #444; background: #fff url(https://www.kooningtravel.com/img/vertical-sprite.png) right -784px no-repeat; box-shadow: 0 1px 3px #eee; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); cursor: pointer; background-color: #fafafa; margin: 0 2px; float: none; }
-select.small:hover { background: #fff url(https://www.kooningtravel.com/img/vertical-sprite.png) right -732px no-repeat }
+select.small { -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; -o-appearance: none; appearance: none; border: 1px solid #e2e2e2; padding: 2px 19px 2px 7px; color: #444; background: #fff url(/img/vertical-sprite.png) right -784px no-repeat; box-shadow: 0 1px 3px #eee; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); cursor: pointer; background-color: #fafafa; margin: 0 2px; float: none; }
+select.small:hover { background: #fff url(/img/vertical-sprite.png) right -732px no-repeat }
 select.small:focus { outline: 0; border: 1px solid #E61B76; box-shadow: 0 0 0 1px #E61B76 }
 .rooms-list .room-name { color: #E61B76; font-weight: bold; font-size: 15px; padding: 36px 13px 20px 15px; cursor: default; float: left; width: 55px; height: auto; }
 .add-room { display: inline-block; float: none !important; width: 100%; padding: 5px 15px 8px 15px!important; text-align: center; color: #aaa; border-radius: 0 0 9px 9px; font-size: 14px!important; font-weight: bold!important; background: #f6f6f6; }
-.add-room .add-icon { margin-right: 5px; width: 16px; height: 16px; background: url(https://www.kooningtravel.com/img/vertical-sprite.png) 0 -566px no-repeat; display: -moz-inline-stack; display: inline-block; *display: inline;
+.add-room .add-icon { margin-right: 5px; width: 16px; height: 16px; background: url(/img/vertical-sprite.png) 0 -566px no-repeat; display: -moz-inline-stack; display: inline-block; *display: inline;
 zoom: 1; top: 3px; position: relative; float: none; }
 .add-room:hover { color: #444; background: #fff }
 .add-room:active { background: #e2e2e2; color: #aaa }
@@ -602,7 +602,7 @@ zoom: 1; top: 3px; position: relative; float: none; }
 .ui-spinner { width: 95px!important; height: 29px!important; position: relative; display: block!important; float: left!important; -webkit-user-select: none; -moz-user-select: -moz-none; -o-user-select: -moz-none; -khtml-user-select: none; -ms-user-select: none; user-select: none; overflow: visible }
 .ui-spinner input { float: none!important; display: block!important; margin: 0 !important; padding: 0 !important; width: 93px !important; height: 27px; position: absolute; top: 0; left: 0; border-radius: 6px; border: 0; outline: 0; text-align: center; font-family: Helvetica, Arial, sans-serif!important; font-size: 16px; color: #444; background: #fafafa; background: -webkit-linear-gradient(left, #f8f8f8 0, #fff 30%, #fff 70%, #f8f8f8 100%); border: 1px solid #e2e2e2; box-shadow: inset 0 1px 3px #eee; cursor: default; box-shadow: 0 1px 3px #eee; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); line-height: 30px; -webkit-font-smoothing: subpixel-antialiased }
 .ui-spinner input:focus { outline: 0; border: 1px solid #E61B76; box-shadow: 0 0 0 1px #E61B76 }
-.ui-spinner-button { display: block; height: 27px; width: 28px; margin: 0; background-image: url(https://www.kooningtravel.com/img/vertical-sprite.png); background-color: transparent; background-repeat: no-repeat }
+.ui-spinner-button { display: block; height: 27px; width: 28px; margin: 0; background-image: url(/img/vertical-sprite.png); background-color: transparent; background-repeat: no-repeat }
 .ui-spinner-button.ui-spinner-up { background-position: center -676px; border-radius: 0 5px 5px 0; position: absolute; top: 1px; right: 1px; z-index: 1; cursor: pointer }
 .ui-spinner-button.ui-spinner-down { background-position: center -697px; border-right: 0 none; border-radius: 5px 0 0 5px; position: absolute; top: 1px; left: 1px; cursor: pointer }
 .ui-spinner-button.ui-spinner-up:hover { background-position: center -592px; background-color: #fff; box-shadow: -1px 0 0 #e2e2e2 }
@@ -617,7 +617,7 @@ zoom: 1; top: 3px; position: relative; float: none; }
 .box-home .select2-search input { width: 226px !important; font-size: 20px; border: 0 none; border-radius: 6px; height: 45px; margin: 0px; color: #444; text-indent: 6px; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; vertical-align: top; }
 .head .select2-container--default .select2-selection--single { position: absolute; top: -44px; left: -1px; display: inline-block; float: left; height: 46px; width: 225px; }
 .head .text date-nights noselect { float: :left; padding: 0px; display: inline-block; }
-.head .inline-search .number-nights { padding: 0px; width: 50px; text-indent: -10px; background: #fff url(https://www.kooningtravel.com/img/nights.gif) center top repeat-y; border-radius: 0; text-align: center; color: #fff; font-size: 17px; padding: 0px; font-weight: bold; display: -moz-inline-stack; display: inline-block; zoom: 1; line-height: 46px; position: relative; text-indent: -10px; z-index: 1; }
+.head .inline-search .number-nights { padding: 0px; width: 50px; text-indent: -10px; background: #fff url(/img/nights.gif) center top repeat-y; border-radius: 0; text-align: center; color: #fff; font-size: 17px; padding: 0px; font-weight: bold; display: -moz-inline-stack; display: inline-block; zoom: 1; line-height: 46px; position: relative; text-indent: -10px; z-index: 1; }
 .head .inline-search .date-nights-input { opacity: .0; position: absolute; left: 0; top: 0; margin: 0; z-index: 0; width: 48px; height: 45px; -webkit-appearance: none; }
 .head .inline-search .date-wrapper {border-radius: 8px;height: 45px;margin-left: 4px;width: 100%; }
 .head .inline-search.passengers { padding: 0px; position: relative; width: 142px; height: 45px; background-color: #FFF; margin: 0px auto; float: left; }
@@ -629,7 +629,7 @@ zoom: 1; top: 3px; position: relative; float: none; }
 html body .head .bgv { width: 100%; height: 360px; overflow: hidden; position: absolute; left: 0px; z-index: -4; }
 html body .head .bgv video { position: absolute; top: -260px; left: 0px; width: 100%; }
 html body .head .box { position: relative; width: 100%; text-align: center; }
-html body .head .box .headf { background: url("https://www.kooningtravel.com/img/Home/Audifonos.png") no-repeat center center transparent; display: inline-block; width: 62px; height: 51px; border-radius: 4px; position: absolute; right: 8%; }
+html body .head .box .headf { background: url("/img/Home/Audifonos.png") no-repeat center center transparent; display: inline-block; width: 62px; height: 51px; border-radius: 4px; position: absolute; right: 8%; }
 html body .home .explor { display: inline-block; width: auto; text-align: center; color: #FFF; font-weight: 300; font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-size: 20px; text-decoration: none; position: relative; top: 45px; }
 html body .head .box #contactform { margin: 0px auto; float: none; }
 html body .head .box #contactform .inline-block:nth-child(5){ margin-left:7px; }
@@ -637,11 +637,11 @@ html body .head .box #contactform .position { left: -17px; }
 html body .pannel { text-align: center; margin-top: 20px; display: inline-block; width: 100%; float: left; }
 html body .pannel .lereve { float: left; display: inline-block; text-align: center; width: 185px; }
 html body .pannel .azull { display: inline-block; width: 185px; text-align: center; float: right; }
-html body .pannel .cb { position: relative; float: left; width: 230px; height: 200px; background: url(https://www.kooningtravel.com/img/home/TarjetasBancosC.png) center center no-repeat #f9f9f9; border: 1px solid #eee!important; border-radius: 0 3px 3px 0!important; }
+html body .pannel .cb { position: relative; float: left; width: 230px; height: 200px; background: url(/img/home/TarjetasBancosC.png) center center no-repeat #f9f9f9; border: 1px solid #eee!important; border-radius: 0 3px 3px 0!important; }
 html body .pannel .cb .det { display: inline-block; width: 100%; position: absolute; bottom: 0px; text-align: center; margin: 0px; }
 html body .pannel .sliderh { display: inline-block; float: none; margin: 0px auto; }
 html body .pannel .contr { width: 17%; display: inline-block; float: right; }
-html body .pannel .contr #visitc { background: url("https://www.kooningtravel.com/img/home/VisitMexico.png") no-repeat center center #f9f9f9; width: 134px; height: 82px; display: inline-block; border: 1px solid #eee; border-radius: 0 3px 3px 0; float: right; }
+html body .pannel .contr #visitc { background: url("/img/home/VisitMexico.png") no-repeat center center #f9f9f9; width: 134px; height: 82px; display: inline-block; border: 1px solid #eee; border-radius: 0 3px 3px 0; float: right; }
 html body .pannel .contr .visith { display: inline-block; float: right; margin-top: 10px; }
 html body .centerh { display: inline-block; float: left; margin-top: 30px; width: 100%; }
 html body .centerh .playash { font-family: HelveticaThin, Helvetica, Arial, sans-serif; display: inline-block; float: left; padding-bottom: 9px; margin: 25px 0 20px; border-bottom: 1px solid #eee; text-align: center; font-size: 30px; color: #c3c0cc; background: #f6f6f6; width: 100%; }
@@ -677,7 +677,7 @@ html body .centerh .fott img { display: inline-block; padding: 0px; border: 0px;
 html body .centerh .fott .mar { margin: 0px 55px; }
 
 /*  https://kooningtravel.com/Contacto  */
-html body .conus { background: url("https://www.kooningtravel.com/img/contactanos.png") no-repeat 0px 0px transparent/100%; position: relative; display: inline-block; float: left; }
+html body .conus { background: url("/img/contactanos.png") no-repeat 0px 0px transparent/100%; position: relative; display: inline-block; float: left; }
 html body .conus .alert{ width: 30%; left: 30%;position: absolute; top: 0px; }
 .cuadro-contacto .top-menu { display: inline-block; float: left; width: 100%; margin-top: 20px; border-bottom: 1px solid #f2f2f2; height: 35px; }
 .cuadro-contacto .top-menu .ubicacion-pagina {width: 23%;color: #000;font-family: Oswald,sans-serif;font-weight: 300;text-align: left;float: left;display: inline-block;text-align: center;}
@@ -705,7 +705,7 @@ html body .conus .cuadro-contacto .rgn .text-contact{ color: #495e79; width: 100
 .site .contenedorm h2 { text-indent: 18px; text-align: left; font-size: 18px; margin-bottom: 0px; font-weight: 400; color: #3d66a0; font-family: inherit; vertical-align: baseline; }
 .site .contenedorm ul { width: 100px; list-style: square; display: inline-block; float: left; margin-left: 30px; padding: 0px; }
 .site .contenedorm ul li { width: 100%; text-align: center; float: left; display: inline-block; margin: 0px; padding: 0px; }
-.site .contenedorm ul li a { background: url("https://www.kooningtravel.com/img/square.jpg") no-repeat 8px 8px transparent; cursor: pointer; display: inline-block; text-align: left; width: 100%; text-indent: 10px; padding: 0 0 8px 10px; text-decoration: underline; color: #252323; border: none; outline: 0; float: left; }
+.site .contenedorm ul li a { background: url("/img/square.jpg") no-repeat 8px 8px transparent; cursor: pointer; display: inline-block; text-align: left; width: 100%; text-indent: 10px; padding: 0 0 8px 10px; text-decoration: underline; color: #252323; border: none; outline: 0; float: left; }
 
 /*Search y Details*/
 html body .search-content { font-family: Roboto, sans-serif; float: right; padding: 0px; width: 795px; display: inline-block; margin: 0px; }
@@ -744,7 +744,7 @@ html body .search-body .container .main-box .marco .refill .btn { width: 60%; ma
 
 /*Categoria de los hoteles*/
 html body .search-body .container .main-box .marco .refill .categoria { display: inline-block; width: auto; height: 60px; margin-top: 15px; float: none; }
-html body .search-body .container .main-box .marco .refill .categoria label { width: 40px; height: 40px; background: url("https://www.kooningtravel.com/img/iconos.png") no-repeat transparent; margin: 3px; cursor: pointer; }
+html body .search-body .container .main-box .marco .refill .categoria label { width: 40px; height: 40px; background: url("/img/iconos.png") no-repeat transparent; margin: 3px; cursor: pointer; }
 html body .search-body .container .main-box .marco .refill .categoria #ch_start5 { background-position: -212px -10px; }
 html body .search-body .container .main-box .marco .refill .categoria #ch_start4 { background-position: -164px -10px; }
 html body .search-body .container .main-box .marco .refill .categoria #ch_start3 { background-position: -116px -10px; }
@@ -816,8 +816,8 @@ html body .search-body .help .item a { color: rgb(13, 114, 255); width: 100%; di
 html body .search-body .help .item:hover { text-decoration: none; background: #edf0f3; background: rgba(86, 112, 140, 0.1) }
 html body .search-body .help .item:active { text-decoration: none; background: #d4dbe2; background: rgba(86, 112, 140, 0.25) }
 html body .search-body .help .item .h3 { font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-size: 20px; letter-spacing: 1px; -webkit-font-smoothing: subpixel-antialiased; color: #4d6a8e; float: left; width: 100%; margin: 0px; padding: 0px; margin-top: 10px; height: 54px; }
-html body .search-body .help .item.email .h3 { background: url(https://kooningtravel.com/img/email.png) no-repeat center  20px; }
-html body .search-body .help .item.telefono .h3 { background: url(https://kooningtravel.com/img/telephone.png) no-repeat center  20px; }
+html body .search-body .help .item.email .h3 { background: url(/img/email.png) no-repeat center  20px; }
+html body .search-body .help .item.telefono .h3 { background: url(/img/telephone.png) no-repeat center  20px; }
 html body .search-body .help .item p { margin: 0px auto; color: rgba(86, 112, 140, 0.5); display: inline-block; width: 100%; text-align: center; }
 html body .search-body .help .item .link { font-weight: normal; color: rgb(13, 114, 255); font-size: 12px; width: 100%; display: inline-block; float: left; }
 html body .search-body .help .item .reds { display: inline-block; width: 60%; margin: 0px auto; padding: 0px; list-style: none; height: 30px; margin-top: 13px; }
@@ -928,14 +928,14 @@ html body div .grey-content { background: #f6f6f6; }
 .carousel-prev { left: -20px; }
 .carousel ul .item h3 { margin: 10px 0px 10px 0px!important; width: 100%; }
 .carousel ul .item:hover img { top: 0 }
-.carousel ul .item .unknown-img { display: block; width: 217px; height: 117px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); border-radius: 6px; margin-bottom: 10px; background: url(https://kooningtravel.com/img/unknown.png) no-repeat }
+.carousel ul .item .unknown-img { display: block; width: 217px; height: 117px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); border-radius: 6px; margin-bottom: 10px; background: url(/img/unknown.png) no-repeat }
 .carousel ul .item:hover .unknown-img { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 2px #444 }
 .carousel ul .item h3 span { color: #aaa; font-size: 13px; display: block }
 .carousel ul .item p { margin-bottom: 0; color: #aaa; line-height: 20px }
 .carousel ul .price-from { display: none; color: #e92667 }
-.carousel ul .icon-r1a { background: url(https://kooningtravel.com/img/r1a-kids.png) 0 0 no-repeat; width: 15px; height: 19px; display: -moz-inline-stack; display: inline-block; *display: inline; zoom: 1; margin-right: 2px; top: 3px; position: relative }
-.carousel ul .icon-kids { background: url(https://kooningtravel.com/img/r1a-kids.png) 0 -23px no-repeat; width: 15px; height: 19px; display: -moz-inline-stack; display: inline-block; *display: inline; zoom: 1; margin-right: 2px; top: 3px; position: relative; margin-left: 10px }
-.carousel ul .icon-sincolas { padding-left: 23px; padding-top: 5px; padding-bottom: 1px; height: 15px; color: #444; background: url(https://kooningtravel.com/img/ticket-icons.png) -3px -54px no-repeat; opacity: .5; display: none }
+.carousel ul .icon-r1a { background: url(/img/r1a-kids.png) 0 0 no-repeat; width: 15px; height: 19px; display: -moz-inline-stack; display: inline-block; *display: inline; zoom: 1; margin-right: 2px; top: 3px; position: relative }
+.carousel ul .icon-kids { background: url(/img/r1a-kids.png) 0 -23px no-repeat; width: 15px; height: 19px; display: -moz-inline-stack; display: inline-block; *display: inline; zoom: 1; margin-right: 2px; top: 3px; position: relative; margin-left: 10px }
+.carousel ul .icon-sincolas { padding-left: 23px; padding-top: 5px; padding-bottom: 1px; height: 15px; color: #444; background: url(/img/ticket-icons.png) -3px -54px no-repeat; opacity: .5; display: none }
 .carousel ul .icon-sincolas:after { content: ''; display: block; clear: both }
 .carousel-next span { width: 19px; height: 56px; display: block; background: url("/img/carousel_right.png"); position: absolute; top: 50%; margin-top: -28px; right: 10px; }
 .carousel-prev span { width: 19px; height: 56px; display: block; background: url("/img/carousel_left.png"); position: absolute; top: 50%; margin-top: -28px; left: 10px; }
@@ -1025,7 +1025,7 @@ html body div .wrapper .clear #tabs>ul li a { text-decoration: none; width: 115p
 html body div .wrapper .clear #tabs>ul li:first-child a { border-radius: 8px 0 0 0 }
 html body div .wrapper .clear #tabs>ul .ui-state-active { padding-bottom: 0; margin-bottom: 0 }
 html body div .wrapper .clear #tabs>ul .ui-state-active a { background: #fff; color: #444 }
-html body div .wrapper .clear #tabs>ul .ui-state-active a:after { background: url(https://kooningtravel.com/img/default-tabs-shadow.png) right bottom no-repeat; height: 3px; width: 155px; z-index: 100; position: absolute; bottom: -2px; left: 0; content: '' }
+html body div .wrapper .clear #tabs>ul .ui-state-active a:after { background: url(/img/default-tabs-shadow.png) right bottom no-repeat; height: 3px; width: 155px; z-index: 100; position: absolute; bottom: -2px; left: 0; content: '' }
 html body div .wrapper .clear #tabs>ul .ui-state-hover a, #tabs>ul .ui-state-active.ui-state-hover a { background: #fff }
 html body div .wrapper .clear #tabs>div { display: block; float: left; width: 70%; padding: 25px 25px 10px 0; background: #fff }
 html body div .wrapper .clear #tabs>div .mini-modules, #tabs>div ul { float: none; width: 100%; margin-bottom: 20px }
@@ -1041,7 +1041,7 @@ html body div .wrapper .clear #tabs>div ul li { float: none; list-style: disc; m
 html body div .wrapper .clear #tabs>div .gallery { float: none; clear: both; overflow: auto; margin-bottom: 10px }
 html body div .wrapper .clear #tabs>div .gallery .fancybox { width: auto; padding: 0; background: 0; margin: 0 5px 5px 0; float: left }
 html body div .wrapper .clear #tabs>div .thumb { width: auto; height: 65px; padding: 0; margin: 0; background: #FFF; float: none; border-radius: 1px; border: 0 }
-html body div .wrapper .clear #tabs>ul .ui-state-active a:after { background: url(https://kooningtravel.com/img/default-tabs-shadow.png) right bottom no-repeat; height: 3px; width: 155px; z-index: 100; position: absolute; bottom: -2px; left: 0; content: ''; }
+html body div .wrapper .clear #tabs>ul .ui-state-active a:after { background: url(/img/default-tabs-shadow.png) right bottom no-repeat; height: 3px; width: 155px; z-index: 100; position: absolute; bottom: -2px; left: 0; content: ''; }
 .ui-helper-clearfix:before, .ui-helper-clearfix:after { content: ""; display: table; }
 .ui-helper-clearfix:before, .ui-helper-clearfix:after { content: ""; display: table; }
 .ui-tabs { padding: 0; border: 0 }
@@ -1221,7 +1221,7 @@ html body .blog .bloque .right #contactform .datepicker{ position:absolute; left
 html body .blog .bloque .right #contactform .bloque .num{ font-size:32px;display:inline-block; line-height:45px; width:40px; height:45px; }
 html body .blog .bloque .right #contactform .bloque .month{ font-weight:bold;  margin-top:8px; }
 html body .blog .bloque .right #contactform .bloque .day{ color:#888; display:block; }
-html body .blog .bloque .right #contactform .gif{ background: url("https://kooningtravel.com/img/nights.gif") no-repeat center top #FFF; width:60px; height:45px; }
+html body .blog .bloque .right #contactform .gif{ background: url("/img/nights.gif") no-repeat center top #FFF; width:60px; height:45px; }
 html body .blog .bloque .right #contactform .bloquep, .sub { width:120px;  }
 html body .blog .bloque .blog .cont2 .right .search .position .select2 .selection .select2-selection__rendered .select2-search #limpiar { font-size: 15px; width: 100%!important; height:50px;  margin: 0px; color: #444;  position: absolute; z-index: 35; text-indent: 6px;   }
 html body .blog .bloque .right #contactform .select2-selection__clear{  width:260px; height: 46px; position: absolute;  top: 0px; left: 0px;line-height: 40px; text-indent: 0px;   text-align: right; margin: 0px !important; z-index: 40;  }
@@ -1248,17 +1248,17 @@ html body .blog .bloque .right .ed:hover{text-decoration: none; outline: none;  
 html body .blog .bloque .right .select2-dropdown{ display:block; }
 html body .blog .bloque .right .ui-state-error{ box-shadow: 0 0 0 1px #E61B76!important;  }
 html body .blog .bloque .right .select2-container--default .select2-selection--single{ border: 1px solid #E61B76!important;  }
-html body .blog .bloque .right #contactform .bloquep .rom .top{ background: url(https://kooningtravel.com/img/basic-arrows.png) -84px -8px no-repeat; position:absolute; width:43px; height:13px;  top:-13px; left:50%; margin-left:-22px; }
-html body .blog .bloque .right #contactform .sub{ background: url("https://kooningtravel.com/img/search.png") no-repeat center center #E61B76; border-radius:6px; width:70px; height:45px; margin-left:4px; margin-right:2px; }
+	html body .blog .bloque .right #contactform .bloquep .rom .top{ background: url(/img/basic-arrows.png) -84px -8px no-repeat; position:absolute; width:43px; height:13px;  top:-13px; left:50%; margin-left:-22px; }
+html body .blog .bloque .right #contactform .sub{ background: url("/img/search.png") no-repeat center center #E61B76; border-radius:6px; width:70px; height:45px; margin-left:4px; margin-right:2px; }
 html body .blog .bloque .right #contactform .sub input{ box-shadow:  width:70px; height:45px; opacity:.0; cursor:pointer; }
 html body .blog .bloque .right #from_hotel_search{ border-top-right-radius: 0px; border-bottom-right-radius:0px; color: transparent; }
 html body .blog .bloque .right #to_hotel_search{ color: transparent; border-top-left-radius: 0px; border-left-right-radius:0px; }
 html body .blog .bloque .right .col-md-1 .col-md-12 { margin-top: 20px; }
 html body .blog .info .centraimagen{  margin:0px auto ; float: none ; margin-top: 30px;  display: inline-block; }
 
-/*Promociones*/
-html body .fancy-promo{ background: #FFF; display: inline-block;float: left;width: 100%;height: 53px;overflow: hidden;}
-html body .oferr{ background: #f1f1f1; }
+	/*Promociones*/
+	html body .fancy-promo{ background: #FFF; display: inline-block;float: left;width: 100%;height: 53px;overflow: hidden;}
+	html body .oferr{ background: #f1f1f1; }
 html body .oferr:link, html body .oferr:visited, html body .oferr:hover{ text-decoration: none; }
 html body .ofer .wrop .min{ padding: 0px; width: 300px!important; margin-left: 8px; }
 html body .cuadro .wrop .item .img .tittle{ font-weight: 700; text-align: center; color: #FF5001; font-size: 20px;font-family: Montserrat,sans-serif; }

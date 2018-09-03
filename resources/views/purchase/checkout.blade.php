@@ -29,18 +29,16 @@
                     <h3 class="hotel-bloque" >{{$item['name']}}</h3>
                   </div>
                   <div class="bloque center">
-                    <p><i class="fa fa-building" aria-hidden="true"></i><span>{{$item['name']}}</span></p>
-                    <p><i class="fa fa-map-marker" aria-hidden="true"></i><span> {{$item['location']}}</span></p>
-                    <p><i class="fa fa-clock-o" aria-hidden="true"></i><span>Llegada {{$item['checkin']}}</span></p>
-                    <p><i class="fa fa-clock-o" aria-hidden="true"></i><span>Salida {{$item['checkout']}}</span></p>
+                    <p><span><i class="fa fa-building" aria-hidden="true"></i> {{$item['name']}}</span></p>
+                    <p><span><i class="fa fa-map-marker" aria-hidden="true"></i> {{$item['location']}}</span></p>
+                    <p><span><i class="fa fa-clock-o" aria-hidden="true"></i> Llegada {{$item['checkin']}}</span></p>
+                    <p><span><i class="fa fa-clock-o" aria-hidden="true"></i> Salida {{$item['checkout']}}</span></p>
                     <div class="roms" >
-                      <div class="vacancy" >
-                        <i class="fa fa-male" aria-hidden="true"></i>
-                        <span>{{$item['adults']}} Adultos</span>
+                      <div class="vacancy" >                        
+                        <span>{{$item['adults']}} Adultos <i class="fa fa-male" aria-hidden="true"></i> </span>
                       </div>
-                      <div class="vacancy" >
-                        <i class="fa fa-child" aria-hidden="true"></i>
-                        <span> {{$item['children']}} Menores</span>
+                      <div class="vacancy" >                        
+                        <span> {{$item['children']}} Menores <i class="fa fa-child" aria-hidden="true"></i></span>
                       </div>
                     </div>
                   </div>
@@ -88,10 +86,10 @@
                     </div>
                     <div class="bloque center">
                       <p><strong>Fecha: </strong> {{$item['date']}}</p>
-                      <p><strong>Adultos: </strong> {{$item['adults']}} &nbsp;&nbsp;&nbsp;
-                        <strong>Niños: </strong> {{$item['children']}}</p>
-                      <p><strong>Ubicacion: </strong> {{$item['location']}}</p>
-                      <p><strong>Horario: </strong> {{$item['schedule']}}</p>
+                      <p><strong><i class="fa fa-male" aria-hidden="true"></i> Adultos: </strong> {{$item['adults']}} &nbsp;&nbsp;&nbsp;
+                        <strong><i class="fa fa-child" aria-hidden="true"></i> Niños: </strong> {{$item['children']}}</p>
+                      <p><strong><i class="fa fa-map-marker" aria-hidden="true"></i> Ubicacion: </strong> {{$item['location']}}</p>
+                      <p><strong><i class="fa fa-clock-o" aria-hidden="true"></i> Horario: </strong> {{$item['schedule']}}</p>
                     </div>
                     <div class="bloque">
                       <p class="price-r" >
