@@ -1076,7 +1076,7 @@ html body .other .traslados .tras .boxt .tit { background:#1B4565; width:100%; h
 html body .other .traslados .tras .boxt form {margin-top: 10px;width:90%;height:auto;float: none;}
 html body .other .traslados .tras .boxt form .bloq{ float:left; width:100%; margin-bottom:10px; }
 html body .other .traslados .tras .boxt form .bloq .left { position: relative; float: left; width: 70%; height: 50px; }
-html body .other .traslados .tras .boxt form .bloq .right { float: right; width: 25%; background: url("/img/Traslados/btn2.png") no-repeat center center transparent; height: 29px; margin-top: 18px; }
+html body .other .traslados .tras .boxt form .bloq .right { float: right; width: 25%; background: url("/img/complements/traslados/btn2.png") no-repeat center center transparent; height: 29px; margin-top: 18px; }
 html body .other .traslados .tras .boxt form .bloq .right .change { margin-top: 4px; cursor: pointer; float: none; }
 html body .other .traslados .tras .boxt form .bloq .tipo { width: 100%; font-size: 13px; color: #000; font-weight: normal; float: left; text-align: left; }
 html body .other .traslados .tras .boxt form .bloq .left .servicio { text-indent: 2px; width: 100%; cursor: pointer; height: 29px; box-shadow: inset grey -1px 1px 11px 0px; border-radius: 4px; }
@@ -1087,12 +1087,12 @@ html body .other .traslados .tras .boxt form .bloq .time2 { float: left; width:1
 html body .other .traslados .tras .boxt form .bloq .time2 .clock{  background: url("/img/time.png") no-repeat center left transparent; margin-top:3px; width: 20px; height: 20px; }
 html body .other .traslados .tras .boxt form .bloq .time1 .cal, .boxt form .bloq .time2 .time { cursor: pointer; text-indent: 5px; float: left; width: 100%; height: 29px; box-shadow: inset grey -1px 1px 11px 0px; border-radius: 4px; }
 html body .other .traslados .tras .boxt form .bloq .time2 .time { width:76%;  color:#156e52; }
-html body .other .traslados .tras .boxt form .bloq .time1 .cal { background: url("/img/Traslados/cal.png") no-repeat 100px center #FFF; }
+html body .other .traslados .tras .boxt form .bloq .time1 .cal { background: url("/img/complements/traslados/cal.png") no-repeat 100px center #FFF; }
 html body .other .traslados .tras .boxt form .bloq .time1 .van, .boxt form .bloq .serv .cantidad{ cursor: pointer; float: left; width: 100%; height: 29px; box-shadow: inset grey -1px 1px 11px 0px; border-radius: 4px; }
-html body .other .traslados .tras .boxt form .bloq .time1 .van { background: url("/img/Traslados/picon.png") no-repeat 100px 6px transparent; }
+html body .other .traslados .tras .boxt form .bloq .time1 .van { background: url("/img/complements/traslados/picon.png") no-repeat 100px 6px transparent; }
 html body .other .traslados .tras .boxt form .bloq .serv { float: left; width: 17%; margin-left: 15px; }
-html body .other .traslados .tras .boxt form .bloq .money { background: url(/img/Traslados/btn2.png) no-repeat 0px 0px transparent; float: left; width:65px; height:29px; margin: 0px; margin-left: 10px; line-height: 31px; font-weight: normal; color: #005b7f; }
-html body .other .traslados .tras .boxt form .bloq .enviar { background: url(/img/Traslados/btn6.png) no-repeat center center transparent; float: left; width: 50%; height: 43px; font-weight: 500; color: #FFF; }
+html body .other .traslados .tras .boxt form .bloq .money { background: url(/img/complements/traslados/btn2.png) no-repeat 0px 0px transparent; float: left; width:65px; height:29px; margin: 0px; margin-left: 10px; line-height: 31px; font-weight: normal; color: #005b7f; }
+html body .other .traslados .tras .boxt form .bloq .enviar { background: url(/img/complements/traslados/btn6.png) no-repeat center center transparent; float: left; width: 50%; height: 43px; font-weight: 500; color: #FFF; }
 html body .other .traslados .tras .tr .map {width:100%;height:390px;border-radius:6px;}
 #show-passengers-panela, .ancla { color: #FFF!important; }
 .cycle-slideshow { width: 1000px; margin: 0px auto; height: 60px; margin-top: 20px; display: inline-block; }
