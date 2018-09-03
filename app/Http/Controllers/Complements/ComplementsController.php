@@ -65,16 +65,16 @@ class ComplementsController extends Controller
 
         $traslado = Transfer::where('name',$_POST['ciudad'])->first();
         
-        if(strcmp($_POST['clase'], 'Van') ==0){
+        if(strcmp($_POST['tipo'], 'Van') ==0){
             $precio=$traslado->van;
         }
-        if(strcmp($_POST['clase'], 'Escalade') ==0){
+        if(strcmp($_POST['tipo'], 'Escalade') ==0){
             $precio=$traslado->escalade;
         }
-        if(strcmp($_POST['clase'], 'Suburban') ==0){
+        if(strcmp($_POST['tipo'], 'Suburban') ==0){
             $precio=$traslado->suburban;
         }
-        if(strcmp($_POST['clase'], 'Sprinter') ==0){
+        if(strcmp($_POST['tipo'], 'Sprinter') ==0){
             $precio=$traslado->sprinter;
         }
 
@@ -85,8 +85,7 @@ class ComplementsController extends Controller
         
 
         $precio=$precio*$_POST['cantidad'];
-        http_response_code(201);
-        echo json_encode($precio);
+        echo $precio;
         
     }
     public function autos(){

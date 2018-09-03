@@ -49,7 +49,7 @@
 		
 	Route::get('traslados', 'Complements\ComplementsController@traslados');
 	Route::post('traslados', 'Complements\ComplementsController@booking');
-	Route::get('traslado/price','Complements\ComplementsController@price');
+	Route::post('traslado/price','Complements\ComplementsController@price');
 	Route::get('blog', 'Complements\ComplementsController@blog');
 	Route::get('blog/{blog}', 'Complements\ComplementsController@details');
 	Route::get('autos', 'Complements\ComplementsController@autos');

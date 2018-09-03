@@ -37,23 +37,21 @@ $(document).ready(function(){
 //funcion calcular precio traslado
 function precio(){
 
-	var tipoentrada= "ciudad=" + $('input[name=destino]').val()  +"&tipo="+$('select[name=clase]').val()+"&cantidad="+$('select[name=cantidad]').val()+"&servicio="+$('select[name=servicio]').val();
-		 // console.log(tipoentrada);
+	var tipoentrada= "_token="+$('input[name=_token]').val()+"&ciudad=" + $('input[name=destino]').val()  +"&tipo="+$('select[name=clase]').val()+"&cantidad="+$('select[name=cantidad]').val()+"&servicio="+$('select[name=servicio]').val();
+		 
 		 $.ajax ( {
 				url: '/traslado/price',
 				type: 'POST',
 				data: tipoentrada,
-	  			statusCode:{
-					201:function (response) {
-							//console.log(response);
-							
-						$(".money").text("$ "+response);
-						$("#total").val(response);
- 			
-					}
-  			   	}
-  			});
-	}
+				success: function (response) {
+       				$(".money").text("$ "+response);
+					$("#total").val(response);
+    			},
+    			error: function (data, textStatus, errorThrown) {
+        			console.log(data);
+    			},
+    		});
+}
 
 
 function initMap2() {
