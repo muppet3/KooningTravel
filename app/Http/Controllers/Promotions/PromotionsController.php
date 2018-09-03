@@ -54,7 +54,6 @@ class PromotionsController extends Controller
         $data['tours']="";
         $data['traslados']="";
         $data['ofertas']="class=active";
-        $data['background']='height: 556px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
         //dd($data);
         return view('promotions/ofertas',$data);
     }
@@ -66,8 +65,6 @@ class PromotionsController extends Controller
         $data['tours']="";
         $data['traslados']="";
         $data['ofertas']="class=active";
-        //dd($data);
-        $data['background']='height: 556px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
         return view('promotions/promociones',$data);
     }
 }
