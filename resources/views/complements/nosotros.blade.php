@@ -35,21 +35,21 @@
 			<hr>
 			<div class="kooning-us" >
 				<div class="us-bloque">
-					<img src="/img/logo-kooning-05.png"  alt="" />
+					<img src="/img/complements/extras/extras/logo-kooning-05.png"  alt="" />
 					<h4 class="minititulo-internas">CREATIVIDAD</h4>
 					<hr>
 					<p class="parrafo">Nuestro compromiso es la innovación y el diseño de productos turísticos que nos permitan incursionar en nuevos mercados nacionales e internacionales, aportando así al desarrollo económico de la región y a la satisfacción continua de nuestros clientes.</p>
 				</div>
 				
 				<div class="us-bloque">
-					<img src="/img/logo-kooning-07.png"  alt="" />
+					<img src="/img/complements/extras/extras/logo-kooning-07.png"  alt="" />
 					<h4 class="minititulo-internas">LEALTAD</h4>
 					<hr>
 					<p class="parrafo">Estamos comprometidos con nuestras agencias aliadas así como con los hoteles con los que realizamos nuestros convenio para proponer y dar lo mejor de nosotros con la finalidad de garantizar en su nombre la prestación de un servicio de calidad y excelencia.</p>
 				</div>
 				
 				<div class="us-bloque">
-					<img src="/img/logo-kooning-02.png"  alt="" />
+					<img src="/img/complements/extras/extras/logo-kooning-02.png"  alt="" />
 					<h4 class="minititulo-internas">CALIDAD</h4>
 					<hr>
 					<p class="parrafo">Nuestros servicios integra una plataforma completa de comercialización online y las mejores opciones comerciales, con la finalidad de lograr el cumplimiento y desarrollo de cada una de las actividades para la reserva y disfrute de su viaje en el tiempo y en las condiciones pactadas.</p>
@@ -57,7 +57,7 @@
 				
 				
 				<div class="us-bloque">
-					<img src="/img/logo-kooning-01.png"  alt="" />
+					<img src="/img/complements/extras/extras/logo-kooning-01.png"  alt="" />
 					<h4 class="minititulo-internas">PROFESIONALISMO</h4>
 					<hr>
 					<p class="parrafo">Somos un Equipo Humano de trabajo calificado, con experiencia en el área del turismo vacacional o de negocios dispuestos a facilitar toda la asesoría y servicios necesarios para que su viaje sea de su total satisfacción.</p>
@@ -67,19 +67,19 @@
 			<hr>
 			<div class="kooning-us" >
 				<div class="us-bloque">
-					<img src="/img/logo-kooning-04.png"  alt="" />
+					<img src="/img/complements/extras/extras/logo-kooning-04.png"  alt="" />
 					<h4 class="minititulo-internas">VANGUARDIA</h4>
 					<hr>
 					<p class="parrafo">Sabemos que hoy en día la información debe de ser portátil, completa y con contenidos de calidad, que permitan de una manera sencilla y práctica tener el acceso a toda la información necesaria para tomar una decisión. Para ello, ofrecemos pasos simples que guían al cliente a través de nuestro sitio y que pueden ser visualizados en computadora, ipad o tablet y cualquier dispositivo móvil con conexión a internet.</p>
 				</div>
 				<div class="us-bloque">
-					<img src="/img/logo-kooning-03.png"  alt="" />
+					<img src="/img/complements/extras/extras/logo-kooning-03.png"  alt="" />
 					<h4 class="minititulo-internas">CONFIABILIDAD</h4>
 					<hr>
 					<p class="parrafo">Somos una empresa caracterizada por el respaldo, apoyo y cumplimiento en cada uno de los servicios y planes de viaje adquiridos por nuestros clientes. Así como plataformas de pago seguras que ofrecen tranquilidad al cliente a la hora de realizar el pago correspondiente a la oferta adquirida en nuestro portal web.</p>
 				</div>				
 				<div class="us-bloque">
-					<img src="/img/logo-kooning-06.png"  alt="" />
+					<img src="/img/complements/extras/extras/logo-kooning-06.png"  alt="" />
 					<h4 class="minititulo-internas">TRABAJO EN EQUIPO</h4>
 					<hr>
 					<p class="parrafo">Estamos comprometidos en la búsqueda conjunta de soluciones y la superación de los obstáculos para la obtención de respuestas rápidas y efectivas que conlleven al mejoramiento de la prestación del servicio.</p>

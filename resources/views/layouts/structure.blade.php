@@ -147,8 +147,12 @@
 
 
 
-
+  @isset ($background)
       <div class="head other" style="{!! $background !!}">
+  @else
+    <div class="head other" style="background:#1d262c;">
+  @endisset
+      
         <div class="header" >
   <div class="logo" > <a href="/" ></a> </div>
   <div class="menu2" >
@@ -492,7 +496,7 @@
                 <li><a href="/seguridad" >Seguridad</a></li>
                 <li><a href="/terminos" >Términos y condiciones</a></li>
                 <li><a href="/privacidad" >Aviso de Privacidad</a></li>
-                <li><a href="/site-map" >Mapa del Sitio</a></li>
+                <!--<li><a href="/site-map" >Mapa del Sitio</a></li>-->
                 <div class="img-trip">
                    <img src="/img/TripAdvisor.png" class="tripadvisor" alt="trip advisor">
                 </div>                
