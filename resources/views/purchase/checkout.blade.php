@@ -24,7 +24,7 @@
               @case('hotel')
                 <div class="small hotel">
                   <div class="bloque">
-                    <img class="img-cart" alt="Hotel,parque,tour,kooning travel" src="/img/parques/hotel.png">
+                    <img class="img-cart" alt="Hotel,parque,tour,kooning travel" src="/img/complements/extras/hotel.png">
                     <h2>Hotel</h2>
                     <h3 class="hotel-bloque" >{{$item['name']}}</h3>
                   </div>
@@ -56,7 +56,7 @@
               @case('traslado')
                 <div class="small traslado">
                   <div class="bloque">
-                    <img class="img-cart" alt="parques,parque,tour,kooning travel" src="/img/parques/traslados.png">
+                    <img class="img-cart" alt="parques,parque,tour,kooning travel" src="/img/complements/extras/traslados.png">
                     <h2>Traslado</h2>
                     <h3 class="traslado-bloque">{{$item['destiny']}}</h3>
                   </div>
@@ -80,7 +80,7 @@
               @case('parque'||'tour')
                   <div class="small {{$item['type']}}">
                     <div class="bloque">
-                      <img class="img-cart" alt="{{$item['type']}}s,{{$item['type']}},kooning travel" src="/img/parques/parques.png">
+                      <img class="img-cart" alt="{{$item['type']}}s,{{$item['type']}},kooning travel" src="/img/complements/extras/parques.png">
                       <h2>{{$item['activity']}}</h2>
                       <h3 class="{{$item['type']}}-bloque"> {{$item['ticket']}}</h3>
                     </div>
@@ -109,12 +109,12 @@
         <h4 class="producto">Los mejores parques tematicos KoonningTravel!</h4>
         <a class="top" target="_blank" href="/Parques/Xcaret">
         <div class="conte">
-          <img src="/img/extras/xcaretl.png" alt="Xcaret, xperiencias,parque" class="img-responsive center-block" >
+          <img src="/img/complements/extras/xcaretl.png" alt="Xcaret, xperiencias,parque" class="img-responsive center-block" >
           <div class="card-hotel">
             <span class="card-txt-clase">Parque Xcaret!</span>
             <p class="card-txt-hotel">Entradas Xcaret!</p>
             <figure class="img-hotel-disney">
-              <img src="/img/extras/xcaret.png" alt="xcaret, parques, xperiencias" class="img-w"></figure>
+              <img src="/img/complements/extras/xcaret.png" alt="xcaret, parques, xperiencias" class="img-w"></figure>
             <a href="/Parques/Xcaret" target="_blank">
             <div class="card-precios">
               <span class="txt-paquete">Entrada Adulto</span>
@@ -133,12 +133,12 @@
         </a>
         <a class="top" target="_blank" href="/Tours/Chichen-Itza">
         <div class="conte">
-          <img src="/img/extras/mayalandl.png" alt="Chichen Itza, Tours, tour" class="img-responsive center-block" >
+          <img src="/img/complements/extras/mayalandl.png" alt="Chichen Itza, Tours, tour" class="img-responsive center-block" >
           <div class="card-hotel">
             <span class="card-txt-clase">Tour Mayaland!</span>
             <p class="card-txt-hotel">Entradas Chichen Itza!</p>
             <figure class="img-hotel-disney">
-              <img src="/img/extras/mayaland.png" alt="mayaland, tour, chichen itza" class="img-w"></figure>
+              <img src="/img/complements/extras/mayaland.png" alt="mayaland, tour, chichen itza" class="img-w"></figure>
             <a target="_blank" href="/Tours/Chichen-Itza" target="_blank">
             <div class="card-precios">
               <span class="txt-paquete">Entrada Adulto</span>
@@ -157,12 +157,12 @@
         </a>
         <a class="top" target="_blank" href="/Parques/Cirque-Soleil">
         <div class="conte">
-          <img src="/img/extras/joya.png" alt="soleil, parque, circus" class="img-responsive center-block" >
+          <img src="/img/complements/extras/joya.png" alt="soleil, parque, circus" class="img-responsive center-block" >
           <div class="card-hotel">
             <span class="card-txt-clase">Parque La Joya</span>
             <p class="card-txt-hotel">Entradas Cirque Soleil!</p>
             <figure class="img-hotel-disney">
-              <img src="/img/extras/lajoya.png" alt="Cirque Soleil, parques, parque" class="img-w"></figure>
+              <img src="/img/complements/extras/lajoya.png" alt="Cirque Soleil, parques, parque" class="img-w"></figure>
             <a target="_blank" href="/Parques/Cirque-Soleil" target="_blank">
             <div class="card-precios">
               <span class="txt-paquete">Entrada Adulto</span>
@@ -198,80 +198,80 @@
           </li>
           <li class="">
             <input type="radio" data-fop-minimumamount="0" data-fop-multiple="false" data-fop-pays="0" data-fop-interest="0" data-fop-type="paypal" name="radpayment1" value="PAYPALMX" id="credit3">
-            <label for="credit3"><img src="/img/bancos/PAYPALMX_xm.png" alt="PayPal (tarjeta de crédito o débito)"></label>
+            <label for="credit3"><img src="/img/complements/extras/bancos/PAYPALMX_xm.png" alt="PayPal (tarjeta de crédito o débito)"></label>
           </li>
         </ul>
       </div>
       <div id="first-fop" class="amount-pay box-blue-payment ">
         <div class="first-bloque" >
           <span class="Aviso-Mens ">
-          <span>Contamos con 3, 6 y 9 meses sin intereses</span><img src="/img/bancos/tag-white.png">
+          <span>Contamos con 3, 6 y 9 meses sin intereses</span><img src="/img/complements/extras/bancos/tag-white.png">
           </span>
           <ul id="payment-form-BD" class="one-payment">
             <li class="selected text1">
               <input type="radio" data-fop-minimumamount="0" data-fop-multiple="true" data-fop-debit="false" data-fop-pays="0" data-fop-interest="0" data-fop-type="cc" name="payment1" value="VM" id="BC7" checked="checked">
-              <label for="BC7" class="imgContainer"><img src="/img/bancos/v_xm.png" alt="Visa"></label>
+              <label for="BC7" class="imgContainer"><img src="/img/complements/extras/bancos/v_xm.png" alt="Visa"></label>
             </li>
             <li class="ame text2" >
               <input type="radio" data-fop-minimumamount="0" data-fop-multiple="true" data-fop-debit="false" data-fop-pays="0" data-fop-interest="0" data-fop-type="cc" name="payment1" value="A" id="AMEX12">
-              <label for="AMEX12" class="imgContainer"><img src="/img/bancos/amex_xm.png" alt="Amex"></label>
+              <label for="AMEX12" class="imgContainer"><img src="/img/complements/extras/bancos/amex_xm.png" alt="Amex"></label>
             </li>
           </ul>
           <div id="select-bank">
             <label for="banco-select">Elija un banco</label>
-            <span id="fakeInput" class="fakeInput"><span class="selectedBank"><span class="logoBank"><img src="/img/bancos/1pago_m.png" alt="Un solo pago"></span>
+            <span id="fakeInput" class="fakeInput"><span class="selectedBank"><span class="logoBank"><img src="/img/complements/extras/bancos/1pago_m.png" alt="Un solo pago"></span>
             <strong>Todo los Bancos</strong>
-            </span><img class="arrows" src="/img/bancos/sprite.gif"></span>
+            </span><img class="arrows" src="/img/complements/extras/bancos/sprite.gif"></span>
             <div id="fakeInput-required" class="stTxtError" style="display: none;">Opción inválida</div>
             <div id="note-debit-card" class="stLabTB" style="display: none;">* Por el momento no podemos recibir todas las tarjetas de débito. Por favor sólo use esta forma de pago si su banco se encuentra en esta lista.</div>
             <ul id="banco-select" class="bankSelection" style="display:none;">
               <li class="otherBank selected all" data-fop-id="-1" data-fop-issuerid="V" data-fop-mean="V" data-fop-minimumamount="0" >
-                <span class="logoBank"><img src="/img/bancos/1pago_m.png" alt="Un solo pago"></span>
+                <span class="logoBank"><img src="/img/complements/extras/bancos/1pago_m.png" alt="Un solo pago"></span>
                 <strong>Todo los Bancos</strong>
               </li>
-              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Santander-Serfin" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/Santander-Serfin_m.png"></span>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Santander-Serfin" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/complements/extras/bancos/Santander-Serfin_m.png"></span>
                 <strong>Santander Serfin</strong>
               </li>
-              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Banorte" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/Banorte_m.png"></span>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Banorte" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/complements/extras/bancos/Banorte_m.png"></span>
                 <strong>Banorte</strong>
               </li>
-              <li class="hidde" data-fop-id="-1" data-fop-issuerid="IxeBanco" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/IxeBanco_m.png"></span>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="IxeBanco" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/complements/extras/bancos/IxeBanco_m.png"></span>
                 <strong>Banco Ixe</strong>
               </li>
-              <li class="hidde" data-fop-id="-1" data-fop-issuerid="HSBC" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/HSBC_m.png"></span>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="HSBC" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/complements/extras/bancos/HSBC_m.png"></span>
                 <strong>HSBC</strong>
               </li>
-              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Scotiabank-Inverlat" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/Scotiabank-Inverlat_m.png"></span>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Scotiabank-Inverlat" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/complements/extras/bancos/Scotiabank-Inverlat_m.png"></span>
                 <strong>Scotiabank Inverlat</strong>
               </li>
-              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Inbursa" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/Inbursa_m.png"></span>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Inbursa" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/complements/extras/bancos/Inbursa_m.png"></span>
                 <strong>Inbursa</strong>
               </li>
-              <li class="hidde" data-fop-id="-1" data-fop-issuerid="BancaAfirme" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/BancaAfirme_m.png"></span>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="BancaAfirme" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/complements/extras/bancos/BancaAfirme_m.png"></span>
                 <strong>Banca Afirme</strong>
               </li>
-              <li class="hidde" data-fop-id="-1" data-fop-issuerid="BancodelBajio" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/BanBajio_m.png"></span>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="BancodelBajio" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/complements/extras/bancos/BanBajio_m.png"></span>
                 <strong>Banco del Bajio</strong>
               </li>
-              <li class="hidde" data-fop-id="-1" data-fop-issuerid="BancaMifel" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/BancaMifel_m.png"></span>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="BancaMifel" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/complements/extras/bancos/BancaMifel_m.png"></span>
                 <strong>Banca Mifel</strong>
               </li>
-              <li class="hidde" data-fop-id="-1" data-fop-issuerid="FAMSA" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/FAMSA_m.png"></span>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="FAMSA" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/complements/extras/bancos/FAMSA_m.png"></span>
                 <strong>Ahorro FAMSA</strong>
               </li>
-              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Banjercito" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/Banjercito_m.png"></span>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Banjercito" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/complements/extras/bancos/Banjercito_m.png"></span>
                 <strong>Banjercito</strong>
               </li>
-              <li class="hidde" data-fop-id="-1" data-fop-issuerid="BanRegio" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/BanRegio_m.png"></span>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="BanRegio" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/complements/extras/bancos/BanRegio_m.png"></span>
                 <strong>BanRegio</strong>
               </li>
-              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Invex" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/Invex_m.png"></span>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Invex" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/complements/extras/bancos/Invex_m.png"></span>
                 <strong>Banco Invex</strong>
               </li>
-              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Itau" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/Itau_m.png"></span>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Itau" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/complements/extras/bancos/Itau_m.png"></span>
                 <strong>Itaú</strong>
               </li>
-              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Liverpool" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/bancos/Liverpool_m.png"></span>
+              <li class="hidde" data-fop-id="-1" data-fop-issuerid="Liverpool" data-fop-mean="V" data-fop-minimumamount="1000"><span class="logoBank"><img src="/img/complements/extras/bancos/Liverpool_m.png"></span>
                 <strong>Liverpool</strong>
               </li>
             </ul>
@@ -454,7 +454,7 @@
         </div>
       </form>
     </div>
-    <img style="display: none;" class="img-banner-right" src="/img/extras/banner-right.png" alt="viajes, vacaciones, parques,tour" >
+    <img style="display: none;" class="img-banner-right" src="/img/complements/extras/banner-right.png" alt="viajes, vacaciones, parques,tour" >
   </div>
 </div>
 @stop
