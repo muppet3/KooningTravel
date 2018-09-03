@@ -14,10 +14,10 @@
 						@foreach($categoria->activities as $activity)
 						<li class="item">
 							<div class="image-wrapp">
-								<a href="{{Request::root()}}/tours/{{$activity->name}}"><img src="/img/activity/{{str_replace(' ', '-', strtolower($categoria->name))}}/{{$activity->name}}.png" alt="{{$categoria->name}}" /></a>
+								<a href="{{Request::root()}}/parques/{{$activity->name}}"><img src="/img/activity/{{str_replace(' ', '-', strtolower($categoria->name))}}/{{$activity->name}}.png" alt="{{$categoria->name}}" /></a>
 							</div>
-							<h3><a href="{{Request::root()}}/tours/{{$activity->name}}">{{$activity->slogan}}</a></h3>
-							<p><a href="{{Request::root()}}/tours/{{$activity->name}}">{{$activity->location}}</a></p>
+							<h3><a href="{{Request::root()}}/parques/{{$activity->name}}">{{$activity->slogan}}</a></h3>
+							<p><a href="{{Request::root()}}/parques/{{$activity->name}}">{{$activity->location}}</a></p>
 						</li>
 						@endforeach
 						

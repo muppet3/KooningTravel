@@ -32,7 +32,7 @@
 			</div>
 		</form>
 	</div>
-	<img class="viaja" src="/img/Autos/ofertas-auto.jpg" alt="Viaja comodo, viaja seguro, viaja con nosotros." />
+	<img class="viaja" src="/img/complements/autos/ofertas-auto.jpg" alt="Viaja comodo, viaja seguro, viaja con nosotros." />
 </div>
 @stop
 @section('content')
@@ -42,33 +42,33 @@
 			<h2 class="h2">Complementa tu viaje!</h2>
 			<div class="carousel-wrapper">
 				<div class="carousel center">
-					<ul class="ticket-list clear">
-						<li class="item">
-							<div class="image-wrapp"><a href="/Parques/Xcaret"><img src="/img/tour/parques/Experiencias-Xcaret/Xcaret/xcaret.png" alt=" " /></a></div>
-							<h3><a href="/Parques/Xcaret">¡Xcaret, Orgullo de M&eacute;xico!</a></h3>
-							<p><a href="/Parques/Xcaret">Xcaret, Riviera Maya Quintana Roo, M&eacute;xico.</a></p>
-						</li>
-						<li class="item">
-							<div class="image-wrapp"><a href="/Parques/Royal-Garrafon"><img src="/img/tour/parques/Dolphin-Discovery/RoyalGarrafon.png" alt=" " /></a></div>
-							<h3><a href="/Parques/Royal-Garrafon">¡Las mejores vacaciones en Isla Mujeres!</a></h3>
-							<p><a href="/Parques/Royal-Garrafon">Royal Garrafon, Isla Mujeres Quintana Roo M&eacute;xico.</a></p>
-						</li>
-						<li class="item">
-							<div class="image-wrapp"><a href="/Tours/Chichen-Itza"><img src="/img/tour/parques/Mayaland-Tours/ChichenItzaCancun.jpg" alt="Chichen Itza" /></a></div>
-							<h3><a href="/Tours/Chichen-Itza"¡>Chichén Itzá Tour con Continuación a Cancún!</a></h3>
-							<p><a href="/Tours/Chichen-Itza">Chichen Itza, Yucatan, M&eacute;xico.</a></p>
-						</li>
-						<li class="item">
-							<div class="image-wrapp"><a href="/Tours/Catamaran"><img src="/img/tour/parques/Catamaran-Tours/Cata.png" alt="Catamaran" /></a></div>
-							<h3><a href="/Tours/Catamaran">¡Disfruta del mar caribe con privacidad y comodidad!</a></h3>
-							<p><a href="/Tours/Catamaran">Riviera Maya, Quintana Roo, M&eacute;xico.</a></p>
-						</li>
-						<li class="item">
-							<div class="image-wrapp"><a href="/Parques/Rio-Secreto"><img src="/img/tour/parques/Rio-Secreto/RioSecreto.png" alt=" " /></a></div>
-							<h3><a href="/Parques/Rio-Secreto">¡Un m&aacute;gico tesoro en la Riviera Maya!</a></h3>
-							<p><a href="/Parques/Rio-Secreto">Solo entrada, Riviera Maya Quintana Roo M&eacute;xico.</a></p>
-						</li>
-					</ul>
+				<ul class="ticket-list clear">
+					<li class="item">
+						<div class="image-wrapp"><a href="/Parques/Xcaret"><img src="/img/activity/experiencias-xcaret/xcaret.png" alt=" " /></a></div>
+						<h3><a href="/Parques/Xcaret">¡Xcaret, Orgullo de M&eacute;xico!</a></h3>
+						<p><a href="/Parques/Xcaret">Xcaret, Riviera Maya Quintana Roo, M&eacute;xico.</a></p>
+					</li>
+					<li class="item">
+						<div class="image-wrapp"><a href="/Parques/Royal-Garrafon"><img src="/img/activity/dolphin-discovery/Royal-Garrafon.png" alt=" " /></a></div>
+						<h3><a href="/Parques/Royal-Garrafon">¡Las mejores vacaciones en Isla Mujeres!</a></h3>
+						<p><a href="/Parques/Royal-Garrafon">Royal Garrafon, Isla Mujeres Quintana Roo M&eacute;xico.</a></p>
+					</li>
+					<li class="item">
+						<div class="image-wrapp"><a href="/Tours/Chichen-Itza"><img src="/img/activity/mayaland-tours/ChichenItzaCancun.jpg" alt="Chichen Itza" /></a></div>
+						<h3><a href="/Tours/Chichen-Itza"¡>Chichén Itzá Tour con Continuación a Cancún!</a></h3>
+						<p><a href="/Tours/Chichen-Itza">Chichen Itza, Yucatan, M&eacute;xico.</a></p>
+					</li>
+					<li class="item">
+						<div class="image-wrapp"><a href="/Tours/Catamaran"><img src="/img/activity/catamaran-tours/Cata.png" alt="Catamaran" /></a></div>
+						<h3><a href="/Tours/Catamaran">¡Disfruta del mar caribe con privacidad y comodidad!</a></h3>
+						<p><a href="/Tours/Catamaran">Riviera Maya, Quintana Roo, M&eacute;xico.</a></p>
+					</li>
+					<li class="item">
+						<div class="image-wrapp"><a href="/Parques/Rio-Secreto"><img src="/img/activity/rio-secreto/Rio-Secreto.png" alt=" " /></a></div>
+						<h3><a href="/Parques/Rio-Secreto">¡Un m&aacute;gico tesoro en la Riviera Maya!</a></h3>
+						<p><a href="/Parques/Rio-Secreto">Solo entrada, Riviera Maya Quintana Roo M&eacute;xico.</a></p>
+					</li>
+				</ul>
 				</div>
 				<a class="carousel-prev disabled"><span class="ir"></span></a> <a class="carousel-next"><span class="ir"></span></a>
 			</div>
@@ -86,4 +86,9 @@
 	</div>
 	<p class="pp" ></p>
 </div>
+
+
+<script language="javascript" type="text/javascript" src="/js/tourparque.js" ></script>
+
+
 @stop
