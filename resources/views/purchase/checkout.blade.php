@@ -64,8 +64,10 @@
                     <p><strong> Hotel: </strong> {{$item['destiny']}} </p>
                     <p><strong> Fecha LLegada:</strong> {{$item['checkin']}}</p>
                     <p><strong> Hora LLegada:</strong> {{$item['timein']}}</p>
-                    <p><strong> Fecha Salida:</strong> {{$item['checkout']}}</p>
-                    <p><strong> Hora Salida</strong> {{$item['timeout']}}</p>
+                    @isset ($item['checkout'])
+                      <p><strong> Fecha Salida:</strong> {{$item['checkout']}}</p>
+                      <p><strong> Hora Salida</strong> {{$item['timeout']}}</p>
+                    @endisset
                     <p><strong> Servicios:</strong> {{$item['service']}}</p>
                     <p><strong> Camioneta tipo:</strong> {{$item['transport']}}</p>
                   </div>
