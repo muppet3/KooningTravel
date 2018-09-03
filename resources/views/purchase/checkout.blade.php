@@ -72,7 +72,7 @@
                   <div class="bloque">
                     <p class="price-r" >
                       <strong class="price-roms" >MXN ${{number_format($item['total'])}}</strong>
-                      <a class="del-room" ><span class="del-icon"></span></a>
+                      <a class="del-room" href="{{Request::root()}}/eliminar/{{$key}}"  ><span class="del-icon"></span></a>
                     </p>
                   </div>
                 </div>
