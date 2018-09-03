@@ -16,7 +16,6 @@ class PurchaseController extends Controller
         $data['tours']="";
         $data['traslados']="";
         $data['ofertas']="";  
-         $data['background']=" height: 100px; background-image: url(https://kooningtravel.com/img/Home/fondos/fondoParque.png); ";
     	return view('purchase/thank',$data);
     }
 
@@ -98,7 +97,6 @@ class PurchaseController extends Controller
   		return redirect('checkout');
   	}
   	public function checkout(){
-  		$data['background']=" height: 100px; background-image: url(https://kooningtravel.com/img/Home/fondos/FondoTours.jpg); ";
   		$cart=\Session::get('cart');
   		  
   		$total=0;
@@ -119,7 +117,6 @@ class PurchaseController extends Controller
   		return view('purchase/checkout',$data); 
   	}
   	public function email(Request $res){
-		$data['background']=" height: 100px; background-image: url(https://kooningtravel.com/img/Home/fondos/FondoTours.jpg); ";
   		$cart=\Session::get('cart');
 
   		$total=0;
@@ -151,6 +148,7 @@ class PurchaseController extends Controller
 			$purchase->save();
 		}
 		if(isset($traslados)){
+
 			$llenados['Aerolinea']=$res->input('Aerolinea');
 			$llenados['NumVuelo']=$res->input('NumVuelo');
 		}
