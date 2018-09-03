@@ -20,7 +20,6 @@
       @empty ($cart)
       @else    
         @foreach ($cart as $key =>$item)
-        {{count($cart)}}
           @switch($item['type'])
               @case('hotel')
                 <div class="small hotel">
@@ -186,7 +185,6 @@
   </div>
   <div class="col-md-9" id="step-2" >
     <!-- aqui empiza -->
-    
     <form class="form-pay-reservation" action="https://kooningtravel.com/reservacion/pagar" method="POST">
       <div id="radCardPayments" class="paymentType" >
         <ul id="rad-payment-form">
