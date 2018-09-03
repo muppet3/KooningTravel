@@ -106,7 +106,7 @@
     <div class="extras" >
       <div class="row">
         <h4 class="producto">Los mejores parques tematicos KoonningTravel!</h4>
-        <a class="top" target="_blank" href="/Parques/Xcaret">
+        <a class="top" target="_blank" href="/parques/Xcaret">
         <div class="conte">
           <img src="/img/complements/extras/xcaretl.png" alt="Xcaret, xperiencias,parque" class="img-responsive center-block" >
           <div class="card-hotel">
@@ -114,13 +114,13 @@
             <p class="card-txt-hotel">Entradas Xcaret!</p>
             <figure class="img-hotel-disney">
               <img src="/img/complements/extras/xcaret.png" alt="xcaret, parques, xperiencias" class="img-w"></figure>
-            <a href="/Parques/Xcaret" target="_blank">
+            <a href="/parques/Xcaret" target="_blank">
             <div class="card-precios">
               <span class="txt-paquete">Entrada Adulto</span>
               <p class="txt-precio">desde: <span class="precio">1,874.81MXN</span></p>
             </div>
             </a>
-            <a href="/Parques/Xcaret" target="_blank">
+            <a href="/parques/Xcaret" target="_blank">
               <div class="card-precios">
                 <span class="txt-paquete">Entrada Niño</span>
                 <p class="txt-precio">desde: <span class="precio">$937.31MXN</span></p>
@@ -154,7 +154,7 @@
           </div>
         </div>
         </a>
-        <a class="top" target="_blank" href="/Parques/Cirque-Soleil">
+        <a class="top" target="_blank" href="/parques/Cirque-Soleil">
         <div class="conte">
           <img src="/img/complements/extras/joya.png" alt="soleil, parque, circus" class="img-responsive center-block" >
           <div class="card-hotel">
@@ -162,13 +162,13 @@
             <p class="card-txt-hotel">Entradas Cirque Soleil!</p>
             <figure class="img-hotel-disney">
               <img src="/img/complements/extras/lajoya.png" alt="Cirque Soleil, parques, parque" class="img-w"></figure>
-            <a target="_blank" href="/Parques/Cirque-Soleil" target="_blank">
+            <a target="_blank" href="/parques/Cirque-Soleil" target="_blank">
             <div class="card-precios">
               <span class="txt-paquete">Entrada Adulto</span>
               <p class="txt-precio">desde: <span class="precio">$1,463.00MXN</span></p>
             </div>
             </a>
-            <a href="/Parques/Cirque-Soleil" target="_blank">
+            <a href="/parques/Cirque-Soleil" target="_blank">
               <div class="card-precios">
                 <span class="txt-paquete">Entrada Niño</span>
                 <p class="txt-precio">desde: <span class="precio">$1,463.00MXN</span></p>
