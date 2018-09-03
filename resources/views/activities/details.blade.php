@@ -225,7 +225,7 @@
           <li class="item">
             <div class="image-wrapp">
               <a href="{{Request::root()}}/{{strtolower($activity->category->type)}}/{{$Activity->name}}">
-              	<img src="/img/activity/{{str_replace(' ', '-', strtolower($categoria->name))}}/{{$activity->name}}" alt=" " /></a>
+              	<img src="/img/activity/{{str_replace(' ', '-', strtolower($Activity->category->name))}}/{{$Activity->name}}.png" alt=" " /></a>
             </div>
             <h3>
               <a href="{{Request::root()}}/tours/{{$activity->name}}">{{$Activity->slogan}}</a>
