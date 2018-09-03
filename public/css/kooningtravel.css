@@ -143,31 +143,31 @@ html body .body-cart .col-md-9 .form-pay-reservation fieldset { display: inline-
 /*Formulario de carrito de compras*/
 html body .body-cart .col-md-3 .medium { text-align: center; float: left; display: inline-block; width: 100%; margin: 20px 0; background: url("/img/complements/extras/line.png") repeat; -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.2); -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.2); box-shadow: 0 2px 5px 0 rgba(0,0,0,.2); border: 1px solid #a12f23; border-bottom: 10px solid #a12f23; }
 html body .body-cart .col-md-3 .top-car { text-align: center; padding: 5px 0 5px 0!important; background: #c0392b; border-bottom: 10px solid #a12f23; width: 100%; }
-html body .body-cart .col-md-3 .medium #contactform { display: inline-block; float: none; text-align: left; width: 90%; margin-top: 10px; font-size: 14px; color: #888; }
-html body .body-cart .col-md-3 .medium #contactform .title-cart { color: #888; margin: 0 0 10px; font-size: 14px; width: 100%; text-align: left; font-weight: 300; }
-html body .body-cart .col-md-3 .medium #contactform .form-row { width: 100%; padding: 0px; margin: 0px 0px 10px 0px; }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito { margin-bottom: 10px; width: 100%; }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito .main-title{ color: #888; margin: 0 0 2px;font-size: 14px; text-align: left; font-weight: 300; width: 100%; }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito .form-control{ color: #555; font-size: 14px; width: 100%; height: 34px; padding:0px 4px; background-color: #fff; border: 1px solid #ccc; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 1px rgba(0,0,0,.075); -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s; -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito .form-control:focus { border-color: #66afe9; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6); box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6) }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito .form-control::-moz-placeholder { color:#999; opacity:1; }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito .form-control:-ms-input-placeholder { color:#999; }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito .form-control::-webkit-input-placeholder { color:#999; }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #nombre, html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #apellidos{width:48%;  margin-bottom: 15px; }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #correo, html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #telefono{ margin-bottom: 15px; }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #ciudad, html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #estado, html body .body-cart .col-md-3 .medium #contactform .form-row .marquito  #lname1, html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #name2 { width: 48%; margin-bottom: 15px; }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #pais, html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #zip{ margin:0px; width: 46%;  }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #estado , html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #zip, html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #lname3, html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #apellidos, html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #name2{ float: right; }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #pais {  cursor: pointer; }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #address{ resize: none; height:80px; }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #name1, html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #name2, html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #lname1, html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #lname2{ margin-bottom: 10px;  } 
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #lname2{ margin:0px; }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #name3, html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #lname3{ width: 48%; }
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito #ok{ cursor: pointer; margin: 0px 3px;}
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito .terminos{float: left;width: auto;}
-html body .body-cart .col-md-3 .medium #contactform .form-row .marquito .terminos a{margin: 0px 3px;color: #CA5C04;float: right;text-decoration: underline;}
-html body .body-cart .col-md-3 .medium #contactform .form-row #btn_pagar{ cursor: pointer; font-weight: 900; border: 0px; padding: 5px 10px; font-size: 12px; float: right; border-radius: 3px;  background: #002e82; width:100px; color: #fff; }
-html body .body-cart .col-md-3 .medium #contactform .form-row .price{border-top: 1px dashed #888;width: 100%;text-align: center;height: 100%;font-size: 20px;font-family: Roboto,sans-serif;color: #888;float: left;padding-top: 10px;margin: 0px;}
+html body .body-cart .col-md-3 .medium .needs-validation { display: inline-block; float: none; text-align: left; width: 90%; margin-top: 10px; font-size: 14px; color: #888; }
+html body .body-cart .col-md-3 .medium .needs-validation .title-cart { color: #888; margin: 0 0 10px; font-size: 14px; width: 100%; text-align: left; font-weight: 300; }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row { width: 100%; padding: 0px; margin: 0px 0px 10px 0px; }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito { margin-bottom: 10px; width: 100%; }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito .main-title{ color: #888; margin: 0 0 2px;font-size: 14px; text-align: left; font-weight: 300; width: 100%; }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito .form-control{ color: #555; font-size: 14px; width: 100%; height: 34px; padding:0px 4px; background-color: #fff; border: 1px solid #ccc; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 1px rgba(0,0,0,.075); -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s; -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito .form-control:focus { border-color: #66afe9; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6); box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6) }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito .form-control::-moz-placeholder { color:#999; opacity:1; }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito .form-control:-ms-input-placeholder { color:#999; }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito .form-control::-webkit-input-placeholder { color:#999; }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #nombre, html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #apellidos{width:48%;  margin-bottom: 15px; }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #correo, html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #telefono{ margin-bottom: 15px; }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #ciudad, html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #estado, html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito  #lname1, html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #name2 { width: 48%; margin-bottom: 15px; }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #pais, html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #zip{ margin:0px; width: 46%;  }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #estado , html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #zip, html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #lname3, html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #apellidos, html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #name2{ float: right; }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #pais {  cursor: pointer; }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #address{ resize: none; height:80px; }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #name1, html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #name2, html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #lname1, html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #lname2{ margin-bottom: 10px;  } 
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #lname2{ margin:0px; }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #name3, html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #lname3{ width: 48%; }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito #ok{ cursor: pointer; margin: 0px 3px;}
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito .terminos{float: left;width: auto;}
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .marquito .terminos a{margin: 0px 3px;color: #CA5C04;float: right;text-decoration: underline;}
+html body .body-cart .col-md-3 .medium .needs-validation .form-row #btn_pagar{ cursor: pointer; font-weight: 900; border: 0px; padding: 5px 10px; font-size: 12px; float: right; border-radius: 3px;  background: #002e82; width:100px; color: #fff; }
+html body .body-cart .col-md-3 .medium .needs-validation .form-row .price{border-top: 1px dashed #888;width: 100%;text-align: center;height: 100%;font-size: 20px;font-family: Roboto,sans-serif;color: #888;float: left;padding-top: 10px;margin: 0px;}
 html body .body-cart .col-md-3 .medium .top-car h2, html body .body-cart .col-md-3 .medium .top-car h3 { font-weight: 700; color: #FFF; font-size: 31px; margin:10px 0px 0px 0px; width: 100%; text-align: center; }
 html body .body-cart .col-md-3 h3 { font-size: 20px!important; }
 html body .body-cart .col-md-9 .extras { float: left; width: 100%; background:url("/img/complements/extras/line.png") repeat; }

@@ -307,7 +307,7 @@
         <h2>Reservacion</h2>
         <h3>Datos de la Reserva </h3>
       </div>
-      <form name="contactform" id="contactform" class="needs-validation" action="" onsubmit="" method="post">
+      <form  class="needs-validation" action="" method="post">
         @csrf
         <div style="display: none;" >
           <input type="hidden" name="name2" />
@@ -410,7 +410,7 @@
         </div>
         <div class="form-row">
           <div class="marquito">
-            <input type="text" class="form-control" autocomplete="on" name="telefono" id="telefono" placeholder="Numero Telefonico" required />
+            <input type="text" class="form-control" maxlength="10" autocomplete="on" name="telefono" id="telefono" placeholder="Numero Telefonico" required />
             <textarea name="address" id="address" type="text" placeholder="Direccion..." class="form-control" required=""></textarea>
           </div>
         </div>
