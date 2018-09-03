@@ -52,7 +52,7 @@ class ActivitiesController extends Controller
             $data['tours']="class=active";
         }
         $data['activity']=$activity;
-        $data['background']='height: 556px; background-image: url(https://kooningtravel.com/img/tour/parques/Experiencias-Xcaret/Xel-ha/Xel-ha.jpg)';
+        $data['background']='height: 556px; background-image: url(/../img/activity/'.str_replace(' ', '-', strtolower($activity->category->name)).'/'.strtolower($activity->name).'/'.strtolower($activity->name).'.jpg)';
         //dd($activity->category->name);
         
         return view('activities/details',$data);

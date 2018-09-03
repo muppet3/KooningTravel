@@ -108,7 +108,7 @@
       </div>
     </div>
     <div class="recent-searchs mh clear menut2">
-      <img src="/img/activity/{{$activity->name}}/path.png" alt="" width="306" height="39" usemap="#Map"/>
+      <img src="/img/activity/{{strtolower($activity->category->type)}}/{{$activity->name}}/path.png" alt="" width="306" height="39" usemap="#Map"/>
       <map name="Map">
         <area class="cld1" shape="rect" coords="16,9,112,33" href="/">
         <area class="cld2" shape="rect" coords="136,8,204,33" href="/Parques">
@@ -134,8 +134,8 @@
 
 	@foreach($activity->tickets as $ticket)
 	        <li class="item hotel">
-	          <a data-fancybox data-type='iframe' data-src='https://kooningtravel.com/img/tour/terminosycondiciones.pdf' class="thumb"  href='javascript:void(0);'>
-	            <div class="thumb-images"><img src="/img/activity/{{$activity->name}}/" alt="el parque"></div>
+	          <a data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ', '-', strtolower($ticket->name))}}.pdf' class="thumb"  href='javascript:void(0);'>
+	            <div class="thumb-images"><img src="/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{$ticket->image}}" alt="el parque"></div>
 	            <div class="info">
 	              <h3 class="title">{{$ticket->name}}<br>
 	                <span class="category category-4CAT"><span class="category-name"></span></span></h3>
@@ -144,14 +144,14 @@
 	          <a class="txtt" data-fancybox data-type='iframe' data-src='https://kooningtravel.com/img/tour/EntradaXcaretParque.pdf' href='javascript:void(0);' >
 	            <p class="hotel-description">{{$ticket->description}}</p>
 	          </a>
-	          <a data-fancybox data-type='iframe' data-src='https://kooningtravel.com/img/tour/{{$ticket->content}}' class="pdf"  href='javascript:void(0);' >Ver mas...</a>
+	          <a data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ','-',$ticket->name)}}.pdf' class="pdf"  href='javascript:void(0);' >Ver mas...</a>
 	        </li>
 		@endforeach
-
-        <li class="item hotel">
+@if (strcmp(str_replace(' ', '-', strtolower($activity->category->name)),'experiencias-xcaret')==0)
+          <li class="item hotel">
           <a target="_blank" class="thumb" href="https://kooningtravel.com/hotels/5051/hotel-xcaret-mexico?d=5051&sd=2018-05-01&ed=2018-05-05&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0&r4a=0&r4k=0&r4k1a=0&r4k2a=0&r4k3a=0&r5a=0&r5k=0&r5k1a=0&r5k2a=0&r5k3a=0">
             <div class="thumb-images">
-              <img src="/img/tour/parques/Experiencias-Xcaret/Xcaret/Xcaret3.png" alt="Hotel Xcaret">
+              <img src="/img/activity/experiencias-xcaret/hotel.png" alt="Hotel Xcaret">
             </div>
             <div class="info">
               <h3 class="title">Hotel Xcaret<br>
@@ -163,6 +163,8 @@
           </a>
           <p class="hotel-description">Hotel Xcaret M&eacute;xico es un destino enmarcado por la majestuosidad natural de la Riviera Maya y un dise&ntilde;o arquitect&oacute;nico que se sincroniza en armon&iacute;a con los elementos de esta tierra.</p>
         </li>
+@endif
+        
 
 
 
@@ -185,13 +187,13 @@
               <div class="h1">Parque el parque!</div>
               <h3 class="h3">Mapa y descripci&oacute;n parque {{$activity->name}}!</h3>
               <a  href="javascript:void(0);">
-                <img alt="Mapa del parque el parque!" class="left" src="{{$activity->image}}" style="margin-top: 0px; max-height: 250px;" />
+                <img alt="Mapa del parque el parque!" class="left" src="/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/mapa.png" style="margin-top: 0px; max-height: 250px;" />
               </a>
               <p>{!!$activity->description!!}</p>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/8ofAxR3v3oU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
             <div id="tabs-2">
-              <iframe src="/img/activity/{{$activity->name}}/terminosycondiciones.pdf" width="750" height="800" style="border:none;"></iframe>
+              <iframe src="/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/terminosycondiciones.pdf" width="750" height="800" style="border:none;"></iframe>
             </div>
           </div>
         </div>
@@ -223,13 +225,13 @@
           <li class="item">
             <div class="image-wrapp">
               <a href="{{Request::root()}}/{{strtolower($activity->category->type)}}/{{$Activity->name}}">
-              	<img src="{{$Activity->image}}" alt=" " /></a>
+              	<img src="/img/activity/{{str_replace(' ', '-', strtolower($categoria->name))}}/{{$activity->name}}" alt=" " /></a>
             </div>
             <h3>
-              <a href="/Parques/Xcaret">{{$Activity->slogan}}</a>
+              <a href="{{Request::root()}}/tours/{{$activity->name}}">{{$Activity->slogan}}</a>
             </h3>
             <p>
-              <a href="/Parques/Xcaret">{{$Activity->location}}</a>
+              <a href="{{Request::root()}}/tours/{{$activity->name}}">{{$Activity->location}}</a>
             </p>
           </li>
 		@endforeach
