@@ -104,7 +104,6 @@
           @endswitch
         @endforeach
       @endempty
-     
     </div>
     <div class="extras" >
       <div class="row">
@@ -310,7 +309,8 @@
         <h2>Reservacion</h2>
         <h3>Datos de la Reserva </h3>
       </div>
-      <form name="contactform" id="contactform" class="needs-validation" action="/hotels/confirm" onsubmit="" method="post">
+      <form name="contactform" id="contactform" class="needs-validation" action="" onsubmit="" method="post">
+        @csrf
         <div style="display: none;" >
           <input type="hidden" name="name2" />
           <input type="hidden" name="Aerolinea" />
@@ -449,7 +449,7 @@
       </div>
       <form name="contactform" id="contactform" class="needs-validation" action="/hotels/confirm" onsubmit="" method="post">
         <div class="form-row">
-          <label class="price" >MXN $6,524</label>
+          <label class="price" >MXN ${{number_format($total)}}</label>
         </div>
         <div class="form-row">
           <input  type="submit" class="pagar" id="pay-cart" value="Pagar" >
