@@ -108,7 +108,7 @@
       </div>
     </div>
     <div class="recent-searchs mh clear menut2">
-      <img src="/img/activity/{{strtolower($activity->category->type)}}/{{$activity->name}}/path.png" alt="" width="306" height="39" usemap="#Map"/>
+      <img src="/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/path.png" alt="" width="306" height="39" usemap="#Map"/>
       <map name="Map">
         <area class="cld1" shape="rect" coords="16,9,112,33" href="/">
         <area class="cld2" shape="rect" coords="136,8,204,33" href="/Parques">
@@ -134,17 +134,17 @@
 
 	@foreach($activity->tickets as $ticket)
 	        <li class="item hotel">
-	          <a data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ', '-', strtolower($ticket->name))}}.pdf' class="thumb"  href='javascript:void(0);'>
+	          <a data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ', '-', strtolower($ticket->name))}}.pdf' class="thumb cero"  href='javascript:void(0);'>
 	            <div class="thumb-images"><img src="/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{$ticket->image}}" alt="el parque"></div>
 	            <div class="info">
 	              <h3 class="title">{{$ticket->name}}<br>
 	                <span class="category category-4CAT"><span class="category-name"></span></span></h3>
 	            </div>
 	          </a>
-	          <a class="txtt" data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ', '-', strtolower($ticket->name))}}.pdf' href='javascript:void(0);' >
+	          <a class="txtt" data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ','-',$ticket->name)}}.pdf uno' href='javascript:void(0);' >
 	            <p class="hotel-description">{{$ticket->description}}</p>
 	          </a>
-	          <a data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ','-',$ticket->name)}}.pdf' class="pdf"  href='javascript:void(0);' >Ver mas...</a>
+	          <a data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ','-',$ticket->name)}}.pdf' class="pdf dos"  href='javascript:void(0);' >Ver mas...</a>
 	        </li>
 		@endforeach
 @if (strcmp(str_replace(' ', '-', strtolower($activity->category->name)),'experiencias-xcaret')==0)
