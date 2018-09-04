@@ -141,7 +141,7 @@
 	                <span class="category category-4CAT"><span class="category-name"></span></span></h3>
 	            </div>
 	          </a>
-	          <a class="txtt" data-fancybox data-type='iframe' data-src='https://kooningtravel.com/img/tour/EntradaXcaretParque.pdf' href='javascript:void(0);' >
+	          <a class="txtt" data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ', '-', strtolower($ticket->name))}}.pdf' href='javascript:void(0);' >
 	            <p class="hotel-description">{{$ticket->description}}</p>
 	          </a>
 	          <a data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ','-',$ticket->name)}}.pdf' class="pdf"  href='javascript:void(0);' >Ver mas...</a>
