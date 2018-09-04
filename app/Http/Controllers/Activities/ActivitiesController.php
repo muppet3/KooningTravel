@@ -89,8 +89,8 @@ class ActivitiesController extends Controller
     public function price(Request $res){
         $ticket = Ticket::where('name',$res->entrada)->first();
         $precios = array(
-            'Adult'=>"$ ".number_format($ticket->adult,2),
-            'Child'=>"$ ".number_format($ticket->child,2),
+            'Adult'=>number_format($ticket->adult,2),
+            'Child'=>number_format($ticket->child,2),
         );
         echo json_encode($precios);
     }

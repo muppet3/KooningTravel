@@ -22,8 +22,8 @@ class CreateSegmentsTable extends Migration
             $table->string('type',45);
             $table->timestamps();
 
-            $table->unsignedInteger('blogs_id');
-            $table->foreign('blogs_id')->references('id')->on('blogs');
+            $table->unsignedInteger('blog_id');
+            $table->foreign('blog_id')->references('id')->on('blogs');
         });
     }
 

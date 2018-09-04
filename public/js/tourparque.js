@@ -63,8 +63,9 @@ $('select[name=entrada]').change(function(){
 				data: tipoentrada,
 				success: function (response) {
 					console.log(response);
-       				$(".adul").text(response.Adult);
-					$(".nin").text(response.Child);
+					var response =JSON.parse(response);
+       				$("#adulto").text(response.Adult);
+					$("#menor").text(response.Child);
     			},
     			error: function (data, textStatus, errorThrown) {
         			console.log(data);

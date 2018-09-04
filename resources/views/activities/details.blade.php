@@ -24,7 +24,7 @@
           </select>
         </div>
         <div class="date m" >
-          <input type="text" name="fecha" name="cal" id="cal" placeholder="tu visita" value="" class="datepicker to_datepicker cal" />
+          <input type="text" name="fecha" name="cal" autocomplete="off" id="cal" placeholder="tu visita" value="" class="datepicker to_datepicker cal" />
         </div>
         <div class="date right m" >
           <select name="horario" class="cant ">
@@ -98,11 +98,11 @@
         <div class="hreft1">
           <div class="monya">
             <span class="ad" >Precio Adulto</span>
-            <p class="cost adul">$ 5464</p>
+            <p class="cost adul" id="adulto">$ {{number_format($activity->tickets[0]->adult,2)}}</p>
           </div>
           <div style="border-left:1px solid #FFF;" class="monya">
             <span class="ad">Precio Ni&ntilde;o</span>
-            <p class="cost nin">$ 8787</p>
+            <p class="cost nin" id="menor">$ {{number_format($activity->tickets[0]->child,2)}}</p>
           </div>
         </div>
       </div>
