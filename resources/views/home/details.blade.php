@@ -33,13 +33,23 @@
 		</div>
 		<div class="inline-search">
 			<div class="input-style date-from noselect">
-				<div class="date-wrapper from_datepicker-wrapper"> <span class="aa"><?php ////echo $dia1; ?></span> <span class="ee"> <span class="ii"><?php //echo $mes1; ?></span> <span class="uu"><?php //echo $semana; ?></span> </span> </div>
-				<input type="text" name="sd" id="from_hotel_search" class="datepicker from_datepicker" value="<?php ////echo $entradad; ?>" placeholder="Del día ..." readonly  autocomplete="off" />
-			</div>
-			<div class="text date-nights noselect"> <span style="height:46px;" class="number-nights"><?php ////echo $interval->d; ?></span> </div>
+				<div class="date-wrapper from_datepicker-wrapper">  <span class="aa a1">{{$fechainicial->day}}</span>
+              <span class="ee">
+                <span class="ii">{{$fechainicial->NameMoth($fechainicial->month)}}</span>
+                <span class="uu">{{$fechainicial->DayWeek($fechainicial->dayOfWeek)}}</span>
+              </span> </div>
+				<input type="text" name="sd" id="from_hotel_search" class="datepicker from_datepicker" value="{{$fechainicial->toDateString()}}" placeholder="Del día ..." readonly  autocomplete="off" />
+			</div><div class="text date-nights noselect">
+            <span class="number-nights">1</span>
+          </div>
 			<div class="input-style date-to noselect">
-				<div class="date-wrapper to_datepicker-wrapper" id="to_datepicker-wrapper"> <span class="aa"><?php ////echo $dia2; ?></span> <span class="ee"> <span class="ii"><?php //echo $mes2; ?></span> <span class="uu"><?php ////echo $semana2; ?></span> </span> </div>
-				<input type="text" name="ed" id="to_hotel_search" class="datepicker to_datepicker" value="<?php //echo $salidad; ?>" placeholder="al día ..." readonly autocomplete="off" />
+				<div class="date-wrapper to_datepicker-wrapper" id="to_datepicker-wrapper"> 
+					<span class="aa a2">{{$fechafinal->day}}</span>
+              <span class="ee">
+                <span class="ii">{{$fechafinal->NameMoth($fechafinal->month)}}</span>
+                <span class="uu">{{$fechafinal->DayWeek($fechafinal->dayOfWeek)}}</span>
+              </span> </div>
+				<input type="text" name="ed" id="to_hotel_search" class="datepicker to_datepicker" value="{{$fechafinal->toDateString()}}" placeholder="al día ..." readonly autocomplete="off" />
 			</div>
 		</div>
 		<div class="inline-block">
