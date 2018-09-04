@@ -21,7 +21,7 @@
 body { margin: 0px; padding: 0px; text-align: center; }
 .head * { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box }
 .head div, .head span, .head p, .head .tour li a, .head input, .head form, .head img, .head label, .head ul, .head li { display: inline-block; float: left; margin: 0px; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; }
-.head { display:block; height: auto; width: 100%; margin: 0px auto; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; text-align: center; }
+.head {  width: 100%; margin: 0px auto; padding: 0px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; text-align: center; }
 a:link, a:visited { text-decoration: none; }
 
 

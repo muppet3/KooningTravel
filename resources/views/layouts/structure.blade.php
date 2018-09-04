@@ -150,7 +150,7 @@
   @isset ($background)
       <div class="head other" style="{!! $background !!}">
   @else
-    <div class="head other" style="background:#1d262c;">
+    <div class="head other" style="background:#1d262c; height: 100px; ">
   @endisset
       
         <div class="header" >
