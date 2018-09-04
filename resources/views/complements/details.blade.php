@@ -29,9 +29,10 @@ fjs.parentNode.insertBefore(js, fjs);
         
      
       <h2 class="subt col-md-8">{{$segment->subtitle}}</h2>
-      <img class="subimg img-fluid centraimagen" src="/img/blog/grandes/seadust.png" alt="Seadust Cancun Family Resort" />
+      <!--<img class="subimg img-fluid centraimagen" src="/img/blog/grandes/seadust.png" alt="Seadust Cancun Family Resort" />-->
+      
       <ol class="col-md-11" >
-        {!!$segment->description!!}
+        {!! $segment->description!!}
       </ol>
       @endforeach
     </div>
