@@ -331,8 +331,8 @@ class HomeController extends Controller
         return view('home/search',$data);
     }
     public function details($id, $hotel){
-        $data['checkin']=new Carbon($_GET['sd']);
-        $data['checkout']=new Carbon($_GET['ed']);
+        $data['fechainicial']=new Carbon($_GET['sd']);
+        $data['fechafinal']=new Carbon($_GET['ed']);
         $data['background']="height: 270px; background-image: url(https://kooningtravel.com/img/Home/fondos/FondoHoteles.png";
         $data['hotel']=$hotel;
         $errores= $this->validationrooms();
