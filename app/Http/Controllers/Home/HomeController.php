@@ -496,6 +496,7 @@ class HomeController extends Controller
         $valores=\Session::get('query');
         $valores['h']=$id;
         $query= new Hoteldo('GetQuoteHotels',$valores);
+        \Session::put('query',$valores);
        
         $query->setCached(false);
         $query->exec();
@@ -522,6 +523,7 @@ class HomeController extends Controller
         $room->NameHotel=
         
         $item['type']="hotel";
+        $item['room_id']=$room_id;
         $item['name']=(string)$query->Hotels->Hotel->Name;
         $item['location']=$query->Hotels->Hotel->CityName.", ".$query->Hotels->Hotel->CountryName;
         $sd=$this->formatofechas($valores['sd']);
@@ -531,6 +533,7 @@ class HomeController extends Controller
         $item['adults']=$adultos=$valores['r1a']+$valores['r2a']+$valores['r3a'];
         $item['children']=$menores=$valores['r1k']+$valores['r2k']+$valores['r2k'];
         $item['total']="".$precio=$room->MealPlans->MealPlan->AgencyPublic->AgencyPublic;
+        $item['hotel']=$valores;
         $carrito=\Session::get('cart');
         
         if(is_null($carrito) || empty($carrito)){

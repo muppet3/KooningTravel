@@ -36,6 +36,7 @@ class ComplementsController extends Controller
         }
         
         $item['type']="traslado";
+        $item['city']=$res->input('destino');
         $item['destiny']=$res->input('hotel');
         $item['checkin']=$res->input('sd');
         $item['timein']=$res->input('timein');

@@ -17,8 +17,8 @@ class CreateBuyHotelsTable extends Migration
             $table->increments('id');
             $table->longText('book');
             $table->longText('rate');
-            $table->longText('answer');
-            $table->longText('booking');
+            $table->longText('answer')->nullable();
+            $table->longText('booking')->nullable();
             $table->unsignedInteger('purchase_id');
             $table->timestamps();
             $table->foreign('purchase_id')->references('id')->on('purchases');

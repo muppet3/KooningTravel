@@ -7,7 +7,7 @@
       <div style="background:{{$activity->background}}" class="infosup" >
         <h3>¡RESERVA HOY!</h3>
       </div>
-      <form class="fxcaret" id="parquess" action="javascript:void(0);" method="post" >
+      <form class="fxcaret" id="parquess" action="" method="post" >
         @csrf
         
         <div style="" class="Parquex" >

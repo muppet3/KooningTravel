@@ -19,7 +19,6 @@ class CreateActivitiesTable extends Migration
             $table->longText('description');
             $table->string('map',100);
             $table->string('slogan',100);
-            $table->string('image',100);
             $table->string('location',100);
             $table->string('coordinates',300);
             $table->string('background',10);

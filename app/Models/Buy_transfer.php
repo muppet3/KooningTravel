@@ -16,6 +16,7 @@ class Buy_transfer extends Model
     	'hotel',
     	'check_in',
     	'check_out',
+        'purchases_id',
     ];
     public function transfer(){
     	return $this->belongsTo(Transfer::class);

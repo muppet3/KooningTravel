@@ -184,7 +184,7 @@
   </div>
   <div class="col-md-9" id="step-2" >
     <!-- aqui empiza -->
-    <form class="form-pay-reservation" action="https://kooningtravel.com/reservacion/pagar" method="POST">
+    <form class="form-pay-reservation" action="/purchase" method="POST">
       <div id="radCardPayments" class="paymentType" >
         <ul id="rad-payment-form">
           <li class="selected allc">
@@ -416,11 +416,13 @@
         </div>
         @isset ($hotel)
           <div class="form-row">
-            <div class="marquito">
-              <p class="main-title" >Datos del huesped del cuarto</p>
-              <input type="text" name="name" class="form-control" id="name3" placeholder="Nombre" required>
-              <input type="text" name="lname" class="form-control" id="lname3" placeholder="Apellido" required>
-            </div>
+            @for ($room = 1; $room <= $query['r'] ; $room++)
+              <div class="marquito">
+                <p class="main-title" >Datos del huesped del cuarto {{$room}}</p>
+                <input type="text" name="name{{$room}}" class="form-control" id="name3" placeholder="Nombre" required>
+                <input type="text" name="lname{{$room}}" class="form-control" id="lname3" placeholder="Apellido" required>
+              </div>
+            @endfor
           </div>
         @endisset
         

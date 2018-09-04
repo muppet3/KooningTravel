@@ -78,6 +78,7 @@
 	Route::get('purchase', 'Purchase\PurchaseController@Pago');
 	Route::get('gracias',"Purchase\PurchaseController@gracias");
 	Route::get('eliminar/{id}',"Purchase\PurchaseController@delete");
+	Route::get('voucher/{id}',"Purchase\PurchaseController@details");
 
 	/*
 		╔═══════════════╗
