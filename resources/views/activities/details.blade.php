@@ -134,8 +134,8 @@
 
 	@foreach($activity->tickets as $ticket)
 	        <li class="item hotel">
-	          <a data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ', '-', strtolower($ticket->name))}}.pdf' class="thumb cero"  href='javascript:void(0);'>
-	            <div class="thumb-images"><img src="/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{$ticket->image}}" alt="el parque"></div>
+	          <a data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ', '-', $ticket->name)}}.pdf' class="thumb cero"  href='javascript:void(0);'>
+	            <div class="thumb-images"><img src="/img/activity/{{str_replace(' ', '-', $activity->category->name)}}/{{strtolower($activity->name)}}/{{$ticket->image}}" alt="el parque"></div>
 	            <div class="info">
 	              <h3 class="title">{{$ticket->name}}<br>
 	                <span class="category category-4CAT"><span class="category-name"></span></span></h3>
