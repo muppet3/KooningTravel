@@ -615,5 +615,263 @@ $(".messaje").delay(3000).fadeOut("slow");
 
 	$("#tabs").tabs();
 
+
+
+
+	/*Aqui comienza traslados*/
+
+
+		$('select[name=entrada]').change(function(){
+
+			var tipoentrada= "name=" + $('select[name=entrada]').val();
+
+			$.ajax ( {
+				url: '/preciop/parque',
+				type: 'POST',
+				data: tipoentrada,
+	  			statusCode:{
+					201:function (response) {
+							//console.log(response);
+						$(".adul").text("$ "+response.PrecioAdultoF);
+						$(".nin").text("$ "+response.PrecioMenorF);
+						$("#imgentrada").val(response.Imagen);
+						$("#Padultos").val(response.PrecioAdulto);
+						$("#Pmenores").val(response.PrecioMenor);
+						$("#identradas").val(response.Identradas);
+					}
+  			   	}
+  			});
+		});
+
+		
+	$('select[name=entradat]').change(function(){
+
+			var tipoentrada= "name=" + $('select[name=entradat]').val();
+
+			var id = $(this).val(); 
+
+			$.ajax ( {
+				url: '/preciop/tour',
+				type: 'POST',
+				data: tipoentrada,
+	  			statusCode:{
+					201:function (response) {
+							//console.log(response);
+						$(".adul").text("$ "+response.PrecioAdultoF);
+						$(".nin").text("$ "+response.PrecioMenorF);
+						$("#imgentrada").val(response.Imagen);
+						$("#Padultos").val(response.PrecioAdulto);
+						$("#Pmenores").val(response.PrecioMenor);
+            	 		$("select[name='horario'] option").val(response.Horarios[0].hora).text(response.Horarios[0].hora);
+ 			
+					}
+  			   	}
+  			});
+		});
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
  });
+
+
+
+
+
+
+/*Funciones Parques y Tours*/
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+function add(id) {
+
+	$.ajax ( {
+	  url: '/shoppingcart/items',
+	  type: 'POST',
+	  data: $('#'+id).formToJSON(),
+	  statusCode:{
+		201:function (response) {
+
+		console.log(response);	
+		
+		}
+     }
+  });
+
+  $('#'+id)[0].reset();
+  updateCar();
+  $('html,body').animate({
+        scrollTop: $("#shopcart").offset().top
+    }, 1000);
+  updatelista();
+}
+
+  function send() {
+      	console.log($('#datos-reservacion').serialize());
+
+        $.ajax ( {
+          url: '/reservacion/datos',
+          type: 'POST',
+          data: $('#datos-reservacion').serialize(),
+          success: function(data)             
+           {
+            console.log(data);
+            $( "#step3" ).click();
+           }
+        });
+  }
+
+
+
+
+function deleteItem(div,id) {
+	$.ajax ( {
+	  url: '/shoppingcart/items/'+id,
+	  type: 'DELETE',
+	  statusCode:{
+		200:function (response) {
+			console.log(response);
+		}
+     }
+});
+
+  updateCar();
+  updatelista();
+}
+
+
+function actualizarcarrito() {
+  window.location = "/carrito";  
+}
+
+
+
+  function eliminar(id){
+   $.ajax ( {
+	  url: '/shoppingcart/items/'+id,
+	  type: 'DELETE',
+	  statusCode:{
+		200:function (response) {
+			console.log(response);
+		}
+     }
+  });
+
+    window.setTimeout(function(){actualizarcarrito()}, 500);
+
+  }
+
+function updateCar() {
+	$.ajax({
+		url: '/shoppingcart/items',
+	})
+	.done(function(response) {
+		$('#ShoppingCart').empty()
+		$('#ShoppingCart').append(response);
+	});
+}
+
+
+function updatelista() {
+	$.ajax({
+		url: '/shoppingcart/lista',
+	})
+	.done(function(response) {
+		$('#shopcart').empty()
+		$('#shopcart').append(response);
+	});
+}
+
+function showCalendar(id) {
+	$("#cal_"+id).focus();
+}
+
+function validar(){
+	if( $("#cal").val() == "" ){
+
+		$("#cal").focus();
+
+	}else{
+
+		$("body").append('<div class="alert alert-success"><strong>Producto Agregado al Carrito!</strong></div>');
+		var div = $(".alert");
+        div.animate({top: '20px'}, "slow");
+        div.animate({right: '40px'}, "slow");
+		$(".alert").delay(100).fadeOut("slow");				
+		addparques();
+	}	
+}
+
+function addtraslados() {
+	$.ajax ( {
+	  url: '/shoppingcart/items',
+	  type: 'POST',
+	  data: $('#form').formToJSON(),
+	  statusCode:{
+		201:function (response) {
+			//console.log(response);	
+			window.setTimeout(function(){redireccionar()}, 2000);	
+		}
+     }
+  });
+
+	$('#form')[0].reset();
+	updatelista();
+
+  $('html,body').animate({
+        scrollTop: $("#shopcart").offset().top
+    }, 1000); 
+}
+
+
+function redireccionar(){
+	
+	if (screen.width<1025){
+		window.location = "/Carrito";
+	} 
+}
+
+
+function addparques() {
+	$.ajax ( {
+	  url: '/shoppingcart/items',
+	  type: 'POST',
+	  data: $('#parquess').formToJSON(),
+	  statusCode:{
+		201:function (response) {
+			//console.log(response);	
+			window.setTimeout(function(){redireccionar()}, 2000);
+		}
+     }
+  });
+
+	$('#parquess')[0].reset();
+	updatelista();
+
+  $('html,body').animate({
+        scrollTop: $("#shopcart").offset().top
+    }, 1000);		
+}
+
+
+*/
