@@ -651,7 +651,7 @@ $(".messaje").delay(3000).fadeOut("slow");
 			var id = $(this).val(); 
 
 			$.ajax ( {
-				url: '/preciop/tour',
+				//url: '/preciop/tour',
 				type: 'POST',
 				data: tipoentrada,
 	  			statusCode:{
@@ -672,9 +672,22 @@ $(".messaje").delay(3000).fadeOut("slow");
 
 
 
+	$("#parquess").submit(function() {
 
+	if( $("#cal").val() == "" ){
 
+		$("#cal").focus();
 
+	}else{
+
+		$("body").append('<div class="alert alert-success"><strong>Producto Agregado al Carrito!</strong></div>');
+		var div = $(".alert");
+        div.animate({top: '20px'}, "slow");
+        div.animate({right: '40px'}, "slow");
+		$(".alert").delay(100).fadeOut("slow");				
+		//addparques();
+	}	
+});
 
 
 
