@@ -42,7 +42,7 @@ class Hotelbeds extends Controller
 					default:
 						$this->result=null;
 						$this->error['code']=$http_code;
-						$this->error['description']=json_decode($resp);	
+						$this->error['description']=$this->result;	
 						return null;				
 				}
 			}
