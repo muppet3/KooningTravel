@@ -53,6 +53,24 @@ function precio(){
     		});
 }
 
+$('select[name=entrada]').change(function(){
+
+	var tipoentrada= "_token="+$('input[name=_token]').val()+"&entrada=" + $('select[name=entrada]').val();
+		 
+		 $.ajax ( {
+				url: '/activity/price',
+				type: 'POST',
+				data: tipoentrada,
+				success: function (response) {
+					console.log(response);
+       				$(".adul").text(response.Adult);
+					$(".nin").text(response.Child);
+    			},
+    			error: function (data, textStatus, errorThrown) {
+        			console.log(data);
+    			},
+    		});
+	});
 
 
 

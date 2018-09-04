@@ -40,6 +40,7 @@
 	Route::get('tours', 'Activities\ActivitiesController@tours');
 	Route::get('tours/{tour}', 'Activities\ActivitiesController@details');
 	Route::post('tours/{tour}', 'Activities\ActivitiesController@booking');
+	Route::post('activity/price', 'Activities\ActivitiesController@price');
 
 	/*
 		╔═══════════════╗
