@@ -5,7 +5,7 @@
 	<head>
 	    <meta name="viewport" content="initial-scale=1.0">
 	    <meta name="format-detection" content="telephone=no">
-	    <title>Mensaje cotizacion de {{$name}}</title>
+	    <title>Mensaje cotizacion de $name}}</title>
 	    <style type="text/css">
 	        .ReadMsgBody {
 	            width: 100%;
@@ -82,22 +82,22 @@
 	                            </div>
 	                            <br><br>
 	                            <div style="line-height: 24px; font-family: Tahoma; color: rgb(102, 102, 102); text-transform: uppercase; font-size: 16px; font-weight: normal; text-align: center;">
-	                                {{$name}} Acaba de realizar una cotizacion con el id de reserva {{$code}}
+	                                $name}} Acaba de realizar una cotizacion con el id de reserva $code}}
 	                            </div>
 	                            <br>
 	                            <p>Datos de la persona.</p>
 	                            <h3 class="titulosreserva">Nombre:</h3>
-	                            <p> {{$name}}</p>
+	                            <p> $name}}</p>
 	                            <h3 class="titulosreserva">Apellido:</h3>
-	                            <p>{{$surnames}}</p>
+	                            <p>$surnames}}</p>
 	                            <h3 class="titulosreserva">Correo:</h3>
-	                            <p>{{$email}}</p>
+	                            <p>$email}}</p>
 	                            <h3 class="titulosreserva">Solicitud:</h3>
 	                            <p>Sin Solicitudes especiales</p>
 	                            <h3 class="titulosreserva">Telefono:</h3>
-	                            <p>{{$phone}}</p>
+	                            <p>$phone}}</p>
 	                            <h3 class="titulosreserva">Cantidad que cotizo:</h3>
-	                            <p>MXN ${{$precio}}</p>
+	                            <p>MXN $$precio}}</p>
 	                        </td>
 	                    </tr>
 

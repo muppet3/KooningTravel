@@ -62,6 +62,10 @@
 	Route::get('privacidad','Complements\ComplementsController@privacidad');
 
 
+	Route::view('correoh', 'emails/purchasehotel');
+	Route::view('correoc', 'emails/purchasehotel');
+
+
 	/*
 		╔══════════════╗
 		║  Promotions  ║

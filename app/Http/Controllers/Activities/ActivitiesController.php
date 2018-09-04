@@ -71,7 +71,12 @@ class ActivitiesController extends Controller
         $item['schedule']=$res->input('horario');
         $item['adults']=$res->input('adultos');
         $item['children']=$res->input('menores');
-        $item['total']=($res->input('adultos')*($activity->category->divisa*$ticket->adult))+($res->input('menores')*($activity->category->divisa*$ticket->child));
+        /*
+            total para cuando se tenga dolares
+        $item['total']=($res->input('adultos')*($activity->category->divisa*$ticket->adult))+($res->input('menores')*($activity->category->divisa*$ticket->child));*/
+        /*
+            total sin dolares*/
+        $item['total']=($res->input('adultos')*$ticket->adult)+($res->input('menores')*$ticket->child);
         //Session::put('cart', $cart);  
         
         $carrito=\Session::get('cart');

@@ -4,7 +4,7 @@
 <head>
 	<meta name="viewport" content="initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no">
-	<title>:: Nuevo Prospecto desde tu sitio Web ::</title>
+	<title>Reservaciones Koonning Travel</title>
 	<style type="text/css">
 		.ReadMsgBody
 		{
@@ -73,7 +73,7 @@
 							<div align="center">
 								<img src="http://kooningtravel.com/images/logo.png" width="45%">
 							</div>
-							<a href="https://kooningtravel.com/voucher/%codigore%">Ver Online</a>  
+							
 							<br><br>
 							<div style="line-height: 24px; font-family: Tahoma; color: rgb(102, 102, 102); text-transform: uppercase; font-size: 16px; font-weight: normal; text-align: center;">
 								Su reservación se ha realizado con éxito
@@ -81,32 +81,10 @@
 							<br>
 							<p>Hemos recibido sus datos y en breve uno de nuestros asesores se comunicar&aacute; con usted para brindarle toda la informaci&oacute;n necesaria.</p>
 							<p>Sus datos de reservación son:</p>
-							<h3 class="titulosreserva">Fecha de reservación:</h3>
-							<p> %booking_date% </p>
-							<h3 class="titulosreserva">Número de confirmación:</h3>
-							<p> %confirmation_id%</p>
-							<h3 class="titulosreserva">Servicios confirmados:</h3>
-							<p> %hotel_info%</p>
-							<h3 class="titulosreserva">Nombre:</h3>
-							<p> %client_name%</p>
-							<h3 class="titulosreserva">Fecha de llegada:</h3>
-							<p> %check_in%</p>
-							<h3 class="titulosreserva">Fecha de salida:</h3>
-							<p> %check_out%</p>
-							<h3 class="titulosreserva">Adultos:</h3>
-							<p> %adults%</p>
-							<h3 class="titulosreserva">Menores:</h3>
-							<p> %kids%</p>
-							<h3 class="titulosreserva">Total:</h3>
-							<p> %total%</p>
-							<h3 class="titulosreserva">Política de cancelación:</h3>
-							<p> %cancellation_policy%</p>
-							<h3 class="titulosreserva">Cargos adicionales:</h3>
-							<p> %additional_charges%</p>
-							<br>
+							
 						</td>
 					</tr>
-					%complementoss_tours%
+					@include('emails.complements')
 					<tr>
 						<td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff; padding-left: 30px; padding-right: 30px; font-size: 13px; line-height: 17px; font-family: tahoma; color: #333;  border-bottom: 10px solid #f2f2f2;  border-left: 1px solid #f2f2f2;  border-right: 1px solid #f2f2f2; border-top: 1px solid #f2f2f2; ">
 							<br><br>

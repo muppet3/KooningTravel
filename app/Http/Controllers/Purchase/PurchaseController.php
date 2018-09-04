@@ -29,47 +29,70 @@ class PurchaseController extends Controller
 
    	public function payworks(Request $request){
    		$id=\Session::get('purchase_id');
-   		if($_POST['MESES'] == '1'){
-			$postdata = http_build_query(
-				array(
-					'ID_AFILIACION' => '7971857', 
-					'USUARIO' => 'a7971857',
-					'CLAVE_USR' => 'koon1857',
-					'CMD_TRANS' => 'AUTH',
-					'ID_TERMINAL' => '79718571',
-					'MODO' => 'PRD',
-					'MODO_ENTRADA' => 'MANUAL',
-					'URL_RESPUESTA' => 'https://kooningtravel.com/payworks/'.$id,
-					'IDIOMA_RESPUESTA' => 'ES',
-					'NUMERO_TARJETA' => $_POST['sourceOfFunds']['provided']['card']['number'],
-					'FECHA_EXP' => $_POST['sourceOfFunds']['provided']['card']['expiry']['month']."".$_POST['sourceOfFunds']['provided']['card']['expiry']['year'],
-					'CODIGO_SEGURIDAD' => $_POST['sourceOfFunds']['provided']['card']['securityCode'],
-					'NUMERO_CONTROL' => $id,
-					'MONTO' => $monto
-				)
-			);
+   		$purchase=Purchase::find($id);
+   		$monto=$purchase->total;
+   		if(strcmp($_POST['radpayment1'],"radCC")==0){
+	   		if($_POST['MESES'] == '1'){
+				$postdata = http_build_query(
+					array(
+						'ID_AFILIACION' => '7971857', 
+						'USUARIO' => 'a7971857',
+						'CLAVE_USR' => 'koon1857',
+						'CMD_TRANS' => 'AUTH',
+						'ID_TERMINAL' => '79718571',
+						'MODO' => 'PRD',
+						'MODO_ENTRADA' => 'MANUAL',
+						'URL_RESPUESTA' => 'https://kooningtravel.com/payworks/'.$id,
+						'IDIOMA_RESPUESTA' => 'ES',
+						'NUMERO_TARJETA' => $_POST['sourceOfFunds']['provided']['card']['number'],
+						'FECHA_EXP' => $_POST['sourceOfFunds']['provided']['card']['expiry']['month']."".$_POST['sourceOfFunds']['provided']['card']['expiry']['year'],
+						'CODIGO_SEGURIDAD' => $_POST['sourceOfFunds']['provided']['card']['securityCode'],
+						'NUMERO_CONTROL' => $id,
+						'MONTO' => $monto
+					)
+				);
+			}else{
+				$postdata = http_build_query(
+					array(
+						'ID_AFILIACION' => '7971857', 
+						'USUARIO' => 'a7971857',
+						'CLAVE_USR' => 'koon1857',
+						'CMD_TRANS' => 'AUTH',
+						'ID_TERMINAL' => '79718571',
+						'MODO' => 'PRD',
+						'MODO_ENTRADA' => 'MANUAL',
+						'URL_RESPUESTA' => 'https://kooningtravel.com/payworks/'.$id,
+						'IDIOMA_RESPUESTA' => 'ES',
+						'NUMERO_TARJETA' => $_POST['sourceOfFunds']['provided']['card']['number'],
+						'FECHA_EXP' => $_POST['sourceOfFunds']['provided']['card']['expiry']['month']."".$_POST['sourceOfFunds']['provided']['card']['expiry']['year'],
+						'CODIGO_SEGURIDAD' => $_POST['sourceOfFunds']['provided']['card']['securityCode'],
+						'NUMERO_CONTROL' => $id,
+						'MONTO' => $monto,
+						'DIFERIMIENTO_INICIAL'=> '00',
+						'NUMERO_PAGOS' => $_POST['MESES'],
+						'TIPO_PLAN' => '03'
+					)
+				);
+			}
 		}else{
 			$postdata = http_build_query(
-				array(
-					'ID_AFILIACION' => '7971857', 
-					'USUARIO' => 'a7971857',
-					'CLAVE_USR' => 'koon1857',
-					'CMD_TRANS' => 'AUTH',
-					'ID_TERMINAL' => '79718571',
-					'MODO' => 'PRD',
-					'MODO_ENTRADA' => 'MANUAL',
-					'URL_RESPUESTA' => 'https://kooningtravel.com/payworks/'.$id,
-					'IDIOMA_RESPUESTA' => 'ES',
-					'NUMERO_TARJETA' => $_POST['sourceOfFunds']['provided']['card']['number'],
-					'FECHA_EXP' => $_POST['sourceOfFunds']['provided']['card']['expiry']['month']."".$_POST['sourceOfFunds']['provided']['card']['expiry']['year'],
-					'CODIGO_SEGURIDAD' => $_POST['sourceOfFunds']['provided']['card']['securityCode'],
-					'NUMERO_CONTROL' => $id,
-					'MONTO' => $monto,
-					'DIFERIMIENTO_INICIAL'=> '00',
-					'NUMERO_PAGOS' => $_POST['MESES'],
-					'TIPO_PLAN' => '03'
-				)
-			);
+					array(
+						'ID_AFILIACION' => '7971857', 
+						'USUARIO' => 'a7971857',
+						'CLAVE_USR' => 'koon1857',
+						'CMD_TRANS' => 'AUTH',
+						'ID_TERMINAL' => '79718571',
+						'MODO' => 'PRD',
+						'MODO_ENTRADA' => 'MANUAL',
+						'URL_RESPUESTA' => 'https://kooningtravel.com/payworks/'.$id,
+						'IDIOMA_RESPUESTA' => 'ES',
+						'NUMERO_TARJETA' => $_POST['sourceOfFunds']['provided']['card']['number'],
+						'FECHA_EXP' => $_POST['sourceOfFunds']['provided']['card']['expiry']['month']."".$_POST['sourceOfFunds']['provided']['card']['expiry']['year'],
+						'CODIGO_SEGURIDAD' => $_POST['sourceOfFunds']['provided']['card']['securityCode'],
+						'NUMERO_CONTROL' => $id,
+						'MONTO' => $monto
+					)
+				);
 		}
 						//peticion post via curl
 		$ch = curl_init('https://via.banorte.com/payw2');
@@ -100,15 +123,19 @@ class PurchaseController extends Controller
   	}
   	public function booking($id){
   		/*inicia reservacion real*/
-        
-        	$order = Purchase::find($id);
-        	$recuest_rate = unserialize($order->buy_hotels[0]->rate);
-			$recuest_book = unserialize($order->buy_hotels[0]->book);
+        $purchase=Purchase::find($id);
+
+        if(count($purchase->buy_hotels)>=0){
+
+        	$recuest_rate = unserialize($purchase->buy_hotels[0]->rate);
+			$recuest_book = unserialize($purchase->buy_hotels[0]->book);
+
 			
 			$av = true;
 			$total = 0;
 			$adultos = 0;
 			$menores =0;
+			$cont=0;
 			foreach ($recuest_book['hotels']['hotel']['rooms'] as $key => $room) {
 				$adultos += $room['adults'];
 				$recuest_rate['r1a'] = $room['adults'];
@@ -126,26 +153,51 @@ class PurchaseController extends Controller
 					$av = false;
 					break;
 				}
+				$cont++;
 			}
+			$datos['Nombre']=$recuest_book['firstname']." ".$recuest_book['lastname'];
+        	$datos['llegada']=$recuest_book['hotels']['hotel']['datearrival'];
+        	$datos['salida']=$recuest_book['hotels']['hotel']['datedeparture'];
+        	$datos['adultos']=$adultos;
+        	$datos['menores']=$menores;
+        	$datos['habitaciones']=$cont;
+        	//$datos['idreserva']=$purchase->buy_hotels->booking;
+        	$datos['idreserva']="10";
+			/*
 			if ($av) {
 				
 				$booking = new Booking('Book',$recuest_book);
 				$booking->exec();
 				
 				if ($booking->fail()) {
-							//error_log(print_r($order->id.' Fallo en la api '.$book->getError() , TRUE));
-							//$this->errorMail($order->emailaddress,$order->id);
+							//error_log(print_r($purchase->id.' Fallo en la api '.$book->getError() , TRUE));
+							//$this->errorMail($purchase->emailaddress,$purchase->id);
 							## hacer algo en caso de error de fall de api
 				}else{
 					$booking = $booking->getXml();
 					if ($booking->statusinternet == 'CO' and ( $booking->statuspayment == 'PA' or $booking->statuspayment == 'OP')) {
-						$order->buy_hotels[0]->booking=(string)$booking->confirmationid;
+						$purchase->buy_hotels[0]->booking=(string)$booking->confirmationid;
 					}else{
-						/*error_log(print_r($order->id.' Fallo estatus de internet', TRUE));
-						$this->errorMail($order->emailaddress,$order->id);*/
+						//error_log(print_r($purchase->id.' Fallo estatus de internet', TRUE));
+						//$this->errorMail($purchase->emailaddress,$order->id);
 					}
 				}
-			}
+			}*/
+			$complementos['hotel']=$datos;
+        }
+        if(count($purchase->buy_transfers)>=0){
+        	$complementos['transporte']=$purchase->buy_transfers;
+        }
+        if(count($purchase->buy_activities)>=0){
+        	
+        	$complementos['activities']=$purchase->buy_activities;
+        }
+        $complement['complements']=$complementos;
+        \Mail::send('emails.purchase',$complement,function($mail){
+                $mail->subject('Reservaciones KooningTravel');
+                $mail->to('ferr.95.fer.fmr@gmail.com');
+        });
+        	
   	}
   	public function delete($id){
   		\Session::forget('cart.'.$id);
@@ -176,27 +228,22 @@ class PurchaseController extends Controller
   	}
   	public function email(Request $res){
   		$cart=\Session::get('cart');
-
   		$total=0;
   		$index=1;
   		foreach ($cart as $item) {
-  			
-  			if(!strcmp($item['type'],'parque') || !strcmp($item['type'],'tour') ){
-  				$data['activity']=true;
+  			if(strcmp($item['type'],'parque')==0 || strcmp($item['type'],'tour')==0 ){
   				$activities[$index]=$item;
-  				
   			}
-  			if(!strcmp($item['type'],'hotel')){
-  				$data['hotel']=true;
+  			if(strcmp($item['type'],'hotel')==0){
   				$hotel=$item;
   			}
-  			if(!strcmp($item['type'],'traslado')){
+  			if(strcmp($item['type'],'traslado')==0){
   				$traslado=$item;
-  				$data['traslado']=true;
   			}
   			$total+=$item['total'];
   			$index++;
   		}
+  		
   		$data['cart']=$cart;
   		$data['total']=$total;
 
@@ -206,10 +253,12 @@ class PurchaseController extends Controller
 		$compra['email']= $res->input('correo');
 		$compra['phone']= $res->input('telefono');
 		$purchase= Purchase::create($compra);
-
+		$purchase->total=$total;
+		$purchase->save();
 		if(isset($hotel)){
 			$purchase->country=$res->input('ciudad');
 			$purchase->state=$res->input('estado');
+			$purchase->zip=$res->input('zip');
 			$purchase->save();
 			$query= new Hoteldo('GetQuoteHotels',$hotel['hotel']);
 			$query->setCached(false);
@@ -291,31 +340,27 @@ class PurchaseController extends Controller
 			$camposHotel['rate']=serialize($rate);
 			$camposHotel['book']=serialize($book);
 			$buy_hotel=Buy_hotel::create($camposHotel);
-			
-			
 		}
 		$compra['precio']=$total;
-		
-		if(isset($traslados)){
-			$transports = Transfer::where('name',$traslado['destino'])->first();
+		if(isset($traslado)){
+			$transports = Transfer::where('name',$traslado['city'])->first();
 			$transporte['airline']=$res->input('Aerolinea');
-			$transporte['flight']=$res->input('NumVuelo');
+			$transporte['flight']=(string) $res->input('NumVuelo');
 			$transporte['transport']=$traslado['transport'];
 			$transporte['hotel']=$traslado['destiny'];
 			$transporte['services']=$traslado['service'];
-			$transporte['check_in']=$traslado['chechin']." ".$traslado['timein'];
+			$transporte['check_in']=$traslado['checkin']." ".$traslado['timein'];
 			if(isset($traslado['checkout'])){
 				$transporte['check_out']=$traslado['chechout']." ".$traslado['timeout'];
-				$transporte['type']=$traslado['redondo'];
+				$transporte['type']='redondo';
 			}else{
-				$transporte['type']=$traslado['sencillo'];
+				$transporte['type']='sencillo';
 			}
 			$transporte['transfers_id']=$transports->id;
-			$transporte['purchases_id']=$purchase->id;
+			$transporte['purchase_id']=$purchase->id;
 			$transfer = Buy_transfer::create($transporte);
+			
 		}
-		
-
 		if(isset($activities)){
 			foreach ($activities as $key => $value) {
 				$entrada= Ticket::where('name',$value['ticket'])->first();
@@ -324,12 +369,13 @@ class PurchaseController extends Controller
 				$camposActivity['adult']=$value['adults'];
 				$camposActivity['child']=$value['children'];
 				$camposActivity['total']=$value['total'];
-				$camposActivity['tickets_id']=(integer) $entrada->id;
-				$camposActivity['purchases_id']=(integer) $purchase->id;
+				$camposActivity['ticket_id']=(integer) $entrada->id;
+				$camposActivity['purchase_id']=(integer) $purchase->id;
 				$buy_activity= Buy_activity::create($camposActivity);
 			}
+
 		}
-	
+		$this->booking($purchase->id);
 		\Mail::send('emails.noticereservation',$compra,function($mail){
                 $mail->subject($_POST['nombre'].' '.$_POST['apellidos'].' realizo una cotizacion');
                 $mail->to('ferr.95.fer.fmr@gmail.com');

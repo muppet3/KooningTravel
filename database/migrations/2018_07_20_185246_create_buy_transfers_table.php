@@ -25,10 +25,10 @@ class CreateBuyTransfersTable extends Migration
             $table->timestamp('check_out')->nullable();
             $table->timestamps();
             $table->integer('transfers_id')->unsigned();
-            $table->integer('purchases_id')->unsigned();
+            $table->integer('purchase_id')->unsigned();
 
             $table->foreign('transfers_id')->references('id')->on('transfers');
-            $table->foreign('purchases_id')->references('id')->on('purchases');
+            $table->foreign('purchase_id')->references('id')->on('purchases');
         });
     }
 

@@ -21,11 +21,11 @@ class CreateBuyActivitiesTable extends Migration
             $table->float('total');
             $table->timestamps();
 
-            $table->integer('tickets_id')->unsigned();
-            $table->integer('purchases_id')->unsigned();
+            $table->integer('ticket_id')->unsigned();
+            $table->integer('purchase_id')->unsigned();
 
-            $table->foreign('tickets_id')->references('id')->on('tickets');
-            $table->foreign('purchases_id')->references('id')->on('purchases');
+            $table->foreign('ticket_id')->references('id')->on('tickets');
+            $table->foreign('purchase_id')->references('id')->on('purchases');
 
         });
     }

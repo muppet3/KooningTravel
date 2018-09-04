@@ -587,7 +587,6 @@ var link =  "hotel-"+$("#search_hotel").val();
 
 $(".messaje").delay(3000).fadeOut("slow");
 
-      
       $("#step-2, #form-pagar").hide();
       
 
@@ -616,7 +615,26 @@ $(".messaje").delay(3000).fadeOut("slow");
 	$("#tabs").tabs();
 
 
-
+	function send() {
+		
+        $.ajax ( {
+          	url: "",
+          	type: 'POST',
+          	data:$('#datoscliente').serialize(),
+          	success: function(data)             
+           	{
+           		console.log('se envio correo');
+           	},
+    		error: function (data, textStatus, errorThrown) {
+        		console.log(data);
+             	$(".wait").hide(); 
+            	$("#contact-form").hide();
+				$(".steps .step-3").removeClass("active");
+				$(".steps .step-4").addClass("active");				
+				$("#form-card").show(); 
+    		},
+        });
+    }
 
 	/*Aqui comienza traslados*/
 

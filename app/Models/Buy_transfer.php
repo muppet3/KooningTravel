@@ -10,13 +10,15 @@ class Buy_transfer extends Model
 {
     protected $fillable=[
     	'airline',
-    	'fligh',
+    	'flight',
     	'type',
     	'transport',
     	'hotel',
+        'services',
     	'check_in',
     	'check_out',
-        'purchases_id',
+        'transfers_id',
+        'purchase_id',
     ];
     public function transfer(){
     	return $this->belongsTo(Transfer::class);

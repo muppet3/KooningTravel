@@ -184,7 +184,7 @@
   </div>
   <div class="col-md-9" id="step-2" >
     <!-- aqui empiza -->
-    <form class="form-pay-reservation" action="/purchase" method="POST">
+    <form class="form-pay-reservation"  action="/purchase" method="POST">
       <div id="radCardPayments" class="paymentType" >
         <ul id="rad-payment-form">
           <li class="selected allc">
@@ -307,7 +307,7 @@
         <h2>Reservacion</h2>
         <h3>Datos de la Reserva </h3>
       </div>
-      <form  class="needs-validation" action="" method="post">
+      <form  class="needs-validation" id="datoscliente" action="" method="post">
         @csrf
         <div style="display: none;" >
           <input type="hidden" name="name2" />
@@ -435,7 +435,7 @@
           </div>
         </div>
         <div class="form-row">
-          <input id="btn_pagar" type="submit" class="btn btn-sm btn-caja-reserva" value="Pagar" >
+          <input id="btn_pagar" type="submit" class="btn btn-sm btn-caja-reserva" onClick="send()" value="Pagar" >
         </div>
         <div class="form-row">
           <label class="price" >MXN ${{number_format($total)}}</label>

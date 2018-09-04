@@ -21,6 +21,8 @@ class CreatePurchasesTable extends Migration
             $table->string('email',100);
             $table->string('country',100)->nullable();
             $table->string('state',100)->nullable();
+            $table->string('zip')->nullable();
+            $table->unsignedInteger('total')->nullable();
             $table->string('phone');
             $table->longText('request')->nullable();
             $table->string('status')->default(Purchase::COTIZADO);
