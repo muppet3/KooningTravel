@@ -125,7 +125,7 @@
     <section class="ticketing-hotels">
       <div class="main-title">
 
-        <h2 class="h2 titles">Entradas el parque!</h2>	
+        <h2 class="h2 titles">Entradas  {{$activity->name}}!</h2>	
 
       </div>
       <ul class="hotels-list">
@@ -134,17 +134,17 @@
 
 	@foreach($activity->tickets as $ticket)
 	        <li class="item hotel">
-	          <a data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ', '-', $ticket->name)}}.pdf' class="thumb cero"  href='javascript:void(0);'>
-	            <div class="thumb-images"><img src="/img/activity/{{str_replace(' ', '-', $activity->category->name)}}/{{strtolower($activity->name)}}/{{$ticket->image}}" alt="el parque"></div>
+	          <a data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ', '-', $ticket->name)}}.pdf' class="thumb"  href='javascript:void(0);'>
+	            <div class="thumb-images"><img src="/img/activity/{{str_replace(' ', '-', $activity->category->name)}}/{{strtolower($activity->name)}}/{{$ticket->image}}" alt=" {{$activity->name}}"></div>
 	            <div class="info">
 	              <h3 class="title">{{$ticket->name}}<br>
 	                <span class="category category-4CAT"><span class="category-name"></span></span></h3>
 	            </div>
 	          </a>
-	          <a class="txtt" data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ','-',$ticket->name)}}.pdf uno' href='javascript:void(0);' >
+	          <a class="txtt" data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ','-',$ticket->name)}}.pdf' href='javascript:void(0);' >
 	            <p class="hotel-description">{{$ticket->description}}</p>
 	          </a>
-	          <a data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ','-',$ticket->name)}}.pdf' class="pdf dos"  href='javascript:void(0);' >Ver mas...</a>
+	          <a data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ','-',$ticket->name)}}.pdf' class="pdf"  href='javascript:void(0);' >Ver mas...</a>
 	        </li>
 		@endforeach
 @if (strcmp(str_replace(' ', '-', strtolower($activity->category->name)),'experiencias-xcaret')==0)
@@ -184,10 +184,10 @@
               </li>
             </ul>
             <div id="tabs-1">
-              <div class="h1">Parque el parque!</div>
+              <div class="h1">Parque  {{$activity->name}}!</div>
               <h3 class="h3">Mapa y descripci&oacute;n parque {{$activity->name}}!</h3>
               <a  href="javascript:void(0);">
-                <img alt="Mapa del parque el parque!" class="left" src="/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/mapa.png" style="margin-top: 0px; max-height: 250px;" />
+                <img alt="Mapa  {{$activity->name}}!" class="left" src="/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/mapa.png" style="margin-top: 0px; max-height: 250px;" />
               </a>
               <p>{!!$activity->description!!}</p>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/8ofAxR3v3oU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
