@@ -621,54 +621,8 @@ $(".messaje").delay(3000).fadeOut("slow");
 	/*Aqui comienza traslados*/
 
 
-		$('select[name=entrada]').change(function(){
-
-			var tipoentrada= "name=" + $('select[name=entrada]').val();
-
-			$.ajax ( {
-				url: '/preciop/parque',
-				type: 'POST',
-				data: tipoentrada,
-	  			statusCode:{
-					201:function (response) {
-							//console.log(response);
-						$(".adul").text("$ "+response.PrecioAdultoF);
-						$(".nin").text("$ "+response.PrecioMenorF);
-						$("#imgentrada").val(response.Imagen);
-						$("#Padultos").val(response.PrecioAdulto);
-						$("#Pmenores").val(response.PrecioMenor);
-						$("#identradas").val(response.Identradas);
-					}
-  			   	}
-  			});
-		});
-
 		
-	$('select[name=entradat]').change(function(){
-
-			var tipoentrada= "name=" + $('select[name=entradat]').val();
-
-			var id = $(this).val(); 
-
-			$.ajax ( {
-				//url: '/preciop/tour',
-				type: 'POST',
-				data: tipoentrada,
-	  			statusCode:{
-					201:function (response) {
-							//console.log(response);
-						$(".adul").text("$ "+response.PrecioAdultoF);
-						$(".nin").text("$ "+response.PrecioMenorF);
-						$("#imgentrada").val(response.Imagen);
-						$("#Padultos").val(response.PrecioAdulto);
-						$("#Pmenores").val(response.PrecioMenor);
-            	 		$("select[name='horario'] option").val(response.Horarios[0].hora).text(response.Horarios[0].hora);
- 			
-					}
-  			   	}
-  			});
-		});
-
+		
 
 
 

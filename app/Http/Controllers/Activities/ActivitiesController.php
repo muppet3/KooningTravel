@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Activities;
 use App\Http\Controllers\Controller;
 use App\Models\Activity;
 use App\Models\Category;
+use App\Models\Ticket;
 use Illuminate\Http\Request;
 class ActivitiesController extends Controller
 {
@@ -24,7 +25,6 @@ class ActivitiesController extends Controller
         $data['background']=" height: 100px; background-image: url(https://kooningtravel.com/img/Home/fondos/fondoParque.png); ";
         return view('activities/parques',$data);
     }
-
     public function tours(){
     	
         $data['categorias']=Category::where('type','Tour')->get();
@@ -57,8 +57,7 @@ class ActivitiesController extends Controller
         
         return view('activities/details',$data);
     }
-    public function booking(Request $res,$actividad)
-    {
+    public function booking(Request $res,$actividad){
 
         $activity=Activity::where('name',$actividad)->first();
         $ticket=Activity::where('name',$actividad)->first()->tickets->where('name',$res->input('entrada'))->first();
@@ -86,5 +85,13 @@ class ActivitiesController extends Controller
             \Session::push('cart', $item); 
         }
         return redirect('checkout');
+    }
+    public function price(Request $res){
+        $ticket = Ticket::where('name',$res->entrada)->first();
+        $precios = array(
+            'Adult'=>"$ ".number_format($ticket->adult,2),
+            'Child'=>"$ ".number_format($ticket->child,2),
+        );
+        echo json_encode($precios);
     }
 }

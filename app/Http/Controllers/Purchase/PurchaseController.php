@@ -28,7 +28,7 @@ class PurchaseController extends Controller
     }
 
    	public function payworks(Request $request){
-   		$id=\Session::get('carrito');
+   		$id=\Session::get('purchase_id');
    		if($_POST['MESES'] == '1'){
 			$postdata = http_build_query(
 				array(
@@ -88,7 +88,7 @@ class PurchaseController extends Controller
 			$_POST['payment_status']='Completed';
 			$path = explode("/", $path_parts);
 			$_POST['nombre_titular']=$_POST($holder_name);
-			$this->verification($id);
+			$this->booking($id);
 			echo "1";
 			error_log('KOONING ID: '.$path[2]);
 			error_log('BANORTE TRANSACTION SUCCESS URL: '.$url_split[3]);
@@ -97,6 +97,55 @@ class PurchaseController extends Controller
 			error_log('BANORTE TRANSACTION FAILURE URL: '.$url_split[3]);
 			header('Location: '.PATH.'/error/'.$id);
 		}	
+  	}
+  	public function booking($id){
+  		/*inicia reservacion real*/
+        
+        	$order = Purchase::find($id);
+        	$recuest_rate = unserialize($order->buy_hotels[0]->rate);
+			$recuest_book = unserialize($order->buy_hotels[0]->book);
+			
+			$av = true;
+			$total = 0;
+			$adultos = 0;
+			$menores =0;
+			foreach ($recuest_book['hotels']['hotel']['rooms'] as $key => $room) {
+				$adultos += $room['adults'];
+				$recuest_rate['r1a'] = $room['adults'];
+				$menores += $room['kids'];
+				$recuest_rate['r1k'] = $room['kids'];
+				$recuest_rate['r1k1a'] = $room['k1a'];
+				$recuest_rate['r1k2a'] = $room['k2a'];
+				$recuest_rate['r1k3a'] = $room['k3a'];
+				$rate= new Hoteldo('GetHotelRateRules',$recuest_rate);
+				$rate->setCached(false);
+				$rate->exec();
+				$rate=$rate->getXml();
+				$total += (double) $rate->HotelRate->Rooms->Room->MealPlans->MealPlan->Total;
+				if ($rate->HotelRate->Rooms->Room->MealPlans->MealPlan->Available->Status != 'AV' ) {
+					$av = false;
+					break;
+				}
+			}
+			if ($av) {
+				
+				$booking = new Booking('Book',$recuest_book);
+				$booking->exec();
+				
+				if ($booking->fail()) {
+							//error_log(print_r($order->id.' Fallo en la api '.$book->getError() , TRUE));
+							//$this->errorMail($order->emailaddress,$order->id);
+							## hacer algo en caso de error de fall de api
+				}else{
+					$booking = $booking->getXml();
+					if ($booking->statusinternet == 'CO' and ( $booking->statuspayment == 'PA' or $booking->statuspayment == 'OP')) {
+						$order->buy_hotels[0]->booking=(string)$booking->confirmationid;
+					}else{
+						/*error_log(print_r($order->id.' Fallo estatus de internet', TRUE));
+						$this->errorMail($order->emailaddress,$order->id);*/
+					}
+				}
+			}
   	}
   	public function delete($id){
   		\Session::forget('cart.'.$id);
@@ -356,7 +405,7 @@ class PurchaseController extends Controller
         	print_r($details->getError());
         	echo "</pre>";
         }
-        dd($details->getXml());
+        echo $details->getRecuest();
 
   	}
 }
