@@ -236,6 +236,7 @@ class PurchaseController extends Controller
   			$data['vacio']=1;
   			
 	  	}else{
+		  	$data['vacio']=0;
 	  		foreach ($cart as $item) {
 	  			
 	  			if(!strcmp($item['type'],'hotel')){

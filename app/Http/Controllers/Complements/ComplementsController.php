@@ -17,7 +17,7 @@ class ComplementsController extends Controller
         $data['tours']="";
         $data['traslados']="class=active";
         $data['ofertas']="";
-        $data['background']='height: 556px; background-image: url(/../img/complements/traslados/traslado.png)';
+        $data['background']='height: 556px; background-image: url(/../img/fondos/traslados.png)';
         return view('complements/traslados',$data);
     }
     public function booking(Request $res){
@@ -91,7 +91,7 @@ class ComplementsController extends Controller
         
     }
     public function autos(){
-         $data['background']='height: 556px; background-image: url(/../img/complements/autos/auto.png)';
+         $data['background']='height: 556px; background-image: url(/../img/fondos/autos.png)';
         return view('complements/autos',$data);
     }
     public function blog(){

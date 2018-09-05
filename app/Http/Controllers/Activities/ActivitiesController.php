@@ -22,7 +22,7 @@ class ActivitiesController extends Controller
                 $blanco=true;
             }
         }
-        $data['background']=" height: 100px; background-image: url(https://kooningtravel.com/img/Home/fondos/fondoParque.png); ";
+        $data['background']=" height: 100px; background-image: url(https://kooningtravel.com/img/fondos/fondoParque.png); ";
         return view('activities/parques',$data);
     }
     public function tours(){
@@ -38,7 +38,7 @@ class ActivitiesController extends Controller
                 $blanco=true;
             }
         }
-        $data['background']=" height: 100px; background-image: url(https://kooningtravel.com/img/Home/fondos/FondoTours.jpg); ";
+        $data['background']=" height: 100px; background-image: url(https://kooningtravel.com/img/fondos/FondoTours.jpg); ";
 
         return view('activities/tours',$data);
     }
@@ -52,7 +52,7 @@ class ActivitiesController extends Controller
             $data['tours']="class=active";
         }
         $data['activity']=$activity;
-        $data['background']='height: 556px; background-image: url(/../img/activity/'.str_replace(' ', '-', strtolower($activity->category->name)).'/'.strtolower($activity->name).'/'.strtolower($activity->name).'.jpg)';
+        $data['background']='height: 556px; background-image: url(/../img/activity/'.str_replace(' ', '-', strtolower($activity->category->name)).'/'.strtolower($activity->name).'/'.$activity->name.'.jpg)';
         //dd($activity->category->name);
         
         return view('activities/details',$data);
