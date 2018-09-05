@@ -232,23 +232,26 @@ class PurchaseController extends Controller
   		$cart=\Session::get('cart');
   		  
   		$total=0;
-  		foreach ($cart as $item) {
-  			
-  			if(!strcmp($item['type'],'hotel')){
-  				$data['hotel']=true;
-  				$data['query']=\Session::get('query');
-  			}
-  			if(!strcmp($item['type'],'traslado')){
-  				$data['traslado']=true;
-  			}
-  			$total+=$item['total'];
-  		}
-  		$data['cart']=$cart;
-  		$data['total']=$total;
-  		$data['tres']=$total/3;
-  		$data['seis']=$total/6;
-  		$data['nueve']=$total/9;
-
+  		if(is_null($cart) or empty($cart)){
+  			$data['vacio']=1;
+	  	}else{
+	  		foreach ($cart as $item) {
+	  			
+	  			if(!strcmp($item['type'],'hotel')){
+	  				$data['hotel']=true;
+	  				$data['query']=\Session::get('query');
+	  			}
+	  			if(!strcmp($item['type'],'traslado')){
+	  				$data['traslado']=true;
+	  			}
+	  			$total+=$item['total'];
+	  		}
+	  		$data['cart']=$cart;
+	  		$data['total']=$total;
+	  		$data['tres']=$total/3;
+	  		$data['seis']=$total/6;
+	  		$data['nueve']=$total/9;
+	  	}
 
   		return view('purchase/checkout',$data); 
   	}

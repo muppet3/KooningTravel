@@ -2,6 +2,9 @@
 @extends('layouts/structure')
 @section('content')
 <div class="body-cart" >
+  @if ($vacio)
+      
+  @else
   <div class="col-md-12" >
     <ul class="nav nav-pills nav-wizard">
       <li id="step1" class="active">
@@ -15,7 +18,11 @@
       </li>
     </ul>
   </div>
+  @endif
   <div class="col-md-9" id="step-1" >
+    @if ($vacio)
+      
+    @else
     <div class="row-fluid" >
       @empty ($cart)
       @else    
@@ -103,6 +110,7 @@
         @endforeach
       @endempty
     </div>
+    @endif
     <div class="extras" >
       <div class="row">
         <h4 class="producto">Los mejores parques tematicos KoonningTravel!</h4>
@@ -182,6 +190,9 @@
     </div>
     <!--End Contenedor de Productos Extras -->
   </div>
+  @if ($vacio)
+      
+  @else
   <div class="col-md-9" id="step-2" >
     <!-- aqui empiza -->
     <form class="form-pay-reservation"  action="/purchase" method="POST">
@@ -303,6 +314,7 @@
     </form>
     <!-- aqui termina -->
   </div>
+
   <div class="col-md-3" >
     <div class="medium" id="form-pago" >
       <div class="top-car">
@@ -490,5 +502,6 @@
     </div>
     <img style="display: none;" class="img-banner-right" src="/img/complements/extras/banner-right.png" alt="viajes, vacaciones, parques,tour" >
   </div>
+  @endif
 </div>
 @stop
