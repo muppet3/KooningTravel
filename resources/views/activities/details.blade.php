@@ -134,7 +134,7 @@
 
 	@foreach($activity->tickets as $ticket)
 	        <li class="item hotel">
-	          <a data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ', '-', $ticket->name)}}.pdf' class="thumb"  href='javascript:void(0);'>
+	          <a data-fancybox data-type='iframe' type="application/pdf" data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ', '-', $ticket->name)}}.pdf' class="thumb"  href='javascript:void(0);'>
 	            <div class="thumb-images">
                 <img src="/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{$ticket->image}}" alt=" {{$activity->name}}">
               </div>
@@ -143,10 +143,10 @@
 	                <span class="category category-4CAT"><span class="category-name"></span></span></h3>
 	            </div>
 	          </a>
-	          <a class="txtt" data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ','-',$ticket->name)}}.pdf' href='javascript:void(0);' >
+	          <a class="txtt" data-fancybox data-type='iframe' type="application/pdf" data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ','-',$ticket->name)}}.pdf' href='javascript:void(0);' >
 	            <p class="hotel-description">{{$ticket->description}}</p>
 	          </a>
-	          <a data-fancybox data-type='iframe' data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ','-',$ticket->name)}}.pdf' class="pdf"  href='javascript:void(0);' >Ver mas...</a>
+	          <a data-fancybox data-type='iframe' type="application/pdf" data-src='/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/{{str_replace(' ','-',$ticket->name)}}.pdf' class="pdf"  href='javascript:void(0);' >Ver mas...</a>
 	        </li>
 		@endforeach
 @if (strcmp(str_replace(' ', '-', strtolower($activity->category->name)),'experiencias-xcaret')==0)
@@ -195,7 +195,8 @@
               <iframe width="560" height="315" src="https://www.youtube.com/embed/8ofAxR3v3oU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
             <div id="tabs-2">
-              <iframe src="/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/terminosycondiciones.pdf" width="750" height="800" style="border:none;"></iframe>
+              <iframe src="/img/activity/{{str_replace(' ', '-', strtolower($activity->category->name))}}/{{strtolower($activity->name)}}/terminosycondiciones.pdf" width="750" height="800" style="border:none;">                
+              </iframe>
             </div>
           </div>
         </div>
