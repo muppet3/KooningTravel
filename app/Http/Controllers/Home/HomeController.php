@@ -656,7 +656,7 @@ class HomeController extends Controller
         if (isset($_GET['term'])) {
             $destinations_array=[];
             $hotels_array=[];
-            if(Auth::check()){
+           /*if(Auth::check()){
                 $hoteles = json_decode(file_get_contents("js/Destinos/Destinos.json"));
                 $c=0;
                 foreach ($hoteles as $destino) {
@@ -682,7 +682,7 @@ class HomeController extends Controller
                         }
                     }
                 }
-            }else{
+            }else{*/
                 $hoteles = json_decode(file_get_contents("js/Destinos/DestinosHoteldo.json"));
                 $c=0;
                 foreach ($hoteles->Destination as $destination) {
@@ -705,7 +705,7 @@ class HomeController extends Controller
                         }
                     }
                 }
-            }
+            //}
             $response=[];
             $response[]=['text'=>'Destinos','children'=>$destinations_array];
             $response[]=['text'=>'Hoteles','children'=>$hotels_array];
