@@ -1125,8 +1125,8 @@ html body .other .traslados .tras .cuadro-contacto  #conatcton .input-group #env
 .logout a b{display: inline-block;float: left;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-weight: bold;padding: 0px;margin: 0px;}
 
 /* Estilos para el blog*/
-html body .blog{ padding: 0px; display: inline-block; margin-top:50px;  }
-html body .blog .cont1{ width: 75%;  float: left; text-align: center; }
+html body .blog{ padding: 0px; display: inline-block; margin-top:50px; width: 100%; }
+html body .blog .cont1{ width: 75%; text-align: center;  }
 html body .blog .cont1 .bl{ border-right: 1px solid #eee; border-bottom: 1px solid #eee; background: #FFF; display: inline-block; height:615px; width:31%; float: left; margin: 0px 0px 15px 17px; }
 html body .blog .cont1 .bl a{ display: inline-block; float: left; width: 100%;  }
 html body .blog .cont1 .bl .tab1{ color: #1e73be; text-decoration: none; text-transform: uppercase;font-weight: 700; font-size: 13px; font-family: lato; text-align: left; text-indent: 24px; }
@@ -1135,9 +1135,9 @@ html body .blog .cont1 .bl .fecha{ width:88%; background: url("../../img/d.png")
 html body .blog .cont1 .bl .imgb img{display: inline-block; float: none; width: 279px;  }
 html body .blog .cont1 .bl .info{display: inline-block;  float: none; width: 90%; font-size: 14px;line-height: 1.428571429; color: #333; font-family: lato; margin-top: 10px; text-align: justify; }
 html body .blog .cont1 .bl .cult{ color: #1e73be; text-transform: uppercase;font-size: 14px; line-height: 1.428571429; font-family: lato; text-align: left; text-decoration: none; width: 88%; text-indent: 15px; margin-bottom: 10px; }
-html body .blog .cont2{ width: 25%; float: right; }
+html body .blog .cont2{ width: 25%; }
 html body .blog .bloque .widget { width: 100%; display: inline-block; margin-bottom: 20px; height: auto;  }
-html body .blog .bloque { display: inline-block; }
+html body .blog .bloque { display: inline-block; float: left; }
 html body .box-blog {background:#DBDBDB!important; }
 html body .box-blog #contactform .inline-block{ margin:10px 0px; }
 html body .blog .bloque .block{ margin-bottom: 20px; background:#FFF;  width:100%; float:left; box-shadow: grey -3px -1px 9px; border-radius: 6px; padding: 20px 25px 0px 15px; height:auto; border-right:1px solid #eee; border-bottom:0px solid #eee; }
@@ -1175,7 +1175,7 @@ html body .blog .bloque .right .jr-insta-thumb .jr_col_2 li a, .blog .bloque .ri
 html body .blog .addthis_inline_follow_toolbox{ width:533px; float:none; margin:0px auto; }
 html body .blog .bloque .blog .addthis_inline_follow_toolbox #atftbx p { text-align:left; }
 html body .blog .info .subt{ width: 80%; margin:20px 0px 20px 100px; text-align:left; display: inline-block; font-weight: bold; font-size: 30px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  }
-html body .blog .info .text{ padding: 0px; font-size: 16px;font-family: lato;text-align:justify;line-height: 25px;display: inline-block;float: none;}
+html body .blog .info .text{ width: 100%; overflow: hidden; padding: 0px; font-size: 16px;font-family: lato;text-align:justify;line-height: 25px;display: inline-block;float: none;}
 html body .blog .info .text ul li{ font-weight: lighter; display: inline-block; float: left; width: 100%; margin-bottom: 10px; }
 html body .blog .info .text h3{ line-height: 30px; font-weight: lighter; float: left; margin-bottom: 15px; text-align: justify;  }
 html body .blog .info .text h2{  text-align: justify; width: 100%; margin: 15px 0px 15px 0px;color: #42342c; padding: 0px; }
@@ -1193,14 +1193,14 @@ html body .blog .bloque .yuzo_related_post .relatedthumb a { overflow: hidden; t
 .single{ overflow: hidden; display: inline-block; float: left; height:auto; margin: 0px; padding: 0px; }
 .single .homeb, .top, .top .name-author, .top .sing-tit, .top .name-author .author, .top .name-author .tips, .top .name-author .koo, .top .name-author .thum, .top .name-author .ho{ margin: 0px; padding: 0px; display: inline-block; float: left;  }
 html body .blog .top .sing-tit{ color: #333; width: 100%; text-align:left; margin: 10px 0 20px 0; text-transform: uppercase; font-weight: 300;  font-size:27px; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; }
-html body .blog .bg { width: 1000px;  display: inline-block; height: 500px; text-align: center;  }
+html body .blog .bg { width: 100%;  display: inline-block; height: 500px; text-align: center;  }
 html body .blog .bg .homeb{ margin-left: 5px; display: inline-block; height: 500px; float:none; margin:0px auto; }
-html body .blog .top{ padding: 3% 5% 1% 5%;  margin: 0px auto; float: none; }
+html body .blog .top{ margin-top:20px auto; float: none; width:79%; }
 .name-author{ line-height: 30px; color: #333; font-size:18px; text-transform:capitalize; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: 500; }
 .name-author .author{ width: 55px; text-align: left; }
 .name-author .koo, .top .name-author .ho{ color:#1e73be; font-family: lato; font-size: 14px; }
 .name-author .ho{ clear: left; }
-html body .blog .info{display: inline-block;text-align: center;}
+html body .blog .info{display: inline-block;text-align: center; width:90%; float: none; }
 .name-author .fecha{ clear: both;  }
 .name-author .thum{ width: 20px; font-size: 14px; }
 .name-author .tips{ font-size: 14px; color: #333; font-family: lato; }

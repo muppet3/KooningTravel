@@ -12,9 +12,9 @@ js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.11';
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 </script>
-<div class="blog col-md-12">
+<div class="blog">
   <div class="bloque cont1">
-    <div class="bg"><img class="homeb img-fluid"  src="/img/blog/grandes/Principal.png" alt="Los Mejores Hoteles en Cancún para Viajar en Familia" /></div>
+    <div class="bg"><img class="homeb img-fluid"  src="/img/complements/blog/grandes/Principal.png" alt="Los Mejores Hoteles en Cancún para Viajar en Familia" /></div>
     <div class="top" >
       <h2 class="sing-tit">{{$blog->title}}</h2>
       <div class="name-author">
@@ -24,17 +24,25 @@ fjs.parentNode.insertBefore(js, fjs);
       </div>
     </div>
     <div class="info">
-      <span class="text col-md-11"> {{$blog->description}} </span>
+
+
+      <span class="text"> {{$blog->description}} </span>
+
+
       @foreach ($blog->segments as $segment)
         
      
-      <h2 class="subt col-md-8">{{$segment->subtitle}}</h2>
-      <!--<img class="subimg img-fluid centraimagen" src="/img/blog/grandes/seadust.png" alt="Seadust Cancun Family Resort" />-->
+      <h2 class="subt ">{{$segment->subtitle}}</h2>
       
-      <ol class="col-md-11" >
+      <img class="subimg img-fluid centraimagen" src="/img/complements/blog/grandes/seadust.png" alt="Seadust Cancun Family Resort" />
+      
+      <label class="text " >
         {!! $segment->description!!}
-      </ol>
+      </label>
       @endforeach
+
+
+
     </div>
 
 
@@ -43,7 +51,7 @@ fjs.parentNode.insertBefore(js, fjs);
       <div class="relatedthumb relatedpost-1977" style="width: 126.5px; float: left; overflow: hidden; height: 182px;"><span class="equalizer-inner" style="display:block;">
         <a href="/blog/premios-platino-v-edicion">
           <div class="yuzo-img-wrap" >
-            <div class="yuzo-img" style="background:url('/img/blog/chicos/platino.jpg') 50% 50% no-repeat;width: 126.5px;;max-width:100%;height:88px;margin-bottom: 5px;background-size: cover; "></div>
+            <div class="yuzo-img" style="background:url('/img/complements/blog/chicos/platino.jpg') 50% 50% no-repeat;width: 126.5px;;max-width:100%;height:88px;margin-bottom: 5px;background-size: cover; "></div>
           </div>
           <span class="yuzo__text--title" style="font-size:13px;">Premios Platino V Edici&oacute;n.</span>
           <div>
@@ -55,7 +63,7 @@ fjs.parentNode.insertBefore(js, fjs);
     <div class="relatedthumb relatedpost-1388" style="width: 126.5px; float: left; overflow: hidden; height: 182px;"><span class="equalizer-inner" style="display:block;">
       <a href="/blog/Puente-de-Dios">
         <div class="yuzo-img-wrap">
-          <div class="yuzo-img" style="background:url('/img/blog/chicos/puente.jpg') 50% 50% no-repeat;width: 126.5px;;max-width:100%;height:88px;margin-bottom: 5px;background-size: cover; "></div>
+          <div class="yuzo-img" style="background:url('/img/complements/blog/chicos/puente.jpg') 50% 50% no-repeat;width: 126.5px;;max-width:100%;height:88px;margin-bottom: 5px;background-size: cover; "></div>
         </div>
         <span class="yuzo__text--title" style="font-size:13px;">Puente de Dios.</span>
         <div>
@@ -67,7 +75,7 @@ fjs.parentNode.insertBefore(js, fjs);
   <div class="relatedthumb relatedpost-11888" style="width: 126.5px; float: left; overflow: hidden; height: 182px;"><span class="equalizer-inner" style="display:block;">
     <a href="/blog/Cosas-que-te-haran-regresar-a-Cancun-este-2018">
       <div class="yuzo-img-wrap " >
-        <div class="yuzo-img" style="background:url('/img/blog/chicos/riviera.jpg') 50% 50% no-repeat;width: 126.5px;;max-width:100%;height:88px;margin-bottom: 5px;background-size: cover; "></div>
+        <div class="yuzo-img" style="background:url('/img/complements/blog/chicos/riviera.jpg') 50% 50% no-repeat;width: 126.5px;;max-width:100%;height:88px;margin-bottom: 5px;background-size: cover; "></div>
       </div>
       <span class="yuzo__text--title" style="font-size:13px;">Cosas que te haran regresar a cancun este 2018.</span>
       <div>
@@ -79,7 +87,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <div class="relatedthumb relatedpost-13275" style="width: 126.5px; float: left; overflow: hidden; height: 182px;"><span class="equalizer-inner" style="display:block;">
   <a href="/blog/Vive-el-Carnaval-Mazatlan-2018">
     <div class="yuzo-img-wrap" >
-      <div class="yuzo-img" style="background:url('/img/blog/chicos/mazatlan.jpg') 50% 50% no-repeat;width: 126.5px;;max-width:100%;height:88px;margin-bottom: 5px;background-size: cover; "></div>
+      <div class="yuzo-img" style="background:url('/img/complements/blog/chicos/mazatlan.jpg') 50% 50% no-repeat;width: 126.5px;;max-width:100%;height:88px;margin-bottom: 5px;background-size: cover; "></div>
     </div>
     <span class="yuzo__text--title" style="font-size:13px;">Vive el Carnaval Mazatl&aacute;n 2018.</span>
     <div>
@@ -403,13 +411,13 @@ fjs.parentNode.insertBefore(js, fjs);
     <!-- Carousel items -->
     <div class="carousel-inner">
       <div class="active item">
-        <a href="/hotels/371/krystal-cancun?d=2&sd=2018-02-14&ed=2018-02-16&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0&r4a=0&r4k=0&r4k1a=0&r4k2a=0&r4k3a=0&r5a=0&r5k=0&r5k1a=0&r5k2a=0&r5k3a=0"><img src="/img/blog/publicidad/Krystal.png" alt="Promocion Temptation" /></a>
+        <a href="/hotels/371/krystal-cancun?d=2&sd=2018-02-14&ed=2018-02-16&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0&r4a=0&r4k=0&r4k1a=0&r4k2a=0&r4k3a=0&r5a=0&r5k=0&r5k1a=0&r5k2a=0&r5k3a=0"><img src="/img/complements/blog/publicidad/Krystal.png" alt="Promocion Temptation" /></a>
       </div>
       <div class="item">
-        <a href=""><img src="/img/blog/publicidad/CancunBay.png" alt="Cancún Bay Resort" /></a>
+        <a href=""><img src="/img/complements/blog/publicidad/CancunBay.png" alt="Cancún Bay Resort" /></a>
       </div>
       <div class="item">
-        <a href=""><img src="/img/blog/publicidad/BelAir.png" alt="Bel Air Collection" /></a>
+        <a href=""><img src="/img/complements/blog/publicidad/BelAir.png" alt="Bel Air Collection" /></a>
       </div>
     </div>
     <!-- Carousel nav -->
@@ -425,25 +433,25 @@ fjs.parentNode.insertBefore(js, fjs);
   <h2 class="title">NOTAS M&Aacute;S VISTAS</h2>
   <div class="travel">
     <a class="url" href="/blog/premios-platino-v-edicion" >
-      <img class="img2" src="/img/blog/chicos/platino.jpg" />
+      <img class="img2" src="/img/complements/blog/chicos/platino.jpg" />
       <p class="tex" >Premios Platino V Edici&oacute;n.</p>
     </a>
   </div>
   <div class="travel">
     <a class="url" href="/blog/Puente-de-Dios" >
-      <img class="img2" src="/img/blog/chicos/puente.jpg" />
+      <img class="img2" src="/img/complements/blog/chicos/puente.jpg" />
       <p class="tex" >Puente de Dios.</p>
     </a>
   </div>
   <div class="travel">
     <a class="url" href="/blog/Cosas-que-te-haran-regresar-a-Cancun-este-2018" >
-      <img class="img2" src="/img/blog/chicos/riviera.jpg" />
+      <img class="img2" src="/img/complements/blog/chicos/riviera.jpg" />
       <p class="tex" >Cosas que te haran regresar a cancun este 2018.</p>
     </a>
   </div>
   <div class="travel">
     <a class="url" href="/blog/Vive-el-Carnaval-Mazatlan-2018" >
-      <img class="img2" src="/img/blog/chicos/mazatlan.jpg" />
+      <img class="img2" src="/img/complements/blog/chicos/mazatlan.jpg" />
       <p class="tex" >Vive el Carnaval Mazatl&aacute;n 2018.</p>
     </a>
   </div>
@@ -463,16 +471,16 @@ fjs.parentNode.insertBefore(js, fjs);
   <div class="jr-insta-thumb">
     <ul class="jr_col_2">
       <li>
-        <a target="_blank" href="https://www.instagram.com/p/BZos9Q3lDtk/?taken-by=kooningtraveloficial"><img alt="" src="/img/blog/instagram/insta1.png" alt="" /></a>
+        <a target="_blank" href="https://www.instagram.com/p/BZos9Q3lDtk/?taken-by=kooningtraveloficial"><img alt="" src="/img/complements/blog/instagram/insta1.png" alt="" /></a>
       </li>
       <li>
-        <a target="_blank" href="https://www.instagram.com/p/BZj85i_lBFF/?taken-by=kooningtraveloficial"><img alt="" src="/img/blog/instagram/insta2.png" alt="" /></a>
+        <a target="_blank" href="https://www.instagram.com/p/BZj85i_lBFF/?taken-by=kooningtraveloficial"><img alt="" src="/img/complements/blog/instagram/insta2.png" alt="" /></a>
       </li>
       <li>
-        <a target="_blank" href="https://www.instagram.com/p/BZzBymNlzki/?taken-by=kooningtraveloficial"><img alt="" src="/img/blog/instagram/insta3.png" alt="" /></a>
+        <a target="_blank" href="https://www.instagram.com/p/BZzBymNlzki/?taken-by=kooningtraveloficial"><img alt="" src="/img/complements/blog/instagram/insta3.png" alt="" /></a>
       </li>
       <li>
-        <a target="_blank" href="https://www.instagram.com/p/BZwC14PFqBt/?taken-by=kooningtraveloficial"><img alt="" src="/img/blog/instagram/insta4.png" alt="" /></a>
+        <a target="_blank" href="https://www.instagram.com/p/BZwC14PFqBt/?taken-by=kooningtraveloficial"><img alt="" src="/img/complements/blog/instagram/insta4.png" alt="" /></a>
       </li>
     </ul>
   </div>
