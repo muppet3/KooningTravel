@@ -33,8 +33,11 @@ fjs.parentNode.insertBefore(js, fjs);
         
      
       <h2 class="subt ">{{$segment->subtitle}}</h2>
-      
-      <img class="subimg img-fluid centraimagen" src="/img/complements/blog/grandes/seadust.png" alt="Seadust Cancun Family Resort" />
+      @if ($segment->image=="")
+        
+      @else
+      <img class="subimg img-fluid centraimagen" src="/img/complements/blog/grandes/{{$segment->image}}" alt="Seadust Cancun Family Resort" />
+      @endif
       
       <label class="text " >
         {!! $segment->description!!}

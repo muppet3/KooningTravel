@@ -20,9 +20,9 @@
         <a class="tab1" href="javascript:void(0);">{{$blog->location}}.</a>
         <a class="tab2" href="{{Request::root()}}/blog/{{str_replace(" ","-",$blog->title)}}">{{$blog->title}}</a>
         <div class="fecha">11 May 2018</div>
-        <a class="imgb" href="{{Request::root()}}/blog/{{str_replace(" ","-",$blog->title)}}"><img class="img" src="/img/complements/blog/chicos/miniatura.png" alt="Cancún, Quintana Roo" />
+        <a class="imgb" href="{{Request::root()}}/blog/{{str_replace(" ","-",$blog->title)}}"><img class="img" src="/img/complements/blog/{{$blog->image}}" alt="Cancún, Quintana Roo" />
         </a>
-        <p class="info" >{!!substr($blog->description,0,45)!!}...</p>
+        <p class="info" >{!!substr($blog->description,0,500)!!}...</p>
         <a class="cult" href="{{Request::root()}}/blog/{{str_replace(" ","-",$blog->title)}}">Ver más...</a>
       </div>
     @endforeach
