@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Blog;
 use App\Models\Transfer;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class ComplementsController extends Controller
 {
@@ -94,11 +95,14 @@ class ComplementsController extends Controller
         return view('complements/autos',$data);
     }
     public function blog(){
+        $data['checkin']=Carbon::now()->addDay(4);
+        $data['checkout']=Carbon::now()->addDay(8);
         $data['blogs']=Blog::orderBy('id','desc')->get();
         return view('complements/blog',$data);
     }
     public function details($blog){
-        
+        $data['checkin']=Carbon::now()->addDay(4);
+        $data['checkout']=Carbon::now()->addDay(8);
         $data['blog']=Blog::where('title',str_replace('-',' ',$blog))->first();
 
         return view('complements/details',$data);

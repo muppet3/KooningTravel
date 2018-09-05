@@ -309,7 +309,7 @@
       </div>
     </div>
     <div class="col-md-9 search-content">
-      <h1 class="titulo-listado-hoteles"><?php echo count($rooms) ?> Hoteles que concuerdan con tu búsqueda</h1>
+      <h1 class="titulo-listado-hoteles"> Hoteles que concuerdan con tu búsqueda</h1>
       @isset ($rooms)
         @foreach($rooms as $room)
           <a class="result star_{{$room['stars']}} {{$room['pricerange']}}" id="hotel-{{$room['id']}}" href="{{Request::root()}}/details/{{$room['id']}}/{{$room['url']}}?d={{$room['id']}}{{$url}}" >

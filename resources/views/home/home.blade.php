@@ -17,11 +17,7 @@ body .home { height:360px; }
 	<div class="box" >
 		<!--Caja Home-Begin-->
 		<form id="contactform" action="" class="box-home" method="GET" >
-			<div class="hidden">
-				<input type="hidden" name="type" id="type" value="1" />
-				<input type="hidden" value="<?php // echo o $urls; ?>"  id="destino" />
-				<input type="hidden" data-placeholder="<?php // echo o $desti; ?>"   value="2" id="ds" name="ds" />
-			</div>
+			
 			<div class="inline-block">
 				<select style="display:none;" autofocus="autofocus" required="true" data-placeholder="Destino..." class="destination form-control" id="d" name="d" multiple="multiple" >
 				</select>
