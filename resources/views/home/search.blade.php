@@ -310,35 +310,46 @@
     </div>
     <div class="col-md-9 search-content">
       <h1 class="titulo-listado-hoteles"><?php echo count($rooms) ?> Hoteles que concuerdan con tu búsqueda</h1>
-           
-      @foreach($rooms as $room)
-      <a class="result star_{{$room['stars']}} {{$room['pricerange']}}" id="hotel-{{$room['id']}}" href="{{Request::root()}}/details/{{$room['id']}}/{{$room['url']}}?d={{$room['id']}}{{$url}}" >
-        <div class="img" >
-          <label><img src="{{$room['image']}}" alt="{{$room['name']}}" title="{{$room['name']}}" /></label>
-        </div>
-        <div class="details">
-          <div class="bloques" >
-            <label class="blh"><h2 class="title" >{{$room['name']}}</h2></label>
-            <img class="star" src="https://www.kooningtravel.com/intranet/images/star4.5.png" alt="{{$room['name']}}" title="{{$room['name']}}" />
-            <label class="city" >{{$room['city_name']}}<i class="fa fa-map-marker" aria-hidden="true" ></i></label>
-            <span class="include" >Tipo: {{$room['room_name']}}, Plan: {{$room['meal_plan']}}</span>
-          </div>
-          <div class="line" ></div>
-          <div class="bloques bloques2" >
-            <label class="info">Total de noches: {{$room['total_noches']}}<br>Personas: {{$room['adultos']}}<br> Impuestos incluidos </label>
-            <label class="descuento"></label>
-          </div>
-          <div class="line" ></div>
-          <div class="bloques bloque3" >
-            <span class="logosn" >
-              
-            </span>
-            <label class="precio">${{$room['price']}}</label>
-            <label class="search" >Reservar</label>
-          </div>
-        </div>
-      </a>
-      @endforeach
+      @isset ($rooms)
+        @foreach($rooms as $room)
+          <a class="result star_{{$room['stars']}} {{$room['pricerange']}}" id="hotel-{{$room['id']}}" href="{{Request::root()}}/details/{{$room['id']}}/{{$room['url']}}?d={{$room['id']}}{{$url}}" >
+            <div class="img" >
+              <label><img src="{{$room['image']}}" alt="{{$room['name']}}" title="{{$room['name']}}" /></label>
+            </div>
+            <div class="details">
+              <div class="bloques" >
+                <label class="blh"><h2 class="title" >{{$room['name']}}</h2></label>
+                <img class="star" src="https://www.kooningtravel.com/intranet/images/star4.5.png" alt="{{$room['name']}}" title="{{$room['name']}}" />
+                <label class="city" >{{$room['city_name']}}<i class="fa fa-map-marker" aria-hidden="true" ></i></label>
+                <span class="include" >Tipo: {{$room['room_name']}}, Plan: {{$room['meal_plan']}}</span>
+              </div>
+              <div class="line" ></div>
+              <div class="bloques bloques2" >
+                <label class="info">Total de noches: {{$room['total_noches']}}<br>Personas: {{$room['adultos']}}<br> Impuestos incluidos </label>
+                <label class="descuento"></label>
+              </div>
+              <div class="line" ></div>
+              <div class="bloques bloque3" >
+                <span class="logosn" >
+                  
+                </span>
+                <label class="precio">${{$room['price']}}</label>
+                <label class="search" >Reservar</label>
+              </div>
+            </div>
+          </a>
+        @endforeach
+      @else
+        @isset ($errores)
+            @foreach ($errores as $error)
+
+              <b>{{$error}}</b><br>
+            @endforeach
+        @endisset
+        @isset ($erroresquery)
+          <b>{{$erroresquery}}</b><br>
+        @endisset
+      @endisset
     </div>
   </div>
 </div>

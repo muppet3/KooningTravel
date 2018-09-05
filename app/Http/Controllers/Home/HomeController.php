@@ -51,7 +51,7 @@ class HomeController extends Controller
             $defaultquery=true;
         }
         $errores=$this->validationdates($errores);   
-        if(Auth::check()){
+        /*if(Auth::check()){
             $totaladultos=$_GET['r1a']+$_GET['r2a']+$_GET['r3a'];
             $totalmenores=$_GET['r1k']+$_GET['r2k']+$_GET['r3k'];
             $huespedes='<span class="date"> ';
@@ -99,7 +99,7 @@ class HomeController extends Controller
                         $item=[];
                         $item['adultos'] = ($_GET['r1a']+$_GET['r2a']+$_GET['r3a']);
                         /*clasificacion de precios*/ 
-                        $precio=$room->rates[0]->sellingRate/$interval->d;
+                       /* $precio=$room->rates[0]->sellingRate/$interval->d;
                         if ($precio> 0 and $precio<= 1000) {
                             $item['pricerange'] = "btw0k-1k";
                         }elseif ($precio> 1000 and $precio<= 3000) {
@@ -112,11 +112,11 @@ class HomeController extends Controller
                             $item['pricerange'] = "more8k";
                         }
                         /*estrellas*/
-                        $item['stars']=substr($hotel->categoryCode,0,1);
+                        /*$item['stars']=substr($hotel->categoryCode,0,1);
                         $item['id']= $hotel->code;
                         $item['name']= (string) $hotel->name;
                         $item['url']=str_replace(" ","-",$hotel->name);
-                        /*pendiente imagenes*/
+                        
                         for ($i=count($hoteles->hotels)-1; $i >1; $i--) {
                             if($hoteles->hotels[$i]->code==$hotel->code){
                                 $item['image']="https://photos.hotelbeds.com/giata/medium/".$hoteles->hotels[$i]->images[0]->path;
@@ -124,7 +124,7 @@ class HomeController extends Controller
                                 unset($hoteles->hotels[$i]);
                             }
                         } 
-                        /*=============*/
+                        
                         $item['city_name']= (string) $hotel->destinationName;
                         $item['country_name']= (string) $pais->country;
                         $item['room_name']= (string) $room->name;
@@ -159,7 +159,7 @@ class HomeController extends Controller
                 $data['url']=$this->autolink();
             }
 
-        }else{
+        }else{*/
             /* inicia hotel do*/     
             if($defaultquery){
                 $query = $this->defaultquery();
@@ -310,7 +310,7 @@ class HomeController extends Controller
                 $data['erroresquery']=$errorquery;
             }
             /* termina hotel do*/
-        }
+        
         if(!empty($errores)){
             $data['errores']=$errores;
         }
