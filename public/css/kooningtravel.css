@@ -1174,8 +1174,10 @@ html body .blog .bloque .right .jr-insta-thumb .jr_col_2 li{ float: left; displa
 html body .blog .bloque .right .jr-insta-thumb .jr_col_2 li a, .blog .bloque .right .jr-insta-thumb .jr_col_2 li a img{ width:100%; height: 140px; border-radius: 3px; display: inline-block; float: left; margin: 0px; }
 html body .blog .addthis_inline_follow_toolbox{ width:533px; float:none; margin:0px auto; }
 html body .blog .bloque .blog .addthis_inline_follow_toolbox #atftbx p { text-align:left; }
-html body .blog .info .subt{ width: 80%; margin:20px 0px 20px 100px; text-align:left; display: inline-block; font-weight: bold; font-size: 30px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  }
-html body .blog .info .text{ width: 100%; overflow: hidden; padding: 0px; font-size: 16px;font-family: lato;text-align:justify;line-height: 25px;display: inline-block;float: none;}
+html body .blog .info .subt{ width:95%;  margin:10px 0px; text-align:left; display: inline-block; font-weight: bold; font-size: 30px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  }
+
+html body .blog .info .text{ width:95%; overflow: hidden; padding: 0px; font-size: 16px;font-family:Roboto;text-align:justify;line-height: 25px;display: inline-block;float: none; font-weight: normal; }
+
 html body .blog .info .text ul li{ font-weight: lighter; display: inline-block; float: left; width: 100%; margin-bottom: 10px; }
 html body .blog .info .text h3{ line-height: 30px; font-weight: lighter; float: left; margin-bottom: 15px; text-align: justify;  }
 html body .blog .info .text h2{  text-align: justify; width: 100%; margin: 15px 0px 15px 0px;color: #42342c; padding: 0px; }
@@ -1254,7 +1256,7 @@ html body .blog .bloque .right #contactform .sub input{ box-shadow:  width:70px;
 html body .blog .bloque .right #from_hotel_search{ border-top-right-radius: 0px; border-bottom-right-radius:0px; color: transparent; }
 html body .blog .bloque .right #to_hotel_search{ color: transparent; border-top-left-radius: 0px; border-left-right-radius:0px; }
 html body .blog .bloque .right .col-md-1 .col-md-12 { margin-top: 20px; }
-html body .blog .info .centraimagen{  margin:0px auto ; float: none ; margin-top: 30px;  display: inline-block; }
+html body .blog .info .centraimagen{  margin: 10px 0px; width:95%; float: none ;display: inline-block; }
 
 	/*Promociones*/
 	html body .fancy-promo{ background: #FFF; display: inline-block;float: left;width: 100%;height: 53px;overflow: hidden;}
