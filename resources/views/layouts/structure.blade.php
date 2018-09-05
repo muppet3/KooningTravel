@@ -67,6 +67,10 @@ to { -webkit-transform: rotate(-360deg) translateX(30px); transform: rotate(-360
 body { text-align: center; }
 .load  { margin: 0px;padding: 0px;border: 0px;width:700px;float: none;display: inline-block; }
 h1{ color:#f4731c; }
+.logo{ width:160px; height: 57px; }
+
+
+
 </style>
 
 <script type="text/javascript">
@@ -106,7 +110,7 @@ $(document).ready(function(){
   
   
   
-  <img src="img/construccion/logo.png" alt="en construccion" /> <br>
+  <img class="logo" src="img/construccion/logo.png" alt="en construccion" /> <br>
   <hr>
   <img class="load" src="img/construccion/construccion.png" alt="en construccion" /> 
 
