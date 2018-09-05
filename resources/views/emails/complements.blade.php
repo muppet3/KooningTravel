@@ -58,18 +58,24 @@
 						@endisset
 						@isset ($complements['activities'])
 						    @foreach ($complements['activities'] as $item)
-						    @php
-						    	dd($item->ticket);
-						    @endphp
 						    	<tr>
 								<td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff; padding-left: 30px; padding-right: 30px; font-size: 13px; line-height: 17px; font-family: tahoma; color: #333;  border-bottom: 10px solid #f2f2f2;  border-left: 1px solid #f2f2f2;  border-right: 1px solid #f2f2f2; border-top: 1px solid #f2f2f2; "><br>
 									<div style="line-height: 24px; font-family: Tahoma; color: rgb(102, 102, 102); text-transform: uppercase; font-size: 16px; font-weight: normal; text-align: center;">
-												Reserva de Actividad nombres
+												Reserva de {{$item->ticket->activity->category->type}} {{$item->ticket->activity->name}}
 									</div>
 									<br>
-									<h3 class="titulosreserva">Complemento:</h3>
-									<h3 class="titulosreserva">Tour:</h3>
-									<p> '. $producto->nombre.' </p>
+									<h3 class="titulosreserva">Tipo entrada</h3>
+									<p>{{$item->ticket->name}}</p>
+									<h3 class="titulosreserva">Fecha:</h3>
+									<p>{{$item->checkin}}</p>
+									<h3 class="titulosreserva">Adultos:</h3>
+									<p>{{$item->adult}}</p>
+									@if ($item->child>0)
+										<h3 class="titulosreserva">Menores:</h3>
+										<p>{{$item->child}}</p>
+									@endif
+									<h3 class="titulosreserva">Total:</h3>
+									<p>{{number_format($item->total)}}</p>
 
 								</td>
 							</tr>

@@ -124,6 +124,7 @@ class PurchaseController extends Controller
   	public function booking($id){
   		/*inicia reservacion real*/
         $purchase=Purchase::find($id);
+        $complementos['uid']=$purchase->code;
 
         if(count($purchase->buy_hotels)>=0){
 
@@ -161,9 +162,9 @@ class PurchaseController extends Controller
         	$datos['adultos']=$adultos;
         	$datos['menores']=$menores;
         	$datos['habitaciones']=$cont;
-        	//$datos['idreserva']=$purchase->buy_hotels->booking;
-        	$datos['idreserva']="10";
-			/*
+        	$datos['idreserva']=$purchase->buy_hotels->booking;
+        	//$datos['idreserva']=$purchase->booking;
+			
 			if ($av) {
 				
 				$booking = new Booking('Book',$recuest_book);
@@ -182,7 +183,7 @@ class PurchaseController extends Controller
 						//$this->errorMail($purchase->emailaddress,$order->id);
 					}
 				}
-			}*/
+			}
 			$complementos['hotel']=$datos;
         }
         if(count($purchase->buy_transfers)>=0){
@@ -197,6 +198,7 @@ class PurchaseController extends Controller
                 $mail->subject('Reservaciones KooningTravel');
                 $mail->to('ferr.95.fer.fmr@gmail.com');
         });
+        return redirect('gracias');
         	
   	}
   	public function delete($id){
@@ -222,6 +224,9 @@ class PurchaseController extends Controller
   		}
   		$data['cart']=$cart;
   		$data['total']=$total;
+  		$data['tres']=$total/3;
+  		$data['seis']=$total/6;
+  		$data['nueve']=$total/9;
 
 
   		return view('purchase/checkout',$data); 
@@ -375,10 +380,9 @@ class PurchaseController extends Controller
 			}
 
 		}
-		$this->booking($purchase->id);
 		\Mail::send('emails.noticereservation',$compra,function($mail){
                 $mail->subject($_POST['nombre'].' '.$_POST['apellidos'].' realizo una cotizacion');
-                $mail->to('ferr.95.fer.fmr@gmail.com');
+                $mail->to('reservaciones@kooningtravel.com');
         });
         \Session::put('purchase_id',$purchase->id);
         /*inicia reservacion real*/
@@ -431,7 +435,7 @@ class PurchaseController extends Controller
 			}*/
 		//27745444
         /*termina reservacion real*/
-  		return view('purchase/checkout',$data); 
+  		//return view('purchase/checkout',$data); 
   	}
   	public function details($id){
   		$purchase = Purchase::where('code',$id)->first();
