@@ -185,6 +185,8 @@
   <div class="col-md-9" id="step-2" >
     <!-- aqui empiza -->
     <form class="form-pay-reservation"  action="/purchase" method="POST">
+      @csrf
+      
       <div id="radCardPayments" class="paymentType" >
         <ul id="rad-payment-form">
           <li class="selected allc">

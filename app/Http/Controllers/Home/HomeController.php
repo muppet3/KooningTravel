@@ -520,7 +520,7 @@ class HomeController extends Controller
         $room=$query->xpath('Hotels/Hotel/Rooms/Room/Id[.="'.$room_id.'"]/..')[0];
 
         $room->Destino=$query->Hotels->Hotel->CityName.", ".$query->Hotels->Hotel->CountryName;
-        $room->NameHotel=
+        
         
         $item['type']="hotel";
         $item['room_id']=$room_id;

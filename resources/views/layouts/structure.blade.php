@@ -1,3 +1,121 @@
+@guest
+  <!DOCTYPE html>
+
+<html lang="es">
+<head>
+
+
+<script language="javascript" type="text/javascript" src="img/construccion/jquery-3.3.1.js"></script> 
+
+<style type="text/css">
+
+
+.smooth-loader-wrapper { background-color:#ff5112; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 700000; }
+.smooth-loader-wrapper .smooth-loader { position: absolute; top: 50%; left: 50%; z-index: 2100; line-height: 0; -webkit-transform: translate(-50%, 50%); transform: translate(-50%, 50%) }
+.smooth-loader-wrapper .smooth-loader .loader { position: relative; width: 110px }
+.smooth-loader-wrapper .smooth-loader .dot { display: inline-block; width: 20px; height: 20px; border-radius: 10px; background: #ccc; position: absolute }
+.smooth-loader-wrapper .smooth-loader .dot-1 { -webkit-animation: animateDot1 1.5s linear infinite; animation: animateDot1 1.5s linear infinite; left: 30px; background: #f0c24b }
+.smooth-loader-wrapper .smooth-loader .dot-2 { -webkit-animation: animateDot2 1.5s linear infinite; animation: animateDot2 1.5s linear infinite; -webkit-animation-delay: .5s; animation-delay: .5s; left: 60px; background: #b5d56a }
+.smooth-loader-wrapper .smooth-loader .dot-3 { -webkit-animation: animateDot3 1.5s linear infinite; animation: animateDot3 1.5s linear infinite; left: 30px; background:#fff; }
+.smooth-loader-wrapper .smooth-loader .dot-4 { -webkit-animation: animateDot4 1.5s linear infinite; animation: animateDot4 1.5s linear infinite; -webkit-animation-delay: .5s; animation-delay: .5s; left: 60px; background: #84bed6 }
+.loaded #preloader { opacity: 0; visibility: hidden; transition: all .7s ease-out; }
+
+@-webkit-keyframes animateDot1 { 
+0% { -webkit-transform:rotate(0deg) translateX(-30px); transform:rotate(0deg) translateX(-30px) }
+25% { -webkit-transform:rotate(180deg) translateX(-30px); transform:rotate(180deg) translateX(-30px) }
+75% { -webkit-transform:rotate(180deg) translateX(-30px); transform:rotate(180deg) translateX(-30px) }
+to { -webkit-transform: rotate(360deg) translateX(-30px); transform: rotate(360deg) translateX(-30px) } 
+} 
+@keyframes animateDot1 { 
+0% { -webkit-transform:rotate(0deg) translateX(-30px); transform:rotate(0deg) translateX(-30px) }
+25% { -webkit-transform:rotate(180deg) translateX(-30px); transform:rotate(180deg) translateX(-30px) }
+75% { -webkit-transform:rotate(180deg) translateX(-30px); transform:rotate(180deg) translateX(-30px) }
+to { -webkit-transform: rotate(360deg) translateX(-30px); transform: rotate(360deg) translateX(-30px) } }
+@-webkit-keyframes animateDot2 { 
+0% { -webkit-transform:rotate(0deg) translateX(-30px); transform:rotate(0deg) translateX(-30px) }
+25% { -webkit-transform:rotate(-180deg) translateX(-30px); transform:rotate(-180deg) translateX(-30px) }
+75% { -webkit-transform:rotate(-180deg) translateX(-30px); transform:rotate(-180deg) translateX(-30px) }
+to { -webkit-transform: rotate(-360deg) translateX(-30px); transform: rotate(-360deg) translateX(-30px) } }
+@keyframes animateDot2 { 0% { -webkit-transform:rotate(0deg) translateX(-30px); transform:rotate(0deg) translateX(-30px) }
+25% { -webkit-transform:rotate(-180deg) translateX(-30px); transform:rotate(-180deg) translateX(-30px) }
+75% { -webkit-transform:rotate(-180deg) translateX(-30px); transform:rotate(-180deg) translateX(-30px) }
+to { -webkit-transform: rotate(-360deg) translateX(-30px); transform: rotate(-360deg) translateX(-30px) } }
+@-webkit-keyframes animateDot3 { 
+0% { -webkit-transform:rotate(0deg) translateX(30px); transform:rotate(0deg) translateX(30px) }
+25% { -webkit-transform:rotate(180deg) translateX(30px); transform:rotate(180deg) translateX(30px) }
+75% { -webkit-transform:rotate(180deg) translateX(30px); transform:rotate(180deg) translateX(30px) }
+to { -webkit-transform: rotate(360deg) translateX(30px); transform: rotate(360deg) translateX(30px) } }
+@keyframes animateDot3 {
+0% { -webkit-transform:rotate(0deg) translateX(30px); transform:rotate(0deg) translateX(30px) }
+25% { -webkit-transform:rotate(180deg) translateX(30px); transform:rotate(180deg) translateX(30px) }
+75% { -webkit-transform:rotate(180deg) translateX(30px); transform:rotate(180deg) translateX(30px) }
+to { -webkit-transform: rotate(360deg) translateX(30px); transform: rotate(360deg) translateX(30px) } }
+@-webkit-keyframes animateDot4 {
+0% { -webkit-transform:rotate(0deg) translateX(30px); transform:rotate(0deg) translateX(30px) }
+25% { -webkit-transform:rotate(-180deg) translateX(30px); transform:rotate(-180deg) translateX(30px) }
+75% { -webkit-transform:rotate(-180deg) translateX(30px); transform:rotate(-180deg) translateX(30px) }
+to { -webkit-transform: rotate(-360deg) translateX(30px); transform: rotate(-360deg) translateX(30px) }}
+
+
+@keyframes animateDot4 { 
+0% { -webkit-transform:rotate(0deg) translateX(30px); transform:rotate(0deg) translateX(30px) }
+25% { -webkit-transform:rotate(-180deg) translateX(30px); transform:rotate(-180deg) translateX(30px)}
+75% { -webkit-transform:rotate(-180deg) translateX(30px); transform:rotate(-180deg) translateX(30px) }
+to { -webkit-transform: rotate(-360deg) translateX(30px); transform: rotate(-360deg) translateX(30px) }}
+
+
+body { text-align: center; }
+.load  { margin: 0px;padding: 0px;border: 0px;width:700px;float: none;display: inline-block; }
+h1{ color:#f4731c; }
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+  
+  $("#preloader").fadeOut(7000); 
+  
+  
+});
+
+</script>
+  
+  
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+   <title> Kooning Travel  2018, Todos los Derechos Reservados.</title>
+   
+</head>
+
+
+<body>
+
+  
+  <div id="preloader" class="smooth-loader-wrapper">
+    <div class="smooth-loader">
+      <div class="loader">
+        <span class="dot dot-1"></span>
+        <span class="dot dot-2"></span>
+        <span class="dot dot-3"></span>
+        <span class="dot dot-4"></span>
+      </div>
+    </div>
+  </div>
+
+  <h1>Kooning Travel</h1>
+  
+  
+  
+  <img src="img/construccion/logo.png" alt="en construccion" /> <br>
+  <hr>
+  <img class="load" src="img/construccion/construccion.png" alt="en construccion" /> 
+
+</body>
+</html>
+
+@else
+
+
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 
@@ -555,3 +673,4 @@
 
   </body>
 </html>
+@endguest

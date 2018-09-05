@@ -126,6 +126,3 @@
 	<br><br>
 </body>
 </html>
-@php
-	dd();
-@endphp

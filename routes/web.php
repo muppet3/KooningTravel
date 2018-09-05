@@ -80,7 +80,7 @@
 	*/
 	Route::get('checkout', 'Purchase\PurchaseController@checkout');
 	Route::post('checkout', 'Purchase\PurchaseController@email');
-	Route::get('purchase', 'Purchase\PurchaseController@Pago');
+	Route::post('purchase', 'Purchase\PurchaseController@payworks');
 	Route::get('gracias',"Purchase\PurchaseController@gracias");
 	Route::get('eliminar/{id}',"Purchase\PurchaseController@delete");
 	Route::get('voucher/{id}',"Purchase\PurchaseController@details");
