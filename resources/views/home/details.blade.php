@@ -404,8 +404,30 @@
 										<div id="collapse0" class="panel-collapse active in collapse" role="tabpanel" aria-labelledby="heading0"><div class="panel-body panel_text">
 											<div class="table-responsive">
 												<table class="table table-responsive">
-													<tbody><tr style="background=#E9540D"> <th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Sábado</th><th class="info"> 13</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Domingo</th><th class="info"> 14</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Lunes</th><th class="info"> 15</th><th style="width:50px; padding-left:10px; padding-right:0px;" class="info"> Martes</th><th class="info"> 16</th></tr>
-													<tr><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td><td colspan="2" class="Warning"> $ 4,093</td></tr>
+													<tbody>
+														<tr style="background=#E9540D">
+															@for ($i = 1; $i <= count($room->MealPlans->MealPlan->NightsDetail->NightlyRate)  ; $i++)
+																<th style="width:50px; padding-left:10px; padding-right:0px;" class="info">
+																	@php
+																		$dia =new \DateTime($room->MealPlans->MealPlan->NightsDetail->NightlyRate[$i-1]->Date);
+																		$dias=date("l", strtotime($dia->format('Y-m-d')));
+                        												$edd=date("d",strtotime($dia->format('Y-m-d')));
+																			
+																	@endphp
+																	{{$dias}}
+																</th>
+																<th class="info"> {{$edd}}</th>
+															@endfor
+														</tr>
+													<tr>
+														@for ($i = 1; $i <= count($room->MealPlans->MealPlan->NightsDetail->NightlyRate)  ; $i++)
+														@php
+															$ganancia=(float) $room->MealPlans->MealPlan->AgencyPublic->AgencyPublic-(float)$room->MealPlans->MealPlan->Total;
+															$pdia=(float) $room->MealPlans->MealPlan->NightsDetail->NightlyRate[$i-1]->Total+($ganancia/ count($room->MealPlans->MealPlan->NightsDetail->NightlyRate));
+														@endphp
+															<td colspan="2" class="Warning"> $ {{number_format($pdia)}}</td>
+														@endfor
+													</tr>
 												</tbody></table></div>
 												<p class="info-message" >{{$room->MealPlans->MealPlan->RateDetails->RateDetail->CancellationPolicy->Description }}</p>
 											</div>

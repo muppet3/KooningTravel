@@ -449,7 +449,7 @@ class HomeController extends Controller
                 $room->MealPlans->MealPlan->AgencyPublic->Precio=number_format((float)$precio);
                 $room->MealPlans->MealPlan->AgencyPublic->PrecioPromedio=number_format((float)($precio/4));
             }
-            
+            //dd($getquery->Hotels->Hotel->Rooms->Room);
             $data['rooms']=$getquery->Hotels->Hotel->Rooms->Room;
             $data['defaultimage']=$getquery->Hotels->Hotel->Image;
             $data['latitud']=$getquery->Hotels->Hotel->Latitude;
@@ -487,6 +487,7 @@ class HomeController extends Controller
             </span>';
         }
         $data['fechas']=$fechas;
+        $data['dias']=$interval->d;
         $data['huespedes']=$huespedes;
         //dd($data);
         return view('home/details',$data);
