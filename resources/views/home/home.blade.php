@@ -318,7 +318,7 @@ body .home { height:360px; }
 					<div class="bloqueh">
 						<div class="banerh" >
 							<a href="{{Request::root()}}/search/Cancun?type=1&d=2{{$filtros}}">
-								<img alt=" " src="/img/publicidad/playas/cancun.png" />
+								<img alt=" " src="/img/publicidad/playas/Cancun.png" />
 							</a>
 						</div>
 						<div  class="banerh2">
@@ -349,7 +349,7 @@ body .home { height:360px; }
 					<div class="bloqueh">
 						<div class="banerh">
 							<a href="{{Request::root()}}/search/Riviera-Maya?type=1&d=13{{$filtros}}" >
-								<img alt=" " src="/img/publicidad/playas/rivieramaya.png"  />
+								<img alt=" " src="/img/publicidad/playas/RivieraMaya.png"  />
 							</a>
 						</div>
 						<div class="banerh2">
@@ -401,7 +401,7 @@ body .home { height:360px; }
 					<div class="bloqueh">
 						<div class="banerh">
 							<a href="{{Request::root()}}/search/Ciudad-de-Mexico?type=1&d=11{{$filtros}}" >
-								<img src="/img/publicidad/ciudades/cdmx.png" alt=" " />
+								<img src="/img/publicidad/ciudades/CDMX.png" alt=" " />
 							</a>
 						</div>
 						<div class="banerh2">
@@ -424,14 +424,14 @@ body .home { height:360px; }
 						</div>
 						<div style="float:right;" class="banerh">
 							<a href="{{Request::root()}}/search/Guadalajara?type=1&d=15{{$filtros}}" >
-								<img src="/img/publicidad/ciudades/guadalajara.png" alt=" " />
+								<img src="/img/publicidad/ciudades/Guadalajara.png" alt=" " />
 							</a>
 						</div>
 					</div>
 					<div class="bloqueh">
 						<div class="banerh">
 							<a href="{{Request::root()}}/search/Monterrey?type=1&d=32{{$filtros}}" >
-								<img src="/img/publicidad/ciudades/monterrey.png" alt=" " />
+								<img src="/img/publicidad/ciudades/Monterrey.png" alt=" " />
 							</a>
 						</div>
 						<div class="banerh2">
