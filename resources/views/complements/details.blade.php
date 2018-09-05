@@ -26,7 +26,7 @@ fjs.parentNode.insertBefore(js, fjs);
     <div class="info">
 
 
-      <span class="text"> {{$blog->description}} </span>
+      <span class="text"> {!!$blog->description!!} </span>
 
 
       @foreach ($blog->segments as $segment)
