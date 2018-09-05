@@ -615,26 +615,7 @@ $(".messaje").delay(3000).fadeOut("slow");
 	$("#tabs").tabs();
 
 
-	function send() {
-		
-        $.ajax ( {
-          	url: "",
-          	type: 'POST',
-          	data:$('#datoscliente').serialize(),
-          	success: function(data)             
-           	{
-           		console.log('se envio correo');
-           	},
-    		error: function (data, textStatus, errorThrown) {
-        		console.log(data);
-             	$(".wait").hide(); 
-            	$("#contact-form").hide();
-				$(".steps .step-3").removeClass("active");
-				$(".steps .step-4").addClass("active");				
-				$("#form-card").show(); 
-    		},
-        });
-    }
+	
 
 	/*Aqui comienza traslados*/
 
@@ -860,3 +841,30 @@ function addparques() {
 
 
 */
+function send() {
+		$('.wait').show();
+        $.ajax ( {
+          	url: "",
+          	type: 'POST',
+          	data:$('#datoscliente').serialize(),
+          	success: function(data)             
+           	{
+           		console.log('se envio correo');
+           		$('#form-pago').hide();
+           		$('#form-pagar').show();
+
+           		$('.wait').hide();
+
+
+
+           	},
+    		error: function (data, textStatus, errorThrown) {
+        		console.log(data);
+             	$(".wait").hide(); 
+            	$("#contact-form").hide();
+				$(".steps .step-3").removeClass("active");
+				$(".steps .step-4").addClass("active");				
+				$("#form-card").show(); 
+    		},
+        });
+    }

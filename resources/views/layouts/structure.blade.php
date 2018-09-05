@@ -245,7 +245,7 @@
     </div>
     <div id="shopcart" >
       @guest
-        <a href="/carrito"> <span id="cost" ><srong>0</srong></span></a>
+        <a href="/checkout"> <span id="cost" ><srong>0</srong></span></a>
         <aside style="display: none;"  class="contt" >
           <label class="arr" ></label>
           <div class="listcart" > 

@@ -76,7 +76,7 @@
 							
 							<br><br>
 							<div style="line-height: 24px; font-family: Tahoma; color: rgb(102, 102, 102); text-transform: uppercase; font-size: 16px; font-weight: normal; text-align: center;">
-								Su reservación se ha realizado con éxito
+								Su reservación se ha realizado con éxito <br>codigo de reseva {{$complements['uid']}}
 							</div>
 							<br>
 							<p>Hemos recibido sus datos y en breve uno de nuestros asesores se comunicar&aacute; con usted para brindarle toda la informaci&oacute;n necesaria.</p>
@@ -126,3 +126,6 @@
 	<br><br>
 </body>
 </html>
+@php
+	dd();
+@endphp

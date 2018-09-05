@@ -279,13 +279,13 @@
         <div class="second-bloque">
           <div class="ts" >
             <input type="radio" value="1" id="1" placeholder="1 Pago" name="MESES" checked />
-            <span id='negritass'>1x 52455</span>
+            <span id='negritass'>1x {{number_format($total)}}</span>
             <input type="radio" value="03" id="3" placeholder="3 meses sin intereses" name="MESES" disabled />
-            <span id='negritass'>3x 544854</span>
+            <span id='negritass'>3x {{number_format($tres)}}</span>
             <input  type="radio" value="06" id="6" placeholder="6 meses sin intereses" name="MESES" disabled />
-            <span id='negritass'> 6x 54844</span>
+            <span id='negritass'> 6x {{number_format($seis)}}</span>
             <input type="radio" value="09" id="9" placeholder="9 meses sin intereses" name="MESES" disabled />
-            <span id='negritass'> 9x 5588</span>
+            <span id='negritass'> 9x {{number_format($nueve)}}</span>
           </div>
           <div class="right">
             <div class="imput" >
@@ -307,7 +307,7 @@
         <h2>Reservacion</h2>
         <h3>Datos de la Reserva </h3>
       </div>
-      <form  class="needs-validation" id="datoscliente" action="" method="post">
+      <form  class="needs-validation" id="datoscliente" action="javascript:void(0)" method="post">
         @csrf
         <div style="display: none;" >
           <input type="hidden" name="name2" />
@@ -435,7 +435,7 @@
           </div>
         </div>
         <div class="form-row">
-          <input id="btn_pagar" type="submit" class="btn btn-sm btn-caja-reserva" onClick="send()" value="Pagar" >
+          <button id="btn_pagar" type="submit" class="btn btn-sm btn-caja-reserva" onClick="send()" value="Pagar" >Pagar</button>
         </div>
         <div class="form-row">
           <label class="price" >MXN ${{number_format($total)}}</label>
@@ -448,11 +448,41 @@
         <h3>Datos de la Reserva </h3>
       </div>
       <form name="contactform" id="contactform" class="needs-validation" action="/hotels/confirm" onsubmit="" method="post">
+        <div class="pricing-table-features">
+          <div class="detailst" >
+            @foreach ($cart as $key => $item)
+              @switch($item['type'])
+                  @case('hotel')
+                    <span class="desct" > 
+                      <b>{{$item['name']}}</b>
+                    </span>
+                    @break
+                  @case('traslado')
+                    <span class="desct" > 
+                      <b>{{$item['destiny']}}</b>
+                    </span>
+                    @break
+                  @case('parque'||'tour')
+                    <span class="desct" > 
+                      <b>{{$item['ticket']}}</b>
+                    </span>
+                    @break
+              @endswitch
+              
+              <span class="desct" > 
+                <b>nombre producto</b>
+              </span>
+              <span class="costt" style="display: block; text-align: right;">
+                $ 1,002.52
+              </span>
+            @endforeach
+          </div>
+        </div>
         <div class="form-row">
           <label class="price" >MXN ${{number_format($total)}}</label>
         </div>
         <div class="form-row">
-          <input  type="submit" class="pagar" id="pay-cart" value="Pagar" >
+          
         </div>
       </form>
     </div>
