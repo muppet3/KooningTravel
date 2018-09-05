@@ -132,63 +132,32 @@ fjs.parentNode.insertBefore(js, fjs);
   <select style="display:none;" required="true" onclick="fd()" data-placeholder="Destino..." class="destination form-control" id="d" name="d" placeholder="Destino..." multiple="multiple" >
   </select>
 </div>
-<div class="inline-search">
-  <div class="input-style date-from noselect">
-    <div class="date-wrapper from_datepicker-wrapper">
-      <span class="aa">28</span>
-      <span class="ee">
-        <span class="ii">Agosto</span>
-        <span class="uu">Viernes</span>
-      </span>
-    </div>
-    <input type="text" name="sd" id="from_hotel_search" class="datepicker from_datepicker" value="<?php //echo $entrada; ?>" placeholder="Del día ..." readonly  autocomplete="off" />
-  </div>
-  <div class="text date-nights noselect">
-    <span class="number-nights">4</span>
-    <select class="date-nights-input" >
-      <option value="1">1</option>
-      <option value="2" selected="selected">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-      <option value="11">11</option>
-      <option value="12">12</option>
-      <option value="13">13</option>
-      <option value="14">14</option>
-      <option value="15">15</option>
-      <option value="16">16</option>
-      <option value="17">17</option>
-      <option value="18">18</option>
-      <option value="19">19</option>
-      <option value="20">20</option>
-      <option value="21">21</option>
-      <option value="22">22</option>
-      <option value="23">23</option>
-      <option value="24">24</option>
-      <option value="25">25</option>
-      <option value="26">26</option>
-      <option value="27">27</option>
-      <option value="28">28</option>
-      <option value="29">29</option>
-      <option value="30">30</option>
-    </select>
-  </div>
-  <div class="input-style date-to noselect">
-    <div class="date-wrapper to_datepicker-wrapper" id="to_datepicker-wrapper">
-      <span class="aa">30</span>
-      <span class="ee">
-        <span class="ii">Agosto</span>
-        <span class="uu">Domingo</span>
-      </span>
-    </div>
-    <input type="text" name="ed" id="to_hotel_search" class="datepicker to_datepicker" value="<?php //echo $salida; ?>" placeholder="al día ..." readonly autocomplete="off" />
-  </div>
-</div>
+      <div class="inline-search">
+        <div class="input-style date-from noselect">
+          <div class="date-wrapper from_datepicker-wrapper">
+            <span class="aa">{{$checkin->day}}</span>
+            <span class="ee">
+              <span class="ii">{{$checkin->NameMoth($checkin->month)}}</span>
+              <span class="uu">{{$checkin->DayWeek($checkin->dayOfWeek)}}</span>
+            </span>
+          </div>
+          <input type="text" name="sd" id="from_hotel_search" class="datepicker from_datepicker" value="{{$checkin->toDateString()}}" placeholder="Del día ..." readonly  autocomplete="off" />
+        </div>
+        <div class="text date-nights noselect">
+          <span class="number-nights">4</span>
+        </div>
+        <div class="input-style date-to noselect">
+          
+          <div class="date-wrapper to_datepicker-wrapper" id="to_datepicker-wrapper">
+            <span class="aa">{{$checkout->day}}</span>
+            <span class="ee">
+              <span class="ii">{{$checkout->NameMoth($checkout->month)}}</span>
+              <span class="uu">{{$checkout->DayWeek($checkout->dayOfWeek)}}</span>
+            </span>
+          </div>
+          <input type="text" name="ed" id="to_hotel_search" class="datepicker to_datepicker" value="{{$checkout->toDateString()}}" placeholder="al día ..." readonly autocomplete="off" />
+        </div>
+      </div>
 <div class="inline-block">
   <div class="inline-search passengers noselect">
     <div class="input-style" id="show-passengers-panel">
