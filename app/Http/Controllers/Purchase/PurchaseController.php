@@ -234,6 +234,7 @@ class PurchaseController extends Controller
   		$total=0;
   		if(is_null($cart) or empty($cart)){
   			$data['vacio']=1;
+  			
 	  	}else{
 	  		foreach ($cart as $item) {
 	  			
