@@ -90,7 +90,7 @@
           </select>
         </div>
         <div class="Parquex m" >
-          <button class="btn-compra" type="submit">Comprar</button>
+          <button class="btn-compra" id="addcart" type="submit">Comprar</button>
         </div>
         <label class="tx16">Precios sujetos a cambios sin previo aviso. Aplican restricciones.</label>
       </form>

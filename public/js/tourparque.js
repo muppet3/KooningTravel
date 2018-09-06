@@ -237,44 +237,67 @@ function initMap2() {
 
 //Validar envio de Traslados 
 
-		$("#traslados").click(function(){
+	$("#traslados").click(function(){
 
-				var hotel = $("#hotel").val();
-				var sd = $("input[name='sd']").val();
-				//var ed = $("input[name='ed']").val();
-				var clase = $("select[name='clase']").find(":selected").val();
+			var hotel = $("#hotel").val();
+			var sd = $("input[name='sd']").val();
+			//var ed = $("input[name='ed']").val();
+			var clase = $("select[name='clase']").find(":selected").val();
 
-			if( hotel == "" ){
+		if( hotel == "" ){
 
-				alert("Favor de buscar su hotel");
+			alert("Favor de buscar su hotel");
 
-				$("#hotel").focus();
+			$("#hotel").focus();
+			return false;
+
+			} else if( sd == "" ){
+
+				$("input[name='sd']").focus();
+				return false;
+		 
+			}  else if( clase == 0 ){
+
+				alert("Favor de selecionar el tipo de camioneta");
 				return false;
 
-				} else if( sd == "" ){
+			} else{
 
-					$("input[name='sd']").focus();
-					return false;
-			 
-				}  else if( clase == 0 ){
+			$("body").append('<div class="alert alert-success"><strong>Producto Agregado al Carrito!</strong></div>');
+			var div = $(".alert");
+	        div.animate({top: '20px'}, "slow");
+	        div.animate({right: '40px'}, "slow");
+			$(".alert").delay(100).fadeOut("slow");	
 
-					alert("Favor de selecionar el tipo de camioneta");
-					return false;
+			$(".wait").fadeOut(7000);
 
-				} else{
+			$(".roundt").show();
+				
+			}
+	});
 
-				$("body").append('<div class="alert alert-success"><strong>Producto Agregado al Carrito!</strong></div>');
-				var div = $(".alert");
-		        div.animate({top: '20px'}, "slow");
-		        div.animate({right: '40px'}, "slow");
-				$(".alert").delay(100).fadeOut("slow");	
 
-				$(".wait").fadeOut(7000);
 
-				$(".roundt").show();
-					
-				}
-		});
+$("#addcart").click(function(){
+
+	if( $("#cal").val() == "" ){
+
+		$("#cal").focus();
+		return false;
+
+	}else{
+
+		alert("enviado!");
+
+		$("body").append('<div class="alert alert-success"><strong>Producto Agregado al Carrito!</strong></div>');
+		var div = $(".alert");
+        div.animate({top: '20px'}, "slow");
+        div.animate({right: '40px'}, "slow");
+		$(".alert").delay(100).fadeOut("slow");	
+	}	
+
+});
+
 
 
 });
