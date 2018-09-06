@@ -269,13 +269,12 @@ function initMap2() {
 	        div.animate({right: '40px'}, "slow");
 			$(".alert").delay(100).fadeOut("slow");	
 
-			$(".wait").fadeOut(7000);
+			alert("Producto agregado al Carrito!");
 
 			$(".roundt").show();
 				
 			}
 	});
-
 
 
 $("#addcart").click(function(){
@@ -287,7 +286,7 @@ $("#addcart").click(function(){
 
 	}else{
 
-		alert("enviado!");
+		alert("Producto agregado al Carrito!");
 
 		$("body").append('<div class="alert alert-success"><strong>Producto Agregado al Carrito!</strong></div>');
 		var div = $(".alert");
