@@ -267,7 +267,7 @@
     				<div class="img" >
     	      			<div class="tittle">{{$playa->name}}</div> 
     				  	<hr> 
-    					<img src="{{Request::root()}}/img/campaign/{{$campaña->name}}/{{str_replace(' ','',$playa->name)}}.png" alt="{{str_replace('-',' ',$campaña->name)}}" alt="{{$playa->name}}" />
+    					<img src="{{Request::root()}}/img/campaign/{{$campaña->name}}/{{str_replace(' ','',$playa->name)}}.jpg" alt="{{str_replace('-',' ',$campaña->name)}}" alt="{{$playa->name}}" />
     				</div>
     				<div class="info">
     					<h3>Reserva Ya</h3>
