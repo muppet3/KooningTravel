@@ -27,7 +27,8 @@ SET time_zone = "+00:00";
 --
 -- Estructura de tabla para la tabla `activities`
 --
-
+DROP DATABASE homestead;
+CREATE DATABASE homestead;
 CREATE TABLE `activities` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
