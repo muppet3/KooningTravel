@@ -632,7 +632,7 @@ html body .head .box { position: relative; width: 100%; text-align: center; }
 html body .head .box .headf { background: url("/img/Audifonos.png") no-repeat center center transparent; display: inline-block; width: 62px; height: 51px; border-radius: 4px; position: absolute; right: 8%; }
 html body .home .explor { display: inline-block; width: auto; text-align: center; color: #FFF; font-weight: 300; font-family: HelveticaThin, Helvetica, Arial, sans-serif; font-size: 20px; text-decoration: none; position: relative; top: 45px; }
 html body .head .box #contactform { margin: 0px auto; float: none; }
-html body .head .box #contactform .inline-block:nth-child(5){ margin-left:7px; }
+html body .head .box #contactform .inline-block:nth-child(4){ margin-left:7px; }
 html body .head .box #contactform .position { left: -17px; }
 html body .pannel { text-align: center; margin-top: 20px; display: inline-block; width: 100%; float: left; }
 html body .pannel .lereve { float: left; display: inline-block; text-align: center; width: 185px; }

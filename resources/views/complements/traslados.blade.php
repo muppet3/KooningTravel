@@ -33,7 +33,7 @@
 					<div class="bloq">
 						<div class="left" >
 							<p class="tipo" >Hotel</p>
-							<input type="text" id="hotel" placeholder="Buscar..." value="" name="hotel" class="hotel"  />
+							<input type="text" id="hotel" placeholder="Buscar..." autocomplete="off" value="" name="hotel" class="hotel"  />
 						<ul class="list-group" id="result"></ul>
 	             		<input type="hidden" value="" id="destino" name="destino"  />
 	             		<input type="hidden" value="" id="latitud" name="latitud"  />
@@ -194,7 +194,7 @@
 				</div>
 				<div class="bloq" >
 					<label class="tx16 text7">Terminos y condiciones con el prestador del servicio.</label>
-					<button  type="submit" class="enviar" >RESERVAR</button>
+					<button  type="submit" id="traslados" class="enviar" >RESERVAR</button>
 				</div>
 			</form>
 		</div>

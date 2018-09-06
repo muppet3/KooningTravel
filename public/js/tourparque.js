@@ -249,14 +249,17 @@ function initMap2() {
 				alert("Favor de buscar su hotel");
 
 				$("#hotel").focus();
+				return false;
 
 				} else if( sd == "" ){
 
 					$("input[name='sd']").focus();
+					return false;
 			 
 				}  else if( clase == 0 ){
 
 					alert("Favor de selecionar el tipo de camioneta");
+					return false;
 
 				} else{
 
@@ -266,7 +269,8 @@ function initMap2() {
 		        div.animate({right: '40px'}, "slow");
 				$(".alert").delay(100).fadeOut("slow");	
 
-				addtraslados();
+				$(".wait").fadeOut(7000);
+
 				$(".roundt").show();
 					
 				}
