@@ -3,6 +3,7 @@
 @section('head')
 
 <div id="promo" data-ride="carousel" >	
+  <img class="imgpro" src="/img/promociones/ofertastext.gif" alt="Ofertas Exclusivas">
 <div class="contp" >
    <form id="contactform" class="head" action="/hotels/search" method="GET" >
       <div class="param" >
