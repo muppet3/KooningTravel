@@ -276,7 +276,7 @@
     <div class="item">
       <a href="{{Request::root()}}/oferta/{{str_replace(' ','-',$promocion->name)}}">
         <div class="img" >
-          <img src="{{Request::root()}}/img/campaign/{{str_replace(' ','-',$promocion->name)}}/{{str_replace(' ','-',$promocion->name)}}.png"" alt="{{$promocion->name}}">
+  <img src="{{Request::root()}}/img/campaign/{{str_replace(' ','-',$promocion->name)}}/{{str_replace(' ','-',$promocion->name)}}.png" alt="{{$promocion->name}}" />
           <h4>{{$promocion->name}}</h4>
         </div>
         <div class="info">
