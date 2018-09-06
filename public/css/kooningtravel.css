@@ -411,7 +411,7 @@ td.issuer img { margin: 0 .5em 0 0; float: left; }
 /* Caja Generica */
 #promo {position:initial;text-align: center;display: inline-block;width: 100%;float: left;}
 #promo .imgpro { width: 100%; display: inline-block; float: left; }
-#promo .contp {text-align: center;display: inline-block;float: left;width: 35%;margin: 0px auto;position: absolute;top:20%;left: 0px; }
+#promo .contp {text-align: center;display: inline-block;float: left;width: 35%;margin: 0px auto;position: absolute;top:20%;left:-40px; }
 #promo .rig {float: right;display: inline-block;width: 65%;position: absolute;right: 0px;height: 100px;top: 10%;}
 #promo .rig .promimg { border: 8px solid #fff; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); display: inline-block; }
 #promo .contp #contactform { border-radius: 5px; text-align: center; float: right; width: 280px; height: auto; background: url("/img/promociones/1px.png") repeat 0px 0px transparent; }

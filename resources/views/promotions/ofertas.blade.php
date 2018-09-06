@@ -3,7 +3,7 @@
 @section('head')
 
 <div id="promo" data-ride="carousel" >	
-  <img class="imgpro" src="/img/promociones/ofertastext.gif" alt="Ofertas Exclusivas">
+  <img class="imgpro" src="{{Request::root()}}/img/campaign/{{$campaña->name}}/fondo.jpg" alt="{{str_replace('-',' ',$campaña->name)}}" alt="Ofertas Exclusivas">
 <div class="contp" >
    <form id="contactform" class="head" action="/hotels/search" method="GET" >
       <div class="param" >
@@ -289,7 +289,7 @@
             <div class="img" >
                   <div class="tittle">{{$ciudad->name}}</div> 
                 <hr> 
-              <img src="{{Request::root()}}/img/campaign/{{$campaña->name}}/{{str_replace(' ','',$ciudad->name)}}.png" alt="{{str_replace('-',' ',$campaña->name)}}" alt="{{$ciudad->name}}" />
+              <img src="{{Request::root()}}/img/campaign/{{$campaña->name}}/{{str_replace(' ','',$ciudad->name)}}.jpg" alt="{{str_replace('-',' ',$campaña->name)}}" alt="{{$ciudad->name}}" />
             </div>
             <div class="info">
               <h3>Reserva Ya</h3>
@@ -311,7 +311,7 @@
             <div class="img" >
                   <div class="tittle">{{$internacional->name}}</div> 
                 <hr> 
-              <img src="{{Request::root()}}/img/campaign/{{$campaña->name}}/{{str_replace(' ','',$internacional->name)}}.png" alt="{{str_replace('-',' ',$campaña->name)}}" alt="{{$internacional->name}}" />
+              <img src="{{Request::root()}}/img/campaign/{{$campaña->name}}/{{str_replace(' ','',$internacional->name)}}.jpg" alt="{{str_replace('-',' ',$campaña->name)}}" alt="{{$internacional->name}}" />
             </div>
             <div class="info">
               <h3>Reserva Ya</h3>
