@@ -12,6 +12,7 @@ class Campaign extends Model
 
     protected $fillable = [
     	'name',
+    	'files',
     	'status',
     	'check_in',
     	'check_out',

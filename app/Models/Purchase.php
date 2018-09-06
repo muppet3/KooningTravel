@@ -23,6 +23,7 @@ class Purchase extends Model
         'country',
         'state',
         'phone',
+        'total',
         'request',
         'status',
         'numbercard',

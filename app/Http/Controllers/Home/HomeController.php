@@ -44,7 +44,7 @@ class HomeController extends Controller
         $data['checkin']=new Carbon($_GET['sd']);
         $data['checkout']=new Carbon($_GET['ed']);
         // validacion de fechas   background-image: url(https://kooningtravel.com/img/Home/fondos/FondoHoteles.png
-        $data['background']="height: 270px; background-image: url(https://kooningtravel.com/img/Home/fondos/FondoHoteles.png";
+        $data['background']="height: 270px; background-image: url(https://kooningtravel.com/img/fondos/FondoHoteles.png";
         $errores= $this->validationrooms();
         $defaultquery=false;
         if(count($errores)>0){
@@ -298,7 +298,7 @@ class HomeController extends Controller
                     $max=8001;
                 }
                 $data['max']=$max;
-                $data['destino']=$destinocorrecto;
+                $data['destino']=$destino;
                 $data['rooms']=$room_list;
                 if($defaultquery){
                     $data['url']='&sd='.$_GET["sd"].'&ed='.$_GET["ed"].'&r=1&r1a=2&r1k=0&r1k1a=0&r1k2a=0&r1k3a=0&r2a=0&r2k=0&r2k1a=0&r2k2a=0&r2k3a=0&r3a=0&r3k=0&r3k1a=0&r3k2a=0&r3k3a=0';
@@ -333,7 +333,7 @@ class HomeController extends Controller
     public function details($id, $hotel){
         $data['fechainicial']=new Carbon($_GET['sd']);
         $data['fechafinal']=new Carbon($_GET['ed']);
-        $data['background']="height: 270px; background-image: url(https://kooningtravel.com/img/Home/fondos/FondoHoteles.png";
+        $data['background']="height: 270px; background-image: url(https://kooningtravel.com/img/fondos/FondoHoteles.png";
         $data['hotel']=$hotel;
         $errores= $this->validationrooms();
         $defaultquery=false;

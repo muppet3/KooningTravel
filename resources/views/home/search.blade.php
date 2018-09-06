@@ -1,7 +1,7 @@
 @extends('layouts/structure')
 @section('head')
-<span class='h2'>Hoteles en Holbox, México</span>
-<p class='fechas-info'>El día Sábado 11 de Agosto al Miércoles 15 de Agosto</p>
+<span class='h2'>Hoteles en {{$destino}}, México</span>
+<p class='fechas-info'>El día {{$checkin->DayWeek($checkin->dayOfWeek)}} {{$checkin->day}} de {{$checkin->NameMoth($checkin->month)}} al {{$checkout->DayWeek($checkout->dayOfWeek)}} {{$checkout->day}} de {{$checkout->NameMoth($checkout->month)}}</p>
 @stop
 
 @section('content')
@@ -276,13 +276,16 @@
           </div>
         </form>
       </div>
+       @isset ($rooms)
       <div class="marco" >
         <div class="refill" >
           <span class="filtro" >Filtrar Resultados:</span>
           <select  id="search_hotel" multiple="multiple" data-placeholder="Buscar por Hotel" name="search_hotel" >
+         
             @foreach($rooms as $room)
               <option value="{{$room['id']}}">{{$room['name']}}</option>
             @endforeach
+          
           </select>
           <button id="verTodos" class="btn" type="button">Ver todo los hoteles</button>
         </div>
@@ -307,6 +310,7 @@
         </div>
 
       </div>
+      @endisset
     </div>
     <div class="col-md-9 search-content">
       <h1 class="titulo-listado-hoteles"> Hoteles que concuerdan con tu búsqueda</h1>
@@ -319,7 +323,7 @@
             <div class="details">
               <div class="bloques" >
                 <label class="blh"><h2 class="title" >{{$room['name']}}</h2></label>
-                <img class="star" src="https://www.kooningtravel.com/intranet/images/star4.5.png" alt="{{$room['name']}}" title="{{$room['name']}}" />
+                <img class="star" src="/img/hoteles/star{{$room['stars']}}.png" alt="{{$room['name']}}" title="{{$room['name']}}" />
                 <label class="city" >{{$room['city_name']}}<i class="fa fa-map-marker" aria-hidden="true" ></i></label>
                 <span class="include" >Tipo: {{$room['room_name']}}, Plan: {{$room['meal_plan']}}</span>
               </div>
@@ -363,7 +367,7 @@
 <script type="text/javascript"> 
   
   /*Slider rango de precios*/
-
+      @isset ($rooms)
 $( function() {
     $( "#slider-range-min" ).slider({
       range: "min",
@@ -404,5 +408,5 @@ $( function() {
 
 </script>
 
-
+@endisset
 @stop

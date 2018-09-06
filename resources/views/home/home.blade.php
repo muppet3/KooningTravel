@@ -17,7 +17,7 @@ body .home { height:360px; }
 	<div class="box" >
 		<!--Caja Home-Begin-->
 		<form id="contactform" action="" class="box-home" method="GET" >
-			
+			<input type="hidden" name="type" id="type" value="1" />
 			<div class="inline-block">
 				<select style="display:none;" autofocus="autofocus" required="true" data-placeholder="Destino..." class="destination form-control" id="d" name="d" multiple="multiple" >
 				</select>
@@ -281,17 +281,17 @@ body .home { height:360px; }
 	<div class="item active" >
 		<img src="/img/publicidad/anuncios/ofer1.png"  usemap="#Map1" alt="Verano" />
 		<map name="Map1">
-		<area shape="rect" target="_blank" coords="2,1,361,268" href="/ofertas/10/Preventa-Verano">
-			<area class="fives1" shape="rect" target="_blank" coords="368,1,726,136" href="/ofertas/6/Viaja-En-Mexico-Y-Por-Mexico">
-				<area class="fives1 fives2" shape="rect" target="_blank" coords="367,136,724,268" href="/ofertas/4/Birthday">
+		<area shape="rect" target="_blank" coords="2,1,361,268" href="/oferta/Preventa-Verano">
+			<area class="fives1" shape="rect" target="_blank" coords="368,1,726,136" href="/oferta/viaja-En-Mexico-Y-Por-Mexico">
+				<area class="fives1 fives2" shape="rect" target="_blank" coords="367,136,724,268" href="/oferta/festeja-tu-cumpleaños">
 					</map>
 				</div>
 				<div class="item" >
 					<img src="/img/publicidad/anuncios/ofer2.png"  usemap="#Map" alt="Verano" />
 					<map name="Map">
-					<area shape="rect" target="_blank" coords="2,1,361,268" href="https://www.kooningtravel.com/ofertas/9/Vive-Disfruta-Viaja">
-						<area class="fives1" shape="rect" target="_blank" coords="368,1,726,136" href="https://www.kooningtravel.com/ofertas/5/Disfruta-Mexico">
-							<area class="fives1 fives2" shape="rect" target="_blank" coords="367,136,724,268" href="https://www.kooningtravel.com/ofertas/7/Goza-tus-viajes-de-negocios">
+					<area shape="rect" target="_blank" coords="2,1,361,268" href="/oferta/Vive,-Disfruta-y-Viaja">
+						<area class="fives1" shape="rect" target="_blank" coords="368,1,726,136" href="/oferta/Disfruta-México">
+							<area class="fives1 fives2" shape="rect" target="_blank" coords="367,136,724,268" href="/oferta/Goza-tus-viajes-de-negocios">
 								</map>
 							</div>
 						</div>
@@ -406,20 +406,20 @@ body .home { height:360px; }
 						</div>
 						<div class="banerh2">
 							<a  href="{{Request::root()}}/search/Puebla?type=1&d=39{{$filtros}}" >
-								<img src="/img/publicidad/ciudades/Puebla.jpg" alt=" " />
+								<img src="/img/publicidad/ciudades/puebla.jpg" alt=" " />
 							</a>
 							<a class="mar" href="{{Request::root()}}/search/Queretaro?type=1&d=40{{$filtros}}" >
-								<img src="/img/publicidad/ciudades/Queretaro.jpg" alt=" " />
+								<img src="/img/publicidad/ciudades/queretaro.jpg" alt=" " />
 							</a>
 						</div>
 					</div>
 					<div class="bloqueh">
 						<div style="float:left;" class="banerh2">
 							<a href="{{Request::root()}}/search/Merida?type=1&d=10{{$filtros}}" >
-								<img src="/img/publicidad/ciudades/Merida.jpg" alt=" " />
+								<img src="/img/publicidad/ciudades/merida.jpg" alt=" " />
 							</a>
 							<a class="mar" href="{{Request::root()}}/search/Guanajuato?type=1&d=47{{$filtros}}" >
-								<img src="/img/publicidad/ciudades/Guanajuato.jpg" alt=" " />
+								<img src="/img/publicidad/ciudades/guanajuato.jpg" alt=" " />
 							</a>
 						</div>
 						<div style="float:right;" class="banerh">
@@ -436,10 +436,10 @@ body .home { height:360px; }
 						</div>
 						<div class="banerh2">
 							<a href="{{Request::root()}}/search/Oaxaca?type=1&d=17{{$filtros}}" >
-								<img src="/img/publicidad/ciudades/Oaxaca.jpg" alt=" " />
+								<img src="/img/publicidad/ciudades/oaxaca.jpg" alt=" " />
 							</a>
 							<a class="mar" href="{{Request::root()}}/search/Morelia?type=1&d=5{{$filtros}}" >
-								<img src="/img/publicidad/ciudades/Morelia.jpg" alt=" " />
+								<img src="/img/publicidad/ciudades/morelia.jpg" alt=" " />
 							</a>
 						</div>
 					</div>
