@@ -187,7 +187,8 @@ html body .body-cart .col-md-9 .extras .row .conte .card-hotel .card-precios .tx
 html body .body-cart .col-md-9 .extras .row .conte .card-hotel .mensualidades { font-family: Roboto,sans-serif; margin:0 0 10px!important; font-size: 12px; padding-top: 7px!important; color: #666; text-align: left; width: 100%; text-indent: 8px; }
 html body .body-cart .col-md-9 .extras .row .conte .card-hotel { position: relative; display: inline-block; background: #fff; margin-top: 15px; -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.09); box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.09); -webkit-transition: .3s; -o-transition: .3s; transition: .3s; }
 html body .body-cart .col-md-9 .extras .row .conte .card-hotel:hover { -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.7)!important; box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.7)!important; -webkit-transform: translateY(-8px); -ms-transform: translateY(-8px); transform: translateY(-8px); }
-
+html body .body-cart .col-md-3{  }
+html body .body-cart .col-md-3 img{  }
 /*Search caja de reservas*/
 html body .search-body { width: 100%; display: inline-block;float: left; }
 html body .search-body .container .bread-crub { padding: 15px; color: #000; width: 100%; text-align: left; font-family: Roboto, sans-serif; }

@@ -190,6 +190,10 @@
     </div>
     <!--End Contenedor de Productos Extras -->
   </div>
+    <div class="col-md-3" style="margin-top: 70px!important;">
+      <img src="/img/complements/extras/banner-right.png">
+    </div>
+    
   @if ($vacio)
       
   @else
