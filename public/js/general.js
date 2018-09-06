@@ -14,8 +14,14 @@
 
  setRandomClass(); setInterval(function () { setRandomClass(); }, 2000); function setRandomClass() {var list = $(".ve-destinos-list");var items = list.find("a");var number = items.length;var random = Math.floor((Math.random() * number));items.removeClass("active");items.eq(random).addClass("active");}
 
-
 $(document).ready(function () {	
+
+
+
+ if ( screen.width < 1200 )  {  window.location = "https://m.kooningtravel.com/";  }
+
+
+
 
 function disableSelection(target){
     $(function() {
